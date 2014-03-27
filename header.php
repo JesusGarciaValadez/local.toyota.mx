@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Toyota</title>
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/base.css">
+	<!-- bxSlider CSS file -->
+	<link href="plugins/bxslider/jquery.bxslider.css" rel="stylesheet" />	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<!-- bxSlider Javascript file -->
+	<script src="plugins/bxslider/jquery.bxslider.min.js"></script>
+</head>
+
+<body>
+	<header class="header container">
+		<div class="hamburguesa"></div>
+		<nav>
+			<ul>
+				<li class="activo"><a href="index.php">VIDEOS</a></li>
+				<li><a href="vehiculo.php">VEHÍCULO</a></li>
+				<li><a href="prueba.php">PRUEBA DE MANEJO</a></li>
+			</ul>
+		</nav>
+		<a href="index.php" class="logo"></a>
+		<div class="logoHighlander"></div>
+		<img src="images/camionetaVideo.png">
+	</header>
