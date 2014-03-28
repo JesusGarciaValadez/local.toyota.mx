@@ -22,14 +22,16 @@
 						<img src="images/imgRudeza01.jpg">
 						<div class="contDescripcion">
 							<div>
-								<h3>Una parrila más robusta</h3>
+								<h3>Mejoras en diseño<br>exterior</h3>
 								<img src="images/imgRudeza02.jpg">
 							</div>
 							<div>
+								<h3>Una parrila más robusta</h3>
+								<img src="images/imgRudeza03.jpg">
 							</div>
 							<div>
 								<h3>Mayor aerodinámica<br>en líneas exteriores</h3>
-								<img src="images/imgRudeza03.jpg">
+								<img src="images/imgRudeza04.jpg">
 							</div>
 						</div>
 						<a class="reset"></a>
@@ -42,12 +44,16 @@
 						<img src="images/imgMaximo01.jpg">
 						<div class="contDescripcion">
 							<div>
+								<h3>Mayor equipamiento en<br>tecnología y gadgets</h3>
 								<img src="images/imgMaximo02.jpg">
 							</div>
 							<div>
+								<h3>Interfaz para<br>Smartphone</h3>
+								<img src="images/imgMaximo03.jpg">
 							</div>
 							<div>
-								<img src="images/imgMaximo03.jpg">
+								<h3>Pantalla touch y sistema<br>de navegación</h3>
+								<img src="images/imgMaximo04.jpg">
 							</div>
 						</div>
 						<a class="reset"></a>
@@ -60,13 +66,13 @@
 						<img src="images/imgActitud01.jpg">
 						<div class="contDescripcion">
 							<div>
+								<h3>Consola central con<br>mayor espacio</h3>
+							</div>
+							<div>
+							</div>
+							<div>
+								<h3>Más espacio en la<br>cajuela</h3>
 								<img src="images/imgActitud02.jpg">
-							</div>
-							<div>
-								<img src="images/imgActitud03.jpg">
-							</div>
-							<div>
-								<img src="images/imgActitud04.jpg">
 							</div>
 						</div>
 						<a class="reset"></a>
