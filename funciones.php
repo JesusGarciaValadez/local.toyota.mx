@@ -24,7 +24,7 @@ function conectaBaseDatos(){
 
 function dameEstado(){
 	$resultado = false;
-	$consulta = "SELECT * FROM dealers";
+	$consulta = "SELECT DISTINCT * FROM  dealers ORDER BY estado ASC";
 	
 	$conexion = conectaBaseDatos();
 	$sentencia = $conexion->prepare($consulta);
