@@ -8,19 +8,19 @@ init =function(){
 	if(seccion == "secVideo"){
 		$('header nav ul li').removeClass('activo');
 		$('header nav ul li').eq(0).addClass('activo');
-		$('header').addClass("bgVideo");
+		$('body, header').addClass("bgVideo");
 		$('header img').attr('src','images/camionetaVideo.png');
 	}
 	else if(seccion =="secVehiculo"){
 		$('header nav ul li').removeClass('activo');
 		$('header nav ul li').eq(1).addClass('activo');
-		$('header').addClass("bgVehiculo");
+		$('body, header').addClass("bgVehiculo");
 		$('header img').attr('src','images/camionetaVehiculo.png');
 	}
 	else if(seccion =="secPrueba"){
 		$('header nav ul li').removeClass('activo');
 		$('header nav ul li').eq(2).addClass('activo');
-		$('header').addClass("bgPrueba");
+		$('body, header').addClass("bgPrueba");
 		$('header img').attr('src','images/camionetaPrueba.png');
 	}
 
