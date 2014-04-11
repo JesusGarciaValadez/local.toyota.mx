@@ -1,6 +1,5 @@
 <? include('conexion/conexion.php'); ?>
 <?php require_once("funciones.php"); ?>
-<script src="jquery-1.10.2.min.js"></script>
 <?php include('header.php'); ?>
 	<section class="secPrueba container">
 		<article>
