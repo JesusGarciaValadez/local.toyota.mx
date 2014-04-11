@@ -4,7 +4,7 @@
 # HTTP="true"
 		$hostname = "localhost";
 		$database = "highlander";
-		$username = "root";
-		$password = "root";
+		$username = "highlander";
+		$password = "high*lander";
 		$conexion = mysql_pconnect($hostname, $username, $password) or trigger_error(mysql_error(),E_USER_ERROR);
 ?>
