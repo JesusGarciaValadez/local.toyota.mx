@@ -90,6 +90,11 @@
 					  <li><img src="images/galeria/imgGaleria05.jpg"/></li>
 					  <li><img src="images/galeria/imgGaleria06.jpg"/></li>
 					  <li><img src="images/galeria/imgGaleria07.jpg"/></li>
+					  <li><img src="images/galeria/imgGaleria08.jpg"/></li>
+					  <li><img src="images/galeria/imgGaleria09.jpg"/></li>
+					  <li><img src="images/galeria/imgGaleria10.jpg"/></li>
+					  <li><img src="images/galeria/imgGaleria11.jpg"/></li>
+					  <li><img src="images/galeria/imgGaleria12.jpg"/></li>
 					</ul>
 					<div id="bx-pager">
 					  <a data-slide-index="0" href=""><img src="images/galeria/imgGaleriaThumbs01.jpg"/></a>
@@ -99,6 +104,11 @@
 					  <a data-slide-index="4" href=""><img src="images/galeria/imgGaleriaThumbs05.jpg"/></a>
 					  <a data-slide-index="5" href=""><img src="images/galeria/imgGaleriaThumbs06.jpg"/></a>
 					  <a data-slide-index="6" href=""><img src="images/galeria/imgGaleriaThumbs07.jpg"/></a>
+					  <a data-slide-index="7" href=""><img src="images/galeria/imgGaleriaThumbs08.jpg"/></a>
+					  <a data-slide-index="8" href=""><img src="images/galeria/imgGaleriaThumbs09.jpg"/></a>
+					  <a data-slide-index="9" href=""><img src="images/galeria/imgGaleriaThumbs10.jpg"/></a>
+					  <a data-slide-index="10" href=""><img src="images/galeria/imgGaleriaThumbs11.jpg"/></a>
+					  <a data-slide-index="11" href=""><img src="images/galeria/imgGaleriaThumbs12.jpg"/></a>
 					</div>
 				</div>	
 			</div>
