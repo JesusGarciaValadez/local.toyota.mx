@@ -84,6 +84,12 @@ body.bgPrueba{ background: url(../images/bgPrueba.jpg) no-repeat center top;}
 
 .contPrueba form input[type="submit"]{ background: #d71a22; border: none; color: #fff; display: block; font-size: 20px; font-family: 'HelveticaNeue'; height: 40px; margin: 20px auto; text-align: center; text-transform: uppercase; width: 120px;}
 
+.textGracias{ background: #000; padding-top: 30px;}
+.textGracias h2{ border-left: 5px #d71a22 solid; color: #fff; font-size: 46px; font-family:Verdana, Geneva, sans-serif; font-weight: bold; margin-bottom: 80px; padding-left: 25px;}
+.textGracias div{ background: #c9151c; margin: 0px -20px; overflow: hidden;}
+.textGracias div p{ border-bottom: 10px solid #fff; border-top: 10px solid #fff; color: #fff; font-size: 24px; font-family: 'HelveticaNeueMedium'; margin: 10px 0px; padding: 50px 0px; text-align: center;}
+.textGracias a{  background: #c9151c; display: table; color: #fff; font-size: 20px; font-family: 'HelveticaNeueMedium'; margin: 80px auto; padding: 10px 20px; text-transform: uppercase; text-decoration: none;}
+
 .footer{ background: #000;}
 
 .redes{ background: #c9151c; display: table; height: 41px; width: 100%;}
