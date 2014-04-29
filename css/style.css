@@ -1,13 +1,13 @@
 body{ margin: 0px; padding: 0px;}
+body.bgVideo{ background: url(../images/bgVideo.jpg) no-repeat center top;}
+body.bgVehiculo{ background: url(../images/bgVehiculo.jpg) no-repeat center top;}
+body.bgPrueba{ background: url(../images/bgPrueba.jpg) no-repeat center top;}
 
 .container { position: relative; width: 720px; margin: 0 auto; padding: 0; height: 100%; }
 .container .column, .container .columns { margin-left: 20px; margin-right: 20px; }
 .container .sixteen.columns { width: 680px; }
 
 .header{overflow: hidden;}
-.header.bgVideo{ background: url(../images/bgVideo.jpg) no-repeat; background-size: cover; }
-.header.bgVehiculo{ background: url(../images/bgVehiculo.jpg) no-repeat; background-size: cover; }
-.header.bgPrueba{ background: url(../images/bgPrueba.jpg) no-repeat; background-size: cover; }
 
 .header nav{ background: url(../images/bgMenu.png) no-repeat; display: table; width: 100%;}
 .header nav ul{ display: table-row; margin: 0px; padding: 0px; width: 100%;}
@@ -25,7 +25,7 @@ body{ margin: 0px; padding: 0px;}
 .left{ float: left; width: 50%;}
 .right{ float: right; width: 50%;}
 
-.textVideo{ background: #fff;}
+.textVideo{ overflow: hidden;}
 .textVideo h2{ border-left: 5px #d71a22 solid; color: #414141; font-size: 50px; font-family: 'HelveticaNeueMedium'; padding-left: 25px;}
 .textVideo p{ color: #383838; font-size: 22px; font-family: 'HelveticaNeueMedium'; padding-left: 30px;}
 
@@ -35,7 +35,7 @@ body{ margin: 0px; padding: 0px;}
 .contVideos{ margin: 20px 0px 0px;}
 .contVideos a{ display: inline-block; margin: 14px;}
 
-.textVehiculo{ background: #fff; overflow: hidden;}
+.textVehiculo{ overflow: hidden;}
 .textVehiculo h2{ border-left: 5px #d71a22 solid; color: #414141; font-size: 42px; font-family: 'HelveticaNeueMedium'; padding-left: 25px;}
 .textVehiculo p{ color: #383838; font-size: 18px; font-family: 'HelveticaNeueMedium'; padding-left: 30px;}
 .textVehiculo .right p{ font-size: 24px; margin-top: 35px; padding: 0px; text-align: center;}
@@ -67,7 +67,7 @@ body{ margin: 0px; padding: 0px;}
 
 .secPrueba{ background: #000;}
 
-.textPrueba{ background: #000;}
+.textPrueba{ background: #000; padding-top: 30px;}
 .textPrueba h2{ border-left: 5px #d71a22 solid; color: #fff; font-size: 50px; font-family: 'HelveticaNeueBold'; padding-left: 25px;}
 .textPrueba p{ color: #fff; font-size: 22px; font-family: 'HelveticaNeueMedium'; padding-left: 30px;}
 
@@ -83,6 +83,12 @@ body{ margin: 0px; padding: 0px;}
 .contPrueba form div.selectBox select option{ color: #036; cursor: pointer; border-bottom: 1px solid #eee; font-size: 11px; padding: 4px;}
 
 .contPrueba form input[type="submit"]{ background: #d71a22; border: none; color: #fff; display: block; font-size: 20px; font-family: 'HelveticaNeue'; height: 40px; margin: 20px auto; text-align: center; text-transform: uppercase; width: 120px;}
+
+.textGracias{ background: #000; padding-top: 30px;}
+.textGracias h2{ border-left: 5px #d71a22 solid; color: #fff; font-size: 46px; font-family:Verdana, Geneva, sans-serif; font-weight: bold; margin-bottom: 80px; padding-left: 25px;}
+.textGracias div{ background: #c9151c; margin: 0px -20px; overflow: hidden;}
+.textGracias div p{ border-bottom: 10px solid #fff; border-top: 10px solid #fff; color: #fff; font-size: 24px; font-family: 'HelveticaNeueMedium'; margin: 10px 0px; padding: 50px 0px; text-align: center;}
+.textGracias a{  background: #c9151c; display: table; color: #fff; font-size: 20px; font-family: 'HelveticaNeueMedium'; margin: 80px auto; padding: 10px 20px; text-transform: uppercase; text-decoration: none;}
 
 .footer{ background: #000;}
 

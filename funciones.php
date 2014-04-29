@@ -65,8 +65,3 @@ function dameSucursal($estado = ''){
 	
 	return $resultado;
 }
-
-
-
-
-?>
