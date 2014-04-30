@@ -126,6 +126,7 @@ mysql_select_db($database, $conexion);
         Sucursal: $sucursal1
        ";
     mail($para,$asunto,$mensaje,$formato);
+   header("location: gracias.php");
 }else{
    
 }
