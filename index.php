@@ -2,7 +2,7 @@
 
 	<section class="secVideo container">
 		<article>
-			<div class="textVideo sixteen columns">
+			<div class="textVideo">
 				<h2>Familia Cervera</h2>
 				<p>Conoce las historias de la familia Cervera y descubre<br>con ellos tu nueva actitud Highlander ‘14.</p>
 			</div>

@@ -1,13 +1,13 @@
 body{ margin: 0px; padding: 0px;}
-body.bgVideo{ background: url(../images/bgVideo.jpg) no-repeat center top;}
-body.bgVehiculo{ background: url(../images/bgVehiculo.jpg) no-repeat center top;}
-body.bgPrueba{ background: url(../images/bgPrueba.jpg) no-repeat center top;}
+body.bgVideo{ background: #000 url(../images/bgVideo.jpg) no-repeat center top; background-size: cover;}
+body.bgVehiculo{ background: #000 url(../images/bgVehiculo.jpg) no-repeat center top; background-size: cover;}
+body.bgPrueba{ background: #000 url(../images/bgPrueba.jpg) no-repeat center top; background-size: cover;}
 
 #mobilemenu{display:none;float: left;}
 #containmenu h2{font-size: 20px;line-height: 24px;margin-right: 20px;margin-left: 20px;color:#fff;font-family: 'HelveticaNeueMedium';width: 50%;float: left;margin-top: 10px;}
 .container { position: relative; width: 720px; margin: 0 auto; padding: 0; height: 100%; }
 .container .column, .container .columns { margin-left: 20px; margin-right: 20px; }
-.container .sixteen.columns { width: 700px;background: #fff; padding-top: 10px;}
+.container .sixteen.columns { width: 680px;background: #fff; padding-top: 10px;}
 .textPrueba{background:#000!important;}
 .contPrueba{background:#000!important;}
 
@@ -16,30 +16,31 @@ body.bgPrueba{ background: url(../images/bgPrueba.jpg) no-repeat center top;}
 .header nav{ background: url(../images/bgMenu.png) no-repeat; display: table; width: 100%;}
 .header nav ul{ display: table-row; margin: 0px; padding: 0px; width: 100%;}
 .header nav ul li{ display: table-cell; height: 56px; padding-bottom: 12px; text-align: center; vertical-align: middle; width: 33%;}
-.header nav ul li a{ color: #d71921; display: block; font-size: 15px; font-family: 'HelveticaNeueBold'; text-transform: uppercase; text-decoration: none;}
+.header nav ul li a{ color: #000; display: block; font-size: 15px; font-family: 'HelveticaNeueBold'; text-transform: uppercase; text-decoration: none;}
 .header nav ul li:hover, .header nav ul li.activo{ background: url(../images/activoMenu.png) no-repeat bottom center;}
+.header nav ul li:hover a, .header nav ul li.activo a{ color: #fff;}
 .logo{ background: url(../images/logo.png) no-repeat; display: block; height: 49px; margin: 10px auto; width: 200px;}
 .logoHighlander{ background: url(../images/logoHighlander.png) no-repeat; height: 51px; margin: auto; width: 362px;margin-bottom: 10px;}
 .header.bgVideo img{ display: inline; float: right; margin: 0px auto}
 .header.bgVehiculo img{ display: block; margin: 0px auto;float: right;}
 .header.bgPrueba img{ display: block; margin: 0px auto;width: 100%;}
 
-.hamburguesa{ background: url(../images/hamburguesa.jpg) no-repeat; background-size: 100%; cursor: pointer; display: none; float: right; height: 45px; width: 45px;}
+.hamburguesa{ background: url(../images/hamburguesa.png) no-repeat; background-size: 100%; cursor: pointer; display: none; float: right; height: 45px; width: 45px;}
 
 .left{ float: left; width: 50%;}
 .right{ float: right; width: 50%;}
 
-.textVideo{ overflow: hidden;}
+.textVideo{ background: #fff; padding: 10px 20px; overflow: hidden;}
 .textVideo h2{ border-left: 5px #d71a22 solid; color: #414141; font-size: 50px; font-family: 'HelveticaNeueMedium'; padding-left: 25px;}
 .textVideo p{ color: #383838; font-size: 22px; font-family: 'HelveticaNeueMedium'; padding-left: 30px;}
 
 .contVideo{ background: #000;}
 .video{ display: block; height: 510px; margin: auto; width: 680px;}
 
-.contVideos{ margin: 20px 0px 0px;}
+.contVideos{ background: #000 !important; margin: 20px 0px 0px;}
 .contVideos a{ display: inline-block; margin: 14px;}
 
-.textVehiculo{ overflow: hidden;}
+.textVehiculo{ background: #fff; padding: 10px 20px; overflow: hidden;}
 .textVehiculo h2{ border-left: 5px #d71a22 solid; color: #414141; font-size: 42px; font-family: 'HelveticaNeueMedium'; padding-left: 25px;}
 .textVehiculo p{ color: #383838; font-size: 18px; font-family: 'HelveticaNeueMedium'; padding-left: 30px;}
 .textVehiculo .right p{ font-size: 24px; margin-top: 35px; padding: 0px; text-align: center;}
@@ -65,8 +66,8 @@ body.bgPrueba{ background: url(../images/bgPrueba.jpg) no-repeat center top;}
 .rudeza, .maximo, .actitud{ display: none;}
 
 .contDescripcion{ bottom: 0px; display: table; left: 20px; position: absolute; width: 94%;}
-.contDescripcion > div{ display: table-cell; width: 33%;}
-.contDescripcion > div h3{ background: rgba(0,0,0,0.7); border: 1px #fff solid; color: #fff; font-size: 14px; font-family: 'HelveticaNeueMedium'; line-height: 18px; height: 40px; margin: auto; padding: 10px 0px; text-align: center; width: 90%;}
+.contDescripcion > div{ display: table-cell; width: 20%;}
+.contDescripcion > div h3{ background: rgba(0,0,0,0.7); border: 1px #fff solid; color: #fff; font-size: 14px; font-family: 'HelveticaNeueMedium'; line-height: 18px; height: 50px; margin: auto; padding: 10px 5px; text-align: center; width: 84%;}
 .contDescripcion > div img{ border: 1px #fff solid; display: block; height: auto; margin: 10px auto 20px; width: 90%;}
 
 .secPrueba{ background: #000;}
@@ -146,8 +147,8 @@ body.bgPrueba{ background: url(../images/bgPrueba.jpg) no-repeat center top;}
 		.left{ display: none;}
 		.right{ float: inherit; width: 100%;}
 
-		.textVideo h2{ font-size: 30px; line-height: 24px; margin-right: 20px; margin-left: 20px;}
-		.textVideo p{ font-size: 17px; margin-right: 20px; margin-left: 20px;}
+		.textVideo h2{ font-size: 30px; line-height: 24px;}
+		.textVideo p{ font-size: 17px;}
 
 		.video{ height: 315px; width: 420px;}
 		
@@ -213,13 +214,13 @@ body.bgPrueba{ background: url(../images/bgPrueba.jpg) no-repeat center top;}
 		.header img{ height: auto; width: 80%;}
 		.header.bgVideo img{ display: block; float: right; margin: 0px auto;}
 
-		.hamburguesa{ display: block; margin: 5px 0px}
+		.hamburguesa{ display: block; margin: 0px}
 
 		.left{ display: none;}
 		.right{ float: inherit; width: 100%;}
 
-		.textVideo h2{ font-size: 30px; line-height: 24px; margin-right: 20px; margin-left: 20px;}
-		.textVideo p{ font-size: 17px; margin-right: 20px; margin-left: 20px;}
+		.textVideo h2{ font-size: 30px; line-height: 24px;}
+		.textVideo p{ font-size: 17px;}
 
 		.video{ height: 225px; width: 300px;}
 

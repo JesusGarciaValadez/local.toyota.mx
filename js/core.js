@@ -51,6 +51,25 @@ init =function(){
 		$('.coches > a').removeClass('activo');
 	});
 
+	setSize = function(){
+
+			ham = $('.hamburguesa').is(':visible');
+			console.log(ham)
+
+			if(ham == true){
+				$('.header nav ul li').hide();
+				$('.header nav ul li a').on('click',function(){
+					$('.header nav ul li').hide();
+				});
+			}
+			else if( ham == false){
+				$('.header nav ul li').attr('style','display:table-cell;');
+			}
+		}
+
+	$(window).resize(setSize);
+	setSize();
+
 	$('.hamburguesa').on("click",function(){
 		$('.header nav ul li').toggle("slow")
 	});

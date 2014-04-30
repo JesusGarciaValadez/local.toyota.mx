@@ -2,7 +2,7 @@
 
 	<section class="secVehiculo container">
 		<article>
-			<div class="textVehiculo sixteen columns">
+			<div class="textVehiculo">
 				<div class="left">
 					<h2>Rudeza exterior</h2>
 					<p>Fortaleza y confianza que se adaptan<br>a tus necesidades de manejo sin<br>que pierdas el estilo.</p>
@@ -22,16 +22,20 @@
 						<img src="images/imgRudeza01.jpg">
 						<div class="contDescripcion">
 							<div>
-								<h3>Mejoras en diseño<br>exterior</h3>
+								<h3>Mejoras en diseño exterior</h3>
 								<img src="images/imgRudeza02.jpg">
 							</div>
 							<div>
-								<h3>Una parrila más robusta</h3>
+								<h3>Una parrilla más robusta</h3>
 								<img src="images/imgRudeza03.jpg">
 							</div>
 							<div>
-								<h3>Mayor aerodinámica<br>en líneas exteriores</h3>
+								<h3>Mayor aerodinámica en líneas exteriores</h3>
 								<img src="images/imgRudeza04.jpg">
+							</div>
+							<div>
+								<h3>Fuerza y dinamismo en cada una de sus líneas</h3>
+								<img src="images/imgRudeza05.jpg">
 							</div>
 						</div>
 						<a class="reset"></a>
@@ -44,35 +48,46 @@
 						<img src="images/imgMaximo01.jpg">
 						<div class="contDescripcion">
 							<div>
-								<h3>Mayor equipamiento en<br>tecnología y gadgets</h3>
+								<h3>Mayor espacio en cajuela</h3>
 								<img src="images/imgMaximo02.jpg">
 							</div>
 							<div>
-								<h3>Interfaz para<br>Smartphone</h3>
+								<h3>Suavidad y elegancia en sus texturas</h3>
 								<img src="images/imgMaximo03.jpg">
 							</div>
 							<div>
-								<h3>Pantalla touch y sistema<br>de navegación</h3>
+								<h3>Comodidad para todos los pasajeros</h3>
 								<img src="images/imgMaximo04.jpg">
+							</div>
+							<div>
+								<h3>Toda la tecnología a tu alcance</h3>
+								<img src="images/imgMaximo05.jpg">
 							</div>
 						</div>
 						<a class="reset"></a>
 					</div>
 					<div class="nuevaActitud coches">
-						<h3>Tu nueva actitud<a></a></h3>
+						<h3>Tecnología<a></a></h3>
 						<a><img src="images/imgActitud.jpg"></a>
 					</div>
 					<div class="actitud descripcion">
 						<img src="images/imgActitud01.jpg">
 						<div class="contDescripcion">
 							<div>
-								<h3>Consola central con<br>mayor espacio</h3>
-							</div>
-							<div>
-							</div>
-							<div>
-								<h3>Más espacio en la<br>cajuela</h3>
+								<h3>Mayor equipamiento en tecnología y gadgets</h3>
 								<img src="images/imgActitud02.jpg">
+							</div>
+							<div>
+								<h3>Interfaz para Smarthphone</h3>
+								<img src="images/imgActitud03.jpg">
+							</div>
+							<div>
+								<h3>Pantalla touch y sistema de navegación</h3>
+								<img src="images/imgActitud04.jpg">
+							</div>
+							<div>
+								<h3>Control total al volante</h3>
+								<img src="images/imgActitud05.jpg">
 							</div>
 						</div>
 						<a class="reset"></a>
