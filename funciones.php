@@ -2,9 +2,9 @@
 <?php
 function conectaBaseDatos(){
 	try{
-		$conexion = new PDO("mysql:host=$hostname;dbname=$database",
-							$username,
-							$password,
+		$conexion = new PDO("mysql:host=localhost;dbname=highlander",
+							"root",
+							"lu*trev*mont",
 							array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 		
 		$conexion->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
@@ -17,7 +17,7 @@ function conectaBaseDatos(){
 
 function dameEstado(){
 	$resultado = false;
-	$consulta = "SELECT * FROM dealers";
+	$consulta = "SELECT * FROM dealers GROUP BY estado";
 	
 	$conexion = conectaBaseDatos();
 	$sentencia = $conexion->prepare($consulta);
@@ -40,28 +40,19 @@ function dameEstado(){
 
 function dameSucursal($estado = ''){
 	$resultado = false;
-	$consulta = "SELECT * FROM dealers";
-	
-	if($estado != ''){
-		$consulta .= " WHERE id = :estado";
+	$con=mysqli_connect("localhost","root","lu*trev*mont","highlander");
+// Check connection
+	if (mysqli_connect_errno()) {
+		echo "Failed to connect to MySQL: " . mysqli_connect_error();
 	}
-	
-	$conexion = conectaBaseDatos();
-	$sentencia = $conexion->prepare($consulta);
-	$sentencia->bindParam('estado',$estado);
-	
-	try {
-		if(!$sentencia->execute()){
-			print_r($sentencia->errorInfo());
-		}
-		$resultado = $sentencia->fetchAll();
-		//$resultado = $sentencia->fetchAll(PDO::FETCH_ASSOC);
-		$sentencia->closeCursor();
+
+	$result = mysqli_query($con,"SELECT * FROM dealers WHERE estado = '$estado'");
+
+	while($row = mysqli_fetch_array($result)) {
+		$id      = $row['id'];
+		$nombre  = $row['nombre'];
+		$options .= "<option value='$id'>$nombre</option>";
 	}
-	catch(PDOException $e){
-		echo "Error al ejecutar la sentencia: \n";
-			print_r($e->getMessage());
-	}
-	
-	return $resultado;
+	mysqli_close($con);
+	print_r($options);die();
 }

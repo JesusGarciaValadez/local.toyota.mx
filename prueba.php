@@ -10,7 +10,7 @@ require_once("funciones.php");
             </div>
             <div class="contPrueba sixteen columns">
                 <p>Por favor ingresa tus datos  y selecciona tu sucursal más cercana.</p>
-                <form action="" method="get" enctype="multipart/form-data">
+                <form action="" method="post" enctype="multipart/form-data">
                     <input type="text" name="nombre" id="nombre" placeholder="*NOMBRE" required="true">
 
                     <input type="text" name="correo" id="correo" placeholder="*CORREO ELECTRÓNICO" required="true">
@@ -23,14 +23,15 @@ require_once("funciones.php");
                                     <?php
                                     $estados = dameEstado();
                                     foreach($estados as $indice => $registro){
-                                        echo "<option value=".$registro['id'].">".$registro['estado']."</option>";
+					$estado = utf8_decode($registro['estado']);
+                                        echo "<option value='$estado'>$estado</option>";
 
                                     }
                                     ?>
                              </select>
                         </div>
                     <div class="selectBox">
-                    <div class="box" id="box">Sucursal</div>
+                    <div class="box boxsu" id="box">Sucursal</div>
 
                                 <select name="sucursal" id="sucursal" required>
                                             <option value="">- primero seleccion un estado -</option>
@@ -53,7 +54,7 @@ function buscarSucursales(){
             $("#sucursal").html("<option value=''>- primero seleccione un estado -</option>");
     }
     else {
-        $.ajax({
+        /*$.ajax({
             dataType: "json",
             data: {"estado": $estado},
             url:   'buscar.php',
@@ -68,18 +69,33 @@ function buscarSucursales(){
             error:  function(xhr,err){ 
                 alert("readyState: "+xhr.readyState+"\nstatus: "+xhr.status+"\n \n responseText: "+xhr.responseText);
             }
-        });
+        });*/
+	$.post( "buscar.php", { estado: $estado })
+ 		.done(function( data ) {
+		$("#sucursal").html(data);
+  	});
     }
 }
+$("#sucursal").change(function() {
+	var texto = $("#sucursal option:selected").text();
+	$(".boxsu").text(texto);
+});
 </script>
 <? 
- extract($_POST);
-    extract($_GET);
+ //extract($_POST);
+ //extract($_GET);
+$data = $_POST;
+$nombre = $data['nombre'];
+$correo = $data['correo'];
+$telefono = $data['telefono'];
+$estado = $data['estado'];
+$sucursal = $data['sucursal'];
 if($nombre!="" && $correo!="" && $estado!="" && $sucursal!="")
 {
-    mysql_select_db($database, $conexion); 
+    mysql_select_db("highlander", $conexion); 
 
-$query_datos="SELECT * FROM dealers WHERE id='$estado'";
+$query_datos="SELECT * FROM dealers WHERE id='$sucursal'";
+//print_r($query_datos);die();
 $datos=mysql_query($query_datos, $conexion) or die (mysql_error());
 $row_datos=mysql_fetch_assoc($datos);
 $totalRows_datos=mysql_num_rows($datos);
@@ -94,9 +110,9 @@ mysql_select_db($database, $conexion);
     $formato="Content-type: text/html\n";
     
           
-    $formato.= "From: adriana@lunave.com <adriana@lunave.com>\r\n"; 
+    $formato.= "From: no-reply@toyotahighlander.com.mx <no-reply@toyotahighlander.com.mx>\r\n"; 
     $para=$row_datos['email'];
-    $para2='adriana@lunave.com';
+    $para2='jonathan@lunave.com';
 
     
     $sucursal1=$row_datos['nombre'];
@@ -109,7 +125,7 @@ mysql_select_db($database, $conexion);
         Estado:   $estado1
         Sucursal: $sucursal1
        ";
-    mail($para,$para2,$asunto,$mensaje,$formato);
+    mail($para,$asunto,$mensaje,$formato);
 }else{
    
 }
