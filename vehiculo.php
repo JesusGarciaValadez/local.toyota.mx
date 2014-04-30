@@ -56,11 +56,11 @@
 								<img src="images/imgMaximo03.jpg">
 							</div>
 							<div>
-								<h3>Comodidad para todos los pasajeros</h3>
+								<h3>Techo panorámico para disfrutar tu ciudad</h3>
 								<img src="images/imgMaximo04.jpg">
 							</div>
 							<div>
-								<h3>Toda la tecnología a tu alcance</h3>
+								<h3>Todo el control a tu alcance</h3>
 								<img src="images/imgMaximo05.jpg">
 							</div>
 						</div>
