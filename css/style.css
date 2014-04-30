@@ -3,9 +3,13 @@ body.bgVideo{ background: url(../images/bgVideo.jpg) no-repeat center top;}
 body.bgVehiculo{ background: url(../images/bgVehiculo.jpg) no-repeat center top;}
 body.bgPrueba{ background: url(../images/bgPrueba.jpg) no-repeat center top;}
 
+#mobilemenu{display:none;float: left;}
+#containmenu h2{font-size: 20px;line-height: 24px;margin-right: 20px;margin-left: 20px;color:#fff;font-family: 'HelveticaNeueMedium';width: 50%;float: left;margin-top: 10px;}
 .container { position: relative; width: 720px; margin: 0 auto; padding: 0; height: 100%; }
 .container .column, .container .columns { margin-left: 20px; margin-right: 20px; }
-.container .sixteen.columns { width: 680px; }
+.container .sixteen.columns { width: 700px;background: #fff; padding-top: 10px;}
+.textPrueba{background:#000!important;}
+.contPrueba{background:#000!important;}
 
 .header{overflow: hidden;}
 
@@ -15,12 +19,12 @@ body.bgPrueba{ background: url(../images/bgPrueba.jpg) no-repeat center top;}
 .header nav ul li a{ color: #d71921; display: block; font-size: 15px; font-family: 'HelveticaNeueBold'; text-transform: uppercase; text-decoration: none;}
 .header nav ul li:hover, .header nav ul li.activo{ background: url(../images/activoMenu.png) no-repeat bottom center;}
 .logo{ background: url(../images/logo.png) no-repeat; display: block; height: 49px; margin: 10px auto; width: 200px;}
-.logoHighlander{ background: url(../images/logoHighlander.png) no-repeat; height: 51px; margin: auto; width: 362px;}
-.header.bgVideo img{ display: inline; float: right; margin: 10px 20px;}
-.header.bgVehiculo img{ display: block; margin: 10px auto;}
-.header.bgPrueba img{ display: block; margin: 10px auto;}
+.logoHighlander{ background: url(../images/logoHighlander.png) no-repeat; height: 51px; margin: auto; width: 362px;margin-bottom: 10px;}
+.header.bgVideo img{ display: inline; float: right; margin: 0px auto}
+.header.bgVehiculo img{ display: block; margin: 0px auto;float: right;}
+.header.bgPrueba img{ display: block; margin: 0px auto;width: 100%;}
 
-.hamburguesa{ background: url(../images/hamburguesa.jpg) no-repeat; background-size: 100%; cursor: pointer; display: none; float: right; height: 30px; width: 30px;}
+.hamburguesa{ background: url(../images/hamburguesa.jpg) no-repeat; background-size: 100%; cursor: pointer; display: none; float: right; height: 45px; width: 45px;}
 
 .left{ float: left; width: 50%;}
 .right{ float: right; width: 50%;}
@@ -84,7 +88,7 @@ body.bgPrueba{ background: url(../images/bgPrueba.jpg) no-repeat center top;}
 
 .contPrueba form input[type="submit"]{ background: #d71a22; border: none; color: #fff; display: block; font-size: 20px; font-family: 'HelveticaNeue'; height: 40px; margin: 20px auto; text-align: center; text-transform: uppercase; width: 120px;}
 
-.textGracias{ background: #000; padding-top: 30px;}
+.textGracias{ background: #000!important; padding-top: 30px;}
 .textGracias h2{ border-left: 5px #d71a22 solid; color: #fff; font-size: 46px; font-family:Verdana, Geneva, sans-serif; font-weight: bold; margin-bottom: 80px; padding-left: 25px;}
 .textGracias div{ background: #c9151c; margin: 0px -20px; overflow: hidden;}
 .textGracias div p{ border-bottom: 10px solid #fff; border-top: 10px solid #fff; color: #fff; font-size: 24px; font-family: 'HelveticaNeueMedium'; margin: 10px 0px; padding: 50px 0px; text-align: center;}
@@ -123,20 +127,21 @@ body.bgPrueba{ background: url(../images/bgPrueba.jpg) no-repeat center top;}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 	@media only screen and (min-width: 480px) and (max-width: 767px) {
+        #mobilemenu{display:block;background:#d71921;width:100%;height:45px;}
 		.container { width: 420px; }
 		.container .columns, .container .column { margin: 0; }
 		.container .sixteen.columns { width: 420px; }
 
-		.header nav{ background: none; position: absolute; top: 40px;}
+		.header nav{ background: none; position: absolute; top: 0px;}
 		.header nav ul li{ background: #d71921; border-bottom: 1px #fff solid; display: none; height: 40px; margin: 0px; padding: 0px; overflow: hidden; text-align: inherit; width: 100%;}
 		.header nav ul li a{ border-left: 3px #fff solid; color: #fff; margin: 10px 20px; padding-left: 10px;}
 		.header nav ul li:hover, .header nav ul li.activo{ background: #b6151c;}
 		.logo{ clear: both;}
-		.logoHighlander{ background-size: cover; height: 47px; width: 80%;}
+		.logoHighlander{ background-size: cover; height: 47px; width: 80%;margin-bottom: 10px;}
 		.header img{ height: auto; width: 80%;}
-		.header.bgVideo img{ display: block; float: inherit; margin: 10px auto;}
+		.header.bgVideo img{ display: block; float: right; margin: 0px auto;}
 
-		.hamburguesa{ display: block; margin: 5px 0px}
+		.hamburguesa{ display: block; margin-right:10px;}
 
 		.left{ display: none;}
 		.right{ float: inherit; width: 100%;}
@@ -191,18 +196,22 @@ body.bgPrueba{ background: url(../images/bgPrueba.jpg) no-repeat center top;}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
+        #mobilemenu{display:block;background:#d71921;width:100%;height:50px;}
+        #containmenu h2{font-size: 18px;width: 70%;}
+        .textPrueba{background: #000!important;}
+        .contPrueba{background: #000!important;}
 		.container { width: 300px; }
 		.container .columns, .container .column { margin: 0; }
-		.container .sixteen.columns { width: 300px; }
+		.container .sixteen.columns { width: 300px;background: #fff;padding-top: 10px;}
 
-		.header nav{ background: none; position: absolute; top: 40px;}
+		.header nav{ background: none; position: absolute; top: 0px;}
 		.header nav ul li{ background: #d71921; border-bottom: 1px #fff solid; display: none; height: 40px; margin: 0px; padding: 0px; overflow: hidden; text-align: inherit; width: 100%;}
 		.header nav ul li a{ border-left: 3px #fff solid; color: #fff; margin: 10px 20px; padding-left: 10px;}
 		.header nav ul li:hover, .header nav ul li.activo{ background: #b6151c;}
 		.logo{ clear: both;}
-		.logoHighlander{ background-size: cover; height: 34px; width: 80%;}
+		.logoHighlander{ background-size: cover; height: 34px; width: 80%;margin-bottom: 10px;}
 		.header img{ height: auto; width: 80%;}
-		.header.bgVideo img{ display: block; float: inherit; margin: 10px auto;}
+		.header.bgVideo img{ display: block; float: right; margin: 0px auto;}
 
 		.hamburguesa{ display: block; margin: 5px 0px}
 
