@@ -15,7 +15,7 @@
 			<div class="contVehiculo">
 				<div class="cocheDescripcion">
 					<div class="rudezaExterior coches">
-						<h3>Rudeza Exterior<a></a></h3>
+						<h3>Rudeza exterior<a></a></h3>
 						<a><img src="images/imgRudeza.jpg"></a>
 					</div>					
 					<div class="rudeza descripcion">
