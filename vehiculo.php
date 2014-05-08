@@ -110,6 +110,12 @@
 					  <li><img src="images/galeria/imgGaleria10.jpg"/></li>
 					  <li><img src="images/galeria/imgGaleria11.jpg"/></li>
 					  <li><img src="images/galeria/imgGaleria12.jpg"/></li>
+					  <li><img src="images/galeria/imgGaleria13.jpg"/></li>
+					  <li><img src="images/galeria/imgGaleria14.jpg"/></li>
+					  <li><img src="images/galeria/imgGaleria15.jpg"/></li>
+					  <li><img src="images/galeria/imgGaleria16.jpg"/></li>
+					  <li><img src="images/galeria/imgGaleria17.jpg"/></li>
+					  <li><img src="images/galeria/imgGaleria18.jpg"/></li>
 					</ul>
 					<div id="bx-pager">
 					  <a data-slide-index="0" href=""><img src="images/galeria/imgGaleriaThumbs01.jpg"/></a>
@@ -124,6 +130,12 @@
 					  <a data-slide-index="9" href=""><img src="images/galeria/imgGaleriaThumbs10.jpg"/></a>
 					  <a data-slide-index="10" href=""><img src="images/galeria/imgGaleriaThumbs11.jpg"/></a>
 					  <a data-slide-index="11" href=""><img src="images/galeria/imgGaleriaThumbs12.jpg"/></a>
+					  <a data-slide-index="12" href=""><img src="images/galeria/imgGaleriaThumbs13.jpg"/></a>
+					  <a data-slide-index="13" href=""><img src="images/galeria/imgGaleriaThumbs14.jpg"/></a>
+					  <a data-slide-index="14" href=""><img src="images/galeria/imgGaleriaThumbs15.jpg"/></a>
+					  <a data-slide-index="15" href=""><img src="images/galeria/imgGaleriaThumbs16.jpg"/></a>	
+					  <a data-slide-index="16" href=""><img src="images/galeria/imgGaleriaThumbs17.jpg"/></a>
+					  <a data-slide-index="17" href=""><img src="images/galeria/imgGaleriaThumbs18.jpg"/></a>					  				  
 					</div>
 				</div>	
 			</div>
