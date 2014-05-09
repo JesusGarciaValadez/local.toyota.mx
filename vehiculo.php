@@ -92,6 +92,32 @@
 						</div>
 						<a class="reset"></a>
 					</div>
+					<div class="seguridad coches">
+						<h3>Seguridad<a></a></h3>
+						<a><img src="images/imgSeguridad.jpg"></a>
+					</div>
+					<div class="segu descripcion">
+						<img src="images/imgSeguridad01.jpg">
+						<div class="contDescripcion">
+							<div>
+								<h3>Luces direccionales en espejos laterales</h3>
+								<img src="images/imgSeguridad02.jpg">
+							</div>
+							<div>
+								<h3>Cámara de reversa</h3>
+								<img src="images/imgSeguridad03.jpg">
+							</div>
+							<div>
+								<h3>Seguros automáticos para una mayor comodidad</h3>
+								<img src="images/imgSeguridad04.jpg">
+							</div>
+							<div>
+								<h3>Indicador de seguridad en el tablero</h3>
+								<img src="images/imgSeguridad05.jpg">
+							</div>
+						</div>
+						<a class="reset"></a>
+					</div>
 				</div>
 				<div class="galeria">
 					<div>

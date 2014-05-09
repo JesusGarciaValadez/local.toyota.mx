@@ -48,13 +48,14 @@ body.bgPrueba{ background: #000 url(../images/bgPrueba.jpg) no-repeat center top
 
 .contVehiculo{ background: #000 url(../images/bgCoches.jpg) no-repeat top; overflow: hidden; position:relative;}
 
-.coches{ width: 213px;}
-.rudezaExterior{ margin-left: 20px;}
-.maximoConfort{ position: absolute; left:254px; top:0px;}
-.nuevaActitud{ position:absolute; top:0px; right:20px;}
+.coches{ width: 23%;}
+.rudezaExterior{ margin-left: 1%;}
+.maximoConfort{ position: absolute; left: 26%; top: 0px;}
+.nuevaActitud{ position: absolute; left: 51%; top: 0px;}
+.seguridad{ position: absolute; right: 1%; top: 0px;}
 
-.coches h3{ border-left: 5px #d71a22 solid; color: #fff; font-size: 18px; font-family: 'HelveticaNeueBold'; line-height: inherit; padding-left: 15px; margin: 10px auto;}
-.coches h3 a{ background: url(../images/imgMas.png) no-repeat; cursor: pointer; display: inline-block; height: 15px; margin: 0px 15px; vertical-align: middle; width: 15px;}
+.coches h3{ border-left: 5px #d71a22 solid; color: #fff; font-size: 16px; font-family: 'HelveticaNeueBold'; line-height: inherit; padding-left: 14px; margin: 10px auto;}
+.coches h3 a{ background: url(../images/imgMas.png) no-repeat; cursor: pointer; display: inline-block; height: 15px; margin: 0px; margin-left: 10px; vertical-align: middle; width: 15px;}
 .coches > a{ -webkit-border-radius: 8px; -moz-border-radius: 8px; -ms-border-radius: 8px; border-radius: 8px; cursor: pointer; display: block; border: 2px #000 solid; margin: 10px 0px; height: auto; overflow: hidden; width: 99%;}
 .coches > a:hover, .coches > a.activo{ border: 2px #d71a22 solid;}
 .coches > a img{ display: block; height: auto; width: 110%;}
@@ -63,7 +64,7 @@ body.bgPrueba{ background: #000 url(../images/bgPrueba.jpg) no-repeat center top
 .descripcion img{ display: block; height: auto; width: 100%;}
 .descripcion a{ background: url(../images/imgMenos.png) no-repeat; cursor: pointer; display: block; height: 22px; position: absolute; top: 15px; right: 20px; width: 22px;}
 
-.rudeza, .maximo, .actitud{ display: none;}
+.rudeza, .maximo, .actitud, .cuadro{ display: none;}
 
 .contDescripcion{ bottom: 0px; display: table; left: 20px; position: absolute; width: 94%;}
 .contDescripcion > div{ display: table-cell; width: 20%;}
@@ -159,8 +160,10 @@ body.bgPrueba{ background: #000 url(../images/bgPrueba.jpg) no-repeat center top
 
 		.coches{ width: 380px;}
 
+		.rudezaExterior{ margin-left: 20px;}
 		.maximoConfort{ position: inherit; left:0px; margin-left: 20px; top:0px;}
 		.nuevaActitud{ position:inherit; margin-left: 20px; top:0px; right:0px;}
+		.seguridad{ position:inherit; margin-left: 20px; top:0px; right:0px;}
 
 		.coches h3 a{ float: right; margin: 0px; margin-top: 3px;}
 		.coches > a{ display: none;}
@@ -231,8 +234,10 @@ body.bgPrueba{ background: #000 url(../images/bgPrueba.jpg) no-repeat center top
 
 		.coches{ width: 260px;}
 
+		.rudezaExterior{ margin-left: 20px;}
 		.maximoConfort{ position: inherit; left:0px; margin-left: 20px; top:0px;}
 		.nuevaActitud{ position:inherit; margin-left: 20px; top:0px; right:0px;}
+		.seguridad{ position:inherit; margin-left: 20px; top:0px; right:0px;}
 
 		.coches h3 a{ float: right; margin: 0px; margin-top: 3px;}
 		.coches > a{ display: none;}

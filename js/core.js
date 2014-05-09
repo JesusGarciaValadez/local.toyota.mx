@@ -45,6 +45,13 @@ init =function(){
 		$('.descripcion').hide();
 		$('.actitud').fadeIn();
 	});
+	$('.seguridad h3 > a, .seguridad > a').on('click',function(e){
+		e.preventDefault();
+		$('.coches > a').removeClass('activo');
+		$('.seguridad > a').addClass('activo');
+		$('.descripcion').hide();
+		$('.segu').fadeIn();
+	});
 	$('.reset').on('click',function(e){
 		e.preventDefault();
 		$('.descripcion').fadeOut();
