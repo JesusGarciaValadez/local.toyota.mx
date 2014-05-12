@@ -31,7 +31,7 @@ body.bgPrueba{ background: #000 url(../images/bgPrueba.jpg) no-repeat center top
 .right{ float: right; width: 50%;}
 
 .textVideo{ background: #fff; padding: 10px 20px; overflow: hidden;}
-.textVideo h2{ border-left: 5px #d71a22 solid; color: #414141; font-size: 50px; font-family: 'HelveticaNeueMedium'; padding-left: 25px;}
+.textVideo h2{ font-size: 41px; border-left: 5px #d71a22 solid; color: #414141; font-size: 50px; font-family: 'HelveticaNeueMedium'; padding-left: 25px;}
 .textVideo p{ color: #383838; font-size: 22px; font-family: 'HelveticaNeueMedium'; padding-left: 30px;}
 
 .contVideo{ background: #000;}
