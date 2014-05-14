@@ -19,6 +19,7 @@
 						<a><img src="images/imgRudeza.jpg"></a>
 					</div>					
 					<div class="rudeza descripcion">
+						<a class="reset"></a>
 						<img src="images/imgRudeza01.jpg">
 						<div class="contDescripcion">
 							<div>
@@ -45,6 +46,7 @@
 						<a><img src="images/imgMaximo.jpg"></a>
 					</div>
 					<div class="maximo descripcion">
+						<a class="reset"></a>
 						<img src="images/imgMaximo01.jpg">
 						<div class="contDescripcion">
 							<div>
@@ -71,6 +73,7 @@
 						<a><img src="images/imgActitud.jpg"></a>
 					</div>
 					<div class="actitud descripcion">
+						<a class="reset"></a>
 						<img src="images/imgActitud01.jpg">
 						<div class="contDescripcion">
 							<div>
@@ -97,6 +100,7 @@
 						<a><img src="images/imgSeguridad.jpg"></a>
 					</div>
 					<div class="segu descripcion">
+						<a class="reset"></a>
 						<img src="images/imgSeguridad01.jpg">
 						<div class="contDescripcion">
 							<div>
