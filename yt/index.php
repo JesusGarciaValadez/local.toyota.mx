@@ -1,5 +1,9 @@
 <?php include('header.php'); ?>
-
+<script>
+var new_height = JSON.stringify({"height": "1360px"});
+top.postMessage(new_height, "https://www.youtube.com/");
+top.postMessage(new_height, "http://www.youtube.com/");
+</script>
 	<section class="secVideo container">
 		<article>
 			<div class="textVideo">

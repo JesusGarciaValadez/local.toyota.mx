@@ -2,6 +2,11 @@
 require_once("funciones.php");
 ?>
 <?php include('header.php'); ?>
+<script>
+var new_height = JSON.stringify({"height": "1204px"});
+top.postMessage(new_height, "https://www.youtube.com/");
+top.postMessage(new_height, "http://www.youtube.com/");
+</script>
     <section class="secPrueba container">
         <article>
             <div class="textPrueba sixteen columns">
