@@ -1,5 +1,5 @@
 <?php include('header.php'); ?>
-
+<script src="https://www.wtp101.com/pixel?id=23129"></script>
 	<section class="secVideo container">
 		<article>
 			<div class="textVideo">
