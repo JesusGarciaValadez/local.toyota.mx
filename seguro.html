@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang='es'>
+  <head>
+    <meta charset='utf-8'>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.js"></script>
+  </head>
+  <body>
+
+    <div>
+      <table>
+        <tr><th>Auto</th><td><span class="auto">$AUTO</span></td></tr>
+        <tr><th>Precio</th><td><span id="precio">$PRECIO</span></td></tr>
+        <tr><th>Enganche</th><td><span class="enganche">$ENGANCHE</span></td></tr>
+        <tr><th>Tasa especial de:</th><td>9.95%</td></tr>
+        <tr><th>Comisión por apertura</th><td><span id="comision_apertura">$COMISION_APERTURA</span></td></tr>
+        <tr><th>Pago Mensual</th><td><span id="pago_mensual">$PAGO_MENSUAL</span></td></tr>
+
+      </table>
+    </div>
+
+    <table>
+      <tr>
+        <th>Versión</th>
+        <td>
+          <select id="version_select">
+            <option value="XLE 4AT">XLE 4AT</option>
+            <option value="XRS 5AT">XRS 5AT</option>
+            <option value="XRS 5MT">XRS 5MT</option>
+            <option value="LE MT">LE MT</option>
+            <option value="LE AT">LE AT</option>
+            <option value="XLE AT WSR">XLE AT w/SR</option>
+          </select>
+        </td></tr>
+      <tr>
+        <th>Tipo de crédito</th>
+        <td>
+          <select id="tipo_credito_select">
+            <option value="estandar">Estándar</option>
+            <option value="balloon">Balloon 35</option>
+          </select>
+        </td>
+      </tr>
+      <tr><td colspan="2"><span id="texto_credito">$TEXTO_CREDITO</span></td></tr>
+      <tr><th>Enganche %:</th><td>20 a 60 input<input type="text" name="enganche_input" id="enganche_input" value="50" /></td><td><span class="enganche">$TOTAL_ENGANCHE</span></td></tr>
+      <tr>
+        <th>Plazo del crédito</th>
+        <td>
+          <select id="plazo_credito_select">
+            <option value="24">24</option>
+            <option value="30">30</option>
+            <option value="36">36</option>
+            <option value="48">48</option>
+            <option value="60">60</option>
+          </select>
+          Meses
+        </td>
+      </tr>
+      <tr><th>CAT sin iva</th><td><span class="cat_sin_iva">$CAT_SIN_IVA</span></td></tr>
+    </table>
+
+    <h1>Paso 2, elige un seguro</h1>
+
+    <table>
+      <tr>
+        <th>Selecciona tu tipo de póliza</th>
+        <td>
+          <select id="seguro_tipo_select">
+            <option value="diamante">Diamante</option>
+            <option value="oro">Oro</option>
+            <option value="amplia">Amplia</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>Reducción costo mensual</th>
+        <td><span class="reduccion_costo_mensual">$REDUCCION_COSTO_MENSUAL</span></td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <th colspan="2">Tu crédito</th>
+      </tr>
+      <tr>
+        <th>Pago mensual base</th>
+        <td><span id="pago_mensual_base">$PAGO_MENSUAL_BASE</span></td>
+      </tr>
+      <tr>
+        <th>Poliza <span class="poliza_tipo"></span></th>
+        <td><span class="reduccion_costo_mensual">$tu_credito_poliza_tipo_value</span></td>
+      </tr>
+      <tr>
+        <th>Pago mensual total</th>
+        <td><span class="pago_mensual_total">$0.00</span></td>
+      </tr>
+    </table>
+
+    <table>
+      <tr><th colspan="3">Beneficios de la póliza <span class="poliza_tipo"></span></th></tr>
+      <tr><td>Deducibles<span id="beneficios_deducibles">$beneficios_deducibles</span></td><td></td><td>info</td></tr>
+      <tr>
+        <td>Responsabilidad civil</td>
+        <td><span id="beneficios_responsabilidad">$beneficios_responsabilidad</span></td>
+        <td>info</td>
+        <td>Reparación del vehículo en agencia toyota</td>
+        <td>+info</td>
+      </tr>
+      <tr>
+        <td>Extensión de responsabilidad civil: AMPARADA</td>
+        <td></td>
+        <td>info</td>
+        <td>Pago a Valor factura los primeros dos años</td>
+        <td>+info</td>
+      </tr>
+      <tr>
+        <td>Auto sustituto</td>
+        <td><span id="beneficios_auto_sustituto">$beneficios_auto_sustituto</span></td>
+        <td>info</td>
+        <td>Excención de deducible <span id="beneficios_excencion_deducible"></span></td><td>+info</td>
+      </tr>
+
+    </table>
+
+    <h1>Paso 3, preautoriza tu crédito</h1>
+
+    <table>
+      <tr>
+        <th colspan="2">Tu crédito</th>
+      </tr>
+      <tr><td>Auto:</td><td><span class="auto">$auto</span></td></tr>
+      <tr><td>Enganche</td><td><span class="enganche">$enganche</span></td></tr>
+      <tr><td>Plazo</td><td><span class="plazo">$plazo</span></td></tr>
+      <tr><td>Seguro</td><td>Poliza <span class="poliza_tipo">$poliza_tipo</span></td></tr>
+      <tr><td>Amortización</td><td><span class="amortizacion">$amortizacion</span></td></tr>
+      <tr><td>Pago Mensual</td><td><span class="pago_mensual_total">$pago_mensual_total</span></td></tr>
+    </table>
+    <h2>CAT sin IVA: <span class="cat_sin_iva">$cat</span>%</h2>
+
+    Ahora puedes solicitar una preaprobación de crédito en línea <br/>
+    <a id="liga_credito" href="">Click aquí</a>
+    <script src="js/financiamiento.js"></script>
+
+  </body>
+</html>

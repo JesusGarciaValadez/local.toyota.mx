@@ -1,0 +1,122 @@
+#game_cont{
+	position:absolute;
+	background-image:url(../img/bg.png);
+	cursor: url(../img/cursor.png), auto;
+	display:none;
+}
+#game{
+	position:absolute;
+	width:832px;
+	height:468px;
+	left:0;
+	top:0;
+	overflow:hidden;
+	z-index:10;
+}
+#game_cont #marcador,#game_cont #marcador_color,#game_cont #marcador_trastes
+{
+	position:absolute;
+	width:100%;
+	height:154px;
+	left:0px;
+	bottom:34px;
+	background-image:url(../img/guitarra03.png);
+	background-repeat:repeat-x;
+}
+#game_cont #marcador_color
+{
+	background-image:url(../img/guitarra02.png);
+}
+#game_cont #marcador_trastes
+{
+	background-image:url(../img/guitarra01.png);
+}
+.cubo {
+	position:absolute;
+	width:73px;
+	height:77px;
+	left: 38px;
+	top: -100px;
+	background-image:url(../img/cube.png);
+	z-index:99;
+}
+.cubo2 {
+	position:absolute;
+	width:103px;
+	height:103px;
+	left: -14px;
+	top: -13px;
+	background-image:url(../img/cube_light.png);
+	z-index:99;
+}
+.cubo_i {
+	position:absolute;
+	width:73px;
+	height:77px;
+	left: 38px;
+	top: -100px;
+	background-image:url(../img/cube_i.png);
+	z-index:99;
+}
+.luz1 {
+	position:absolute;
+	width:168px;
+	height:168px;
+	background-image:url(../img/luz1.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.luz2 {
+	position:absolute;
+	width:168px;
+	height:168px;
+	background-image:url(../img/luz2.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.luz3 {
+	position:absolute;
+	width:168px;
+	height:168px;
+	background-image:url(../img/luz3.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.fire1 {
+	position:absolute;
+	width:123px;
+	height:123px;
+	background-image:url(../img/fire1.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.fire2 {
+	position:absolute;
+	width:123px;
+	height:123px;
+	background-image:url(../img/fire2.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.fire3 {
+	position:absolute;
+	width:123px;
+	height:123px;
+	background-image:url(../img/fire3.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+#ilikeit {
+	position:absolute;
+	width:80px;
+	height:68px;
+	z-index:1;
+	left: 50%;
+	margin-left:-40px;
+	top: 390px;
+	background-image:url(../img/likeit.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+

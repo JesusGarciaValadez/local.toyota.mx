@@ -1,0 +1,273 @@
+body{ margin: 0px; padding: 0px;}
+body.bgVideo{ background: #000 url(../images/bgVideo.jpg) no-repeat center top; background-size: cover;}
+body.bgVehiculo{ background: #000 url(../images/bgVehiculo.jpg) no-repeat center top; background-size: cover;}
+body.bgPrueba{ background: #000 url(../images/bgPrueba.jpg) no-repeat center top; background-size: cover;}
+
+#mobilemenu{display:none;float: left;}
+#containmenu h2{font-size: 20px;line-height: 24px;margin-right: 20px;margin-left: 20px;color:#fff;font-family: 'HelveticaNeueMedium';width: 50%;float: left;margin-top: 10px;}
+.container { position: relative; width: 720px; margin: 0 auto; padding: 0; height: 100%; }
+.container .column, .container .columns { margin-left: 20px; margin-right: 20px; }
+.container .sixteen.columns { width: 680px;background: #fff; padding-top: 10px;}
+.textPrueba{background:#000!important;}
+.contPrueba{background:#000!important;}
+
+.header{overflow: hidden;}
+
+.header nav{ background: url(../images/bgMenu.png) no-repeat; display: table; width: 100%;}
+.header nav ul{ display: table-row; margin: 0px; padding: 0px; width: 100%;}
+.header nav ul li{ display: table-cell; height: 56px; padding-bottom: 12px; text-align: center; vertical-align: middle; width: 33%;}
+.header nav ul li a{ color: #000; display: block; font-size: 15px; font-family: 'HelveticaNeueBold'; text-transform: uppercase; text-decoration: none;}
+.header nav ul li:hover, .header nav ul li.activo{ background: url(../images/activoMenu.png) no-repeat bottom center;}
+.header nav ul li:hover a, .header nav ul li.activo a{ color: #fff;}
+.logo{ background: url(../images/logo.png) no-repeat; display: block; height: 49px; margin: 10px auto; width: 200px;}
+.logoHighlander{ background: url(../images/logoHighlander.png) no-repeat; height: 51px; margin: auto; width: 362px;margin-bottom: 10px;}
+.header.bgVideo img{ display: inline; float: right; margin: 0px auto}
+.header.bgVehiculo img{ display: block; margin: 0px auto;float: right;}
+.header.bgPrueba img{ display: block; margin: 0px auto;width: 100%;}
+
+.hamburguesa{ background: url(../images/hamburguesa.png) no-repeat; background-size: 100%; cursor: pointer; display: none; float: right; height: 45px; width: 45px;}
+
+.left{ float: left; width: 50%;}
+.right{ float: right; width: 50%;}
+
+.textVideo{ background: #fff; padding: 10px 20px; overflow: hidden;}
+.textVideo h2{ font-size: 41px; border-left: 5px #d71a22 solid; color: #414141; font-size: 50px; font-family: 'HelveticaNeueMedium'; padding-left: 25px;}
+.textVideo p{ color: #383838; font-size: 22px; font-family: 'HelveticaNeueMedium'; padding-left: 30px;}
+
+.contVideo{ background: #000;}
+.video{ display: block; height: 510px; margin: auto; width: 680px;}
+
+.contVideos{ background: #000 !important; margin: 20px 0px 0px;}
+.contVideos a{ display: inline-block; margin: 14px;}
+
+.textVehiculo{ background: #fff; padding: 10px 20px; overflow: hidden;}
+.textVehiculo h2{ border-left: 5px #d71a22 solid; color: #414141; font-size: 42px; font-family: 'HelveticaNeueMedium'; padding-left: 25px;}
+.textVehiculo p{ color: #383838; font-size: 18px; font-family: 'HelveticaNeueMedium'; padding-left: 30px;}
+.textVehiculo .right p{ font-size: 24px; margin-top: 35px; padding: 0px; text-align: center;}
+.textVehiculo .right a{ background: url(../images/btnPrueba.jpg) no-repeat; display: block; height: 35px; margin: 10px auto; width: 316px;}
+
+.contVehiculo{ background: #000 url(../images/bgCoches.jpg) no-repeat top; overflow: hidden; position:relative;}
+
+.coches{ width: 23%;}
+.rudezaExterior{ margin-left: 1%;}
+.maximoConfort{ position: absolute; left: 26%; top: 0px;}
+.nuevaActitud{ position: absolute; left: 51%; top: 0px;}
+.seguridad{ position: absolute; right: 1%; top: 0px;}
+
+.coches h3{ border-left: 5px #d71a22 solid; color: #fff; font-size: 16px; font-family: 'HelveticaNeueBold'; line-height: inherit; padding-left: 14px; margin: 10px auto;}
+.coches h3 a{ background: url(../images/imgMas.png) no-repeat; cursor: pointer; display: inline-block; height: 15px; margin: 0px; margin-left: 10px; vertical-align: middle; width: 15px;}
+.coches > a{ -webkit-border-radius: 8px; -moz-border-radius: 8px; -ms-border-radius: 8px; border-radius: 8px; cursor: pointer; display: block; border: 2px #000 solid; margin: 10px 0px; height: auto; overflow: hidden; width: 99%;}
+.coches > a:hover, .coches > a.activo{ border: 2px #d71a22 solid;}
+.coches > a img{ display: block; height: auto; width: 110%;}
+
+.descripcion{ overflow: hidden; position: relative; width: 100%;}
+.descripcion img{ display: block; height: auto; width: 100%;}
+.descripcion a{ background: url(../images/imgMenos.png) no-repeat; cursor: pointer; display: block; height: 22px; position: absolute; top: 15px; right: 20px; width: 22px;}
+
+.rudeza, .maximo, .actitud, .cuadro{ display: none;}
+
+.contDescripcion{ bottom: 0px; display: table; left: 20px; position: absolute; width: 94%;}
+.contDescripcion > div{ display: table-cell; width: 20%;}
+.contDescripcion > div h3{ background: rgba(0,0,0,0.7); border: 1px #fff solid; color: #fff; font-size: 14px; font-family: 'HelveticaNeueMedium'; line-height: 18px; height: 50px; margin: auto; padding: 10px 5px; text-align: center; width: 84%;}
+.contDescripcion > div img{ border: 1px #fff solid; display: block; height: auto; margin: 10px auto 20px; width: 90%;}
+
+.secPrueba{ background: #000;}
+
+.textPrueba{ background: #000; padding-top: 30px;}
+.textPrueba h2{ border-left: 5px #d71a22 solid; color: #fff; font-size: 50px; font-family: 'HelveticaNeueBold'; padding-left: 25px;}
+.textPrueba p{ color: #fff; font-size: 22px; font-family: 'HelveticaNeueMedium'; padding-left: 30px;}
+
+.contPrueba{}
+.contPrueba p{ color: #fff; font-size: 20px; font-family: 'HelveticaNeueMedium';}
+.contPrueba form{ width: 100%;}
+.contPrueba form input[type="text"]{ margin: 20px auto; width: 90%;}
+.contPrueba form label{ color: #fff; font-size: 16px; font-family: 'HelveticaNeueMedium'; margin-left: 25px; text-transform: uppercase;}
+
+.contPrueba form div.selectBox { background:#fff url(../images/select.png) 98% no-repeat; height: 32px; margin: 20px auto; position: relative; width: 92%;}
+.contPrueba form div.selectBox div.box { color: #777; height: 26px; left: 6px; position: absolute; overflow: hidden; top: 6px; text-transform: uppercase; width: 94%;}
+.contPrueba form div.selectBox select { border: 1px solid #036; cursor: pointer; height: 34px; left: -1px; position: absolute; opacity: 0; filter: alpha(Opacity=0);	-moz-opacity: 0; top: -1px; width: 100%; z-index:100;}
+.contPrueba form div.selectBox select option{ color: #036; cursor: pointer; border-bottom: 1px solid #eee; font-size: 11px; padding: 4px;}
+
+.contPrueba form input[type="submit"]{ background: #d71a22; border: none; color: #fff; display: block; font-size: 20px; font-family: 'HelveticaNeue'; height: 40px; margin: 20px auto; text-align: center; text-transform: uppercase; width: 120px;}
+
+.textGracias{ background: #000!important; padding-top: 30px;}
+.textGracias h2{ border-left: 5px #d71a22 solid; color: #fff; font-size: 46px; font-family:Verdana, Geneva, sans-serif; font-weight: bold; margin-bottom: 80px; padding-left: 25px;}
+.textGracias div{ background: #c9151c; margin: 0px -20px; overflow: hidden;}
+.textGracias div p{ border-bottom: 10px solid #fff; border-top: 10px solid #fff; color: #fff; font-size: 24px; font-family: 'HelveticaNeueMedium'; margin: 10px 0px; padding: 50px 0px; text-align: center;}
+.textGracias a{  background: #c9151c; display: table; color: #fff; font-size: 20px; font-family: 'HelveticaNeueMedium'; margin: 80px auto; padding: 10px 20px; text-transform: uppercase; text-decoration: none;}
+
+.footer{ background: #000;}
+
+.redes{ background: #c9151c; display: table; height: 41px; width: 100%;}
+.redes a{ color: #fff; display: table-cell; font-size: 18px; font-family: 'HelveticaNeueMedium'; text-align: center; text-decoration: none; vertical-align: middle; width: 33%;}
+.redes a:nth-of-type(4){ display: none;}
+.redes a i{ margin-right: 5px; font-size: 20px;}
+
+.telefonos{ display: table; margin: 20px auto; width: 50%;}
+.telefonos a{ color: #fff; display: table-cell; font-size: 18px; font-family: 'HelveticaNeueMedium'; text-align: center; text-transform: uppercase; text-decoration: none; vertical-align: middle; width: 50%;}
+.telefonos img{ display: block; margin: auto;}
+
+.derechos{ border-bottom: 1px #fff solid; color: #fff; font-size: 13px; font-family: 'HelveticaNeueMedium'; padding-bottom: 15px; text-align: center; text-transform: uppercase;}
+
+.terminos{ display: table; height: 45px; margin: auto; width: 60%;}
+.terminos a{ color: #fff; display: table-cell; font-size: 13px; font-family: 'HelveticaNeueMedium'; text-align: center; text-decoration: none; vertical-align: middle; width: 33%;}
+
+/* Galeria */
+
+.galeria{ background: #555252; overflow: hidden;}
+.galeria h2{ border-left: 5px #d71a22 solid; color: #fff; font-size: 50px; font-family: 'HelveticaNeueMedium'; padding-left: 25px; margin: 20px;}
+
+.galeria .bx-wrapper { margin-bottom: 0px;}
+.galeria .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto { bottom: -30px; position: absolute; width: 100%;}
+
+.galeria #bx-pager { background: #b4b2b2 url(../images/bgGaleria.jpg) no-repeat top; padding-top: 20px; padding-bottom: 30px; text-align: center;}
+.galeria #bx-pager a { margin: 0 3px;}
+.galeria #bx-pager a img { border: solid #ccc 1px; padding: 3px;}
+.galeria #bx-pager a:hover img, .galeria #bx-pager a.active img { border: solid #d71a22 1px;}
+
+/* Galeria */
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+        #mobilemenu{display:block;background:#d71921;width:100%;height:45px;}
+		.container { width: 420px; }
+		.container .columns, .container .column { margin: 0; }
+		.container .sixteen.columns { width: 420px; }
+
+		.header nav{ background: none; position: absolute; top: 0px;}
+		.header nav ul li{ background: #d71921; border-bottom: 1px #fff solid; display: none; height: 40px; margin: 0px; padding: 0px; overflow: hidden; text-align: inherit; width: 100%;}
+		.header nav ul li a{ border-left: 3px #fff solid; color: #fff; margin: 10px 20px; padding-left: 10px;}
+		.header nav ul li:hover, .header nav ul li.activo{ background: #b6151c;}
+		.logo{ clear: both;}
+		.logoHighlander{ background-size: cover; height: 47px; width: 80%;margin-bottom: 10px;}
+		.header img{ height: auto; width: 80%;}
+		.header.bgVideo img{ display: block; float: right; margin: 0px auto;}
+
+		.hamburguesa{ display: block; margin-right:10px;}
+
+		.left{ display: none;}
+		.right{ float: inherit; width: 100%;}
+
+		.textVideo h2{ font-size: 30px; line-height: 24px;}
+		.textVideo p{ font-size: 17px;}
+
+		.video{ height: 315px; width: 420px;}
+		
+		.contVideos a{ width: 42%;}
+		.contVideos a img{ display: block; height: auto; width: 100%;}
+
+		.textVehiculo .right a{ background-size: cover; height: 46px; width: 100%;}
+
+		.coches{ width: 380px;}
+
+		.rudezaExterior{ margin-left: 20px;}
+		.maximoConfort{ position: inherit; left:0px; margin-left: 20px; top:0px;}
+		.nuevaActitud{ position:inherit; margin-left: 20px; top:0px; right:0px;}
+		.seguridad{ position:inherit; margin-left: 20px; top:0px; right:0px;}
+
+		.coches h3 a{ float: right; margin: 0px; margin-top: 3px;}
+		.coches > a{ display: none;}
+
+		.descripcion img{ display: none;}
+		.descripcion a{ float: right; position: inherit; margin-bottom: 20px; margin-right: 20px; top: 0px; right: 0px;}
+
+		.contDescripcion{ left: 0px; position: inherit; width: 100%;}
+		.contDescripcion > div{ display: block; width: 100%;}
+
+		.textPrueba h2{ font-size: 35px; line-height: 24px; margin-right: 20px; margin-left: 20px;}
+		.textPrueba p{ font-size: 17px; margin-right: 20px; margin-left: 20px;}
+
+		.contPrueba p{ font-size: 17px; margin-right: 20px; margin-left: 20px; width: 87%;}
+
+		.redes a{ width: 20%;}
+		.redes a:nth-of-type(4){ display: table-cell;}
+		.redes a span{ display: none;}
+		.redes a i{ font-size: 30px;}
+
+		.telefonos{ margin: 20px; width: 90%;}
+
+		.terminos{ width: 100%;}
+		.terminos a{ display: block; margin: 10px auto; width: 100%;}
+		
+		/* Galeria */
+		
+		.galeria h2{ font-size: 27px; line-height: 30px;}
+		
+		.galeria #bx-pager { display: none;}
+
+		/* Galeria */
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+        #mobilemenu{display:block;background:#d71921;width:100%;height:50px;}
+        #containmenu h2{font-size: 18px;width: 70%;}
+        .textPrueba{background: #000!important;}
+        .contPrueba{background: #000!important;}
+		.container { width: 300px; }
+		.container .columns, .container .column { margin: 0; }
+		.container .sixteen.columns { width: 300px;background: #fff;padding-top: 10px;}
+
+		.header nav{ background: none; position: absolute; top: 0px;}
+		.header nav ul li{ background: #d71921; border-bottom: 1px #fff solid; display: none; height: 40px; margin: 0px; padding: 0px; overflow: hidden; text-align: inherit; width: 100%;}
+		.header nav ul li a{ border-left: 3px #fff solid; color: #fff; margin: 10px 20px; padding-left: 10px;}
+		.header nav ul li:hover, .header nav ul li.activo{ background: #b6151c;}
+		.logo{ clear: both;}
+		.logoHighlander{ background-size: cover; height: 34px; width: 80%;margin-bottom: 10px;}
+		.header img{ height: auto; width: 80%;}
+		.header.bgVideo img{ display: block; float: right; margin: 0px auto;}
+
+		.hamburguesa{ display: block; margin: 0px}
+
+		.left{ display: none;}
+		.right{ float: inherit; width: 100%;}
+
+		.textVideo h2{ font-size: 30px; line-height: 24px;}
+		.textVideo p{ font-size: 17px;}
+
+		.video{ height: 225px; width: 300px;}
+
+		.contVideos a{ width: 40%;}
+		.contVideos a img{ display: block; height: auto; width: 100%;}
+
+		.textVehiculo .right a{ background-size: cover; height: 33px; width: 100%;}
+
+		.coches{ width: 260px;}
+
+		.rudezaExterior{ margin-left: 20px;}
+		.maximoConfort{ position: inherit; left:0px; margin-left: 20px; top:0px;}
+		.nuevaActitud{ position:inherit; margin-left: 20px; top:0px; right:0px;}
+		.seguridad{ position:inherit; margin-left: 20px; top:0px; right:0px;}
+
+		.coches h3 a{ float: right; margin: 0px; margin-top: 3px;}
+		.coches > a{ display: none;}
+
+		.descripcion img{ display: none;}
+		.descripcion a{ float: right; position: inherit; margin-bottom: 20px; margin-right: 20px; top: 0px; right: 0px;}
+
+		.contDescripcion{ left: 0px; position: inherit; width: 100%;}
+		.contDescripcion > div{ display: block; width: 100%;}
+
+		.textPrueba h2{ font-size: 26px; line-height: 24px; margin-right: 20px; margin-left: 20px;}
+		.textPrueba p{ font-size: 17px; margin-right: 20px; margin-left: 20px;}
+
+		.contPrueba p{ font-size: 17px; margin-right: 20px; margin-left: 20px; width: 87%;}
+
+		.redes a{ width: 20%;}
+		.redes a:nth-of-type(4){ display: table-cell;}
+		.redes a span{ display: none;}
+		.redes a i{ font-size: 30px;}
+
+		.telefonos{ margin: 20px; width: 87%;}
+
+		.terminos{ width: 100%;}
+		.terminos a{ display: block; margin: 10px auto; width: 100%;}
+
+		/* Galeria */
+		
+		.galeria h2{ font-size: 27px; line-height: 30px;}
+		
+		.galeria #bx-pager { display: none;}
+
+		/* Galeria */
+	}
