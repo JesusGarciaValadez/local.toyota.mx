@@ -2,6 +2,7 @@
 require_once("funciones.php");
 ?>
 <?php include('header.php'); ?>
+<script src="https://www.wtp101.com/pixel?id=23131"></script>
 <script>
 var new_height = JSON.stringify({"height": "1204px"});
 top.postMessage(new_height, "https://www.youtube.com/");

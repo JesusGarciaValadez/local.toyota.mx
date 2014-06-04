@@ -2,6 +2,7 @@
 require_once("funciones.php");
 ?>
 <?php include('header.php'); ?>
+<script src="https://www.wtp101.com/pixel?id=23131"></script>
     <section class="secPrueba container">
         <article>
             <div class="textPrueba sixteen columns">
