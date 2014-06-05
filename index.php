@@ -115,13 +115,13 @@ $browser = new Browser();
                   </div>
                 <?php else: ?>
                   <div id="contenedor-teaser">
-                    <iframe width="530" height="298" src="//www.youtube.com/embed/FHwQr9QUn5I" frameborder="0" allowfullscreen></iframe>
-<!--                     <video id="video-teaser" preload="metadata" width="530" height="298">
-                      <source src="video/IrresistibleHome.mp4" type="video/mp4"/>
-                      <source src="video/IrresistibleHome.webm" type="video/webm"/>
-                      <source src="video/IrresistibleHome.ogv" type="video/ogv"/>
-                    </video> -->
-                    <!-- <a href="/corto" target="_blank" id="ver-corto">Corto</a> -->
+                    <!-- <iframe width="530" height="298" src="//www.youtube.com/embed/FHwQr9QUn5I" frameborder="0" allowfullscreen></iframe> -->
+                    <video id="video-teaser" preload="metadata" width="530" height="298">
+                      <source src="video/videohighlander.mp4" type="video/mp4"/>
+                      <source src="video/videohighlander.webm" type="video/webm"/>
+                      <source src="video/videohighlander.ogv" type="video/ogv"/>
+                    </video>
+                    <a href="https://www.youtube.com/user/ToyotaMex" target="_blank" id="ver-corto">Corto</a>
                     <!--<div class="text-center" id="teaser-copy">¡Sé parte de la historia!</div>-->
                   </div>
                 <?php endif; ?>
