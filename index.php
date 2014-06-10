@@ -231,16 +231,17 @@ $browser = new Browser();
                       <div class="display-cell">
                         <div class="clearfix text-center" id="threesixty-color-picker">
                           <div class="text-center">
-                            <span id="color-name">Negro</span>
+                            <span id="color-name">Arena</span>
                           </div>
-                          <a href="#" class="current" id="negro" data-color="negro" data-text="NEGRO"><span>Negro</span></a>
-                          <!--<a href="#" id="bronze" data-color="bronze" data-text="BRONZE"><span>Bronze</span></a>
-                          <a href="#" id="gray" data-color="gray" data-text="GRAY"><span>Gray</span></a>
-                          <a href="#" id="blanco" data-color="blanco" data-text="BLANCO"><span>Blanco</span></a>
-                          <a href="#" id="rojo" data-color="rojo" data-text="ROJO"><span>Rojo</span></a>
-                          <a href="#" id="azul" data-color="azul" data-text="AZUL"><span>Azul</span></a>
-                          <a href="#" id="plateado" data-color="plateado" data-text="GRIS METÁLICO"><span>GRIS METÁLICO</span></a>
-                          -->
+                          <a href="#" class="current" id="arena" data-color="arena" data-text="Arena"><span>Arena</span></a>
+                          <a href="#" id="azul" data-color="azul" data-text="Azul"><span>Azul</span></a>
+                          <a href="#" id="azulosc" data-color="azulosc" data-text="Azul Oscuro"><span>Azul Oscuro</span></a>
+                          <a href="#" id="blanco" data-color="blanco" data-text="Blanco"><span>Blanco</span></a>
+                          <a href="#" id="gris" data-color="gris" data-text="Gris"><span>Gris</span></a>
+                          <a href="#" id="jade" data-color="jade" data-text="Jade"><span>Jade</span></a>
+                          <a href="#" id="negro" data-color="negro" data-text="Negro"><span>Negro</span></a>
+                          <a href="#" id="plata" data-color="plata" data-text="Plata"><span>Plata</span></a>
+                          <a href="#" id="rojo" data-color="rojo" data-text="Rojo"><span>Rojo</span></a>
                         </div>
                         <div class="threesixty" id="threesixty-exterior">
                             <div class="spinner">

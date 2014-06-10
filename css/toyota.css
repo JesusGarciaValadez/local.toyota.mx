@@ -1162,77 +1162,92 @@ section#distribuidores .container {
 
 
 #threesixty-color-picker {
-  display: none;
+  /*display: none;*/
 }
 #threesixty-color-picker a {
   display: inline-block;
-  width: 31.14px;
-  height: 27px;
+  width: 30px;
+  height: 30px;
   background-repeat: no-repeat;
   background-color: transparent;
-  background-position:0 1px;
   overflow: hidden;
   text-indent: -9999px;
   padding: 0;
-  margin: 0 -4px 0 0;
+  margin-right: 2px;
   background-image: url(img/SPRITE_360_NEW.png);
 }
 
 
-#threesixty-color-picker a#negro {
-  background-position:0px 0%;
+#threesixty-color-picker a#arena {
+  background-position:0px 0px;
 }
-#threesixty-color-picker a#negro:hover,
-#threesixty-color-picker a#negro.current {
-  background-position:0px 100%;
-}
-
-#threesixty-color-picker a#bronze {
-  background-position:-31.28px 0%;
-}
-#threesixty-color-picker a#bronze:hover,
-#threesixty-color-picker a#bronze.current {
- background-position:-31.28px 100%;
-}
-
-#threesixty-color-picker a#gray {
-  background-position:-62px 0%;
-}
-#threesixty-color-picker a#gray:hover,
-#threesixty-color-picker a#gray.current {
- background-position:-62px 100%;
-}
-
-#threesixty-color-picker a#blanco {
-  background-position:-93px 0%;
-}
-#threesixty-color-picker a#blanco:hover,
-#threesixty-color-picker a#blanco.current {
-  background-position:-93px 100%;
-}
-
-#threesixty-color-picker a#rojo {
-  background-position:-123.28px 0%;
-}
-#threesixty-color-picker a#rojo:hover,
-#threesixty-color-picker a#rojo.current {
-  background-position:-123.28px 100%;
+#threesixty-color-picker a#arena:hover,
+#threesixty-color-picker a#arena.current {
+  background-position:0px -30px;
 }
 
 #threesixty-color-picker a#azul {
-  background-position:-153.28px 0%;
+  background-position: -30px 0px;
 }
 #threesixty-color-picker a#azul:hover,
 #threesixty-color-picker a#azul.current {
-  background-position:-153.28px 100%;
+  background-position: -30px -30px;
 }
 
-#threesixty-color-picker a#plateado {
-  background-position: -186px 0%;
+#threesixty-color-picker a#azulosc {
+  background-position: -60px 0px;
 }
-#threesixty-color-picker a#plateado:hover,
-#threesixty-color-picker a#plateado.current {
-  background-position: -186px 100%;
+#threesixty-color-picker a#azulosc:hover,
+#threesixty-color-picker a#azulosc.current {
+  background-position: -60px -30px;
+}
+
+#threesixty-color-picker a#blanco {
+  background-position: -90px 0px;
+}
+#threesixty-color-picker a#blanco:hover,
+#threesixty-color-picker a#blanco.current {
+  background-position: -90px -30px;
+}
+
+#threesixty-color-picker a#gris {
+  background-position: -120px 0px;
+}
+#threesixty-color-picker a#gris:hover,
+#threesixty-color-picker a#gris.current {
+  background-position: -120px -30px;
+}
+
+#threesixty-color-picker a#jade {
+  background-position: -150px 0px;
+}
+#threesixty-color-picker a#jade:hover,
+#threesixty-color-picker a#jade.current {
+  background-position: -150px -30px;
+}
+
+#threesixty-color-picker a#negro {
+  background-position: -180px 0px;
+}
+#threesixty-color-picker a#negro:hover,
+#threesixty-color-picker a#negro.current {
+  background-position: -180px -30px;
+}
+
+#threesixty-color-picker a#plata {
+  background-position: -210px 0px;
+}
+#threesixty-color-picker a#plata:hover,
+#threesixty-color-picker a#plata.current {
+  background-position: -210px -30px;
+}
+
+#threesixty-color-picker a#rojo {
+  background-position: -240px 0px;
+}
+#threesixty-color-picker a#rojo:hover,
+#threesixty-color-picker a#rojo.current {
+  background-position: -240px -30px;
 }
 
 #color-name {
