@@ -487,7 +487,7 @@ $browser = new Browser();
                         <img src="imgs/modelo-base.png" alt="Toyota Corolla Base"/>
                       </div>
                       <div class="span4 detalles-modelo">
-                        <h1>HIGHLANDER</h1>
+                        <h1>Highlander LE</h1>
                         <div class="precio">
                           <span class="desde">Desde</span>
                           <small>$</small>473,900<sup>00</sup>
@@ -516,7 +516,7 @@ $browser = new Browser();
                         <img src="imgs/modelo-le.png" alt="Toyota Corolla LE"/>
                       </div>
                       <div class="span4 detalles-modelo">
-                        <h1>HIGHLANDER</h1>
+                        <h1>Highlander XLE</h1>
                         <div class="precio">
                           <span class="desde">Desde</span>
                           <small>$</small>534,400<sup>00</sup>
@@ -546,7 +546,7 @@ $browser = new Browser();
                         <img src="imgs/modelo-s.png" alt="Toyota Corolla S"/>
                       </div>
                       <div class="span4 detalles-modelo">
-                        <h1>HIGHLANDER</h1>
+                        <h1>Highlander Limited PR</h1>
                         <div class="precio">
                           <span class="desde">Desde</span>
                           <small>$</small>600,400<sup>00</sup>
@@ -575,7 +575,7 @@ $browser = new Browser();
                         <img src="imgs/modelo-sp.png" alt="Toyota Corolla S Plus"/>
                       </div>
                       <div class="span4 detalles-modelo">
-                        <h1>HIGHLANDER</h1>
+                        <h1>Highlander Limited</h1>
                         <div class="precio">
                           <span class="desde">Desde</span>
                           <small>$</small>619,900<sup>00</sup>
