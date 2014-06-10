@@ -133,13 +133,13 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                   </div>
                 <?php else: ?>
                   <div id="contenedor-teaser">
-                    <iframe width="530" height="298" src="//www.youtube.com/embed/FHwQr9QUn5I" frameborder="0" allowfullscreen></iframe>
-<!--                     <video id="video-teaser" preload="metadata" width="530" height="298">
-                      <source src="video/IrresistibleHome.mp4" type="video/mp4"/>
-                      <source src="video/IrresistibleHome.webm" type="video/webm"/>
-                      <source src="video/IrresistibleHome.ogv" type="video/ogv"/>
-                    </video> -->
-                    <!-- <a href="/corto" target="_blank" id="ver-corto">Corto</a> -->
+                    <!-- <iframe width="530" height="298" src="//www.youtube.com/embed/FHwQr9QUn5I" frameborder="0" allowfullscreen></iframe> -->
+                    <video id="video-teaser" preload="metadata" width="530" height="298">
+                      <source src="video/videohighlander.mp4" type="video/mp4"/>
+                      <source src="video/videohighlander.webm" type="video/webm"/>
+                      <source src="video/videohighlander.ogv" type="video/ogv"/>
+                    </video>
+                    <a href="https://www.youtube.com/user/ToyotaMex" target="_blank" id="ver-corto">Corto</a>
                     <!--<div class="text-center" id="teaser-copy">¡Sé parte de la historia!</div>-->
                   </div>
                 <?php endif; ?>
@@ -249,16 +249,17 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                       <div class="display-cell">
                         <div class="clearfix text-center" id="threesixty-color-picker">
                           <div class="text-center">
-                            <span id="color-name">Negro</span>
+                            <span id="color-name">Arena</span>
                           </div>
-                          <a href="#" class="current" id="negro" data-color="negro" data-text="NEGRO"><span>Negro</span></a>
-                          <!--<a href="#" id="bronze" data-color="bronze" data-text="BRONZE"><span>Bronze</span></a>
-                          <a href="#" id="gray" data-color="gray" data-text="GRAY"><span>Gray</span></a>
-                          <a href="#" id="blanco" data-color="blanco" data-text="BLANCO"><span>Blanco</span></a>
-                          <a href="#" id="rojo" data-color="rojo" data-text="ROJO"><span>Rojo</span></a>
-                          <a href="#" id="azul" data-color="azul" data-text="AZUL"><span>Azul</span></a>
-                          <a href="#" id="plateado" data-color="plateado" data-text="GRIS METÁLICO"><span>GRIS METÁLICO</span></a>
-                          -->
+                          <a href="#" class="current" id="arena" data-color="arena" data-text="Arena"><span>Arena</span></a>
+                          <a href="#" id="azul" data-color="azul" data-text="Azul"><span>Azul</span></a>
+                          <a href="#" id="azulosc" data-color="azulosc" data-text="Azul Oscuro"><span>Azul Oscuro</span></a>
+                          <a href="#" id="blanco" data-color="blanco" data-text="Blanco"><span>Blanco</span></a>
+                          <a href="#" id="gris" data-color="gris" data-text="Gris"><span>Gris</span></a>
+                          <a href="#" id="jade" data-color="jade" data-text="Jade"><span>Jade</span></a>
+                          <a href="#" id="negro" data-color="negro" data-text="Negro"><span>Negro</span></a>
+                          <a href="#" id="plata" data-color="plata" data-text="Plata"><span>Plata</span></a>
+                          <a href="#" id="rojo" data-color="rojo" data-text="Rojo"><span>Rojo</span></a>
                         </div>
                         <div class="threesixty" id="threesixty-exterior">
                             <div class="spinner">
@@ -504,7 +505,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                         <img src="imgs/modelo-base.png" alt="Toyota Corolla Base"/>
                       </div>
                       <div class="span4 detalles-modelo">
-                        <h1>HIGHLANDER</h1>
+                        <h1>Highlander LE</h1>
                         <div class="precio">
                           <span class="desde">Desde</span>
                           <small>$</small>473,900<sup>00</sup>
@@ -533,7 +534,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                         <img src="imgs/modelo-le.png" alt="Toyota Corolla LE"/>
                       </div>
                       <div class="span4 detalles-modelo">
-                        <h1>HIGHLANDER</h1>
+                        <h1>Highlander XLE</h1>
                         <div class="precio">
                           <span class="desde">Desde</span>
                           <small>$</small>534,400<sup>00</sup>
@@ -563,7 +564,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                         <img src="imgs/modelo-s.png" alt="Toyota Corolla S"/>
                       </div>
                       <div class="span4 detalles-modelo">
-                        <h1>HIGHLANDER</h1>
+                        <h1>Highlander Limited PR</h1>
                         <div class="precio">
                           <span class="desde">Desde</span>
                           <small>$</small>600,400<sup>00</sup>
@@ -592,7 +593,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                         <img src="imgs/modelo-sp.png" alt="Toyota Corolla S Plus"/>
                       </div>
                       <div class="span4 detalles-modelo">
-                        <h1>HIGHLANDER</h1>
+                        <h1>Highlander Limited</h1>
                         <div class="precio">
                           <span class="desde">Desde</span>
                           <small>$</small>619,900<sup>00</sup>
@@ -801,14 +802,16 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
     })(window,document,'script','dataLayer','GTM-MC8TPH');</script>
     <!-- End Google Tag Manager -->
 
-    <script>
-     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-     ga('create', 'UA-43443825-1', 'corollaexperience.com');
-     ga('send', 'pageview');
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-49566515-1', 'toyotahighlander.com.mx');
+    ga('send', 'pageview');
+
     </script>
     <script type="text/javascript">
     var fb_param = {};
