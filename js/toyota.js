@@ -493,7 +493,7 @@ $(function(){
     filePrefix: '', // file prefix if any
     ext: '.png', // extention for the assets
     width: 940,
-    height: 768,
+    height: 480,
     navigation: false,
     responsive: true
   });

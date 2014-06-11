@@ -247,6 +247,12 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                   <div class="container" style="height: 100%">
                     <div class="display-table">
                       <div class="display-cell">
+                        <div class="threesixty" id="threesixty-exterior">
+                            <div class="spinner">
+                                <span>0%</span>
+                            </div>
+                            <ol class="threesixty_images"></ol>
+                        </div>
                         <div class="clearfix text-center" id="threesixty-color-picker">
                           <div class="text-center">
                             <span id="color-name">Arena</span>
@@ -261,13 +267,6 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                           <a href="#" id="plata" data-color="plata" data-text="Plata"><span>Plata</span></a>
                           <a href="#" id="rojo" data-color="rojo" data-text="Rojo"><span>Rojo</span></a>
                         </div>
-                        <div class="threesixty" id="threesixty-exterior">
-                            <div class="spinner">
-                                <span>0%</span>
-                            </div>
-                            <ol class="threesixty_images"></ol>
-                        </div>
-
                       </div>
                     </div>
                   </div>
