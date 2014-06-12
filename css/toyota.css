@@ -1301,9 +1301,14 @@ section#distribuidores .container {
   width: 0;
 }
 
+#slide-interior-03 .hotspot-container{
+  left: 50%;
+  top: 40%;   
+}
+
 #slide-interior-04 .hotspot-container{
-  left: 40%;
-  top: 55%;  
+  left: 42%;
+  top: 58%;  
 }
 
 #slide-seguridad-01 .hotspot-container{

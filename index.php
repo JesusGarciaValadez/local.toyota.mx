@@ -332,11 +332,11 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                 <div class="slide" id="slide-interior-03">
                   <!--hotspot-->
                   <div class="hotspot-container">
-                    <a href="#" class="hotspot">Trasmisión  automática de 6 velocidades.</a>
+                    <a href="#" class="hotspot">Increíble techo panorámico</a>
                     <div class="hotspot-detail">
                       <a href="#" class="hotspot-close">cerrar</a>
                       <div>
-                        <p class="hotspot-title">Trasmisión  automática de 6 velocidades.</p>
+                        <p class="hotspot-title">Increíble techo panorámico</p>
                       </div>
                     </div>
                   </div>
@@ -345,11 +345,11 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                 <div class="slide" id="slide-interior-04">
                   <!--hotspot-->
                   <div class="hotspot-container">
-                    <a href="#" class="hotspot">Sistema de audio JBL®</a>
+                    <a href="#" class="hotspot">Pantalla touchscreen de 8"</a>
                     <div class="hotspot-detail">
                       <a href="#" class="hotspot-close">cerrar</a>
                       <div>
-                        <p class="hotspot-title">Sistema de audio JBL®<br>AM / FM / CD</p>
+                        <p class="hotspot-title">Pantalla<br>touchscreen de 8"</p>
                       </div>
                     </div>
                   </div>
