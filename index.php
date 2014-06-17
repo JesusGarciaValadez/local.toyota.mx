@@ -60,7 +60,7 @@ window._fbq = window._fbq || [];
 window._fbq.push(['track', 'PixelInitialized', {}]);
 </script>
 <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=306593512832230&amp;ev=NoScript" /></noscript>
-
+<script src="https://www.wtp101.com/pixel?id=23420"></script>
   </head>
 
   <body data-spy="scroll" data-target="#main-navbar">
@@ -179,6 +179,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
       </section>
 
       <section class="deck" id="explora">
+        <script src="https://www.wtp101.com/pixel?id=23421"></script>
         <div class="horizontal-wrapper">
           <div class="section-inner">
 
@@ -493,6 +494,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
       </section>
 
       <section class="deck" id="modelos">
+      <script src="https://www.wtp101.com/pixel?id=23422"></script>
         <div class="horizontal-wrapper">
           <div class="section-inner">
             <div class="sub-section current" id="modelo-l">
