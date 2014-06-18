@@ -60,7 +60,7 @@ section .container {
 }
 .navbar .nav > li {
   line-height: 62px;
-  margin: 0px 33px;
+  margin: 0px 15px;
 }
 
 .navbar .nav > li > a {
