@@ -705,9 +705,9 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
             <div class="span6 financiamiento-column financiamiento-form" style="margin-top: 7px;">
               <form class="form-horizontal">
                 <div class="control-group">
-                  <label class="control-label">Enganche <span class="financiamiento-enganche-per">20</span>%</label>
+                  <label class="control-label">Enganche <span class="financiamiento-enganche-per">10</span>%</label>
                   <div class="controls">
-                    <input type="text" id="financiamiento-enganche" class="slider span3" value="20" data-slider-min="20" data-slider-max="60" data-slider-step="1" data-slider-value="20" data-slider-orientation="horizontal" data-slider-selection="" data-slider-tooltip="">
+                    <input type="text" id="financiamiento-enganche" class="slider span3" value="10" data-slider-min="10" data-slider-max="60" data-slider-step="1" data-slider-value="10" data-slider-orientation="horizontal" data-slider-selection="" data-slider-tooltip="">
                   </div>
                 </div>
                 <div class="control-group">
