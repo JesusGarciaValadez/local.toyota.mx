@@ -399,7 +399,7 @@ $(function() {
     cotizar:function(){
 
       tipo_credito = $('#financiamiento-tipo-credito option:selected').val();
-      tasa_interes = tipo_credito == 'balloon' ? .1045 : .0995;
+      tasa_interes = tipo_credito == 'balloon' ? .1045 : .1095;
 
       seguro_tipo   = $('#financiamiento-tipo-seguro option:selected').val();
       $('.financiamiento-tipo-poliza').text(seguro_tipo);
@@ -422,9 +422,22 @@ $(function() {
 
       $('#texto_credito').text(txt_creditos[tipo_credito]);
 
-      vida = ((precio_actual  - total_enganche  + seguros[version][seguro_tipo][plazo_credito]/100 )*0.0122)/(1-0.0122);//
+      vida = ((precio_actual  - total_enganche  + seguros[version][seguro_tipo][plazo_credito] )*0.0122)/(1-0.0122);//
+        
+        console.log("resta "+ (precio_actual  - total_enganche));
+        
+        console.log("version "+ version);
+        
+        console.log("seguro_tipo "+ seguro_tipo);
+        console.log("plazo_credito "+ plazo_credito);
+        
+         console.log("seguros "+ seguros[version][seguro_tipo][plazo_credito]);
+        
+        console.log("vida "+ vida);
 
-      monto_diario = precio_actual - total_enganche + vida + seguros[version][seguro_tipo][plazo_credito]/100;
+      monto_diario = precio_actual - total_enganche + vida + seguros[version][seguro_tipo][plazo_credito];
+        
+        console.log("monto diario "+ monto_diario);
 
        // console.log('precio_actual = ' + precio_actual);
        // console.log('total_enganche = '+ total_enganche);
@@ -445,7 +458,7 @@ $(function() {
       $('.financiamiento-pago-mensual').text(number_format(pago_mensual,2));
       $('.financiamiento-pago-mensual-base').text(number_format(pago_mensual,2));
 
-      comision_apertura = monto_diario * 0.0175 *1.16;
+      comision_apertura = monto_diario * 0.0175 *1.16*1;
       $('.financiamiento-comision-apertura').text(number_format(comision_apertura,2));
 
       $('.financiamiento-tasa-especial').text(tipo_credito == 'balloon' ? '10.45' : '10.95');
