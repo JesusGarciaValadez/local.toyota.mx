@@ -228,6 +228,12 @@ section#financiamiento {
   background-color: #000;
   background-position: center 210px;
 }
+
+section#financiamiento {
+  background-image: url(img/bg-financiamiento.png);
+  background-repeat:no-repeat;
+  background-position:center; 
+}
 section#financiamiento {
   min-height: 800px;
 }
@@ -1730,6 +1736,7 @@ section#distribuidores .container {
 }
 #financiamiento-car-container {
   margin-bottom: 20px;
+  display:none;
 }
 
 .financiamiento-column {
