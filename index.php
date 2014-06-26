@@ -682,12 +682,10 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                   <label for="financiamiento-modelo" class="control-label">Auto</label>
                   <div class="controls">
                     <select id="financiamiento-modelo" class="span3 selectpicker">
-                      <option value="BASE MT">Base MT</option>
-                      <option value="BASE AT">Base AT</option>
-                      <option value="LE">LE</option>
-                      <option value="S MT">S MT</option>
-                      <option value="S AT">S AT</option>
-                      <option value="S PLUS AT">S Plus AT</option>
+                       <option value="LE">LE</option>
+                      <option value="XLE">XLE</option>
+                      <option value="Limited Blu-Ray">Limited Blu-Ray</option>
+                      <option value="LTD Panorama Roof">LTD Panorama Roof</option>
                     </select>
                   </div>
                 </div>
