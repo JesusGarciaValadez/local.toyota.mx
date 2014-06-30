@@ -461,7 +461,7 @@ $(function() {
       comision_apertura = monto_diario * 0.0175 *1.16*1;
       $('.financiamiento-comision-apertura').text(number_format(comision_apertura,2));
 
-      $('.financiamiento-tasa-especial').text(tipo_credito == 'balloon' ? '10.45' : '10.95');
+      $('.financiamiento-tasa-especial').text(tipo_credito == 'balloon' ? '10.95' : '10.95');
 
       // console.log(tipo_credito == 'balloon' ? '10.45' : '9.95')
       // console.log(tipo_credito);
