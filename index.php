@@ -646,9 +646,6 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
         <div class="container">
           <a href="#" class="financiamiento-control hidden" data-direction="prev" id="financiamiento-anterior">Anterior</a>
           <div class="row hidden-tablet hidden-phone" id="financiamiento-car-container">
-            <div class="span6 offset3">
-              <img src="imgs/coche-financiamiento.png" alt="Toyota Corolla"/>
-            </div>
           </div>
 
           <div class="row financiamiento-step skip-print" id="financiamiento-step-1">

@@ -1696,7 +1696,7 @@ section#distribuidores .container {
   font-weight: bold;
   letter-spacing: -0.025em;
   text-transform: uppercase;
-  color: #4d4e50;
+  color: #fff;
 }
 #financiamiento-steps .step-bullet {
   display: block;
@@ -1794,7 +1794,7 @@ section#distribuidores .container {
 .disclaimer {
   font-size: 10px;
   line-height: 14px;
-  color: #363535;
+  color: #fff;
 }
 .financiamiento-column .control-group {
   margin-bottom: 12px;
