@@ -236,6 +236,7 @@ section#financiamiento {
 }
 section#financiamiento {
   min-height: 800px;
+  overflow: hidden;
 }
 
 section#distribuidores .container {
@@ -1679,6 +1680,7 @@ section#distribuidores .container {
 /*FINANCIAMIENTO*/
 #financiamiento .container {
   position: relative;
+  margin-top: 150px;
 }
 .financiamiento-steps-container {
   margin: 20px 0;
