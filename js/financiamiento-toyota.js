@@ -424,20 +424,20 @@ $(function() {
 
       vida = ((precio_actual  - total_enganche  + seguros[version][seguro_tipo][plazo_credito] )*0.0122)/(1-0.0122);//
         
-        console.log("resta "+ (precio_actual  - total_enganche));
+        //console.log("resta "+ (precio_actual  - total_enganche));
         
-        console.log("version "+ version);
+        //console.log("version "+ version);
         
-        console.log("seguro_tipo "+ seguro_tipo);
-        console.log("plazo_credito "+ plazo_credito);
+        //console.log("seguro_tipo "+ seguro_tipo);
+        //console.log("plazo_credito "+ plazo_credito);
         
-         console.log("seguros "+ seguros[version][seguro_tipo][plazo_credito]);
+         //console.log("seguros "+ seguros[version][seguro_tipo][plazo_credito]);
         
-        console.log("vida "+ vida);
+        //console.log("vida "+ vida);
 
       monto_diario = precio_actual - total_enganche + vida + seguros[version][seguro_tipo][plazo_credito];
         
-        console.log("monto diario "+ monto_diario);
+        //console.log("monto diario "+ monto_diario);
 
        // console.log('precio_actual = ' + precio_actual);
        // console.log('total_enganche = '+ total_enganche);
