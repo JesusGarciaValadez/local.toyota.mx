@@ -2014,6 +2014,7 @@ section#especificaciones {
   padding: 7px 10px;
   text-align: center;
   width: 19%;
+  color: #000;
 }
 
 #especificaciones .especificaciones table tbody tr td:first-child{ width: 24%; text-align: left;}
