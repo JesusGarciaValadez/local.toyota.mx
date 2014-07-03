@@ -320,11 +320,11 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                 <div class="slide" id="slide-interior-02">
                   <!--hotspot-->
                   <div class="hotspot-container hotspot-right">
-                    <a href="#" class="hotspot">Mayor espacio en cajuela.</a>
+                    <a href="#" class="hotspot">Asientos de la 3a fila abatibles estilo “Tilt Down”.</a>
                     <div class="hotspot-detail">
                       <a href="#" class="hotspot-close">cerrar</a>
                       <div>
-                        <p class="hotspot-title">Mayor espacio en cajuela.</p>
+                        <p class="hotspot-title">Asientos de la 3a fila abatibles estilo “Tilt Down”.</p>
                       </div>
                     </div>
                   </div>
@@ -333,11 +333,11 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                 <div class="slide" id="slide-interior-03">
                   <!--hotspot-->
                   <div class="hotspot-container">
-                    <a href="#" class="hotspot">Increíble techo panorámico</a>
+                    <a href="#" class="hotspot">Increíble techo panorámico en versión Highlander Limited PR.</a>
                     <div class="hotspot-detail">
                       <a href="#" class="hotspot-close">cerrar</a>
                       <div>
-                        <p class="hotspot-title">Increíble techo panorámico</p>
+                        <p class="hotspot-title">Increíble techo panorámico en versión Highlander Limited PR.</p>
                       </div>
                     </div>
                   </div>
@@ -346,11 +346,11 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                 <div class="slide" id="slide-interior-04">
                   <!--hotspot-->
                   <div class="hotspot-container">
-                    <a href="#" class="hotspot">Pantalla touchscreen de 8"</a>
+                    <a href="#" class="hotspot">Sistema de entretenimiento con DVD, Blu-ray y control remoto.</a>
                     <div class="hotspot-detail">
                       <a href="#" class="hotspot-close">cerrar</a>
                       <div>
-                        <p class="hotspot-title">Pantalla<br>touchscreen de 8"</p>
+                        <p class="hotspot-title">Sistema de entretenimiento con DVD, Blu-ray y control remoto.</p>
                       </div>
                     </div>
                   </div>
