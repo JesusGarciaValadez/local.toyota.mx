@@ -408,7 +408,7 @@ $(function() {
       $('.financiamiento-plazo').text(plazo_credito);
 
       version = $('#financiamiento-modelo option:selected').val();
-      $('.financiamiento-auto').text('Hhighlander ' + version + ' 2014');
+      $('.financiamiento-auto').text('Highlander ' + version + ' 2014');
 
       precio_actual = precios[version]/100;
       $('.financiamiento-precio').text(number_format(precio_actual,2));
@@ -547,7 +547,7 @@ $(function() {
       $('.amortizacion').text(tipo_credito);
 
       var cotizacion = {
-        'auto': 'Hhighlander ' + version + ' 2014',
+        'auto': 'Highlander ' + version + ' 2014',
         'enganche': number_format(total_enganche,2),
         'enper': $('#financiamiento-enganche').val(),
         'plazo': plazo_credito,
