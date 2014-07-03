@@ -160,7 +160,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                             <td>Faros elipsoidales tipo proyector</td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td>
                           </tr>
                           <tr>
-                            <td>Luces de cortesía en espejos laterales</td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td>
+                            <td>Luces de cortesía en espejos laterales</td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td>
                           </tr>
                           <tr>
                             <td>Luces diurnas cancelables</td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td>
@@ -178,7 +178,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                             <td>Quemacocos eléctrico</td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td>
                           </tr> 
                           <tr>
-                            <td>Spoiler del color de la carrocería</td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td>
+                            <td>Spoiler al color de la carrocería</td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td>
                           </tr> 
                           <tr>
                             <td>Techo panorámico</td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/no-disponible.png"></td>
@@ -214,7 +214,16 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                             <td>Aire acondicionado automático de 3 zonas</td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png">
                           </tr>
                           <tr>
-                            <td>Aire acondicionado manual de 3 zonas</td><td><img src="imgs/estandar.png"></td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/no-disponible.png">
+                            <td>Aire acondicionado manual</td><td><img src="imgs/estandar.png"></td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/no-disponible.png">
+                          </tr>
+                          <tr>
+                            <td>Aire acondicionado automatico</td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/no-disponible.png">
+                          </tr>
+                          <tr>
+                            <td>Aire acondicionado manual de 2 zonas</td><td><img src="imgs/estandar.png"></td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/no-disponible.png">
+                          </tr>
+                          <tr>
+                            <td>Aire acondicionado manual de 3 zonas</td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png">
                           </tr>
                           <tr>
                             <td>Asiento del conductor de 6 posiciones con ajuste manual</td><td><img src="imgs/estandar.png"></td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/no-disponible.png">
@@ -238,6 +247,21 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                             <td>Computadora de viaje con 6 funciones</td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png">
                           </tr>
                           <tr>
+                            <td>Autonomía (distancia para vaciado de comb)</td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png">
+                          </tr>
+                          <tr>
+                            <td>Consumo promedio de ombustible</td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png">
+                          </tr>
+                          <tr>
+                            <td>Consumo TOTAL promedio de combustible (Guarda hasta 5 valores anteriores)</td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png">
+                          </tr>
+                          <tr>
+                            <td>Consumo instantaneo de combustible</td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png">
+                          </tr>
+                          <tr>
+                            <td>Velocidad promedio</td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png">
+                          </tr>
+                          <tr>
                             <td>Controles de Bluetooth® montados en el volante</td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png">
                           </tr>
                           <tr>
@@ -247,7 +271,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                             <td>Control de velocidad crucero</td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png">
                           </tr>
                           <tr>
-                            <td>Driver easy speak (uso de micrófono conductor)</td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png">
+                            <td>Driver Easy Speak (uso de micrófono conductor)</td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png">
                           </tr>
                           <tr>
                             <td>Espejo retrovisor día/noche</td><td><img src="imgs/estandar.png"></td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/no-disponible.png">
@@ -283,10 +307,13 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                             <td>Sensores de reversa</td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png">
                           </tr>
                           <tr>
-                            <td>Vestiduras de piel perforada</td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png">
+                            <td>Vestiduras de tela</td><td><img src="imgs/estandar.png"></td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/no-disponible.png">
                           </tr>
                           <tr>
-                            <td>Vestiduras de tela</td><td><img src="imgs/estandar.png"></td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/no-disponible.png">
+                            <td>Vestiduras de piel</td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/no-disponible.png">
+                          </tr>
+                          <tr>
+                            <td>Vestiduras de piel perforada</td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/no-disponible.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png">
                           </tr>
                           <tr>
                             <td>Volante con ajuste de altura y profundidad</td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png">
@@ -337,7 +364,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                             <td>Bolsas de aire tipo cortina en las 3 filas de asientos</td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td>
                           </tr>
                           <tr>
-                            <td>Cabeceras activas frontales</td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td>
+                            <td>Asientos tipo WIL en primera fila</td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td>
                           </tr>
                           <tr>
                             <td>Sistemas LATCH e ISO-FIX para sillas de niños</td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td><td><img src="imgs/estandar.png"></td>
@@ -382,10 +409,10 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                             <td>Transmisión</td><td colspan="4" class="text-center">Automática de 6 velocidades con ECT-i</td>
                           </tr>
                           <tr>
-                            <td>Sistema de tracción</td><td colspan="4" class="text-center">Tracción delantera con control de estabilidad (VSC mejorada EPS) y control de asistencia (HAC)</td>
+                            <td>Sistema de tracción</td><td colspan="4" class="text-center">Sistema  de control de tracción y estabilidad: TRAC y VCS  (mejorado EPS)</td>
                           </tr>
                           <tr>
-                            <td>Tren motriz</td><td colspan="4" class="text-center">2WD</td>
+                            <td>Tracción</td><td colspan="4" class="text-center">Tracción delantera 2 WD </td>
                           </tr>
                           <tr>
                             <td>Suspensión delantera</td><td colspan="4" class="text-center">Independiente tipo McPherson con resortes helicoidales y barra estabilizadora</td>
@@ -400,7 +427,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                             <td>Diámetro de giro</td><td colspan="4" class="text-center">11.8m</td>
                           </tr>
                           <tr>
-                            <td>Frenos</td><td colspan="4" class="text-center">Sistema antibloqueo (ABS) con distribución electrónica de fuerza de frenado y asistencia de frenado (BA)</td>
+                            <td>Frenos</td><td colspan="4" class="text-center">De disco en las cuatro ruedas, Sistema ABS (antibloqueo) EBD (disribución electronica de la fuerza de frenado) y AB (Asistencia de frenado en situcionesde pánico o emergencia)</td>
                           </tr>
                         </tbody>
                       </table>
@@ -463,16 +490,16 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                         </thead>
                         <tbody>
                           <tr>
-                            <td>Espacio para cabeza</td><td class="text-center">1,034/1,013/913</td><td colspan="3"></td>
+                            <td>Espacio para cabeza</td><td class="text-center">1,034</td><td colspan="3"></td>
                           </tr>
                           <tr>
-                            <td>Espacio para cabeza con quemacocos</td><td></td><td class="text-center">1,003/1,006/913</td><td class="text-center">1,010/960/913</td><td class="text-center">1,003/1,006/913</td>
+                            <td>Espacio para cabeza con quemacocos</td><td></td><td class="text-center">1,003</td><td class="text-center">1,010</td><td class="text-center">1,003</td>
                           </tr>
                           <tr>
-                            <td>Espacio para hombros</td><td class="text-center">1,507/1,513/1,398</td><td class="text-center" colspan="3">1,507/1,499/1,398</td>
+                            <td>Espacio para hombros</td><td class="text-center" colspan="4">1,507</td>
                           </tr>
                           <tr>
-                            <td>Espacio para piernas</td><td class="text-center" colspan="4">1,123/976/703</td>
+                            <td>Espacio para piernas</td><td class="text-center" colspan="4">1,123</td>
                           </tr>
                         </tbody>
                       </table>
@@ -508,7 +535,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                             <td>Tanque de combustible (L)</td><td class="text-center" colspan="4">72.5</td>
                           </tr>
                           <tr>
-                            <td>Configuracion de asientos</td><td class="text-center" colspan="2">2 : 3 : 3</td><td class="text-center" colspan="2">2 : 3 : 3</td>
+                            <td>Configuracion de asientos</td><td class="text-center" colspan="2">2 : 3 : 3</td><td class="text-center" colspan="2">2 : 2 : 3</td>
                           </tr>
                           <tr>
                             <td>Pasajeros</td><td class="text-center" colspan="2">8</td><td class="text-center" colspan="2">7</td>

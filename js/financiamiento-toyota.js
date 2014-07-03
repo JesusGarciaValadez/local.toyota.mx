@@ -102,12 +102,10 @@ $(function() {
   };
 
   var modelos = {
-    'BASE MT'     : 1481,
-    'BASE AT'     : 1482,
-    'LE'          : 1483,
-    'S MT'        : 1484,
-    'S AT'        : 1485,
-    'S PLUS AT'    : 1486
+    'LE'     : 1527,
+    'XLE'     : 1528,
+    'Limited Blu-Ray'          : 1529,
+    'LTD Panorama Roof'        : 1530
   };
 
   var txt_creditos = {
@@ -116,12 +114,10 @@ $(function() {
   };
 
   var precios = {
-    'BASE MT'   : 23989000,
-    'BASE AT'   : 24989000,
-    'LE'        : 26989000,
-    'S MT'      : 27989000,
-    'S AT'      : 28989000,
-    'S PLUS AT'  : 31589000
+    'LE'   : 47390000,
+    'XLE'   : 53440000,
+    'Limited Blu-Ray'        : 61990000,
+    'LTD Panorama Roof'      : 60040000
   };
 
   var seguros = {
@@ -187,121 +183,121 @@ $(function() {
 
     'LE'     : {
       'amplia'    : {
-        '12' : 1446426,
-        '18' : 2131630,
-        '24' : 2816833,
-        '30' : 3482133,
-        '36' : 4147433,
-        '48' : 5439071,
-        '60' : 6693160
+        '12' : 26189.95466,
+        '18' : 38680.53125,
+        '24' : 51171.10784,
+        '30' : 63298.85557,
+        '36' : 75426.6033,
+        '48' : 98971.88057,
+        '60' : 121832.6722
       },
       'oro'  : {
-        '12' : 1678655,
-        '18' : 2476583,
-        '24' : 3274510,
-        '30' : 4049260,
-        '36' : 4824009,
-        '48' : 6328137,
-        '60' : 7788538
+        '12' : 28725.15596,
+        '18' : 42446.31926,
+        '24' : 56167.48257,
+        '30' : 69490.07067,
+        '36' : 82812.65878,
+        '48' : 108677.6452,
+        '60' : 133790.7097
       },
       'diamante' : {
-        '12' : 1829505,
-        '18' : 2700655,
-        '24' : 3571805,
-        '30' : 4417650,
-        '36' : 5263495,
-        '48' : 6905650,
-        '60' : 8500067
+        '12' : 29526.32692,
+        '18' : 43636.37861,
+        '24' : 57746.4303,
+        '30' : 71446.61028,
+        '36' : 85146.79026,
+        '48' : 111744.8481,
+        '60' : 137569.6729
       }
     },
 
-    'S MT'     : {
+    'XLE'     : {
       'amplia'    : {
-        '12' : 1486296,
-        '18' : 2190853,
-        '24' : 2895409,
-        '30' : 3579500,
-        '36' : 4263590,
-        '48' : 5591710,
-        '60' : 6881219
+        '12' : 28840.32627,
+        '18' : 42617.39325,
+        '24' : 56394.46023,
+        '30' : 69771.3281,
+        '36' : 83148.19597,
+        '48' : 109118.5633,
+        '60' : 134333.945
       },
       'oro'  : {
-        '12' : 1725573,
-        '18' : 2546275,
-        '24' : 3366977,
-        '30' : 4163838,
-        '36' : 4960700,
-        '48' : 6507758,
-        '60' : 8009842
+        '12' : 31625.86095,
+        '18' : 46755.02646,
+        '24' : 61884.19196,
+        '30' : 76573.88233,
+        '36' : 91263.5727,
+        '48' : 119782.7042,
+        '60' : 147472.755
       },
       'diamante' : {
-        '12' : 1876423,
-        '18' : 2770347,
-        '24' : 3664272,
-        '30' : 4532229,
-        '36' : 5400186,
-        '48' : 7085272,
-        '60' : 8721370
+        '12' : 32427.03191,
+        '18' : 47945.08581,
+        '24' : 63463.1397,
+        '30' : 78530.42194,
+        '36' : 93597.70418,
+        '48' : 122849.9071,
+        '60' : 151251.7182
       }
     },
 
-    'S AT'     : {
+    'Limited Blu-Ray'     : {
       'amplia'    : {
-        '12' : 1526166,
-        '18' : 2250076,
-        '24' : 2973985,
-        '30' : 3676867,
-        '36' : 4379748,
-        '48' : 5744349,
-        '60' : 7069279
+        '12' : 32454.46939,
+        '18' : 47985.84143,
+        '24' : 63517.21348,
+        '30' : 78597.427,
+        '36' : 93677.64052,
+        '48' : 122954.9488,
+        '60' : 151381.1353
       },
       'oro'  : {
-        '12' : 1772492,
-        '18' : 2615967,
-        '24' : 3459443,
-        '30' : 4278417,
-        '36' : 5097392,
-        '48' : 6687380,
-        '60' : 8231145
+        '12' : 35581.36775,
+        '18' : 52630.53627,
+        '24' : 69679.70478,
+        '30' : 86233.6255,
+        '36' : 102787.5462,
+        '48' : 134925.9665,
+        '60' : 166130.0895
       },
       'diamante' : {
-        '12' : 1923341,
-        '18' : 2840040,
-        '24' : 3756738,
-        '30' : 4646808,
-        '36' : 5536878,
-        '48' : 7264893,
-        '60' : 8942674
+        '12' : 36382.53872,
+        '18' : 53820.59562,
+        '24' : 71258.65251,
+        '30' : 88190.16511,
+        '36' : 105121.6777,
+        '48' : 137993.1694,
+        '60' : 169909.0527
       }
     },
 
-    'S PLUS AT'     : {
+    'LTD Panorama Roof'     : {
       'amplia'    : {
-        '12' : 1629829,
-        '18' : 2404056,
-        '24' : 3178283,
-        '30' : 3930020,
-        '36' : 4681758,
-        '48' : 6141209,
-        '60' : 7558233
+        '12' : 31731.64076,
+        '18' : 46912.1518,
+        '24' : 62092.66283,
+        '30' : 76832.20722,
+        '36' : 91571.75161,
+        '48' : 120187.6717,
+        '60' : 147971.6972
       },
       'oro'  : {
-        '12' : 1894479,
-        '18' : 2797167,
-        '24' : 3699855,
-        '30' : 4576322,
-        '36' : 5452789,
-        '48' : 7154396,
-        '60' : 8806535
+        '12' : 34790.26639,
+        '18' : 51455.4343,
+        '24' : 68120.60222,
+        '30' : 84301.67687,
+        '36' : 100482.7515,
+        '48' : 131897.314,
+        '60' : 162398.6226
       },
       'diamante' : {
-        '12' : 2045329,
-        '18' : 3021240,
-        '24' : 3997150,
-        '30' : 4944713,
-        '36' : 5892275,
-        '48' : 7731909,
-        '60' : 9518064
+        '12' : 35591.43736,
+        '18' : 52645.49365,
+        '24' : 69699.54995,
+        '30' : 86258.21648,
+        '36' : 102816.883,
+        '48' : 134964.5169,
+        '60' : 166177.5858
 
       }
     },
@@ -403,7 +399,7 @@ $(function() {
     cotizar:function(){
 
       tipo_credito = $('#financiamiento-tipo-credito option:selected').val();
-      tasa_interes = tipo_credito == 'balloon' ? .1045 : .0995;
+      tasa_interes = tipo_credito == 'balloon' ? .1045 : .1095;
 
       seguro_tipo   = $('#financiamiento-tipo-seguro option:selected').val();
       $('.financiamiento-tipo-poliza').text(seguro_tipo);
@@ -412,7 +408,7 @@ $(function() {
       $('.financiamiento-plazo').text(plazo_credito);
 
       version = $('#financiamiento-modelo option:selected').val();
-      $('.financiamiento-auto').text('Corolla ' + version + ' 2014');
+      $('.financiamiento-auto').text('Hhighlander ' + version + ' 2014');
 
       precio_actual = precios[version]/100;
       $('.financiamiento-precio').text(number_format(precio_actual,2));
@@ -426,9 +422,22 @@ $(function() {
 
       $('#texto_credito').text(txt_creditos[tipo_credito]);
 
-      vida = ((precio_actual  - total_enganche  + seguros[version][seguro_tipo][plazo_credito]/100 )*0.0122)/(1-0.0122);//
+      vida = ((precio_actual  - total_enganche  + seguros[version][seguro_tipo][plazo_credito] )*0.0122)/(1-0.0122);//
+        
+        //console.log("resta "+ (precio_actual  - total_enganche));
+        
+        //console.log("version "+ version);
+        
+        //console.log("seguro_tipo "+ seguro_tipo);
+        //console.log("plazo_credito "+ plazo_credito);
+        
+         //console.log("seguros "+ seguros[version][seguro_tipo][plazo_credito]);
+        
+        //console.log("vida "+ vida);
 
-      monto_diario = precio_actual - total_enganche + vida + seguros[version][seguro_tipo][plazo_credito]/100;
+      monto_diario = precio_actual - total_enganche + vida + seguros[version][seguro_tipo][plazo_credito];
+        
+        //console.log("monto diario "+ monto_diario);
 
        // console.log('precio_actual = ' + precio_actual);
        // console.log('total_enganche = '+ total_enganche);
@@ -449,10 +458,10 @@ $(function() {
       $('.financiamiento-pago-mensual').text(number_format(pago_mensual,2));
       $('.financiamiento-pago-mensual-base').text(number_format(pago_mensual,2));
 
-      comision_apertura = monto_diario * 0.0175 *1.16;
+      comision_apertura = monto_diario * 0.0175 *1.16*1;
       $('.financiamiento-comision-apertura').text(number_format(comision_apertura,2));
 
-      $('.financiamiento-tasa-especial').text(tipo_credito == 'balloon' ? '10.45' : '9.95');
+      $('.financiamiento-tasa-especial').text(tipo_credito == 'balloon' ? '10.95' : '10.95');
 
       // console.log(tipo_credito == 'balloon' ? '10.45' : '9.95')
       // console.log(tipo_credito);
@@ -538,7 +547,7 @@ $(function() {
       $('.amortizacion').text(tipo_credito);
 
       var cotizacion = {
-        'auto': 'Corolla ' + version + ' 2014',
+        'auto': 'Hhighlander ' + version + ' 2014',
         'enganche': number_format(total_enganche,2),
         'enper': $('#financiamiento-enganche').val(),
         'plazo': plazo_credito,

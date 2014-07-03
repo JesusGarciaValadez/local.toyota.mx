@@ -60,7 +60,7 @@ section .container {
 }
 .navbar .nav > li {
   line-height: 62px;
-  margin: 0px 33px;
+  margin: 0px 15px;
 }
 
 .navbar .nav > li > a {
@@ -228,8 +228,15 @@ section#financiamiento {
   background-color: #000;
   background-position: center 210px;
 }
+
+section#financiamiento {
+  background-image: url(img/bg-financiamiento.png);
+  background-repeat:no-repeat;
+  background-position:center; 
+}
 section#financiamiento {
   min-height: 800px;
+  overflow: hidden;
 }
 
 section#distribuidores .container {
@@ -1673,6 +1680,7 @@ section#distribuidores .container {
 /*FINANCIAMIENTO*/
 #financiamiento .container {
   position: relative;
+  margin-top: 150px;
 }
 .financiamiento-steps-container {
   margin: 20px 0;
@@ -1690,7 +1698,7 @@ section#distribuidores .container {
   font-weight: bold;
   letter-spacing: -0.025em;
   text-transform: uppercase;
-  color: #4d4e50;
+  color: #fff;
 }
 #financiamiento-steps .step-bullet {
   display: block;
@@ -1730,6 +1738,7 @@ section#distribuidores .container {
 }
 #financiamiento-car-container {
   margin-bottom: 20px;
+  display:none;
 }
 
 .financiamiento-column {
@@ -1787,7 +1796,7 @@ section#distribuidores .container {
 .disclaimer {
   font-size: 10px;
   line-height: 14px;
-  color: #363535;
+  color: #fff;
 }
 .financiamiento-column .control-group {
   margin-bottom: 12px;
@@ -2005,6 +2014,7 @@ section#especificaciones {
   padding: 7px 10px;
   text-align: center;
   width: 19%;
+  color: #000;
 }
 
 #especificaciones .especificaciones table tbody tr td:first-child{ width: 24%; text-align: left;}
