@@ -38,7 +38,7 @@ if ( json_last_error() != JSON_ERROR_NONE ) {
 
 $body = <<<BODY
 <body>
-  <h1>¡Hola!, Aquí tienes la cotización de tu crédito Corolla</h1>
+  <h1>¡Hola!, Aquí tienes la cotización de tu crédito Highlander</h1>
   <h2>Tu Crédito</h2>
   <table width="100%" border="0" style="text-transform:uppercase;">
     <tbody>
