@@ -18,6 +18,9 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<!-- bxSlider Javascript file -->
 	<script src="plugins/bxslider/jquery.bxslider.min.js"></script>
+</head>
+
+<body>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -56,9 +59,7 @@ window._fbq = window._fbq || [];
 window._fbq.push(['track', 'PixelInitialized', {}]);
 </script>
 <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=306593512832230&amp;ev=NoScript" /></noscript>
-</head>
 
-<body>
     <div id="mobilemenu">
         <div id="containmenu">
             <h2>Conoce más del sitio</h2>
