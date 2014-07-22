@@ -44,6 +44,10 @@ $browser = new Browser();
       <script src="/js/html5shiv.js"></script>
     <![endif]-->
 <!--FB Code Stuff -->
+
+  </head>
+
+  <body data-spy="scroll" data-target="#main-navbar">
 <script>(function() {
   var _fbq = window._fbq || (window._fbq = []);
   if (!_fbq.loaded) {
@@ -70,9 +74,6 @@ document.write('<scr'+'ipt src="HTTP://bs.serving-sys.com/Serving/ActivityServer
 <img width="1" height="1" style="border:0" src="HTTP://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=503032&amp;ns=1"/>
 </noscript>
 <script src="https://www.wtp101.com/pixel?id=23420"></script>
-  </head>
-
-  <body data-spy="scroll" data-target="#main-navbar">
     <div class="navbar navbar-inverse navbar-fixed-top" id="main-navbar">
       <div class="navbar-inner">
 
