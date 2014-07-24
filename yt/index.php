@@ -1,6 +1,6 @@
 <?php include('header.php'); ?>
 <script>
-var new_height = JSON.stringify({"height": "1360px"});
+var new_height = JSON.stringify({"height": "1380px"});
 top.postMessage(new_height, "https://www.youtube.com/");
 top.postMessage(new_height, "http://www.youtube.com/");
 </script>
