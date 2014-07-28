@@ -31,17 +31,6 @@
     ga('send', 'pageview');
 
     </script>
-<script type='text/javascript'>
-var ebRand = Math.random()+'';
-ebRand = ebRand * 1000000;
-//<![CDATA[ 
-document.write('<scr'+'ipt src="HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=489035&amp;rnd=' + ebRand + '"></scr' + 'ipt>');
-//]]>
-</script>
-<noscript>
-<img width="1" height="1" style="border:0" src="HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=489035&amp;ns=1"/>
-</noscript>
-
 <!--FB Code Stuff -->
 <script>(function() {
   var _fbq = window._fbq || (window._fbq = []);
