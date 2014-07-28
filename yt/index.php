@@ -5,7 +5,6 @@ top.postMessage(new_height, "https://www.youtube.com/");
 top.postMessage(new_height, "http://www.youtube.com/");
 </script>
 <script type='text/javascript'>
->>>>>>> a378b7dbba0497cb3e0bcafdb7e2340854e779ae
 var ebRand = Math.random()+'';
 ebRand = ebRand * 1000000;
 document.write('<scr'+'ipt src=""HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=503030&amp;rnd=' + ebRand + '""></scr' + 'ipt>');
