@@ -4,10 +4,7 @@ var new_height = JSON.stringify({"height": "1380px"});
 top.postMessage(new_height, "https://www.youtube.com/");
 top.postMessage(new_height, "http://www.youtube.com/");
 </script>
-<<<<<<< HEAD
 <script type='text/javascript'>
-=======
-"<script type='text/javascript'>
 >>>>>>> a378b7dbba0497cb3e0bcafdb7e2340854e779ae
 var ebRand = Math.random()+'';
 ebRand = ebRand * 1000000;
@@ -16,10 +13,6 @@ document.write('<scr'+'ipt src=""HTTPS://bs.serving-sys.com/Serving/ActivityServ
 <noscript>
 <img width=""1"" height=""1"" style=""border:0"" src=""HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=503030&amp;ns=1""/>
 </noscript>
-<<<<<<< HEAD
-
-=======
->>>>>>> a378b7dbba0497cb3e0bcafdb7e2340854e779ae
 <script src="https://www.wtp101.com/pixel?id=23130"></script>
 	<section class="secVideo container">
 		<article>
