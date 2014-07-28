@@ -8,7 +8,6 @@ var new_height = JSON.stringify({"height": "1204px"});
 top.postMessage(new_height, "https://www.youtube.com/");
 top.postMessage(new_height, "http://www.youtube.com/");
 </script>
-
 <script type='text/javascript'>
 var ebRand = Math.random()+'';
 ebRand = ebRand * 1000000;
