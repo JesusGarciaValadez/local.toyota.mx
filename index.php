@@ -44,7 +44,21 @@ $browser = new Browser();
       <script src="/js/html5shiv.js"></script>
     <![endif]-->
 <!--FB Code Stuff -->
-
+    <script type="text/javascript" id="DoubleClickFloodlightTag">
+      function click_handler(div,frame,src,type,cat){
+        var axel = Math.random() + "";
+        var a = axel * 10000000000000;
+        var flDiv=document.body.appendChild(document.createElement("div")); 
+            flDiv.setAttribute("id",div); 
+            flDiv.style.position = "absolute"; 
+            flDiv.style.top = "0"; 
+            flDiv.style.left = "0"; 
+            flDiv.style.width = "1px"; 
+            flDiv.style.height = "1px"; 
+            flDiv.style.display = "none"; 
+            flDiv.innerHTML='<iframe id="'+frame+'" src="https://4493100.fls.doubleclick.net/activityi;src='+src+';type=' + type + ';cat=' + cat + ';ord=' + a + '?" width="1" height="1" frameborder="0"><\/iframe>';
+      }
+    </script>
   </head>
 
   <body data-spy="scroll" data-target="#main-navbar">
@@ -75,15 +89,15 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
           </button>
           <a href="#" class="brand hidden-desktop">Toyota</a>
           <p class="navbar-text pull-right visible-desktop">
-            <a href="#home"><img src="css/img/logo-highlander.png" alt="Toyota Corolla"></a>
+            <a href="#home" onclick="click_handler('DCLK_FLDiv1','DCLK_FLIframe1',4493100,'Homeg0','MX_Hi0');"><img src="css/img/logo-highlander.png" alt="Toyota Corolla"></a>
           </p>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="visible-desktop"><a href="http://toyota.com.mx" id="logo-toyota">Toyota</a></li>
-              <li class="hidden"><a href="#home">Inicio</a></li>
-              <li data-subnav="#subnav-explora"><a href="#explora">Explora</a></li>
-              <li data-subnav="#subnav-modelos"><a href="#modelos">Modelos</a></li>
-              <li data-subnav="#subnav-financiamiento"><a href="#financiamiento">Financiamiento</a></li>
+              <li class="hidden"><a href="#home" onclick="click_handler('DCLK_FLDiv1','DCLK_FLIframe1',4493100,'Homeg0','MX_Hi0');">Inicio</a></li>
+              <li data-subnav="#subnav-explora"><a href="#explora" onclick="click_handler('DCLK_FLDiv2','DCLK_FLIframe2',4493100,'Explo0','MX_Hi0');">Explora</a></li>
+              <li data-subnav="#subnav-modelos"><a href="#modelos" onclick="click_handler('DCLK_FLDiv3','DCLK_FLIframe3',4493100,'Model0','MX_Hi0');">Modelos</a></li>
+              <li data-subnav="#subnav-financiamiento"><a href="#financiamiento" onclick="click_handler('DCLK_FLDiv4','DCLK_FLIframe4',4493100,'Finan0','MX_Hi0');">Financiamiento</a></li>
               <li><a href="#distribuidores">Distribuidores</a></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -119,16 +133,6 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 
     <div id="wrap">
       <section class="deck" id="home">
-<!--{pixel}-->
-<script type="text/javascript">
-var axel = Math.random() + "";
-var a = axel * 10000000000000;
-document.write('<iframe src="https://4493100.fls.doubleclick.net/activityi;src=4493100;type=Homeg0;cat=MX_Hi0;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
-</script>
-<noscript>
-<iframe src="https://4493100.fls.doubleclick.net/activityi;src=4493100;type=Homeg0;cat=MX_Hi0;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>
-</noscript>
-
 
         <div class="carrusel" id="carrusel-home">
           <div class="slide" id="home-jay">
@@ -179,7 +183,7 @@ document.write('<iframe src="https://4493100.fls.doubleclick.net/activityi;src=4
           <div class="row clearfix text-center" id="slide-pager-home">
           </div>
           <div class="row clearfix text-center">
-            <a href="#explora" id="btn-explora">EXPLORA TU HIGHLANDER</a>
+            <a href="#explora" id="btn-explora" onclick="click_handler('DCLK_FLDiv2','DCLK_FLIframe2',4493100,'Explo0','MX_Hi0');">EXPLORA TU HIGHLANDER</a>
           </div>
         </div>
         <!-- <div class="row" id="trailer-container">
@@ -190,14 +194,7 @@ document.write('<iframe src="https://4493100.fls.doubleclick.net/activityi;src=4
       </section>
 
       <section class="deck" id="explora">
-<script type="text/javascript">
-var axel = Math.random() + "";
-var a = axel * 10000000000000;
-document.write('<iframe src="https://4493100.fls.doubleclick.net/activityi;src=4493100;type=Explo0;cat=MX_Hi0;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
-</script>
-<noscript>
-<iframe src="https://4493100.fls.doubleclick.net/activityi;src=4493100;type=Explo0;cat=MX_Hi0;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>
-</noscript>
+
         <script src="https://www.wtp101.com/pixel?id=23421"></script>
         <div class="horizontal-wrapper">
           <div class="section-inner">
@@ -513,14 +510,6 @@ document.write('<iframe src="https://4493100.fls.doubleclick.net/activityi;src=4
       </section>
 
       <section class="deck" id="modelos">
-<script type="text/javascript">
-var axel = Math.random() + "";
-var a = axel * 10000000000000;
-document.write('<iframe src="https://4493100.fls.doubleclick.net/activityi;src=4493100;type=Model0;cat=MX_Hi0;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
-</script>
-<noscript>
-<iframe src="https://4493100.fls.doubleclick.net/activityi;src=4493100;type=Model0;cat=MX_Hi0;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>
-</noscript>
       <script src="https://www.wtp101.com/pixel?id=23422"></script>
         <div class="horizontal-wrapper">
           <div class="section-inner">
@@ -669,14 +658,6 @@ document.write('<iframe src="https://4493100.fls.doubleclick.net/activityi;src=4
       </section>
 
       <section class="printable deck" id="financiamiento">
-<script type="text/javascript">
-var axel = Math.random() + "";
-var a = axel * 10000000000000;
-document.write('<iframe src="https://4493100.fls.doubleclick.net/activityi;src=4493100;type=Finan0;cat=MX_Hi0;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
-</script>
-<noscript>
-<iframe src="https://4493100.fls.doubleclick.net/activityi;src=4493100;type=Finan0;cat=MX_Hi0;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>
-</noscript>
         <div class="container">
           <a href="#" class="financiamiento-control hidden" data-direction="prev" id="financiamiento-anterior">Anterior</a>
           <div class="row hidden-tablet hidden-phone" id="financiamiento-car-container">
@@ -906,14 +887,6 @@ document.write('<iframe src="https://4493100.fls.doubleclick.net/activityi;src=4
       </section>
 
       <section class="deck" id="distribuidores">
-<script type="text/javascript">
-var axel = Math.random() + "";
-var a = axel * 10000000000000;
-document.write('<iframe src="https://4493100.fls.doubleclick.net/activityi;src=4493100;type=Distr0;cat=MX_Hi0;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
-</script>
-<noscript>
-<iframe src="https://4493100.fls.doubleclick.net/activityi;src=4493100;type=Distr0;cat=MX_Hi0;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>
-</noscript>
         <div id="map-container"></div>
         <div class="container distribuidor-container">
           <div class="span4 distribuidor-row">
@@ -976,7 +949,7 @@ document.write('<iframe src="https://4493100.fls.doubleclick.net/activityi;src=4
 
         </div>
         <div class="row pull-right" id="back-to-home">
-          <a href="#home" class="btn-back-home pull-right">Corolla</a>
+          <a href="#home" class="btn-back-home pull-right" onclick="click_handler('DCLK_FLDiv1','DCLK_FLIframe1',4493100,'Homeg0','MX_Hi0');">Corolla</a>
         </div>
       </section>
 
@@ -1103,4 +1076,3 @@ document.write('<iframe src="https://4493100.fls.doubleclick.net/activityi;src=4
 
   </body>
 </html>
-
