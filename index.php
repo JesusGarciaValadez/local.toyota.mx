@@ -64,16 +64,6 @@ window._fbq = window._fbq || [];
 window._fbq.push(['track', 'PixelInitialized', {}]);
 </script>
 <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=306593512832230&amp;ev=NoScript" /></noscript>
-<script type='text/javascript'>
-
-var ebRand = Math.random()+'';
-ebRand = ebRand * 1000000;
-document.write('<scr'+'ipt src="HTTP://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=503032&amp;rnd=' + ebRand + '"></scr' + 'ipt>');
-</script>
-<noscript>
-<img width="1" height="1" style="border:0" src="HTTP://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=503032&amp;ns=1"/>
-</noscript>
-<script src="https://www.wtp101.com/pixel?id=23420"></script>
     <div class="navbar navbar-inverse navbar-fixed-top" id="main-navbar">
       <div class="navbar-inner">
 
@@ -129,6 +119,17 @@ document.write('<scr'+'ipt src="HTTP://bs.serving-sys.com/Serving/ActivityServer
 
     <div id="wrap">
       <section class="deck" id="home">
+<!--{pixel}-->
+<script type="text/javascript">
+var axel = Math.random() + "";
+var a = axel * 10000000000000;
+document.write('<iframe src="https://4493100.fls.doubleclick.net/activityi;src=4493100;type=Homeg0;cat=MX_Hi0;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+</script>
+<noscript>
+<iframe src="https://4493100.fls.doubleclick.net/activityi;src=4493100;type=Homeg0;cat=MX_Hi0;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>
+</noscript>
+
+
         <div class="carrusel" id="carrusel-home">
           <div class="slide" id="home-jay">
               <div class="text-center" id="parent-teaser">
@@ -189,6 +190,14 @@ document.write('<scr'+'ipt src="HTTP://bs.serving-sys.com/Serving/ActivityServer
       </section>
 
       <section class="deck" id="explora">
+<script type="text/javascript">
+var axel = Math.random() + "";
+var a = axel * 10000000000000;
+document.write('<iframe src="https://4493100.fls.doubleclick.net/activityi;src=4493100;type=Explo0;cat=MX_Hi0;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+</script>
+<noscript>
+<iframe src="https://4493100.fls.doubleclick.net/activityi;src=4493100;type=Explo0;cat=MX_Hi0;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>
+</noscript>
         <script src="https://www.wtp101.com/pixel?id=23421"></script>
         <div class="horizontal-wrapper">
           <div class="section-inner">
@@ -504,6 +513,14 @@ document.write('<scr'+'ipt src="HTTP://bs.serving-sys.com/Serving/ActivityServer
       </section>
 
       <section class="deck" id="modelos">
+<script type="text/javascript">
+var axel = Math.random() + "";
+var a = axel * 10000000000000;
+document.write('<iframe src="https://4493100.fls.doubleclick.net/activityi;src=4493100;type=Model0;cat=MX_Hi0;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+</script>
+<noscript>
+<iframe src="https://4493100.fls.doubleclick.net/activityi;src=4493100;type=Model0;cat=MX_Hi0;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>
+</noscript>
       <script src="https://www.wtp101.com/pixel?id=23422"></script>
         <div class="horizontal-wrapper">
           <div class="section-inner">
@@ -652,7 +669,14 @@ document.write('<scr'+'ipt src="HTTP://bs.serving-sys.com/Serving/ActivityServer
       </section>
 
       <section class="printable deck" id="financiamiento">
-
+<script type="text/javascript">
+var axel = Math.random() + "";
+var a = axel * 10000000000000;
+document.write('<iframe src="https://4493100.fls.doubleclick.net/activityi;src=4493100;type=Finan0;cat=MX_Hi0;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+</script>
+<noscript>
+<iframe src="https://4493100.fls.doubleclick.net/activityi;src=4493100;type=Finan0;cat=MX_Hi0;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>
+</noscript>
         <div class="container">
           <a href="#" class="financiamiento-control hidden" data-direction="prev" id="financiamiento-anterior">Anterior</a>
           <div class="row hidden-tablet hidden-phone" id="financiamiento-car-container">
@@ -882,6 +906,14 @@ document.write('<scr'+'ipt src="HTTP://bs.serving-sys.com/Serving/ActivityServer
       </section>
 
       <section class="deck" id="distribuidores">
+<script type="text/javascript">
+var axel = Math.random() + "";
+var a = axel * 10000000000000;
+document.write('<iframe src="https://4493100.fls.doubleclick.net/activityi;src=4493100;type=Distr0;cat=MX_Hi0;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+</script>
+<noscript>
+<iframe src="https://4493100.fls.doubleclick.net/activityi;src=4493100;type=Distr0;cat=MX_Hi0;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>
+</noscript>
         <div id="map-container"></div>
         <div class="container distribuidor-container">
           <div class="span4 distribuidor-row">
