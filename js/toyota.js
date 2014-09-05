@@ -390,6 +390,9 @@ $(document).on('keydown', function(e) {
 });
 
 $(function(){
+
+    click_handler('DCLK_FLDiv1','DCLK_FLIframe1',4493100,'Homeg0','MX_Hi0');
+    
   var scroll = $('#scrollbar').tinyscrollbar();
   /*$('.modelo-terminos a').on('click', function(e){
     e.preventDefault();
@@ -823,6 +826,29 @@ $(function(){
     queue.setMaxConnections(1)
     queue.loadManifest(manifest);
   }, 10000);
+
+var old_element;   
+$( document ).scroll(function() {
+    
+    var active_element = $(".deck").filter(":onScreen").attr('id');
+    
+    if(!old_element || old_element!=active_element){
+        old_element = active_element;
+        
+        if(active_element=='home'){
+            click_handler('DCLK_FLDiv1','DCLK_FLIframe1',4493100,'Homeg0','MX_Hi0');
+        }else if(active_element=='explora'){
+            click_handler('DCLK_FLDiv2','DCLK_FLIframe2',4493100,'Explo0','MX_Hi0');
+        }else if(active_element=='modelos'){
+            click_handler('DCLK_FLDiv3','DCLK_FLIframe3',4493100,'Model0','MX_Hi0');
+        }else if(active_element=='financiamiento'){
+            click_handler('DCLK_FLDiv4','DCLK_FLIframe4',4493100,'Finan0','MX_Hi0');
+        }else if(active_element=='distribuidores'){
+            click_handler('DCLK_FLDiv5','DCLK_FLIframe5',4493100,'Distr0','MX_Hi0');
+        }
+    }
+    
+});
 
 
 });

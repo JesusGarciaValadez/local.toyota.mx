@@ -89,3 +89,17 @@ init =function(){
 }
 
 $(document).on('ready',init);
+
+function click_handler(div,frame,src,type,cat){
+    var axel = Math.random() + "";
+    var a = axel * 10000000000000;
+    var flDiv=document.body.appendChild(document.createElement("div")); 
+    flDiv.setAttribute("id",div); 
+    flDiv.style.position = "absolute"; 
+    flDiv.style.top = "0"; 
+    flDiv.style.left = "0"; 
+    flDiv.style.width = "1px"; 
+    flDiv.style.height = "1px"; 
+    flDiv.style.display = "none"; 
+    flDiv.innerHTML='<iframe id="'+frame+'" src="https://4493100.fls.doubleclick.net/activityi;src='+src+';type=' + type + ';cat=' + cat + ';ord=' + a + '?" width="1" height="1" frameborder="0"><\/iframe>';
+}

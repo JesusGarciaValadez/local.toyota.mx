@@ -98,7 +98,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
               <li data-subnav="#subnav-explora"><a href="#explora" onclick="click_handler('DCLK_FLDiv2','DCLK_FLIframe2',4493100,'Explo0','MX_Hi0');">Explora</a></li>
               <li data-subnav="#subnav-modelos"><a href="#modelos" onclick="click_handler('DCLK_FLDiv3','DCLK_FLIframe3',4493100,'Model0','MX_Hi0');">Modelos</a></li>
               <li data-subnav="#subnav-financiamiento"><a href="#financiamiento" onclick="click_handler('DCLK_FLDiv4','DCLK_FLIframe4',4493100,'Finan0','MX_Hi0');">Financiamiento</a></li>
-              <li><a href="#distribuidores">Distribuidores</a></li>
+              <li><a href="#distribuidores" onclick="click_handler('DCLK_FLDiv5','DCLK_FLIframe5',4493100,'Distr0','MX_Hi0');">Distribuidores</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -1035,6 +1035,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
     <script src="js/preloadjs-0.3.1.min.js"></script>
     <script src="js/fancybox/source/jquery.fancybox.js"></script>
     <script src="js/spin.min.js"></script>
+    <script src="js/jquery.onscreen.min.js"></script>
     <script src="js/toyota.js"></script>
     <script src="js/financiamiento-toyota.js"></script>
 
