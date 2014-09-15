@@ -34,7 +34,7 @@ $browser = new Browser();
     </style>
     <!-- <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet"> -->
 
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap-select/bootstrap-select.css">
     <link rel="stylesheet" href="css/bootstrap-slider/bootstrap-slider.css">
     <link href="js/fancybox/source/jquery.fancybox.css" rel="stylesheet">
@@ -57,6 +57,7 @@ $browser = new Browser();
             flDiv.style.height = "1px"; 
             flDiv.style.display = "none"; 
             flDiv.innerHTML='<iframe id="'+frame+'" src="https://4493100.fls.doubleclick.net/activityi;src='+src+';type=' + type + ';cat=' + cat + ';ord=' + a + '?" width="1" height="1" frameborder="0"><\/iframe>';
+	console.log(type);
       }
     </script>
   </head>
@@ -137,7 +138,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
         <div class="carrusel" id="carrusel-home">
           <div class="slide" id="home-jay">
               <div class="text-center" id="parent-teaser">
-                <p>Una familia con Actitud Highlander.<br><br>Conoce las <span>historias</span> de la familia Cervera y<br>descubre con ellos <span>tu nueva actitud Highlander ‘14.</span></p>
+                <p>Una familia con Actitud Highlander.<br><br>Conoce las <span>historias</span> de la familia Cervera y<br>descubre con ellos <span>tu nueva actitud Highlander ‘15.</span></p>
                 <?php if ( $browser->isMobile() && $browser->isBrowser('iPhone')): ?>
                   <div id="contenedor-teaser">
                     <a href="https://www.youtube.com/watch?v=FHwQr9QUn5I"><img src="imgs/corolla-presenta.jpg"></a>
@@ -195,7 +196,6 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 
       <section class="deck" id="explora">
 
-        <script src="https://www.wtp101.com/pixel?id=23421"></script>
         <div class="horizontal-wrapper">
           <div class="section-inner">
 
@@ -510,7 +510,6 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
       </section>
 
       <section class="deck" id="modelos">
-      <script src="https://www.wtp101.com/pixel?id=23422"></script>
         <div class="horizontal-wrapper">
           <div class="section-inner">
             <div class="sub-section current" id="modelo-l">
@@ -1051,6 +1050,10 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 
 
 <script>
+$(document).ready(function() {
+	click_handler('DCLK_FLDiv1','DCLK_FLIframe1',4493100,'Homeg0','MX_Hi0');
+});
+
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
               m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
