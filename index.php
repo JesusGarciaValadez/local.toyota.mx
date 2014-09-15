@@ -524,7 +524,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                         <h1>Highlander LE</h1>
                         <div class="precio">
                           <span class="desde">Desde</span>
-                          <small>$</small>473,900<sup>00</sup>
+                          <small>$</small>474,800<sup>00</sup>
                         </div>
 
                         <ul class="especificaciones">
@@ -553,7 +553,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                         <h1>Highlander XLE</h1>
                         <div class="precio">
                           <span class="desde">Desde</span>
-                          <small>$</small>534,400<sup>00</sup>
+                          <small>$</small>535,500<sup>00</sup>
                         </div>
                         <ul class="especificaciones">
                           <li>Volante con ajuste de altura y profundidad.</li>
@@ -583,7 +583,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                         <h1>Highlander Limited PR</h1>
                         <div class="precio">
                           <span class="desde">Desde</span>
-                          <small>$</small>600,400<sup>00</sup>
+                          <small>$</small>601,700<sup>00</sup>
                         </div>
                         <ul class="especificaciones">
                           <li>Compuerta trasera tipo hatch con medallón independiente y control remoto.</li>
@@ -612,7 +612,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                         <h1>Highlander Limited</h1>
                         <div class="precio">
                           <span class="desde">Desde</span>
-                          <small>$</small>619,900<sup>00</sup>
+                          <small>$</small>621,700<sup>00</sup>
                         </div>
                         <ul class="especificaciones">
                           <li>Quemacocos eléctrico.</li>
