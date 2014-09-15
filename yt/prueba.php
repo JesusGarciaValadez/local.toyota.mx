@@ -33,7 +33,7 @@ document.write('<iframe src="https://4493100.fls.doubleclick.net/activityi;src=4
             </div>
             <div class="contPrueba sixteen columns">
                 <p>Por favor ingresa tus datos  y selecciona tu sucursal más cercana.</p>
-                <form action="" method="post" enctype="multipart/form-data" onsubmit="click_handler('DCLK_FLDiv1','DCLK_FLIframe1',4493100,'Youtu0','MX_Hi008');">
+                <form action="" method="post" enctype="multipart/form-data" >
                     <input type="text" name="nombre" id="nombre" placeholder="*NOMBRE" required="true">
 
                     <input type="text" name="correo" id="correo" placeholder="*CORREO ELECTRÓNICO" required="true">
