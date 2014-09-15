@@ -618,7 +618,8 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                           <li>Quemacocos eléctrico.</li>
                           <li>Asiento del conductor de 8 posiciones con ajustes eléctricos y memoria.</li>
                           <li>Cámara de visión trasera.</li>
-                          <li>Pantalla touchscreen de 8".</li>
+                          <li>Pantalla touchscreen de 8"</li>
+			  <li>2 aud&iacute;fonos inal&aacute;mbricos</li>
                         </ul>
                         <a href="especificaciones.php" targe="_blank" class="modelo-btn-small"><strong>+</strong> Especificaciones</a>
                       </div>
