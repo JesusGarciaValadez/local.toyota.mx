@@ -557,7 +557,6 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                         </div>
                         <ul class="especificaciones">
                           <li>Volante con ajuste de altura y profundidad.</li>
-                          <li>Sensores de reversa.</li>
                           <li>Control de velocidad crucero.</li>
                           <li>Espejos laterales eléctricos.</li>
                         </ul>
