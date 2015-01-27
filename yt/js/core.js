@@ -34,7 +34,9 @@ init =function(){
 
 	//Galeria
 	$('.bxslider').bxSlider({
-	  pagerCustom: '#bx-pager'
+	  pagerCustom: '#bx-pager',
+	  auto: true,
+	  controls: false
 	});
 
 }
