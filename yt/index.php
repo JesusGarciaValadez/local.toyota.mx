@@ -24,10 +24,6 @@ document.write('<iframe src="https://4493100.fls.doubleclick.net/activityi;src=4
 
 	<section class="secVideo container">
 		<article>
-			<div class="textVideo">
-				<h2>Una familia con Actitud Highlander</h2>
-				<p>Conoce las historias de la familia Cervera y descubre<br>con ellos tu nueva actitud Highlander ‘14.</p>
-			</div>
 			<div class="contVideo">
 				<iframe class="video" name="videos" src="//www.youtube.com/embed/80yD6WRZ6MY" frameborder="0" allowfullscreen></iframe>
 				<div class="contVideos sixteen columns">

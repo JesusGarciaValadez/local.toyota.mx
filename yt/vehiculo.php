@@ -22,125 +22,57 @@ document.write('<iframe src="https://4493100.fls.doubleclick.net/activityi;src=4
 <!-- End of DoubleClick Floodlight Tag: Please do not remove -->
 	<section class="secVehiculo container">
 		<article>
-			<div class="textVehiculo">
-				<div class="left">
-					<h2>Rudeza exterior</h2>
-					<p>Fortaleza y confianza que se adaptan<br>a tus necesidades de manejo sin<br>que pierdas el estilo.</p>
-				</div>
-				<div class="right">
-					<p>Desde $473,900 MN (LE)</p>
-					<a href="prueba.php"></a>
-				</div>
-			</div>
 			<div class="contVehiculo">
-				<div class="cocheDescripcion">
-					<div class="rudezaExterior coches">
-						<h3>Rudeza exterior<a></a></h3>
-						<a><img src="images/imgRudeza.jpg"></a>
-					</div>					
-					<div class="rudeza descripcion">
-						<a class="reset"></a>
-						<img src="images/imgRudeza01.jpg">
-						<div class="contDescripcion">
+				<div class="coches">
+					<div class="menu">
+						<ul>
+							<li class="activo" data-type="autos"><span>Autos</span></li>
+							<li data-type="hibridos"><span>Híbridos</span></li>
+							<li data-type="minivans"><span>Suv’s y minivans</span></li>
+							<li data-type="comerciales"><span>Vehíulos comerciales<br>y pick ups</span></li>
+						</ul>
+						<img src="images/autos.jpg">
+						<img src="images/hibridos.jpg">
+						<img src="images/minivans.jpg">
+						<img src="images/comerciales.jpg">
+					</div>
+					<div class="descripcion">
+						<div class="autos">
+							<img src="images/autos/camry-master.png">
 							<div>
-								<h3>Mejoras en diseño exterior</h3>
-								<img src="images/imgRudeza02.jpg">
-							</div>
-							<div>
-								<h3>Una parrilla más robusta</h3>
-								<img src="images/imgRudeza03.jpg">
-							</div>
-							<div>
-								<h3>Mayor aerodinámica en líneas exteriores</h3>
-								<img src="images/imgRudeza04.jpg">
-							</div>
-							<div>
-								<h3>Fuerza y dinamismo en cada una de sus líneas</h3>
-								<img src="images/imgRudeza05.jpg">
+								<img src="images/autos/avanza.png">
+								<img src="images/autos/yaris.png">
+								<img src="images/autos/yaris-sedan.png">
+								<img src="images/autos/camry.png">
+								<img src="images/autos/corolla.png">
 							</div>
 						</div>
-						<a class="reset"></a>
-					</div>
-					<div class="maximoConfort coches">
-						<h3>Máximo confort<a></a></h3>
-						<a><img src="images/imgMaximo.jpg"></a>
-					</div>
-					<div class="maximo descripcion">
-						<a class="reset"></a>
-						<img src="images/imgMaximo01.jpg">
-						<div class="contDescripcion">
+						<div class="hibridos">
+							<img src="images/hibridos/prius-master.jpg">
 							<div>
-								<h3>Mayor espacio en cajuela</h3>
-								<img src="images/imgMaximo02.jpg">
-							</div>
-							<div>
-								<h3>Suavidad y elegancia en sus texturas</h3>
-								<img src="images/imgMaximo03.jpg">
-							</div>
-							<div>
-								<h3>Techo panorámico para disfrutar tu ciudad</h3>
-								<img src="images/imgMaximo04.jpg">
-							</div>
-							<div>
-								<h3>Todo el control a tu alcance</h3>
-								<img src="images/imgMaximo05.jpg">
+								<img src="images/hibridos/prius.png">
 							</div>
 						</div>
-						<a class="reset"></a>
-					</div>
-					<div class="nuevaActitud coches">
-						<h3>Tecnología<a></a></h3>
-						<a><img src="images/imgActitud.jpg"></a>
-					</div>
-					<div class="actitud descripcion">
-						<a class="reset"></a>
-						<img src="images/imgActitud01.jpg">
-						<div class="contDescripcion">
+						<div class="minivans">
+							<img src="images/minivans/rav4-master.jpg">
 							<div>
-								<h3>Mayor equipamiento en tecnología y gadgets</h3>
-								<img src="images/imgActitud02.jpg">
-							</div>
-							<div>
-								<h3>Interfaz para Smarthphone</h3>
-								<img src="images/imgActitud03.jpg">
-							</div>
-							<div>
-								<h3>Pantalla touch y sistema de navegación</h3>
-								<img src="images/imgActitud04.jpg">
-							</div>
-							<div>
-								<h3>Control total al volante</h3>
-								<img src="images/imgActitud05.jpg">
+								<img src="images/minivans/fj-cruiser.png">
+								<img src="images/minivans/highlander.png">
+								<img src="images/minivans/land-cruiser.png">
+								<img src="images/minivans/rav4.png">
+								<img src="images/minivans/sequoia.png">
+								<img src="images/minivans/sienna.png">
 							</div>
 						</div>
-						<a class="reset"></a>
-					</div>
-					<div class="seguridad coches">
-						<h3>Seguridad<a></a></h3>
-						<a><img src="images/imgSeguridad.jpg"></a>
-					</div>
-					<div class="segu descripcion">
-						<a class="reset"></a>
-						<img src="images/imgSeguridad01.jpg">
-						<div class="contDescripcion">
+						<div class="comerciales">
+							<img src="images/comerciales/hilux-master.jpg">
 							<div>
-								<h3>Luces direccionales en espejos laterales</h3>
-								<img src="images/imgSeguridad02.jpg">
-							</div>
-							<div>
-								<h3>Cámara de reversa</h3>
-								<img src="images/imgSeguridad03.jpg">
-							</div>
-							<div>
-								<h3>Seguros automáticos para una mayor comodidad</h3>
-								<img src="images/imgSeguridad04.jpg">
-							</div>
-							<div>
-								<h3>Indicador de seguridad en el tablero</h3>
-								<img src="images/imgSeguridad05.jpg">
+								<img src="images/comerciales/hiace.png">
+								<img src="images/comerciales/hilux.png">
+								<img src="images/comerciales/tacoma.png">
+								<img src="images/comerciales/tundra.png">
 							</div>
 						</div>
-						<a class="reset"></a>
 					</div>
 				</div>
 				<div class="galeria">
