@@ -48,7 +48,7 @@ body{ background: url(../images/fondo.jpg) repeat-x; margin: 0px; padding: 0px;}
 
 .minivans{ display: none; overflow: hidden; width: 100%;}
 .minivans > img{ display: block; height: auto; width: 100%;}
-.minivans > div > img{ display: inline-block; height: auto; width: 24%;}
+.minivans > div > img{ display: block; float: left; height: auto; width: 25%;}
 
 .comerciales{ display: none; overflow: hidden; width: 100%;}
 .comerciales > img{ display: block; height: auto; width: 100%;}
