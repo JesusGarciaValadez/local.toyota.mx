@@ -9,10 +9,10 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
-	<link rel="stylesheet" type="text/css" href="stylesheets/base.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,600,400' rel='stylesheet' type='text/css'>
 	<!-- bxSlider CSS file -->
 	<link href="plugins/bxslider/jquery.bxslider.css" rel="stylesheet" />	
+	<link rel="stylesheet" type="text/css" href="css/reset-sass.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -49,21 +49,15 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 </script>
 <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=306593512832230&amp;ev=NoScript" /></noscript>
 
-    <div id="mobilemenu">
-        <div id="containmenu">
-            <h2>Conoce más del sitio</h2>
-	        <div class="hamburguesa"></div>
-        </div>
-    </div>
 	<header class="header container">
 		<nav>
 			<ul>
 				<li class="activo"><a href="index.php">VIDEOS</a></li>
 				<li><a href="vehiculo.php">VEHÍCULO</a></li>
-				<li><a href="prueba.php">PRUEBA DE MANEJO</a></li>
+				<li class="prueba"><a href="prueba.php">PRUEBA DE MANEJO</a></li>
 			</ul>
 		</nav>
 		<a href="index.php" class="logo"></a>
-		<div class="logoHighlander"></div>
-		<img src="images/camionetaVideo.png">
+		<h2>SIEMPRE CONTIGO<span>Diseñamos autos para compartir tus mejores momentos.</span></h2>
+		<a class="btnprueba" href="prueba.php">Agenda tu prueba de manejo.</a>
 	</header>

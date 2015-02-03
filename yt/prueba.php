@@ -27,17 +27,16 @@ document.write('<iframe src="https://4493100.fls.doubleclick.net/activityi;src=4
 
     <section class="secPrueba container">
         <article>
-            <div class="textPrueba sixteen columns">
-                <h2>Prueba de manejo</h2>
-                <p>Vive la mejor experiencia de manejo con la nueva generación Highlander 14.</p>
+            <div class="textPrueba">
+                <h2>prueba de manejo</h2>
+                <p>Ingresa tus datos, selecciona tu sucursal más cercana y un representante se comunicará contigo.</p>
             </div>
-            <div class="contPrueba sixteen columns">
-                <p>Por favor ingresa tus datos  y selecciona tu sucursal más cercana.</p>
+            <div class="contPrueba">
                 <form action="" method="post" enctype="multipart/form-data" >
-                    <input type="text" name="nombre" id="nombre" placeholder="*NOMBRE" required="true">
-
-                    <input type="text" name="correo" id="correo" placeholder="*CORREO ELECTRÓNICO" required="true">
-                    <input type="text" name="telefono" id="telefono" placeholder="*NÚMERO TELEFÓNICO (OPCIONAL)">
+                    <label>Por favor ingresa tus datos.</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required="true">
+                    <input type="text" name="correo" id="correo" placeholder="Correo Electrónico" required="true">
+                    <input type="text" name="telefono" id="telefono" placeholder="Número Telefónico (Opcional)">
                     <label>SELECCIONA SUCURSAL</label>
                     <div class="selectBox">
                         <div class="box" id="box">Estado</div>
