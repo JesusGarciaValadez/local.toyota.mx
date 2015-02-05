@@ -73,7 +73,7 @@ body{ background: url(../images/fondo.jpg) repeat-x; margin: 0px; padding: 0px;}
 .contPrueba form div.selectBox select { border: 1px solid #036; cursor: pointer; height: 34px; left: -1px; position: absolute; opacity: 0; filter: alpha(Opacity=0);	-moz-opacity: 0; top: -1px; width: 100%; z-index:100;}
 .contPrueba form div.selectBox select option{ color: #036; cursor: pointer; border-bottom: 1px solid #eee; font-size: 11px; padding: 4px;}
 
-.contPrueba form input[type="submit"]{ background: #d71a22; border: none; color: #2f3438; display: block; font-size: 20px; font-family: 'HelveticaNeue'; height: 40px; margin: 20px auto; text-align: center; text-transform: uppercase; width: 120px;}
+.contPrueba form input[type="submit"], .contPrueba form input[type="button"]{ cursor:pointer;background: #d71a22; border: none; color: #2f3438; display: block; font-size: 20px; font-family: 'HelveticaNeue'; height: 40px; margin: 20px auto; text-align: center; text-transform: uppercase; width: 120px;}
 
 .textGracias{ background: #000!important; padding-top: 30px;}
 .textGracias h2{ border-left: 5px #d71a22 solid; color: #fff; font-size: 46px; font-family:Verdana, Geneva, sans-serif; font-weight: bold; margin-bottom: 80px; padding-left: 25px;}

@@ -16,6 +16,8 @@
 			<a href="http://toyota.com.mx/contenidos/aviso-de-privacidad/" target="_blank">Aviso de privacidad</a>
 		</div>
 	</footer>
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBIfZV2DXDcTcIIkGGYZiIJ1n6aMjgLpZc&libraries=places"></script>
 	<script src="js/core.js"></script>
+	<script src="js/testdrive.js"></script>
 </body>
 </html>
