@@ -394,7 +394,7 @@ $(function() {
   };
 
   var precio_actual = 0;
-
+//cambio
   var Cotizador = {
     cotizar:function(){
 
