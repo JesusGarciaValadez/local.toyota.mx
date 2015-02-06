@@ -524,7 +524,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                         <h1>Highlander LE</h1>
                         <div class="precio">
                           <span class="desde">Desde</span>
-                          <small>$</small>474,800<sup>00</sup>
+                          <small>$</small>479,100<sup>00</sup>
                         </div>
 
                         <ul class="especificaciones">
@@ -553,7 +553,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                         <h1>Highlander XLE</h1>
                         <div class="precio">
                           <span class="desde">Desde</span>
-                          <small>$</small>535,500<sup>00</sup>
+                          <small>$</small>540,300<sup>00</sup>
                         </div>
                         <ul class="especificaciones">
                           <li>Volante con ajuste de altura y profundidad.</li>
@@ -582,7 +582,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                         <h1>Highlander Limited PR</h1>
                         <div class="precio">
                           <span class="desde">Desde</span>
-                          <small>$</small>601,700<sup>00</sup>
+                          <small>$</small>607,100<sup>00</sup>
                         </div>
                         <ul class="especificaciones">
                           <li>Compuerta trasera tipo hatch con medallón independiente y control remoto.</li>
@@ -611,7 +611,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                         <h1>Highlander Limited</h1>
                         <div class="precio">
                           <span class="desde">Desde</span>
-                          <small>$</small>621,700<sup>00</sup>
+                          <small>$</small>627,300<sup>00</sup>
                         </div>
                         <ul class="especificaciones">
                           <li>Quemacocos eléctrico.</li>
@@ -875,7 +875,9 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 
           <div class="row">
             <div class="span12">
-              <p class="disclaimer">Programa de financiamiento en pesos, válido del 1 al 31 de Agosto de 2013 en los distribuidores Toyota en la República Mexicana; sujeto a aprobación de crédito y disponibilidad de producto, aplican restricciones, cambios sin previo aviso. Precios mostrados en Moneda Nacional. Tasa de interés anual fija, bruta. Este cotizador es sólo una referencia aproximada del crédito a contratar el cual puede variar, entre otras cosas, con motivo de su situación crediticia y prima de seguro derivado de su lugar de residencia. La cotización que se muestra en esta página no constituye una promesa de venta ni establece un compromiso para Toyota Financial Services México. Cuide su capacidad de pago, generalmente no debe exceder del 35% de sus ingresos periódicos, los costos por mora son muy elevados.</p>
+              <p class="disclaimer">
+		Promoción válida al 28 de Febrero de 2015 en los Distribuidores Toyota en la República Mexicana CAT del 15.1% sin I.V.A. para efectos informativos y de comparación ; Financiamiento otorgado por Toyota Financial Services México, S.A. de C.V., sujeto a aprobación de los requisitos y parámetros de crédito. Losimpuestos, comisiones, intereses, costos de seguros y cualquier otra cantidad, cargo, gasto o erogación adicional que se requiera cubrir con motivo de la adquisición o contratación respectiva, pueden variar al momento de la firma de su contrato, favor de consultar los términos definitivos de contratación con el Distribuidor Toyota de su preferencia. Esta página y su contenido, es sólo una referencia aproximada de las condiciones más importantes de un crédito estándar a contratar y pueden variar, entre otros motivos, por su actividad comercial, comportamiento crediticio, zona económica de residencia y algunos otros factores que la sociedad financiera toma en cuenta para calificar su solicitud de crédito. Los datos que se muestran en esta página no constituye una promesa de venta ni establece un compromiso para Toyota Financial Services México para el otorgamiento de un crédito. Cuide su capacidad de pago, generalmente ésta no debe exceder del 35% de sus ingresos periódicos, los costos por mora son muy elevados. Los programas de financiamiento son en pesos y están sujetos a la disponibilidad de producto, Los vehículos que aparecen aquí son una simple referencia publicitaria, por favor consulte versiones, modelos y equipamiento enwww.toyota.com.mx.
+		</p>
             </div>
           </div>
           <a href="#" class="financiamiento-control" data-direction="next" id="financiamiento-siguiente">Siguiente</a>
