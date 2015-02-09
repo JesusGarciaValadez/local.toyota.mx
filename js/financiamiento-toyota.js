@@ -114,10 +114,10 @@ $(function() {
   };
 
   var precios = {
-    'LE'   : 47390000,
-    'XLE'   : 53440000,
-    'Limited Blu-Ray'        : 61990000,
-    'LTD Panorama Roof'      : 60040000
+    'LE'   : 47910000,
+    'XLE'   : 54030000,
+    'Limited Blu-Ray'        : 62730000,
+    'LTD Panorama Roof'      : 60710000
   };
 
   var seguros = {
