@@ -113,12 +113,12 @@ $(function() {
     'balloon'  : 'Con el crédito Balloon 35, el 35% del valor del auto se pagará junto con tu última mensualidad, por lo que el resto de tus pagos serán más bajos que en un plan estándar.'
   };
 
-  var precios = {
-    'LE'   : 47910000,
-    'XLE'   : 54030000,
-    'Limited Blu-Ray'        : 62730000,
-    'LTD Panorama Roof'      : 60710000
-  };
+ var precios = {
+    'LE'   : 48010000,
+    'XLE'   : 54140000,
+    'Limited Blu-Ray'        : 62860000,
+    'LTD Panorama Roof'      : 60830000
+ };
 
   var seguros = {
     'BASE MT'     : {

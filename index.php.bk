@@ -63,23 +63,22 @@ $browser = new Browser();
   </head>
 
   <body data-spy="scroll" data-target="#main-navbar">
-<!-- Facebook Conversion Code for Highlander -->
 <script>(function() {
   var _fbq = window._fbq || (window._fbq = []);
   if (!_fbq.loaded) {
-    var fbds = document.createElement('script');
-    fbds.async = true;
-    fbds.src = '//connect.facebook.net/en_US/fbds.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(fbds, s);
-    _fbq.loaded = true;
-  }
+          var fbds = document.createElement('script');
+              fbds.async = true;
+              fbds.src = '//connect.facebook.net/en_US/fbds.js';
+                  var s = document.getElementsByTagName('script')[0];
+                  s.parentNode.insertBefore(fbds, s);
+                      _fbq.loaded = true;
+                    }
+    _fbq.push(['addPixelId', '306593512832230']);
 })();
 window._fbq = window._fbq || [];
-window._fbq.push(['track', '6016527977030', {'value':'0.01','currency':'MXN'}]);
+window._fbq.push(['track', 'PixelInitialized', {}]);
 </script>
-<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6016527977030&amp;cd[value]=0.01&amp;cd[currency]=MXN&amp;noscript=1" /></noscript>
-
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=306593512832230&amp;ev=NoScript" /></noscript>
     <div class="navbar navbar-inverse navbar-fixed-top" id="main-navbar">
       <div class="navbar-inner">
 
@@ -525,7 +524,7 @@ window._fbq.push(['track', '6016527977030', {'value':'0.01','currency':'MXN'}]);
                         <h1>Highlander LE</h1>
                         <div class="precio">
                           <span class="desde">Desde</span>
-                          <small>$</small>480,100<sup>00</sup>
+                          <small>$</small>474,800<sup>00</sup>
                         </div>
 
                         <ul class="especificaciones">
@@ -554,7 +553,7 @@ window._fbq.push(['track', '6016527977030', {'value':'0.01','currency':'MXN'}]);
                         <h1>Highlander XLE</h1>
                         <div class="precio">
                           <span class="desde">Desde</span>
-                          <small>$</small>541,400<sup>00</sup>
+                          <small>$</small>535,500<sup>00</sup>
                         </div>
                         <ul class="especificaciones">
                           <li>Volante con ajuste de altura y profundidad.</li>
@@ -583,7 +582,7 @@ window._fbq.push(['track', '6016527977030', {'value':'0.01','currency':'MXN'}]);
                         <h1>Highlander Limited PR</h1>
                         <div class="precio">
                           <span class="desde">Desde</span>
-                          <small>$</small>608,300<sup>00</sup>
+                          <small>$</small>601,700<sup>00</sup>
                         </div>
                         <ul class="especificaciones">
                           <li>Compuerta trasera tipo hatch con medallón independiente y control remoto.</li>
@@ -612,7 +611,7 @@ window._fbq.push(['track', '6016527977030', {'value':'0.01','currency':'MXN'}]);
                         <h1>Highlander Limited</h1>
                         <div class="precio">
                           <span class="desde">Desde</span>
-                          <small>$</small>628,600<sup>00</sup>
+                          <small>$</small>621,700<sup>00</sup>
                         </div>
                         <ul class="especificaciones">
                           <li>Quemacocos eléctrico.</li>
@@ -682,9 +681,9 @@ window._fbq.push(['track', '6016527977030', {'value':'0.01','currency':'MXN'}]);
                 <dt class="pago-final-toggle">Pago final extra</dt>
                 <dd class="pago-final-toggle financiamiento-red">$<span class="financiamiento-pago-final-extra"></span> MX</dd>
               </dl>
-             <!-- <div class="text-center">
+              <div class="text-center">
                 <small>*El precio final puede variar de acuerdo al distribuidor</small>
-              </div> -->
+              </div>
             </div>
 
             <div class="span6 financiamiento-column financiamiento-form" id="financiamiento-personaliza-first">
@@ -768,9 +767,9 @@ window._fbq.push(['track', '6016527977030', {'value':'0.01','currency':'MXN'}]);
                 <dt class="pago-final-toggle">Pago final extra</dt>
                 <dd class="pago-final-toggle financiamiento-red">$<span class="financiamiento-pago-final-extra"></span> MX</dd>
               </dl>
-              <!--<div class="text-center">
+              <div class="text-center">
                 <small>*El precio final puede variar de acuerdo al distribuidor</small>
-              </div>-->
+              </div>
             </div>
 
             <div class="span6 financiamiento-column financiamiento-form" id="personaliza-cotizacion">
@@ -844,9 +843,9 @@ window._fbq.push(['track', '6016527977030', {'value':'0.01','currency':'MXN'}]);
                 <a href="#" class="boton boton-187" id="financiamiento-imprimir" target="_new">Imprimir</a>
                 <a href="#" class="boton boton-187" id="financiamiento-email">Enviar por Correo</a>
               </div>
-              <!--<div class="text-center">
+              <div class="text-center">
                 <small>*El precio final puede variar de acuerdo al distribuidor</small>
-              </div>-->
+              </div>
             </div>
           </div>
 
@@ -876,8 +875,7 @@ window._fbq.push(['track', '6016527977030', {'value':'0.01','currency':'MXN'}]);
 
           <div class="row">
             <div class="span12">
-              <p class="disclaimer">
-CAT promedio sin IVA, informativo.  Programas de financiamiento en pesos. Precios mostrados en Moneda Nacional. Tasa de interés anual fija, bruta. La presente cotización es un ejercicio aritmético de referencia, el cual está calculado bajo parámetros estándar y podría tener variaciones respecto de los planes de financiamiento otorgados por Toyota Financial Services México. La cotización que se muestra en esta página no constituye una obligación de financiamiento para Toyota Financial Services México. En razón de lo anterior, le recomendamos obtener una estimación de pagos real que le será proporcionada por su Distribuidor Toyota más cercano.  Más información y comisiones en www.toyotacredito.com.mx. Cuide su capacidad de pago, generalmente no debe exceder del 35% de sus ingresos periódicos, los costos por mora son muy elevados.		</p>
+              <p class="disclaimer">Programa de financiamiento en pesos, válido del 1 al 31 de Agosto de 2013 en los distribuidores Toyota en la República Mexicana; sujeto a aprobación de crédito y disponibilidad de producto, aplican restricciones, cambios sin previo aviso. Precios mostrados en Moneda Nacional. Tasa de interés anual fija, bruta. Este cotizador es sólo una referencia aproximada del crédito a contratar el cual puede variar, entre otras cosas, con motivo de su situación crediticia y prima de seguro derivado de su lugar de residencia. La cotización que se muestra en esta página no constituye una promesa de venta ni establece un compromiso para Toyota Financial Services México. Cuide su capacidad de pago, generalmente no debe exceder del 35% de sus ingresos periódicos, los costos por mora son muy elevados.</p>
             </div>
           </div>
           <a href="#" class="financiamiento-control" data-direction="next" id="financiamiento-siguiente">Siguiente</a>

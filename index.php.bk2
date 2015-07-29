@@ -682,9 +682,9 @@ window._fbq.push(['track', '6016527977030', {'value':'0.01','currency':'MXN'}]);
                 <dt class="pago-final-toggle">Pago final extra</dt>
                 <dd class="pago-final-toggle financiamiento-red">$<span class="financiamiento-pago-final-extra"></span> MX</dd>
               </dl>
-             <!-- <div class="text-center">
+              <div class="text-center">
                 <small>*El precio final puede variar de acuerdo al distribuidor</small>
-              </div> -->
+              </div>
             </div>
 
             <div class="span6 financiamiento-column financiamiento-form" id="financiamiento-personaliza-first">
@@ -768,9 +768,9 @@ window._fbq.push(['track', '6016527977030', {'value':'0.01','currency':'MXN'}]);
                 <dt class="pago-final-toggle">Pago final extra</dt>
                 <dd class="pago-final-toggle financiamiento-red">$<span class="financiamiento-pago-final-extra"></span> MX</dd>
               </dl>
-              <!--<div class="text-center">
+              <div class="text-center">
                 <small>*El precio final puede variar de acuerdo al distribuidor</small>
-              </div>-->
+              </div>
             </div>
 
             <div class="span6 financiamiento-column financiamiento-form" id="personaliza-cotizacion">
@@ -844,9 +844,9 @@ window._fbq.push(['track', '6016527977030', {'value':'0.01','currency':'MXN'}]);
                 <a href="#" class="boton boton-187" id="financiamiento-imprimir" target="_new">Imprimir</a>
                 <a href="#" class="boton boton-187" id="financiamiento-email">Enviar por Correo</a>
               </div>
-              <!--<div class="text-center">
+              <div class="text-center">
                 <small>*El precio final puede variar de acuerdo al distribuidor</small>
-              </div>-->
+              </div>
             </div>
           </div>
 
@@ -877,7 +877,8 @@ window._fbq.push(['track', '6016527977030', {'value':'0.01','currency':'MXN'}]);
           <div class="row">
             <div class="span12">
               <p class="disclaimer">
-CAT promedio sin IVA, informativo.  Programas de financiamiento en pesos. Precios mostrados en Moneda Nacional. Tasa de interés anual fija, bruta. La presente cotización es un ejercicio aritmético de referencia, el cual está calculado bajo parámetros estándar y podría tener variaciones respecto de los planes de financiamiento otorgados por Toyota Financial Services México. La cotización que se muestra en esta página no constituye una obligación de financiamiento para Toyota Financial Services México. En razón de lo anterior, le recomendamos obtener una estimación de pagos real que le será proporcionada por su Distribuidor Toyota más cercano.  Más información y comisiones en www.toyotacredito.com.mx. Cuide su capacidad de pago, generalmente no debe exceder del 35% de sus ingresos periódicos, los costos por mora son muy elevados.		</p>
+		Promoción válida al 28 de Febrero de 2015 en los Distribuidores Toyota en la República Mexicana CAT del 15.1% sin I.V.A. para efectos informativos y de comparación ; Financiamiento otorgado por Toyota Financial Services México, S.A. de C.V., sujeto a aprobación de los requisitos y parámetros de crédito. Losimpuestos, comisiones, intereses, costos de seguros y cualquier otra cantidad, cargo, gasto o erogación adicional que se requiera cubrir con motivo de la adquisición o contratación respectiva, pueden variar al momento de la firma de su contrato, favor de consultar los términos definitivos de contratación con el Distribuidor Toyota de su preferencia. Esta página y su contenido, es sólo una referencia aproximada de las condiciones más importantes de un crédito estándar a contratar y pueden variar, entre otros motivos, por su actividad comercial, comportamiento crediticio, zona económica de residencia y algunos otros factores que la sociedad financiera toma en cuenta para calificar su solicitud de crédito. Los datos que se muestran en esta página no constituye una promesa de venta ni establece un compromiso para Toyota Financial Services México para el otorgamiento de un crédito. Cuide su capacidad de pago, generalmente ésta no debe exceder del 35% de sus ingresos periódicos, los costos por mora son muy elevados. Los programas de financiamiento son en pesos y están sujetos a la disponibilidad de producto, Los vehículos que aparecen aquí son una simple referencia publicitaria, por favor consulte versiones, modelos y equipamiento enwww.toyota.com.mx.
+		</p>
             </div>
           </div>
           <a href="#" class="financiamiento-control" data-direction="next" id="financiamiento-siguiente">Siguiente</a>
