@@ -301,7 +301,7 @@ section#distribuidores .container {
   background-image: url(img/bg-home-dos.jpg);
 }
 #home-jay{
-  background-image: url(img/bg-home-jay.jpg);
+  background-image: url(img/bgCover.jpg);
 }
 #home-jay #jay-front {
   position: absolute;
@@ -2235,6 +2235,17 @@ section#especificaciones {
   }
 }
 
+@media only screen and (max-width: 767px){
+
+  #home-jay{
+    background-image: url(img/bgCoverM.jpg);
+    background-size: auto 100%;
+    height: 550px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+}
 
 
 @media (max-width: 640px) and (min-height: 712px ) and (-webkit-min-device-pixel-ratio: 2) {
