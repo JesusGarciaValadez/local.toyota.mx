@@ -409,7 +409,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                             <td>Transmisión</td><td colspan="4" class="text-center">Automática de 6 velocidades con ECT-i</td>
                           </tr>
                           <tr>
-                            <td>Sistema de tracción</td><td colspan="4" class="text-center">Sistema  de control de tracción y estabilidad: TRAC y VCS  (mejorado EPS)</td>
+                            <td>Sistema de tracción</td><td colspan="4" class="text-center">Sistema  de control de tracción y estabilidad: TRAC y VSC  (mejorado EPS)</td>
                           </tr>
                           <tr>
                             <td>Tracción</td><td colspan="4" class="text-center">Tracción delantera 2 WD </td>
