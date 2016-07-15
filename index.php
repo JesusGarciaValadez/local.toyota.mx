@@ -531,7 +531,7 @@ window._fbq.push(['track', '6016527977030', {'value':'0.01','currency':'MXN'}]);
                         <ul class="especificaciones">
                           <li>Faros elipsoidales tipo proyector.</li>
                           <li>Manijas al color de la carrocería.</li>
-                          <li>Parilla negra con acentos cromados.</li>
+                          <li>Parrilla negra con acentos cromados.</li>
                           <li>Aire acondicionado manual de 3 zonas.</li>
                         </ul>
                         <a href="especificaciones.php" target="_blank" class="modelo-btn-small"><strong>+</strong> Especificaciones</a>
