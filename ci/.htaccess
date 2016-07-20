@@ -7,4 +7,4 @@
 RewriteEngine on
 RewriteCond $1 !^(index\.php|assets|downloads|robots\.txt|favicon\.ico)
 RewriteRule ^(.*)$ /index.php/$1 [L]
-php_value date.timezone 'America/Mexico_City'
+#php_value date.timezone 'America/Mexico_City'
