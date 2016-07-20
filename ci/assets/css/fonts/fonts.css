@@ -1,0 +1,10 @@
+@font-face{font-family:'block_berthold_heavyregular';src:url('blockbe-heavy-webfont.eot');src:url('blockbe-heavy-webfont.eot?#iefix') format('embedded-opentype'),
+url('blockbe-heavy-webfont.woff2') format('woff2'),
+url('blockbe-heavy-webfont.woff') format('woff'),
+url('blockbe-heavy-webfont.ttf') format('truetype'),
+url('blockbe-heavy-webfont.svg#block_berthold_heavyregular') format('svg');font-weight:normal;font-style:normal;}
+@font-face{font-family:'block_bertholdregular';src:url('blockbe-regular-webfont.eot');src:url('blockbe-regular-webfont.eot?#iefix') format('embedded-opentype'),
+url('blockbe-regular-webfont.woff2') format('woff2'),
+url('blockbe-regular-webfont.woff') format('woff'),
+url('blockbe-regular-webfont.ttf') format('truetype'),
+url('blockbe-regular-webfont.svg#block_bertholdregular') format('svg');font-weight:normal;font-style:normal;}

@@ -1,0 +1,94 @@
+.cover
+	background: url(img/bgCover.jpg) no-repeat center bottom
+	background-size: cover
+	height: calc(100vh - 110px)
+	margin-bottom: 50px
+	width: 100%
+	.titulo
+		+translate(-50%,-50%)
+		-webkit-animation-duration: 3s
+		animation-duration: 3s
+		display: none
+		left: 30%
+		position: absolute
+		top: 35%
+	h1
+		color: $Texts4
+		margin-bottom: 0px
+		span
+			color: $Primary1
+			text-transform: uppercase
+	h2
+		color: $Texts4
+		margin: 0px
+		white-space: pre-line
+		span
+			font-weight: 300
+	.btvideo
+		display: table
+		p
+			color: $Primary1
+			font-family: 'Open Sans', sans-serif
+			font-weight: 600
+		span
+			display: table-cell
+			vertical-align: middle
+			a
+				border-radius: 50%
+				background: $Primary1
+				color: #fff
+				display: table
+				height: 30px
+				margin: 0px 1em
+				position: relative
+				text-decoration: none
+				width: 30px
+				&:after
+					+fawesome("\f04b")
+					+translate(-50%,-50%)
+					font-size: 0.857143rem
+					left: 55%
+					position: absolute
+					top: 50%
+	.mouse
+		+translate(-50%,0%)
+		-webkit-animation-duration: 4s
+		animation-duration: 4s
+		bottom: 5em
+		color: $Feedback1C
+		display: table
+		font-family: 'Open Sans', sans-serif
+		font-size: 0.928571rem
+		font-weight: 600
+		left: 50%
+		line-height: 1.313em
+		margin: 1em 0px
+		position: absolute
+		text-align: center
+		white-space: pre-line
+		&:before
+			content: " "
+			background-color: #fff 
+			-webkit-mask:  url(img/mouse.svg) no-repeat center
+			mask: url(img/mouse.svg) no-repeat center
+			-webkit-mask-size: cover
+			mask-size: cover
+			display: block
+			margin: auto
+			width: 16px
+			height: 30px
+		.mouse-dot
+			-moz-animation: ani-mouse 2.5s linear infinite
+			-moz-border-radius: 50%
+			-webkit-animation: ani-mouse 2.5s linear infinite
+			-webkit-border-radius: 50%
+			animation: ani-mouse 2.5s linear infinite
+			background: #fff
+			border-radius: 50%
+			display: block
+			height: 3px
+			left: 50%
+			margin: -3px 0 0 -1px
+			position: absolute
+			top: 15%
+			width: 3px

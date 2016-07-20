@@ -1,0 +1,206 @@
+.especificaciones
+	background: #fff
+	overflow: hidden
+	width: 100%
+	.scroll-Interno
+		-webkit-overflow-scrolling: touch
+		height: 100%
+		overflow: auto
+		position: relative
+		width: 100%
+	h3
+		margin: 0px
+	dt
+		margin-bottom: 1em
+	dd
+		padding-left: 1em
+		> p
+			font-family: 'Open Sans', sans-serif
+			font-size: 1.14286rem
+			font-weight: 300
+			margin: 0.3em 0px
+			position: relative
+			&:before
+				color: $Primary1
+				content: "\2022"
+				font-size: 1.5rem
+				margin-right: 0.3em
+				position: absolute
+				right: 100%
+				top: 0px
+	.cont-border
+		border-bottom: 1px solid #ddd
+		overflow: hidden
+		> div
+			+bx
+			padding-right: 4em
+			padding: 2em 0px
+			&:nth-child(even)
+				padding-left: 4em
+				padding-right: 0px
+
+.cont-retic
+	display: table
+	margin: auto
+	overflow: hidden
+	width: 100%
+	h1
+		color: $Primary1
+		text-align: center
+		text-transform: uppercase
+		span
+			font-weight: 300
+	fieldset
+		border-bottom: 1px solid #bdc3c7
+		display: table
+		margin: 10px auto 25px
+		max-width: 380px
+		min-width: 260px
+		position: relative
+		width: 100%
+		&:before
+			+fawesome("\f078")
+			color: $Texts1
+			position: absolute
+			right: 10px
+			top: 10px
+	.select-otraver
+		+appearance
+		+bx
+		background: none
+		border: none
+		color: #bdc3c7
+		cursor: pointer
+		font-family: 'Open Sans', sans-serif
+		font-size: 1rem
+		font-weight: 300
+		padding: 10px
+		text-transform: uppercase
+		width: 100%
+		&:focus
+			outline: 0
+.cont-imgs
+	display: table
+	margin: auto
+	max-width: 1200px
+	min-width: 260px
+	overflow: hidden
+	width: 100%
+	> img
+		height: auto
+		width: 100%
+.eTecnicas,.extCarro,.intCarro
+	margin-bottom: 50px
+	overflow: hidden
+
+//Especificaciones tecnicas
+
+.eTecnicas 
+	> div
+		&:not(.espMotor)
+			background: #f7f7fa
+			overflow: hidden
+			width: 100%
+	h2
+		text-align: center
+	.espMotor
+		+bx
+		margin-bottom: 25px
+		overflow: hidden
+		width: 100%
+		dl 
+			> dd
+				float: left
+				list-style: none
+				padding-left: 0px
+				width: 50%
+				> img
+					float: left
+					height: auto
+					max-width: 420px
+					width: 80%
+				> dl 
+					dd
+						margin-bottom: 40px
+						width: 100%
+		small
+			color: $Primary1
+			font-size: 1rem
+			font-weight: 700
+			padding-left: 55px
+			text-transform: uppercase
+		.icon-motor
+			float: left
+			margin-right: 10px
+			margin-top : 10px
+			text-align: center
+			width: 45px
+			> img
+				height: auto
+				width: 100%
+		// .motor
+		// 	p
+		// 		font-size: 2rem
+		// 		line-height: 1.2
+		// 		margin-bottom: 1rem
+
+		p
+			font-size: 3.42857rem
+			font-weight: 300
+			margin: 0px
+	.espFrenos
+		+bx
+		border-right: 1px solid #fff
+		float: left
+		padding: 2em 4rem
+		width: 50%
+	.espRines
+		+bx
+		float: left
+		padding: 2em 4em
+		width: 50%
+
+//Exterior
+
+.extCarro 
+	h2
+		color: $Primary1
+		font-weight: 300
+	.cont-border
+		&:last-of-type
+			border-bottom: none
+	.extVisibilidad 
+		> dl 
+			> dd
+				&:before
+					content: " "
+	.extFaros, .extVisibilidad
+		border-right: 1px solid #ddd
+		float: left
+		width: 50%
+	.extSeguridadExterior, .extTeco
+		border-left: 1px solid #ddd
+		float: left
+		margin-left: -1px
+		width: 50%
+
+//Interior
+
+.intCarro 
+	h2
+		color: $Primary1
+		font-weight: 300
+	.cont-border
+		&:last-of-type
+			border-bottom: none
+			margin-bottom: 5em
+
+	.extAcabadosInteriores, .extSistemaAudio, .extCinturonesSeguridad 
+		border-right: 1px solid #ddd
+		float: left
+		width: 50%
+	.extAsientos, .extConfort, .extSeguridadInterior
+		border-left: 1px solid #ddd
+		float: left
+		margin-left: -1px
+		width: 50%

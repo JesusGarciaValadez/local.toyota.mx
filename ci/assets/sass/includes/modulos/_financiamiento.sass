@@ -1,0 +1,248 @@
+.financiamiento
+	min-height: calc(100vh - 140px)
+	width: 100vw
+	h1
+		color: $Primary1
+	h2
+		text-align: center
+		span
+			font-weight: 300
+	h5
+		text-align: center
+
+.financia
+	overflow: hidden
+	width: 100%
+	> fieldset
+		display: none
+		&:first-child
+			display: block
+		&:last-child
+			border: 1px solid $Primary1
+			margin: 0px 1em
+			> dl 
+				> dd
+					&:first-child, > dl
+						border: none
+			> p
+				margin: 2em 0px
+				text-align: center
+		> p
+			margin: 1em
+		> dl
+			border-collapse: separate
+			border-spacing: 1em
+			display: table
+			overflow: hidden
+			width: 100%
+			> dd
+				+bx
+				display: table-cell
+				vertical-align: middle
+				width: 50%
+				&:first-child
+					border: 1px solid $Primary1
+					> dl
+						border: none
+				> dl
+					+bx
+					border: 1px solid $Primary1
+					margin-bottom: 1em
+					padding: 0px 2em
+					&:last-child
+						margin-bottom: 0px
+					> dd
+						color: $Texts2
+						font-family: 'Lato', sans-serif
+						font-size: 1.14286rem
+						font-weight: 700
+						margin: 1em 0px
+						overflow: hidden
+						&.precio
+							color: $Primary1
+							> div
+								font-size: 1.85714rem
+								font-weight: 700
+								span
+									font-weight: 700
+						&.big 
+							> div
+								font-size: 1.85714rem
+								font-weight: 700
+								span
+									font-weight: 700
+						> span
+							float: left
+							white-space: pre-line
+							width: 50%
+						> div
+							float: right
+							font-weight: 300
+							span
+								&:not(.plazo)
+									font-weight: 300
+									text-transform: uppercase
+							sup
+								font-size: x-small
+								vertical-align: super
+						select
+							+appearance
+							+bx
+							background: url(img/bgFlecha2.png) no-repeat 96% 50%
+							border-radius: 0px
+							border: 1px solid #585d65
+							color: $Texts2
+							cursor: pointer
+							display: table
+							float: right
+							font-family: 'Lato', sans-serif
+							font-size: 1rem
+							font-weight: 700
+							margin: auto
+							padding: 0.5em
+							width: 50%
+							&:focus
+								outline: 0
+					p
+						color: $Texts2
+						font-family: 'Open Sans', sans-serif
+						font-size: 0.785714rem
+						font-weight: 400
+
+	.beneficios
+		background: #f7f7fa
+		border: 1px solid transparent
+		padding-bottom: 2em
+		> dd
+			font-size: 1rem
+			margin: 0.5em 0px
+			overflow: visible
+			> div
+				display: inline-block
+				float: none
+				span
+					&:not(.plazo)
+						text-transform: none
+
+#financiamiento-plazo-credito
+	margin: 0px 1em
+	width: 20%
+
+.range-enganche 
+	float: right
+	height: 30px
+	width: 50%
+	input[type="range"] 
+		+appearance
+		background: rgba(251,65,112, 0.8)
+		border-radius: 20px
+		height: 3px
+		width: 100%
+		&:-webkit-slider-thumb 
+			+appearance
+			background: $Primary1
+			border-radius: 50%
+			height: 13px
+			position: relative
+			width: 13px
+			z-index: 3
+			&:hover 
+				cursor: pointer
+			&:focus
+				outline-width: 0
+	output 
+		color: #000000
+		font-family: "regular"
+		font-size: 10px
+
+.legales
+	margin: 2em 1em
+	p
+		color: #818892
+		font-size: 0.785714rem
+
+//Botones
+.form-prev 
+	border-left: 1px solid transparent
+	border: 1px solid #474c51
+	color: #474c51
+	left: 0px
+	position: relative
+	&:before
+		+fawesome("\f104")
+		+translate(-60%,-50%)
+		font-size: 25px
+		left: 50%
+		position: absolute
+		text-indent: 0px
+		top: 50%
+.form-next 
+	border-right: 1px solid transparent
+	border: 1px solid #474c51
+	color: #474c51
+	position: relative
+	right: 0px
+	&:before
+		+fawesome("\f105")
+		+translate(-40%,-50%)
+		font-size: 25px
+		left: 50%
+		position: absolute
+		text-indent: 0px
+		top: 50%
+.action-button
+	+bx
+	+center(h)
+	+fx(all,0.5s)
+	cursor: pointer
+	height: 52px
+	outline: 0
+	text-decoration: none
+	text-indent: -9998px
+	width: 52px
+	z-index: 98
+	&:hover 
+		background: $Primary1
+		border: 1px solid $Primary1
+		color: #fff
+
+//Progressbar
+.progressbar
+	counter-reset: step
+	display: table
+	margin: 2em auto
+	overflow: hidden
+	li
+		color: $Texts2
+		float: left
+		font-family: 'Lato', sans-serif
+		font-size: 1.14286rem
+		font-weight: 700
+		line-height: 2
+		margin: 0px 1em
+		padding-left: 35px
+		position: relative
+		text-transform: uppercase
+		&:before
+			+center(h)
+			color: #fff
+			content: counter(step)
+			counter-increment: step
+			display: table
+			font-size: 1rem
+			left: 0px
+			text-align: center
+			width: 26px
+			z-index: 9
+		&:after
+			+center(h)
+			background: #dee2e8
+			border-radius: 50%
+			content: " "
+			display: table
+			height: 26px
+			left: 0px
+			width: 26px
+		&.active
+			&:after
+				background: $Primary1

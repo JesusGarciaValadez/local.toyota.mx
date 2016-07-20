@@ -1,0 +1,172 @@
+.menu3
+	background: #fff
+	height: 78px
+	overflow: hidden
+	width: 100%
+	nav
+		display: table
+		float: left
+		height: 100%
+		margin-left: 20px
+		overflow: hidden
+		ul
+			display: table-row
+			margin: 0px
+			padding: 0px
+			li
+				display: table-cell
+				margin: 0px
+				padding: 0px
+				vertical-align: middle
+				a
+					color: $Texts2
+					font-size: 1rem
+					font-weight: 300
+					text-decoration: none
+				&:after
+					color: $Texts2
+					content: " | "
+					padding: 0px 15px
+				&:last-child::after
+					content: ""
+	span
+		display: table
+		float: right
+		height: 100%
+		margin-right: 20px
+		overflow: hidden
+		p
+			color: $Texts2
+			display: table-cell
+			font-size: 1rem
+			font-weight: 300
+			vertical-align: middle
+
+div
+	&#cover, &#especificaciones
+		position: relative
+		top: -60px
+	&#colores, &#highlights, &#galeria, &#highlights2, &#versiones, &#manejo, &#descanso
+		position: relative
+		top: -50px
+
+//Fancybox
+
+.fancybox-wrap
+	z-index: 9999
+	&:focus
+		outline-width: 0
+
+.fancybox-image, .fancybox-iframe 
+	display: block
+	height: 100%
+	width: 100%
+.fancybox-image 
+	max-height: 100%
+	max-width: 100%
+
+.fancybox-close 
+	cursor: pointer
+	height: 36px
+	position: absolute
+	right: 0px
+	top: -36px
+	width: 20px
+	z-index: 8040
+	&:before
+		+center(vh)
+		background: url(img/@2x-icn-close.png) no-repeat
+		background-size: contain
+		content: " "
+		height: 15px
+		width: 23px
+
+.fancybox-prev 
+	border-left: 1px solid transparent
+	border: 1px solid #fff
+	color: #fff
+	left: 0px
+	position: relative
+	&:before
+		+fawesome("\f104")
+		+translate(-60%,-50%)
+		font-size: 25px
+		left: 50%
+		position: absolute
+		text-indent: 0px
+		top: 50%
+.fancybox-next 
+	border-right: 1px solid transparent
+	border: 1px solid #fff
+	color: #fff
+	position: relative
+	right: 0px
+	&:before
+		+fawesome("\f105")
+		+translate(-40%,-50%)
+		font-size: 25px
+		left: 50%
+		position: absolute
+		text-indent: 0px
+		top: 50%
+.fancybox-nav 
+	+bx
+	+center(h)
+	+fx(all,0.5s)
+	height: 52px
+	outline: 0
+	text-decoration: none
+	text-indent: -9998px
+	width: 52px
+	z-index: 98
+	&:hover 
+		background: #cc0033
+		border: 1px solid #cc0033
+		color: #fff
+
+//Overlay helper
+
+.fancybox-lock 
+	overflow: hidden !important
+	width: auto
+	.fancybox-overlay 
+		overflow-y: scroll
+		overflow: auto
+.fancybox-lock-test 
+	overflow-y: hidden !important
+.fancybox-overlay 
+	background: #111112
+	display: none
+	height: 100vh!important
+	left: 0
+	overflow: hidden
+	position: absolute
+	top: 0
+	width: 100vw!important
+	z-index: 8010
+.fancybox-overlay-fixed 
+	bottom: 0
+	position: fixed
+	right: 0
+
+//Title helper
+
+.fancybox-title-float-wrap 
+	background: rgba(0, 0, 0, 0.6)
+	bottom: 0px
+	box-sizing: border-box
+	padding: 1em
+	position: absolute
+	width: 100%
+	z-index: 8050
+	.child 
+		color: $Texts4
+		display: block
+		font-family: 'Open Sans', sans-serif
+		font-size: 0.857143rem
+		font-weight: 300
+		line-height: 1.313em
+		margin: 1em auto
+		text-align: center
+		white-space: pre-line
+		width: 60%

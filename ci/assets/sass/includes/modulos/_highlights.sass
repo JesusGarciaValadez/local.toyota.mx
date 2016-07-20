@@ -1,0 +1,102 @@
+.highlights
+	.container
+		overflow: visible
+
+.menuHigh
+	+center(vh)
+	display: table
+	left: inherit
+	margin-right: 2em
+	right: 100%
+	span
+		cursor: pointer
+		display: block
+		&.fa-angle-up
+			+fx(all,0.5s)
+			+translate(10%,0%)
+			bottom: 100%
+			color: rgba(47,52,56, 0.2)
+			font-size: 1.92857rem
+			position: absolute
+			right: 0px
+		&.fa-angle-down
+			+fx(all,0.5s)
+			+translate(10%,0%)
+			color: rgba(47,52,56, 0.2)
+			font-size: 1.92857rem
+			position: absolute
+			right: 0px
+			top: 100%
+		&.fa:hover
+			color: rgba(47,52,56, 1)
+
+	ul
+		margin: 1em 0px
+		position: relative
+		li
+			color: rgba(47,52,56, 0.2)
+			cursor: pointer
+			font-weight: 700
+			height: 15px
+			margin: 1em 0px
+			overflow: hidden
+			padding-left: 15px
+			position: relative
+			width: 0px
+			&:before
+				+center(h)
+				+fx(all,0.5s)
+				background: rgba(47,52,56, 0.2)
+				border-radius: 50%
+				border: 3px solid #fff
+				content: " "
+				display: table
+				height: 8px
+				right: 0px
+				width: 8px
+			&:hover, &.activo
+				+fx(all,0.5s)
+				color: rgba(47,52,56, 1)
+				&:before
+					background: none
+					border: 3px solid #2185d6
+
+.highs
+	height: 52rem
+	overflow: hidden
+	width: 100%
+	h1
+		font-size: 5rem
+		span
+			display: block
+	li
+		display: none
+		overflow: hidden
+		position: relative
+		width: 100%
+		&:first-child
+			h1
+				opacity: 0
+		> div
+			+bx
+			float: right
+			padding: 1em
+			width: 50%
+			&:first-child
+				+center(h)
+				display: table
+			h1 
+				span
+					color: $Feedback1
+			p
+				font-size: 1.14286rem
+				font-weight: 300
+				&:before
+					+fawesome("\f111")
+					color: $Feedback1
+					font-size: 6px
+					padding-right: 1em
+					vertical-align: middle
+			> img
+				height: auto
+				width: 100%

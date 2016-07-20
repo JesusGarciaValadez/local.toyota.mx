@@ -1,0 +1,182 @@
+.highlights2
+	background: #000
+	padding-bottom: 5rem
+	.container 
+		h2
+			+center(v)
+			color: #fff
+			opacity: 0
+			font-size: 2.14286rem
+			font-weight: 400
+			text-align: center
+			white-space: pre-line
+			bottom: 0px
+			width: 100%
+			span
+				font-weight: 700
+				color: #1698e4
+		.parrafo
+			min-height: 6rem
+			max-height: 6rem
+			overflow: hidden
+			p
+				color: #fff
+				display: none
+				font-size: 2.14286rem
+				margin: 0px
+				text-align: center
+				white-space: pre-line
+				span
+					font-weight: 700
+					color: #1698e4
+		#especial
+			+fx(all,1s)
+			background: url(img/bgPantallaOff.jpg) no-repeat top center
+			background-size: auto 100% !important
+			overflow: hidden
+			min-height: 50rem
+			&.off
+				background: url(img/bgPantalla0.jpg) no-repeat top center
+			&.bg0
+				background: url(img/bgPantalla1.jpg) no-repeat top center
+			&.bg1
+				background: url(img/bgPantalla2.jpg) no-repeat top center
+			&.bg2
+				background: url(img/bgPantalla3.jpg) no-repeat top center
+			&.bg3
+				background: url(img/bgPantalla4.jpg) no-repeat top center
+			&.bg4
+				background: url(img/bgPantalla5.jpg) no-repeat top center
+			&.bg5
+				background: url(img/bgPantalla6.jpg) no-repeat top center
+			&.bg-1
+				background: url(img/bgPantalla6.jpg) no-repeat top center
+			.menu
+				+center(vh)
+				opacity: 0
+				overflow: hidden
+				top: 35%
+				width: 100%
+				ul
+					float: left
+					&:last-child
+						float: right
+					li
+						color: #fff
+						cursor: pointer
+						display: table
+						font-size: 1.14286rem
+						margin: auto
+						margin-bottom: 30px
+						> span
+							position: relative
+							display: table
+							width: 40px
+							height: 40px
+							margin: 1rem auto
+							&:before
+								+center(vh)
+								content: " "
+								display: block
+								background: #009def
+								border-radius: 50%
+								height: 8px
+								width: 8px
+							&:after
+								background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,0) 0%, rgba(165,220,249,0) 35%, rgba(0,157,239,1) 100%)
+								background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,0)), color-stop(35%, rgba(165,220,249,0)), color-stop(100%, rgba(0,157,239,1)))
+								background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,0) 0%, rgba(165,220,249,0) 35%, rgba(0,157,239,1) 100%)
+								background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,0) 0%, rgba(165,220,249,0) 35%, rgba(0,157,239,1) 100%)
+								background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,0) 0%, rgba(165,220,249,0) 35%, rgba(0,157,239,1) 100%)
+								background: radial-gradient(ellipse at center, rgba(255,255,255,0) 0%, rgba(165,220,249,0) 35%, rgba(0,157,239,1) 100%)
+								filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#009def',GradientType=0 )
+								content: " "
+								display: block
+								border-radius: 50%
+								height: 100%
+								width: 100%
+								-webkit-animation-duration: 1.5s
+								animation-duration: 1.5s
+								-webkit-animation-fill-mode: both
+								animation-fill-mode: both
+						&.activo
+							color: #009def
+						&:hover
+							color: #009def
+							> span
+								&:after
+									-webkit-animation-name: pulsation
+									animation-name: pulsation
+									animation-iteration-count: infinite
+									-webkit-animation-iteration-count: infinite
+
+		.menufle
+			display: none
+			height: 54px
+			margin: 1rem auto
+			position: relative
+			i
+				+fx(all,0.5s) 
+				border: 1px solid #fff
+				color: #fff
+				cursor: pointer
+				display: block
+				height: 52px
+				outline: 0
+				text-decoration: none
+				text-indent: -9998px
+				width: 52px
+				z-index: 98
+				&.disabled 
+					border: 1px solid #2f3438
+					color: #2f3438
+					&:hover
+						background: none
+			.prev
+				position: absolute
+				top: 0px
+				left: 0px
+				i
+					left: 0px
+					position: relative
+					&:before
+						+fawesome("\f104")
+						+translate(-60%,-50%)
+						font-size: 25px
+						left: 50%
+						position: absolute
+						text-indent: 0px
+						top: 50%
+			.next
+				position: absolute
+				top: 0px
+				right: 0px
+				i
+					position: relative
+					right: 0px
+					&:before
+						+fawesome("\f105")
+						+translate(-40%,-50%)
+						font-size: 25px
+						left: 50%
+						position: absolute
+						text-indent: 0px
+						top: 50%
+
+			.contador
+				color: #fff
+				display: block
+				font-size: 4.28571rem
+				font-weight: 100
+				line-height: 1.2
+				text-align: center
+				sup
+					font-size: 1.28571rem
+					font-weight: 300
+					position: relative
+					top: -1.4em
+				sub
+					font-size: 1.28571rem
+					font-weight: 300
+					position: relative
+					top: -0.3em

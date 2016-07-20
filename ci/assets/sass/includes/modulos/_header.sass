@@ -1,0 +1,143 @@
+.menu1
+	background: #fff
+	border-bottom: 1px solid #e6e6e6
+	height: 59px
+	overflow: hidden
+	position: relative
+	width: 100%
+	z-index: 120
+	nav
+		display: table
+		float: right
+		height: 100%
+		overflow: hidden
+		position: relative
+		ul
+			display: table
+			height: 100%
+			margin: 0px
+			padding: 0px
+			li
+				+fx(all,0.3s)
+				border-left: 1px solid #e6e6e6
+				display: table
+				float: left
+				font-size: 1rem
+				font-weight: 700
+				height: 100%
+				margin: 0px
+				&:hover
+					background: $Texts3
+					a
+						color: $Texts4
+				a
+					color: $Texts2
+					display: table-cell
+					font-size: 1rem
+					height: 100%
+					margin: auto
+					padding: 0px 1.5em
+					text-decoration: none
+					text-transform: uppercase
+					vertical-align: middle
+
+.redes
+	display: table
+	float: right
+	height: 100%
+	overflow: hidden
+	position: relative
+	span
+		display: table-row
+		margin: 0px
+		padding: 0px
+		a
+			+fx(all,0.3s)
+			border-left: 1px solid #e6e6e6
+			cursor: pointer
+			display: table-cell
+			margin: 0px
+			padding: 0px 20px
+			text-decoration: none
+			vertical-align: middle
+			i
+				color: $Texts2
+				display: table
+				font-size: 1.3em
+				margin: auto
+				text-decoration: none
+			&:hover
+				background: $Texts3
+				i
+					color: $Texts4
+
+.btnprev
+	+fx(all,0.3s)
+	background: $Primary1
+	color: $Texts4
+	display: block
+	float: right
+	font-size: 1rem
+	font-weight: 700
+	padding: 24px 0px
+	text-align: center
+	text-decoration: none
+	text-transform: uppercase
+	width: 15.7143rem
+	&:hover
+		background: $Primary3
+
+.menu2
+	background: #2f3438
+	bottom: 0px
+	height: 50px
+	overflow: hidden
+	position: absolute
+	width: 100%
+	z-index: 120
+	> a
+		&.scroll
+			+center(h)
+			background: url(img/logoSedan16.png) no-repeat
+			background-size: contain
+			display: table
+			height: 32px
+			left: 2em
+			width: 110px
+
+	nav
+		display: table
+		float: right
+		height: 100%
+		overflow: hidden
+		ul
+			display: table-row
+			margin: 0px
+			padding: 0px
+			li
+				display: table-cell
+				margin: 0px
+				padding: 0px
+				vertical-align: middle
+				&:after
+					color: #92999e
+					content: " | "
+					padding: 0px 15px
+				&:last-child
+					&:after
+						content: ""
+				&.activo
+					a
+						color: #fff
+				a
+					+fx(all,0.5s)
+					color: #92999e
+					font-size: 1rem
+					font-weight: 400
+					text-decoration: none
+					text-transform: uppercase
+					&:hover
+						color: #fff
+
+	.btnprev
+		padding: 20px 0px

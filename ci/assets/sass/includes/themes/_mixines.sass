@@ -1,0 +1,56 @@
+//- Mixines
+=bx($value: border-box)
+	-moz-box-sizing: $value
+	-webkit-box-sizing: $value
+	box-sizing: $value
+
+=appearance
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+
+=center($value: v)
+	position: absolute
+	@if $value == v
+		-webkit-transform: translateX(-50%)
+		-moz-transform: translateX(-50%)
+		-ms-transform: translateX(-50%)
+		transform: translateX(-50%)
+		left: 50%
+	@else if $value == h
+		-webkit-transform: translateY(-50%)
+		-moz-transform: translateY(-50%)
+		-ms-transform: translateY(-50%)
+		transform: translateY(-50%)
+		top: 50%
+	@else if $value == vh
+		-webkit-transform: translate(-50%, -50%)
+		-moz-transform: translate(-50%, -50%)
+		-ms-transform: translate(-50%, -50%)
+		transform: translate(-50%, -50%)
+		top: 50%
+		left: 50%
+	@else if $value == r
+		-webkit-transform: translate(0%, 0%)
+		-moz-transform: translate(0%, 0%)
+		-ms-transform: translate(0%, 0%)
+		transform: translate(0%, 0%)
+		position: inherit
+		top: inherit
+		left:  inherit
+
+=translate($value1,$value2 )
+	-webkit-transform: translate($value1, $value2)
+	-moz-transform: translate($value1, $value2)
+	-ms-transform: translate($value1, $value2)
+	transform: translate($value1, $value2)
+
+=fx($elem, $time: 1s)
+	-webkit-transition: $elem $time
+	-moz-transition: $elem $time
+	-ms-transition: $elem $time
+	transition: $elem $time
+
+=fawesome($value)
+	content: $value
+	font-family: "FontAwesome"

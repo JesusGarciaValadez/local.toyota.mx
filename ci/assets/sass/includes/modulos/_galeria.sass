@@ -1,0 +1,162 @@
+.galeria
+	+bx
+	background: #fff
+	padding-bottom: 5rem
+	position: relative
+	h2
+		opacity: 0
+		text-align: center
+		span
+			font-weight: 300
+	> div
+		&:not(#galeria)
+			overflow: hidden
+			position: relative
+			width: 100% 
+		> span
+			background: $Feedback1
+			height: 100%
+			left: 0px
+			position: absolute
+			top: 0px
+			width: 8px
+	.container
+		padding: 0px
+
+.contGale 
+	ul
+		height: 750px
+		li
+			display: block
+			float: left
+			height: 50%
+			overflow: hidden
+			width: 25%
+			a
+				display: block
+				height: 100%
+				overflow: hidden
+				width: 100%
+				img
+					+fx(all,0.8s)
+					display: block
+					height: 100%
+			&:first-child
+				height: 100%
+				width: 50%
+				a 
+					img
+						height: 100%
+						width: auto
+			&:hover 
+				a 
+					img
+						-ms-transform: scale(1.08,1.08)!important
+						-webkit-transform: scale(1.08,1.08)!important
+						transform: scale(1.08,1.08)!important
+
+.anuncio
+	background: #fff
+	bottom: 0px
+	height: 50%
+	position: absolute
+	right: 0px
+	width: 25%
+	> span
+		+bx
+		+center(vh)
+		display: block
+		width: 70%
+	p
+		font-family: 'Open Sans', sans-serif
+		font-size: 1.14286rem
+		font-weight: 400
+		span
+			font-weight: 700
+
+.galeria 
+	.bx-prev 
+		border: 1px solid #2f3438
+		color: #2f3438
+		left: 0px
+		position: relative
+		&:before
+			+fawesome("\f104")
+			+translate(-60%,-50%)
+			font-size: 25px
+			left: 50%
+			position: absolute
+			text-indent: 0px
+			top: 50%
+	.bx-next 
+		border: 1px solid #2f3438
+		color: #2f3438
+		position: relative
+		right: 0px
+		&:before
+			+fawesome("\f105")
+			+translate(-40%,-50%)
+			font-size: 25px
+			left: 50%
+			position: absolute
+			text-indent: 0px
+			top: 50%
+	.bx-controls.bx-has-pager.bx-has-controls-direction
+		border-top: 1px solid #d0d4d9
+		margin: 1em 0px
+		padding-top: 1em
+		position: relative
+		width: 100%
+
+	.bx-pager.bx-default-pager
+		display: table
+		margin: auto
+	.bx-pager-item
+		display: inline-block
+		margin: 3px 0px
+		padding: 6px
+		a
+			color: #bdc3c7
+			font-family: 'Open Sans', sans-serif
+			font-size: 1.14286rem
+			font-weight: 400
+			margin: 0px
+			padding: 7px 0px
+			text-decoration: none
+			&:hover, &.active
+				color: #0c4da2
+	.bx-controls-direction
+		+center(h)
+		right: 0px
+		a
+			+fx(all,0.5s) 
+			display: block
+			height: 52px
+			outline: 0
+			text-decoration: none
+			text-indent: -9998px
+			width: 52px
+			z-index: 98
+			&.disabled 
+				border: 1px solid #bdc3c7
+				color: #bdc3c7
+				&:hover
+					background: none
+
+		.contador
+			display: block
+			font-size: 4.28571rem
+			font-weight: 100
+			line-height: 1.2
+			text-align: center
+			sup
+				font-size: 1.28571rem
+				font-weight: 300
+				position: relative
+				top: -1.4em
+			sub
+				font-size: 1.28571rem
+				font-weight: 300
+				position: relative
+				top: -0.3em
+

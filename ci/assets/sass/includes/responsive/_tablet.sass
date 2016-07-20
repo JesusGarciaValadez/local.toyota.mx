@@ -1,0 +1,200 @@
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation : landscape)
+	html
+		font-size: 12px
+	body
+		height: 100vh
+
+	.container
+		width: 100% !important
+
+	.menuHigh
+		span
+			&.fa
+				&:hover
+					color: rgba(47,52,56, 0.2)
+
+	.contGale
+		ul
+			height: 640px
+	.galeria
+		.bx-controls-direction
+			+center(r)
+			height: 54px
+			margin: 1em auto
+			overflow: hidden
+	#prev
+		left: 0px
+		position: absolute
+		top: 0px
+	#next
+		position: absolute
+		right: 0px
+		top: 0px
+
+	.controles
+		height: 54px
+		margin: 1em auto
+		overflow: hidden
+		position: relative
+	.action-button
+		+center(r)
+	.form-prev
+		left: 0px
+		position: absolute
+		top: 0px
+	.form-next
+		position: absolute
+		right: 0px
+		top: 0px
+
+	.fancybox-lock 
+		body
+			height: 100vh!important
+			overflow: hidden !important
+			width: 100vw!important
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation : portrait)
+
+	html
+		font-size: 11px
+	body
+		height: 100vh
+
+	.container
+		width: 100%!important
+
+	.cover
+		background: url(img/bgCoverM.jpg) no-repeat center
+		background-size: cover
+		.container 
+			> div
+				left: 30%
+
+	.menuHigh
+		span
+			&.fa
+				&:hover
+					color: rgba(47,52,56, 0.2)
+
+	.menuHigh
+		-moz-transform: rotate(-90deg)
+		-o-transform: rotate(-90deg)
+		-webkit-transform: rotate(-90deg)
+		margin: -50px auto 0px
+		position: relative
+		right: 0px
+
+	.galeria 
+		> div
+			> span
+				display: none
+		.bx-controls-direction
+			+center(r)
+			height: 54px
+			margin: 1em auto
+			overflow: hidden
+	#prev
+		left: 0px
+		position: absolute
+		top: 0px
+	#next
+		position: absolute
+		right: 0px
+		top: 0px
+
+	.controles
+		height: 54px
+		margin: 1em auto
+		overflow: hidden
+		position: relative
+	.action-button
+		+center(r)
+	.form-prev
+		left: 0px
+		position: absolute
+		top: 0px
+	.form-next
+		position: absolute
+		right: 0px
+		top: 0px
+
+	.distribuidoras 
+		.col1
+			float: left
+			height: 50%
+			width: 100%
+		.col2
+			float: left
+			height: 50%
+			width: 100%
+
+	.fancybox-lock body
+		height: 100vh!important
+		overflow: hidden !important
+		width: 100vw!important
+
+//Tablet Portrait size to standard 960 (devices and browsers)
+@media only screen and (min-width: 768px) and (max-width: 959px)
+	html
+		font-size: 11px
+	body
+		height: 100vh
+	.container
+		width: 768px!important
+
+	.cover
+		background: url(img/bgCoverM.jpg) no-repeat center
+		background-size: cover
+		.container 
+			> div
+				left: 30%
+
+	.menuHigh
+		-moz-transform: rotate(-90deg)
+		-o-transform: rotate(-90deg)
+		-webkit-transform: rotate(-90deg)
+		margin: -50px auto 0px
+		position: relative
+		right: 0px
+
+	.contGale ul
+		height: 480px
+
+	.galeria 
+		> div
+			> span
+				display: none
+
+		.bx-controls-direction
+			+center(r)
+			height: 54px
+			margin: 1em auto
+			overflow: hidden
+	#prev
+		left: 0px
+		position: absolute
+		top: 0px
+
+	#next
+		position: absolute
+		right: 0px
+		top: 0px
+
+	.controles
+		height: 54px
+		margin: 1em auto
+		overflow: hidden
+		position: relative
+
+	.action-button
+		+center(r)
+
+	.form-prev
+		left: 0px
+		position: absolute
+		top: 0px
+		
+	.form-next
+		position: absolute
+		right: 0px
+		top: 0px
