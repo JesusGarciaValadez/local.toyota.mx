@@ -11,7 +11,14 @@
 |
 */
 
-Route::get( '/', function ()
+Route::get( '/', [ 'as' => 'home', 'uses' => 'HomeController@index' ] );
+
+Route::get( '/home', [ 'as' => 'home', 'uses' => 'HomeController@index' ] );
+
+Route::auth();
+
+Route::get( '/financiemiento', function ()
 {
-    return view( 'welcome' );
+  return 'financiamiento';
 } );
+
