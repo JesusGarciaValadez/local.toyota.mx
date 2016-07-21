@@ -31,7 +31,7 @@ class CreateCarsTable extends Migration
       $table->foreign( 'internal_specifications_id' )
             ->references( 'id' )
             ->on( 'internal_specifications' );
-      $table->timestamp();
+      $table->timestamps();
     } );
   }
 
