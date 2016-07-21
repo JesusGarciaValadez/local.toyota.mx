@@ -14,9 +14,24 @@ class CreateCarsTable extends Migration
   {
     Schema::create( 'cars', function ( Blueprint $table )
     {
-      $table->string( 'email' )->index();
-      $table->string( 'token' )->index();
-      $table->timestamp( 'created_at' );
+      $table->increments( 'id' );
+      $table->string( 'model' )->unique();
+      $table->integer( 'technical_specifications_id' )
+            ->unsigned();
+      $table->foreign( 'technical_specifications_id' )
+            ->references( 'id' )
+            ->on( 'technical_specifications' );
+      $table->integer( 'external_specifications_id' )
+            ->unsigned();
+      $table->foreign( 'external_specifications_id' )
+            ->references( 'id' )
+            ->on( 'external_specifications' );
+      $table->integer( 'internal_specifications_id' )
+            ->unsigned();
+      $table->foreign( 'internal_specifications_id' )
+            ->references( 'id' )
+            ->on( 'internal_specifications' );
+      $table->timestamp();
     } );
   }
 
