@@ -8,7 +8,7 @@
 				"Cilindros":"4 en línea",
 				"Valvulas":"104 @ 4,200"
 			}],
-			"Frenos":[ 
+			"Frenos":[
 				"Frenos delanteros / Disco ventilado (255 mm de diámetro)",
 				"Frenos traseros / Tambor (200 mm diámetro)",
 				"Freno de estacionamiento"
@@ -104,7 +104,7 @@
 				"Cilindros":"4 en línea",
 				"Valvulas":"104 @ 4,200"
 			}],
-			"Frenos":[ 
+			"Frenos":[
 				"Frenos delanteros / Disco ventilado (255 mm de diámetro)",
 				"Frenos traseros / Tambor (200 mm diámetro)",
 				"Freno de estacionamiento"

@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Highlander\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Http\Requests;
+use Highlander\Http\Requests;
 
 class CarController extends Controller
 {

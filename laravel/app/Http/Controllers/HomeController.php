@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Highlander\Http\Controllers;
 
-use App\Http\Requests;
+use Highlander\Http\Requests;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Events;
+namespace Highlander\Events;
 
 abstract class Event
 {

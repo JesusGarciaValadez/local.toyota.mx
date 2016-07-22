@@ -25,7 +25,7 @@
       Un nuevo diseño, atlético y dinámico. <span>Afirmación de belleza y arte.</span>
     </h2>
     <div id="container" class="container">
-      {!! Html::image( 'assets/images/reel360/blanco/1.jpg') !!}
+      {!! Html::image( 'assets/images/reel360/blanco/1.jpg' ) !!}
       <div class="new-Menu360">
         <p>Elige un color</p>
         <div class="contColors"></div>
