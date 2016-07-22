@@ -11,7 +11,7 @@
     <div id="cover"></div>
     <div class="titulo fadeIn animated">
       <h1><span>Prius</span> 2016.</h1>
-      <h2>Un mejor auto<span> para un mejor mundo,para un mejor tú</span></h2>
+      <h2>Un mejor auto<span> para un mejor mundo, para un mejor tú</span></h2>
       <div class="btvideo">
         <span><p>Ve el video y descubre la grandeza de Prius.</p></span>
         <span><a class="fancybox-media" href="https://www.youtube.com/watch?v=a33pze_sSY4"></a></span>
@@ -21,9 +21,9 @@
   </section>
   <section class="colores">
     <div id="colores"></div>
-    <h2 class="animated">
-      Un nuevo diseño, atlético y dinámico. <span>Afirmación de belleza y arte.</span>
-    </h2>
+    <!-- Cambiar -->
+    <h2 class="animated">Un nuevo diseño, atlético y dinámico. <span>Afirmación de belleza y arte.</span></h2>
+    <!-- Cambiar -->
     <div id="container" class="container">
       {!! Html::image( 'assets/images/reel360/blanco/1.jpg' ) !!}
       <div class="new-Menu360">
@@ -45,11 +45,13 @@
       <ul class="highs">
         <li>
           <div>
+            <!-- Cambiar -->
             <h1 class="animated">Diseño <span>exterior.</span></h1>
             <p>El frente en forma trapezoidal le confiere una silueta imponente, atlética y dinámica</p>
             <p>El diseño de sus faros y la parrilla central cromada al centro lo hacen ver mucho más lujoso</p>
             <p>Elegante y refinado diseño en luces traseras. Impresionante por donde se vea</p>
             <p>Espejos laterales eléctricos aerodinámicos que reducen el ruido del viento</p>
+            <!-- Cambiar -->
           </div>
           <div>
             {!! Html::image( 'assets/images/highlight/highlight01.jpg' ) !!}
@@ -57,11 +59,13 @@
         </li>
         <li>
           <div>
+            <!-- Cambiar -->
             <h1 class="animated">Diseño <span>interior.</span></h1>
             <p>Tablero atractivo, con look deportivo, toda la información que necesitas fácil de leer</p>
             <p>El diseño y posición de sus asientos crean una atmósfera de espacio y confort total</p>
             <p>La cajuela de Yaris Sedán no tiene rival, es la más amplia dentro de su mercado</p>
             <p>Gran tamaño en la tapa de la cajuela, será muy fácil colocar objetos voluminosos</p>
+            <!-- Cambiar -->
           </div>
           <div>
             {!! Html::image( 'assets/images/highlight/highlight02.jpg' ) !!}
@@ -69,11 +73,13 @@
         </li>
         <li>
           <div>
+            <!-- Cambiar -->
             <h1 class="animated">Driving <span>performance</span></h1>
             <p>Distintivo tipo Catamarán que permite ahorro en combustible hasta del 5%</p>
             <p>Forma aerodinámica que mejora su rendimiento. Coeficiente aerodinámico de 0.28</p>
             <p>Transmisión CVT-iS con siete cambios sensitivos. Única en su segmento</p>
             <p>Mejorada dirección (Electric Power Steering) con asistencia variable sensible a la velocidad</p>
+            <!-- Cambiar -->
           </div>
           <div>
             {!! Html::image( 'assets/images/highlight/highlight03.jpg' ) !!}
@@ -81,11 +87,13 @@
         </li>
         <li>
           <div>
+            <!-- Cambiar -->
             <h1 class="animated">Seguridad<span></span></h1>
             <p>Refuerzos estratégicos que protegen a todos sus ocupantes ante cualquier eventualidad</p>
             <p>Destacada combinación en el sistema de frenado ABS Y BA</p>
             <p>Alto nivel de seguridad pasiva que incorpora bolsas de aire frontales en todas sus versiones</p>
             <p>Estructura completamente rediseñada que maximiza su fortaleza y rigidez</p>
+            <!-- Cambiar -->
           </div>
           <div>
             {!! Html::image( 'assets/images/highlight/highlight04.jpg' ) !!}
@@ -95,10 +103,12 @@
       <div class="menuHigh">
         <span class="fa fa-angle-up"></span>
         <ul>
+          <!-- Cambiar -->
           <li class="activo">Diseño exterior.</li>
           <li>Diseño interior.</li>
           <li>Driving performance</li>
           <li>Seguridad</li>
+          <!-- Cambiar -->
         </ul>
         <span class="fa fa-angle-down"></span>
       </div>
@@ -106,12 +116,15 @@
   </section>
   <section class="galeria">
     <div id="galeria"></div>
+    <!-- Cambiar -->
     <h2 class="animated">Su nuevo diseño te dejará sin palabras.</h2>
+    <!-- Cambiar -->
     <div>
       <span></span>
       <div class="container">
         <div class="contGale">
           <div>
+            <!-- Cambiar -->
             <ul>
               <li>
                 <a class="fancybox" rel="gallery1" href="assets/images/galeria/img-01.jpg" title="Luces traseras integradas a la carrocería que lo hacen ver dinámico.">
@@ -156,10 +169,13 @@
                 </a>
               </li>
             </ul>
+            <!-- Cambiar -->
           </div>
           <div class="anuncio">
             <span>
+              <!-- Cambiar -->
               <p>El rediseño del <span>Yaris Sedán</span> se perfeccionó, con líneas fuertes y definidas que le dan un “look más robusto” colocándolo a la vanguardia para volverlo referencia para todos los autos de su categoría.</p>
+              <!-- Cambiar -->
               <!--
               {!! Html::link( '', 'Conoce Más', [
                 'class' => 'boton'
@@ -218,10 +234,13 @@
   <section class="versiones">
     <div id="versiones"></div>
     <div class="container">
+      <!-- Cambiar -->
       <h2 class="animated"><span>Versiones</span> HIGHLANDER  2016.</h2>
+      <!-- Cambiar -->
       <div class="modelos">
         <div>
           <div>
+            <!-- Cambiar -->
             <div>
               {!! Html::image( 'assets/images/versiones/img_lateral.png') !!}
               <h3>HIGHLANDER LE</h3>
@@ -235,6 +254,8 @@
               <span></span>
               <a href="especificaciones/coremt" class="link">Ver detalle</a>
             </div>
+            <!-- Cambiar -->
+            <!-- Cambiar -->
             <div>
               {!! Html::image( 'assets/images/versiones/img_lateral.png') !!}
               <h3>HIGHLANDER XLE</h3>
@@ -247,8 +268,10 @@
               <span></span>
               <a href="especificaciones/corectvis" class="link">Ver detalle</a>
             </div>
+            <!-- Cambiar -->
           </div>
           <div>
+            <!-- Cambiar -->
             <div>
               {!! Html::image( 'assets/images/versiones/img_lateral.png') !!}
               <h3>HIGHLANDER LIMITED PR</h3>
@@ -261,6 +284,8 @@
               <span></span>
               <a href="especificaciones/corectvis" class="link">Ver detalle</a>
             </div>
+            <!-- Cambiar -->
+            <!-- Cambiar -->
             <div>
               {!! Html::image( 'assets/images/versiones/img_lateral.png') !!}
               <h3>HIGHLANDER LIMITED</h3>
@@ -275,6 +300,7 @@
               <span></span>
               <a href="especificaciones/corectvis" class="link">Ver detalle</a>
             </div>
+            <!-- Cambiar -->
           </div>
         </div>
       </div>
@@ -284,7 +310,9 @@
     <div id="manejo"></div>
     <div class="container">
       <div>
+        <!-- Cambiar -->
         <h2 class="animated">Un subcompacto funcional y sumamente atractivo.</span></h2>
+        <!-- Cambiar -->
       </div>
     </div>
   </section>
@@ -292,9 +320,13 @@
     <div id="descanso"></div>
     <div class="container">
       <div>
+        <!-- Cambiar -->
         <h1>Eficiente desempeño<br>en cada momento.</h1>
+        <!-- Cambiar -->
         <span></span>
+        <!-- Cambiar -->
         <p>La solución ideal para los que buscan mejor rendimiento de combustible.</p>
+        <!-- Cambiar -->
         <a href="distribuidores" class="boton">Consíguelo aquí</a>
       </div>
     </div>
