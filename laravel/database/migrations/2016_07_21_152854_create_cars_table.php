@@ -20,17 +20,20 @@ class CreateCarsTable extends Migration
             ->unsigned();
       $table->foreign( 'technical_specifications_id' )
             ->references( 'id' )
-            ->on( 'technical_specifications' );
+            ->on( 'technical_specifications' )
+            ->onDelete( 'cascade' );
       $table->integer( 'external_specifications_id' )
             ->unsigned();
       $table->foreign( 'external_specifications_id' )
             ->references( 'id' )
-            ->on( 'external_specifications' );
+            ->on( 'external_specifications' )
+            ->onDelete( 'cascade' );
       $table->integer( 'internal_specifications_id' )
             ->unsigned();
       $table->foreign( 'internal_specifications_id' )
             ->references( 'id' )
-            ->on( 'internal_specifications' );
+            ->on( 'internal_specifications' )
+            ->onDelete( 'cascade' );
       $table->timestamps();
     } );
   }
@@ -42,6 +45,17 @@ class CreateCarsTable extends Migration
    */
   public function down()
   {
-    Schema::drop('password_resets');
+    Schema::table( 'cars', function ( $table )
+    {
+      $table->dropForeign( 'technical_specifications_id_foreign' );
+      $table->dropColumn( 'technical_specifications_id' );
+
+      $table->dropForeign( 'external_specifications_id_foreign' );
+      $table->dropColumn( 'external_specifications_id' );
+
+      $table->dropForeign( 'internal_specifications_id_foreign' );
+      $table->dropColumn( 'internal_specifications_id' );
+    } );
+    Schema::drop( 'cars' );
   }
 }

@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateExternalSpecifications extends Migration
+class CreateExternalSpecificationsTable extends Migration
 {
   /**
    * Run the migrations.
@@ -15,13 +15,9 @@ class CreateExternalSpecifications extends Migration
     Schema::create( 'external_specifications', function ( Blueprint $table )
     {
       $table->increments( 'id' );
-      $table->integer( 'external_specifications_categories_id' )
-            ->unsigned();
-      $table->foreign( 'external_specifications_categories_id' )
-            ->references( 'id' )
-            ->on( 'external_specifications_categories' );
-      $table->string( 'description' );
-      $table->timestamp();
+      $table->integer( 'car_id' );
+      $table->longtext( 'description' );
+      $table->timestamps();
     } );
   }
 
@@ -32,6 +28,12 @@ class CreateExternalSpecifications extends Migration
    */
   public function down()
   {
+    Schema::table( 'external_specifications', function ( $table )
+    {
+      $table->dropColumn( 'id' );
+      $table->dropColumn( 'car_id' );
+      $table->dropColumn( 'description' );
+    } );
     Schema::drop( 'external_specifications' );
   }
 }

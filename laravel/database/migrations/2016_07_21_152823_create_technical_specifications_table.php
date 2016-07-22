@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTechnicalSpecifications extends Migration
+class CreateTechnicalSpecificationsTable extends Migration
 {
   /**
    * Run the migrations.
@@ -15,13 +15,9 @@ class CreateTechnicalSpecifications extends Migration
     Schema::create( 'technical_specifications', function ( Blueprint $table )
     {
       $table->increments( 'id' );
-      $table->integer( 'technical_specifications_categories_id' )
-            ->unsigned();
-      $table->foreign( 'technical_specifications_categories_id' )
-            ->references( 'id' )
-            ->on( 'technical_specifications_categories' );
-      $table->string( 'description' );
-      $table->timestamp();
+      $table->integer( 'car_id' );
+      $table->longtext( 'description' );
+      $table->timestamps();
     } );
   }
 
@@ -32,6 +28,12 @@ class CreateTechnicalSpecifications extends Migration
    */
   public function down()
   {
+    Schema::table( 'technical_specifications', function ( $table )
+    {
+      $table->dropColumn( 'id' );
+      $table->dropColumn( 'car_id' );
+      $table->dropColumn( 'description' );
+    } );
     Schema::drop( 'technical_specifications' );
   }
 }
