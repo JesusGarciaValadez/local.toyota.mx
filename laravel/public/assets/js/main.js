@@ -488,7 +488,7 @@ init = function(){
 		reelSize();
 	}
 
-	var cars = ['rojo','blanco','plata','gris','azul','negro'];
+	var cars = ['rojo','blanco','plata','gris','azul','negro','jade','arena','azulosc'];
 	var cars_n = ['Rojo','Blanco','Plata','Gris Metalico','Azul Metalico','Negro'];
 	// var cars = ['plata'];
 	// var cars_n = ['Plata'];

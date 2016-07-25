@@ -830,9 +830,23 @@ footer a.scroll:after {
   background: #2d4162;
 }
 
+.colores .new-Menu360 .contColors .jade {
+  background: #3d443b;
+}
+.colores .new-Menu360 .contColors .arena {
+  background: #b4ad9e;
+}
+.colores .new-Menu360 .contColors .azulosc {
+  background: #262a43;
+}
+
 .highlights .container {
   overflow: visible;
 }
+
+section.colores{
+    background-color:#c8c8c8; 
+  }
 
 .menuHigh {
   position: absolute;
