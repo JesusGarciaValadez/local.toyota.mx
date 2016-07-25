@@ -45,17 +45,6 @@ class CreateCarsTable extends Migration
    */
   public function down()
   {
-    Schema::table( 'cars', function ( $table )
-    {
-      $table->dropForeign( 'technical_specifications_id_foreign' );
-      $table->dropColumn( 'technical_specifications_id' );
-
-      $table->dropForeign( 'external_specifications_id_foreign' );
-      $table->dropColumn( 'external_specifications_id' );
-
-      $table->dropForeign( 'internal_specifications_id_foreign' );
-      $table->dropColumn( 'internal_specifications_id' );
-    } );
     Schema::drop( 'cars' );
   }
 }

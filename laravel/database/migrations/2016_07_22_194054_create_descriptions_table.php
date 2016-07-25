@@ -15,17 +15,18 @@ class CreateDescriptionsTable extends Migration
       Schema::create( 'descriptions', function ( Blueprint $table )
       {
         $table->increments( 'id' );
-        $table->string( 'title_h1' );
-        $table->longtext( 'slider_features' );
-        $table->longtext( 'title_slider_features' );
-        $table->string( 'title_gallery_fancybox' );
-        $table->longtext( 'gallery_fancybox' );
-        $table->string( 'description_gallery_fancybox' );
-        $table->string( 'title_versions_gallery' );
-        $table->longtext( 'cars_descriptions_gallery' );
-        $table->string( 'title_driving_animation' );
-        $table->string( 'title_footer' );
-        $table->string( 'description_footer' );
+        $table->string( 'titleH1' );
+        $table->longtext( 'sliderFeatures' );
+        $table->longtext( 'titleSliderFeatures' );
+        $table->string( 'titleGalleryFancybox' );
+        $table->longtext( 'galleryFancybox' );
+        $table->string( 'descriptionGalleryFancybox' );
+        $table->string( 'titleVersionsGallery' );
+        $table->longtext( 'carsDescriptionsGalleryOne' );
+        $table->longtext( 'carsDescriptionsGalleryTwo' );
+        $table->string( 'titleDrivingAnimation' );
+        $table->string( 'titleFooter' );
+        $table->string( 'descriptionFooter' );
         $table->timestamps( );
       } );
     }

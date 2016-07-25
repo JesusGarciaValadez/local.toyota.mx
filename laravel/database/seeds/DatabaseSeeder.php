@@ -15,5 +15,6 @@ class DatabaseSeeder extends Seeder
       $this->call( ExternalSpecificationsTableSeeder::class );
       $this->call( InternalSpecificationsTableSeeder::class );
       $this->call( CarsTableSeeder::class );
+      $this->call( DescriptionsTableSeeder::class );
     }
 }

@@ -23,6 +23,10 @@ class HomeController extends Controller
    */
   public function index()
   {
-    return view( 'welcome' );
+    $home   = \Highlander\Descriptions::first();
+
+    \Debugbar::log( $home );
+
+    return view( 'welcome' )->withHome( $home );
   }
 }
