@@ -21,9 +21,7 @@
   </section>
   <section class="colores">
     <div id="colores"></div>
-    <!-- Cambiar -->
     {!! $home->title_h1 !!}
-    <!-- Cambiar -->
     <div id="container" class="container">
       {!! Html::image( 'assets/images/reel360/blanco/1.jpg' ) !!}
       <div class="new-Menu360">
