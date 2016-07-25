@@ -74,7 +74,7 @@ class DescriptionsTableSeeder extends Seeder
         ] )
       ),
       'titleGalleryFancybox'        => '<h2 class="animated">Su nuevo diseño te dejará sin palabras.</h2>',
-      'galleryFancybox'              => base64_encode(
+      'galleryFancybox'             => base64_encode(
         serialize( [
           '<ul>
             <li>

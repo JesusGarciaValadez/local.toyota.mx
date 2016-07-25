@@ -25,8 +25,6 @@ class HomeController extends Controller
   {
     $home   = \Highlander\Descriptions::first();
 
-    \Debugbar::log( $home );
-
     return view( 'welcome' )->withHome( $home );
   }
 }

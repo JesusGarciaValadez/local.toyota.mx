@@ -22,7 +22,7 @@ class Descriptions extends Model
     'carsDescriptionsGallery',
     'titleDrivingAnimation',
     'titleFooter',
-    'description_footer',
+    'descriptionFooter',
   ];
 
   /**
