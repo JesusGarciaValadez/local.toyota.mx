@@ -12,8 +12,9 @@ class DescriptionsTableSeeder extends Seeder
   public function run()
   {
     DB::table( 'descriptions' )->insert( [
-      'titleH1'                      => '<h2 class="animated">Un nuevo diseño, atlético y dinámico. <span>Afirmación de belleza y arte.</span></h2>',
-      'sliderFeatures'               => base64_encode(
+      'brand'                       => 'Toyota Highlander',
+      'titleH1'                     => '<h2 class="animated">Un nuevo diseño, atlético y dinámico. <span>Afirmación de belleza y arte.</span></h2>',
+      'sliderFeatures'              => base64_encode(
         serialize( [
           '<li>
             <div>
