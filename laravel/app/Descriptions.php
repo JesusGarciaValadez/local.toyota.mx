@@ -19,7 +19,8 @@ class Descriptions extends Model
     'galleryFancybox',
     'descriptionGalleryFancybox',
     'titleVersionsGallery',
-    'carsDescriptionsGallery',
+    'carsDescriptionsGalleryOne',
+    'carsDescriptionsGalleryTwo',
     'titleDrivingAnimation',
     'titleFooter',
     'descriptionFooter',
@@ -62,5 +63,30 @@ class Descriptions extends Model
   public function getCarsDescriptionsGalleryTwoAttribute ( $value )
   {
     return unserialize( base64_decode( $value ) );
+  }
+
+  public function setSliderFeaturesAttribute ( $value )
+  {
+    return base64_encode( serialize( $value ) );
+  }
+
+  public function setTitleSliderFeaturesAttribute ( $value )
+  {
+    return base64_encode( serialize( $value ) );
+  }
+
+  public function setGalleryFancyboxAttribute ( $value )
+  {
+    return base64_encode( serialize( $value ) );
+  }
+
+  public function setCarsDescriptionsGalleryOneAttribute ( $value )
+  {
+    return base64_encode( serialize( $value ) );
+  }
+
+  public function setCarsDescriptionsGalleryTwoAttribute ( $value )
+  {
+    return base64_encode( serialize( $value ) );
   }
 }
