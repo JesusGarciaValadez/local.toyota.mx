@@ -63,7 +63,7 @@ class AdminController extends Controller
    */
   public function edit( $id )
   {
-    $home = \Highlander\Descriptions::find( $id );
+    $home = \Highlander\Descriptions::findOrFail( $id );
 
     return view( 'admin.edit' )->withHome( $home );
   }
@@ -77,13 +77,32 @@ class AdminController extends Controller
    */
   public function update( BrandUpdatedRequest $request, $id )
   {
+    $store = [
+      'titleH1'                     => $request->titleH1,
+      'sliderFeatures'              => base64_encode( serialize( $request->sliderFeatures ) ),
+      'titleSliderFeatures'         => base64_encode( serialize( $request->titleSliderFeatures ) ),
+      'titleGalleryFancybox'        => $request->titleGalleryFancybox,
+      'galleryFancybox'             => base64_encode( serialize( $request->galleryFancybox ) ),
+      'descriptionGalleryFancybox'  => $request->descriptionGalleryFancybox,
+      'titleVersionsGallery'        => $request->titleVersionsGallery,
+      'carsDescriptionsGalleryOne'  => base64_encode( serialize( $request->carsDescriptionsGalleryOne ) ),
+      'carsDescriptionsGalleryTwo'  => base64_encode( serialize( $request->carsDescriptionsGalleryTwo ) ),
+      'titleDrivingAnimation'       => $request->titleDrivingAnimation,
+      'titleFooter'                 => $request->titleFooter,
+      'descriptionFooter'           => $request->descriptionFooter,
+    ];
+
     /*
      * Persist the new data into the database.
      */
     $update = \Highlander\Descriptions::where( 'id', $id )
-                                      ->update( $request->all );
+                                      ->update( $store );
 
-    return redirect( '/admin/' )->withMessage( 'Página editada' );
+    $type     = ( $update ) ? "success" : "danger";
+    $message  = ( $update ) ? "Modelo de auto editado" : "Modelo de auto no editado";
+
+    return redirect( '/admin/' )->withType( $type )
+                                ->withMessage( $message );
   }
 
   /**
