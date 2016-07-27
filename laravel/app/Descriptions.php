@@ -65,28 +65,28 @@ class Descriptions extends Model
     return unserialize( base64_decode( $value ) );
   }
 
-  public function setSliderFeaturesAttribute ( $value )
+  public function setSliderFeaturesAttribute ( $sliderFeatures )
   {
-    return base64_encode( serialize( $value ) );
+    $this->attributes[ 'sliderFeatures' ]             = base64_encode( serialize( $sliderFeatures ) );
   }
 
-  public function setTitleSliderFeaturesAttribute ( $value )
+  public function setTitleSliderFeaturesAttribute ( $titleSliderFeatures )
   {
-    return base64_encode( serialize( $value ) );
+    $this->attributes[ 'titleSliderFeatures' ]        = base64_encode( serialize( $titleSliderFeatures ) );
   }
 
-  public function setGalleryFancyboxAttribute ( $value )
+  public function setGalleryFancyboxAttribute ( $galleryFancyboxAttribute )
   {
-    return base64_encode( serialize( $value ) );
+    $this->attributes[ 'galleryFancyboxAttribute' ]   = base64_encode( serialize( $galleryFancyboxAttribute ) );
   }
 
-  public function setCarsDescriptionsGalleryOneAttribute ( $value )
+  public function setCarsDescriptionsGalleryOneAttribute ( $carsDescriptionGalleryOne )
   {
-    return base64_encode( serialize( $value ) );
+    $this->attributes[ 'carsDescriptionGalleryOne' ]  = base64_encode( serialize( $carsDescriptionGalleryOne ) );
   }
 
-  public function setCarsDescriptionsGalleryTwoAttribute ( $value )
+  public function setCarsDescriptionsGalleryTwoAttribute ( $carsDescriptionsGalleryTwo )
   {
-    return base64_encode( serialize( $value ) );
+    $this->attributes[ 'carsDescriptionsGalleryTwo' ] = base64_encode( serialize( $carsDescriptionsGalleryTwo ) );
   }
 }
