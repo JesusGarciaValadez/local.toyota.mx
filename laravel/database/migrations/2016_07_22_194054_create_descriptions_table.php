@@ -15,6 +15,7 @@ class CreateDescriptionsTable extends Migration
       Schema::create( 'descriptions', function ( Blueprint $table )
       {
         $table->increments( 'id' );
+        $table->string( 'brand' );
         $table->string( 'titleH1' );
         $table->longtext( 'sliderFeatures' );
         $table->longtext( 'titleSliderFeatures' );
