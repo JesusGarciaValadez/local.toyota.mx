@@ -43,7 +43,7 @@
                 </div>
               </div>
 
-              <div class="form-group{{ $errors->has( 'sliderFeatures[]' ) ? ' has-error' : '' }}">
+              <div class="form-group{{ $errors->has( 'sliderFeatures' ) ? ' has-error' : '' }}">
                 {!! Form::label( 'sliderFeatures', 'Slider de características', [
                   'class' => 'col-md-3 control-label'
                 ] ) !!}
