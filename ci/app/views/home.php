@@ -42,15 +42,14 @@
                 <ul class="highs">
                     <li>
                         <div>
-                            <h1 class="animated">Diseño
-                                <span>exterior.</span></h1>
+                            <h1 class="animated"><span>Sistema de monitoreo de punto ciego.</span></h1>
                             <p>El frente en forma trapezoidal le confiere una silueta imponente, atlética y dinámica</p>
                             <p>El diseño de sus faros y la parrilla central cromada al centro lo hacen ver mucho más lujoso</p>
                             <p>Elegante y refinado diseño en luces traseras. Impresionante por donde se vea</p>
                             <p>Espejos laterales eléctricos aerodinámicos que reducen el ruido del viento</p>
                         </div>
                         <div>
-                            <img src="<?=base_url('assets/images/highlight/highlight01.jpg');?>">
+                            <img src="<?=base_url('assets/images/highlight/mas-espacio-de-carga.jpg');?>">
                         </div>
                     </li>
                     <li>
@@ -63,7 +62,7 @@
                             <p>Gran tamaño en la tapa de la cajuela, será muy fácil colocar objetos voluminosos</p>
                         </div>
                         <div>
-                            <img src="<?=base_url('assets/images/highlight/highlight02.jpg');?>">
+                            <img src="<?=base_url('assets/images/highlight/palanca.jpg');?>">
                         </div>
                     </li>
                     <li>
@@ -76,7 +75,7 @@
                             <p>Mejorada dirección (Electric Power Steering) con asistencia variable sensible a la velocidad</p>
                         </div>
                         <div>
-                            <img src="<?=base_url('assets/images/highlight/highlight03.jpg');?>">
+                            <img src="<?=base_url('assets/images/highlight/sistema-de-entretenimiento.jpg');?>">
                         </div>
                     </li>
                     <li>
@@ -88,7 +87,19 @@
                             <p>Estructura completamente rediseñada que maximiza su fortaleza y rigidez</p>
                         </div>
                         <div>
-                            <img src="<?=base_url('assets/images/highlight/highlight04.jpg');?>">
+                            <img src="<?=base_url('assets/images/highlight/sistema-de-monitoreo.jpg');?>">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h1 class="animated">Seguridad<span></span></h1>
+                            <p>Refuerzos estratégicos que protegen a todos sus ocupantes ante cualquier eventualidad</p>
+                            <p>Destacada combinación en el sistema de frenado ABS Y BA</p>
+                            <p>Alto nivel de seguridad pasiva que incorpora bolsas de aire frontales en todas sus versiones</p>
+                            <p>Estructura completamente rediseñada que maximiza su fortaleza y rigidez</p>
+                        </div>
+                        <div>
+                            <img src="<?=base_url('assets/images/highlight/techo-corredizo.jpg');?>">
                         </div>
                     </li>
                 </ul>
