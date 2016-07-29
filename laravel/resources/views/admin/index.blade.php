@@ -31,7 +31,7 @@
                 <tr>
                   <td><p><small><span>{!! $brand->brand !!}</small></p></td>
                   <td>
-                    <div class="clearfix form-group col-md-6">
+                    <div class="clearfix form-group col-md-6 col-md-offset-3">
                       <a href="{{ action( 'Admin\AdminController@edit', [ 'id' => $brand->id ] ) }}" class="btn btn-primary col-md-5"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
                       <div class="col-md-4 col-md-offset-1">
                         {!! Form::open( [ 'url' => 'admin/borrar/' . $brand->id, 'method' => 'DELETE', 'class' => 'form-horizontal', 'files' => false ] ) !!}

@@ -1,7 +1,7 @@
 @extends( 'layouts.admin' )
 
 @section('content')
-<div class="container">
+<div class="container edit">
   <div class="row">
     <div class="col-md-12">
       @if ( Session::has( 'message' ) )
@@ -22,7 +22,8 @@
               'url'     => 'admin/actualizar/' . $home->id,
               'method'  => 'PUT',
               'class'   => 'form-horizontal',
-              'files'   => false
+              'files'   => false,
+              'id'      => 'edit__form'
             ] ) !!}
 
               <div class="form-group{{ $errors->has( 'titleH1' ) ? ' has-error' : '' }}">
@@ -32,7 +33,8 @@
 
                 <div class="col-md-9">
                   {!! Form::text( 'titleH1', $home->titleH1, [
-                    'class'     => 'form-control'
+                    'class'     => 'form-control',
+                    'v-model.sync'  => 'newContact.comments'
                   ] ) !!}
 
                   @if ($errors->has( 'titleH1' ))
@@ -51,7 +53,8 @@
                 <div class="col-md-9">
                   @foreach( $home->sliderFeatures as $feature )
                   {!! Form::textarea( 'sliderFeatures[]', $feature, [
-                    'class' => 'form-control'
+                    'class' => 'form-control',
+                    'v-model.sync'  => 'newContact.comments'
                   ] ) !!}
                   @endforeach
 
@@ -71,7 +74,8 @@
                 <div class="col-md-9">
                   @foreach( $home->titleSliderFeatures as $feature )
                   {!! Form::textarea( 'titleSliderFeatures[]', $feature, [
-                    'class' => 'form-control'
+                    'class' => 'form-control',
+                    'v-model.sync'  => 'newContact.comments'
                   ] ) !!}
                   @endforeach
 
@@ -90,7 +94,8 @@
 
                 <div class="col-md-9">
                   {!! Form::text( 'titleGalleryFancybox', $home->titleGalleryFancybox, [
-                    'class'     => 'form-control'
+                    'class'     => 'form-control',
+                    'v-model.sync'  => 'newContact.comments'
                   ] ) !!}
 
                   @if ( $errors->has( 'titleGalleryFancybox' ) )
@@ -109,7 +114,8 @@
                 <div class="col-md-9">
                   @foreach( $home->galleryFancybox as $gallery )
                   {!! Form::textarea( 'galleryFancybox[]', $gallery, [
-                    'class' => 'form-control'
+                    'class' => 'form-control',
+                    'v-model.sync'  => 'newContact.comments'
                   ] ) !!}
                   @endforeach
 
@@ -128,7 +134,8 @@
 
                 <div class="col-md-9">
                   {!! Form::text( 'descriptionGalleryFancybox', $home->descriptionGalleryFancybox, [
-                    'class' => 'form-control'
+                    'class' => 'form-control',
+                    'v-model.sync'  => 'newContact.comments'
                   ] ) !!}
 
                   @if ( $errors->has( 'descriptionGalleryFancybox' ) )
@@ -146,7 +153,8 @@
 
                 <div class="col-md-9">
                   {!! Form::text( 'titleVersionsGallery', $home->titleVersionsGallery, [
-                    'class' => 'form-control'
+                    'class' => 'form-control',
+                    'v-model.sync'  => 'newContact.comments'
                   ] ) !!}
 
                   @if ( $errors->has( 'titleVersionsGallery' ) )
@@ -165,7 +173,8 @@
                 <div class="col-md-9">
                   @foreach( $home->carsDescriptionsGalleryOne as $one )
                   {!! Form::textarea( 'carsDescriptionsGalleryOne[]', $one, [
-                    'class' => 'form-control'
+                    'class' => 'form-control',
+                    'v-model.sync'  => 'newContact.comments'
                   ] ) !!}
                   @endforeach
 
@@ -185,7 +194,8 @@
                 <div class="col-md-9">
                   @foreach( $home->carsDescriptionsGalleryTwo as $two )
                   {!! Form::textarea( 'carsDescriptionsGalleryTwo[]', $two, [
-                    'class' => 'form-control'
+                    'class' => 'form-control',
+                    'v-model.sync'  => 'newContact.comments'
                   ] ) !!}
                   @endforeach
 
@@ -204,7 +214,8 @@
 
                 <div class="col-md-9">
                   {!! Form::text( 'titleDrivingAnimation', $home->titleDrivingAnimation, [
-                    'class' => 'form-control'
+                    'class' => 'form-control',
+                    'v-model.sync'  => 'newContact.comments'
                   ] ) !!}
 
                   @if ($errors->has( 'titleDrivingAnimation' ) )
@@ -222,7 +233,8 @@
 
                 <div class="col-md-9">
                   {!! Form::text( 'titleFooter', $home->titleFooter, [
-                    'class' => 'form-control'
+                    'class' => 'form-control',
+                    'v-model.sync'  => 'newContact.comments'
                   ] ) !!}
 
                   @if ($errors->has( 'titleFooter' ) )
@@ -240,7 +252,8 @@
 
                 <div class="col-md-9">
                   {!! Form::text( 'descriptionFooter', $home->descriptionFooter, [
-                    'class' => 'form-control'
+                    'class' => 'form-control',
+                    'v-model.sync'  => 'newContact.comments'
                   ] ) !!}
 
                   @if ( $errors->has( 'descriptionFooter' ) )
@@ -252,8 +265,8 @@
               </div>
 
               <div class="form-group">
-                <div class="col-md-2 col-md-offset-6">
-                  <button type="submit" class="btn btn-primary">
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary" v-on:click.prevent="submitEdit">
                     <i class="fa fa-btn fa-user"></i>Actualizar
                   </button>
                 </div>
@@ -265,10 +278,17 @@
     </div>
   </div>
 </div>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+@endsection
+
+@section( 'scripts' )
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/vue-resource/0.9.3/vue-resource.min.js"></script>
+<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-3.1.0.min"><\/script>')</script>
 <script>
-  $( document ).on( 'ready', function ( ) {
+  //  TinyMCE inicialization after document loaded
+  $( function ( ) {
     tinymce.init( {
       selector:   'textarea',
       height:     300,
@@ -282,6 +302,72 @@
       automatic_uploads: true,
       file_browser_callback_types: 'file image media'
     } );
+  } );
+
+  contact = new Vue( {
+    el      : '#edit__form',
+    data    : {
+      send          : false,
+      newContact    : {
+        name          : '',
+        email         : '',
+        comments      : ''
+      }
+    },
+    methods : {
+      /**
+       * Submit contact form
+       * @param  Event event Event object
+       */
+      submitContact : function ( event ) {
+        this.send         = true;
+
+        var data          = {
+              '_token'    : $( 'input[type="hidden"]' ).val(),
+              'name'      : this.newContact.name,
+              'email'     : this.newContact.email,
+              'comments'  : this.newContact.comments,
+            },
+            contactAction = document.getElementById( 'contact' )
+                                    .getAttribute( 'action' );
+
+        if ( this.isValid ) {
+          /**
+           * Ajax call to back-end and promise handlers
+           */
+          this.$http.post( contactAction, data )
+                    .then( function( response ) {
+                      response = response.data;
+                      if ( response.response_message === 'success' ) {
+                        this.newContact.name      = '';
+                        this.newContact.email     = '';
+                        this.newContact.comments  = '';
+                        this.message              = "¡Muchas gracias por enviarnos tus comentarios!";
+                      }
+                    } )
+                    .catch( function( error ) {
+                      this.message = 'No se pudo enviar la información.';
+                    } );
+        } else {
+          this.message = 'Hay un campo que no esta correctamente lleno. Por favor, revisa de nuevo.';
+        }
+      }
+    },
+
+    // computed property for form validation state
+    computed: {
+      validation: function () {
+        return {
+          name      : !!this.newContact.name.trim( ),
+        }
+      },
+      isValid: function () {
+        var validation = this.validation
+        return Object.keys( validation ).every( function ( key ) {
+          return validation[ key ];
+        } );
+      }
+    },
   } );
 </script>
 @endsection
