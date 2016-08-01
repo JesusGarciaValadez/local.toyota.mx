@@ -34,7 +34,7 @@
                 <div class="col-md-9">
                   {!! Form::text( 'titleH1', $home->titleH1, [
                     'class'     => 'form-control',
-                    'v-model.sync'  => 'newContact.comments'
+                    'v-model.sync'  => 'newModel.titleH1'
                   ] ) !!}
 
                   @if ($errors->has( 'titleH1' ))
@@ -54,7 +54,7 @@
                   @foreach( $home->sliderFeatures as $feature )
                   {!! Form::textarea( 'sliderFeatures[]', $feature, [
                     'class' => 'form-control',
-                    'v-model.sync'  => 'newContact.comments'
+                    'v-model.sync'  => 'newModel.sliderFeatures[]'
                   ] ) !!}
                   @endforeach
 
@@ -75,7 +75,7 @@
                   @foreach( $home->titleSliderFeatures as $feature )
                   {!! Form::textarea( 'titleSliderFeatures[]', $feature, [
                     'class' => 'form-control',
-                    'v-model.sync'  => 'newContact.comments'
+                    'v-model.sync'  => 'newModel.titleSliderFeatures[]'
                   ] ) !!}
                   @endforeach
 
@@ -95,7 +95,7 @@
                 <div class="col-md-9">
                   {!! Form::text( 'titleGalleryFancybox', $home->titleGalleryFancybox, [
                     'class'     => 'form-control',
-                    'v-model.sync'  => 'newContact.comments'
+                    'v-model.sync'  => 'newModel.titleGalleryFancybox'
                   ] ) !!}
 
                   @if ( $errors->has( 'titleGalleryFancybox' ) )
@@ -115,7 +115,7 @@
                   @foreach( $home->galleryFancybox as $gallery )
                   {!! Form::textarea( 'galleryFancybox[]', $gallery, [
                     'class' => 'form-control',
-                    'v-model.sync'  => 'newContact.comments'
+                    'v-model.sync'  => 'newModel.galleryFancybox[]'
                   ] ) !!}
                   @endforeach
 
@@ -135,7 +135,7 @@
                 <div class="col-md-9">
                   {!! Form::text( 'descriptionGalleryFancybox', $home->descriptionGalleryFancybox, [
                     'class' => 'form-control',
-                    'v-model.sync'  => 'newContact.comments'
+                    'v-model.sync'  => 'newModel.descriptionGalleryFancybox'
                   ] ) !!}
 
                   @if ( $errors->has( 'descriptionGalleryFancybox' ) )
@@ -154,7 +154,7 @@
                 <div class="col-md-9">
                   {!! Form::text( 'titleVersionsGallery', $home->titleVersionsGallery, [
                     'class' => 'form-control',
-                    'v-model.sync'  => 'newContact.comments'
+                    'v-model.sync'  => 'newModel.titleVersionsGallery'
                   ] ) !!}
 
                   @if ( $errors->has( 'titleVersionsGallery' ) )
@@ -174,7 +174,7 @@
                   @foreach( $home->carsDescriptionsGalleryOne as $one )
                   {!! Form::textarea( 'carsDescriptionsGalleryOne[]', $one, [
                     'class' => 'form-control',
-                    'v-model.sync'  => 'newContact.comments'
+                    'v-model.sync'  => 'newModel.carsDescriptionsGalleryOne[]'
                   ] ) !!}
                   @endforeach
 
@@ -195,7 +195,7 @@
                   @foreach( $home->carsDescriptionsGalleryTwo as $two )
                   {!! Form::textarea( 'carsDescriptionsGalleryTwo[]', $two, [
                     'class' => 'form-control',
-                    'v-model.sync'  => 'newContact.comments'
+                    'v-model.sync'  => 'newModel.carsDescriptionsGalleryTwo[]'
                   ] ) !!}
                   @endforeach
 
@@ -215,7 +215,7 @@
                 <div class="col-md-9">
                   {!! Form::text( 'titleDrivingAnimation', $home->titleDrivingAnimation, [
                     'class' => 'form-control',
-                    'v-model.sync'  => 'newContact.comments'
+                    'v-model.sync'  => 'newModel.titleDrivingAnimation'
                   ] ) !!}
 
                   @if ($errors->has( 'titleDrivingAnimation' ) )
@@ -234,7 +234,7 @@
                 <div class="col-md-9">
                   {!! Form::text( 'titleFooter', $home->titleFooter, [
                     'class' => 'form-control',
-                    'v-model.sync'  => 'newContact.comments'
+                    'v-model.sync'  => 'newModel.titleFooter'
                   ] ) !!}
 
                   @if ($errors->has( 'titleFooter' ) )
@@ -253,7 +253,7 @@
                 <div class="col-md-9">
                   {!! Form::text( 'descriptionFooter', $home->descriptionFooter, [
                     'class' => 'form-control',
-                    'v-model.sync'  => 'newContact.comments'
+                    'v-model.sync'  => 'newModel.descriptionFooter'
                   ] ) !!}
 
                   @if ( $errors->has( 'descriptionFooter' ) )
@@ -304,14 +304,24 @@
     } );
   } );
 
+  /*
   contact = new Vue( {
     el      : '#edit__form',
     data    : {
       send          : false,
-      newContact    : {
-        name          : '',
-        email         : '',
-        comments      : ''
+      newModel    : {
+        titleH1                         : '',
+        'sliderFeatures[]'              : '',
+        'titleSliderFeatures[]'         : '',
+        titleGalleryFancybox            : '',
+        'galleryFancybox[]'             : '',
+        descriptionGalleryFancybox      : '',
+        titleVersionsGallery            : '',
+        'carsDescriptionsGalleryOne[]'  : '',
+        'carsDescriptionsGalleryTwo[]'  : '',
+        titleDrivingAnimation           : '',
+        titleFooter                     : '',
+        descriptionFooter               : '',
       }
     },
     methods : {
@@ -323,10 +333,19 @@
         this.send         = true;
 
         var data          = {
-              '_token'    : $( 'input[type="hidden"]' ).val(),
-              'name'      : this.newContact.name,
-              'email'     : this.newContact.email,
-              'comments'  : this.newContact.comments,
+              '_token'                      : $( 'input[type="hidden"]' ).val(),
+              'titleH1'                     : this.newModel.titleH1,
+              'sliderFeatures'              : this.newModel[ 'sliderFeatures[]' ],
+              'titleSliderFeatures'         : this.newModel[ 'titleSliderFeatures[]' ],
+              'titleGalleryFancybox'        : this.newModel.titleGalleryFancybox,
+              'galleryFancybox'             : this.newModel[ 'galleryFancybox[]' ],
+              'descriptionGalleryFancybox'  : this.newModel.descriptionGalleryFancybox,
+              'titleVersionsGallery'        : this.newModel.titleVersionsGallery,
+              'carsDescriptionsGalleryOne'  : this.newModel[ 'carsDescriptionsGalleryOne[]' ],
+              'carsDescriptionsGalleryTwo'  : this.newModel[ 'carsDescriptionsGalleryTwo[]' ],
+              'titleDrivingAnimation'       : this.newModel.titleDrivingAnimation,
+              'titleFooter'                 : this.newModel.titleFooter,
+              'descriptionFooter'           : this.newModel.descriptionFooter
             },
             contactAction = document.getElementById( 'contact' )
                                     .getAttribute( 'action' );
@@ -339,10 +358,18 @@
                     .then( function( response ) {
                       response = response.data;
                       if ( response.response_message === 'success' ) {
-                        this.newContact.name      = '';
-                        this.newContact.email     = '';
-                        this.newContact.comments  = '';
-                        this.message              = "¡Muchas gracias por enviarnos tus comentarios!";
+                        this.newModel.titleH1                           = '';
+                        this.newModel[ 'sliderFeatures[]' ]             = '';
+                        this.newModel[ 'titleSliderFeatures[]' ]        = '';
+                        this.newModel.titleGalleryFancybox              = '';
+                        this.newModel[ 'galleryFancybox' ]              = '';
+                        this.newModel.descriptionGalleryFancybox        = '';
+                        this.newModel.titleVersionsGallery              = '';
+                        this.newModel[ 'carsDescriptionsGalleryOne[]' ] = '';
+                        this.newModel[ 'carsDescriptionsGalleryTwo[]' ] = '';
+                        this.newModel.titleDrivingAnimation             = '';
+                        this.newModel.titleFooter                       = '';
+                        this.newModel.descriptionFoote                  = '';
                       }
                     } )
                     .catch( function( error ) {
@@ -358,7 +385,18 @@
     computed: {
       validation: function () {
         return {
-          name      : !!this.newContact.name.trim( ),
+          titleH1                       : !!this.newModel.titleH1.trim( ),
+          sliderFeatures                : !!this.newModel[ 'sliderFeatures[]' ].trim( ),
+          titleSliderFeatures           : !!this.newModel[ 'titleSliderFeatures[]' ].trim( ),
+          titleGalleryFancybox          : !!this.newModel.titleGalleryFancybox.trim( ),
+          galleryFancybox               : !!this.newModel[ 'galleryFancybox' ].trim( ),
+          descriptionGalleryFancybox    : !!this.newModel.descriptionGalleryFancybox.trim( ),
+          titleVersionsGallery          : !!this.newModel.titleVersionsGallery.trim( ),
+          carsDescriptionsGalleryOne    : !!this.newModel[ 'carsDescriptionsGalleryOne[]' ].trim( ),
+          carsDescriptionsGalleryTwo    : !!this.newModel[ 'carsDescriptionsGalleryTwo[]' ].trim( ),
+          titleDrivingAnimation         : !!this.newModel.titleDrivingAnimation.trim( ),
+          titleFooter                   : !!this.newModel.titleFooter.trim( ),
+          descriptionFoote              : !!this.newModel.descriptionFoote.trim( )
         }
       },
       isValid: function () {
@@ -369,5 +407,6 @@
       }
     },
   } );
+  */
 </script>
 @endsection
