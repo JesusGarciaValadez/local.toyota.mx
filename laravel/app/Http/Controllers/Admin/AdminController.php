@@ -77,20 +77,7 @@ class AdminController extends Controller
    */
   public function update( BrandUpdatedRequest $request, $id )
   {
-    $store = [
-      'titleH1'                     => $request->titleH1,
-      'sliderFeatures'              => base64_encode( serialize( $request->sliderFeatures ) ),
-      'titleSliderFeatures'         => base64_encode( serialize( $request->titleSliderFeatures ) ),
-      'titleGalleryFancybox'        => $request->titleGalleryFancybox,
-      'galleryFancybox'             => base64_encode( serialize( $request->galleryFancybox ) ),
-      'descriptionGalleryFancybox'  => $request->descriptionGalleryFancybox,
-      'titleVersionsGallery'        => $request->titleVersionsGallery,
-      'carsDescriptionsGalleryOne'  => base64_encode( serialize( $request->carsDescriptionsGalleryOne ) ),
-      'carsDescriptionsGalleryTwo'  => base64_encode( serialize( $request->carsDescriptionsGalleryTwo ) ),
-      'titleDrivingAnimation'       => $request->titleDrivingAnimation,
-      'titleFooter'                 => $request->titleFooter,
-      'descriptionFooter'           => $request->descriptionFooter,
-    ];
+    $store = $request->all();
 
     /*
      * Persist the new data into the database.
