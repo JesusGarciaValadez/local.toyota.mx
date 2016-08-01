@@ -46,11 +46,11 @@
                 </div>
              <!--    <div class="contactanos">
                     <a href="http://www.toyota.com.mx/" target="_blank" class="boton"></a>
-                </div>    -->                 
+                </div>       -->              
                 <nav>
                     <ul>
 			
-                        <li class="finan"><a href="financiamiento.php" target="_blank">Financiamiento</a></li>
+                       <!--  <li class="finan"><a href="financiamiento.php" target="_blank">Financiamiento</a></li> -->
 
                         <li class="distri"><a href="<?=base_url('distribuidores');?>">Distribuidores</a></li>
                     </ul>
