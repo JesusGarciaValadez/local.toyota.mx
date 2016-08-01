@@ -17,38 +17,38 @@ class CreateDescriptionsTable extends Migration
       $table->increments( 'id' );
       $table->string( 'brand' );
       $table->string( 'titleH1' );
-      $table->integer( 'sliderFeatures_id' )
+      $table->integer( 'slider_features_id' )
             ->unsigned();
-      $table->foreign( 'sliderFeatures_id' )
+      $table->foreign( 'slider_features_id' )
             ->references( 'id' )
-            ->on( 'sliderFeatures' )
+            ->on( 'slider_features' )
             ->onDelete( 'cascade' );
-      $table->integer( 'titleSliderFeatures_id' )
+      $table->integer( 'title_slider_features_id' )
             ->unsigned();
-      $table->foreign( 'titleSliderFeatures_id' )
+      $table->foreign( 'title_slider_features_id' )
             ->references( 'id' )
-            ->on( 'titleSliderFeatures' )
+            ->on( 'title_slider_features' )
             ->onDelete( 'cascade' );
-      $table->string( 'titleGalleryFancybox' );
-      $table->integer( 'galleryFancybox_id' )
+      $table->string( 'title_gallery_fancybox' );
+      $table->integer( 'gallery_fancybox_id' )
             ->unsigned();
-      $table->foreign( 'galleryFancybox_id' )
+      $table->foreign( 'gallery_fancybox_id' )
             ->references( 'id' )
-            ->on( 'galleryFancybox' )
+            ->on( 'gallery_fancybox' )
             ->onDelete( 'cascade' );
       $table->string( 'descriptionGalleryFancybox' );
       $table->string( 'titleVersionsGallery' );
-      $table->integer( 'carsDescriptionsGalleryOne_id' )
+      $table->integer( 'cars_descriptions_gallery_one_id' )
             ->unsigned();
-      $table->foreign( 'carsDescriptionsGalleryOne_id' )
+      $table->foreign( 'cars_descriptions_gallery_one_id' )
             ->references( 'id' )
-            ->on( 'carsDescriptionsGalleryOne' )
+            ->on( 'cars_descriptions_gallery_one' )
             ->onDelete( 'cascade' );
-      $table->integer( 'carsDescriptionsGalleryTwo_id' )
+      $table->integer( 'cars_descriptions_gallery_two_id' )
             ->unsigned();
-      $table->foreign( 'carsDescriptionsGalleryTwo_id' )
+      $table->foreign( 'cars_descriptions_gallery_two_id' )
             ->references( 'id' )
-            ->on( 'carsDescriptionsGalleryTwo' )
+            ->on( 'cars_descriptions_gallery_two' )
             ->onDelete( 'cascade' );
       $table->string( 'titleDrivingAnimation' );
       $table->string( 'titleFooter' );
