@@ -26,7 +26,7 @@ Route::get( '/home', [ 'as' => 'home', 'uses' => 'HomeController@index' ] );
 | and give it the controller to call when that URI is requested.
 |
 */
-Route::group( [ 'prefix' => 'admin' ], function ( )
+Route::group( [ 'prefix' => 'admin', 'middleware' => 'auth' ], function ( )
 {
   Route::get( '', [ 'as' => 'index', 'uses' => 'Admin\AdminController@index' ] );
   Route::get( 'editar/{id}', [ 'as' => 'edit', 'uses' => 'Admin\AdminController@edit' ] );
