@@ -55,7 +55,7 @@
                             <p>¡Gran vista para todos! Los viajes se disfrutan más cuando admiras el paisaje.</p>
                         </div>
                         <div>
-                            <img src="<?=base_url('assets/images/highlight/palanca.jpg');?>">
+                            <img src="<?=base_url('assets/images/highlight/palanca.jpg');?>"> 
                         </div>
                     </li>
                     <li>
