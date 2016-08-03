@@ -25,7 +25,7 @@
                             <h2>Especificaciones técnicas</h2>
                             <div class="espMotor">
                                 <dl>
-                                    <dd><img class="jsn-UrlMotor" alt="Motor" src="<?=base_url('assets/images/datos/img-motor.jpg');?>"></dd>
+                                    <dd><img class="jsn-UrlMotor" alt="Motor" src="<?=base_url('assets/images/datos/img-motor.png');?>"></dd>
                                     <dd>
                                         <dl>
                                             <dt>

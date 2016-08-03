@@ -42,53 +42,50 @@
                 <ul class="highs">
                     <li>
                         <div>
-                            <h1 class="animated">Diseño
-                                <span>exterior.</span></h1>
-                            <p>El frente en forma trapezoidal le confiere una silueta imponente, atlética y dinámica</p>
-                            <p>El diseño de sus faros y la parrilla central cromada al centro lo hacen ver mucho más lujoso</p>
-                            <p>Elegante y refinado diseño en luces traseras. Impresionante por donde se vea</p>
-                            <p>Espejos laterales eléctricos aerodinámicos que reducen el ruido del viento</p>
+                            <h1 class="animated">
+                                <span>Sistema de monitoreo de punto ciego.</span></h1>
+                            <p>Seguridad total cuando más lo necesitas, cambia de carril sin ninguna preocupación.</p>
                         </div>
                         <div>
-                            <img src="<?=base_url('assets/images/highlight/highlight01.jpg');?>">
+                            <img src="<?=base_url('assets/images/highlight/sistema-de-monitoreo.jpg');?>">
                         </div>
                     </li>
                     <li>
                         <div>
-                            <h1 class="animated">Diseño
-                                <span>interior.</span></h1>
-                            <p>Tablero atractivo, con look deportivo, toda la información que necesitas fácil de leer</p>
-                            <p>El diseño y posición de sus asientos crean una atmósfera de espacio y confort total</p>
-                            <p>La cajuela de Yaris Sedán no tiene rival, es la más amplia dentro de su mercado</p>
-                            <p>Gran tamaño en la tapa de la cajuela, será muy fácil colocar objetos voluminosos</p>
+                            <h1 class="animated">
+                                <span>Techo corredizo panorámico.</span></h1>
+                            <p>¡Gran vista para todos! Los viajes se disfrutan más cuando admiras el paisaje.</p>
                         </div>
                         <div>
-                            <img src="<?=base_url('assets/images/highlight/highlight02.jpg');?>">
+                            <img src="<?=base_url('assets/images/highlight/techo-corredizo.jpg');?>">
                         </div>
                     </li>
                     <li>
                         <div>
-                            <h1 class="animated">Driving  
-                                <span>performance</span></h1>
-                            <p>Distintivo tipo Catamarán que permite ahorro en combustible hasta del 5%</p>
-                            <p>Forma aerodinámica que mejora su rendimiento. Coeficiente aerodinámico de 0.28</p>
-                            <p>Transmisión CVT-iS con siete cambios sensitivos. Única en su segmento</p>
-                            <p>Mejorada dirección (Electric Power Steering) con asistencia variable sensible a la velocidad</p>
+                            <h1 class="animated"> 
+                                <span>Sistema de entretenimiento trasero. </span></h1>
+                            <p>Pantalla de 9” y Blu-ray disc para que todos se diviertan sin importar lo largo del viaje. </p>
                         </div>
                         <div>
-                            <img src="<?=base_url('assets/images/highlight/highlight03.jpg');?>">
+                            <img src="<?=base_url('assets/images/highlight/sistema-de-entretenimiento.jpg');?>">
                         </div>
                     </li>
                     <li>
                         <div>
-                            <h1 class="animated">Seguridad<span></span></h1>
+                            <h1 class="animated"><span>Una camioneta alternativa para ti.</span></h1>
+                            <p>Sal a donde quieras, se adapta a cualquier Terreno, clima y caminos, ideal para la ciudad o carretera.</p>
+                        </div>
+                        <div>
+                            <img src="<?=base_url('assets/images/highlight/palanca.jpg');?>">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h1 class="animated"><span>Más espacio de carga.</span></h1>
                             <p>Refuerzos estratégicos que protegen a todos sus ocupantes ante cualquier eventualidad</p>
-                            <p>Destacada combinación en el sistema de frenado ABS Y BA</p>
-                            <p>Alto nivel de seguridad pasiva que incorpora bolsas de aire frontales en todas sus versiones</p>
-                            <p>Estructura completamente rediseñada que maximiza su fortaleza y rigidez</p>
                         </div>
                         <div>
-                            <img src="<?=base_url('assets/images/highlight/highlight04.jpg');?>">
+                            <img src="<?=base_url('assets/images/highlight/mas-espacio-de-carga.jpg');?>">
                         </div>
                     </li>
                 </ul>
@@ -113,17 +110,23 @@
                     <div class="contGale">
                         <div>
                             <ul>
-                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-01.jpg');?>" title="Luces traseras integradas a la carrocería que lo hacen ver dinámico."><img src="<?=base_url('assets/images/thumbs/01-thumb.jpg');?>"></a></li>
-                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-02.jpg');?>" title="Su rediseño se nota en cualquier parte del automóvil."><img src="<?=base_url('assets/images/thumbs/02-thumb.jpg');?>"></a></li>
-                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-03.jpg');?>" title="Suspensión mejorada para tener mayor tracción y sensación de control."><img src="<?=base_url('assets/images/thumbs/03-thumb.jpg');?>"></a></li>
+                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-01.jpg');?>" title="Luces traseras integradas a la carrocería que lo hacen ver dinámico."><img src="<?=base_url('assets/images/thumbs/01.png');?>"></a></li>
+                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-02.jpg');?>" title="Su rediseño se nota en cualquier parte del automóvil."><img src="<?=base_url('assets/images/thumbs/02-thumb.png');?>"></a></li>
+                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-03.jpg');?>" title="Suspensión mejorada para tener mayor tracción y sensación de control."><img src="<?=base_url('assets/images/thumbs/03-thumb.png');?>"></a></li>
                                 <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-04.jpg');?>" title="Incomparable espacio en cajuela, podrás llevar lo que quieras."><img src="<?=base_url('assets/images/thumbs/04-thumb.jpg');?>"></a></li>
                             </ul> 
                             <ul>
-                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-05.jpg');?>" title="Sensación confortable de conducción, las mejores transmisiones manuales son nuestras."><img src="<?=base_url('assets/images/thumbs/05-thumb.jpg');?>"></a></li>
-                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-06.jpg');?>" title="Aceleración y fuerza, palabras que describen el motor de Yaris Sedán 2017."><img src="<?=base_url('assets/images/thumbs/06-thumb.jpg');?>"></a></li>
-                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-07.jpg');?>" title="Equipado para que todos tus trayectos sean mucho más divertidos."><img src="<?=base_url('assets/images/thumbs/07-thumb.jpg');?>"></a></li>
-                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-08.jpg');?>" title="Atractivo tablero con look deportivo. Información importante a tu alcance."><img src="<?=base_url('assets/images/thumbs/08-thumb.jpg');?>"></a></li>
-                            </ul>         
+                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-05.jpg');?>" title="Sensación confortable de conducción, las mejores transmisiones manuales son nuestras."><img src="<?=base_url('assets/images/thumbs/05-thumb.png');?>"></a></li>
+                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-06.jpg');?>" title="Aceleración y fuerza, palabras que describen el motor de Yaris Sedán 2017."><img src="<?=base_url('assets/images/thumbs/06-thumb.png');?>"></a></li>
+                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-07.jpg');?>" title="Equipado para que todos tus trayectos sean mucho más divertidos."><img src="<?=base_url('assets/images/thumbs/07-thumb.png');?>"></a></li>
+                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-08.jpg');?>" title="Atractivo tablero con look deportivo. Información importante a tu alcance."><img src="<?=base_url('assets/images/thumbs/08-thumb.png');?>"></a></li>
+                            </ul> 
+                            <ul>
+                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-09.jpg');?>" title="Sensación confortable de conducción, las mejores transmisiones manuales son nuestras."><img src="<?=base_url('assets/images/thumbs/09-thumb.png');?>"></a></li>
+                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-10.jpg');?>" title="Aceleración y fuerza, palabras que describen el motor de Yaris Sedán 2017."><img src="<?=base_url('assets/images/thumbs/10-thumb.png');?>"></a></li>
+                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-11.jpg');?>" title="Equipado para que todos tus trayectos sean mucho más divertidos."><img src="<?=base_url('assets/images/thumbs/11-thumb.png');?>"></a></li>
+                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-12.jpg');?>" title="Atractivo tablero con look deportivo. Información importante a tu alcance."><img src="<?=base_url('assets/images/thumbs/12-thumb.png');?>"></a></li>
+                            </ul>              
                         </div>                    
                         <div class="anuncio">
                             <span>
@@ -191,26 +194,27 @@
                     <div>
                         <div>
                             <div>
-                                <img src="<?=base_url('assets/images/versiones/img_lateral.png');?>">
+                                <img src="<?=base_url('assets/images/versiones/presentacion.png');?>">
                                 <h3>HIGHLANDER LE</h3>
                                 <h5> DESDE $501,20000<sup>MN</sup></h5>
                                 <ul>
-                                    <li>Faros elipsoidales tipo proyector.</li>
-                                    <li>Manijas al color de la carrocería.</li>
                                     <li>Parrilla negra con acentos cromados.</li>
-                                    <li>Aire acondicionado manual de 3 zonas.</li>                                
+                                    <li>Espejos laterales eléctricos.</li>
+                                    <li>Pantalla multi-información táctil de 6.1".</li>
+                                    <li>Alarma e inmovilizador.</li>                                
                                 </ul>
                                 <span></span>
                                 <a href="<?=base_url('especificaciones/coremt');?>" class="link">Ver detalle</a>
                             </div>
                             <div>
-                                <img src="<?=base_url('assets/images/versiones/img_lateral.png');?>">
+                                <img src="<?=base_url('assets/images/versiones/presentacion.png');?>">
                                 <h3>HIGHLANDER XLE</h3>
                                 <h5>DESDE $565,20000<sup>MN</sup></h5>
                                 <ul>
-                                    <li>Volante con ajuste de altura y profundidad.</li>
-                                    <li>Control de velocidad crucero.</li>
-                                    <li>Espejos laterales eléctricos.</li>                               
+                                    <li>Desempañador eléctrico en espejos laterales.</li>
+                                    <li>Faros de niebla delanteros.</li>
+                                    <li>Pantalla multi-información táctil de 8".</li> 
+                                    <li>Smart key</li>                              
                                 </ul>
                                 <span></span>
                                 <a href="<?=base_url('especificaciones/corectvis');?>" class="link">Ver detalle</a>
@@ -218,27 +222,28 @@
                         </div>
                         <div>
                             <div>
-                                <img src="<?=base_url('assets/images/versiones/img_lateral.png');?>">
-                                <h3>HIGHLANDER LIMITED PR</h3>
+                                <img src="<?=base_url('assets/images/versiones/presentacion.png');?>">
+                                <h3>Highlander Limited Panoramic Roof</h3>
                                 <h5>DDESDE $634,90000<sup>MN</sup></h5>
                                 <ul>
-                                    <li>Compuerta trasera tipo hatch con medallón independiente y control remoto.</li>
-                                    <li>Espejos laterales con sistema de monitoreo de punto ciego (BSM).</li>
-                                    <li>Faros de niebla delanteros.</li>                               
+                                    <li>Techo panorámico</li>
+                                    <li>Luces de cortesía en espejos laterales</li>
+                                    <li>Asientos delanteros con ventilación</li>
+                                    <li>Sistema de monitoreo de punto ciego</li>                               
                                 </ul>
                                 <span></span>
                                 <a href="<?=base_url('especificaciones/corectvis');?>" class="link">Ver detalle</a>
                             </div>
                             <div>
-                                <img src="<?=base_url('assets/images/versiones/img_lateral.png');?>">
-                                <h3>HIGHLANDER LIMITED</h3>
+                                <img src="<?=base_url('assets/images/versiones/presentacion.png');?>">
+                                <h3>Highlander Limeted Blu-Ray</h3>
                                 <h5>DESDE $656,70000<sup>MN</sup></h5>
                                 <ul>
-                                    <li>Quemacocos eléctrico.</li>
-                                    <li>Asiento del conductor de 8 posiciones con ajustes eléctricos y memoria.</li>
+                                    <li>Luces de cortesía en espejos laterales</li>
+                                    <li>Quemacocos eléctricos.</li>
                                     <li>Cámara de visión trasera.</li> 
-                                    <li>Pantalla touchscreen de 8"</li>    
-                                    <li>2 audífonos inalámbricos</li>                          
+                                    <li>Vestiduras de piel perforada</li>    
+                                    <li>Sistema de monitoreo de punto ciego</li>                          
                                 </ul>
                                 <span></span>
                                 <a href="<?=base_url('especificaciones/corectvis');?>" class="link">Ver detalle</a>

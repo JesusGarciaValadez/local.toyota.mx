@@ -3067,7 +3067,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   }
 
   .manejo {
-    background: url(img/bgManejoM.jpg) no-repeat center bottom;
+    background: url(img/bgManejoM.png) no-repeat center bottom;
     background-size: cover;
     height: 460px;
   }

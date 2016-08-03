@@ -18,8 +18,8 @@
 				"Neumáticos (Incluyendo refacción)",
 				"Juego de tapones"
 			],
-			"UrlMotor": "img-motor.jpg",
-			"UrlAuto": "img-yaris-sedan-detalle.jpg"
+			"UrlMotor": "img-motor.png",
+			"UrlAuto": "02.png"
 		}],
 		"Exterior":[{
 			"Faros":[
@@ -54,7 +54,7 @@
 				"Capacidad de carga / 480 Kg",
 				"Volumen de carga en cajuela / 506 Lts"
 			],
-			"UrlInterior":"img-tablero.jpg"
+			"UrlInterior":"03.png"
 		}],
 		"Interior":[{
 			"AcabadosInteriores":[
@@ -114,8 +114,8 @@
 				"Neumáticos (Incluyendo refacción)",
 				"Juego de tapones"
 			],
-			"UrlMotor": "img-motor.jpg",
-			"UrlAuto": "img-yaris-sedan-detalle.jpg"
+			"UrlMotor": "img-motor.png",
+			"UrlAuto": "02.png"
 		}],
 		"Exterior":[{
 			"Faros":[
@@ -150,7 +150,7 @@
 				"Capacidad de carga / 445 Kg",
 				"Volumen de carga en cajuela / 506 Lts"
 			],
-			"UrlInterior":"img-tablero.jpg"
+			"UrlInterior":"03.png"
 		}],
 		"Interior":[{
 			"AcabadosInteriores":[
