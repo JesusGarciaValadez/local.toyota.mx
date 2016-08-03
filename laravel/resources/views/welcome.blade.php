@@ -71,11 +71,11 @@
           <div class="anuncio">
             <span>
               {!! $home->descriptionGalleryFancybox !!}
-              <!--
+              
               {!! Html::link( '', 'Conoce Más', [
                 'class' => 'boton'
               ] ) !!}
-              -->
+              
             </span>
           </div>
         </div>
