@@ -494,7 +494,7 @@ footer a.scroll:after {
   display: table;
   height: 32px;
   left: 2em;
-  width: 110px;
+  width: 179px;
 }
 .menu2 nav {
   display: table;
@@ -616,7 +616,7 @@ footer a.scroll:after {
 }
 
 .cover {
-  background: url(img/bgCover.jpg) no-repeat center bottom;
+  background: url(img/bgCover.png) no-repeat center bottom;
   background-size: cover;
   height: calc(100vh - 110px);
   margin-bottom: 50px;
@@ -843,10 +843,6 @@ footer a.scroll:after {
 .highlights .container {
   overflow: visible;
 }
-
-section.colores{
-    background-color:#c8c8c8; 
-  }
 
 .menuHigh {
   position: absolute;
@@ -1298,7 +1294,7 @@ section.colores{
 }
 
 .manejo {
-  background: url(img/bgManejo.jpg) no-repeat center bottom;
+  background: url(img/bgManejo.png) no-repeat center bottom;
   background-size: cover;
   height: 600px;
 }

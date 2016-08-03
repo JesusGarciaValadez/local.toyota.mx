@@ -46,17 +46,17 @@
                 </div>                    
                 <nav>
                     <ul>
-			<!--{
+			
                         <li class="finan"><a href="financiamiento.php" target="_blank">Financiamiento</a></li>
-			}-->
+			
                         <li class="distri"><a href="<?=base_url('distribuidores');?>">Distribuidores</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="menu2 fadeInUp animated">
-		<!--{
+		{
                 <a href="#" class="btnprev">CONTÁCTANOS</a>
-		}-->
+		}
                 <a href="#cover" class="scroll"></a>
                 <nav>
                     <ul>
