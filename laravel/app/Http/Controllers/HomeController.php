@@ -25,8 +25,6 @@ class HomeController extends Controller
   {
     $home   = \Highlander\Brands::first();
 
-    \Debugbar::log( $home->galleryFancyboxes );
-
     return view( 'welcome' )->withHome( $home );
   }
 }
