@@ -631,7 +631,7 @@ footer a.scroll:after {
   animation-duration: 3s;
   left: 30%;
   position: absolute;
-  top: 35%;
+  top: 25%;
 }
 .cover h1 {
   color: #000;
@@ -645,6 +645,7 @@ footer a.scroll:after {
   color: #000;
   margin: 0px;
   white-space: pre-line;
+  font-weight: 300;
 }
 .cover h2 span {
   font-weight: 300;
