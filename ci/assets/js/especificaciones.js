@@ -4,7 +4,7 @@ var url = 'http://'+document.location.hostname+'/';
 var camioneta = $('.especificaciones').data('modelo');
 
 	if(camioneta == ''){
-		camioneta = 'coremt'
+		camioneta = 'le'
 	}
 
 	data = {}
@@ -48,205 +48,405 @@ function especificacion(model){
 	resetespecif();
 
 	// Modelo coremt
-	if(modelo == "coremt"){
+	if(modelo == "le"){
 
-		$('.cont-retic h1 span').html(especific[0].coremt[0].ModeloAuto)
+		$('.cont-retic h1 span').html(especific[0].le[0].ModeloAuto)
 		// - Motor
-		var cantFrenos = (especific[0].coremt[0].EspecificacionTecnica[0].Frenos).length-1
-		var cantRines = (especific[0].coremt[0].EspecificacionTecnica[0].Rines).length-1
+		var cantFrenos = (especific[0].le[0].EspecificacionTecnica[0].Frenos).length-1
+		var cantRines = (especific[0].le[0].EspecificacionTecnica[0].Rines).length-1
 
 		//- Exterior
-		var cantFaros = (especific[0].coremt[0].Exterior[0].Faros).length-1
-		var cantSeguridadExterior = (especific[0].coremt[0].Exterior[0].SeguridadExterior).length-1
-		var cantVisibilidadCris = (especific[0].coremt[0].Exterior[0].Visibilidad[0].Cristales).length-1
-		var cantVisibilidadEsp = (especific[0].coremt[0].Exterior[0].Visibilidad[0].EspejosLaterales).length-1
-		var cantTecho = (especific[0].coremt[0].Exterior[0].Techo).length-1
+		var cantFaros = (especific[0].le[0].Exterior[0].Faros).length-1
+		var cantSeguridadExterior = (especific[0].le[0].Exterior[0].SeguridadExterior).length-1
+		var cantVisibilidadCris = (especific[0].le[0].Exterior[0].Visibilidad[0].Cristales).length-1
+		var cantVisibilidadEsp = (especific[0].le[0].Exterior[0].Visibilidad[0].EspejosLaterales).length-1
+		var cantTecho = (especific[0].le[0].Exterior[0].Techo).length-1
 
 		//- Interior
-		var cantAcabadosInteriores = (especific[0].coremt[0].Interior[0].AcabadosInteriores).length-1
-		var cantAsientos= (especific[0].coremt[0].Interior[0].Asientos).length-1
-		var cantSistemaAudio = (especific[0].coremt[0].Interior[0].SistemaAudio).length-1
-		var cantCinturonesSeguridad = (especific[0].coremt[0].Interior[0].CinturonesSeguridad).length-1
-		var cantConfort = (especific[0].coremt[0].Interior[0].Confort).length-1
-		var cantSeguridadInterior = (especific[0].coremt[0].Interior[0].SeguridadInterior).length-1
+		var cantAcabadosInteriores = (especific[0].le[0].Interior[0].AcabadosInteriores).length-1
+		var cantAsientos= (especific[0].le[0].Interior[0].Asientos).length-1
+		var cantSistemaAudio = (especific[0].le[0].Interior[0].SistemaAudio).length-1
+		var cantCinturonesSeguridad = (especific[0].le[0].Interior[0].CinturonesSeguridad).length-1
+		var cantConfort = (especific[0].le[0].Interior[0].Confort).length-1
+		var cantSeguridadInterior = (especific[0].le[0].Interior[0].SeguridadInterior).length-1
 
 		//MOTOR
-		$('.jsn-UrlMotor').attr('src', url+'assets/images/datos/'+especific[0].coremt[0].EspecificacionTecnica[0].UrlMotor);
-		$('.jsn-Capacidad p').html(especific[0].coremt[0].EspecificacionTecnica[0].Motor[0].Capacidad);
-		$('.jsn-Potencia p').html(especific[0].coremt[0].EspecificacionTecnica[0].Motor[0].Potencia);
-		$('.jsn-Cilindros p').html(especific[0].coremt[0].EspecificacionTecnica[0].Motor[0].Cilindros);
-		$('.jsn-Valvulas p').html(especific[0].coremt[0].EspecificacionTecnica[0].Motor[0].Valvulas);
-		//$('.jsn-Traccion p').html(especific[0].coremt[0].EspecificacionTecnica[0].Motor[0].Traccion);
+		$('.jsn-UrlMotor').attr('src', url+'assets/images/datos/'+especific[0].le[0].EspecificacionTecnica[0].UrlMotor);
+		$('.jsn-Capacidad p').html(especific[0].le[0].EspecificacionTecnica[0].Motor[0].Capacidad);
+		$('.jsn-Potencia p').html(especific[0].le[0].EspecificacionTecnica[0].Motor[0].Potencia);
+		$('.jsn-Cilindros p').html(especific[0].le[0].EspecificacionTecnica[0].Motor[0].Cilindros);
+		$('.jsn-Valvulas p').html(especific[0].le[0].EspecificacionTecnica[0].Motor[0].Valvulas);
+		//$('.jsn-Traccion p').html(especific[0].le[0].EspecificacionTecnica[0].Motor[0].Traccion);
 		//Frenos
 		while(i<= cantFrenos){
-			$('.jsn-Frenos dl').append('<dd><p>'+especific[0].coremt[0].EspecificacionTecnica[0].Frenos[i]+'</p></dd>');
+			$('.jsn-Frenos dl').append('<dd><p>'+especific[0].le[0].EspecificacionTecnica[0].Frenos[i]+'</p></dd>');
 			i++
 		}
 		//Rines
 		while(j<= cantRines){
-			$('.jsn-Rines dl').append('<dd><p>'+especific[0].coremt[0].EspecificacionTecnica[0].Rines[j]+'</p></dd>');
+			$('.jsn-Rines dl').append('<dd><p>'+especific[0].le[0].EspecificacionTecnica[0].Rines[j]+'</p></dd>');
 			j++
 		}
-		$('.jsn-UrlAuto').attr('src', url+'assets/images/datos/'+especific[0].coremt[0].EspecificacionTecnica[0].UrlAuto);
+		$('.jsn-UrlAuto').attr('src', url+'assets/images/datos/'+especific[0].le[0].EspecificacionTecnica[0].UrlAuto);
 		// EXTERIOR
 		//Faros
 		while(k<= cantFaros){
-			$('.jsn-Faros dl').append('<dd><p>'+especific[0].coremt[0].Exterior[0].Faros[k]+'</p></dd>');
+			$('.jsn-Faros dl').append('<dd><p>'+especific[0].le[0].Exterior[0].Faros[k]+'</p></dd>');
 			k++
 		}
 		//Seguridad exterior
 		while(l<= cantSeguridadExterior){
-			$('.jsn-SeguridadExterior dl').append('<dd><p>'+especific[0].coremt[0].Exterior[0].SeguridadExterior[l]+'</p></dd>');
+			$('.jsn-SeguridadExterior dl').append('<dd><p>'+especific[0].le[0].Exterior[0].SeguridadExterior[l]+'</p></dd>');
 			l++
 		}
 		//Visibilidad
 		while(m<= cantVisibilidadCris){
-			$('.jsn-VisibilidadCristales dl ').append('<dd><p>'+especific[0].coremt[0].Exterior[0].Visibilidad[0].Cristales[m]+'</p></dd>');
+			$('.jsn-VisibilidadCristales dl ').append('<dd><p>'+especific[0].le[0].Exterior[0].Visibilidad[0].Cristales[m]+'</p></dd>');
 			m++
 		}
 		while(n<= cantVisibilidadEsp){
-			$('.jsn-VisibilidadEspejosLaterales dl ').append('<dd><p>'+especific[0].coremt[0].Exterior[0].Visibilidad[0].EspejosLaterales[n]+'</p></dd>');
+			$('.jsn-VisibilidadEspejosLaterales dl ').append('<dd><p>'+especific[0].le[0].Exterior[0].Visibilidad[0].EspejosLaterales[n]+'</p></dd>');
 			n++
 		}
 		//Techo
 		while(o<= cantTecho){
-			$('.jsn-Techo dl').append('<dd><p>'+especific[0].coremt[0].Exterior[0].Techo[o]+'</p></dd>');
+			$('.jsn-Techo dl').append('<dd><p>'+especific[0].le[0].Exterior[0].Techo[o]+'</p></dd>');
 			o++
 		}
-		$('.jsn-UrlInterior').attr('src', url+'assets/images/datos/'+especific[0].coremt[0].Exterior[0].UrlInterior);
+		$('.jsn-UrlInterior').attr('src', url+'assets/images/datos/'+especific[0].le[0].Exterior[0].UrlInterior);
 		// INTERIOR
 		//AcabadosInteriores
 		while(p<= cantAcabadosInteriores){
-			$('.jsn-AcabadosInteriores dl').append('<dd><p>'+especific[0].coremt[0].Interior[0].AcabadosInteriores[p]+'</p></dd>');
+			$('.jsn-AcabadosInteriores dl').append('<dd><p>'+especific[0].le[0].Interior[0].AcabadosInteriores[p]+'</p></dd>');
 			p++
 		}
 		//Asientos
 		while(q<= cantAsientos){
-			$('.jsn-Asientos dl').append('<dd><p>'+especific[0].coremt[0].Interior[0].Asientos[q]+'</p></dd>');
+			$('.jsn-Asientos dl').append('<dd><p>'+especific[0].le[0].Interior[0].Asientos[q]+'</p></dd>');
 			q++
 		}
 		//SistemaAudio
 		while(r<= cantSistemaAudio){
-			$('.jsn-SistemaAudio dl ').append('<dd><p>'+especific[0].coremt[0].Interior[0].SistemaAudio[r]+'</p></dd>');
+			$('.jsn-SistemaAudio dl ').append('<dd><p>'+especific[0].le[0].Interior[0].SistemaAudio[r]+'</p></dd>');
 			r++
 		}
 		//CinturonesSeguridad
 		while(s<= cantCinturonesSeguridad){
-			$('.jsn-CinturonesSeguridad dl ').append('<dd><p>'+especific[0].coremt[0].Interior[0].CinturonesSeguridad[s]+'</p></dd>');
+			$('.jsn-CinturonesSeguridad dl ').append('<dd><p>'+especific[0].le[0].Interior[0].CinturonesSeguridad[s]+'</p></dd>');
 			s++
 		}
 		//Confort
 		while(t<= cantConfort){
-			$('.jsn-Confort dl').append('<dd><p>'+especific[0].coremt[0].Interior[0].Confort[t]+'</p></dd>');
+			$('.jsn-Confort dl').append('<dd><p>'+especific[0].le[0].Interior[0].Confort[t]+'</p></dd>');
 			t++
 		}
 		//SeguridadInterior
 		while(u<= cantSeguridadInterior){
-			$('.jsn-SeguridadInterior dl').append('<dd><p>'+especific[0].coremt[0].Interior[0].SeguridadInterior[u]+'</p></dd>');
+			$('.jsn-SeguridadInterior dl').append('<dd><p>'+especific[0].le[0].Interior[0].SeguridadInterior[u]+'</p></dd>');
 			u++
 		}
-		$('.jsn-Download').attr('href', url+'downloads/'+especific[0].coremt[0].Interior[0].Download);
+		$('.jsn-Download').attr('href', url+'downloads/'+especific[0].le[0].Interior[0].Download);
 
 	}
-	// Modelo corectvis
-	else if(modelo === "corectvis"){
+	// Modelo limited
+	else if(modelo === "xle"){
 
-		$('.cont-retic h1 span').html(especific[0].corectvis[0].ModeloAuto)
+		$('.cont-retic h1 span').html(especific[0].xle[0].ModeloAuto)
 		// - Motor
-		var cantFrenos = (especific[0].corectvis[0].EspecificacionTecnica[0].Frenos).length-1
-		var cantRines = (especific[0].corectvis[0].EspecificacionTecnica[0].Rines).length-1
+		var cantFrenos = (especific[0].xle[0].EspecificacionTecnica[0].Frenos).length-1
+		var cantRines = (especific[0].xle[0].EspecificacionTecnica[0].Rines).length-1
 
 		//- Exterior
-		var cantFaros = (especific[0].corectvis[0].Exterior[0].Faros).length-1
-		var cantSeguridadExterior = (especific[0].corectvis[0].Exterior[0].SeguridadExterior).length-1
-		var cantVisibilidadCris = (especific[0].corectvis[0].Exterior[0].Visibilidad[0].Cristales).length-1
-		var cantVisibilidadEsp = (especific[0].corectvis[0].Exterior[0].Visibilidad[0].EspejosLaterales).length-1
-		var cantTecho = (especific[0].corectvis[0].Exterior[0].Techo).length-1
+		var cantFaros = (especific[0].xle[0].Exterior[0].Faros).length-1
+		var cantSeguridadExterior = (especific[0].xle[0].Exterior[0].SeguridadExterior).length-1
+		var cantVisibilidadCris = (especific[0].xle[0].Exterior[0].Visibilidad[0].Cristales).length-1
+		var cantVisibilidadEsp = (especific[0].xle[0].Exterior[0].Visibilidad[0].EspejosLaterales).length-1
+		var cantTecho = (especific[0].xle[0].Exterior[0].Techo).length-1
 
 		//- Interior
-		var cantAcabadosInteriores = (especific[0].corectvis[0].Interior[0].AcabadosInteriores).length-1
-		var cantAsientos= (especific[0].corectvis[0].Interior[0].Asientos).length-1
-		var cantSistemaAudio = (especific[0].corectvis[0].Interior[0].SistemaAudio).length-1
-		var cantCinturonesSeguridad = (especific[0].corectvis[0].Interior[0].CinturonesSeguridad).length-1
-		var cantConfort = (especific[0].corectvis[0].Interior[0].Confort).length-1
-		var cantSeguridadInterior = (especific[0].corectvis[0].Interior[0].SeguridadInterior).length-1
+		var cantAcabadosInteriores = (especific[0].xle[0].Interior[0].AcabadosInteriores).length-1
+		var cantAsientos= (especific[0].xle[0].Interior[0].Asientos).length-1
+		var cantSistemaAudio = (especific[0].xle[0].Interior[0].SistemaAudio).length-1
+		var cantCinturonesSeguridad = (especific[0].xle[0].Interior[0].CinturonesSeguridad).length-1
+		var cantConfort = (especific[0].xle[0].Interior[0].Confort).length-1
+		var cantSeguridadInterior = (especific[0].xle[0].Interior[0].SeguridadInterior).length-1
 
 		//MOTOR
-		$('.jsn-UrlMotor').attr('src', url+'assets/images/datos/'+especific[0].corectvis[0].EspecificacionTecnica[0].UrlMotor);
-		$('.jsn-Capacidad p').html(especific[0].corectvis[0].EspecificacionTecnica[0].Motor[0].Capacidad);
-		$('.jsn-Potencia p').html(especific[0].corectvis[0].EspecificacionTecnica[0].Motor[0].Potencia);
-		$('.jsn-Cilindros p').html(especific[0].corectvis[0].EspecificacionTecnica[0].Motor[0].Cilindros);
-		$('.jsn-Valvulas p').html(especific[0].corectvis[0].EspecificacionTecnica[0].Motor[0].Valvulas);
-		//$('.jsn-Traccion p').html(especific[0].corectvis[0].EspecificacionTecnica[0].Motor[0].Traccion);
+		$('.jsn-UrlMotor').attr('src', url+'assets/images/datos/'+especific[0].xle[0].EspecificacionTecnica[0].UrlMotor);
+		$('.jsn-Capacidad p').html(especific[0].xle[0].EspecificacionTecnica[0].Motor[0].Capacidad);
+		$('.jsn-Potencia p').html(especific[0].xle[0].EspecificacionTecnica[0].Motor[0].Potencia);
+		$('.jsn-Cilindros p').html(especific[0].xle[0].EspecificacionTecnica[0].Motor[0].Cilindros);
+		$('.jsn-Valvulas p').html(especific[0].xle[0].EspecificacionTecnica[0].Motor[0].Valvulas);
+		//$('.jsn-Traccion p').html(especific[0].xle[0].EspecificacionTecnica[0].Motor[0].Traccion);
 		//Frenos
 		while(i<= cantFrenos){
-			$('.jsn-Frenos dl').append('<dd><p>'+especific[0].corectvis[0].EspecificacionTecnica[0].Frenos[i]+'</p></dd>');
+			$('.jsn-Frenos dl').append('<dd><p>'+especific[0].xle[0].EspecificacionTecnica[0].Frenos[i]+'</p></dd>');
 			i++
 		}
 		//Rines
 		while(j<= cantRines){
-			$('.jsn-Rines dl').append('<dd><p>'+especific[0].corectvis[0].EspecificacionTecnica[0].Rines[j]+'</p></dd>');
+			$('.jsn-Rines dl').append('<dd><p>'+especific[0].xle[0].EspecificacionTecnica[0].Rines[j]+'</p></dd>');
 			j++
 		}
-		$('.jsn-UrlAuto').attr('src', url+'assets/images/datos/'+especific[0].corectvis[0].EspecificacionTecnica[0].UrlAuto);
+		$('.jsn-UrlAuto').attr('src', url+'assets/images/datos/'+especific[0].xle[0].EspecificacionTecnica[0].UrlAuto);
 		// EXTERIOR
 		//Faros
 		while(k<= cantFaros){
-			$('.jsn-Faros dl').append('<dd><p>'+especific[0].corectvis[0].Exterior[0].Faros[k]+'</p></dd>');
+			$('.jsn-Faros dl').append('<dd><p>'+especific[0].xle[0].Exterior[0].Faros[k]+'</p></dd>');
 			k++
 		}
 		//Seguridad exterior
 		while(l<= cantSeguridadExterior){
-			$('.jsn-SeguridadExterior dl').append('<dd><p>'+especific[0].corectvis[0].Exterior[0].SeguridadExterior[l]+'</p></dd>');
+			$('.jsn-SeguridadExterior dl').append('<dd><p>'+especific[0].xle[0].Exterior[0].SeguridadExterior[l]+'</p></dd>');
 			l++
 		}
 		//Visibilidad
 		while(m<= cantVisibilidadCris){
-			$('.jsn-VisibilidadCristales dl ').append('<dd><p>'+especific[0].corectvis[0].Exterior[0].Visibilidad[0].Cristales[m]+'</p></dd>');
+			$('.jsn-VisibilidadCristales dl ').append('<dd><p>'+especific[0].xle[0].Exterior[0].Visibilidad[0].Cristales[m]+'</p></dd>');
 			m++
 		}
 		while(n<= cantVisibilidadEsp){
-			$('.jsn-VisibilidadEspejosLaterales dl ').append('<dd><p>'+especific[0].corectvis[0].Exterior[0].Visibilidad[0].EspejosLaterales[n]+'</p></dd>');
+			$('.jsn-VisibilidadEspejosLaterales dl ').append('<dd><p>'+especific[0].xle[0].Exterior[0].Visibilidad[0].EspejosLaterales[n]+'</p></dd>');
 			n++
 		}
 		//Techo
 		while(o<= cantTecho){
-			$('.jsn-Techo dl').append('<dd><p>'+especific[0].corectvis[0].Exterior[0].Techo[o]+'</p></dd>');
+			$('.jsn-Techo dl').append('<dd><p>'+especific[0].xle[0].Exterior[0].Techo[o]+'</p></dd>');
 			o++
 		}
-		$('.jsn-UrlInterior').attr('src', url+'assets/images/datos/'+especific[0].corectvis[0].Exterior[0].UrlInterior);
+		$('.jsn-UrlInterior').attr('src', url+'assets/images/datos/'+especific[0].xle[0].Exterior[0].UrlInterior);
 		// INTERIOR
 		//AcabadosInteriores
 		while(p<= cantAcabadosInteriores){
-			$('.jsn-AcabadosInteriores dl').append('<dd><p>'+especific[0].corectvis[0].Interior[0].AcabadosInteriores[p]+'</p></dd>');
+			$('.jsn-AcabadosInteriores dl').append('<dd><p>'+especific[0].xle[0].Interior[0].AcabadosInteriores[p]+'</p></dd>');
 			p++
 		}
 		//Asientos
 		while(q<= cantAsientos){
-			$('.jsn-Asientos dl').append('<dd><p>'+especific[0].corectvis[0].Interior[0].Asientos[q]+'</p></dd>');
+			$('.jsn-Asientos dl').append('<dd><p>'+especific[0].xle[0].Interior[0].Asientos[q]+'</p></dd>');
 			q++
 		}
 		//SistemaAudio
 		while(r<= cantSistemaAudio){
-			$('.jsn-SistemaAudio dl ').append('<dd><p>'+especific[0].corectvis[0].Interior[0].SistemaAudio[r]+'</p></dd>');
+			$('.jsn-SistemaAudio dl ').append('<dd><p>'+especific[0].xle[0].Interior[0].SistemaAudio[r]+'</p></dd>');
 			r++
 		}
 		//CinturonesSeguridad
 		while(s<= cantCinturonesSeguridad){
-			$('.jsn-CinturonesSeguridad dl ').append('<dd><p>'+especific[0].corectvis[0].Interior[0].CinturonesSeguridad[s]+'</p></dd>');
+			$('.jsn-CinturonesSeguridad dl ').append('<dd><p>'+especific[0].xle[0].Interior[0].CinturonesSeguridad[s]+'</p></dd>');
 			s++
 		}
 		//Confort
 		while(t<= cantConfort){
-			$('.jsn-Confort dl').append('<dd><p>'+especific[0].corectvis[0].Interior[0].Confort[t]+'</p></dd>');
+			$('.jsn-Confort dl').append('<dd><p>'+especific[0].xle[0].Interior[0].Confort[t]+'</p></dd>');
 			t++
 		}
 		//SeguridadInterior
 		while(u<= cantSeguridadInterior){
-			$('.jsn-SeguridadInterior dl').append('<dd><p>'+especific[0].corectvis[0].Interior[0].SeguridadInterior[u]+'</p></dd>');
+			$('.jsn-SeguridadInterior dl').append('<dd><p>'+especific[0].xle[0].Interior[0].SeguridadInterior[u]+'</p></dd>');
 			u++
 		}
-		$('.jsn-Download').attr('href', url+'downloads/'+especific[0].corectvis[0].Interior[0].Download);
+		$('.jsn-Download').attr('href', url+'downloads/'+especific[0].xle[0].Interior[0].Download);
+
+	}
+	else if(modelo === "limitedpr"){
+
+		$('.cont-retic h1 span').html(especific[0].limitedpr[0].ModeloAuto)
+		// - Motor
+		var cantFrenos = (especific[0].limitedpr[0].EspecificacionTecnica[0].Frenos).length-1
+		var cantRines = (especific[0].limitedpr[0].EspecificacionTecnica[0].Rines).length-1
+
+		//- Exterior
+		var cantFaros = (especific[0].limitedpr[0].Exterior[0].Faros).length-1
+		var cantSeguridadExterior = (especific[0].limitedpr[0].Exterior[0].SeguridadExterior).length-1
+		var cantVisibilidadCris = (especific[0].limitedpr[0].Exterior[0].Visibilidad[0].Cristales).length-1
+		var cantVisibilidadEsp = (especific[0].limitedpr[0].Exterior[0].Visibilidad[0].EspejosLaterales).length-1
+		var cantTecho = (especific[0].limitedpr[0].Exterior[0].Techo).length-1
+
+		//- Interior
+		var cantAcabadosInteriores = (especific[0].limitedpr[0].Interior[0].AcabadosInteriores).length-1
+		var cantAsientos= (especific[0].limitedpr[0].Interior[0].Asientos).length-1
+		var cantSistemaAudio = (especific[0].limitedpr[0].Interior[0].SistemaAudio).length-1
+		var cantCinturonesSeguridad = (especific[0].limitedpr[0].Interior[0].CinturonesSeguridad).length-1
+		var cantConfort = (especific[0].limitedpr[0].Interior[0].Confort).length-1
+		var cantSeguridadInterior = (especific[0].limitedpr[0].Interior[0].SeguridadInterior).length-1
+
+		//MOTOR
+		$('.jsn-UrlMotor').attr('src', url+'assets/images/datos/'+especific[0].limitedpr[0].EspecificacionTecnica[0].UrlMotor);
+		$('.jsn-Capacidad p').html(especific[0].limitedpr[0].EspecificacionTecnica[0].Motor[0].Capacidad);
+		$('.jsn-Potencia p').html(especific[0].limitedpr[0].EspecificacionTecnica[0].Motor[0].Potencia);
+		$('.jsn-Cilindros p').html(especific[0].limitedpr[0].EspecificacionTecnica[0].Motor[0].Cilindros);
+		$('.jsn-Valvulas p').html(especific[0].limitedpr[0].EspecificacionTecnica[0].Motor[0].Valvulas);
+		//$('.jsn-Traccion p').html(especific[0].limitedpr[0].EspecificacionTecnica[0].Motor[0].Traccion);
+		//Frenos
+		while(i<= cantFrenos){
+			$('.jsn-Frenos dl').append('<dd><p>'+especific[0].limitedpr[0].EspecificacionTecnica[0].Frenos[i]+'</p></dd>');
+			i++
+		}
+		//Rines
+		while(j<= cantRines){
+			$('.jsn-Rines dl').append('<dd><p>'+especific[0].limitedpr[0].EspecificacionTecnica[0].Rines[j]+'</p></dd>');
+			j++
+		}
+		$('.jsn-UrlAuto').attr('src', url+'assets/images/datos/'+especific[0].limitedpr[0].EspecificacionTecnica[0].UrlAuto);
+		// EXTERIOR
+		//Faros
+		while(k<= cantFaros){
+			$('.jsn-Faros dl').append('<dd><p>'+especific[0].limitedpr[0].Exterior[0].Faros[k]+'</p></dd>');
+			k++
+		}
+		//Seguridad exterior
+		while(l<= cantSeguridadExterior){
+			$('.jsn-SeguridadExterior dl').append('<dd><p>'+especific[0].limitedpr[0].Exterior[0].SeguridadExterior[l]+'</p></dd>');
+			l++
+		}
+		//Visibilidad
+		while(m<= cantVisibilidadCris){
+			$('.jsn-VisibilidadCristales dl ').append('<dd><p>'+especific[0].limitedpr[0].Exterior[0].Visibilidad[0].Cristales[m]+'</p></dd>');
+			m++
+		}
+		while(n<= cantVisibilidadEsp){
+			$('.jsn-VisibilidadEspejosLaterales dl ').append('<dd><p>'+especific[0].limitedpr[0].Exterior[0].Visibilidad[0].EspejosLaterales[n]+'</p></dd>');
+			n++
+		}
+		//Techo
+		while(o<= cantTecho){
+			$('.jsn-Techo dl').append('<dd><p>'+especific[0].limitedpr[0].Exterior[0].Techo[o]+'</p></dd>');
+			o++
+		}
+		$('.jsn-UrlInterior').attr('src', url+'assets/images/datos/'+especific[0].limitedpr[0].Exterior[0].UrlInterior);
+		// INTERIOR
+		//AcabadosInteriores
+		while(p<= cantAcabadosInteriores){
+			$('.jsn-AcabadosInteriores dl').append('<dd><p>'+especific[0].limitedpr[0].Interior[0].AcabadosInteriores[p]+'</p></dd>');
+			p++
+		}
+		//Asientos
+		while(q<= cantAsientos){
+			$('.jsn-Asientos dl').append('<dd><p>'+especific[0].limitedpr[0].Interior[0].Asientos[q]+'</p></dd>');
+			q++
+		}
+		//SistemaAudio
+		while(r<= cantSistemaAudio){
+			$('.jsn-SistemaAudio dl ').append('<dd><p>'+especific[0].limitedpr[0].Interior[0].SistemaAudio[r]+'</p></dd>');
+			r++
+		}
+		//CinturonesSeguridad
+		while(s<= cantCinturonesSeguridad){
+			$('.jsn-CinturonesSeguridad dl ').append('<dd><p>'+especific[0].limitedpr[0].Interior[0].CinturonesSeguridad[s]+'</p></dd>');
+			s++
+		}
+		//Confort
+		while(t<= cantConfort){
+			$('.jsn-Confort dl').append('<dd><p>'+especific[0].limitedpr[0].Interior[0].Confort[t]+'</p></dd>');
+			t++
+		}
+		//SeguridadInterior
+		while(u<= cantSeguridadInterior){
+			$('.jsn-SeguridadInterior dl').append('<dd><p>'+especific[0].limitedpr[0].Interior[0].SeguridadInterior[u]+'</p></dd>');
+			u++
+		}
+		$('.jsn-Download').attr('href', url+'downloads/'+especific[0].limitedpr[0].Interior[0].Download);
+
+	}
+	else if(modelo === "limited"){
+
+		$('.cont-retic h1 span').html(especific[0].limited[0].ModeloAuto)
+		// - Motor
+		var cantFrenos = (especific[0].limited[0].EspecificacionTecnica[0].Frenos).length-1
+		var cantRines = (especific[0].limited[0].EspecificacionTecnica[0].Rines).length-1
+
+		//- Exterior
+		var cantFaros = (especific[0].limited[0].Exterior[0].Faros).length-1
+		var cantSeguridadExterior = (especific[0].limited[0].Exterior[0].SeguridadExterior).length-1
+		var cantVisibilidadCris = (especific[0].limited[0].Exterior[0].Visibilidad[0].Cristales).length-1
+		var cantVisibilidadEsp = (especific[0].limited[0].Exterior[0].Visibilidad[0].EspejosLaterales).length-1
+		var cantTecho = (especific[0].limited[0].Exterior[0].Techo).length-1
+
+		//- Interior
+		var cantAcabadosInteriores = (especific[0].limited[0].Interior[0].AcabadosInteriores).length-1
+		var cantAsientos= (especific[0].limited[0].Interior[0].Asientos).length-1
+		var cantSistemaAudio = (especific[0].limited[0].Interior[0].SistemaAudio).length-1
+		var cantCinturonesSeguridad = (especific[0].limited[0].Interior[0].CinturonesSeguridad).length-1
+		var cantConfort = (especific[0].limited[0].Interior[0].Confort).length-1
+		var cantSeguridadInterior = (especific[0].limited[0].Interior[0].SeguridadInterior).length-1
+
+		//MOTOR
+		$('.jsn-UrlMotor').attr('src', url+'assets/images/datos/'+especific[0].limited[0].EspecificacionTecnica[0].UrlMotor);
+		$('.jsn-Capacidad p').html(especific[0].limited[0].EspecificacionTecnica[0].Motor[0].Capacidad);
+		$('.jsn-Potencia p').html(especific[0].limited[0].EspecificacionTecnica[0].Motor[0].Potencia);
+		$('.jsn-Cilindros p').html(especific[0].limited[0].EspecificacionTecnica[0].Motor[0].Cilindros);
+		$('.jsn-Valvulas p').html(especific[0].limited[0].EspecificacionTecnica[0].Motor[0].Valvulas);
+		//$('.jsn-Traccion p').html(especific[0].limited[0].EspecificacionTecnica[0].Motor[0].Traccion);
+		//Frenos
+		while(i<= cantFrenos){
+			$('.jsn-Frenos dl').append('<dd><p>'+especific[0].limited[0].EspecificacionTecnica[0].Frenos[i]+'</p></dd>');
+			i++
+		}
+		//Rines
+		while(j<= cantRines){
+			$('.jsn-Rines dl').append('<dd><p>'+especific[0].limited[0].EspecificacionTecnica[0].Rines[j]+'</p></dd>');
+			j++
+		}
+		$('.jsn-UrlAuto').attr('src', url+'assets/images/datos/'+especific[0].limited[0].EspecificacionTecnica[0].UrlAuto);
+		// EXTERIOR
+		//Faros
+		while(k<= cantFaros){
+			$('.jsn-Faros dl').append('<dd><p>'+especific[0].limited[0].Exterior[0].Faros[k]+'</p></dd>');
+			k++
+		}
+		//Seguridad exterior
+		while(l<= cantSeguridadExterior){
+			$('.jsn-SeguridadExterior dl').append('<dd><p>'+especific[0].limited[0].Exterior[0].SeguridadExterior[l]+'</p></dd>');
+			l++
+		}
+		//Visibilidad
+		while(m<= cantVisibilidadCris){
+			$('.jsn-VisibilidadCristales dl ').append('<dd><p>'+especific[0].limited[0].Exterior[0].Visibilidad[0].Cristales[m]+'</p></dd>');
+			m++
+		}
+		while(n<= cantVisibilidadEsp){
+			$('.jsn-VisibilidadEspejosLaterales dl ').append('<dd><p>'+especific[0].limited[0].Exterior[0].Visibilidad[0].EspejosLaterales[n]+'</p></dd>');
+			n++
+		}
+		//Techo
+		while(o<= cantTecho){
+			$('.jsn-Techo dl').append('<dd><p>'+especific[0].limited[0].Exterior[0].Techo[o]+'</p></dd>');
+			o++
+		}
+		$('.jsn-UrlInterior').attr('src', url+'assets/images/datos/'+especific[0].limited[0].Exterior[0].UrlInterior);
+		// INTERIOR
+		//AcabadosInteriores
+		while(p<= cantAcabadosInteriores){
+			$('.jsn-AcabadosInteriores dl').append('<dd><p>'+especific[0].limited[0].Interior[0].AcabadosInteriores[p]+'</p></dd>');
+			p++
+		}
+		//Asientos
+		while(q<= cantAsientos){
+			$('.jsn-Asientos dl').append('<dd><p>'+especific[0].limited[0].Interior[0].Asientos[q]+'</p></dd>');
+			q++
+		}
+		//SistemaAudio
+		while(r<= cantSistemaAudio){
+			$('.jsn-SistemaAudio dl ').append('<dd><p>'+especific[0].limited[0].Interior[0].SistemaAudio[r]+'</p></dd>');
+			r++
+		}
+		//CinturonesSeguridad
+		while(s<= cantCinturonesSeguridad){
+			$('.jsn-CinturonesSeguridad dl ').append('<dd><p>'+especific[0].limited[0].Interior[0].CinturonesSeguridad[s]+'</p></dd>');
+			s++
+		}
+		//Confort
+		while(t<= cantConfort){
+			$('.jsn-Confort dl').append('<dd><p>'+especific[0].limited[0].Interior[0].Confort[t]+'</p></dd>');
+			t++
+		}
+		//SeguridadInterior
+		while(u<= cantSeguridadInterior){
+			$('.jsn-SeguridadInterior dl').append('<dd><p>'+especific[0].limited[0].Interior[0].SeguridadInterior[u]+'</p></dd>');
+			u++
+		}
+		$('.jsn-Download').attr('href', url+'downloads/'+especific[0].limited[0].Interior[0].Download);
 
 	}
 }

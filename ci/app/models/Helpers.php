@@ -6,8 +6,10 @@ class Helpers extends CI_Model {
 	public function get_models()
 	{
 		$models = array(
-						'coremt' => 'HIGHLANDER LE',
-						'corectvis' => 'HIGHLANDER XLE'
+						'le' => 'HIGHLANDER LE',
+						'xle' => 'HIGHLANDER XLE',
+						'limitedpr' => 'HIGHLANDER Limited PR',
+						'limited' => 'HIGHLANDER Limeted'
 					);
 		
 		return $models;

@@ -46,7 +46,7 @@
                             <p>Seguridad total cuando más lo necesitas, cambia de carril sin ninguna preocupación.</p>
                         </div>
                         <div>
-                            <img src="<?=base_url('assets/images/highlight/sistema-de-monitoreo.jpg');?>">
+                            <img src="<?=base_url('assets/images/highlight/sistema-de-monitoreo.png');?>">
                         </div>
                     </li>
                     <li>
@@ -56,7 +56,7 @@
                             <p>¡Gran vista para todos! Los viajes se disfrutan más cuando admiras el paisaje.</p>
                         </div>
                         <div>
-                            <img src="<?=base_url('assets/images/highlight/techo-corredizo.jpg');?>">
+                            <img src="<?=base_url('assets/images/highlight/techo-corredizo.png');?>">
                         </div>
                     </li>
                     <li>
@@ -66,7 +66,7 @@
                             <p>Pantalla de 9” y Blu-ray disc para que todos se diviertan sin importar lo largo del viaje. </p>
                         </div>
                         <div>
-                            <img src="<?=base_url('assets/images/highlight/sistema-de-entretenimiento.jpg');?>">
+                            <img src="<?=base_url('assets/images/highlight/sistema-de-entretenimiento.png');?>">
                         </div>
                     </li>
                     <li>
@@ -75,16 +75,16 @@
                             <p>Sal a donde quieras, se adapta a cualquier Terreno, clima y caminos, ideal para la ciudad o carretera.</p>
                         </div>
                         <div>
-                            <img src="<?=base_url('assets/images/highlight/palanca.jpg');?>">
+                            <img src="<?=base_url('assets/images/highlight/palanca.png');?>">
                         </div>
                     </li>
                     <li>
                         <div>
                             <h1 class="animated"><span>Más espacio de carga.</span></h1>
-                            <p>Refuerzos estratégicos que protegen a todos sus ocupantes ante cualquier eventualidad</p>
+                            <p>Cada viaje es diferente, la Highlander Se adapta, a veces traes mucha gente, mucho equipo o una combinación de ambos.</p>
                         </div>
                         <div>
-                            <img src="<?=base_url('assets/images/highlight/mas-espacio-de-carga.jpg');?>">
+                            <img src="<?=base_url('assets/images/highlight/mas-espacio-de-carga.png');?>">
                         </div>
                     </li>
                 </ul>
@@ -109,27 +109,27 @@
                     <div class="contGale">
                         <div>
                             <ul>
-                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-01.jpg');?>" title="Luces traseras integradas a la carrocería que lo hacen ver dinámico."><img src="<?=base_url('assets/images/thumbs/01.png');?>"></a></li>
-                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-02.jpg');?>" title="Su rediseño se nota en cualquier parte del automóvil."><img src="<?=base_url('assets/images/thumbs/02-thumb.png');?>"></a></li>
-                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-03.jpg');?>" title="Suspensión mejorada para tener mayor tracción y sensación de control."><img src="<?=base_url('assets/images/thumbs/03-thumb.png');?>"></a></li>
-                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-04.jpg');?>" title="Incomparable espacio en cajuela, podrás llevar lo que quieras."><img src="<?=base_url('assets/images/thumbs/04-thumb.jpg');?>"></a></li>
+                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-01.jpg');?>" title="Vestiduras cómodas y elegantes, listas para cualquier viaje."><img src="<?=base_url('assets/images/thumbs/01.png');?>"></a></li>
+                                  <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/01.jpg');?>" title="Cada detalle convive en armonía con todos los interiores. La palanca no es la excepción."><img src="<?=base_url('assets/images/thumbs/03.png');?>"></a></li>
+                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-02.jpg');?>" title="Toma el control, el volante se volverá tu mejor cómplice."><img src="<?=base_url('assets/images/thumbs/02-thumb.png');?>"></a></li>
+                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-03.jpg');?>" title="Ve todo lo que sucede a tus espaldas, todo en su interior tiene una función."><img src="<?=base_url('assets/images/thumbs/03-thumb.png');?>"></a></li>
                             </ul> 
                             <ul>
-                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-05.jpg');?>" title="Sensación confortable de conducción, las mejores transmisiones manuales son nuestras."><img src="<?=base_url('assets/images/thumbs/05-thumb.png');?>"></a></li>
-                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-06.jpg');?>" title="Aceleración y fuerza, palabras que describen el motor de Yaris Sedán 2017."><img src="<?=base_url('assets/images/thumbs/06-thumb.png');?>"></a></li>
-                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-07.jpg');?>" title="Equipado para que todos tus trayectos sean mucho más divertidos."><img src="<?=base_url('assets/images/thumbs/07-thumb.png');?>"></a></li>
-                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-08.jpg');?>" title="Atractivo tablero con look deportivo. Información importante a tu alcance."><img src="<?=base_url('assets/images/thumbs/08-thumb.png');?>"></a></li>
+                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-05.jpg');?>" title="Disfruta cualquier camino, su techo panorámico será tu mejor compañero."><img src="<?=base_url('assets/images/thumbs/05-thumb.png');?>"></a></li>
+                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-06.jpg');?>" title="Lleva tu música a todas partes, la equipamos pensando en todos."><img src="<?=base_url('assets/images/thumbs/06-thumb.png');?>"></a></li>
+                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-07.jpg');?>" title="Siempre buscamos facilitarte la vida y nuestro botón de encendido lo hace muy bien."><img src="<?=base_url('assets/images/thumbs/07-thumb.png');?>"></a></li>
+                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-08.jpg');?>" title="La seguridad de cada pasajero siempre podrá estar bajo tu control."><img src="<?=base_url('assets/images/thumbs/08-thumb.png');?>"></a></li>
                             </ul> 
                             <ul>
-                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-09.jpg');?>" title="Sensación confortable de conducción, las mejores transmisiones manuales son nuestras."><img src="<?=base_url('assets/images/thumbs/09-thumb.png');?>"></a></li>
-                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-10.jpg');?>" title="Aceleración y fuerza, palabras que describen el motor de Yaris Sedán 2017."><img src="<?=base_url('assets/images/thumbs/10-thumb.png');?>"></a></li>
-                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-11.jpg');?>" title="Equipado para que todos tus trayectos sean mucho más divertidos."><img src="<?=base_url('assets/images/thumbs/11-thumb.png');?>"></a></li>
-                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-12.jpg');?>" title="Atractivo tablero con look deportivo. Información importante a tu alcance."><img src="<?=base_url('assets/images/thumbs/12-thumb.png');?>"></a></li>
+                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-09.jpg');?>" title="Fuerza y dinamismo en cada una de sus líneas."><img src="<?=base_url('assets/images/thumbs/09-thumb.png');?>"></a></li>
+                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-10.jpg');?>" title="Equipada con rines de 18 o 19 pulgadas, así luce mejor."><img src="<?=base_url('assets/images/thumbs/10-thumb.png');?>"></a></li>
+                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-11.jpg');?>" title="Date a notar con las luces que vienen en los espejos laterales."><img src="<?=base_url('assets/images/thumbs/11-thumb.png');?>"></a></li>
+                                <li><a class="fancybox" rel="gallery1" href="<?=base_url('assets/images/galeria/img-12.jpg');?>" title="Con su cámara de reversa evitarás darle un golpecito."><img src="<?=base_url('assets/images/thumbs/12-thumb.png');?>"></a></li>
                             </ul>              
                         </div>                    
                         <div class="anuncio">
                             <span>
-                                <p>El rediseño del <span>Yaris Sedán</span> se perfeccionó, con líneas fuertes y definidas que le dan un “look más robusto” colocándolo a la vanguardia para volverlo referencia para todos los autos de su categoría.</p>
+                                <p>Cada espacio diseñado en <span> Highlander </span> está pensado con un propósito, ya sea comodidad, seguridad o lujo, pero todo tiene una razón de ser.</p>
                                 <!-- <a href="" class="boton">Conoce Más</a> -->                    
                             </span>
                         </div>
@@ -193,7 +193,7 @@
                     <div>
                         <div>
                             <div>
-                                <img src="<?=base_url('assets/images/versiones/presentacion.png');?>">
+                                <img src="<?=base_url('assets/images/versiones/img_lateral.png');?>">
                                 <h3>HIGHLANDER LE</h3>
                                 <h5> $501,200.00<sup>MN</sup></h5>
                                 <ul>
@@ -203,10 +203,10 @@
                                     <li>Alarma e inmovilizador.</li>                                
                                 </ul>
                                 <span></span>
-                                <a href="<?=base_url('especificaciones/coremt');?>" class="link">Ver detalle</a>
+                                <a href="<?=base_url('especificaciones/LE');?>" class="link">Ver detalle</a>
                             </div>
                             <div>
-                                <img src="<?=base_url('assets/images/versiones/presentacion.png');?>">
+                                <img src="<?=base_url('assets/images/versiones/img_lateral.png');?>">
                                 <h3>HIGHLANDER XLE</h3>
                                 <h5> $565,200.00<sup>MN</sup></h5>
                                 <ul>
@@ -216,12 +216,12 @@
                                     <li>Smart key</li>                              
                                 </ul>
                                 <span></span>
-                                <a href="<?=base_url('especificaciones/corectvis');?>" class="link">Ver detalle</a>
+                                <a href="<?=base_url('especificaciones/XLE');?>" class="link">Ver detalle</a>
                             </div>
                         </div>
                         <div>
                             <div>
-                                <img src="<?=base_url('assets/images/versiones/presentacion.png');?>">
+                                <img src="<?=base_url('assets/images/versiones/img_lateral.png');?>">
                                 <h3>Highlander Limited PR</h3>
                                 <h5> $634,900.00<sup>MN</sup></h5>
                                 <ul>
@@ -231,10 +231,10 @@
                                     <li>Sistema de monitoreo de punto ciego</li>                               
                                 </ul>
                                 <span></span>
-                                <a href="<?=base_url('especificaciones/corectvis');?>" class="link">Ver detalle</a>
+                                <a href="<?=base_url('especificaciones/PR');?>" class="link">Ver detalle</a>
                             </div>
                             <div>
-                                <img src="<?=base_url('assets/images/versiones/presentacion.png');?>">
+                                <img src="<?=base_url('assets/images/versiones/img_lateral.png');?>">
                                 <h3>Highlander Limeted</h3>
                                 <h5> $656,700.00<sup>MN</sup></h5>
                                 <ul>
@@ -245,7 +245,7 @@
                                     <li>Sistema de monitoreo de punto ciego</li>                          
                                 </ul>
                                 <span></span>
-                                <a href="<?=base_url('especificaciones/corectvis');?>" class="link">Ver detalle</a>
+                                <a href="<?=base_url('especificaciones/Limeted');?>" class="link">Ver detalle</a>
                             </div>
                         </div>
                     </div>
@@ -264,7 +264,7 @@
             <div id="descanso"></div>
             <div class="container">
                 <div>
-                    <h1>Eficiente desempeño<br>en cada momento.</h1>
+                    <h1>Highlander la camioneta que tú y tu familia estaban esperando.</h1>
                     <span></span>
                     <p>La solución ideal para los que buscan mejor rendimiento de combustible.</p>
                     <a href="<?=base_url('distribuidores');?>" class="boton">Consíguelo aquí</a>

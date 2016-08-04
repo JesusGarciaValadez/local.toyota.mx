@@ -168,7 +168,7 @@
                                 <div class="extVisibilidad">
                                     <dl>
                                         <dt>
-                                            <h3>Dimensiones</h3>
+                                            <h3>Interiores</h3>
                                         </dt>
                                         <dt class="jsn-VisibilidadCristales">
                                             <dl>
