@@ -15,7 +15,7 @@ class CreateTitleSliderFeaturesTable extends Migration
     Schema::create( 'title_slider_features', function ( Blueprint $table )
     {
       $table->increments( 'id' );
-      $table->integer( 'brand_id' );
+      $table->integer( 'brands_id' );
       $table->longtext( 'content' );
       $table->timestamps();
     } );
@@ -28,12 +28,6 @@ class CreateTitleSliderFeaturesTable extends Migration
    */
   public function down()
   {
-    Schema::table( 'title_slider_features', function ( $table )
-    {
-      $table->dropColumn( 'id' );
-      $table->dropColumn( 'brand_id' );
-      $table->dropColumn( 'content' );
-    } );
     Schema::drop( 'title_slider_features' );
   }
 }

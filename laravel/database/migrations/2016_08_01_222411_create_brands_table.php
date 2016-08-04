@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateDescriptionsTable extends Migration
+class CreateBrandsTable extends Migration
 {
   /**
    * Run the migrations.
@@ -12,11 +12,11 @@ class CreateDescriptionsTable extends Migration
    */
   public function up()
   {
-    Schema::create( 'descriptions', function ( Blueprint $table )
+    Schema::create( 'brands', function ( Blueprint $table )
     {
       $table->increments( 'id' );
       $table->string( 'brand' );
-      $table->string( 'titleH1' );
+      $table->string( 'title_h1' );
       $table->integer( 'slider_features_id' )
             ->unsigned();
       $table->foreign( 'slider_features_id' )
@@ -30,29 +30,29 @@ class CreateDescriptionsTable extends Migration
             ->on( 'title_slider_features' )
             ->onDelete( 'cascade' );
       $table->string( 'title_gallery_fancybox' );
-      $table->integer( 'gallery_fancybox_id' )
+      $table->integer( 'gallery_fancyboxes_id' )
             ->unsigned();
-      $table->foreign( 'gallery_fancybox_id' )
+      $table->foreign( 'gallery_fancyboxes_id' )
             ->references( 'id' )
-            ->on( 'gallery_fancybox' )
+            ->on( 'gallery_fancyboxes' )
             ->onDelete( 'cascade' );
-      $table->string( 'descriptionGalleryFancybox' );
-      $table->string( 'titleVersionsGallery' );
-      $table->integer( 'cars_descriptions_gallery_one_id' )
+      $table->string( 'description_gallery_fancybox' );
+      $table->string( 'title_versions_gallery' );
+      $table->integer( 'car_description_gallery_one_id' )
             ->unsigned();
-      $table->foreign( 'cars_descriptions_gallery_one_id' )
+      $table->foreign( 'car_description_gallery_one_id' )
             ->references( 'id' )
-            ->on( 'cars_descriptions_gallery_one' )
+            ->on( 'car_description_gallery_ones' )
             ->onDelete( 'cascade' );
-      $table->integer( 'cars_descriptions_gallery_two_id' )
+      $table->integer( 'car_description_gallery_two_id' )
             ->unsigned();
-      $table->foreign( 'cars_descriptions_gallery_two_id' )
+      $table->foreign( 'car_description_gallery_two_id' )
             ->references( 'id' )
-            ->on( 'cars_descriptions_gallery_two' )
+            ->on( 'car_description_gallery_twos' )
             ->onDelete( 'cascade' );
-      $table->string( 'titleDrivingAnimation' );
-      $table->string( 'titleFooter' );
-      $table->string( 'descriptionFooter' );
+      $table->string( 'title_driving_animation' );
+      $table->string( 'title_footer' );
+      $table->string( 'description_footer' );
       $table->timestamps( );
     } );
   }
@@ -64,6 +64,6 @@ class CreateDescriptionsTable extends Migration
    */
   public function down()
   {
-    Schema::drop( 'descriptions' );
+    Schema::drop( 'brands' );
   }
 }

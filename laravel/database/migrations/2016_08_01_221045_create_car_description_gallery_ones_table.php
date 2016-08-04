@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSliderFeaturesTable extends Migration
+class CreateCarDescriptionGalleryOnesTable extends Migration
 {
   /**
    * Run the migrations.
@@ -12,7 +12,7 @@ class CreateSliderFeaturesTable extends Migration
    */
   public function up()
   {
-    Schema::create( 'slider_features', function ( Blueprint $table )
+    Schema::create( 'car_description_gallery_ones', function ( Blueprint $table )
     {
       $table->increments( 'id' );
       $table->integer( 'brands_id' );
@@ -28,6 +28,6 @@ class CreateSliderFeaturesTable extends Migration
    */
   public function down()
   {
-    Schema::drop( 'slider_features' );
+    Schema::drop( 'car_description_gallery_ones' );
   }
 }

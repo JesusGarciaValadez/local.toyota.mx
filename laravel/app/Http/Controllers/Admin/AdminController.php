@@ -18,7 +18,7 @@ class AdminController extends Controller
    */
   public function index( )
   {
-    $brands = \Highlander\Descriptions::all( );
+    $brands = \Highlander\Brands::all( );
 
     return view( 'admin.index' )->withBrands( $brands );
   }
@@ -63,7 +63,7 @@ class AdminController extends Controller
    */
   public function edit( $id )
   {
-    $home = \Highlander\Descriptions::findOrFail( $id );
+    $home = \Highlander\Brands::findOrFail( $id );
 
     return view( 'admin.edit' )->withHome( $home );
   }
@@ -82,8 +82,8 @@ class AdminController extends Controller
     /*
      * Persist the new data into the database.
      */
-    $update = \Highlander\Descriptions::where( 'id', $id )
-                                      ->update( $store );
+    $update = \Highlander\Brands::where( 'id', $id )
+                         ->update( $store );
 
     $type     = ( $update ) ? "success" : "danger";
     $message  = ( $update ) ? "Modelo de auto editado" : "Modelo de auto no editado";

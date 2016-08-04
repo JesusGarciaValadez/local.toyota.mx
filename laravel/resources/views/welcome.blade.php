@@ -41,16 +41,12 @@
     <div id="highlights"></div>
     <div class="container">
       <ul class="highs">
-        @foreach( $home->sliderFeatures as $features )
-        {!! $features !!}
-        @endforeach
+        {!! $home->sliderFeature->content !!}
       </ul>
       <div class="menuHigh">
         <span class="fa fa-angle-up"></span>
         <ul>
-          @foreach( $home->titleSliderFeatures as $titles )
-          {!! $titles !!}
-          @endforeach
+          {!! $home->titleSliderFeature->content !!}
         </ul>
         <span class="fa fa-angle-down"></span>
       </div>
@@ -64,13 +60,13 @@
       <div class="container">
         <div class="contGale">
           <div>
-            @foreach( $home->galleryFancybox as $gallery )
-            {!! $gallery !!}
+            @foreach( $home->galleryFancyboxes as $gallery )
+            {!! $gallery->content !!}
             @endforeach
           </div>
           <div class="anuncio">
             <span>
-              {!! $home->descriptionGalleryFancybox !!}
+              {!! $home->description_gallery_fancybox !!}
               <!--
               {!! Html::link( '', 'Conoce Más', [
                 'class' => 'boton'
@@ -129,18 +125,14 @@
   <section class="versiones">
     <div id="versiones"></div>
     <div class="container">
-      {!! $home->titleVersionsGallery !!}
+      {!! $home->title_versions_gallery !!}
       <div class="modelos">
         <div>
           <div>
-            @foreach( $home->carsDescriptionsGalleryOne as $description )
-            {!! $description !!}
-            @endforeach
+            {!! $home->carDescriptionGalleryOne->content !!}
           </div>
           <div>
-            @foreach( $home->carsDescriptionsGalleryTwo as $description )
-            {!! $description !!}
-            @endforeach
+            {!! $home->carDescriptionGalleryTwo->content !!}
           </div>
         </div>
       </div>
@@ -150,7 +142,7 @@
     <div id="manejo"></div>
     <div class="container">
       <div>
-        {!! $home->titleDrivingAnimation !!}
+        {!! $home->title_driving_animation !!}
       </div>
     </div>
   </section>
@@ -158,9 +150,9 @@
     <div id="descanso"></div>
     <div class="container">
       <div>
-        {!! $home->titleFooter !!}
+        {!! $home->title_footer !!}
         <span></span>
-        {!! $home->descriptionFooter !!}
+        {!! $home->description_footer !!}
         <a href="distribuidores" class="boton">Consíguelo aquí</a>
       </div>
     </div>

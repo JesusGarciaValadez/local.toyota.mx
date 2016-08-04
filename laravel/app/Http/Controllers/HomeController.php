@@ -23,7 +23,9 @@ class HomeController extends Controller
    */
   public function index()
   {
-    $home   = \Highlander\Descriptions::first();
+    $home   = \Highlander\Brands::first();
+
+    \Debugbar::log( $home->galleryFancyboxes );
 
     return view( 'welcome' )->withHome( $home );
   }
