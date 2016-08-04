@@ -18,8 +18,7 @@
         </section>
         <section class="colores">
             <div id="colores"></div>   
-            <h2 class="animated">Un nuevo diseño, atlético y dinámico.
-            <span>Afirmación de belleza y arte.</span></h2>
+            <h2 class="animated">Desde cualquier ángulo te parecerá espectacular.</h2>
             <div id="container" class="container">
                 <img src="<?=base_url('assets/images/reel360/blanco/1.jpg');?>">
                 <div class="new-Menu360">
@@ -103,7 +102,7 @@
         </section>
         <section class="galeria">
             <div id="galeria"></div>
-            <h2 class="animated">Su nuevo diseño te dejará sin palabras.</h2>
+            <h2 class="animated">Cada parte de ella tiene un propósito.</h2>
             <div>
                 <span></span>
                 <div class="container">
@@ -189,14 +188,14 @@
         <section class="versiones">
             <div id="versiones"></div>
             <div class="container">
-                <h2 class="animated"><span>Versiones</span> HIGHLANDER  2016.</h2>
+                <h2 class="animated">Cada una tiene detalles que te conquistarán.</h2>
                 <div class="modelos">
                     <div>
                         <div>
                             <div>
                                 <img src="<?=base_url('assets/images/versiones/presentacion.png');?>">
                                 <h3>HIGHLANDER LE</h3>
-                                <h5> DESDE $501,20000<sup>MN</sup></h5>
+                                <h5> $501,200.00<sup>MN</sup></h5>
                                 <ul>
                                     <li>Parrilla negra con acentos cromados.</li>
                                     <li>Espejos laterales eléctricos.</li>
@@ -209,7 +208,7 @@
                             <div>
                                 <img src="<?=base_url('assets/images/versiones/presentacion.png');?>">
                                 <h3>HIGHLANDER XLE</h3>
-                                <h5>DESDE $565,20000<sup>MN</sup></h5>
+                                <h5> $565,200.00<sup>MN</sup></h5>
                                 <ul>
                                     <li>Desempañador eléctrico en espejos laterales.</li>
                                     <li>Faros de niebla delanteros.</li>
@@ -223,8 +222,8 @@
                         <div>
                             <div>
                                 <img src="<?=base_url('assets/images/versiones/presentacion.png');?>">
-                                <h3>Highlander Limited Panoramic Roof</h3>
-                                <h5>DDESDE $634,90000<sup>MN</sup></h5>
+                                <h3>Highlander Limited PR</h3>
+                                <h5> $634,900.00<sup>MN</sup></h5>
                                 <ul>
                                     <li>Techo panorámico</li>
                                     <li>Luces de cortesía en espejos laterales</li>
@@ -236,8 +235,8 @@
                             </div>
                             <div>
                                 <img src="<?=base_url('assets/images/versiones/presentacion.png');?>">
-                                <h3>Highlander Limeted Blu-Ray</h3>
-                                <h5>DESDE $656,70000<sup>MN</sup></h5>
+                                <h3>Highlander Limeted</h3>
+                                <h5> $656,700.00<sup>MN</sup></h5>
                                 <ul>
                                     <li>Luces de cortesía en espejos laterales</li>
                                     <li>Quemacocos eléctricos.</li>
@@ -257,7 +256,7 @@
             <div id="manejo"></div>
             <div class="container">
                 <div>
-                    <h2 class="animated">Un subcompacto funcional y sumamente atractivo.</span></h2>
+                    <h2 class="animated">Conócela a fondo y no busques más</span></h2>
                 </div>
             </div>
         </section>
