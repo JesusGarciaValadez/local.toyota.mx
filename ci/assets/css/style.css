@@ -629,13 +629,12 @@ footer a.scroll:after {
   transform: translate(-50%, -50%);
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
-  display: none;
   left: 30%;
   position: absolute;
   top: 35%;
 }
 .cover h1 {
-  color: #ffffff;
+  color: #000;
   margin-bottom: 0px;
 }
 .cover h1 span {
@@ -643,7 +642,7 @@ footer a.scroll:after {
   text-transform: uppercase;
 }
 .cover h2 {
-  color: #ffffff;
+  color: #000;
   margin: 0px;
   white-space: pre-line;
 }

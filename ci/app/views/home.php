@@ -1,14 +1,12 @@
         <section class="cover">
             <div id="cover"></div>
             <div class="titulo fadeIn animated">
-                <h1><span>Prius</span> 2016.</h1>
-                <h2>Un mejor auto 
-                    <span> para un mejor mundo,
-                    para un mejor tú</span></h2>
-                <div class="btvideo">
+                <h1>Highlander<span>2016</span></h1>
+                <h2>haremos de tus viajes, <br> los mejores momentos </h2>
+                <!-- <div class="btvideo">
                     <span><p>Ve el video y descubre la grandeza de Prius.</p></span>
                     <span><a class="fancybox-media" href="https://www.youtube.com/watch?v=a33pze_sSY4"></a></span>
-                </div>
+                </div> -->
             </div>
             <span class="mouse fadeIn animated">
                 <span class="mouse-dot"></span>
