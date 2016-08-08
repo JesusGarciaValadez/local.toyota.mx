@@ -519,7 +519,7 @@ footer a.scroll:after {
   padding: 0px 15px;
 }
 .menu2 nav ul li:last-child:after {
-  content: "";
+  content: " ";
 }
 .menu2 nav ul li.activo a {
   color: #fff;
@@ -1298,7 +1298,7 @@ section.colores{
 }
 
 .manejo {
-  background: url(img/bgManejo.jpg) no-repeat center bottom;
+  background: url(img/bgManejo.png) no-repeat center bottom;
   background-size: cover;
   height: 600px;
 }

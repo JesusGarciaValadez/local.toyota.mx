@@ -66,7 +66,9 @@
           </div>
           <div class="anuncio">
             <span>
+
               {!! $home->description_gallery_fancybox !!}
+
             </span>
           </div>
         </div>
