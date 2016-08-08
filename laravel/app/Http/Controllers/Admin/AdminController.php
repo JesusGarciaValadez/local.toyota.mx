@@ -7,8 +7,6 @@ use Illuminate\Http\Request;
 use Highlander\Http\Requests;
 use Highlander\Http\Controllers\Controller;
 
-use Highlander\Http\Requests\BrandUpdatedRequest;
-
 class AdminController extends Controller
 {
   /**
@@ -75,21 +73,9 @@ class AdminController extends Controller
    * @param  int  $id
    * @return \Illuminate\Http\Response
    */
-  public function update( BrandUpdatedRequest $request, $id )
+  public function update( Request $request, $id )
   {
-    $store = $request->all();
-
-    /*
-     * Persist the new data into the database.
-     */
-    $update = \Highlander\Brands::where( 'id', $id )
-                         ->update( $store );
-
-    $type     = ( $update ) ? "success" : "danger";
-    $message  = ( $update ) ? "Modelo de auto editado" : "Modelo de auto no editado";
-
-    return redirect( '/admin/' )->withType( $type )
-                                ->withMessage( $message );
+    //
   }
 
   /**
@@ -100,6 +86,6 @@ class AdminController extends Controller
    */
   public function destroy($id)
   {
-    return 'destroyed';
+    //
   }
 }
