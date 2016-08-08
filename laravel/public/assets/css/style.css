@@ -616,7 +616,7 @@ footer a.scroll:after {
 }
 
 .cover {
-  background: url(img/bgCover.png) no-repeat center bottom;
+  background: url(img/bgCover.jpg) no-repeat center bottom;
   background-size: cover;
   height: calc(100vh - 110px);
   margin-bottom: 50px;
@@ -844,7 +844,9 @@ footer a.scroll:after {
   overflow: visible;
 }
 
-
+section.colores{
+    background-color:#c8c8c8; 
+  }
 
 .menuHigh {
   position: absolute;
