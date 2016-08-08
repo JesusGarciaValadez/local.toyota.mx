@@ -47,7 +47,7 @@ class Brands extends Model
 
   public function titleSliderFeature ( )
   {
-    return $this->hasOne( titleSliderFeature::class );
+    return $this->hasOne( TitleSliderFeature::class );
   }
 
   public function galleryFancyboxes ( )
