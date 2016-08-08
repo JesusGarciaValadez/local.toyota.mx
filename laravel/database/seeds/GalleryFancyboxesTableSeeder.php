@@ -15,23 +15,23 @@ class GalleryFancyboxesTableSeeder extends Seeder
       'brands_id' => 1,
       'content'   => '<ul>
           <li>
-            <a class="fancybox" rel="gallery1" href="assets/images/galeria/img-01.jpg" title="Luces traseras integradas a la carrocería que lo hacen ver dinámico.">
-              <img src="assets/images/thumbs/01-thumb.jpg" />
+            <a class="fancybox" rel="gallery1" href="assets/images/galeria/img-01.jpg" title="Vestiduras cómodas y elegantes, listas para cualquier viaje.">
+              <img src="assets/images/thumbs/01.png" />
             </a>
           </li>
           <li>
-            <a class="fancybox" rel="gallery1" href="assets/images/galeria/img-02.jpg" title="Su rediseño se nota en cualquier parte del automóvil.">
+            <a class="fancybox" rel="gallery1" href="assets/images/galeria/01.jpg" title="Cada detalle convive en armonía con todos los interiores. La palanca no es la excepción.">
+              <img src="assets/images/thumbs/03.png" />
+            </a>
+          </li>
+          <li>
+            <a class="fancybox" rel="gallery1" href="assets/images/galeria/img-02.jpg" title="Toma el control, el volante se volverá tu mejor cómplice.">
               <img src="assets/images/thumbs/02-thumb.jpg" />
             </a>
           </li>
           <li>
-            <a class="fancybox" rel="gallery1" href="assets/images/galeria/img-03.jpg" title="Suspensión mejorada para tener mayor tracción y sensación de control.">
-              <img src="assets/images/thumbs/03-thumb.jpg" />
-            </a>
-          </li>
-          <li>
-            <a class="fancybox" rel="gallery1" href="assets/images/galeria/img-04.jpg" title="Incomparable espacio en cajuela, podrás llevar lo que quieras.">
-              <img src="assets/images/thumbs/04-thumb.jpg" />
+            <a class="fancybox" rel="gallery1" href="assets/images/galeria/img-03.jpg" title="Ve todo lo que sucede a tus espaldas, todo en su interior tiene una función.">
+              <img src="assets/images/thumbs/03-thumb.png" />
             </a>
           </li>
         </ul>'
@@ -42,23 +42,50 @@ class GalleryFancyboxesTableSeeder extends Seeder
       'content'   => '
         <ul>
           <li>
-            <a class="fancybox" rel="gallery1" href="assets/images/galeria/img-05.jpg" title="Sensación confortable de conducción, las mejores transmisiones manuales son nuestras.">
-              <img src="assets/images/thumbs/05-thumb.jpg" />
+            <a class="fancybox" rel="gallery1" href="assets/images/galeria/img-05.jpg" title="Disfruta cualquier camino, su techo panorámico será tu mejor compañero.">
+              <img src="assets/images/thumbs/05-thumb.png" />
             </a>
           </li>
           <li>
-            <a class="fancybox" rel="gallery1" href="assets/images/galeria/img-06.jpg" title="Aceleración y fuerza, palabras que describen el motor de Yaris Sedán 2017.">
-              <img src="assets/images/thumbs/06-thumb.jpg" />
+            <a class="fancybox" rel="gallery1" href="assets/images/galeria/img-06.jpg" title="Lleva tu música a todas partes, la equipamos pensando en todos.">
+              <img src="assets/images/thumbs/06-thumb.png" />
             </a>
           </li>
           <li>
-            <a class="fancybox" rel="gallery1" href="assets/images/galeria/img-07.jpg" title="Equipado para que todos tus trayectos sean mucho más divertidos.">
-              <img src="assets/images/thumbs/07-thumb.jpg" />
+            <a class="fancybox" rel="gallery1" href="assets/images/galeria/img-07.jpg" title="Siempre buscamos facilitarte la vida y nuestro botón de encendido lo hace muy bien.">
+              <img src="assets/images/thumbs/07-thumb.png" />
             </a>
           </li>
           <li>
-            <a class="fancybox" rel="gallery1" href="assets/images/galeria/img-08.jpg" title="Atractivo tablero con look deportivo. Información importante a tu alcance.">
-              <img src="assets/images/thumbs/08-thumb.jpg" />
+            <a class="fancybox" rel="gallery1" href="assets/images/galeria/img-08.jpg" title="La seguridad de cada pasajero siempre podrá estar bajo tu control.">
+              <img src="assets/images/thumbs/08-thumb.png" />
+            </a>
+          </li>
+        </ul>'
+    ] );
+
+     DB::table( 'gallery_fancyboxes' )->insert( [
+      'brands_id' => 1,
+      'content'   => '
+        <ul>
+          <li>
+            <a class="fancybox" rel="gallery1" href="assets/images/galeria/img-09.jpg" title="Fuerza y dinamismo en cada una de sus líneas.">
+              <img src="assets/images/thumbs/09-thumb.png" />
+            </a>
+          </li>
+          <li>
+            <a class="fancybox" rel="gallery1" href="assets/images/galeria/img-10.jpg" title="Equipada con rines de 18 o 19 pulgadas, así luce mejor.">
+              <img src="assets/images/thumbs/10-thumb.png" />
+            </a>
+          </li>
+          <li>
+            <a class="fancybox" rel="gallery1" href="assets/images/galeria/img-11.jpg" title="Date a notar con las luces que vienen en los espejos laterales.">
+              <img src="assets/images/thumbs/11-thumb.png" />
+            </a>
+          </li>
+          <li>
+            <a class="fancybox" rel="gallery1" href="assets/images/galeria/img-12.jpg" title="Con su cámara de reversa evitarás darle un golpecito.">
+              <img src="assets/images/thumbs/12-thumb.png" />
             </a>
           </li>
         </ul>'
