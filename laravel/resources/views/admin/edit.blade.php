@@ -19,7 +19,7 @@
         <div class="panel-body">
           <div class="bs-example bs-example-bg-classes" data-example-id="contextual-backgrounds-helpers">
             {!! Form::open( [
-              'url'     => 'admin/actualizar/' . $home->id,
+              'url'     => 'admin/' . $home->id . '/update',
               'method'  => 'PUT',
               'class'   => 'form-horizontal',
               'files'   => false,

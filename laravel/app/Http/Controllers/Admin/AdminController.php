@@ -50,7 +50,9 @@ class AdminController extends Controller
    */
   public function show( $id )
   {
-    //
+    $brands = \Highlander\Brands::findOrFail( $id );
+
+    return view( 'admin.brand.show' )->withBrands( $brands );
   }
 
   /**
@@ -63,7 +65,7 @@ class AdminController extends Controller
   {
     $home = \Highlander\Brands::findOrFail( $id );
 
-    return view( 'admin.edit' )->withHome( $home );
+    return view( 'admin.brand.edit' )->withHome( $home );
   }
 
   /**

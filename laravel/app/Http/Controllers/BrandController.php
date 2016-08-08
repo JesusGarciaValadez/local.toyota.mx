@@ -47,9 +47,9 @@ class BrandController extends Controller
    * @param  int  $id
    * @return \Illuminate\Http\Response
    */
-  public function show($id)
+  public function show( $id )
   {
-    $brands = \Highlander\Brands::all( );
+    $brands = \Highlander\Brands::findOrFail( $id );
 
     return view( 'admin.index' )->withBrands( $brands );
   }
