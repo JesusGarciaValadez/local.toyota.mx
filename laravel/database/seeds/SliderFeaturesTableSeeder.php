@@ -22,7 +22,7 @@ class SliderFeaturesTableSeeder extends Seeder
             <p>Espejos laterales eléctricos aerodinámicos que reducen el ruido del viento</p>
           </div>
           <div>
-            <img src="assets/images/highlight/highlight01.jpg" />
+            <img src="assets/images/highlight/sistema-de-monitoreo.png" />
           </div>
         </li>
         <li>
@@ -34,7 +34,7 @@ class SliderFeaturesTableSeeder extends Seeder
             <p>Gran tamaño en la tapa de la cajuela, será muy fácil colocar objetos voluminosos</p>
           </div>
           <div>
-            <img src="assets/images/highlight/highlight02.jpg" />
+            <img src="assets/images/highlight/techo-corredizo.png" />
           </div>
         </li>
         <li>
@@ -46,7 +46,7 @@ class SliderFeaturesTableSeeder extends Seeder
             <p>Mejorada dirección (Electric Power Steering) con asistencia variable sensible a la velocidad</p>
           </div>
           <div>
-            <img src="assets/images/highlight/highlight03.jpg" />
+            <img src="assets/images/highlight/sistema-de-entretenimiento.png" />
           </div>
         </li>
         <li>
@@ -58,7 +58,7 @@ class SliderFeaturesTableSeeder extends Seeder
             <p>Estructura completamente rediseñada que maximiza su fortaleza y rigidez</p>
           </div>
           <div>
-            <img src="assets/images/highlight/highlight04.jpg" />
+            <img src="assets/images/highlight/palanca.png" />
           </div>
         </li>'
     ] );
