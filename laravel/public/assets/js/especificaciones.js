@@ -12,12 +12,12 @@ var camioneta = $('.especificaciones').data('modelo');
 	$.ajax({
 		type: "GET",
 		encoding:"UTF-8",
-		url: url+"assets/especificaciones.json",
+		url: url+"/assets/especificaciones.json",
 		async: false,
 		dataType: "json",
 		success: function(data){
 			especific = data
-		}
+		} 
 	});
 
 // reset gral
