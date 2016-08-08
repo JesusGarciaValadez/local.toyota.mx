@@ -41,16 +41,12 @@
     <div id="highlights"></div>
     <div class="container">
       <ul class="highs">
-        @foreach( $home->sliderFeatures as $features )
-        {!! $features !!}
-        @endforeach
+        {!! $home->sliderFeature->content !!}
       </ul>
       <div class="menuHigh">
         <span class="fa fa-angle-up"></span>
         <ul>
-          @foreach( $home->titleSliderFeatures as $titles )
-          {!! $titles !!}
-          @endforeach
+          {!! $home->titleSliderFeature->content !!}
         </ul>
         <span class="fa fa-angle-down"></span>
       </div>
@@ -64,18 +60,15 @@
       <div class="container">
         <div class="contGale">
           <div>
-            @foreach( $home->galleryFancybox as $gallery )
-            {!! $gallery !!}
+            @foreach( $home->galleryFancyboxes as $gallery )
+            {!! $gallery->content !!}
             @endforeach
           </div>
           <div class="anuncio">
             <span>
-              {!! $home->descriptionGalleryFancybox !!}
-              
-              {!! Html::link( '', 'Conoce Más', [
-                'class' => 'boton'
-              ] ) !!}
-              
+
+              {!! $home->description_gallery_fancybox !!}
+
             </span>
           </div>
         </div>
@@ -87,60 +80,17 @@
       </div>
     </div>
   </section>
-  <!--
-  <section class="highlights2">
-    <div id="highlights2"></div>
-    <div class="container">
-      <h2 class="animated">Descúbre <span>RAV4.</span></h2>
-      <div id="especial">
-        <div class="menu animated">
-          <ul>
-            <li><span></span>Menú</li>
-            <li><span></span>Navegación</li>
-            <li><span></span>Teléfono</li>
-          </ul>
-          <ul>
-            <li><span></span>Bluetooth</li>
-            <li><span></span>Audio</li>
-            <li><span></span>Información de viaje</li>
-          </ul>
-        </div>
-      </div>
-      <div class="parrafo">
-        <p>Navega y conoce todas las alternativas que te ofrece la pantalla de <span>RAV4.</span></p>
-        <p>Con su <span>sistema de navegación</span> no habrá dirección a la que no llegues.</p>
-        <p><span>Contesta tu teléfono</span> sin necesidad de quitar las manos del volante.</p>
-        <p>Conectividad por completo aprovecha su <span>Bluetooth</span> y diviértete.</p>
-        <p>Haz más divertidas tus aventuras y <span>lleva tu música</span> a todas partes.</p>
-        <p>Conoce lo necesario de tu viaje para que <span>nada te detenga.</span></p>
-      </div>
-      <div class="menufle">
-        <span class="prev">
-          <i class="disabled"></i>
-        </span>
-        <span class="contador"><sup>1</sup>&frasl;<sub>6</sub></span>
-        <span class="next">
-          <i></i>
-        </span>
-      </div>
-    </div>
-  </section>
-  -->
   <section class="versiones">
     <div id="versiones"></div>
     <div class="container">
-      {!! $home->titleVersionsGallery !!}
+      {!! $home->title_versions_gallery !!}
       <div class="modelos">
         <div>
           <div>
-            @foreach( $home->carsDescriptionsGalleryOne as $description )
-            {!! $description !!}
-            @endforeach
+            {!! $home->carDescriptionGalleryOne->content !!}
           </div>
           <div>
-            @foreach( $home->carsDescriptionsGalleryTwo as $description )
-            {!! $description !!}
-            @endforeach
+            {!! $home->carDescriptionGalleryTwo->content !!}
           </div>
         </div>
       </div>
@@ -150,7 +100,7 @@
     <div id="manejo"></div>
     <div class="container">
       <div>
-        {!! $home->titleDrivingAnimation !!}
+        {!! $home->title_driving_animation !!}
       </div>
     </div>
   </section>
@@ -158,9 +108,9 @@
     <div id="descanso"></div>
     <div class="container">
       <div>
-        {!! $home->titleFooter !!}
+        {!! $home->title_footer !!}
         <span></span>
-        {!! $home->descriptionFooter !!}
+        {!! $home->description_footer !!}
         <a href="distribuidores" class="boton">Consíguelo aquí</a>
       </div>
     </div>

@@ -15,6 +15,11 @@ class DatabaseSeeder extends Seeder
       $this->call( ExternalSpecificationsTableSeeder::class );
       $this->call( InternalSpecificationsTableSeeder::class );
       $this->call( CarsTableSeeder::class );
-      $this->call( DescriptionsTableSeeder::class );
+      $this->call( SliderFeaturesTableSeeder::class );
+      $this->call( TitleSliderFeaturesTableSeeder::class );
+      $this->call( GalleryFancyboxesTableSeeder::class );
+      $this->call( CarDescriptionGalleryOnesTableSeeder::class );
+      $this->call( CarDescriptionGalleryTwosTableSeeder::class );
+      $this->call( BrandsTableSeeder::class );
     }
 }

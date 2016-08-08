@@ -23,7 +23,7 @@ class HomeController extends Controller
    */
   public function index()
   {
-    $home   = \Highlander\Descriptions::first();
+    $home   = \Highlander\Brands::first();
 
     return view( 'welcome' )->withHome( $home );
   }
