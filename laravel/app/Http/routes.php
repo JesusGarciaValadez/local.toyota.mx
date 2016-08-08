@@ -29,11 +29,12 @@ Route::get( '/home', [ 'as' => 'home', 'uses' => 'HomeController@index' ] );
 Route::group( [ 'prefix' => 'admin', 'middleware' => 'auth' ], function ( )
 {
   Route::get( '', [ 'as' => 'index', 'uses' => 'Admin\AdminController@index' ] );
-  Route::get( '{id}/editar', [ 'as' => 'edit', 'uses' => 'Admin\AdminController@edit' ] );
-  Route::delete( '{id}/borrar', [ 'as' => 'destroy', 'uses' => 'Admin\AdminController@destroy' ] );
 
   Route::group( [ 'prefix' => '{id}' ], function ( $id )
   {
+    Route::get( 'show', [ 'as' => 'show', 'used' => 'Admin\AdminController@show' ] );
+    Route::get( 'edit', [ 'as' => 'edit', 'uses' => 'Admin\AdminController@edit' ] );
+    Route::delete( 'destroy', [ 'as' => 'destroy', 'uses' => 'Admin\AdminController@destroy' ] );
     Route::resource( 'brand', 'BrandController' );
     Route::resource( 'title-h1', 'TitleH1Controller' );
     Route::resource( 'slider-features', 'SliderFeaturesController' );
