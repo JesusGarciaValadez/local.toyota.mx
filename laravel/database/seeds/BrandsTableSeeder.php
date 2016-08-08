@@ -13,12 +13,12 @@ class BrandsTableSeeder extends Seeder
   {
     DB::table( 'brands' )->insert( [
       'brand'                             => 'Toyota Highlander',
-      'title_h1'                          => '<h2 class="animated">Un nuevo diseño, atlético y dinámico. <span>Afirmación de belleza y arte.</span></h2>',
+      'title_h1'                          => '<h2 class="animated">Desde cualquier ángulo te parecerá espectacular.</h2>',
       'slider_features_id'                => 1,
       'title_slider_features_id'          => 1,
       'title_gallery_fancybox'            => '<h2 class="animated">Su nuevo diseño te dejará sin palabras.</h2>',
       'gallery_fancyboxes_id'             => 1,
-      'description_gallery_fancybox'      => '<p>El rediseño del <span>Yaris Sedán</span> se perfeccionó, con líneas fuertes y definidas que le dan un “look más robusto” colocándolo a la vanguardia para volverlo referencia para todos los autos de su categoría.</p>',
+      'description_gallery_fancybox'      => '<p>Cada espacio diseñado en <span> Highlander </span> está pensado con un propósito, ya sea comodidad, seguridad o lujo, pero todo tiene una razón de ser.</p>',
       'title_versions_gallery'            => '<h2 class="animated"><span>Versiones</span> HIGHLANDER  2016.</h2>',
       'car_description_gallery_one_id'    => 1,
       'car_description_gallery_two_id'    => 1,
