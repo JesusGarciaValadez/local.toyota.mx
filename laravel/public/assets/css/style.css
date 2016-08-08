@@ -494,7 +494,7 @@ footer a.scroll:after {
   display: table;
   height: 32px;
   left: 2em;
-  width: 110px;
+  width: 179px;
 }
 .menu2 nav {
   display: table;
@@ -519,7 +519,7 @@ footer a.scroll:after {
   padding: 0px 15px;
 }
 .menu2 nav ul li:last-child:after {
-  content: " ";
+  content: "";
 }
 .menu2 nav ul li.activo a {
   color: #fff;
@@ -616,7 +616,7 @@ footer a.scroll:after {
 }
 
 .cover {
-  background: url(img/bgCover.jpg) no-repeat center bottom;
+  background: url(img/bgCover.png) no-repeat center bottom;
   background-size: cover;
   height: calc(100vh - 110px);
   margin-bottom: 50px;
@@ -629,13 +629,12 @@ footer a.scroll:after {
   transform: translate(-50%, -50%);
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
-  display: none;
   left: 30%;
   position: absolute;
-  top: 35%;
+  top: 25%;
 }
 .cover h1 {
-  color: #ffffff;
+  color: #000;
   margin-bottom: 0px;
 }
 .cover h1 span {
@@ -643,9 +642,10 @@ footer a.scroll:after {
   text-transform: uppercase;
 }
 .cover h2 {
-  color: #ffffff;
+  color: #000;
   margin: 0px;
   white-space: pre-line;
+  font-weight: 300;
 }
 .cover h2 span {
   font-weight: 300;
@@ -739,6 +739,7 @@ footer a.scroll:after {
   opacity: 0;
   text-align: center;
   white-space: pre-line;
+  text-transform: uppercase;
 }
 .colores h2 span {
   font-weight: 300;
@@ -843,10 +844,6 @@ footer a.scroll:after {
 .highlights .container {
   overflow: visible;
 }
-
-section.colores{
-    background-color:#c8c8c8; 
-  }
 
 .menuHigh {
   position: absolute;
@@ -1013,6 +1010,7 @@ section.colores{
 .galeria h2 {
   opacity: 0;
   text-align: center;
+  text-transform: uppercase;
 }
 .galeria h2 span {
   font-weight: 300;
@@ -1230,6 +1228,7 @@ section.colores{
 .versiones h2 {
   opacity: 0;
   text-align: center;
+  text-transform: uppercase;
 }
 .versiones h2 span {
   font-weight: 300;
@@ -1318,6 +1317,7 @@ section.colores{
   opacity: 0;
   text-align: center;
   white-space: pre-line;
+  text-transform: uppercase;
 }
 .manejo h2 span {
   font-weight: 300;
@@ -1346,6 +1346,7 @@ section.colores{
 }
 .descanso h1 {
   text-align: center;
+  text-transform: uppercase;
 }
 .descanso p {
   display: table;
@@ -3071,7 +3072,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   }
 
   .manejo {
-    background: url(img/bgManejoM.jpg) no-repeat center bottom;
+    background: url(img/bgManejoM.png) no-repeat center bottom;
     background-size: cover;
     height: 460px;
   }
