@@ -707,15 +707,18 @@ footer a.scroll:after {
 }
 .cover .mouse:before {
   content: " ";
-  background-color: #fff;
-  -webkit-mask: url(img/mouse.svg) no-repeat center;
+  /*background-color: #fff;*/
+ /* -webkit-mask: url(img/mouse.svg) no-repeat center;
   mask: url(img/mouse.svg) no-repeat center;
   -webkit-mask-size: cover;
-  mask-size: cover;
+  mask-size: cover;*/
   display: block;
   margin: auto;
   width: 16px;
   height: 30px;
+  border: 1px solid #fff; 
+
+  border-radius: 8px 8px;
 }
 .cover .mouse .mouse-dot {
   -moz-animation: ani-mouse 2.5s linear infinite;
