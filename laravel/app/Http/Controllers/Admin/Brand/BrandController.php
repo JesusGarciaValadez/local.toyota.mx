@@ -1,6 +1,6 @@
 <?php
 
-namespace Highlander\Http\Controllers;
+namespace Highlander\Http\Controllers\Admin\Brand;
 
 use Illuminate\Http\Request;
 
@@ -49,9 +49,7 @@ class BrandController extends Controller
    */
   public function show( $id )
   {
-    $brands = \Highlander\Brands::findOrFail( $id );
-
-    return view( 'admin.index' )->withBrands( $brands );
+    //
   }
 
   /**
@@ -62,7 +60,9 @@ class BrandController extends Controller
    */
   public function edit($id)
   {
-    //
+    $brands = \Highlander\Brands::findOrFail( $id );
+
+    return view( 'admin.index' )->withBrands( $brands );
   }
 
   /**

@@ -27,15 +27,16 @@ Route::get( '/home', [ 'as' => 'home', 'uses' => 'HomeController@index' ] );
 |
 */
 
+
+Route::resource( 'admin', 'Admin\AdminController', [ 'only' => [ 'index', 'show' ] ] );
+
 Route::group( [ 'prefix' => 'admin', 'middleware' => 'auth' ], function ( )
 {
-  Route::resource( '', 'Admin\AdminController', [ 'only' => [ 'index', 'show' ] ] );
-
   Route::group( [ 'prefix' => '{id}' ], function ( $id )
   {
     Route::resource( 'brand', 'Admin\Brand\BrandController' );
     Route::resource( 'title-h1', 'Admin\TitleH1\TitleH1Controller' );
-    Route::resource( 'slider-features', 'Admin\SliderFeatures\SliderFeaturesController' );
+    Route::resource( 'slider-features', 'Admin\SliderFeatures\SliderFeaturesIDController' );
     Route::resource( 'title-slider-features-id', 'Admin\TitleSliderFeatures\TitleSliderFeaturesIDController' );
     Route::resource( 'title-gallery-fancybox', 'Admin\TitleGalleryFancybox\TitleGalleryFancyboxController' );
     Route::resource( 'gallery-fancyboxes', 'Admin\GalleryFancyboxes\GalleryFancyboxesController' );
