@@ -13,6 +13,7 @@ class BrandsTableSeeder extends Seeder
   {
     DB::table( 'brands' )->insert( [
       'brand'                             => 'Highlander <span> 2016 </span>',
+      'slogan'                            => 'Haremos de tus viajes, <br />los mejores momentos',
       'title_h1'                          => '<h2 class="animated">Desde cualquier ángulo te parecerá espectacular.</h2>',
       'slider_features_id'                => 1,
       'title_slider_features_id'          => 1,
