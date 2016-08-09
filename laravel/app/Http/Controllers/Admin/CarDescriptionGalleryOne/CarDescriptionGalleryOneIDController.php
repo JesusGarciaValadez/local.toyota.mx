@@ -1,6 +1,6 @@
 <?php
 
-namespace Highlander\Http\Controllers;
+namespace Highlander\Http\Controllers\Admin\CarDescriptionGalleryOne;
 
 use Illuminate\Http\Request;
 
