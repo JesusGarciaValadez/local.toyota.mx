@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use Highlander\Http\Requests;
 
-class TitleH1ControllerController extends Controller
+class TitleVersionController extends Controller
 {
     /**
      * Display a listing of the resource.

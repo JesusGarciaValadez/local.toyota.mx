@@ -24,18 +24,7 @@ class BrandUpdatedRequest extends Request
   public function rules()
   {
     return [
-      'titleH1'                     => 'required|string',
-      'sliderFeatures'              => 'required',
-      'titleSliderFeatures'         => 'required',
-      'titleGalleryFancybox'        => 'required|string',
-      'galleryFancybox'             => 'required',
-      'descriptionGalleryFancybox'  => 'required|string',
-      'titleVersionsGallery'        => 'required|string',
-      'carsDescriptionsGalleryOne'  => 'required',
-      'carsDescriptionsGalleryTwo'  => 'required',
-      'titleDrivingAnimation'       => 'required|string',
-      'titleFooter'                 => 'required|string',
-      'descriptionFooter'           => 'required|string',
+      'titleH1'   => 'required|string'
     ];
   }
 }
