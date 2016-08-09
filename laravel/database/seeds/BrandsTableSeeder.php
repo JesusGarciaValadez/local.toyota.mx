@@ -12,7 +12,7 @@ class BrandsTableSeeder extends Seeder
   public function run()
   {
     DB::table( 'brands' )->insert( [
-      'brand'                             => 'Highlander 2016',
+      'brand'                             => 'Highlander <span> 2016 </span>',
       'title_h1'                          => '<h2 class="animated">Desde cualquier ángulo te parecerá espectacular.</h2>',
       'slider_features_id'                => 1,
       'title_slider_features_id'          => 1,
@@ -23,7 +23,7 @@ class BrandsTableSeeder extends Seeder
       'car_description_gallery_one_id'    => 1,
       'car_description_gallery_two_id'    => 1,
       'title_driving_animation'           => '<h2 class="animated">CONÓCELA A FONDO Y NO BUSQUES MÁS.</span></h2>',
-      
+
       'title_footer'                      => '<h1>HIGHLANDER LA CAMIONETA QUE TÚ Y TU FAMILIA ESTABAN ESPERANDO.</h1>',
       'description_footer'                => '<p>La solución ideal para los que buscan mejor rendimiento de combustible.</p>'
     ] );
