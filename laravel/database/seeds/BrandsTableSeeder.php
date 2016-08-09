@@ -12,18 +12,19 @@ class BrandsTableSeeder extends Seeder
   public function run()
   {
     DB::table( 'brands' )->insert( [
-      'brand'                             => 'Toyota Highlander',
+      'brand'                             => 'Highlander 2016',
       'title_h1'                          => '<h2 class="animated">Desde cualquier ángulo te parecerá espectacular.</h2>',
       'slider_features_id'                => 1,
       'title_slider_features_id'          => 1,
-      'title_gallery_fancybox'            => '<h2 class="animated">Su nuevo diseño te dejará sin palabras.</h2>',
+      'title_gallery_fancybox'            => '<h2 class="animated">CADA PARTE DE ELLA TIENE UN PROPÓSITO.</h2>',
       'gallery_fancyboxes_id'             => 1,
       'description_gallery_fancybox'      => '<p>Cada espacio diseñado en <span> Highlander </span> está pensado con un propósito, ya sea comodidad, seguridad o lujo, pero todo tiene una razón de ser.</p>',
-      'title_versions_gallery'            => '<h2 class="animated"><span>Versiones</span> HIGHLANDER  2016.</h2>',
+      'title_versions_gallery'            => '<h2 class="animated">CADA UNA TIENE DETALLES QUE TE CONQUISTARÁN.</h2>',
       'car_description_gallery_one_id'    => 1,
       'car_description_gallery_two_id'    => 1,
-      'title_driving_animation'           => '<h2 class="animated">Un subcompacto funcional y sumamente atractivo.</span></h2>',
-      'title_footer'                      => '<h1>Eficiente desempeño<br>en cada momento.</h1>',
+      'title_driving_animation'           => '<h2 class="animated">CONÓCELA A FONDO Y NO BUSQUES MÁS.</span></h2>',
+      
+      'title_footer'                      => '<h1>HIGHLANDER LA CAMIONETA QUE TÚ Y TU FAMILIA ESTABAN ESPERANDO.</h1>',
       'description_footer'                => '<p>La solución ideal para los que buscan mejor rendimiento de combustible.</p>'
     ] );
   }
