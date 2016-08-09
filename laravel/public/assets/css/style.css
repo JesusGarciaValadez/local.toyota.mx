@@ -517,6 +517,7 @@ footer a.scroll:after {
   color: #92999e;
   content: " | ";
   padding: 0px 15px;
+  display: inline-block;
 }
 .menu2 nav ul li:last-child:after {
   content: "";
@@ -716,7 +717,7 @@ footer a.scroll:after {
   margin: auto;
   width: 16px;
   height: 30px;
-  border: 1px solid #fff; 
+  border: 1px solid #fff;
   border-radius: 8px 8px;
 }
 .cover .mouse .mouse-dot {
@@ -1394,6 +1395,7 @@ footer a.scroll:after {
   color: #585d65;
   content: " | ";
   padding: 0px 15px;
+  display: inline-block;
 }
 .menu3 nav ul li:last-child::after {
   content: "";
