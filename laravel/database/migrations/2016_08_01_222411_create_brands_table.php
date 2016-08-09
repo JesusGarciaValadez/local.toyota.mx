@@ -16,6 +16,7 @@ class CreateBrandsTable extends Migration
     {
       $table->increments( 'id' );
       $table->string( 'brand' );
+      $table->string( 'slogan' );
       $table->string( 'title_h1' );
       $table->integer( 'slider_features_id' )
             ->unsigned();
