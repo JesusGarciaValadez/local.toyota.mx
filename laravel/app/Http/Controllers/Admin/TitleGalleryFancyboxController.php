@@ -1,12 +1,13 @@
 <?php
 
-namespace Highlander\Http\Controllers\Admin\DescriptionGalleryFancybox;
+namespace Highlander\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 
 use Highlander\Http\Requests;
+use Highlander\Http\Controllers\Controller;
 
-class DescriptionGalleryFancyboxController extends Controller
+class TitleGalleryFancyboxController extends Controller
 {
     /**
      * Display a listing of the resource.

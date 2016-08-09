@@ -28,26 +28,86 @@ Route::get( '/home', [ 'as' => 'home', 'uses' => 'HomeController@index' ] );
 */
 
 
-Route::resource( 'admin', 'Admin\AdminController', [ 'only' => [ 'index', 'show' ] ] );
+Route::resource( 'admin', 'Admin\AdminController', [
+  'middleware'  => 'auth',
+  'only'        => [ 'index', 'show' ],
+  'parameters'  => [ 'admin' => 'id' ]
+] );
 
 Route::group( [ 'prefix' => 'admin', 'middleware' => 'auth' ], function ( )
 {
-  Route::group( [ 'prefix' => '{id}' ], function ( $id )
-  {
-    Route::resource( 'brand', 'Admin\Brand\BrandController' );
-    Route::resource( 'title-h1', 'Admin\TitleH1\TitleH1Controller' );
-    Route::resource( 'slider-features', 'Admin\SliderFeatures\SliderFeaturesIDController' );
-    Route::resource( 'title-slider-features-id', 'Admin\TitleSliderFeatures\TitleSliderFeaturesIDController' );
-    Route::resource( 'title-gallery-fancybox', 'Admin\TitleGalleryFancybox\TitleGalleryFancyboxController' );
-    Route::resource( 'gallery-fancyboxes', 'Admin\GalleryFancyboxes\GalleryFancyboxesController' );
-    Route::resource( 'description-gallery-fancyboxes', 'Admin\DescriptionGalleryFancybox\DescriptionGalleryFancyboxController' );
-    Route::resource( 'title-versions', 'Admin\TitleVersion\TitleVersionController' );
-    Route::resource( 'car-description-gallery-one', 'Admin\CarDescriptionGalleryOne\CarDescriptionGalleryOneIDController' );
-    Route::resource( 'car-description-gallery-two', 'Admin\CarDescriptionGalleryTwo\CarDescriptionGalleryTwoIDController' );
-    Route::resource( 'title-driving-animation', 'Admin\TitleDrivingAnimation\TitleDrivingAnimationController' );
-    Route::resource( 'title-footer', 'Admin\TitleFooter\TitleFooterController' );
-    Route::resource( 'description-footer', 'Admin\DescriptionFooter\DescriptionFooterController' );
-  } );
+  Route::resource( 'brand', 'Admin\BrandController', [
+    'only'        => [ 'edit', 'update' ],
+    'parameters'  => [ 'brand' => 'id' ]
+  ] );
+
+  Route::resource( 'slogan', 'Admin\SloganController', [
+    'only'        => [ 'edit', 'update' ],
+    'parameters'  => [ 'slogan' => 'id' ]
+  ] );
+
+  Route::resource( 'title_h1', 'Admin\TitleH1Controller', [
+    'only'        => [ 'edit', 'update' ],
+    'parameters'  => [ 'title_h1' => 'id' ]
+  ] );
+
+  Route::resource( 'title_gallery_fancybox', 'Admin\TitleGalleryFancyboxController', [
+    'only'        => [ 'edit', 'update' ],
+    'parameters'  => [ 'title_gallery_fancybox' => 'id' ]
+  ] );
+
+  Route::resource( 'description_gallery_fancybox', 'Admin\DescriptionGalleryFancyboxController', [
+    'only'        => [ 'edit', 'update' ],
+    'parameters'  => [ 'description_gallery_fancybox' => 'id' ]
+  ] );
+
+  Route::resource( 'title_versions_gallery', 'Admin\TitleVersionGalleryController', [
+    'only'        => [ 'edit', 'update' ],
+    'parameters'  => [ 'title_versions_gallery' => 'id' ]
+  ] );
+
+  Route::resource( 'title_driving_animation', 'Admin\TitleDrivingAnimationController', [
+    'only'        => [ 'edit', 'update' ],
+    'parameters'  => [ 'title_driving_animation' => 'id' ]
+  ] );
+
+  Route::resource( 'title_footer', 'Admin\TitleFooterController', [
+    'only'        => [ 'edit', 'update' ],
+    'parameters'  => [ 'title_footer' => 'id' ]
+  ] );
+
+  Route::resource( 'description_footer', 'Admin\DescriptionFooterController', [
+    'only'        => [ 'edit', 'update' ],
+    'parameters'  => [ 'description_footer' => 'id' ]
+  ] );
+
+  Route::resource( 'slider-features', 'Admin\SliderFeaturesIDController', [
+    'parameters'        => [
+      'slider-features' => 'id'
+    ]
+  ] );
+
+  Route::resource( 'title-slider-features-id', 'Admin\TitleSliderFeaturesIDController', [
+    'parameters' => [
+      'title-slider-features-id' => 'id'
+    ]
+  ] );
+
+  Route::resource( 'gallery-fancyboxes', 'Admin\GalleryFancyboxesController', [
+    'parameters' => [
+      'gallery-fancyboxes' => 'id'
+    ]
+  ] );
+  Route::resource( 'car-description-gallery-one', 'Admin\CarDescriptionGalleryOneController', [
+    'parameters' => [
+      'car-description-gallery-one' => 'id'
+    ]
+  ] );
+  Route::resource( 'car-description-gallery-two', 'Admin\CarDescriptionGalleryTwoController', [
+    'parameters' => [
+      'car-description-gallery-two' => 'id'
+    ]
+  ] );
 } );
 
 Route::auth( );

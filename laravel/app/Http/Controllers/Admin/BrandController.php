@@ -1,10 +1,11 @@
 <?php
 
-namespace Highlander\Http\Controllers\Admin\Brand;
+namespace Highlander\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 
 use Highlander\Http\Requests;
+use Highlander\Http\Controllers\Controller;
 
 use Highlander\Http\Requests\BrandUpdatedRequest;
 
@@ -58,7 +59,7 @@ class BrandController extends Controller
    * @param  int  $id
    * @return \Illuminate\Http\Response
    */
-  public function edit($id)
+  public function edit( $id )
   {
     $brands = \Highlander\Brands::findOrFail( $id );
 

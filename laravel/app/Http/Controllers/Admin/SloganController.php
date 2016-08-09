@@ -1,12 +1,13 @@
 <?php
 
-namespace Highlander\Http\Controllers\Admin\TitleVersion;
+namespace Highlander\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 
 use Highlander\Http\Requests;
+use Highlander\Http\Controllers\Controller;
 
-class TitleVersionController extends Controller
+class SloganController extends Controller
 {
     /**
      * Display a listing of the resource.

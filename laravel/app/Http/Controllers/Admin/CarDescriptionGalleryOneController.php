@@ -1,12 +1,13 @@
 <?php
 
-namespace Highlander\Http\Controllers\Admin\DescriptionFooter;
+namespace Highlander\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 
 use Highlander\Http\Requests;
+use Highlander\Http\Controllers\Controller;
 
-class DescriptionFooterController extends Controller
+class CarDescriptionGalleryOneController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +16,7 @@ class DescriptionFooterController extends Controller
      */
     public function index()
     {
-        //
+      return 'CarDescriptionGalleryOneIDController@index';
     }
 
     /**
@@ -25,7 +26,7 @@ class DescriptionFooterController extends Controller
      */
     public function create()
     {
-        //
+      return 'CarDescriptionGalleryOneIDController@create';
     }
 
     /**
@@ -36,7 +37,7 @@ class DescriptionFooterController extends Controller
      */
     public function store(Request $request)
     {
-        //
+      return 'CarDescriptionGalleryOneIDController@store';
     }
 
     /**
@@ -47,7 +48,7 @@ class DescriptionFooterController extends Controller
      */
     public function show($id)
     {
-        //
+      return 'CarDescriptionGalleryOneIDController@show';
     }
 
     /**
@@ -58,7 +59,7 @@ class DescriptionFooterController extends Controller
      */
     public function edit($id)
     {
-        //
+      return 'CarDescriptionGalleryOneIDController@edit';
     }
 
     /**
@@ -70,7 +71,7 @@ class DescriptionFooterController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+      return 'CarDescriptionGalleryOneIDController@update';
     }
 
     /**
@@ -81,6 +82,6 @@ class DescriptionFooterController extends Controller
      */
     public function destroy($id)
     {
-        //
+      return 'CarDescriptionGalleryOneIDController@destroy';
     }
 }

@@ -94,12 +94,12 @@
                   </td>
                   <td class="col-lg-1 col-md-1">
                     <div class="clearfix">
-                      <a href="{{ action( 'Admin\SliderFeatures\SliderFeaturesController@create', [ 'id' => $home->id ] ) }}" class="btn btn-success"><i class="glyphicon glyphicon-pencil"></i> Crear</a>
+                      <a href="#" class="btn btn-success"><i class="glyphicon glyphicon-pencil"></i> Crear</a>
                     </div>
                   </td>
                   <td class="col-lg-1 col-md-1">
                     <div class="clearfix">
-                      <a href="{{ action( 'Admin\SliderFeatures\SliderFeaturesController@show', [ 'id' => $home->id, 'brand' => '1' ] ) }}" class="btn btn-primary"><i class="glyphicon glyphicon-list"></i> Mostrar</a>
+                      <a href="#" class="btn btn-primary"><i class="glyphicon glyphicon-list"></i> Mostrar</a>
                     </div>
                   </td>
                   <td class="col-lg-1 col-md-1">
@@ -109,7 +109,7 @@
                   </td>
                   <td class="col-lg-1 col-md-1">
                     <div class="clearfix">
-                      <a href="{{ action( 'Admin\SliderFeatures\SliderFeaturesController@destroy', [ 'id' => $home->id, 'brand' => '1' ] ) }}" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i> Eliminar</a>
+                      <a href="#" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i> Eliminar</a>
                     </div>
                   </td>
                 </tr>

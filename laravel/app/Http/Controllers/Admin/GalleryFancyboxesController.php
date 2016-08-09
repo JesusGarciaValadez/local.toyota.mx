@@ -1,12 +1,13 @@
 <?php
 
-namespace Highlander\Http\Controllers\Admin\TitleFooter;
+namespace Highlander\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 
 use Highlander\Http\Requests;
+use Highlander\Http\Controllers\Controller;
 
-class TitleFooterController extends Controller
+class GalleryFancyboxesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +16,7 @@ class TitleFooterController extends Controller
      */
     public function index()
     {
-        //
+      return 'GalleryFancyboxesController@index';
     }
 
     /**
@@ -25,7 +26,7 @@ class TitleFooterController extends Controller
      */
     public function create()
     {
-        //
+      return 'GalleryFancyboxesController@create';
     }
 
     /**
@@ -34,9 +35,9 @@ class TitleFooterController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store( Request $request )
     {
-        //
+      return 'GalleryFancyboxesController@store';
     }
 
     /**
@@ -45,9 +46,9 @@ class TitleFooterController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show( $id )
     {
-        //
+      return 'GalleryFancyboxesController@show';
     }
 
     /**
@@ -56,9 +57,9 @@ class TitleFooterController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit( $id )
     {
-        //
+      return 'GalleryFancyboxesController@edit';
     }
 
     /**
@@ -68,9 +69,9 @@ class TitleFooterController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update( Request $request, $id )
     {
-        //
+      return 'GalleryFancyboxesController@update';
     }
 
     /**
@@ -79,8 +80,8 @@ class TitleFooterController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy( $id )
     {
-        //
+      return 'GalleryFancyboxesController@destroy';
     }
 }
