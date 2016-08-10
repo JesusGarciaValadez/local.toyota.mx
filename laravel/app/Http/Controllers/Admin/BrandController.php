@@ -7,52 +7,10 @@ use Illuminate\Http\Request;
 use Highlander\Http\Requests;
 use Highlander\Http\Controllers\Controller;
 
-use Highlander\Http\Requests\BrandUpdatedRequest;
+use Highlander\Http\Requests\BrandRequest;
 
 class BrandController extends Controller
 {
-  /**
-   * Display a listing of the resource.
-   *
-   * @return \Illuminate\Http\Response
-   */
-  public function index()
-  {
-    //
-  }
-
-  /**
-   * Show the form for creating a new resource.
-   *
-   * @return \Illuminate\Http\Response
-   */
-  public function create()
-  {
-    //
-  }
-
-  /**
-   * Store a newly created resource in storage.
-   *
-   * @param  \Illuminate\Http\Request  $request
-   * @return \Illuminate\Http\Response
-   */
-  public function store( BrandUpdatedRequest $request )
-  {
-    //
-  }
-
-  /**
-   * Display the specified resource.
-   *
-   * @param  int  $id
-   * @return \Illuminate\Http\Response
-   */
-  public function show( $id )
-  {
-    //
-  }
-
   /**
    * Show the form for editing the specified resource.
    *
@@ -61,9 +19,15 @@ class BrandController extends Controller
    */
   public function edit( $id )
   {
-    $brands = \Highlander\Brands::findOrFail( $id );
+    $brands       = \Highlander\Brands::findOrFail( $id );
+    $typeOfField  = 'Marca';
+    $fieldName    = 'Marca';
+    $url          = 'admin/brand/' . $id;
+    $field        = 'brand';
+    $fieldValue   = $brands->$field;
+    $toReturn     = 'admin/' . $id;
 
-    return view( 'admin.brand.edit' )->withBrands( $brands );
+    return view( 'admin.text', compact( 'brands', 'typeOfField', 'fieldName', 'url', 'field', 'fieldValue', 'toReturn' ) );
   }
 
   /**
@@ -73,19 +37,23 @@ class BrandController extends Controller
    * @param  int  $id
    * @return \Illuminate\Http\Response
    */
-  public function update( BrandUpdatedRequest $request, $id )
+  public function update( BrandRequest $request, $id )
   {
+    $brand    = [ 'brand' => $request->brand ];
+    $result   = \Highlander\Brands::where( 'id', $id )
+                                  ->update( $brand );
 
-  }
+    /*
+     * Create a response for passing it into the view.
+     */
+    $message        = ( $result ) ? "Campo actualizado" : "Hubo un error al actualizar la información. :/";
+    $type           = ( $result ) ? "success" : "danger";
 
-  /**
-   * Remove the specified resource from storage.
-   *
-   * @param  int  $id
-   * @return \Illuminate\Http\Response
-   */
-  public function destroy($id)
-  {
-    //
+    /*
+     * Passing the recipe information, categories and domain url to the view.
+     */
+    return \Redirect::back( )
+                    ->withType( $type )
+                    ->withMessage( $message );
   }
 }

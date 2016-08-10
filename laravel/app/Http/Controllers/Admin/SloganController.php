@@ -7,81 +7,53 @@ use Illuminate\Http\Request;
 use Highlander\Http\Requests;
 use Highlander\Http\Controllers\Controller;
 
+use Highlander\Http\Requests\SloganRequest;
+
 class SloganController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        //
-    }
+  /**
+   * Show the form for editing the specified resource.
+   *
+   * @param  int  $id
+   * @return \Illuminate\Http\Response
+   */
+  public function edit( $id )
+  {
+    $brands       = \Highlander\Brands::findOrFail( $id );
+    $typeOfField  = 'Slogan';
+    $fieldName    = 'Slogan';
+    $url          = 'admin/slogan/' . $id;
+    $field        = 'slogan';
+    $fieldValue   = $brands->$field;
+    $toReturn     = 'admin/' . $id;
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
+    return view( 'admin.text', compact( 'brands', 'typeOfField', 'fieldName', 'url', 'field', 'fieldValue', 'toReturn' ) );
+  }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
+  /**
+   * Update the specified resource in storage.
+   *
+   * @param  \Illuminate\Http\Request  $request
+   * @param  int  $id
+   * @return \Illuminate\Http\Response
+   */
+  public function update( SloganRequest $request, $id )
+  {
+    $brand    = [ 'slogan' => $request->slogan ];
+    $result   = \Highlander\Brands::where( 'id', $id )
+                                  ->update( $brand );
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+    /*
+     * Create a response for passing it into the view.
      */
-    public function show($id)
-    {
-        //
-    }
+    $message        = ( $result ) ? "Campo actualizado" : "Hubo un error al actualizar la información. :/";
+    $type           = ( $result ) ? "success" : "danger";
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+    /*
+     * Passing the recipe information, categories and domain url to the view.
      */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
+    return \Redirect::back( )
+                    ->withType( $type )
+                    ->withMessage( $message );
+  }
 }

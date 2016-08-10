@@ -76,7 +76,7 @@
                   </td>
                   <td class="col-lg-1 col-md-1">
                     <div class="clearfix">
-                      <a href="{{ action( 'Admin\SloganController@edit', [ 'id' => $home->id, 'brand' => '' ] ) }}" class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
+                      <a href="{{ action( 'Admin\SloganController@edit', [ 'id' => $home->id ] ) }}" class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
                     </div>
                   </td>
                   <td class="col-lg-1 col-md-1">
@@ -104,7 +104,7 @@
                   </td>
                   <td class="col-lg-1 col-md-1">
                     <div class="clearfix">
-                      <a href="{{ action( 'Admin\TitleH1Controller@edit', [ 'id' => $home->id, 'brand' => '1' ] ) }}" class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
+                      <a href="{{ action( 'Admin\TitleH1Controller@edit', [ 'id' => $home->id ] ) }}" class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
                     </div>
                   </td>
                   <td class="col-lg-1 col-md-1">
@@ -115,6 +115,62 @@
                 </tr>{{-- Admin\TitleH1Controller --}}
                 <tr>
                   <td class="col-lg-5 col-md-5"><p><small><span>Slider de caracteristicas:</small></p></td>
+                  <td class="col-lg-1 col-md-1 col-md-offset-2">
+                    <div class="clearfix">
+                      <a href="{{ action( 'Admin\SliderFeaturesIDController@index', [ 'id' => $home->id ] ) }}" class="btn btn-info"><i class="glyphicon glyphicon-th-list"></i> Lista</a>
+                    </div>
+                  </td>
+                  <td class="col-lg-1 col-md-1">
+                    <div class="clearfix">
+                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-pencil"></i> Crear</a>
+                    </div>
+                  </td>
+                  <td class="col-lg-1 col-md-1">
+                    <div class="clearfix">
+                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-list"></i> Mostrar</a>
+                    </div>
+                  </td>
+                  <td class="col-lg-1 col-md-1">
+                    <div class="clearfix">
+                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
+                    </div>
+                  </td>
+                  <td class="col-lg-1 col-md-1">
+                    <div class="clearfix">
+                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-remove"></i> Eliminar</a>
+                    </div>
+                  </td>
+                </tr>{{-- SliderFeaturesController --}}
+                <tr>
+                  <td class="col-lg-5 col-md-5"><p><small><span>Título de slider de características:</small></p></td>
+                  <td class="col-lg-1 col-md-1 col-md-offset-2">
+                    <div class="clearfix">
+                      <a href="{{ action( 'Admin\TitleSliderFeaturesIDController@index', [ 'id' => $home->id ] ) }}" class="btn btn-info"><i class="glyphicon glyphicon-th-list"></i> Lista</a>
+                    </div>
+                  </td>
+                  <td class="col-lg-1 col-md-1">
+                    <div class="clearfix">
+                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-pencil"></i> Crear</a>
+                    </div>
+                  </td>
+                  <td class="col-lg-1 col-md-1">
+                    <div class="clearfix">
+                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-list"></i> Mostrar</a>
+                    </div>
+                  </td>
+                  <td class="col-lg-1 col-md-1">
+                    <div class="clearfix">
+                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
+                    </div>
+                  </td>
+                  <td class="col-lg-1 col-md-1">
+                    <div class="clearfix">
+                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-remove"></i> Eliminar</a>
+                    </div>
+                  </td>
+                </tr>{{-- TitleSliderFeaturesIDController --}}
+                <tr>
+                  <td class="col-lg-5 col-md-5"><p><small><span>Título de galerías de fotos:</small></p></td>
                   <td class="col-lg-1 col-md-1 col-md-offset-2">
                     <div class="clearfix">
                       <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-th-list"></i> Lista</a>
@@ -132,7 +188,7 @@
                   </td>
                   <td class="col-lg-1 col-md-1">
                     <div class="clearfix">
-                      <a href="{{ action( 'Admin\SliderFeaturesIDController@edit', [ 'id' => $home->id, 'brand' => '1' ] ) }}" class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
+                      <a href="{{ action( 'Admin\TitleGalleryFancyboxController@edit', [ 'id' => $home->id ] ) }}" class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
                     </div>
                   </td>
                   <td class="col-lg-1 col-md-1">
@@ -140,60 +196,32 @@
                       <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-remove"></i> Eliminar</a>
                     </div>
                   </td>
-                </tr>{{-- SliderFeaturesController --}}
-                <tr>
-                  <td class="col-lg-5 col-md-5"><p><small><span>Título de slider de características:</small></p></td>
-                  <td class="col-lg-1 col-md-1 col-md-offset-2">
-                    <div class="clearfix">
-                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-th-list"></i> Lista</a>
-                    </div>
-                  </td>
-                  <td class="col-lg-1 col-md-1">
-                    <div class="clearfix">
-                      <a href="#" class="btn btn-success"><i class="glyphicon glyphicon-pencil"></i> Crear</a>
-                    </div>
-                  </td>
-                  <td class="col-lg-1 col-md-1">
-                    <div class="clearfix">
-                      <a href="#" class="btn btn-primary"><i class="glyphicon glyphicon-list"></i> Mostrar</a>
-                    </div>
-                  </td>
-                  <td class="col-lg-1 col-md-1">
-                    <div class="clearfix">
-                      <a href="{{ action( 'Admin\TitleSliderFeaturesIDController@edit', [ 'id' => $home->id, 'brand' => '1' ] ) }}" class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
-                    </div>
-                  </td>
-                  <td class="col-lg-1 col-md-1">
-                    <div class="clearfix">
-                      <a href="#" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i> Eliminar</a>
-                    </div>
-                  </td>
-                </tr>{{-- TitleSliderFeaturesIDController --}}
+                </tr>{{-- Admin\TitleGalleryFancyboxController --}}
                 <tr>
                   <td class="col-lg-5 col-md-5"><p><small><span>Galerias de fotos:</small></p></td>
                   <td class="col-lg-1 col-md-1 col-md-offset-2">
                     <div class="clearfix">
-                      <a href="{{ action( 'Admin\GalleryFancyboxesController@index', [ 'id' => $home->id ] ) }}" class="btn btn-default"><i class="glyphicon glyphicon-th-list"></i> Lista</a>
+                      <a href="{{ action( 'Admin\GalleryFancyboxesController@index', [ 'id' => $home->id ] ) }}" class="btn btn-info"><i class="glyphicon glyphicon-th-list"></i> Lista</a>
                     </div>
                   </td>
                   <td class="col-lg-1 col-md-1">
                     <div class="clearfix">
-                      <a href="{{ action( 'Admin\GalleryFancyboxesController@create', [ 'id' => $home->id ] ) }}" class="btn btn-success"><i class="glyphicon glyphicon-pencil"></i> Crear</a>
+                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-pencil"></i> Crear</a>
                     </div>
                   </td>
                   <td class="col-lg-1 col-md-1">
                     <div class="clearfix">
-                      <a href="{{ action( 'Admin\GalleryFancyboxesController@show', [ 'id' => $home->id, 'brand' => '1' ] ) }}" class="btn btn-primary"><i class="glyphicon glyphicon-list"></i> Mostrar</a>
+                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-list"></i> Mostrar</a>
                     </div>
                   </td>
                   <td class="col-lg-1 col-md-1">
                     <div class="clearfix">
-                      <a href="{{ action( 'Admin\GalleryFancyboxesController@edit', [ 'id' => $home->id, 'brand' => '1' ] ) }}" class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
+                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
                     </div>
                   </td>
                   <td class="col-lg-1 col-md-1">
                     <div class="clearfix">
-                      <a href="{{ action( 'Admin\GalleryFancyboxesController@destroy', [ 'id' => $home->id, 'brand' => '1' ] ) }}" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i> Eliminar</a>
+                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-remove"></i> Eliminar</a>
                     </div>
                   </td>
                 </tr>{{-- GalleryFancyboxexController --}}
@@ -206,22 +234,22 @@
                   </td>
                   <td class="col-lg-1 col-md-1">
                     <div class="clearfix">
-                      <a href="#" class="btn btn-success" disabled="disabled"><i class="glyphicon glyphicon-pencil"></i> Crear</a>
+                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-pencil"></i> Crear</a>
                     </div>
                   </td>
                   <td class="col-lg-1 col-md-1">
                     <div class="clearfix">
-                      <a href="#" class="btn btn-primary" disabled="disabled"><i class="glyphicon glyphicon-list"></i> Mostrar</a>
+                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-list"></i> Mostrar</a>
                     </div>
                   </td>
                   <td class="col-lg-1 col-md-1">
                     <div class="clearfix">
-                      <a href="{{ action( 'Admin\DescriptionGalleryFancyboxController@edit', [ 'id' => $home->id, 'brand' => '1' ] ) }}" class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
+                      <a href="{{ action( 'Admin\DescriptionGalleryFancyboxController@edit', [ 'id' => $home->id ] ) }}" class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
                     </div>
                   </td>
                   <td class="col-lg-1 col-md-1">
                     <div class="clearfix">
-                      <a href="#" class="btn btn-danger" disabled="disabled"><i class="glyphicon glyphicon-remove"></i> Eliminar</a>
+                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-remove"></i> Eliminar</a>
                     </div>
                   </td>
                 </tr>{{-- Admin\DescriptionGalleryFancyboxController --}}
@@ -244,7 +272,7 @@
                   </td>
                   <td class="col-lg-1 col-md-1">
                     <div class="clearfix">
-                      <a href="{{ action( 'Admin\TitleVersionGalleryController@edit', [ 'id' => $home->id, 'brand' => '1' ] ) }}" class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
+                      <a href="{{ action( 'Admin\TitleVersionGalleryController@edit', [ 'id' => $home->id ] ) }}" class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
                     </div>
                   </td>
                   <td class="col-lg-1 col-md-1">
@@ -252,32 +280,32 @@
                       <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-remove"></i> Eliminar</a>
                     </div>
                   </td>
-                </tr>{{-- Admin\TitleVersionController --}}
+                </tr>{{-- Admin\TitleVersionGalleryController --}}
                 <tr>
                   <td class="col-lg-5 col-md-5"><p><small><span>Galería de descripciones uno:</small></p></td>
                   <td class="col-lg-1 col-md-1 col-md-offset-2">
                     <div class="clearfix">
-                      <a href="{{ action( 'Admin\CarDescriptionGalleryOneController@index', [ 'id' => $home->id ] ) }}" class="btn btn-default"><i class="glyphicon glyphicon-th-list"></i> Lista</a>
+                      <a href="{{ action( 'Admin\CarDescriptionGalleryOneController@index', [ 'id' => $home->id ] ) }}" class="btn btn-info"><i class="glyphicon glyphicon-th-list"></i> Lista</a>
                     </div>
                   </td>
                   <td class="col-lg-1 col-md-1">
                     <div class="clearfix">
-                      <a href="{{ action( 'Admin\CarDescriptionGalleryOneController@create', [ 'id' => $home->id ] ) }}" class="btn btn-success"><i class="glyphicon glyphicon-pencil"></i> Crear</a>
+                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-pencil"></i> Crear</a>
                     </div>
                   </td>
                   <td class="col-lg-1 col-md-1">
                     <div class="clearfix">
-                      <a href="{{ action( 'Admin\CarDescriptionGalleryOneController@show', [ 'id' => $home->id, 'brand' => '1' ] ) }}" class="btn btn-primary"><i class="glyphicon glyphicon-list"></i> Mostrar</a>
+                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-list"></i> Mostrar</a>
                     </div>
                   </td>
                   <td class="col-lg-1 col-md-1">
                     <div class="clearfix">
-                      <a href="{{ action( 'Admin\CarDescriptionGalleryOneController@edit', [ 'id' => $home->id, 'brand' => '1' ] ) }}" class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
+                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
                     </div>
                   </td>
                   <td class="col-lg-1 col-md-1">
                     <div class="clearfix">
-                      <a href="{{ action( 'Admin\CarDescriptionGalleryOneController@destroy', [ 'id' => $home->id, 'brand' => '1' ] ) }}" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i> Eliminar</a>
+                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-remove"></i> Eliminar</a>
                     </div>
                   </td>
                 </tr>{{-- CarDescriptionGalleryOneController --}}
@@ -285,27 +313,27 @@
                   <td class="col-lg-5 col-md-5"><p><small><span>Galería de descripciones dos:</small></p></td>
                   <td class="col-lg-1 col-md-1 col-md-offset-2">
                     <div class="clearfix">
-                      <a href="{{ action( 'Admin\CarDescriptionGalleryTwoController@index', [ 'id' => $home->id ] ) }}" class="btn btn-default"><i class="glyphicon glyphicon-th-list"></i> Lista</a>
+                      <a href="{{ action( 'Admin\CarDescriptionGalleryTwoController@index', [ 'id' => $home->id ] ) }}" class="btn btn-info"><i class="glyphicon glyphicon-th-list"></i> Lista</a>
                     </div>
                   </td>
                   <td class="col-lg-1 col-md-1">
                     <div class="clearfix">
-                      <a href="{{ action( 'Admin\CarDescriptionGalleryTwoController@create', [ 'id' => $home->id ] ) }}" class="btn btn-success"><i class="glyphicon glyphicon-pencil"></i> Crear</a>
+                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-pencil"></i> Crear</a>
                     </div>
                   </td>
                   <td class="col-lg-1 col-md-1">
                     <div class="clearfix">
-                      <a href="{{ action( 'Admin\CarDescriptionGalleryTwoController@show', [ 'id' => $home->id, 'brand' => '1' ] ) }}" class="btn btn-primary"><i class="glyphicon glyphicon-list"></i> Mostrar</a>
+                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-list"></i> Mostrar</a>
                     </div>
                   </td>
                   <td class="col-lg-1 col-md-1">
                     <div class="clearfix">
-                      <a href="{{ action( 'Admin\CarDescriptionGalleryTwoController@edit', [ 'id' => $home->id, 'brand' => '1' ] ) }}" class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
+                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
                     </div>
                   </td>
                   <td class="col-lg-1 col-md-1">
                     <div class="clearfix">
-                      <a href="{{ action( 'Admin\CarDescriptionGalleryTwoController@destroy', [ 'id' => $home->id, 'brand' => '1' ] ) }}" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i> Eliminar</a>
+                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-remove"></i> Eliminar</a>
                     </div>
                   </td>
                 </tr>{{-- CarDescriptionGalleryTwoController --}}
@@ -328,7 +356,7 @@
                   </td>
                   <td class="col-lg-1 col-md-1">
                     <div class="clearfix">
-                      <a href="{{ action( 'Admin\TitleDrivingAnimationController@edit', [ 'id' => $home->id, 'brand' => '1' ] ) }}" class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
+                      <a href="{{ action( 'Admin\TitleDrivingAnimationController@edit', [ 'id' => $home->id ] ) }}" class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
                     </div>
                   </td>
                   <td class="col-lg-1 col-md-1">
@@ -356,7 +384,7 @@
                   </td>
                   <td class="col-lg-1 col-md-1">
                     <div class="clearfix">
-                      <a href="{{ action( 'Admin\TitleFooterController@edit', [ 'id' => $home->id, 'brand' => '1' ] ) }}" class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
+                      <a href="{{ action( 'Admin\TitleFooterController@edit', [ 'id' => $home->id ] ) }}" class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
                     </div>
                   </td>
                   <td class="col-lg-1 col-md-1">
@@ -384,7 +412,7 @@
                   </td>
                   <td class="col-lg-1 col-md-1">
                     <div class="clearfix">
-                      <a href="{{ action( 'Admin\DescriptionFooterController@edit', [ 'id' => $home->id, 'brand' => '1' ] ) }}" class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
+                      <a href="{{ action( 'Admin\DescriptionFooterController@edit', [ 'id' => $home->id ] ) }}" class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
                     </div>
                   </td>
                   <td class="col-lg-1 col-md-1">

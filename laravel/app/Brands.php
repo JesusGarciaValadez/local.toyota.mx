@@ -13,6 +13,7 @@ class Brands extends Model
    */
   protected $fillable = [
     'title_h1',
+    'slogan',
     'slider_features_id',
     'title_slider_features_id',
     'title_gallery_fancybox',
@@ -38,7 +39,7 @@ class Brands extends Model
    *
    * @var array
    */
-  protected $hidden   = [ '' ];
+  protected $hidden   = [ ];
 
   public function sliderFeature ( )
   {
