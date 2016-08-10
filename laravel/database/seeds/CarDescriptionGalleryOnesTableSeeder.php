@@ -15,25 +15,26 @@ class CarDescriptionGalleryOnesTableSeeder extends Seeder
       'brands_id' => 1,
       'content'   => '<div>
           <img src="assets/images/versiones/img_lateral.png" />
-          <h3>HIGHLANDER LE</h3>
-          <h5> DESDE $501,20000<sup>MN</sup></h5>
+          <h3>Highlander LE</h3>
+          <h5> DESDE $501,200.00<sup>MN</sup></h5>
           <ul>
-            <li>Faros elipsoidales tipo proyector.</li>
-            <li>Manijas al color de la carrocería.</li>
             <li>Parrilla negra con acentos cromados.</li>
-            <li>Aire acondicionado manual de 3 zonas.</li>
+            <li>Espejos laterales eléctricos.</li>
+            <li>Pantalla multi-información táctil de 6.1".</li>
+            <li>Alarma e inmovilizador.</li>
           </ul>
           <span></span>
           <a href="especificaciones/coremt" class="link">Ver detalle</a>
         </div>
         <div>
           <img src="assets/images/versiones/img_lateral.png" />
-          <h3>HIGHLANDER XLE</h3>
-          <h5>DESDE $565,20000<sup>MN</sup></h5>
+          <h3>Highlander XLE</h3>
+          <h5>DESDE $565,200.00<sup>MN</sup></h5>
           <ul>
-            <li>Volante con ajuste de altura y profundidad.</li>
-            <li>Control de velocidad crucero.</li>
-            <li>Espejos laterales eléctricos.</li>
+            <li>Desempañador eléctrico en espejos laterales.</li>
+            <li>Faros de niebla delanteros.</li>
+            <li>Pantalla multi-información táctil de 8".</li>
+            <li>Smart key</li>
           </ul>
           <span></span>
           <a href="especificaciones/corectvis" class="link">Ver detalle</a>
