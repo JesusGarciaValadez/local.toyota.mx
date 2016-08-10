@@ -63,7 +63,7 @@ class BrandController extends Controller
   {
     $brands = \Highlander\Brands::findOrFail( $id );
 
-    return view( 'admin.index' )->withBrands( $brands );
+    return view( 'admin.brand.edit' )->withBrands( $brands );
   }
 
   /**
@@ -75,7 +75,7 @@ class BrandController extends Controller
    */
   public function update( BrandUpdatedRequest $request, $id )
   {
-    //
+
   }
 
   /**

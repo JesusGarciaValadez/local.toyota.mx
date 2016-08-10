@@ -24,7 +24,7 @@ class BrandUpdatedRequest extends Request
   public function rules()
   {
     return [
-      'titleH1'   => 'required|string'
+      'title_h1'   => 'required|string'
     ];
   }
 }

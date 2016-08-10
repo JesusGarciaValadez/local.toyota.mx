@@ -15,11 +15,11 @@
       </div>
       @endforeach
       <div class="panel panel-default">
-        <div class="panel-heading">Editar H1: {{ $home->brand }}</div>
+        <div class="panel-heading">Editar H1: {!! $brands->brand !!}</div>
         <div class="panel-body">
           <div class="bs-example bs-example-bg-classes" data-example-id="contextual-backgrounds-helpers">
             {!! Form::open( [
-              'url'     => 'admin/' . $home->id . '/brand/update',
+              'url'     => 'admin/brand/update',
               'method'  => 'PUT',
               'class'   => 'form-horizontal',
               'files'   => false,
@@ -31,8 +31,10 @@
                   'class' => 'col-md-3 control-label'
                 ] ) !!}
 
+                {!! Form::hidden( 'id', $brands->id ) !!}
+
                 <div class="col-md-9">
-                  {!! Form::text( 'title_h1', $home->title_h1, [
+                  {!! Form::text( 'title_h1', $brands->title_h1, [
                     'class'         => 'form-control',
                     'v-model.sync'  => 'newModel.title_h1'
                   ] ) !!}
