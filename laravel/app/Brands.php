@@ -41,12 +41,12 @@ class Brands extends Model
    */
   protected $hidden   = [ ];
 
-  public function sliderFeature ( )
+  public function sliderFeatures ( )
   {
     return $this->hasOne( SliderFeature::class );
   }
 
-  public function titleSliderFeature ( )
+  public function titlesSliderFeatures ( )
   {
     return $this->hasOne( TitleSliderFeature::class );
   }
@@ -56,12 +56,12 @@ class Brands extends Model
     return $this->hasMany( GalleryFancyboxes::class );
   }
 
-  public function carDescriptionGalleryOne ( )
+  public function carDescriptionsGalleryOne ( )
   {
     return $this->hasOne( CarDescriptionGalleryOne::class );
   }
 
-  public function carDescriptionGalleryTwo ( )
+  public function carDescriptionsGalleryTwo ( )
   {
     return $this->hasOne( CarDescriptionGalleryTwo::class );
   }

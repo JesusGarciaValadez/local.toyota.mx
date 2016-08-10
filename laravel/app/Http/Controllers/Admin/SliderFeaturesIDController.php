@@ -11,46 +11,22 @@ use Highlander\Http\Requests\SliderFeaturesRequest;
 
 class SliderFeaturesIDController extends Controller
 {
+  private $_toReturn  = '/admin/';
+
   /**
    * Display a listing of the resource.
    *
    * @return \Illuminate\Http\Response
    */
-  public function index()
+  public function index( $id )
   {
-    return 'SliderFeaturesIDController@index';
-  }
+    $title            = "Galería de características";
+    $toReturn         = $this->_toReturn . $id;
+    $home             = \Highlander\Brands::find( $id );
+    $elements         = $home->sliderFeatures;
+    $controllerName   = 'SliderFeaturesID';
 
-  /**
-   * Show the form for creating a new resource.
-   *
-   * @return \Illuminate\Http\Response
-   */
-  public function create()
-  {
-    return 'SliderFeaturesIDController@index';
-  }
-
-  /**
-   * Store a newly created resource in storage.
-   *
-   * @param  \Illuminate\Http\Request  $request
-   * @return \Illuminate\Http\Response
-   */
-  public function store( Request $request )
-  {
-    return 'SliderFeaturesIDController@store';
-  }
-
-  /**
-   * Display the specified resource.
-   *
-   * @param  int  $id
-   * @return \Illuminate\Http\Response
-   */
-  public function show( $id )
-  {
-    return 'SliderFeaturesIDController@show';
+    return view( 'admin.table', compact( 'title', 'toReturn', 'home', 'elements', 'controllerName' ) );
   }
 
   /**
@@ -59,17 +35,17 @@ class SliderFeaturesIDController extends Controller
    * @param  int  $id
    * @return \Illuminate\Http\Response
    */
-  public function edit( $id )
+  public function edit( $id, $slider_features )
   {
     $brands       = \Highlander\Brands::findOrFail( $id );
-    $typeOfField  = 'Footer';
-    $fieldName    = 'Descripción';
-    $url          = 'admin/description_footer/' . $id;
-    $field        = 'description_footer';
-    $fieldValue   = $brands->$field;
+    $typeOfField  = 'galería de características';
+    $fieldName    = 'Galería de características';
+    $url          = 'admin/' . $id . '/slider-features/' . $id;
+    $field        = 'sliderFeatures';
+    $fieldValue   = $brands->$field->content;
     $toReturn     = 'admin/' . $id;
 
-    return view( 'admin.text', compact( 'brands', 'typeOfField', 'fieldName', 'url', 'field', 'fieldValue', 'toReturn' ) );
+    return view( 'admin.textarea', compact( 'brands', 'typeOfField', 'fieldName', 'url', 'field', 'fieldValue', 'toReturn' ) );
   }
 
   /**
@@ -79,11 +55,11 @@ class SliderFeaturesIDController extends Controller
    * @param  int  $id
    * @return \Illuminate\Http\Response
    */
-  public function update( DescriptionFooterRequest $request, $id )
+  public function update( SliderFeaturesRequest $request, $id )
   {
-    $brand    = [ 'description_footer' => $request->description_footer ];
-    $result   = \Highlander\Brands::where( 'id', $id )
-                                  ->update( $brand );
+    $brand    = [ 'content' => $request->sliderFeatures ];
+    $result   = \Highlander\SliderFeature::where( 'id', $id )
+                                         ->update( $brand );
 
     /*
      * Create a response for passing it into the view.
@@ -97,16 +73,5 @@ class SliderFeaturesIDController extends Controller
     return \Redirect::back( )
                     ->withType( $type )
                     ->withMessage( $message );
-  }
-
-  /**
-   * Remove the specified resource from storage.
-   *
-   * @param  int  $id
-   * @return \Illuminate\Http\Response
-   */
-  public function destroy( $id )
-  {
-    return 'SliderFeaturesIDController@destroy';
   }
 }

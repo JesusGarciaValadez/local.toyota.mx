@@ -84,7 +84,7 @@ Route::group( [ 'prefix' => 'admin', 'middleware' => 'auth' ], function ( )
   Route::group( [ 'prefix' => '{id}' ], function ( $id )
   {
     Route::resource( 'slider-features', 'Admin\SliderFeaturesIDController' );
-    Route::resource( 'title-slider-features-id', 'Admin\TitleSliderFeaturesIDController' );
+    Route::resource( 'title-slider-features', 'Admin\TitleSliderFeaturesIDController' );
     Route::resource( 'gallery-fancyboxes', 'Admin\GalleryFancyboxesController' );
     Route::resource( 'car-description-gallery-one', 'Admin\CarDescriptionGalleryOneController' );
     Route::resource( 'car-description-gallery-two', 'Admin\CarDescriptionGalleryTwoController' );

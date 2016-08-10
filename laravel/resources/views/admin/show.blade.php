@@ -117,7 +117,7 @@
                   <td class="col-lg-5 col-md-5"><p><small><span>Slider de caracteristicas:</small></p></td>
                   <td class="col-lg-1 col-md-1 col-md-offset-2">
                     <div class="clearfix">
-                      <a href="{{ action( 'Admin\SliderFeaturesIDController@index', [ 'id' => $home->id ] ) }}" class="btn btn-info"><i class="glyphicon glyphicon-th-list"></i> Lista</a>
+                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-th-list"></i> Lista</a>
                     </div>
                   </td>
                   <td class="col-lg-1 col-md-1">
@@ -132,7 +132,7 @@
                   </td>
                   <td class="col-lg-1 col-md-1">
                     <div class="clearfix">
-                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
+                      <a href="{{ action( 'Admin\SliderFeaturesIDController@edit', [ 'id' => $home->id, 'slider_features' => '1' ] ) }}" class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
                     </div>
                   </td>
                   <td class="col-lg-1 col-md-1">
@@ -145,7 +145,7 @@
                   <td class="col-lg-5 col-md-5"><p><small><span>Título de slider de características:</small></p></td>
                   <td class="col-lg-1 col-md-1 col-md-offset-2">
                     <div class="clearfix">
-                      <a href="{{ action( 'Admin\TitleSliderFeaturesIDController@index', [ 'id' => $home->id ] ) }}" class="btn btn-info"><i class="glyphicon glyphicon-th-list"></i> Lista</a>
+                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-th-list"></i> Lista</a>
                     </div>
                   </td>
                   <td class="col-lg-1 col-md-1">
@@ -160,7 +160,7 @@
                   </td>
                   <td class="col-lg-1 col-md-1">
                     <div class="clearfix">
-                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
+                      <a href="{{ action( 'Admin\TitleSliderFeaturesIDController@edit', [ 'id' => $home->id, 'title_slider_features' => '1' ] ) }}" class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
                     </div>
                   </td>
                   <td class="col-lg-1 col-md-1">

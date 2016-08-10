@@ -10,7 +10,7 @@
       </div>
       @endif
       @foreach( $errors->all( ) as $error )
-      <div class="alert alert-success">
+      <div class="alert alert-warning">
         {{ $error }}
       </div>
       @endforeach
@@ -34,8 +34,8 @@
                 {!! Form::hidden( 'id', $brands->id ) !!}
 
                 <div class="col-md-9">
-                  {!! Form::textarea( $field, fieldValue, [
-                    'class' => 'form-control',
+                  {!! Form::textarea( $field, $fieldValue, [
+                    'class'         => 'form-control',
                     'v-model.sync'  => 'newModel.' . $field
                   ] ) !!}
 
@@ -70,10 +70,8 @@
 
 @section( 'scripts' )
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/vue-resource/0.9.3/vue-resource.min.js"></script>
 <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-3.1.0.min"><\/script>')</script>
+<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
 <script>
   //  TinyMCE inicialization after document loaded
   $( function ( ) {
@@ -90,48 +88,6 @@
       automatic_uploads: true,
       file_browser_callback_types: 'file image media'
     } );
-  } );
-
-  contact = new Vue( {
-    el      : '#edit__form',
-    data    : {
-      newModel  : {
-        {{ $field }} : '',
-      }
-    },
-    methods : {
-      /**
-       * Submit contact form
-       * @param  Event event Event object
-       */
-      submitEdit : function ( event ) {
-        var data          = {
-          '{{ $field }}' : this.newModel.{{ $field }}
-        }
-
-        if ( !this.isValid ) {
-          this.message  = 'Hay un campo que no esta correctamente lleno. Por favor, revisa de nuevo.';
-          alert( this.message );
-        } else {
-          editForm      = document.getElementById( 'edit__form' ).submit();
-        }
-      }
-    },
-
-    // computed property for form validation state
-    computed: {
-      validation: function () {
-        return {
-          {{ $field }}   : !!this.newModel.{{ $field }}.trim( ),
-        }
-      },
-      isValid: function () {
-        var validation = this.validation
-        return Object.keys( validation ).every( function ( key ) {
-          return validation[ key ];
-        } );
-      }
-    },
   } );
 </script>
 @endsection
