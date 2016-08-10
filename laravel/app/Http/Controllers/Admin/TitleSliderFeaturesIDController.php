@@ -1,12 +1,13 @@
 <?php
 
-namespace Highlander\Http\Controllers\Admin\GalleryFancyboxes;
+namespace Highlander\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 
 use Highlander\Http\Requests;
+use Highlander\Http\Controllers\Controller;
 
-class GalleryFancyboxesController extends Controller
+class TitleSliderFeaturesIDController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +16,7 @@ class GalleryFancyboxesController extends Controller
      */
     public function index()
     {
-        //
+      return 'TitleSliderFeaturesIDController@index';
     }
 
     /**
@@ -25,7 +26,7 @@ class GalleryFancyboxesController extends Controller
      */
     public function create()
     {
-        //
+      return 'TitleSliderFeaturesIDController@create';
     }
 
     /**
@@ -34,9 +35,9 @@ class GalleryFancyboxesController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store( Request $request )
     {
-        //
+      return 'TitleSliderFeaturesIDController@store';
     }
 
     /**
@@ -45,9 +46,9 @@ class GalleryFancyboxesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show( $id )
     {
-        //
+      return 'TitleSliderFeaturesIDController@show';
     }
 
     /**
@@ -56,9 +57,9 @@ class GalleryFancyboxesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit( $id )
     {
-        //
+      return 'TitleSliderFeaturesIDController@edit';
     }
 
     /**
@@ -68,9 +69,9 @@ class GalleryFancyboxesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update( Request $request, $id )
     {
-        //
+      return 'TitleSliderFeaturesIDController@update';
     }
 
     /**
@@ -79,8 +80,8 @@ class GalleryFancyboxesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy( $id )
     {
-        //
+      return 'TitleSliderFeaturesIDController@destroy';
     }
 }

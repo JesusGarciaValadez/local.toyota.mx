@@ -1,10 +1,11 @@
 <?php
 
-namespace Highlander\Http\Controllers\Admin\TitleDrivingAnimation;
+namespace Highlander\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 
 use Highlander\Http\Requests;
+use Highlander\Http\Controllers\Controller;
 
 class TitleDrivingAnimationController extends Controller
 {

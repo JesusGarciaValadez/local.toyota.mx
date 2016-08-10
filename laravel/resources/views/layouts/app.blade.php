@@ -27,7 +27,7 @@
     ga('create', 'UA-78430002-1', 'auto');
     ga('send', 'pageview');
   </script>
-  <iframe src="https://ads.mediade.sk/retargeting/pixel?p=024BADA5-074D-41CD-92D5-3ED824BE6DE2&days=180&adv=2653ab6b-e5dc-4fc4-a1a0-9bebec14b1cd"></iframe>
+  <iframe style="display: none !important;" src="https://ads.mediade.sk/retargeting/pixel?p=024BADA5-074D-41CD-92D5-3ED824BE6DE2&days=180&adv=2653ab6b-e5dc-4fc4-a1a0-9bebec14b1cd"></iframe>
   {!! Html::image( '//magnetic.t.domdex.com/31495/pix.gif?t=r&for=Toyota', '', [
     'width'   => "1",
     'height'  => "1" ,

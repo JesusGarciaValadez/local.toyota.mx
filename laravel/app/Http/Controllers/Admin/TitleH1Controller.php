@@ -1,12 +1,13 @@
 <?php
 
-namespace Highlander\Http\Controllers\Admin\TitleSliderFeatures;
+namespace Highlander\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 
 use Highlander\Http\Requests;
+use Highlander\Http\Controllers\Controller;
 
-class TitleSliderFeaturesIDController extends Controller
+class TitleH1Controller extends Controller
 {
     /**
      * Display a listing of the resource.

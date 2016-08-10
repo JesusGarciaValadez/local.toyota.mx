@@ -1,12 +1,13 @@
 <?php
 
-namespace Highlander\Http\Controllers\Admin\CarDescriptionGalleryOne;
+namespace Highlander\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 
 use Highlander\Http\Requests;
+use Highlander\Http\Controllers\Controller;
 
-class CarDescriptionGalleryOneIDController extends Controller
+class CarDescriptionGalleryTwoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +16,7 @@ class CarDescriptionGalleryOneIDController extends Controller
      */
     public function index()
     {
-        //
+      return 'CarDescriptionGalleryTwoIDController@index';
     }
 
     /**
@@ -25,7 +26,7 @@ class CarDescriptionGalleryOneIDController extends Controller
      */
     public function create()
     {
-        //
+      return 'CarDescriptionGalleryTwoIDController@create';
     }
 
     /**
@@ -36,7 +37,7 @@ class CarDescriptionGalleryOneIDController extends Controller
      */
     public function store(Request $request)
     {
-        //
+      return 'CarDescriptionGalleryTwoIDController@store';
     }
 
     /**
@@ -47,7 +48,7 @@ class CarDescriptionGalleryOneIDController extends Controller
      */
     public function show($id)
     {
-        //
+      return 'CarDescriptionGalleryTwoIDController@show';
     }
 
     /**
@@ -58,7 +59,7 @@ class CarDescriptionGalleryOneIDController extends Controller
      */
     public function edit($id)
     {
-        //
+      return 'CarDescriptionGalleryTwoIDController@edit';
     }
 
     /**
@@ -70,7 +71,7 @@ class CarDescriptionGalleryOneIDController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+      return 'CarDescriptionGalleryTwoIDController@update';
     }
 
     /**
@@ -81,6 +82,6 @@ class CarDescriptionGalleryOneIDController extends Controller
      */
     public function destroy($id)
     {
-        //
+      return 'CarDescriptionGalleryTwoIDController@destroy';
     }
 }

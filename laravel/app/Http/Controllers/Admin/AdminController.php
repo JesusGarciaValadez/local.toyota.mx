@@ -28,7 +28,7 @@ class AdminController extends Controller
    */
   public function create( )
   {
-    //
+    return 'AdminController@create';
   }
 
   /**
@@ -39,7 +39,7 @@ class AdminController extends Controller
    */
   public function store( Request $request )
   {
-    //
+    return 'AdminController@store';
   }
 
   /**
@@ -63,7 +63,7 @@ class AdminController extends Controller
    */
   public function edit( $id )
   {
-    //
+    return 'AdminController@edit';
   }
 
   /**
@@ -75,7 +75,7 @@ class AdminController extends Controller
    */
   public function update( Request $request, $id )
   {
-    //
+    return 'AdminController@Update';
   }
 
   /**
@@ -84,8 +84,8 @@ class AdminController extends Controller
    * @param  int  $id
    * @return \Illuminate\Http\Response
    */
-  public function destroy($id)
+  public function destroy( $id )
   {
-    //
+    return 'AdminController@destroy';
   }
 }

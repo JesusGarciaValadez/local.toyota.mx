@@ -1,12 +1,13 @@
 <?php
 
-namespace Highlander\Http\Controllers\Admin\CarDescriptionGalleryTwo;
+namespace Highlander\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 
 use Highlander\Http\Requests;
+use Highlander\Http\Controllers\Controller;
 
-class CarDescriptionGalleryTwoIDController extends Controller
+class DescriptionFooterController extends Controller
 {
     /**
      * Display a listing of the resource.
