@@ -23,20 +23,20 @@ class CreateBrandsTable extends Migration
       $table->foreign( 'slider_features_id' )
             ->references( 'id' )
             ->on( 'slider_features' )
-            ->onDelete( 'cascade' );
+            ->onUpdate( 'cascade' );
       $table->integer( 'title_slider_features_id' )
             ->unsigned();
       $table->foreign( 'title_slider_features_id' )
             ->references( 'id' )
             ->on( 'title_slider_features' )
-            ->onDelete( 'cascade' );
+            ->onUpdate( 'cascade' );
       $table->string( 'title_gallery_fancybox' );
       $table->integer( 'gallery_fancyboxes_id' )
             ->unsigned();
       $table->foreign( 'gallery_fancyboxes_id' )
             ->references( 'id' )
             ->on( 'gallery_fancyboxes' )
-            ->onDelete( 'cascade' );
+            ->onUpdate( 'cascade' );
       $table->string( 'description_gallery_fancybox' );
       $table->string( 'title_versions_gallery' );
       $table->integer( 'car_description_gallery_one_id' )
@@ -44,13 +44,13 @@ class CreateBrandsTable extends Migration
       $table->foreign( 'car_description_gallery_one_id' )
             ->references( 'id' )
             ->on( 'car_description_gallery_ones' )
-            ->onDelete( 'cascade' );
+            ->onUpdate( 'cascade' );
       $table->integer( 'car_description_gallery_two_id' )
             ->unsigned();
       $table->foreign( 'car_description_gallery_two_id' )
             ->references( 'id' )
             ->on( 'car_description_gallery_twos' )
-            ->onDelete( 'cascade' );
+            ->onUpdate( 'cascade' );
       $table->string( 'title_driving_animation' );
       $table->string( 'title_footer' );
       $table->string( 'description_footer' );

@@ -55,7 +55,7 @@
                   <td class="col-lg-1 col-md-1 col-sm-1">
                     <div class="clearfix">
                       {!! Form::open( [
-                        'url'     => url()->current() . '/destroy',
+                        'url'     => url()->current() . '/' . $element->id,
                         'method'  => 'DELETE',
                         'class'   => 'form-horizontal',
                         'files'   => false

@@ -29,7 +29,6 @@ Route::get( '/home', [ 'as' => 'home', 'uses' => 'HomeController@index' ] );
 
 
 Route::resource( 'admin', 'Admin\AdminController', [
-  'middleware'  => 'auth',
   'only'        => [ 'index', 'show' ],
   'parameters'  => [ 'admin' => 'id' ]
 ] );

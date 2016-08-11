@@ -37,12 +37,12 @@
     <div id="highlights"></div>
     <div class="container">
       <ul class="highs">
-        {!! $home->sliderFeature->content !!}
+        {!! $home->sliderFeatures->content !!}
       </ul>
       <div class="menuHigh">
         <span class="fa fa-angle-up"></span>
         <ul>
-          {!! $home->titleSliderFeature->content !!}
+          {!! $home->titlesSliderFeatures->content !!}
         </ul>
         <span class="fa fa-angle-down"></span>
       </div>

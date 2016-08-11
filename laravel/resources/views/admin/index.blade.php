@@ -21,25 +21,25 @@
             <table class="table table-striped table-hover">
               <thead>
                 <tr>
-                  <th class="text-left">Marca</th>
-                  <th class="text-center">Acciones</th>
+                  <th class="col-lg-8 col-md-8 col-sm-8 text-left">Marca</th>
+                  <th class="col-lg-4 col-md-4 col-sm-4 text-center">Acciones</th>
                 </tr>
               </thead>
               <tfood></tfood>
               <tbody>
                 @foreach ( $brands as $brand )
                 <tr>
-                  <td><p><small><span>{!! $brand->brand !!}</small></p></td>
-                  <td>
-                    <div class="clearfix form-group col-md-6 col-md-offset-3">
-                      <a href="{{ action( 'Admin\AdminController@show', [ 'id' => $brand->id ] ) }}" class="btn btn-primary col-md-5"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
-                      <div class="col-md-4 col-md-offset-1">
-                        {!! Form::open( [ 'url' => 'admin/borrar/' . $brand->id, 'method' => 'DELETE', 'class' => 'form-horizontal', 'files' => false ] ) !!}
-                          <button type="submit" class="btn btn-danger">
-                            <i class="glyphicon glyphicon-trash"></i> Eliminar
-                          </button>
-                        {!! Form::close() !!}
-                      </div>
+                  <td class="col-lg-8 col-md-8 col-sm-8"><p><small><span>{!! $brand->brand !!}</small></p></td>
+                  <td class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="clearfix text-center form-group col-lg-6 col-md-6 col-sm-6">
+                      <a href="{{ action( 'Admin\AdminController@show', [ 'id' => $brand->id ] ) }}" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
+                    </div>
+                    <div class="clearfix text-center col-lg-6 col-md-6 col-sm-6">
+                      {!! Form::open( [ 'url' => 'admin/borrar/' . $brand->id, 'method' => 'DELETE', 'class' => 'form-horizontal', 'files' => false ] ) !!}
+                        <button type="submit" class="btn btn-danger">
+                          <i class="glyphicon glyphicon-trash"></i> Eliminar
+                        </button>
+                      {!! Form::close() !!}
                     </div>
                   </td>
                 </tr>

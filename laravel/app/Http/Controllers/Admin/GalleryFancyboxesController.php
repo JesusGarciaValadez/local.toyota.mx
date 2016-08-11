@@ -115,8 +115,7 @@ class GalleryFancyboxesController extends Controller
    */
   public function destroy( $element_id )
   {
-    $result   = \Highlander\GalleryFancyboxes::where( 'id', $element_id )
-                                             ->delete( );
+    $result   = \Highlander\GalleryFancyboxes::destroy( $element_id );
 
     /*
      * Create a response for passing it into the view.
@@ -124,11 +123,13 @@ class GalleryFancyboxesController extends Controller
     $message        = ( $result ) ? "Campo actualizado" : "Hubo un error al actualizar la información. :/";
     $type           = ( $result ) ? "success" : "danger";
 
+    return ( $result ) ? "success" : "danger";
+
     /*
      * Passing the recipe information, categories and domain url to the view.
      */
-    return \Redirect::back( )
-                    ->withType( $type )
-                    ->withMessage( $message );
+    // return \Redirect::back( )
+    //                 ->withType( $type )
+    //                 ->withMessage( $message );
   }
 }
