@@ -114,34 +114,6 @@
                   </td>
                 </tr>{{-- Admin\TitleH1Controller --}}
                 <tr>
-                  <td class="col-lg-5 col-md-5"><p><small><span>Slider de caracteristicas:</small></p></td>
-                  <td class="col-lg-1 col-md-1 col-md-offset-2">
-                    <div class="clearfix">
-                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-th-list"></i> Lista</a>
-                    </div>
-                  </td>
-                  <td class="col-lg-1 col-md-1">
-                    <div class="clearfix">
-                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-pencil"></i> Crear</a>
-                    </div>
-                  </td>
-                  <td class="col-lg-1 col-md-1">
-                    <div class="clearfix">
-                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-list"></i> Mostrar</a>
-                    </div>
-                  </td>
-                  <td class="col-lg-1 col-md-1">
-                    <div class="clearfix">
-                      <a href="{{ action( 'Admin\SliderFeaturesIDController@edit', [ 'id' => $home->id, 'slider_features' => '1' ] ) }}" class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
-                    </div>
-                  </td>
-                  <td class="col-lg-1 col-md-1">
-                    <div class="clearfix">
-                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-remove"></i> Eliminar</a>
-                    </div>
-                  </td>
-                </tr>{{-- SliderFeaturesController --}}
-                <tr>
                   <td class="col-lg-5 col-md-5"><p><small><span>Título de slider de características:</small></p></td>
                   <td class="col-lg-1 col-md-1 col-md-offset-2">
                     <div class="clearfix">
@@ -169,6 +141,34 @@
                     </div>
                   </td>
                 </tr>{{-- TitleSliderFeaturesIDController --}}
+                <tr>
+                  <td class="col-lg-5 col-md-5"><p><small><span>Slider de caracteristicas:</small></p></td>
+                  <td class="col-lg-1 col-md-1 col-md-offset-2">
+                    <div class="clearfix">
+                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-th-list"></i> Lista</a>
+                    </div>
+                  </td>
+                  <td class="col-lg-1 col-md-1">
+                    <div class="clearfix">
+                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-pencil"></i> Crear</a>
+                    </div>
+                  </td>
+                  <td class="col-lg-1 col-md-1">
+                    <div class="clearfix">
+                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-list"></i> Mostrar</a>
+                    </div>
+                  </td>
+                  <td class="col-lg-1 col-md-1">
+                    <div class="clearfix">
+                      <a href="{{ action( 'Admin\SliderFeaturesIDController@edit', [ 'id' => $home->id, 'slider_features' => '1' ] ) }}" class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
+                    </div>
+                  </td>
+                  <td class="col-lg-1 col-md-1">
+                    <div class="clearfix">
+                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-remove"></i> Eliminar</a>
+                    </div>
+                  </td>
+                </tr>{{-- SliderFeaturesController --}}
                 <tr>
                   <td class="col-lg-5 col-md-5"><p><small><span>Título de galerías de fotos:</small></p></td>
                   <td class="col-lg-1 col-md-1 col-md-offset-2">

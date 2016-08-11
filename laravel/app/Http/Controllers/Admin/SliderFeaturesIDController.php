@@ -11,24 +11,6 @@ use Highlander\Http\Requests\SliderFeaturesRequest;
 
 class SliderFeaturesIDController extends Controller
 {
-  private $_toReturn  = '/admin/';
-
-  /**
-   * Display a listing of the resource.
-   *
-   * @return \Illuminate\Http\Response
-   */
-  public function index( $id )
-  {
-    $title            = "Galería de características";
-    $toReturn         = $this->_toReturn . $id;
-    $home             = \Highlander\Brands::find( $id );
-    $elements         = $home->sliderFeatures;
-    $controllerName   = 'SliderFeaturesID';
-
-    return view( 'admin.table', compact( 'title', 'toReturn', 'home', 'elements', 'controllerName' ) );
-  }
-
   /**
    * Show the form for editing the specified resource.
    *

@@ -47,15 +47,15 @@
                   <td class="col-lg-1 col-md-1 col-sm-1">
                     <div class="clearfix">
                       <a href="{{ action( 'Admin\\' . $controllerName . 'Controller@edit', [
-                        'id'              => $home->id,
-                        'slider-features' => $element->id
+                        'id'          => $home->id,
+                        'element_id'  => $element->id
                       ] ) }}" class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
                     </div>
                   </td>
                   <td class="col-lg-1 col-md-1 col-sm-1">
                     <div class="clearfix">
                       {!! Form::open( [
-                        'url'     => url()->current() . 'destroy',
+                        'url'     => url()->current() . '/destroy',
                         'method'  => 'DELETE',
                         'class'   => 'form-horizontal',
                         'files'   => false
