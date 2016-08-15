@@ -14,8 +14,6 @@ class Brands extends Model
   protected $fillable = [
     'title_h1',
     'slogan',
-    'slider_features_id',
-    'title_slider_features_id',
     'title_gallery_fancybox',
     'gallery_fancyboxes_id',
     'description_gallery_fancybox',
@@ -40,16 +38,6 @@ class Brands extends Model
    * @var array
    */
   protected $hidden   = [ ];
-
-  public function sliderFeatures ( )
-  {
-    return $this->hasOne( SliderFeature::class );
-  }
-
-  public function titlesSliderFeatures ( )
-  {
-    return $this->hasOne( TitleSliderFeature::class );
-  }
 
   public function galleryFancyboxes ( )
   {

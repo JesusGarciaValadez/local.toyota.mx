@@ -17,7 +17,13 @@
       </div>
       @endforeach
       <div class="panel panel-default">
-        <div class="panel-heading">Editar {{ strtolower( $title ) }} @ marca de automóvil: {!! $home->brand !!}</div>
+        <div class="panel-heading">Editar {{ strtolower( $title ) }} @ marca de automóvil:
+          @if ( $brand )
+          {{ $brand }}
+          @else
+          {!! $home->brand !!}
+          @endif
+        </div>
         <div class="panel-body">
           <div class="table-responsive">
             <table class="table table-striped table-hover">
@@ -37,17 +43,21 @@
                   </td>
                   <td class="col-lg-11 col-md-11 col-sm-11" colspan="11">
                     <div class="clearfix text-left">
-                      <a href="#" class="btn btn-success"><i class="glyphicon glyphicon-pencil"></i> Crear nuevo elemento</a>
+                      <a href="{{ action( 'Admin\\' . $controllerName . 'Controller@create', [
+                        'id' => ( $id ) ? $id : $home->id
+                      ] ) }}" class="btn btn-success"><i class="glyphicon glyphicon-pencil"></i> Crear nuevo elemento</a>
                     </div>
                   </td>
                 </tr>
                 @foreach ( $elements as $element )
                 <tr>
-                  <td class="col-lg-10 col-md-10" colspan="10"><p><small><span>Marca:</small></p></td>
+                  <td class="col-lg-10 col-md-10" colspan="10">
+                    <p><small><span>{!! $element->title !!}:</span></small></p>
+                  </td>
                   <td class="col-lg-1 col-md-1 col-sm-1">
                     <div class="clearfix">
                       <a href="{{ action( 'Admin\\' . $controllerName . 'Controller@edit', [
-                        'id'          => $home->id,
+                        'id'          => ( count( $home ) > 0 ) ? $home[ 0 ]->id : $home->id,
                         'element_id'  => $element->id
                       ] ) }}" class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
                     </div>

@@ -18,18 +18,6 @@ class CreateBrandsTable extends Migration
       $table->string( 'brand' );
       $table->string( 'slogan' );
       $table->string( 'title_h1' );
-      $table->integer( 'slider_features_id' )
-            ->unsigned();
-      $table->foreign( 'slider_features_id' )
-            ->references( 'id' )
-            ->on( 'slider_features' )
-            ->onUpdate( 'cascade' );
-      $table->integer( 'title_slider_features_id' )
-            ->unsigned();
-      $table->foreign( 'title_slider_features_id' )
-            ->references( 'id' )
-            ->on( 'title_slider_features' )
-            ->onUpdate( 'cascade' );
       $table->string( 'title_gallery_fancybox' );
       $table->integer( 'gallery_fancyboxes_id' )
             ->unsigned();

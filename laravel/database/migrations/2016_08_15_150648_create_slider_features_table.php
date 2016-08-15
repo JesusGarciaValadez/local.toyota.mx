@@ -15,9 +15,16 @@ class CreateSliderFeaturesTable extends Migration
     Schema::create( 'slider_features', function ( Blueprint $table )
     {
       $table->increments( 'id' );
-      $table->integer( 'brands_id' );
+      $table->integer( 'brands_id' )
+            ->unsigned();
+      $table->foreign( 'brands_id' )
+            ->references( 'id' )
+            ->on( 'brands' )
+            ->onDelete( 'cascade' )
+            ->onUpdate( 'cascade' );
+      $table->string( 'title' );
       $table->longtext( 'content' );
-      $table->timestamps();
+      $table->timestamps( );
     } );
   }
 

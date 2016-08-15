@@ -13,6 +13,7 @@ class SliderFeaturesTableSeeder extends Seeder
   {
     DB::table( 'slider_features' )->insert( [
       'brands_id' => 1,
+      'title'     => '<li class="activo"><span>Sistema de monitoreo de punto ciego.</span></li>',
       'content'   => '<li>
           <div>
             <h1 class="animated"><span>Sistema de monitoreo de punto ciego.</span></h1>
@@ -21,8 +22,13 @@ class SliderFeaturesTableSeeder extends Seeder
           <div>
             <img src="assets/images/highlight/sistema-de-monitoreo.png" />
           </div>
-        </li>
-        <li>
+        </li>'
+    ] );
+
+    DB::table( 'slider_features' )->insert( [
+      'brands_id' => 1,
+      'title'     => '<li><span>Techo corredizo panorámico.</span></li>',
+      'content'   => '<li>
           <div>
             <h1 class="animated"><span>Techo corredizo panorámico.</span></h1>
             <p>¡Gran vista para todos! Los viajes se disfrutan más cuando admiras el paisaje.</p>
@@ -30,8 +36,13 @@ class SliderFeaturesTableSeeder extends Seeder
           <div>
             <img src="assets/images/highlight/techo-corredizo.png" />
           </div>
-        </li>
-        <li>
+        </li>'
+    ] );
+
+    DB::table( 'slider_features' )->insert( [
+      'brands_id' => 1,
+      'title'     => '<li><span>Sistema de entretenimiento trasero.</span></li>',
+      'content'   => '<li>
           <div>
             <h1 class="animated"><span>Sistema de entretenimiento trasero.</span></h1>
             <p>Pantalla de 9” y Blu-ray disc para que todos se diviertan sin importar lo largo del viaje.</p>
@@ -39,8 +50,13 @@ class SliderFeaturesTableSeeder extends Seeder
           <div>
             <img src="assets/images/highlight/sistema-de-entretenimiento.png" />
           </div>
-        </li>
-        <li>
+        </li>'
+    ] );
+
+    DB::table( 'slider_features' )->insert( [
+      'brands_id' => 1,
+      'title'     => '<li><span>Una camioneta alternativa para ti.</span></li>',
+      'content'   => '<li>
           <div>
             <h1 class="animated"><span>Una camioneta alternativa para ti.</span></h1>
             <p>Sal a donde quieras, se adapta a cualquier Terreno, clima y caminos, ideal para la ciudad o carretera.</p>

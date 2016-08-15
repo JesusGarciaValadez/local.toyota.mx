@@ -24,7 +24,8 @@ class SliderFeaturesRequest extends Request
   public function rules()
   {
     return [
-      'sliderFeatures' => 'required|string'
+      'title'   => 'required|string',
+      'content' => 'sometimes|required|string'
     ];
   }
 }

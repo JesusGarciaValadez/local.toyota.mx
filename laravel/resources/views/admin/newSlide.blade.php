@@ -26,22 +26,41 @@
               'id'      => 'edit__form'
             ] ) !!}
 
-              <div class="form-group{{ $errors->has( $field ) ? ' has-error' : '' }}">
-                {!! Form::label( $field, $fieldName, [
+              <div class="form-group{{ $errors->has( 'title' ) ? ' has-error' : '' }}">
+                {!! Form::label( 'Título', 'title', [
                   'class' => 'col-md-3 control-label'
                 ] ) !!}
 
                 {!! Form::hidden( 'id', $brands->id ) !!}
 
                 <div class="col-md-9">
-                  {!! Form::text( $field, $fieldValue, [
+                  {!! Form::text( 'title', "", [
                     'class'         => 'form-control',
-                    'v-model.sync'  => 'newModel.' . $field
+                    'v-model.sync'  => 'newModel.title'
                   ] ) !!}
 
-                  @if ($errors->has( $field ))
+                  @if ($errors->has( 'title' ))
                     <span class="help-block">
-                      <strong>{{ $errors->first( $field ) }}</strong>
+                      <strong>{{ $errors->first( $title ) }}</strong>
+                    </span>
+                  @endif
+                </div>
+              </div>
+
+              <div class="form-group{{ $errors->has( 'content' ) ? ' has-error' : '' }}">
+                {!! Form::label( 'Slide', 'content', [
+                  'class' => 'col-md-3 control-label'
+                ] ) !!}
+
+                <div class="col-md-9">
+                  {!! Form::textarea( 'content', "", [
+                    'class'         => 'form-control',
+                    'v-model.sync'  => 'newModel.content'
+                  ] ) !!}
+
+                  @if ($errors->has( 'content' ))
+                    <span class="help-block">
+                      <strong>{{ $errors->first( $content ) }}</strong>
                     </span>
                   @endif
                 </div>
@@ -78,7 +97,8 @@
     el      : '#edit__form',
     data    : {
       newModel  : {
-        {{ $field }} : '',
+        'title'   : '',
+        'content' : '',
       }
     },
     methods : {
@@ -88,7 +108,8 @@
        */
       submitEdit : function ( event ) {
         var data          = {
-          '{{ $field }}' : this.newModel.{{ $field }}
+          'title'   : this.newModel.title,
+          'content' : this.newModel.content
         }
 
         if ( !this.isValid ) {
@@ -104,7 +125,8 @@
     computed: {
       validation: function () {
         return {
-          {{ $field }}   : !!this.newModel.{{ $field }}.trim( ),
+          'title'   : !!this.newModel.title.trim( ),
+          'content' : !!this.newModel.content.trim( ),
         }
       },
       isValid: function () {

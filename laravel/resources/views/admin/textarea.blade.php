@@ -74,20 +74,20 @@
 <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
 <script>
   //  TinyMCE inicialization after document loaded
-  $( function ( ) {
-    tinymce.init( {
-      selector:   'textarea',
-      height:     300,
-      plugins:    [
-        'advlist autolink lists link image charmap print preview anchor',
-        'searchreplace visualblocks code fullscreen',
-        'insertdatetime media table contextmenu paste code'
-      ],
-      toolbar:    'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | code',
-      preview_styles: false,
-      automatic_uploads: true,
-      file_browser_callback_types: 'file image media'
-    } );
-  } );
+  // $( function ( ) {
+  //   tinymce.init( {
+  //     selector:   'textarea',
+  //     height:     300,
+  //     plugins:    [
+  //       'advlist autolink lists link image charmap print preview anchor',
+  //       'searchreplace visualblocks code fullscreen',
+  //       'insertdatetime media table contextmenu paste code'
+  //     ],
+  //     toolbar:    'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | code',
+  //     preview_styles: false,
+  //     automatic_uploads: true,
+  //     file_browser_callback_types: 'file image media'
+  //   } );
+  // } );
 </script>
 @endsection
