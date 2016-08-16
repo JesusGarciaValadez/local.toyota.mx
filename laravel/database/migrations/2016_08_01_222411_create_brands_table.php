@@ -19,12 +19,6 @@ class CreateBrandsTable extends Migration
       $table->string( 'slogan' );
       $table->string( 'title_h1' );
       $table->string( 'title_gallery_fancybox' );
-      $table->integer( 'gallery_fancyboxes_id' )
-            ->unsigned();
-      $table->foreign( 'gallery_fancyboxes_id' )
-            ->references( 'id' )
-            ->on( 'gallery_fancyboxes' )
-            ->onUpdate( 'cascade' );
       $table->string( 'description_gallery_fancybox' );
       $table->string( 'title_versions_gallery' );
       $table->integer( 'car_description_gallery_one_id' )

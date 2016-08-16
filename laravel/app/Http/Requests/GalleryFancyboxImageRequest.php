@@ -4,7 +4,7 @@ namespace Highlander\Http\Requests;
 
 use Highlander\Http\Requests\Request;
 
-class GalleryFancyboxRequest extends Request
+class GalleryFancyboxImageRequest extends Request
 {
   /**
    * Determine if the user is authorized to make this request.
@@ -25,14 +25,14 @@ class GalleryFancyboxRequest extends Request
   {
     return [
       'title'         => 'required|string',
-      'thumb_big'     => 'required|string',
-      'thumb_small_1' => 'required|string',
-      'thumb_small_2' => 'required|string',
-      'thumb_small_3' => 'required|string',
-      'image_big'     => 'required|string',
-      'image_small_1' => 'required|string',
-      'image_small_2' => 'required|string',
-      'image_small_3' => 'required|string',
+      'thumb_big'     => 'required|image',
+      'thumb_small_1' => 'required|image',
+      'thumb_small_2' => 'required|image',
+      'thumb_small_3' => 'required|image',
+      'image_big'     => 'required|image',
+      'image_small_1' => 'required|image',
+      'image_small_2' => 'required|image',
+      'image_small_3' => 'required|image',
       'title_big'     => 'required|string',
       'title_small_1' => 'required|string',
       'title_small_2' => 'required|string',

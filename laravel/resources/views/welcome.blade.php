@@ -57,7 +57,28 @@
         <div class="contGale">
           <div>
             @foreach( $home->galleryFancyboxes as $gallery )
-            {!! $gallery->content !!}
+            <ul>
+              <li>
+                <a class="fancybox" rel="gallery1" href="{{ $gallery->image_big }}" title="{{ $gallery->title_big }}">
+                  <img src="{{ $gallery->thumb_big }}" />
+                </a>
+              </li>
+              <li>
+                <a class="fancybox" rel="gallery1" href="{{ $gallery->image_small_1 }}" title="{{ $gallery->title_small_1 }}">
+                  <img src="{{ $gallery->thumb_small_1 }}" />
+                </a>
+              </li>
+              <li>
+                <a class="fancybox" rel="gallery1" href="{{ $gallery->image_small_2 }}" title="{{ $gallery->title_small_2 }}">
+                  <img src="{{ $gallery->thumb_small_2 }}" />
+                </a>
+              </li>
+              <li>
+                <a class="fancybox" rel="gallery1" href="{{ $gallery->image_small_3 }}" title="{{ $gallery->title_small_3 }}">
+                  <img src="{{ $gallery->thumb_small_3 }}" />
+                </a>
+              </li>
+            </ul>
             @endforeach
           </div>
           <div class="anuncio">

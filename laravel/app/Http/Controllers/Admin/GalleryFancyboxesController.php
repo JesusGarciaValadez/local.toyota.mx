@@ -7,12 +7,11 @@ use Illuminate\Http\Request;
 use Highlander\Http\Requests;
 use Highlander\Http\Controllers\Controller;
 
+use Highlander\Http\Requests\GalleryFancyboxImageRequest;
 use Highlander\Http\Requests\GalleryFancyboxRequest;
 
 class GalleryFancyboxesController extends Controller
 {
-  private $_toReturn  = '';
-
   /**
    * Display a listing of the resource.
    *
@@ -20,13 +19,15 @@ class GalleryFancyboxesController extends Controller
    */
   public function index( $id )
   {
-    $title          = "Galería de fotos";
+    $title          = 'Galería de fotos';
+    $brand          = 'Highlander 2016';
+    $id             = $id;
     $toReturn       = '/admin/' . $id;
-    $home           = \Highlander\Brands::find( $id );
-    $elements       = $home->galleryFancyboxes;
+    $home           = \Highlander\GalleryFancyboxes::all( );
+    $elements       = $home;
     $controllerName = 'GalleryFancyboxes';
 
-    return view( 'admin.table', compact( 'title', 'toReturn', 'home', 'elements', 'controllerName' ) );
+    return view( 'admin.table', compact( 'title', 'brand', 'id', 'toReturn', 'home', 'elements', 'controllerName' ) );
   }
 
   /**
@@ -34,9 +35,10 @@ class GalleryFancyboxesController extends Controller
    *
    * @return \Illuminate\Http\Response
    */
-  public function create()
+  public function create( $id )
   {
-    return 'GalleryFancyboxesController@create';
+    $brandName = 'Highlander 2016';
+    return view( 'admin.newGallery', compact( 'brandName', 'id' ) );
   }
 
   /**
@@ -45,9 +47,39 @@ class GalleryFancyboxesController extends Controller
    * @param  \Illuminate\Http\Request  $request
    * @return \Illuminate\Http\Response
    */
-  public function store( GalleryFancyboxRequest $request )
+  public function store( GalleryFancyboxImageRequest $request, $id )
   {
-    return 'GalleryFancyboxesController@store';
+    $gallery = [
+      'title'         => $request->title,
+      'image_big'     => $request->image_big,
+      'image_small_1' => $request->image_small_1,
+      'image_small_2' => $request->image_small_2,
+      'image_small_3' => $request->image_small_3,
+      'thumb_big'     => $request->thumb_big,
+      'thumb_small_1' => $request->thumb_small_1,
+      'thumb_small_2' => $request->thumb_small_2,
+      'thumb_small_3' => $request->thumb_small_3,
+      'title_big'     => $request->title_big,
+      'title_small_1' => $request->title_small_1,
+      'title_small_2' => $request->title_small_2,
+      'title_small_3' => $request->title_small_3,
+    ];
+
+    $gallery = new \Highlander\GalleryFancyboxes( $gallery );
+    $gallery->save();
+
+    /*
+     * Create a response for passing it into the view.
+     */
+    $type           = ( $gallery ) ? "success" : "danger";
+    $message        = ( $gallery ) ? "Campo actualizado" : "Hubo un error al actualizar la información. :/";
+
+    /*
+     * Passing the recipe information, categories and domain url to the view.
+     */
+    return \Redirect::back( )
+                    ->withType( $type )
+                    ->withMessage( $message );
   }
 
   /**
@@ -58,7 +90,7 @@ class GalleryFancyboxesController extends Controller
    */
   public function show( $id )
   {
-    return 'GalleryFancyboxesController@show';
+    return view( 'admin.editGallery' );
   }
 
   /**
@@ -67,17 +99,12 @@ class GalleryFancyboxesController extends Controller
    * @param  int  $id
    * @return \Illuminate\Http\Response
    */
-  public function edit( $id, $element_id )
+  public function edit( $id, $gallery_fancyboxes )
   {
-    $brands       = \Highlander\GalleryFancyboxes::findOrFail( $element_id );
-    $typeOfField  = 'galería de fotos';
-    $fieldName    = 'Foto';
-    $url          = 'admin/' . $id . '/gallery-fancyboxes/' . $id;
-    $field        = 'content';
-    $fieldValue   = $brands->content;
-    $toReturn     = 'admin/' . $id . '/gallery-fancyboxes';
+    $brandName  = 'Highlander 2016';
+    $gallery    = \Highlander\GalleryFancyboxes::findOrFail( $gallery_fancyboxes );
 
-    return view( 'admin.textarea', compact( 'brands', 'typeOfField', 'fieldName', 'url', 'field', 'fieldValue', 'toReturn' ) );
+    return view( 'admin.editGallery', compact( 'brandName', 'gallery', 'id', 'gallery_fancyboxes' ) );
   }
 
   /**
@@ -87,17 +114,32 @@ class GalleryFancyboxesController extends Controller
    * @param  int  $id
    * @return \Illuminate\Http\Response
    */
-  public function update( GalleryFancyboxRequest $request, $element_id )
+  public function update( GalleryFancyboxRequest $request, $id, $gallery_fancyboxes )
   {
-    $brand    = [ 'content' => $request->content ];
-    $result   = \Highlander\GalleryFancyboxes::where( 'id', $element_id )
-                                             ->update( $brand );
+    $gallery = [
+      'title'         => $request->title,
+      'image_big'     => $request->image_big,
+      'image_small_1' => $request->image_small_1,
+      'image_small_2' => $request->image_small_2,
+      'image_small_3' => $request->image_small_3,
+      'thumb_big'     => $request->thumb_big,
+      'thumb_small_1' => $request->thumb_small_1,
+      'thumb_small_2' => $request->thumb_small_2,
+      'thumb_small_3' => $request->thumb_small_3,
+      'title_big'     => $request->title_big,
+      'title_small_1' => $request->title_small_1,
+      'title_small_2' => $request->title_small_2,
+      'title_small_3' => $request->title_small_3,
+    ];
+
+    $result   = \Highlander\GalleryFancyboxes::where( 'id', $gallery_fancyboxes )
+                                             ->update( $gallery );
 
     /*
      * Create a response for passing it into the view.
      */
-    $message        = ( $result ) ? "Campo actualizado" : "Hubo un error al actualizar la información. :/";
-    $type           = ( $result ) ? "success" : "danger";
+    $message  = ( $result ) ? "Campo actualizado" : "Hubo un error al actualizar la información. :/";
+    $type     = ( $result ) ? "success" : "danger";
 
     /*
      * Passing the recipe information, categories and domain url to the view.
@@ -113,7 +155,7 @@ class GalleryFancyboxesController extends Controller
    * @param  int  $id
    * @return \Illuminate\Http\Response
    */
-  public function destroy( $element_id )
+  public function destroy( $id, $element_id )
   {
     $result   = \Highlander\GalleryFancyboxes::destroy( $element_id );
 
@@ -123,13 +165,11 @@ class GalleryFancyboxesController extends Controller
     $message        = ( $result ) ? "Campo actualizado" : "Hubo un error al actualizar la información. :/";
     $type           = ( $result ) ? "success" : "danger";
 
-    return ( $result ) ? "success" : "danger";
-
     /*
      * Passing the recipe information, categories and domain url to the view.
      */
-    // return \Redirect::back( )
-    //                 ->withType( $type )
-    //                 ->withMessage( $message );
+    return \Redirect::back( )
+                    ->withType( $type )
+                    ->withMessage( $message );
   }
 }

@@ -16,7 +16,19 @@ class CreateGalleryFancyboxesTable extends Migration
     {
       $table->increments( 'id' );
       $table->integer( 'brands_id' );
-      $table->longtext( 'content' );
+      $table->string( 'title' );
+      $table->string( 'thumb_big' );
+      $table->string( 'thumb_small_1' );
+      $table->string( 'thumb_small_2' );
+      $table->string( 'thumb_small_3' );
+      $table->string( 'image_big' );
+      $table->string( 'image_small_1' );
+      $table->string( 'image_small_2' );
+      $table->string( 'image_small_3' );
+      $table->string( 'title_big' );
+      $table->string( 'title_small_1' );
+      $table->string( 'title_small_2' );
+      $table->string( 'title_small_3' );
       $table->timestamps();
     } );
   }

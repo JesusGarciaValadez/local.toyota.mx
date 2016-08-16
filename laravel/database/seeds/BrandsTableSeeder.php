@@ -16,7 +16,6 @@ class BrandsTableSeeder extends Seeder
       'slogan'                            => 'Haremos de tus viajes, <br />los mejores momentos',
       'title_h1'                          => '<h2 class="animated">Desde cualquier ángulo te parecerá espectacular.</h2>',
       'title_gallery_fancybox'            => '<h2 class="animated">CADA PARTE DE ELLA TIENE UN PROPÓSITO.</h2>',
-      'gallery_fancyboxes_id'             => 1,
       'description_gallery_fancybox'      => '<p>Cada espacio diseñado en <span> Highlander </span> está pensado con un propósito, ya sea comodidad, seguridad o lujo, pero todo tiene una razón de ser.</p>',
       'title_versions_gallery'            => '<h2 class="animated">CADA UNA TIENE DETALLES QUE TE CONQUISTARÁN.</h2>',
       'car_description_gallery_one_id'    => 1,

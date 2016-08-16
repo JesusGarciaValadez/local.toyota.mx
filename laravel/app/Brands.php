@@ -15,7 +15,6 @@ class Brands extends Model
     'title_h1',
     'slogan',
     'title_gallery_fancybox',
-    'gallery_fancyboxes_id',
     'description_gallery_fancybox',
     'title_versions_gallery',
     'car_descriptions_gallery_one_id',
@@ -38,11 +37,6 @@ class Brands extends Model
    * @var array
    */
   protected $hidden   = [ ];
-
-  public function galleryFancyboxes ( )
-  {
-    return $this->hasMany( GalleryFancyboxes::class );
-  }
 
   public function carDescriptionsGalleryOne ( )
   {
