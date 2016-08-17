@@ -1,4 +1,4 @@
-<?php
++<?php
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
@@ -14,8 +14,10 @@ class CreateBrandsTable extends Migration
   {
     Schema::create( 'brands', function ( Blueprint $table )
     {
-      $table->increments( 'id' );
-      $table->string( 'brand' );
+      $table->increments( 'id' )
+            ->unsigned( );
+
+      $table->string( 'name' );
       $table->string( 'slogan' );
       $table->string( 'title_h1' );
       $table->string( 'title_gallery_fancybox' );
@@ -24,6 +26,7 @@ class CreateBrandsTable extends Migration
       $table->string( 'title_driving_animation' );
       $table->string( 'title_footer' );
       $table->string( 'description_footer' );
+      $table->string( 'slug' );
       $table->timestamps( );
     } );
   }

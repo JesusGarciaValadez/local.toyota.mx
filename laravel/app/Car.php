@@ -12,14 +12,14 @@ class Car extends Model
    * @var array
    */
   protected $fillable = [
-    'model',
     'brands_id',
-    'thumbnail',
-    'price',
-    'description',
     'technical_specifications_id',
     'external_specifications_id',
     'internal_specifications_id',
+    'model',
+    'thumbnail',
+    'price',
+    'description',
     'slug'
   ];
 
@@ -43,7 +43,7 @@ class Car extends Model
    */
   public function brands ()
   {
-    return $this->belonsTo( Brands::class );
+    return $this->belongsTo( Brands::class );
   }
 
   /**

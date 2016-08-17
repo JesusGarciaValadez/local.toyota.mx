@@ -10,14 +10,14 @@
   <section class="cover">
     <div id="cover"></div>
     <div class="titulo fadeIn animated">
-      <h1>{!! $home->brand !!}</h1>
-      <h2>{!! $home->slogan !!}</h2>
+      <h1>{!! $brand->name !!}</h1>
+      <h2>{!! $brand->slogan !!}</h2>
     </div>
     <span class="mouse fadeIn animated"><span class="mouse-dot"></span> Explora hacia abajo y descúbrelo.</span>
   </section>
   <section class="colores">
     <div id="colores"></div>
-    {!! $home->title_h1 !!}
+    {!! $brand->title_h1 !!}
     <div id="container" class="container">
       {!! Html::image( 'assets/images/reel360/blanco/1.jpg' ) !!}
       <div class="new-Menu360">
@@ -54,7 +54,7 @@
   </section>
   <section class="galeria">
     <div id="galeria"></div>
-    {!! $home->title_gallery_fancybox !!}
+    {!! $brand->title_gallery_fancybox !!}
     <div>
       <span></span>
       <div class="container">
@@ -63,23 +63,23 @@
             @foreach( $galleries as $gallery )
             <ul>
               <li>
-                <a class="fancybox" rel="gallery1" href="{{ $gallery->image_big }}" title="{{ $gallery->title_big }}">
-                  <img src="{{ $gallery->thumb_big }}" />
+                <a class="fancybox" rel="gallery1" href="{{ env( 'APP_URL' ) . $gallery->image_big }}" title="{{ $gallery->title_big }}">
+                  <img src="{{ env( 'APP_URL' ) . $gallery->thumb_big }}" />
                 </a>
               </li>
               <li>
-                <a class="fancybox" rel="gallery1" href="{{ $gallery->image_small_1 }}" title="{{ $gallery->title_small_1 }}">
-                  <img src="{{ $gallery->thumb_small_1 }}" />
+                <a class="fancybox" rel="gallery1" href="{{ env( 'APP_URL' ) . $gallery->image_small_1 }}" title="{{ $gallery->title_small_1 }}">
+                  <img src="{{ env( 'APP_URL' ) . $gallery->thumb_small_1 }}" />
                 </a>
               </li>
               <li>
-                <a class="fancybox" rel="gallery1" href="{{ $gallery->image_small_2 }}" title="{{ $gallery->title_small_2 }}">
-                  <img src="{{ $gallery->thumb_small_2 }}" />
+                <a class="fancybox" rel="gallery1" href="{{ env( 'APP_URL' ) . $gallery->image_small_2 }}" title="{{ $gallery->title_small_2 }}">
+                  <img src="{{ env( 'APP_URL' ) . $gallery->thumb_small_2 }}" />
                 </a>
               </li>
               <li>
-                <a class="fancybox" rel="gallery1" href="{{ $gallery->image_small_3 }}" title="{{ $gallery->title_small_3 }}">
-                  <img src="{{ $gallery->thumb_small_3 }}" />
+                <a class="fancybox" rel="gallery1" href="{{ env( 'APP_URL' ) . $gallery->image_small_3 }}" title="{{ $gallery->title_small_3 }}">
+                  <img src="{{ env( 'APP_URL' ) . $gallery->thumb_small_3 }}" />
                 </a>
               </li>
             </ul>
@@ -87,7 +87,7 @@
           </div>
           <div class="anuncio">
             <span>
-              {!! $home->description_gallery_fancybox !!}
+              {!! $brand->description_gallery_fancybox !!}
             </span>
           </div>
         </div>
@@ -102,34 +102,34 @@
   <section class="versiones">
     <div id="versiones"></div>
     <div class="container">
-      {!! $home->title_versions_gallery !!}
+      {!! $brand->title_versions_gallery !!}
       <div class="modelos">
         <div>
           <div>
-            @for ( $i = 1; $i < 2; $i++ )
+            @for ( $i = 0; $i < 2; $i++ )
             <div>
-              <img src="{{ $car->thumbnail }}" />
-              <h3>{{ $car->model }}</h3>
-              <h5> DESDE {{ $car->price }}<sup>MN</sup></h5>
+              <img src="{{ env( 'APP_URL' ) . $car[ $i ]->thumbnail }}" />
+              <h3>{{ $car[ $i ]->model }}</h3>
+              <h5> DESDE {{ $car[ $i ]->price }}<sup>MN</sup></h5>
               <ul>
-                {!! $car->description !!}
+                {!! $car[ $i ]->description !!}
               </ul>
               <span></span>
-              <a href="especificaciones/{{ $car->slug }}" class="link">Ver detalle</a>
+              <a href="especificaciones/{{ $car[ $i ]->slug }}" class="link">Ver detalle</a>
             </div>
             @endfor
           </div>
           <div>
-            @for ( $i = 3; $i <= 3; $i++ )
+            @for ( $i = 2; $i < 4; $i++ )
             <div>
-              <img src="{{ $car->thumbnail }}" />
-              <h3>{{ $car->model }}</h3>
-              <h5> DESDE {{ $car->price }}<sup>MN</sup></h5>
+              <img src="{{ env( 'APP_URL' ) . $car[ $i ]->thumbnail }}" />
+              <h3>{{ $car[ $i ]->model }}</h3>
+              <h5> DESDE {{ $car[ $i ]->price }}<sup>MN</sup></h5>
               <ul>
-                {!! $car->description !!}
+                {!! $car[ $i ]->description !!}
               </ul>
               <span></span>
-              <a href="especificaciones/{{ $car->slug }}" class="link">Ver detalle</a>
+              <a href="especificaciones/{{ $car[ $i ]->slug }}" class="link">Ver detalle</a>
             </div>
             @endfor
           </div>
@@ -141,7 +141,7 @@
     <div id="manejo"></div>
     <div class="container">
       <div>
-        {!! $home->title_driving_animation !!}
+        {!! $brand->title_driving_animation !!}
       </div>
     </div>
   </section>
@@ -149,9 +149,9 @@
     <div id="descanso"></div>
     <div class="container">
       <div>
-        {!! $home->title_footer !!}
+        {!! $brand->title_footer !!}
         <span></span>
-        {!! $home->description_footer !!}
+        {!! $brand->description_footer !!}
         <a href="distribuidores" class="boton">Consíguelo aquí</a>
       </div>
     </div>

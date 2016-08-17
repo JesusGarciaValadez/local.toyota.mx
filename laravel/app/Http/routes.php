@@ -11,9 +11,9 @@
 |
 */
 
-Route::get( '/{id}', [ 'as' => 'home', 'uses' => 'HomeController@index' ] );
+Route::get( '/{slug}', [ 'as' => 'home', 'uses' => 'HomeController@index' ] );
 
-Route::get( '/home/{id}', [ 'as' => 'home', 'uses' => 'HomeController@index' ] );
+Route::get( '/home/{slug}', [ 'as' => 'home', 'uses' => 'HomeController@index' ] );
 
 
 /*

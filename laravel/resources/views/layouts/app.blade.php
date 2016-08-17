@@ -43,10 +43,9 @@
 @section( 'header' )
   <header>
     <div class="menu1 fadeInDown animated">
-      @unless ( !route( 'home' ) )
-      {!! Html::link( route( 'home' ), 'Volver', [ 'class' => 'btnprev' ] ) !!}
-      @endunless
-      {!! Html::link( route( 'home' ), '', [
+      {!! Html::link( action( 'HomeController@index', [
+        'slug'  => $slug
+      ] ), '', [
         'target'  => '_blank',
         'class'   => 'logo'
       ] ) !!}

@@ -12,16 +12,16 @@ class Brands extends Model
    * @var array
    */
   protected $fillable = [
-    'title_h1',
+    'name',
     'slogan',
+    'title_h1',
     'title_gallery_fancybox',
     'description_gallery_fancybox',
     'title_versions_gallery',
-    'car_descriptions_gallery_one_id',
-    'car_descriptions_gallery_two_id',
     'title_driving_animation',
     'title_footer',
     'description_footer',
+    'slug',
   ];
 
   /**
@@ -37,15 +37,4 @@ class Brands extends Model
    * @var array
    */
   protected $hidden   = [ ];
-
-  public function carDescriptionsGalleryOne ( )
-  {
-    return $this->hasOne( CarDescriptionGalleryOne::class );
-  }
-
-  public function carDescriptionsGalleryTwo ( )
-  {
-    return $this->hasOne( CarDescriptionGalleryTwo::class );
-  }
-
 }
