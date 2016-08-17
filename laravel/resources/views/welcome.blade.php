@@ -109,7 +109,7 @@
             @for ( $i = 0; $i < 2; $i++ )
             <div>
               <img src="{{ env( 'APP_URL' ) . $car[ $i ]->thumbnail }}" />
-              <h3>{{ $car[ $i ]->model }}</h3>
+              <h3>{{ $car[ $i ]->title }}</h3>
               <h5> DESDE {{ $car[ $i ]->price }}<sup>MN</sup></h5>
               <ul>
                 {!! $car[ $i ]->description !!}
@@ -123,7 +123,7 @@
             @for ( $i = 2; $i < 4; $i++ )
             <div>
               <img src="{{ env( 'APP_URL' ) . $car[ $i ]->thumbnail }}" />
-              <h3>{{ $car[ $i ]->model }}</h3>
+              <h3>{{ $car[ $i ]->title }}</h3>
               <h5> DESDE {{ $car[ $i ]->price }}<sup>MN</sup></h5>
               <ul>
                 {!! $car[ $i ]->description !!}

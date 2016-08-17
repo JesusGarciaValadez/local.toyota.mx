@@ -45,7 +45,7 @@ class CreateCarsTable extends Migration
             ->on( 'internal_specifications' )
             ->onDelete( 'cascade' );
 
-      $table->string( 'model' )
+      $table->string( 'title' )
             ->unique();
       $table->string( 'thumbnail' );
       $table->string( 'price' );

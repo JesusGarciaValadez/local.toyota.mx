@@ -17,7 +17,7 @@
       </div>
       @endforeach
       <div class="panel panel-default">
-        <div class="panel-heading">Editar marca de automóvil: {!! $home->brand !!}</div>
+        <div class="panel-heading">Editar marca de automóvil: {!! $home->name !!}</div>
         <div class="panel-body">
           <div class="table-responsive">
             <table class="table table-striped table-hover">
@@ -282,10 +282,10 @@
                   </td>
                 </tr>{{-- Admin\TitleVersionGalleryController --}}
                 <tr>
-                  <td class="col-lg-5 col-md-5"><p><small><span>Galería de descripciones uno:</small></p></td>
+                  <td class="col-lg-5 col-md-5"><p><small><span>Galería de descripción de modelos:</small></p></td>
                   <td class="col-lg-1 col-md-1 col-md-offset-2">
                     <div class="clearfix">
-                      <a href="{{ action( 'Admin\CarDescriptionGalleryOneController@index', [ 'id' => $home->id ] ) }}" class="btn btn-info"><i class="glyphicon glyphicon-th-list"></i> Lista</a>
+                      <a href="{{ action( 'Admin\CarController@index', [ 'id' => $home->id ] ) }}" class="btn btn-info"><i class="glyphicon glyphicon-th-list"></i> Lista</a>
                     </div>
                   </td>
                   <td class="col-lg-1 col-md-1">
@@ -308,35 +308,7 @@
                       <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-remove"></i> Eliminar</a>
                     </div>
                   </td>
-                </tr>{{-- CarDescriptionGalleryOneController --}}
-                <tr>
-                  <td class="col-lg-5 col-md-5"><p><small><span>Galería de descripciones dos:</small></p></td>
-                  <td class="col-lg-1 col-md-1 col-md-offset-2">
-                    <div class="clearfix">
-                      <a href="{{ action( 'Admin\CarDescriptionGalleryTwoController@index', [ 'id' => $home->id ] ) }}" class="btn btn-info"><i class="glyphicon glyphicon-th-list"></i> Lista</a>
-                    </div>
-                  </td>
-                  <td class="col-lg-1 col-md-1">
-                    <div class="clearfix">
-                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-pencil"></i> Crear</a>
-                    </div>
-                  </td>
-                  <td class="col-lg-1 col-md-1">
-                    <div class="clearfix">
-                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-list"></i> Mostrar</a>
-                    </div>
-                  </td>
-                  <td class="col-lg-1 col-md-1">
-                    <div class="clearfix">
-                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
-                    </div>
-                  </td>
-                  <td class="col-lg-1 col-md-1">
-                    <div class="clearfix">
-                      <a href="#" class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-remove"></i> Eliminar</a>
-                    </div>
-                  </td>
-                </tr>{{-- CarDescriptionGalleryTwoController --}}
+                </tr>{{-- Admin\CarController --}}
                 <tr>
                   <td class="col-lg-5 col-md-5"><p><small><span>Título animádo banner "Manejo":</small></p></td>
                   <td class="col-lg-1 col-md-1 col-md-offset-2">

@@ -19,7 +19,7 @@
       <div class="panel panel-default">
         <div class="panel-heading">Editar {{ strtolower( $title ) }} @ marca de automóvil:
           @if ( $brand )
-          {{ $brand }}
+          {!! $brand !!}
           @else
           {!! $home->brand !!}
           @endif

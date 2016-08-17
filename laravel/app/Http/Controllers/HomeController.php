@@ -23,7 +23,6 @@ class HomeController extends Controller
                                                ->get( );
     $car        = \Highlander\Car::where( 'brands_id', $brand->id )
                                  ->get( );
-    \Debugbar::log( $galleries );
 
     return view( 'welcome' )->withSlug( $slug )
                             ->withBrand( $brand )

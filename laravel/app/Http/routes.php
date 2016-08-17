@@ -11,10 +11,7 @@
 |
 */
 
-Route::get( '/{slug}', [ 'as' => 'home', 'uses' => 'HomeController@index' ] );
-
-Route::get( '/home/{slug}', [ 'as' => 'home', 'uses' => 'HomeController@index' ] );
-
+Route::auth( );
 
 /*
 |--------------------------------------------------------------------------
@@ -26,7 +23,6 @@ Route::get( '/home/{slug}', [ 'as' => 'home', 'uses' => 'HomeController@index' ]
 | and give it the controller to call when that URI is requested.
 |
 */
-
 
 Route::resource( 'admin', 'Admin\AdminController', [
   'only'        => [ 'index', 'show' ],
@@ -85,9 +81,11 @@ Route::group( [ 'prefix' => 'admin', 'middleware' => 'auth' ], function ( )
     Route::resource( 'slider-features', 'Admin\SliderFeaturesController' );
     Route::resource( 'title-slider-features', 'Admin\TitleSliderFeaturesController' );
     Route::resource( 'gallery-fancyboxes', 'Admin\GalleryFancyboxesController' );
-    Route::resource( 'car-description-gallery-one', 'Admin\CarDescriptionGalleryOneController' );
-    Route::resource( 'car-description-gallery-two', 'Admin\CarDescriptionGalleryTwoController' );
+    Route::resource( 'car', 'Admin\CarController' );
   } );
 } );
 
-Route::auth( );
+Route::get( '/{slug}', [ 'as' => 'home', 'uses' => 'HomeController@index' ] );
+
+Route::get( '/home/{slug}', [ 'as' => 'home', 'uses' => 'HomeController@index' ] );
+

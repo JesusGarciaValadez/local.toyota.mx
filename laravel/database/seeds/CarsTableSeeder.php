@@ -16,7 +16,7 @@ class CarsTableSeeder extends Seeder
       'technical_specifications_id' => 1,
       'external_specifications_id'  => 1,
       'internal_specifications_id'  => 1,
-      'model'                       => 'HIGHLANDER LE',
+      'title'                       => 'HIGHLANDER LE',
       'thumbnail'                   => 'assets/images/versiones/img_lateral.png',
       'price'                       => '$501,200.00',
       'description'                 => '<li>Parrilla negra con acentos cromados.</li>
@@ -31,7 +31,7 @@ class CarsTableSeeder extends Seeder
       'technical_specifications_id' => 2,
       'external_specifications_id'  => 2,
       'internal_specifications_id'  => 2,
-      'model'                       => 'HIGHLANDER XLE',
+      'title'                       => 'HIGHLANDER XLE',
       'thumbnail'                   => 'assets/images/versiones/img_lateral.png',
       'price'                       => '$565,200.00',
       'description'                 => '<li>Desempañador eléctrico en espejos laterales.</li>
@@ -46,7 +46,7 @@ class CarsTableSeeder extends Seeder
       'technical_specifications_id' => 1,
       'external_specifications_id'  => 1,
       'internal_specifications_id'  => 1,
-      'model'                       => 'HIGHLANDER CE',
+      'title'                       => 'HIGHLANDER CE',
       'thumbnail'                   => 'assets/images/versiones/img_lateral.png',
       'price'                       => '$501,200.00',
       'description'                 => '<li>Techo panorámico.</li>
@@ -61,7 +61,7 @@ class CarsTableSeeder extends Seeder
       'technical_specifications_id' => 2,
       'external_specifications_id'  => 2,
       'internal_specifications_id'  => 2,
-      'model'                       => 'HIGHLANDER XCE',
+      'title'                       => 'HIGHLANDER XCE',
       'thumbnail'                   => 'assets/images/versiones/img_lateral.png',
       'price'                       => '$656,700.00',
       'description'                 => '<li>Luces de cortesía en espejos laterales.</li>
