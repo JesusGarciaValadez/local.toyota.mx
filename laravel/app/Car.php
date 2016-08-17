@@ -13,9 +13,14 @@ class Car extends Model
    */
   protected $fillable = [
     'model',
+    'brands_id',
+    'thumbnail',
+    'price',
+    'description',
     'technical_specifications_id',
     'external_specifications_id',
-    'internal_specifications_id'
+    'internal_specifications_id',
+    'slug'
   ];
 
   /**
@@ -31,6 +36,15 @@ class Car extends Model
    * @var array
    */
   protected $hidden   = [ '' ];
+
+  /**
+   * The brands attributes relation
+   * @return Brands brands
+   */
+  public function brands ()
+  {
+    return $this->belonsTo( Brands::class );
+  }
 
   /**
    * The technical attributes relation

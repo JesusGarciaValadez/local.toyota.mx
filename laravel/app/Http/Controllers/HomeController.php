@@ -21,10 +21,17 @@ class HomeController extends Controller
    *
    * @return \Illuminate\Http\Response
    */
-  public function index()
+  public function index( $id )
   {
-    $home   = \Highlander\Brands::first();
+    $home       = \Highlander\Brands::findOrFail( $id );
+    $slides     = \Highlander\SliderFeature::where( 'brands_id', $id );
+    $galleries  = \Highlander\GalleryFancyboxes::where( 'brands_id', $id );
+    $car        = \Highlander\Car::where( 'brands_id', $id );
+    dd( $car );
 
-    return view( 'welcome' )->withHome( $home );
+    return view( 'welcome' )->withHome( $home )
+                            ->withSlides( $slides )
+                            ->withGalleries( $galleries )
+                            ->withCar( $car );
   }
 }

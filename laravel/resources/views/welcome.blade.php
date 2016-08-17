@@ -37,12 +37,16 @@
     <div id="highlights"></div>
     <div class="container">
       <ul class="highs">
-        {!! $home->sliderFeatures->content !!}
+        @foreach( $slides as $slide )
+        {!! $slide->content !!}
+        @endforeach
       </ul>
       <div class="menuHigh">
         <span class="fa fa-angle-up"></span>
         <ul>
-          {!! $home->titlesSliderFeatures->content !!}
+          @foreach( $slides as $slide )
+          {!! $slide->title !!}
+          @endforeach
         </ul>
         <span class="fa fa-angle-down"></span>
       </div>
@@ -56,7 +60,7 @@
       <div class="container">
         <div class="contGale">
           <div>
-            @foreach( $home->galleryFancyboxes as $gallery )
+            @foreach( $galleries as $gallery )
             <ul>
               <li>
                 <a class="fancybox" rel="gallery1" href="{{ $gallery->image_big }}" title="{{ $gallery->title_big }}">
@@ -83,9 +87,7 @@
           </div>
           <div class="anuncio">
             <span>
-
               {!! $home->description_gallery_fancybox !!}
-
             </span>
           </div>
         </div>
@@ -104,10 +106,32 @@
       <div class="modelos">
         <div>
           <div>
-            {!! $home->carDescriptionGalleryOne->content !!}
+            @for ( $i = 1; $i < 2; $i++ )
+            <div>
+              <img src="{{ $car->thumbnail }}" />
+              <h3>{{ $car->model }}</h3>
+              <h5> DESDE {{ $car->price }}<sup>MN</sup></h5>
+              <ul>
+                {!! $car->description !!}
+              </ul>
+              <span></span>
+              <a href="especificaciones/{{ $car->slug }}" class="link">Ver detalle</a>
+            </div>
+            @endfor
           </div>
           <div>
-            {!! $home->carDescriptionGalleryTwo->content !!}
+            @for ( $i = 3; $i <= 3; $i++ )
+            <div>
+              <img src="{{ $car->thumbnail }}" />
+              <h3>{{ $car->model }}</h3>
+              <h5> DESDE {{ $car->price }}<sup>MN</sup></h5>
+              <ul>
+                {!! $car->description !!}
+              </ul>
+              <span></span>
+              <a href="especificaciones/{{ $car->slug }}" class="link">Ver detalle</a>
+            </div>
+            @endfor
           </div>
         </div>
       </div>
