@@ -24,7 +24,7 @@ class BrandRequest extends Request
   public function rules()
   {
     return [
-      'brand' => 'required|string'
+      'name' => 'required|string'
     ];
   }
 }

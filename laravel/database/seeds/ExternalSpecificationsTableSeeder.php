@@ -51,8 +51,8 @@ class ExternalSpecificationsTableSeeder extends Seeder
     ] );
 
     DB::table( 'external_specifications' )->insert( [
-      'car_id'      => 2,
-      'description' => utf8_encode(
+      'car_id'      => 1,
+      'description' => base64_encode(
         serialize( [
           'Faros'             => [
             'Cristales tintados con filtro contra rayos UV',
@@ -90,7 +90,7 @@ class ExternalSpecificationsTableSeeder extends Seeder
     ] );
 
     DB::table( 'external_specifications' )->insert( [
-      'car_id'      => 3,
+      'car_id'      => 1,
       'description' => base64_encode(
         serialize( [
           'Faros'             => [
@@ -129,8 +129,8 @@ class ExternalSpecificationsTableSeeder extends Seeder
     ] );
 
     DB::table( 'external_specifications' )->insert( [
-      'car_id'      => 4,
-      'description' => utf8_encode(
+      'car_id'      => 1,
+      'description' => base64_encode(
         serialize( [
           'Faros'             => [
             'Cristales tintados con filtro contra rayos UV',

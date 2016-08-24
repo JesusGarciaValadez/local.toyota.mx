@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends( 'layouts.app' )
 
 @section( 'title', 'Distribuidores @ Highlander 2016' )
 

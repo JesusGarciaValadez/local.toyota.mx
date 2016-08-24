@@ -54,7 +54,7 @@ class InternalSpecificationsTableSeeder extends Seeder
     ] );
 
     DB::table( 'internal_specifications' )->insert( [
-      'car_id'      => 2,
+      'car_id'      => 1,
       'description' => base64_encode(
         serialize( [
           'AcabadosInteriores'  => [
@@ -100,7 +100,7 @@ class InternalSpecificationsTableSeeder extends Seeder
     ] );
 
     DB::table( 'internal_specifications' )->insert( [
-      'car_id'      => 3,
+      'car_id'      => 1,
       'description' => base64_encode(
         serialize( [
           'AcabadosInteriores'    => [
@@ -142,7 +142,7 @@ class InternalSpecificationsTableSeeder extends Seeder
     ] );
 
     DB::table( 'internal_specifications' )->insert( [
-      'car_id'      => 4,
+      'car_id'      => 1,
       'description' => base64_encode(
         serialize( [
           'AcabadosInteriores'  => [

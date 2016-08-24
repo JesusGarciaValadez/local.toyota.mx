@@ -20,6 +20,7 @@ class TitleVersionGalleryController extends Controller
   public function edit( $id )
   {
     $brands       = \Highlander\Brands::findOrFail( $id );
+    $method       = 'PUT';
     $typeOfField  = 'modelos';
     $fieldName    = 'Título de galería de modelos';
     $url          = 'admin/title_versions_gallery/' . $id;
@@ -27,7 +28,7 @@ class TitleVersionGalleryController extends Controller
     $fieldValue   = $brands->$field;
     $toReturn     = 'admin/' . $id;
 
-    return view( 'admin.text', compact( 'brands', 'typeOfField', 'fieldName', 'url', 'field', 'fieldValue', 'toReturn' ) );
+    return view( 'admin.text', compact( 'brands', 'method', 'typeOfField', 'fieldName', 'url', 'field', 'fieldValue', 'toReturn' ) );
   }
 
   /**

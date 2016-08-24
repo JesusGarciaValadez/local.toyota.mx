@@ -20,14 +20,15 @@ class BrandController extends Controller
   public function edit( $id )
   {
     $brands       = \Highlander\Brands::findOrFail( $id );
+    $method       = 'PUT';
     $typeOfField  = 'Marca';
     $fieldName    = 'Marca';
     $url          = 'admin/brand/' . $id;
-    $field        = 'brand';
+    $field        = 'name';
     $fieldValue   = $brands->$field;
     $toReturn     = 'admin/' . $id;
 
-    return view( 'admin.text', compact( 'brands', 'typeOfField', 'fieldName', 'url', 'field', 'fieldValue', 'toReturn' ) );
+    return view( 'admin.text', compact( 'brands', 'method', 'typeOfField', 'fieldName', 'url', 'field', 'fieldValue', 'toReturn' ) );
   }
 
   /**
@@ -39,7 +40,7 @@ class BrandController extends Controller
    */
   public function update( BrandRequest $request, $id )
   {
-    $brand    = [ 'brand' => $request->brand ];
+    $brand    = [ 'name' => $request->brand ];
     $result   = \Highlander\Brands::where( 'id', $id )
                                   ->update( $brand );
 

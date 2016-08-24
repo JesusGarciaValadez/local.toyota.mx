@@ -20,6 +20,7 @@ class TitleH1Controller extends Controller
   public function edit( $id )
   {
     $brands       = \Highlander\Brands::findOrFail( $id );
+    $method       = 'PUT';
     $typeOfField  = 'Título H1';
     $fieldName    = 'Título H1';
     $url          = 'admin/title_h1/' . $id;
@@ -27,7 +28,7 @@ class TitleH1Controller extends Controller
     $fieldValue   = $brands->$field;
     $toReturn     = 'admin/' . $id;
 
-    return view( 'admin.text', compact( 'brands', 'typeOfField', 'fieldName', 'url', 'field', 'fieldValue', 'toReturn' ) );
+    return view( 'admin.text', compact( 'brands', 'method', 'typeOfField', 'fieldName', 'url', 'field', 'fieldValue', 'toReturn' ) );
   }
 
   /**

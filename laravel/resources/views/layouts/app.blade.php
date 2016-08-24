@@ -73,7 +73,7 @@
           </li>
           -->
           <li class="distri">
-            {!! Html::link( 'distribuidores', 'Distribuidores', [] ) !!}
+            {!! Html::link( action( 'HomeController@retail', [ 'slug' => $slug ] ), 'Distribuidores', [ ] ) !!}
           </li>
         </ul>
       </nav>
@@ -169,7 +169,10 @@
   {!! Html::script( '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' ) !!}
   {!! Html::script( 'http://thecodeplayer.com/uploads/js/jquery.easing.min.js' ) !!}
   <script>window.jQuery || document.write( '<script src="assets/js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-  {!! Html::script( 'http://maps.googleapis.com/maps/api/js?key=AIzaSyCuosyGWyggBFw6Fzv6T3TquJGqUz76DGQ&libraries=places' ) !!}
+  {!! Html::script( "//maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBPOumb2a6uPw5QMcSfgVTzQAubwYJLrDo&libraries=places", [
+    "async" => "",
+    "defer" => "defer"
+  ] ) !!}
   {!! Html::script( 'assets/plugins/bxslider/jquery.bxslider.min.js' ) !!}
   {!! Html::script( 'assets/plugins/threesixty/threesixty.js' ) !!}
   {!! Html::script( 'assets/plugins/fitvids/jquery.fitvids.js') !!}

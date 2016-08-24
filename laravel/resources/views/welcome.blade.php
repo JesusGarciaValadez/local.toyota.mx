@@ -109,13 +109,13 @@
             @for ( $i = 0; $i < 2; $i++ )
             <div>
               <img src="{{ env( 'APP_URL' ) . $car[ $i ]->thumbnail }}" />
-              <h3>{{ $car[ $i ]->title }}</h3>
+              <h3>{!! $car[ $i ]->name !!}</h3>
               <h5> DESDE {{ $car[ $i ]->price }}<sup>MN</sup></h5>
               <ul>
                 {!! $car[ $i ]->description !!}
               </ul>
               <span></span>
-              <a href="especificaciones/{{ $car[ $i ]->slug }}" class="link">Ver detalle</a>
+              <a href="{{ $slug }}/especificaciones/{{ $car[ $i ]->slug }}" class="link">Ver detalle</a>
             </div>
             @endfor
           </div>
@@ -123,13 +123,13 @@
             @for ( $i = 2; $i < 4; $i++ )
             <div>
               <img src="{{ env( 'APP_URL' ) . $car[ $i ]->thumbnail }}" />
-              <h3>{{ $car[ $i ]->title }}</h3>
+              <h3>{!! $car[ $i ]->name !!}</h3>
               <h5> DESDE {{ $car[ $i ]->price }}<sup>MN</sup></h5>
               <ul>
                 {!! $car[ $i ]->description !!}
               </ul>
               <span></span>
-              <a href="especificaciones/{{ $car[ $i ]->slug }}" class="link">Ver detalle</a>
+              <a href="{{ $slug }}/especificaciones/{{ $car[ $i ]->slug }}" class="link">Ver detalle</a>
             </div>
             @endfor
           </div>

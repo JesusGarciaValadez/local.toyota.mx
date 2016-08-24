@@ -20,6 +20,7 @@ class TitleDrivingAnimationController extends Controller
   public function edit( $id )
   {
     $brands       = \Highlander\Brands::findOrFail( $id );
+    $method       = 'PUT';
     $typeOfField  = 'banner manejo';
     $fieldName    = 'Título animádo banner "Manejo"';
     $url          = 'admin/title_driving_animation/' . $id;
@@ -27,7 +28,7 @@ class TitleDrivingAnimationController extends Controller
     $fieldValue   = $brands->$field;
     $toReturn     = 'admin/' . $id;
 
-    return view( 'admin.text', compact( 'brands', 'typeOfField', 'fieldName', 'url', 'field', 'fieldValue', 'toReturn' ) );
+    return view( 'admin.text', compact( 'brands', 'method', 'typeOfField', 'fieldName', 'url', 'field', 'fieldValue', 'toReturn' ) );
   }
 
   /**

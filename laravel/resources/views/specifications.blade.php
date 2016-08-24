@@ -7,20 +7,22 @@
 @endsection
 
 @section('content')
-<section class="especificaciones" data-modelo="{{ $model->name }}">
+<section class="especificaciones" data-modelo="{{ $car->name }}">
   <div id="especificaciones"></div>
   <div class="scroll-Interno">
     <div class="container">
       <div class="cont-retic">
-        <h1>{{ $model->title }}</h1>
+        <h1>{!! $car->title !!}</h1>
         <fieldset>
           <select class="jsn-select select-otraver">
-          @foreach( $model as $c => $m )
-            @if( $c == $modelo )
-              <option value="{{ $c }}" selected>{{ $m }}</option>
+          @foreach( $cars as $model )
+
+            @if( $model->name == $car->name )
+              <option value="{{ $model->slug }}" selected>{{ $model->name }}</option>
             @else
-              <option value="{{ $c }}">{{ $m }}</option>
+              <option value="{{ $model->slug }}">{{ $model->name }}</option>
             @endif
+
           @endforeach
           </select>
         </fieldset>
@@ -32,7 +34,7 @@
           <div class="espMotor">
             <dl>
               <dd>
-                <img class="jsn-UrlMotor" alt="Motor" src="{{ env( 'APP_URL' ) . 'assets/images/datos/img-motor.jpg' }}">
+                <img src="{{ env( 'APP_URL' ) . $car->technicalSpecifications->description[ 'UrlMotor' ] }}" class="jsn-UrlMotor" alt="Motor">
               </dd>
               <dd>
                 <dl>
@@ -44,7 +46,7 @@
                       <img src="{{ env( 'APP_URL' ) . 'assets/images/icons/icn-01.jpg' }}">
                     </div>
                     <div class="motor">
-                      <p>2.7 litros</p>
+                      <p>{{ $car->technicalSpecifications->description[ 'Motor' ][ 'Capacidad' ] }}</p>
                       <small>Cilindrada / capacidad</small>
                     </div>
                   </dd>
@@ -53,7 +55,7 @@
                       <img src="{{ env( 'APP_URL' ) . 'assets/images/icons/icn-02.jpg' }}">
                     </div>
                     <div>
-                      <p>166 @ 5,200</p>
+                      <p>{{ $car->technicalSpecifications->description[ 'Motor' ][ 'Potencia' ] }}</p>
                       <small>potencia máxima hp @ rpm</small>
                     </div>
                   </dd>
@@ -62,7 +64,7 @@
                       <img src="{{ env( 'APP_URL' ) . 'assets/images/icons/icn-03.jpg' }}">
                     </div>
                     <div>
-                      <p>4 en línea</p>
+                      <p>{{ $car->technicalSpecifications->description[ 'Motor' ][ 'Cilindros' ] }}</p>
                       <small>Número de cilindros / configuración</small>
                     </div>
                   </dd>
@@ -71,7 +73,7 @@
                       <img src="{{ env( 'APP_URL' ) . 'assets/images/icons/icn-04.jpg' }}">
                     </div>
                     <div>
-                      <p>16</p>
+                      <p>{{ $car->technicalSpecifications->description[ 'Motor' ][ 'Valvulas' ] }}</p>
                       <small>Torque máximo lb.pie @ rpm</small>
                     </div>
                   </dd>
@@ -85,26 +87,25 @@
                 <dt>
                   <h3>Frenos</h3>
                 </dt>
+                @foreach( $car->technicalSpecifications->description[ 'Frenos' ] as $key => $phrase )
+
                 <dd>
-                  <p>De potencia, reforzado por vacío</p>
+                  <p>{{ $phrase }}</p>
                 </dd>
-                <dd>
-                  <p>Delanteros / Disco ventilado</p>
-                </dd>
-                <dd>
-                  <p>Traseros / Tambor</p>
-                </dd>
+
+                @endforeach
               </dl>
             </div>
             <div class="espRines jsn-Rines">
               <dl>
                 <dt><h3>Neumáticos / Rines</h3></dt>
+                @foreach( $car->technicalSpecifications->description[ 'Rines' ] as $key => $phrase )
+
                 <dd>
-                  <p>C205/70R15</p>
+                  <p>{{ $phrase }}</p>
                 </dd>
-                <dd>
-                  <p>Juego de tapabucos con logo Toyota</p>
-                </dd>
+
+                @endforeach
               </dl>
             </div>
           </div>
@@ -126,21 +127,13 @@
                 <dt>
                   <h3>Visibilidad</h3>
                 </dt>
+                @foreach( $car->externalSpecifications->description[ 'Visibilidad' ][ 'Cristales' ] as $key => $phrase )
+
                 <dd>
-                  <p>Faros tipo multireflectores de halógeno</p>
+                  <p>{{ $phrase }}</p>
                 </dd>
-                <dd>
-                  <p>Luces traseras multi-reflectoras</p>
-                </dd>
-                <dd>
-                  <p>Luz auxiliar de freno elevada (tipo LED)</p>
-                </dd>
-                <dd>
-                  <p>Luces intermitentes de emergencia</p>
-                </dd>
-                <dd>
-                  <p>Luces direccionales en salpicaderas delanteras</p>
-                </dd>
+
+                @endforeach
               </dl>
             </div>
             <div class="extSeguridadExterior jsn-SeguridadExterior">
@@ -148,18 +141,13 @@
                 <dt>
                   <h3>Apariencia</h3>
                 </dt>
+                @foreach( $car->externalSpecifications->description[ 'SeguridadExterior' ] as $key => $phrase )
+
                 <dd>
-                  <p>Defensa delantera integrada al color de la carrocería</p>
+                  <p>{{ $phrase }}</p>
                 </dd>
-                <dd>
-                  <p>Defensa trasera / Acero pintado en color obscuro con antiderrapante y escalón</p>
-                </dd>
-                <dd>
-                  <p>Escape convencional</p>
-                </dd>
-                <dd>
-                  <p>Caja con protección para medallón y 2 soportes para luces</p>
-                </dd>
+
+                @endforeach
               </dl>
             </div>
           </div>
@@ -171,15 +159,13 @@
                 </dt>
                 <dt class="jsn-VisibilidadCristales">
                   <dl>
+                    @foreach( $car->externalSpecifications->description[ 'Visibilidad' ][ 'Cristales' ] as $key => $phrase )
+
                     <dd>
-                      <p>Altura / 480 mm</p>
+                      <p>{{ $phrase }}</p>
                     </dd>
-                    <dd>
-                      <p>Ancho / 1,575 mm</p>
-                    </dd>
-                    <dd>
-                      <p>Largo / 2,315 mm</p>
-                    </dd>
+
+                    @endforeach
                   </dl>
                 </dt>
                 <dt class="jsn-VisibilidadEspejosLaterales">
@@ -187,15 +173,13 @@
                     <dt>
                       <h6>Pesos y capacidades</h6>
                     </dt>
+                    @foreach( $car->externalSpecifications->description[ 'Visibilidad' ][ 'EspejosLaterales' ] as $key => $phrase )
+
                     <dd>
-                      <p>Capacidad del tanque de combustible / 80 Lts</p>
+                      <p>{{ $phrase }}</p>
                     </dd>
-                    <dd>
-                      <p>Peso vehícular / 1,660 Kg</p>
-                    </dd>
-                    <dd>
-                      <p>Capacidad de carga / 1,040Kg</p>
-                    </dd>
+
+                    @endforeach
                   </dl>
                 </dt>
               </dl>
@@ -205,27 +189,13 @@
                 <dt>
                   <h3>Pesos y capacidades</h3>
                 </dt>
+                @foreach( $car->externalSpecifications->description[ 'Techo' ] as $key => $phrase )
+
                 <dd>
-                  <p>Altura total / 1,690 mm</p>
+                  <p>{{ $phrase }}</p>
                 </dd>
-                <dd>
-                  <p>Ancho total / 1,800 mm</p>
-                </dd>
-                <dd>
-                  <p>Largo total / 5,335 mm</p>
-                </dd>
-                <dd>
-                  <p>Distancia entre ejes / 3,085 mm</p>
-                </dd>
-                <dd>
-                  <p>Diámetro de giro / 12.6 m</p>
-                </dd>
-                <dd>
-                  <p>Entrevía delantera / 1,510 mm</p>
-                </dd>
-                <dd>
-                  <p>Entrevía trasera / 1,510 mm</p>
-                </dd>
+
+                @endforeach
               </dl>
             </div>
           </div>
@@ -249,21 +219,14 @@
                 <dt>
                   <h3>Acabados interiores</h3>
                 </dt>
+
+                @foreach( $car->internalSpecifications->description[ 'AcabadosInteriores' ] as $key => $phrase )
+
                 <dd>
-                  <p>Volante / Uretano</p>
+                  <p>{{ $phrase }}</p>
                 </dd>
-                <dd>
-                  <p>Manijas interiores negras</p>
-                </dd>
-                <dd>
-                  <p>Tapicería de los asientos / Tela en 2 tonos</p>
-                </dd>
-                <dd>
-                  <p>Vestidura del piso / Alfombra</p>
-                </dd>
-                <dd>
-                  <p>Vestidura del techo / Tela afelpada</p>
-                </dd>
+
+                @endforeach
               </dl>
             </div>
             <div class="extAsientos jsn-Asientos">
@@ -271,12 +234,14 @@
                 <dt>
                   <h3>Dimensiones</h3>
                 </dt>
+
+                @foreach( $car->internalSpecifications->description[ 'Asientos' ] as $key => $phrase )
+
                 <dd>
-                  <p>Asiento del conductor / Tipo cubo con 4 ajustes manuales y cabecera ajustables en altura</p>
+                  <p>{{ $phrase }}</p>
                 </dd>
-                <dd>
-                  <p>Asiento del acompañante / Tipo banca 60% con 2 ajustes manuales (ángulo del respaldo) y cabeceras fijas</p>
-                </dd>
+
+                @endforeach
               </dl>
             </div>
           </div>
@@ -286,27 +251,13 @@
                 <dt>
                   <h3>Equipamiento</h3>
                 </dt>
+
+                @foreach( $car->internalSpecifications->description[ 'SistemaAudio' ] as $key => $phrase )
                 <dd>
-                  <p>Preparación de audio con antena de mastíl corto en techo</p>
+                  <p>{{ $phrase }}</p>
                 </dd>
-                <dd>
-                  <p>Número de bocinas / 2</p>
-                </dd>
-                <dd>
-                  <p>Cristales / Elevadores manuales</p>
-                </dd>
-                <dd>
-                  <p>Espejo retrovisor / Día - noche</p>
-                </dd>
-                <dd>
-                  <p>Toma auxiliar de corriente 12 V DC (120 W)</p>
-                </dd>
-                <dd>
-                  <p>Aire acondicionado manual</p>
-                </dd>
-                <dd>
-                  <p>Calefacción con sistema de recirculación de aire</p>
-                </dd>
+
+                @endforeach
               </dl>
             </div>
             <div class="extConfort jsn-Confort">
@@ -314,15 +265,13 @@
                 <dt>
                   <h3>Iluminación</h3>
                 </dt>
+                @foreach( $car->internalSpecifications->description[ 'Confort' ] as $key => $phrase )
+
                 <dd>
-                  <p>Iluminación de cortesía</p>
+                  <p>{{ $phrase }}</p>
                 </dd>
-                <dd>
-                  <p>Luces de domo</p>
-                </dd>
-                <dd>
-                  <p>Reflejantes de cortesía en puertas</p>
-                </dd>
+
+                @endforeach
               </dl>
             </div>
           </div>
@@ -332,15 +281,13 @@
                 <dt>
                   <h3>Seguridad</h3>
                 </dt>
+                @foreach( $car->internalSpecifications->description[ 'CinturonesSeguridad' ] as $key => $phrase )
+
                 <dd>
-                  <p>Compartimientos en la parte delantera 2 (1 abierto y 1 cerrado tipo guantera)</p>
+                  <p>{{ $phrase }}</p>
                 </dd>
-                <dd>
-                  <p>Portadocumentos en las puertas / 2</p>
-                </dd>
-                <dd>
-                  <p>Portavasos / portabotellas</p>
-                </dd>
+
+                @endforeach
               </dl>
             </div>
             <div class="extSeguridadInterior jsn-SeguridadInterior">
@@ -348,28 +295,17 @@
                 <dt>
                   <h3>Transmisión CTVi-S</h3>
                 </dt>
+                @foreach( $car->internalSpecifications->description[ 'SeguridadInterior' ] as $key => $phrase )
+
                 <dd>
-                  <p>Sistema ABS (Anti-lock Braking System)</p>
+                  <p>{{ $phrase }}</p>
                 </dd>
-                <dd>
-                  <p>Bolsa de aire frontales de múltiple etapa (conductor y acompañante)</p>
-                </dd>
-                <dd>
-                  <p>Bolsa de aire para rodillas / Conductor</p>
-                </dd>
-                <dd>
-                  <p>Desactivación bolsa de aire acompañante</p>
-                </dd>
-                <dd>
-                  <p>Cinturones de seguridad delanteros de tres puntos</p>
-                </dd>
-                <dd>
-                  <p>Zonas de deformación controlada contra impactos (Integradas al chasis y a la carrocería)</p>
-                </dd>
+
+                @endforeach
               </dl>
             </div>
           </div>
-          <a href="#" class="boton jsn-Download" target="_blank">Descargar ficha técnica</a>
+          <a href="{{ env( 'APP_URL' ) . $car->internalSpecifications->description[ 'Download' ] }}" class="boton jsn-Download" target="_blank">Descargar ficha técnica</a>
         </div>
       </div>
     </div>

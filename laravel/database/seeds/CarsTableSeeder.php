@@ -40,7 +40,7 @@ class CarsTableSeeder extends Seeder
             <li>Faros de niebla delanteros.</li>
             <li>Pantalla multi-información táctil de 8".</li>
             <li>Smart key</li>',
-      'slug'                        => 'corectvis'
+      'slug'                        => 'corecvis'
     ] );
 
     DB::table( 'cars' )->insert( [

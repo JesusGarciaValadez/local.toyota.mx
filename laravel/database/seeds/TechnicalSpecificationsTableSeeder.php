@@ -31,14 +31,14 @@ class TechnicalSpecificationsTableSeeder extends Seeder
             1 => 'Neumáticos (Incluyendo refacción)',
             2 => 'Juego de tapones'
           ],
-          'UrlMotor'  => 'img-motor.jpg',
-          'UrlAuto'   => 'img-yaris-sedan-detalle.jpg'
+          'UrlMotor'  => 'assets/images/datos/img-motor.jpg',
+          'UrlAuto'   => 'assets/images/datos/img-yaris-sedan-detalle.jpg'
         ] )
       )
     ] );
 
     DB::table( 'technical_specifications' )->insert( [
-      'car_id'      => 2,
+      'car_id'      => 1,
       'description' => base64_encode(
         serialize( [
           'Motor'     => [
@@ -57,14 +57,14 @@ class TechnicalSpecificationsTableSeeder extends Seeder
             1 => 'Neumáticos (Incluyendo refacción)',
             2 => 'Juego de tapones'
           ],
-          'UrlMotor'  => 'img-motor.jpg',
-          'UrlAuto'   => 'img-yaris-sedan-detalle.jpg'
+          'UrlMotor'  => 'assets/images/datos/img-motor.jpg',
+          'UrlAuto'   => 'assets/images/datos/img-yaris-sedan-detalle.jpg'
         ] )
       )
     ] );
 
     DB::table( 'technical_specifications' )->insert( [
-      'car_id'      => 3,
+      'car_id'      => 1,
       'description' => base64_encode(
         serialize( [
           'Motor'     => [
@@ -83,14 +83,14 @@ class TechnicalSpecificationsTableSeeder extends Seeder
             1 => 'Neumáticos (Incluyendo refacción)',
             2 => 'Juego de tapones'
           ],
-          'UrlMotor'  => 'img-motor.jpg',
-          'UrlAuto'   => 'img-yaris-sedan-detalle.jpg'
+          'UrlMotor'  => 'assets/images/datos/img-motor.jpg',
+          'UrlAuto'   => 'assets/images/datos/img-yaris-sedan-detalle.jpg'
         ] )
       )
     ] );
 
     DB::table( 'technical_specifications' )->insert( [
-      'car_id'      => 4,
+      'car_id'      => 1,
       'description' => base64_encode(
         serialize( [
           'Motor'     => [
@@ -109,8 +109,8 @@ class TechnicalSpecificationsTableSeeder extends Seeder
             1 => 'Neumáticos (Incluyendo refacción)',
             2 => 'Juego de tapones'
           ],
-          'UrlMotor'  => 'img-motor.jpg',
-          'UrlAuto'   => 'img-yaris-sedan-detalle.jpg'
+          'UrlMotor'  => 'assets/images/datos/img-motor.jpg',
+          'UrlAuto'   => 'assets/images/datos/img-yaris-sedan-detalle.jpg'
         ] )
       )
     ] );

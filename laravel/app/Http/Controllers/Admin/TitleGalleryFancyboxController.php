@@ -20,6 +20,7 @@ class TitleGalleryFancyboxController extends Controller
   public function edit( $id )
   {
     $brands       = \Highlander\Brands::findOrFail( $id );
+    $method       = 'PUT';
     $typeOfField  = 'galerías de fotos';
     $fieldName    = 'Título';
     $url          = 'admin/title_gallery_fancybox/' . $id;
@@ -27,7 +28,7 @@ class TitleGalleryFancyboxController extends Controller
     $fieldValue   = $brands->$field;
     $toReturn     = 'admin/' . $id;
 
-    return view( 'admin.text', compact( 'brands', 'typeOfField', 'fieldName', 'url', 'field', 'fieldValue', 'toReturn' ) );
+    return view( 'admin.text', compact( 'brands', 'method', 'typeOfField', 'fieldName', 'url', 'field', 'fieldValue', 'toReturn' ) );
   }
 
   /**

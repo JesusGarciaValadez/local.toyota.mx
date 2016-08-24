@@ -30,4 +30,32 @@ class HomeController extends Controller
                             ->withGalleries( $galleries )
                             ->withCar( $car );
   }
+
+  /**
+   * Show the car model's caracteristics
+   * @param  String $slug  The car brand name
+   * @param  String $model The car model slug name
+   * @return object|string View with parameters
+   */
+  public function show( $slug, $model )
+  {
+    $cars = \Highlander\Car::all( );
+    $car  = \Highlander\Car::where( 'slug', $model )
+                          ->get( )
+                          ->first();
+
+    return view( 'specifications' )->withCar( $car )
+                                   ->withCars( $cars )
+                                   ->withSlug( $slug );
+  }
+
+  /**
+   * Show retail branches map
+   * @param  String $slug  The car brand name
+   * @return object|string View with parameters
+   */
+  public function retail( $slug )
+  {
+    return view( 'retailers' )->withSlug( $slug );
+  }
 }

@@ -105,6 +105,8 @@ class CarController extends Controller
   public function edit( $id, $element_id )
   {
     $model      = \Highlander\Car::findOrFail( $element_id );
+    dd( $model->name );
+    dd( $model->technicalSpecifications );
     $brandName  = $model->title;
 
     return view( 'admin.editCar', compact( 'id', 'element_id', 'brandName', 'model' ) );

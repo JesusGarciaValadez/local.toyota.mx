@@ -24,7 +24,7 @@ class TitleVersionGalleryRequest extends Request
   public function rules()
   {
     return [
-      '' => 'required|string'
+      'title_versions_gallery' => 'required|string'
     ];
   }
 }
