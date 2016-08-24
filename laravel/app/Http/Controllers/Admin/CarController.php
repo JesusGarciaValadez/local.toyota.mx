@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use Highlander\Http\Requests;
 use Highlander\Http\Controllers\Controller;
 
+use Highlander\Http\Requests\CarRequest;
+
 class CarController extends Controller
 {
   /**
@@ -48,9 +50,39 @@ class CarController extends Controller
    * @param  \Illuminate\Http\Request  $request
    * @return \Illuminate\Http\Response
    */
-  public function store(Request $request)
+  public function store( CarRequest $request)
   {
-    return 'CarController@store';
+    $gallery = [
+      'title'         => $request->title,
+      'image_big'     => $request->image_big,
+      'image_small_1' => $request->image_small_1,
+      'image_small_2' => $request->image_small_2,
+      'image_small_3' => $request->image_small_3,
+      'thumb_big'     => $request->thumb_big,
+      'thumb_small_1' => $request->thumb_small_1,
+      'thumb_small_2' => $request->thumb_small_2,
+      'thumb_small_3' => $request->thumb_small_3,
+      'title_big'     => $request->title_big,
+      'title_small_1' => $request->title_small_1,
+      'title_small_2' => $request->title_small_2,
+      'title_small_3' => $request->title_small_3,
+    ];
+
+    $gallery = new \Highlander\GalleryFancyboxes( $gallery );
+    $gallery->save();
+
+    /*
+     * Create a response for passing it into the view.
+     */
+    $type           = ( $gallery ) ? "success" : "danger";
+    $message        = ( $gallery ) ? "Campo actualizado" : "Hubo un error al actualizar la información. :/";
+
+    /*
+     * Passing the recipe information, categories and domain url to the view.
+     */
+    return \Redirect::back( )
+                    ->withType( $type )
+                    ->withMessage( $message );
   }
 
   /**
@@ -85,9 +117,87 @@ class CarController extends Controller
    * @param  int  $id
    * @return \Illuminate\Http\Response
    */
-  public function update( Request $request, $id, $element_id )
+  public function update( CarRequest $request, $id, $element_id )
   {
-    return 'CarController@update';
+    $technicalSpecifications  = [
+      'description' => base64_encode(
+        serialize( [
+          'Motor'     => [
+            'Capacidad' => $request->Capacidad,
+            'Potencia'  => $request->Potencia,
+            'Cilindros' => $request->Cilindros,
+            'Valvulas'  => $request->Valvulas
+          ],
+          'Frenos'    => $request->Frenos,
+          'Rines'     => $request->Rines,
+          'UrlMotor'  => $request->UrlMotor,
+          'UrlAuto'   => $request->UrlAuto
+        ] )
+      )
+    ];
+
+    $externalSpecifications   = [
+      'description' => base64_encode(
+        serialize( [
+          'Faros'             => $request->Faros,
+          'SeguridadExterior' => $request->SeguridadExterior,
+          'Visibilidad'       => [
+            'Cristales'         => $request->Cristales,
+            'EspejosLaterales'  => $request->EspejosLaterales
+          ],
+          'Techo'           => $request->Techo,
+          'UrlInterior'       => $request->UrlInterior,
+        ] )
+      )
+    ];
+
+    $internalSpecifications   = [
+      'description' => base64_encode(
+        serialize( [
+          'AcabadosInteriores'    => $request->AcabadosInteriores,
+          'Asientos'              => $request->Asientos,
+          'SistemaAudio'          => $request->SistemaAudio,
+          'Confort'               => $request->Confort,
+          'CinturonesSeguridad'   => $request->CinturonesSeguridad,
+          'SeguridadInterior'     => $request->SeguridadInterior,
+          'Download'              => $request->Download
+        ] )
+      )
+    ];
+
+    $saveTechnicalSpecificationsResult  = \Highlander\TechnicalSpecification::where( 'id', $element_id )
+                                                                            ->update( $technicalSpecifications );
+
+    $saveExternalSpecificationsResult   = \Highlander\ExternalSpecification::where( 'id', $element_id )
+                                                                           ->update( $externalSpecifications );
+
+    $saveInternalSpecificationsResult   = \Highlander\InternalSpecification::where( 'id', $element_id )
+                                                                           ->update( $internalSpecifications );
+
+    $car                      = [
+      'title'                       => $request->title,
+      'name'                        => $request->name,
+      'thumbnail'                   => $request->thumbnail,
+      'price'                       => $request->price,
+      'description'                 => $request->description,
+      'slug'                        => $request->slug
+    ];
+
+    $saveCarResult                      = \Highlander\Car::where( 'id', $element_id )
+                                                         ->update( $car );
+
+    /*
+     * Create a response for passing it into the view.
+     */
+    $type           = ( $saveCarResult ) ? "success" : "danger";
+    $message        = ( $saveCarResult ) ? "Campo actualizado" : "Hubo un error al actualizar la información. :/";
+
+    /*
+     * Passing the recipe information, categories and domain url to the view.
+     */
+    return \Redirect::back( )
+                    ->withType( $type )
+                    ->withMessage( $message );
   }
 
   /**
@@ -98,6 +208,6 @@ class CarController extends Controller
    */
   public function destroy( $id, $element_id )
   {
-    return 'destroy';
+    return 'CarController@destroy';
   }
 }

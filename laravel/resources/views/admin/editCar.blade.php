@@ -53,6 +53,25 @@
                 </div>
               </div>{{-- title --}}
 
+              <div class="form-group{{ $errors->has( 'name' ) ? ' has-error' : '' }}">
+                {!! Form::label( 'name', 'Nombre', [
+                  'class' => 'col-md-3 control-label'
+                ] ) !!}
+
+                <div class="col-md-9">
+                  {!! Form::text( 'name', $model->name, [
+                    'class'         => 'form-control',
+                    'v-model.sync'  => 'newModel.name'
+                  ] ) !!}
+
+                  @if ($errors->has( 'name' ))
+                    <span class="help-block">
+                      <strong>{{ $errors->first( 'name' ) }}</strong>
+                    </span>
+                  @endif
+                </div>
+              </div>{{-- name --}}
+
               <div class="form-group{{ $errors->has( 'thumbnail' ) ? ' has-error' : '' }}">
                 {!! Form::label( 'thumbnail', 'Thumbnail', [
                   'class' => 'col-md-3 control-label'
@@ -150,7 +169,7 @@
                 ] ) !!}
 
                 <div class="col-md-8">
-                  {!! Form::text( 'Capacidad', $model->technicalSpecifications->Motor->Capacidad, [
+                  {!! Form::text( 'Capacidad', $model->technicalSpecifications->description[ 'Motor' ][ 'Capacidad' ], [
                     'class'         => 'form-control',
                     'v-model.sync'  => 'newModel.Capacidad'
                   ] ) !!}
@@ -169,7 +188,7 @@
                 ] ) !!}
 
                 <div class="col-md-8">
-                  {!! Form::text( 'Potencia', $model->technicalSpecifications->Motor->Potencia, [
+                  {!! Form::text( 'Potencia', $model->technicalSpecifications->description[ 'Motor' ][ 'Potencia' ], [
                     'class'         => 'form-control',
                     'v-model.sync'  => 'newModel.Potencia'
                   ] ) !!}
@@ -188,7 +207,7 @@
                 ] ) !!}
 
                 <div class="col-md-8">
-                  {!! Form::text( 'Cilindros', $model->technicalSpecifications->Motor->Cilindros, [
+                  {!! Form::text( 'Cilindros', $model->technicalSpecifications->description[ 'Motor' ][ 'Cilindros' ], [
                     'class'         => 'form-control',
                     'v-model.sync'  => 'newModel.Cilindros'
                   ] ) !!}
@@ -207,7 +226,7 @@
                 ] ) !!}
 
                 <div class="col-md-8">
-                  {!! Form::text( 'Valvulas', $model->technicalSpecifications->Motor->Valvulas, [
+                  {!! Form::text( 'Valvulas', $model->technicalSpecifications->description[ 'Motor' ][ 'Valvulas' ], [
                     'class'         => 'form-control',
                     'v-model.sync'  => 'newModel.Valvulas'
                   ] ) !!}
@@ -226,11 +245,13 @@
                 ] ) !!}
 
                 <div class="col-md-9">
-                  {!! Form::textarea( 'Frenos', $model->technicalSpecifications->Frenos, [
+                  @foreach( $model->technicalSpecifications->description[ 'Frenos' ] as $brakes )
+                  {!! Form::text( 'Frenos[]', $brakes, [
                     'class'         => 'form-control',
                     'placeholder'   => '[]',
-                    'v-model.sync'  => 'newModel.Frenos'
+                    'v-model.sync'  => 'newModel.Frenos[]'
                   ] ) !!}
+                  @endforeach
 
                   @if ($errors->has( 'Frenos' ))
                     <span class="help-block">
@@ -246,11 +267,13 @@
                 ] ) !!}
 
                 <div class="col-md-9">
-                  {!! Form::textarea( 'Rines', $model->Rines, [
+                  @foreach( $model->technicalSpecifications->description[ 'Rines' ] as $rin )
+                  {!! Form::text( 'Rines[]', $rin, [
                     'class'         => 'form-control',
                     'placeholder'   => '[]',
                     'v-model.sync'  => 'newModel.Rines'
                   ] ) !!}
+                  @endforeach
 
                   @if ($errors->has( 'Rines' ))
                     <span class="help-block">
@@ -266,7 +289,7 @@
                 ] ) !!}
 
                 <div class="col-md-9">
-                  {!! Form::text( 'UrlMotor', $model->UrlMotor, [
+                  {!! Form::text( 'UrlMotor', $model->technicalSpecifications->description[ 'UrlMotor' ], [
                     'class'         => 'form-control',
                     'v-model.sync'  => 'newModel.UrlMotor'
                   ] ) !!}
@@ -285,7 +308,7 @@
                 ] ) !!}
 
                 <div class="col-md-9">
-                  {!! Form::text( 'UrlAuto', $model->UrlAuto, [
+                  {!! Form::text( 'UrlAuto', $model->technicalSpecifications->description[ 'UrlAuto' ], [
                     'class'         => 'form-control',
                     'v-model.sync'  => 'newModel.UrlAuto'
                   ] ) !!}
@@ -308,15 +331,17 @@
 
               <div class="form-group{{ $errors->has( 'Faros' ) ? ' has-error' : '' }}">
                 {!! Form::label( 'Faros', 'Faros:', [
-                  'class' => 'col-md-3 col-md-offset-1 control-label'
+                  'class' => 'col-md-3 control-label'
                 ] ) !!}
 
-                <div class="col-md-8">
-                  {!! Form::textarea( 'Faros', $model->Faros, [
+                <div class="col-md-9">
+                  @foreach( $model->externalSpecifications->description[ 'Faros' ] as $faros )
+                  {!! Form::text( 'Faros[]', $faros, [
                     'class'         => 'form-control',
                     'placeholder'   => '[]',
                     'v-model.sync'  => 'newModel.Faros'
                   ] ) !!}
+                  @endforeach
 
                   @if ($errors->has( 'Faros' ))
                     <span class="help-block">
@@ -328,15 +353,17 @@
 
               <div class="form-group{{ $errors->has( 'SeguridadExterior' ) ? ' has-error' : '' }}">
                 {!! Form::label( 'SeguridadExterior', 'Seguridad exterior:', [
-                  'class' => 'col-md-3 col-md-offset-1 control-label'
+                  'class' => 'col-md-3 control-label'
                 ] ) !!}
 
-                <div class="col-md-8">
-                  {!! Form::textarea( 'SeguridadExterior', $model->SeguridadExterior, [
+                <div class="col-md-9">
+                  @foreach( $model->externalSpecifications->description[ 'SeguridadExterior' ] as $security )
+                  {!! Form::text( 'SeguridadExterior[]', $security, [
                     'class'         => 'form-control',
                     'placeholder'   => '[]',
                     'v-model.sync'  => 'newModel.SeguridadExterior'
                   ] ) !!}
+                  @endforeach
 
                   @if ($errors->has( 'SeguridadExterior' ))
                     <span class="help-block">
@@ -356,11 +383,13 @@
                 ] ) !!}
 
                 <div class="col-md-8">
-                  {!! Form::textarea( 'Cristales', $model->Cristales, [
+                  @foreach( $model->externalSpecifications->description[ 'Visibilidad' ][ 'Cristales' ] as $cristals )
+                  {!! Form::text( 'Cristales[]', $cristals, [
                     'class'         => 'form-control',
                     'placeholder'   => '[]',
                     'v-model.sync'  => 'newModel.Cristales'
                   ] ) !!}
+                  @endforeach
 
                   @if ($errors->has( 'Cristales' ))
                     <span class="help-block">
@@ -376,11 +405,13 @@
                 ] ) !!}
 
                 <div class="col-md-8">
-                  {!! Form::textarea( 'EspejosLaterales', $model->EspejosLaterales, [
+                  @foreach( $model->externalSpecifications->description[ 'Visibilidad' ][ 'EspejosLaterales' ] as $mirrors )
+                  {!! Form::text( 'EspejosLaterales[]', $mirrors, [
                     'class'         => 'form-control',
                     'placeholder'   => '[]',
                     'v-model.sync'  => 'newModel.EspejosLaterales'
                   ] ) !!}
+                  @endforeach
 
                   @if ($errors->has( 'EspejosLaterales' ))
                     <span class="help-block">
@@ -396,11 +427,13 @@
                 ] ) !!}
 
                 <div class="col-md-8">
-                  {!! Form::textarea( 'Techo', $model->Techo, [
+                  @foreach( $model->externalSpecifications->description[ 'Techo' ] as $ceil )
+                  {!! Form::text( 'Techo[]', $ceil, [
                     'class'         => 'form-control',
                     'placeholder'   => '[]',
                     'v-model.sync'  => 'newModel.Techo'
                   ] ) !!}
+                  @endforeach
 
                   @if ($errors->has( 'Techo' ))
                     <span class="help-block">
@@ -416,7 +449,7 @@
                 ] ) !!}
 
                 <div class="col-md-9">
-                  {!! Form::text( 'UrlInterior', $model->UrlInterior, [
+                  {!! Form::text( 'UrlInterior', $model->externalSpecifications->description[ 'UrlInterior' ], [
                     'class'         => '',
                     'v-model.sync'  => 'newModel.UrlInterior'
                   ] ) !!}
@@ -430,8 +463,8 @@
               </div>{{-- UrlInterior --}}
 
               <div class="form-group">
-                <p class="col-md-12"><strong>Especificaciones internas:</></p>
-              </div>{{-- Especificaciones técnicas --}}
+                <p class="col-md-12"><strong>Especificaciones internas:</strong></p>
+              </div>{{-- Especificaciones internas --}}
 
               <div class="form-group align-right">
                 <p class="col-md-10 col-md-offset-1"><strong>Descripción:</strong></p>
@@ -443,11 +476,13 @@
                 ] ) !!}
 
                 <div class="col-md-8">
-                  {!! Form::textarea( 'AcabadosInteriores', $model->AcabadosInteriores, [
+                  @foreach( $model->internalSpecifications->description[ 'AcabadosInteriores' ] as $acabados )
+                  {!! Form::text( 'AcabadosInteriores[]', $acabados, [
                     'class'         => 'form-control',
                     'placeholder'   => '[]',
                     'v-model.sync'  => 'newModel.AcabadosInteriores'
                   ] ) !!}
+                  @endforeach
 
                   @if ($errors->has( 'AcabadosInteriores' ))
                     <span class="help-block">
@@ -463,11 +498,13 @@
                 ] ) !!}
 
                 <div class="col-md-8">
-                  {!! Form::textarea( 'Asientos', $model->Asientos, [
+                  @foreach( $model->internalSpecifications->description[ 'Asientos' ] as $seats )
+                  {!! Form::text( 'Asientos[]', $seats, [
                     'class'         => 'form-control',
                     'placeholder'   => '[]',
                     'v-model.sync'  => 'newModel.Asientos'
                   ] ) !!}
+                  @endforeach
 
                   @if ($errors->has( 'Asientos' ))
                     <span class="help-block">
@@ -483,11 +520,13 @@
                 ] ) !!}
 
                 <div class="col-md-8">
-                  {!! Form::textarea( 'SistemaAudio', $model->SistemaAudio, [
+                  @foreach( $model->internalSpecifications->description[ 'SistemaAudio' ] as $audio )
+                  {!! Form::text( 'SistemaAudio[]', $audio, [
                     'class'         => 'form-control',
                     'placeholder'   => '[]',
                     'v-model.sync'  => 'newModel.SistemaAudio'
                   ] ) !!}
+                  @endforeach
 
                   @if ($errors->has( 'SistemaAudio' ))
                     <span class="help-block">
@@ -503,11 +542,13 @@
                 ] ) !!}
 
                 <div class="col-md-8">
-                  {!! Form::textarea( 'Confort', $model->Confort, [
+                  @foreach( $model->internalSpecifications->description[ 'Confort' ] as $confort )
+                  {!! Form::text( 'Confort[]', $confort, [
                     'class'         => 'form-control',
                     'placeholder'   => '[]',
                     'v-model.sync'  => 'newModel.Confort'
                   ] ) !!}
+                  @endforeach
 
                   @if ($errors->has( 'Confort' ))
                     <span class="help-block">
@@ -523,11 +564,13 @@
                 ] ) !!}
 
                 <div class="col-md-8">
-                  {!! Form::textarea( 'CinturonesSeguridad', $model->CinturonesSeguridad, [
+                  @foreach( $model->internalSpecifications->description[ 'CinturonesSeguridad' ] as $seatbelt )
+                  {!! Form::text( 'CinturonesSeguridad[]', $seatbelt, [
                     'class'         => 'form-control',
                     'placeholder'   => '[]',
                     'v-model.sync'  => 'newModel.CinturonesSeguridad'
                   ] ) !!}
+                  @endforeach
 
                   @if ($errors->has( 'CinturonesSeguridad' ))
                     <span class="help-block">
@@ -543,10 +586,12 @@
                 ] ) !!}
 
                 <div class="col-md-8">
-                  {!! Form::text( 'SeguridadInterior', $model->SeguridadInterior, [
+                  @foreach( $model->internalSpecifications->description[ 'SeguridadInterior' ] as $security )
+                  {!! Form::text( 'SeguridadInterior[]', $security, [
                     'class'         => 'form-control',
                     'v-model.sync'  => 'newModel.SeguridadInterior'
                   ] ) !!}
+                  @endforeach
 
                   @if ($errors->has( 'SeguridadInterior' ))
                     <span class="help-block">
@@ -562,7 +607,7 @@
                 ] ) !!}
 
                 <div class="col-md-9">
-                  {!! Form::text( 'Download', $model->Download, [
+                  {!! Form::text( 'Download', $model->internalSpecifications->description[ 'Download' ], [
                     'class'         => '',
                     'v-model.sync'  => 'newModel.Download'
                   ] ) !!}
@@ -597,7 +642,7 @@
 @endsection
 
 @section( 'scripts' )
-<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<!--script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-3.1.0.min"><\/script>')</script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/vue-resource/0.9.3/vue-resource.min.js"></script>
@@ -607,6 +652,7 @@
     data    : {
       newModel  : {
         'title'               : '',
+        'name'                : '',
         'thumbnail'           : '',
         'price'               : '',
         'description'         : '',
@@ -616,7 +662,7 @@
         'Potencia'            : '',
         'Cilindros'           : '',
         'Valvulas'            : '',
-        'Frenos'              : '',
+        'Frenos[]'            : '',
         'Rines'               : '',
         'UrlMotor'            : '',
         'UrlAuto'             : '',
@@ -643,6 +689,7 @@
       submitEdit : function ( event ) {
         var data          = {
           'title'               : this.newModel.title,
+          'name'                : this.newModel.name,
           'thumbnail'           : this.newModel.thumbnail,
           'price'               : this.newModel.price,
           'description'         : this.newModel.description,
@@ -652,7 +699,7 @@
           'Potencia'            : this.newModel.Potencia,
           'Cilindros'           : this.newModel.Cilindros,
           'Valvulas'            : this.newModel.Valvulas,
-          'Frenos'              : this.newModel.Frenos,
+          'Frenos[]'            : this.newModel.Frenos[],
           'Rines'               : this.newModel.Rines,
           'UrlMotor'            : this.newModel.UrlMotor,
           'UrlAuto'             : this.newModel.UrlAuto,
@@ -685,6 +732,7 @@
       validation: function () {
         return {
           'title'               : !!this.newModel.title.trim( ),
+          'name'                : !!this.newModel.name.trim( ),
           'thumbnail'           : !!this.newModel.thumbnail.trim( ),
           'price'               : !!this.newModel.price.trim( ),
           'description'         : !!this.newModel.description.trim( ),
@@ -694,7 +742,7 @@
           'Potencia'            : !!this.newModel.Potencia.trim( ),
           'Cilindros'           : !!this.newModel.Cilindros.trim( ),
           'Valvulas'            : !!this.newModel.Valvulas.trim( ),
-          'Frenos'              : !!this.newModel.Frenos.trim( ),
+          'Frenos[]'            : !!this.newModel.Frenos[].trim( ),
           'Rines'               : !!this.newModel.Rines.trim( ),
           'UrlMotor'            : !!this.newModel.UrlMotor.trim( ),
           'UrlAuto'             : !!this.newModel.UrlAuto.trim( ),
@@ -721,5 +769,5 @@
       }
     },
   } );
-</script>
+</script-->
 @endsection

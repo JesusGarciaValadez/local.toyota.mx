@@ -16,7 +16,8 @@ class CarsTableSeeder extends Seeder
       'technical_specifications_id' => 1,
       'external_specifications_id'  => 1,
       'internal_specifications_id'  => 1,
-      'title'                       => 'HIGHLANDER LE',
+      'title'                       => 'HIGHLANDER <span>LE</span>',
+      'name'                        => 'HIGHLANDER LE',
       'thumbnail'                   => 'assets/images/versiones/img_lateral.png',
       'price'                       => '$501,200.00',
       'description'                 => '<li>Parrilla negra con acentos cromados.</li>
@@ -31,7 +32,8 @@ class CarsTableSeeder extends Seeder
       'technical_specifications_id' => 2,
       'external_specifications_id'  => 2,
       'internal_specifications_id'  => 2,
-      'title'                       => 'HIGHLANDER XLE',
+      'title'                       => 'HIGHLANDER <span>XLE</span>',
+      'name'                        => 'HIGHLANDER XLE',
       'thumbnail'                   => 'assets/images/versiones/img_lateral.png',
       'price'                       => '$565,200.00',
       'description'                 => '<li>Desempañador eléctrico en espejos laterales.</li>
@@ -43,10 +45,11 @@ class CarsTableSeeder extends Seeder
 
     DB::table( 'cars' )->insert( [
       'brands_id'                   => 1,
-      'technical_specifications_id' => 1,
-      'external_specifications_id'  => 1,
-      'internal_specifications_id'  => 1,
-      'title'                       => 'HIGHLANDER CE',
+      'technical_specifications_id' => 3,
+      'external_specifications_id'  => 3,
+      'internal_specifications_id'  => 3,
+      'title'                       => 'HIGHLANDER <span>CE</span>',
+      'name'                        => 'HIGHLANDER CE',
       'thumbnail'                   => 'assets/images/versiones/img_lateral.png',
       'price'                       => '$501,200.00',
       'description'                 => '<li>Techo panorámico.</li>
@@ -58,10 +61,11 @@ class CarsTableSeeder extends Seeder
 
     DB::table( 'cars' )->insert( [
       'brands_id'                   => 1,
-      'technical_specifications_id' => 2,
-      'external_specifications_id'  => 2,
-      'internal_specifications_id'  => 2,
-      'title'                       => 'HIGHLANDER XCE',
+      'technical_specifications_id' => 4,
+      'external_specifications_id'  => 4,
+      'internal_specifications_id'  => 4,
+      'title'                       => 'HIGHLANDER <span>XCE</span>',
+      'name'                        => 'HIGHLANDER XCE',
       'thumbnail'                   => 'assets/images/versiones/img_lateral.png',
       'price'                       => '$656,700.00',
       'description'                 => '<li>Luces de cortesía en espejos laterales.</li>
