@@ -38,7 +38,7 @@ class TechnicalSpecificationsTableSeeder extends Seeder
     ] );
 
     DB::table( 'technical_specifications' )->insert( [
-      'car_id'      => 1,
+      'car_id'      => 2,
       'description' => base64_encode(
         serialize( [
           'Motor'     => [
@@ -64,7 +64,7 @@ class TechnicalSpecificationsTableSeeder extends Seeder
     ] );
 
     DB::table( 'technical_specifications' )->insert( [
-      'car_id'      => 1,
+      'car_id'      => 3,
       'description' => base64_encode(
         serialize( [
           'Motor'     => [
@@ -90,7 +90,7 @@ class TechnicalSpecificationsTableSeeder extends Seeder
     ] );
 
     DB::table( 'technical_specifications' )->insert( [
-      'car_id'      => 1,
+      'car_id'      => 4,
       'description' => base64_encode(
         serialize( [
           'Motor'     => [

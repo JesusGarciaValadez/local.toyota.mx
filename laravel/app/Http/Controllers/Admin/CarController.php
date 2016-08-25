@@ -104,9 +104,7 @@ class CarController extends Controller
    */
   public function edit( $id, $element_id )
   {
-    $model      = \Highlander\Car::findOrFail( $element_id );
-    dd( $model->name );
-    dd( $model->technicalSpecifications );
+    $model      = \Highlander\Car::findOrFail( $id );
     $brandName  = $model->title;
 
     return view( 'admin.editCar', compact( 'id', 'element_id', 'brandName', 'model' ) );
@@ -210,6 +208,20 @@ class CarController extends Controller
    */
   public function destroy( $id, $element_id )
   {
-    return 'CarController@destroy';
+    $car = \Highlander\Car::findOrFail( $id );
+    $car->destroy();
+
+    /*
+     * Create a response for passing it into the view.
+     */
+    $type           = ( $car ) ? "success" : "danger";
+    $message        = ( $car ) ? "Campo actualizado" : "Hubo un error al actualizar la información. :/";
+
+    /*
+     * Passing the recipe information, categories and domain url to the view.
+     */
+    return \Redirect::back( )
+                    ->withType( $type )
+                    ->withMessage( $message );
   }
 }

@@ -51,7 +51,7 @@ class ExternalSpecificationsTableSeeder extends Seeder
     ] );
 
     DB::table( 'external_specifications' )->insert( [
-      'car_id'      => 1,
+      'car_id'      => 2,
       'description' => base64_encode(
         serialize( [
           'Faros'             => [
@@ -90,7 +90,7 @@ class ExternalSpecificationsTableSeeder extends Seeder
     ] );
 
     DB::table( 'external_specifications' )->insert( [
-      'car_id'      => 1,
+      'car_id'      => 3,
       'description' => base64_encode(
         serialize( [
           'Faros'             => [
@@ -129,7 +129,7 @@ class ExternalSpecificationsTableSeeder extends Seeder
     ] );
 
     DB::table( 'external_specifications' )->insert( [
-      'car_id'      => 1,
+      'car_id'      => 4,
       'description' => base64_encode(
         serialize( [
           'Faros'             => [

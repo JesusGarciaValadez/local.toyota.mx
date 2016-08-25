@@ -50,6 +50,25 @@
                 </div>
               </div>{{-- title --}}
 
+              <div class="form-group{{ $errors->has( 'name' ) ? ' has-error' : '' }}">
+                {!! Form::label( 'name', 'Nombre', [
+                  'class' => 'col-md-3 control-label'
+                ] ) !!}
+
+                <div class="col-md-9">
+                  {!! Form::text( 'name', "", [
+                    'class'         => 'form-control',
+                    'v-model.sync'  => 'newModel.name'
+                  ] ) !!}
+
+                  @if ($errors->has( 'name' ))
+                    <span class="help-block">
+                      <strong>{{ $errors->first( 'name' ) }}</strong>
+                    </span>
+                  @endif
+                </div>
+              </div>{{-- name --}}
+
               <div class="form-group{{ $errors->has( 'thumbnail' ) ? ' has-error' : '' }}">
                 {!! Form::label( 'thumbnail', 'Thumbnail', [
                   'class' => 'col-md-3 control-label'
@@ -604,6 +623,7 @@
     data    : {
       newModel  : {
         'title'               : '',
+        'name'                : '',
         'thumbnail'           : '',
         'price'               : '',
         'description'         : '',
@@ -639,6 +659,7 @@
       submitEdit : function ( event ) {
         var data          = {
           'title'               : this.newModel.title,
+          'name'                : this.newModel.name,
           'thumbnail'           : this.newModel.thumbnail,
           'price'               : this.newModel.price,
           'description'         : this.newModel.description,
@@ -680,6 +701,7 @@
       validation: function () {
         return {
           'title'               : !!this.newModel.title.trim( ),
+          'name'                : !!this.newModel.name.trim( ),
           'thumbnail'           : !!this.newModel.thumbnail.trim( ),
           'price'               : !!this.newModel.price.trim( ),
           'description'         : !!this.newModel.description.trim( ),
