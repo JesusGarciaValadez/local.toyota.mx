@@ -16,6 +16,13 @@ class EventServiceProvider extends ServiceProvider
         'Highlander\Events\SomeEvent' => [
             'Highlander\Listeners\EventListener',
         ],
+        'Highlander\Events\UploadImages' => [
+            'Highlander\Listeners\UploadImagesListener',
+            'Highlander\Listeners\UploadThumbnailsListener',
+        ],
+        'Highlander\Events\UploadFiles' => [
+            'Highlander\Listeners\UploadFilesListener',
+        ],
     ];
 
     /**

@@ -15,7 +15,8 @@ class GalleryFancyboxesController extends Controller
   /**
    * Display a listing of the resource.
    *
-   * @return \Illuminate\Http\Response
+   * @param   int $id
+   * @return  \Illuminate\Http\Response
    */
   public function index( $id )
   {
@@ -33,6 +34,7 @@ class GalleryFancyboxesController extends Controller
   /**
    * Show the form for creating a new resource.
    *
+   * @param  int $id
    * @return \Illuminate\Http\Response
    */
   public function create( $id )
@@ -44,26 +46,20 @@ class GalleryFancyboxesController extends Controller
   /**
    * Store a newly created resource in storage.
    *
-   * @param  \Illuminate\Http\Request  $request
+   * @param  Highlander\Http\Requests\GalleryFancyboxImageRequest $request
+   * @param  int                                                  $id
    * @return \Illuminate\Http\Response
    */
   public function store( GalleryFancyboxImageRequest $request, $id )
   {
-    $gallery = [
-      'title'         => $request->title,
-      'image_big'     => $request->image_big,
-      'image_small_1' => $request->image_small_1,
-      'image_small_2' => $request->image_small_2,
-      'image_small_3' => $request->image_small_3,
-      'thumb_big'     => $request->thumb_big,
-      'thumb_small_1' => $request->thumb_small_1,
-      'thumb_small_2' => $request->thumb_small_2,
-      'thumb_small_3' => $request->thumb_small_3,
-      'title_big'     => $request->title_big,
-      'title_small_1' => $request->title_small_1,
-      'title_small_2' => $request->title_small_2,
-      'title_small_3' => $request->title_small_3,
-    ];
+    $gallery    = $request->only( 'title', 'image_big', 'image_small_1', 'image_small_2', 'image_small_3', 'thumb_big', 'thumb_small_1', 'thumb_small_2', 'thumb_small_3', 'title_big', 'title_small_1', 'title_small_2', 'title_small_3' );
+    $bigImages        = [ 'image_big', 'image_small_1', 'image_small_2', 'image_small_3' ];
+    $thumbs           = [ 'thumb_big', 'thumb_small_1','thumb_small_2', 'thumb_small_3' ];
+    $bigImagesPath    = 'assets/images/galeria/';
+    $thumbsImagesPath = 'assets/images/galeria/';
+
+    event( new UploadImages( $request, $bigImages, $bigImagesPath ) );
+    event( new UploadImages( $request, $thumbs, $thumbsImagesPath ) );
 
     $gallery = new \Highlander\GalleryFancyboxes( $gallery );
     $gallery->save();
@@ -71,8 +67,8 @@ class GalleryFancyboxesController extends Controller
     /*
      * Create a response for passing it into the view.
      */
-    $type           = ( $gallery ) ? "success" : "danger";
-    $message        = ( $gallery ) ? "Campo actualizado" : "Hubo un error al actualizar la información. :/";
+    $type     = ( $gallery ) ? "success" : "danger";
+    $message  = ( $gallery ) ? "Campo actualizado" : "Hubo un error al actualizar la información. :/";
 
     /*
      * Passing the recipe information, categories and domain url to the view.
@@ -97,6 +93,7 @@ class GalleryFancyboxesController extends Controller
    * Show the form for editing the specified resource.
    *
    * @param  int  $id
+   * @param  int  $gallery_fancyboxes
    * @return \Illuminate\Http\Response
    */
   public function edit( $id, $gallery_fancyboxes )
@@ -110,27 +107,14 @@ class GalleryFancyboxesController extends Controller
   /**
    * Update the specified resource in storage.
    *
-   * @param  \Illuminate\Http\Request  $request
-   * @param  int  $id
+   * @param  \Illuminate\Http\Request $request
+   * @param  int                      $id
+   * @param  int                      $gallery_fancyboxes
    * @return \Illuminate\Http\Response
    */
   public function update( GalleryFancyboxRequest $request, $id, $gallery_fancyboxes )
   {
-    $gallery = [
-      'title'         => $request->title,
-      'image_big'     => $request->image_big,
-      'image_small_1' => $request->image_small_1,
-      'image_small_2' => $request->image_small_2,
-      'image_small_3' => $request->image_small_3,
-      'thumb_big'     => $request->thumb_big,
-      'thumb_small_1' => $request->thumb_small_1,
-      'thumb_small_2' => $request->thumb_small_2,
-      'thumb_small_3' => $request->thumb_small_3,
-      'title_big'     => $request->title_big,
-      'title_small_1' => $request->title_small_1,
-      'title_small_2' => $request->title_small_2,
-      'title_small_3' => $request->title_small_3,
-    ];
+    $gallery  = $request->only( 'title', 'image_big', 'image_small_1', 'image_small_2', 'image_small_3', 'thumb_big', 'thumb_small_1', 'thumb_small_2', 'thumb_small_3', 'title_big', 'title_small_1', 'title_small_2', 'title_small_3' );
 
     $result   = \Highlander\GalleryFancyboxes::where( 'id', $gallery_fancyboxes )
                                              ->update( $gallery );
@@ -153,6 +137,7 @@ class GalleryFancyboxesController extends Controller
    * Remove the specified resource from storage.
    *
    * @param  int  $id
+   * @param  int  $element_id
    * @return \Illuminate\Http\Response
    */
   public function destroy( $id, $element_id )

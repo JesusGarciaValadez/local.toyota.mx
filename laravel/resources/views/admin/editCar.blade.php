@@ -132,25 +132,6 @@
                 </div>
               </div>{{-- description --}}
 
-              <div class="form-group{{ $errors->has( 'slug' ) ? ' has-error' : '' }}">
-                {!! Form::label( 'slug', 'Slug', [
-                  'class' => 'col-md-3 control-label'
-                ] ) !!}
-
-                <div class="col-md-9">
-                  {!! Form::text( 'slug', $model->slug, [
-                    'class'         => 'form-control',
-                    'v-model.sync'  => 'newModel.slug'
-                  ] ) !!}
-
-                  @if ($errors->has( 'slug' ))
-                    <span class="help-block">
-                      <strong>{{ $errors->first( 'slug' ) }}</strong>
-                    </span>
-                  @endif
-                </div>
-              </div>{{-- slug --}}
-
               <div class="form-group">
                 <p class="col-md-10"><strong>Especificaciones técnicas:</strong></p>
               </div>{{-- Especificaciones técnicas --}}

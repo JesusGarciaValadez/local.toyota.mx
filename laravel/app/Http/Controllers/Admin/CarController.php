@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use Highlander\Http\Requests;
 use Highlander\Http\Controllers\Controller;
+use Illuminate\Support\Str;
 
 use Highlander\Http\Requests\CarRequest;
 
@@ -14,6 +15,7 @@ class CarController extends Controller
   /**
    * Display a listing of the resource.
    *
+   * @param  int  $id
    * @return \Illuminate\Http\Response
    */
   public function index( $id )
@@ -33,6 +35,7 @@ class CarController extends Controller
   /**
    * Show the form for creating a new resource.
    *
+   * @param  int  $id
    * @return \Illuminate\Http\Response
    */
   public function create( $id )
@@ -47,35 +50,105 @@ class CarController extends Controller
   /**
    * Store a newly created resource in storage.
    *
-   * @param  \Illuminate\Http\Request  $request
+   * @param  Highlander\Http\Requests\CarRequest  $request
+   * @param  int                                  $id
+   * @param  int                                  $element_id
    * @return \Illuminate\Http\Response
    */
-  public function store( CarRequest $request)
+  public function store( CarRequest $request, $id, $element_id )
   {
-    $gallery = [
-      'title'         => $request->title,
-      'image_big'     => $request->image_big,
-      'image_small_1' => $request->image_small_1,
-      'image_small_2' => $request->image_small_2,
-      'image_small_3' => $request->image_small_3,
-      'thumb_big'     => $request->thumb_big,
-      'thumb_small_1' => $request->thumb_small_1,
-      'thumb_small_2' => $request->thumb_small_2,
-      'thumb_small_3' => $request->thumb_small_3,
-      'title_big'     => $request->title_big,
-      'title_small_1' => $request->title_small_1,
-      'title_small_2' => $request->title_small_2,
-      'title_small_3' => $request->title_small_3,
+    $technicalImages      = [ 'UrlMotor', 'UrlAuto' ];
+    $technicalImagesPath  = 'assets/images/datos/';
+    event( new UploadImages( $request, $technicalImages, $technicalImagesPath ) );
+
+    $carImages      = [ 'UrlInterior' ];
+    $carImagesPath  = 'assets/images/datos/';
+    event( new UploadImages( $request, $carImages, $carImagesPath ) );
+
+    $carTechnicalSpecificationsFile = [ 'Download' ];
+    $carTechnicalSpecificationsPath = 'assets/technical-specifications/';
+    event( new UploadFile( $request, $carTechnicalSpecificationsFile, $carTechnicalSpecificationsPath ) );
+
+    $technicalSpecifications  = [
+      'description' => base64_encode(
+        serialize( [
+          'Motor'     => [
+            'Capacidad' => $request->Capacidad,
+            'Potencia'  => $request->Potencia,
+            'Cilindros' => $request->Cilindros,
+            'Valvulas'  => $request->Valvulas
+          ],
+          'Frenos'    => $request->Frenos,
+          'Rines'     => $request->Rines,
+          'UrlMotor'  => $technicalImagesPath . $request->UrlMotor,
+          'UrlAuto'   => $request->UrlAuto
+        ] )
+      )
     ];
 
-    $gallery = new \Highlander\GalleryFancyboxes( $gallery );
-    $gallery->save();
+    $externalSpecifications   = [
+      'description' => base64_encode(
+        serialize( [
+          'Faros'             => $request->Faros,
+          'SeguridadExterior' => $request->SeguridadExterior,
+          'Visibilidad'       => [
+            'Cristales'         => $request->Cristales,
+            'EspejosLaterales'  => $request->EspejosLaterales
+          ],
+          'Techo'             => $request->Techo,
+          'UrlInterior'       => $carImagesPath . $request->UrlInterior,
+        ] )
+      )
+    ];
+
+    $internalSpecifications   = [
+      'description' => base64_encode(
+        serialize( [
+          'AcabadosInteriores'    => $request->AcabadosInteriores,
+          'Asientos'              => $request->Asientos,
+          'SistemaAudio'          => $request->SistemaAudio,
+          'Confort'               => $request->Confort,
+          'CinturonesSeguridad'   => $request->CinturonesSeguridad,
+          'SeguridadInterior'     => $request->SeguridadInterior,
+          'Download'              => $carTechnicalSpecificationsPath . $request->Download
+        ] )
+      )
+    ];
+
+    $saveTechnicalSpecificationsResult  = new \Highlander\TechnicalSpecification( $technicalSpecifications );
+    $saveTechnicalSpecificationsResult->save( );
+
+    $saveExternalSpecificationsResult   = new \Highlander\ExternalSpecification( $externalSpecifications );
+    $saveExternalSpecificationsResult->save( );
+
+    $saveInternalSpecificationsResult   = new \Highlander\InternalSpecification( $internalSpecifications );
+    $saveInternalSpecificationsResult->save( );
+
+    $carImages      = [ 'thumbnail' ];
+    $carImagesPath  = 'assets/images/versiones/';
+    event( new UploadImages( $request, $carImages, $carImagesPath ) );
+
+    $car                      = [
+      'brands_id'                   => $id,
+      'technical_specifications_id' => 2,
+      'external_specifications_id'  => 2,
+      'internal_specifications_id'  => 2,
+      'title'                       => $request->title,
+      'name'                        => $request->name,
+      'thumbnail'                   => $carImagesPath . $request->thumbnail,
+      'price'                       => $request->price,
+      'description'                 => $request->description,
+      'slug'                        => \Str::slug( $request->name )
+    ];
+
+    $saveCarResult            = new \Highlander\Car( $car );
+    $saveCarResult->save( );
 
     /*
      * Create a response for passing it into the view.
      */
-    $type           = ( $gallery ) ? "success" : "danger";
-    $message        = ( $gallery ) ? "Campo actualizado" : "Hubo un error al actualizar la información. :/";
+    $type           = ( $saveCarResult ) ? "success" : "danger";
+    $message        = ( $saveCarResult ) ? "Campo actualizado" : "Hubo un error al actualizar la información. :/";
 
     /*
      * Passing the recipe information, categories and domain url to the view.
@@ -89,6 +162,7 @@ class CarController extends Controller
    * Display the specified resource.
    *
    * @param  int  $id
+   * @param  int  $element_id
    * @return \Illuminate\Http\Response
    */
   public function show( $id, $element_id )
@@ -100,6 +174,7 @@ class CarController extends Controller
    * Show the form for editing the specified resource.
    *
    * @param  int  $id
+   * @param  int  $element_id
    * @return \Illuminate\Http\Response
    */
   public function edit( $id, $element_id )
@@ -113,8 +188,9 @@ class CarController extends Controller
   /**
    * Update the specified resource in storage.
    *
-   * @param  \Illuminate\Http\Request  $request
-   * @param  int  $id
+   * @param  \Illuminate\Http\Request   $request
+   * @param  int                        $id
+   * @param  int                        $element_id
    * @return \Illuminate\Http\Response
    */
   public function update( CarRequest $request, $id, $element_id )
@@ -145,7 +221,7 @@ class CarController extends Controller
             'Cristales'         => $request->Cristales,
             'EspejosLaterales'  => $request->EspejosLaterales
           ],
-          'Techo'           => $request->Techo,
+          'Techo'             => $request->Techo,
           'UrlInterior'       => $request->UrlInterior,
         ] )
       )
@@ -180,7 +256,7 @@ class CarController extends Controller
       'thumbnail'                   => $request->thumbnail,
       'price'                       => $request->price,
       'description'                 => $request->description,
-      'slug'                        => $request->slug
+      'slug'                        => \Str::slug( $request->name )
     ];
 
     $saveCarResult                      = \Highlander\Car::where( 'id', $element_id )
@@ -204,6 +280,7 @@ class CarController extends Controller
    * Remove the specified resource from storage.
    *
    * @param  int  $id
+   * @param  int  $element_id
    * @return \Illuminate\Http\Response
    */
   public function destroy( $id, $element_id )

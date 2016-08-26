@@ -33,6 +33,7 @@ class SliderFeaturesController extends Controller
   /**
    * Show the form for creating a new resource.
    *
+   * @param  int  $id ID of the SliderFeature gallery to show the information of a new gallery
    * @return \Illuminate\Http\Response
    */
   public function create( $id )
@@ -52,7 +53,8 @@ class SliderFeaturesController extends Controller
   /**
    * Store a newly created resource in storage.
    *
-   * @param  \Illuminate\Http\Request  $request
+   * @param  Highlander\Http\Requests\SliderFeaturesRequest  $request
+   * @param  int  $id ID of the SliderFeature to edit
    * @return \Illuminate\Http\Response
    */
   public function store( SliderFeaturesRequest $request, $id )
@@ -93,7 +95,8 @@ class SliderFeaturesController extends Controller
   /**
    * Show the form for editing the specified resource.
    *
-   * @param  int  $id
+   * @param  int  $id ID of the car
+   * @param  int  $slider_features ID of the SliderFeatures for edit it
    * @return \Illuminate\Http\Response
    */
   public function edit( $id, $slider_features )
@@ -112,8 +115,8 @@ class SliderFeaturesController extends Controller
   /**
    * Update the specified resource in storage.
    *
-   * @param  \Illuminate\Http\Request  $request
-   * @param  int  $id
+   * @param  Highlander\Http\Requests\SliderFeaturesRequest $request Request with the data from the form
+   * @param  int  $id ID of the car
    * @return \Illuminate\Http\Response
    */
   public function update( SliderFeaturesRequest $request, $id )
@@ -139,7 +142,8 @@ class SliderFeaturesController extends Controller
   /**
    * Remove the specified resource from storage.
    *
-   * @param  int  $id
+   * @param  int  $id ID of the car
+   * @param  int  $element_id ID of the SliderFeature for destroying it
    * @return \Illuminate\Http\Response
    */
   public function destroy( $id, $element_id )

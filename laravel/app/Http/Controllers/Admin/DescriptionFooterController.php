@@ -34,8 +34,8 @@ class DescriptionFooterController extends Controller
   /**
    * Update the specified resource in storage.
    *
-   * @param  \Illuminate\Http\Request  $request
-   * @param  int  $id
+   * @param  Highlander\Http\Requests\DescriptionFooterRequest  $request
+   * @param  int                                                $id
    * @return \Illuminate\Http\Response
    */
   public function update( DescriptionFooterRequest $request, $id )

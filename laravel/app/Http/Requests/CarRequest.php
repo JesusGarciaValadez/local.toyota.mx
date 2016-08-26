@@ -30,7 +30,6 @@ class CarRequest extends Request
       'thumbnail'             => 'required|string',
       'price'                 => 'required|string',
       'description'           => 'required|string',
-      'slug'                  => 'required|string',
       'Capacidad'             => 'required|string',
       'Potencia'              => 'required|string',
       'Cilindros'             => 'required|string',

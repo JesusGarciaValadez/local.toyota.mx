@@ -45,7 +45,7 @@ class GalleryFancyboxesTableSeeder extends Seeder
       'title_small_3' => 'La seguridad de cada pasajero siempre podrá estar bajo tu control.'
     ] );
 
-     DB::table( 'gallery_fancyboxes' )->insert( [
+    DB::table( 'gallery_fancyboxes' )->insert( [
       'brands_id'     => 1,
       'title'         => 'Galería 3',
       'image_big'     => 'assets/images/galeria/img-09.jpg',

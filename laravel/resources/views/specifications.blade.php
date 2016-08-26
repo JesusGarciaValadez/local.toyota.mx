@@ -205,7 +205,7 @@
 
       <!-- Inicio auto interior-->
       <div class="cont-imgs interna">
-        <img class="jsn-UrlInterior" src="{{ env( 'APP_URL' ) . 'assets/images/datos/img-tablero.jpg' }}">
+        <img class="jsn-UrlInterior" src="{{ env( 'APP_URL' ) . 'img-tablero.jpg' }}">
       </div>
       <!-- Fin auto interior-->
 
