@@ -2,16 +2,19 @@
 
 namespace Highlander\Events;
 
-use Highlander\Events\Event;
+use Illuminate\Broadcasting\Channel;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Broadcasting\PrivateChannel;
+use Illuminate\Broadcasting\PresenceChannel;
+use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 
-class UploadImages extends Event
+class UploadImages
 {
-  use SerializesModels;
+  use InteractsWithSockets, SerializesModels;
 
   private $request;
-  private $images;
+  private $files;
   private $path;
 
   /**
@@ -19,20 +22,20 @@ class UploadImages extends Event
    *
    * @return void
    */
-  public function __construct( $request, Array $images, String $path )
+  public function __construct( $request, Array $files, String $path )
   {
     $this->request  = $request;
-    $this->images   = $images;
+    $this->files    = $files;
     $this->path     = $path;
   }
 
   /**
-   * Get the channels the event should be broadcast on.
+   * Get the channels the event should broadcast on.
    *
-   * @return array
+   * @return Channel|array
    */
   public function broadcastOn()
   {
-      return [];
+    return new PrivateChannel('channel-name');
   }
 }

@@ -24,6 +24,13 @@
             margin-right: 6px;
         }
     </style>
+
+    <!-- Scripts -->
+    <script>
+        window.Laravel = <?php echo json_encode([
+            'csrfToken' => csrf_token(),
+        ]); ?>
+    </script>
 </head>
 <body id="app-layout">
     <nav class="navbar navbar-default navbar-static-top">
@@ -39,7 +46,7 @@
                 </button>
 
                 <!-- Branding Image -->
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" href="#">
                     Laravel
                 </a>
             </div>
@@ -47,7 +54,7 @@
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/home') }}">Home</a></li>
+                    &nbsp;
                 </ul>
 
                 <!-- Right Side Of Navbar -->
@@ -63,7 +70,17 @@
                             </a>
 
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+                                <li>
+                                    <a href="{{ url('/logout') }}"
+                                        onclick="event.preventDefault();
+                                                 document.getElementById('logout-form').submit();">
+                                        Logout
+                                    </a>
+
+                                    <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                                        {{ csrf_field() }}
+                                    </form>
+                                </li>
                             </ul>
                         </li>
                     @endif
@@ -79,6 +96,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     @section( 'scripts' )
     @show
-    {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
+    <script src="js/app.js"></script>
 </body>
 </html>

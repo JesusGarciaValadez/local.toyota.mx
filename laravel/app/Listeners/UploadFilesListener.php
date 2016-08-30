@@ -6,8 +6,10 @@ use Highlander\Events\UploadFiles;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class UploadFilesListener
+class UploadFilesListener implements ShouldQueue
 {
+  use InteractsWithQueue;
+
   /**
    * Create the event listener.
    *

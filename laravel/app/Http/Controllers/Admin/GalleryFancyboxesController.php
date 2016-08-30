@@ -10,6 +10,8 @@ use Highlander\Http\Controllers\Controller;
 use Highlander\Http\Requests\GalleryFancyboxImageRequest;
 use Highlander\Http\Requests\GalleryFancyboxRequest;
 
+use Highlander\Events\UploadImages;
+
 class GalleryFancyboxesController extends Controller
 {
   /**

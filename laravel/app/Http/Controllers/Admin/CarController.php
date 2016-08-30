@@ -10,6 +10,9 @@ use Illuminate\Support\Str;
 
 use Highlander\Http\Requests\CarRequest;
 
+use Highlander\Events\UploadImages;
+use Highlander\Events\UploadFiles;
+
 class CarController extends Controller
 {
   /**
@@ -67,7 +70,7 @@ class CarController extends Controller
 
     $carTechnicalSpecificationsFile = [ 'Download' ];
     $carTechnicalSpecificationsPath = 'assets/technical-specifications/';
-    event( new UploadFile( $request, $carTechnicalSpecificationsFile, $carTechnicalSpecificationsPath ) );
+    event( new UploadFiles( $request, $carTechnicalSpecificationsFile, $carTechnicalSpecificationsPath ) );
 
     $technicalSpecifications  = [
       'description' => base64_encode(

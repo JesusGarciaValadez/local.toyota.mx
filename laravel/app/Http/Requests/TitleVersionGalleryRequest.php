@@ -2,9 +2,9 @@
 
 namespace Highlander\Http\Requests;
 
-use Highlander\Http\Requests\Request;
+use Illuminate\Foundation\Http\FormRequest;
 
-class TitleVersionGalleryRequest extends Request
+class TitleVersionGalleryRequest extends FormRequest
 {
   /**
    * Determine if the user is authorized to make this request.
