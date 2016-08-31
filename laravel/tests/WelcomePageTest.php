@@ -7,7 +7,7 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 class WelcomePageTest extends TestCase
 {
     /**
-     * A basic test example.
+     * Test if homepage is visible and contains default data.
      *
      * @return void
      */
@@ -26,6 +26,10 @@ class WelcomePageTest extends TestCase
            ->see( 'La solución ideal para los que buscan mejor rendimiento de combustible.' );
     }
 
+    /**
+     * Test for trying to access to the first existing car model
+     * @return void
+     */
     public function testCarModel()
     {
       $this->visit( env( 'APP_URL' ) . 'highlander' )
@@ -38,6 +42,10 @@ class WelcomePageTest extends TestCase
            ->see( 'HIGHLANDER LE' );
     }
 
+    /**
+     * Test to check if a page of an invented car model exists
+     * @return void
+     */
     public function testPageNotExist()
     {
       $response = $this->call( 'GET', '/especificaciones/modelo' );
