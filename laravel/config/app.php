@@ -170,11 +170,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        Highlander\Providers\AppServiceProvider::class,
+        // Highlander\Providers\BroadcastServiceProvider::class,
+        Highlander\Providers\AuthServiceProvider::class,
+        Highlander\Providers\EventServiceProvider::class,
+        Highlander\Providers\RouteServiceProvider::class,
 
         /*
          * Custom Service Providers
