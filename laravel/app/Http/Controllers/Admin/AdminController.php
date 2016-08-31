@@ -39,4 +39,16 @@ class AdminController extends Controller
 
     return view( 'admin.show' )->withHome( $home );
   }
+
+  /**
+   * Destroy reference database of the specified car
+   * @param  int  $id
+   * @return \Illuminate\Http\Response
+   */
+  public function destroy( $id )
+  {
+    \Highlander\Brands::destroy( $id );
+
+    return \Redirect::back( );
+  }
 }

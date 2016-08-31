@@ -32,10 +32,19 @@
                   <td class="col-lg-8 col-md-8 col-sm-8"><p><small><span>{!! $brand->name !!}</small></p></td>
                   <td class="col-lg-4 col-md-4 col-sm-4">
                     <div class="clearfix text-center form-group col-lg-6 col-md-6 col-sm-6">
-                      <a href="{{ action( 'Admin\AdminController@show', [ 'id' => $brand->id ] ) }}" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
+                      <a href="{{ action( 'Admin\AdminController@show', [
+                        'id' => $brand->id
+                      ] ) }}" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
                     </div>
                     <div class="clearfix text-center col-lg-6 col-md-6 col-sm-6">
-                      {!! Form::open( [ 'url' => 'admin/borrar/' . $brand->id, 'method' => 'DELETE', 'class' => 'form-horizontal', 'files' => false ] ) !!}
+                      {!! Form::open( [
+                        'url'  => action( 'Admin\AdminController@destroy', [
+                          'id' => $brand->id
+                        ] ),
+                        'method'  => 'DELETE',
+                        'class'   => 'form-horizontal',
+                        'files'   => false
+                      ] ) !!}
                         <button type="submit" class="btn btn-danger">
                           <i class="glyphicon glyphicon-trash"></i> Eliminar
                         </button>

@@ -36,7 +36,7 @@ Route::auth( );
 */
 
 Route::resource( 'admin', 'Admin\AdminController', [
-  'only'        => [ 'index', 'show' ],
+  'only'        => [ 'index', 'show', 'destroy' ],
   'parameters'  => [ 'admin' => 'id' ]
 ] );
 
