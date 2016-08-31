@@ -40,7 +40,7 @@ class BrandController extends Controller
    */
   public function update( BrandRequest $request, $id )
   {
-    $brand    = [ 'name' => $request->brand ];
+    $brand    = [ 'name' => $request->name ];
     $result   = \Highlander\Brands::where( 'id', $id )
                                   ->update( $brand );
 
