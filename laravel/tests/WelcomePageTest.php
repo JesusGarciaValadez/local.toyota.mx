@@ -37,4 +37,11 @@ class WelcomePageTest extends TestCase
            ->seePageIs( env( 'APP_URL' ) . 'highlander/especificaciones/coremt' )
            ->see( 'HIGHLANDER LE' );
     }
+
+    public function testPageNotExist()
+    {
+      $response = $this->call( 'GET', '/especificaciones/modelo' );
+
+      $this->assertEquals( 404, $response->status() );
+    }
 }
