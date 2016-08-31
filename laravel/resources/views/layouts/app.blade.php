@@ -44,7 +44,7 @@
   <header>
     <div class="menu1 fadeInDown animated">
       {!! Html::link( action( 'HomeController@index', [
-        'slug'  => $slug
+        'slug' => ( !empty( $slug ) ) ? $slug : ''
       ] ), '', [
         'target'  => '_blank',
         'class'   => 'logo'
@@ -73,7 +73,9 @@
           </li>
           -->
           <li class="distri">
-            {!! Html::link( action( 'HomeController@retail', [ 'slug' => $slug ] ), 'Distribuidores', [ ] ) !!}
+            {!! Html::link( action( 'HomeController@retail', [
+              'slug' => ( !empty( $slug ) ) ? $slug : ''
+            ] ), 'Distribuidores', [ ] ) !!}
           </li>
         </ul>
       </nav>
