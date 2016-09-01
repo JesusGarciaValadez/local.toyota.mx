@@ -41,8 +41,7 @@ class HomeController extends Controller
   {
     $cars = \Highlander\Car::all( );
     $car  = \Highlander\Car::where( 'slug', $model )
-                          ->get( )
-                          ->first();
+                           ->firstOrFail();
 
     return view( 'specifications' )->withCar( $car )
                                    ->withCars( $cars )
