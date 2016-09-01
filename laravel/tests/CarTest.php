@@ -47,4 +47,54 @@ class CarTest extends TestCase
          ->assertResponseOk()
          ->seePageIs( env( 'APP_URL' ) . 'admin' );
   }
+
+  /**
+   * Test for edit brand title
+   * @return void
+   */
+  public function testEditBrandTitle()
+  {
+    $user = factory( Highlander\User::class )->create();
+
+    $this->actingAs( $user )
+         ->visit( env( 'APP_URL' ) . "admin/" )
+         ->assertResponseOk( )
+         ->seePageIs( env( 'APP_URL' ) . "admin/" )
+         ->see( 'Highlander' )
+         ->click( 'Editar' )
+         ->assertResponseOk()
+         ->seePageIs( env( 'APP_URL' ) . 'admin/1' )
+         ->visit( env( 'APP_URL' ) . 'admin/brand/1/edit' )
+         ->type( 'Highlander 2016', 'name' )
+         ->press( 'Actualizar' )
+         ->seePageIs( env( 'APP_URL' ) . 'admin/brand/1/edit' )
+         ->seeInDatabase( 'Brands', [
+            'name' => 'Highlander 2016'
+          ] );
+  }
+
+  /**
+   * Test for edit brand title
+   * @return void
+   */
+  public function testEditSlogan()
+  {
+    $user = factory( Highlander\User::class )->create();
+
+    $this->actingAs( $user )
+         ->visit( env( 'APP_URL' ) . "admin/" )
+         ->assertResponseOk( )
+         ->seePageIs( env( 'APP_URL' ) . "admin/" )
+         ->see( 'Highlander' )
+         ->click( 'Editar' )
+         ->assertResponseOk()
+         ->seePageIs( env( 'APP_URL' ) . 'admin/1' )
+         ->visit( env( 'APP_URL' ) . 'admin/slogan/1/edit' )
+         ->type( 'Haremos de tus viajes, los mejores momentos', 'slogan' )
+         ->press( 'Actualizar' )
+         ->seePageIs( env( 'APP_URL' ) . 'admin/slogan/1/edit' )
+         ->seeInDatabase( 'Brands', [
+            'slogan' => 'Haremos de tus viajes, los mejores momentos'
+          ] );
+  }
 }
