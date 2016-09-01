@@ -173,6 +173,10 @@ class CarTest extends TestCase
           ] );
   }
 
+  /**
+   * Test for edit title versions gallery
+   * @return void
+   */
   public function testEditTitlteVersionsGallery()
   {
     $user = factory( Highlander\User::class )->create();
@@ -191,6 +195,31 @@ class CarTest extends TestCase
          ->seePageIs( env( 'APP_URL' ) . 'admin/title_versions_gallery/1/edit' )
          ->seeInDatabase( 'Brands', [
             'title_versions_gallery' => 'CADA UNA TIENE DETALLES QUE TE CONQUISTARÁN.'
+          ] );
+  }
+
+  /**
+   * Test for edit title driving animation
+   * @return void
+   */
+  public function testEditTitleDrivingAnimation()
+  {
+    $user = factory( Highlander\User::class )->create();
+
+    $this->actingAs( $user )
+         ->visit( env( 'APP_URL' ) . "admin/" )
+         ->assertResponseOk( )
+         ->seePageIs( env( 'APP_URL' ) . "admin/" )
+         ->see( 'Highlander' )
+         ->click( 'Editar' )
+         ->assertResponseOk()
+         ->seePageIs( env( 'APP_URL' ) . 'admin/1' )
+         ->visit( env( 'APP_URL' ) . 'admin/title_driving_animation/1/edit' )
+         ->type( 'CONÓCELA A FONDO Y NO BUSQUES MÁS.', 'title_driving_animation' )
+         ->press( 'Actualizar' )
+         ->seePageIs( env( 'APP_URL' ) . 'admin/title_driving_animation/1/edit' )
+         ->seeInDatabase( 'Brands', [
+            'title_driving_animation' => 'CONÓCELA A FONDO Y NO BUSQUES MÁS.'
           ] );
   }
 }
