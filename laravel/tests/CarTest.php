@@ -57,13 +57,6 @@ class CarTest extends TestCase
     $user = factory( Highlander\User::class )->create();
 
     $this->actingAs( $user )
-         ->visit( env( 'APP_URL' ) . "admin/" )
-         ->assertResponseOk( )
-         ->seePageIs( env( 'APP_URL' ) . "admin/" )
-         ->see( 'Highlander' )
-         ->click( 'Editar' )
-         ->assertResponseOk()
-         ->seePageIs( env( 'APP_URL' ) . 'admin/1' )
          ->visit( env( 'APP_URL' ) . 'admin/brand/1/edit' )
          ->type( 'Highlander 2016', 'name' )
          ->press( 'Actualizar' )
@@ -82,13 +75,6 @@ class CarTest extends TestCase
     $user = factory( Highlander\User::class )->create();
 
     $this->actingAs( $user )
-         ->visit( env( 'APP_URL' ) . "admin/" )
-         ->assertResponseOk( )
-         ->seePageIs( env( 'APP_URL' ) . "admin/" )
-         ->see( 'Highlander' )
-         ->click( 'Editar' )
-         ->assertResponseOk()
-         ->seePageIs( env( 'APP_URL' ) . 'admin/1' )
          ->visit( env( 'APP_URL' ) . 'admin/slogan/1/edit' )
          ->type( 'Haremos de tus viajes, los mejores momentos', 'slogan' )
          ->press( 'Actualizar' )
@@ -107,13 +93,6 @@ class CarTest extends TestCase
     $user = factory( Highlander\User::class )->create();
 
     $this->actingAs( $user )
-         ->visit( env( 'APP_URL' ) . "admin/" )
-         ->assertResponseOk( )
-         ->seePageIs( env( 'APP_URL' ) . "admin/" )
-         ->see( 'Highlander' )
-         ->click( 'Editar' )
-         ->assertResponseOk()
-         ->seePageIs( env( 'APP_URL' ) . 'admin/1' )
          ->visit( env( 'APP_URL' ) . 'admin/title_h1/1/edit' )
          ->type( 'Desde cualquier ángulo te parecerá espectacular.', 'title_h1' )
          ->press( 'Actualizar' )
@@ -132,13 +111,6 @@ class CarTest extends TestCase
     $user = factory( Highlander\User::class )->create();
 
     $this->actingAs( $user )
-         ->visit( env( 'APP_URL' ) . "admin/" )
-         ->assertResponseOk( )
-         ->seePageIs( env( 'APP_URL' ) . "admin/" )
-         ->see( 'Highlander' )
-         ->click( 'Editar' )
-         ->assertResponseOk()
-         ->seePageIs( env( 'APP_URL' ) . 'admin/1' )
          ->visit( env( 'APP_URL' ) . 'admin/title_gallery_fancybox/1/edit' )
          ->type( 'CADA PARTE DE ELLA TIENE UN PROPÓSITO.', 'title_gallery_fancybox' )
          ->press( 'Actualizar' )
@@ -157,13 +129,6 @@ class CarTest extends TestCase
     $user = factory( Highlander\User::class )->create();
 
     $this->actingAs( $user )
-         ->visit( env( 'APP_URL' ) . "admin/" )
-         ->assertResponseOk( )
-         ->seePageIs( env( 'APP_URL' ) . "admin/" )
-         ->see( 'Highlander' )
-         ->click( 'Editar' )
-         ->assertResponseOk()
-         ->seePageIs( env( 'APP_URL' ) . 'admin/1' )
          ->visit( env( 'APP_URL' ) . 'admin/description_gallery_fancybox/1/edit' )
          ->type( 'Cada espacio diseñado en Highlander está pensado con un propósito, ya sea comodidad, seguridad o lujo, pero todo tiene una razón de ser.', 'description_gallery_fancybox' )
          ->press( 'Actualizar' )
@@ -182,13 +147,6 @@ class CarTest extends TestCase
     $user = factory( Highlander\User::class )->create();
 
     $this->actingAs( $user )
-         ->visit( env( 'APP_URL' ) . "admin/" )
-         ->assertResponseOk( )
-         ->seePageIs( env( 'APP_URL' ) . "admin/" )
-         ->see( 'Highlander' )
-         ->click( 'Editar' )
-         ->assertResponseOk()
-         ->seePageIs( env( 'APP_URL' ) . 'admin/1' )
          ->visit( env( 'APP_URL' ) . 'admin/title_versions_gallery/1/edit' )
          ->type( 'CADA UNA TIENE DETALLES QUE TE CONQUISTARÁN.', 'title_versions_gallery' )
          ->press( 'Actualizar' )
@@ -207,13 +165,6 @@ class CarTest extends TestCase
     $user = factory( Highlander\User::class )->create();
 
     $this->actingAs( $user )
-         ->visit( env( 'APP_URL' ) . "admin/" )
-         ->assertResponseOk( )
-         ->seePageIs( env( 'APP_URL' ) . "admin/" )
-         ->see( 'Highlander' )
-         ->click( 'Editar' )
-         ->assertResponseOk()
-         ->seePageIs( env( 'APP_URL' ) . 'admin/1' )
          ->visit( env( 'APP_URL' ) . 'admin/title_driving_animation/1/edit' )
          ->type( 'CONÓCELA A FONDO Y NO BUSQUES MÁS.', 'title_driving_animation' )
          ->press( 'Actualizar' )
@@ -232,13 +183,6 @@ class CarTest extends TestCase
     $user = factory( Highlander\User::class )->create();
 
     $this->actingAs( $user )
-         ->visit( env( 'APP_URL' ) . "admin/" )
-         ->assertResponseOk( )
-         ->seePageIs( env( 'APP_URL' ) . "admin/" )
-         ->see( 'Highlander' )
-         ->click( 'Editar' )
-         ->assertResponseOk()
-         ->seePageIs( env( 'APP_URL' ) . 'admin/1' )
          ->visit( env( 'APP_URL' ) . 'admin/title_footer/1/edit' )
          ->type( 'HIGHLANDER LA CAMIONETA QUE TÚ Y TU FAMILIA ESTABAN ESPERANDO.', 'title_footer' )
          ->press( 'Actualizar' )
@@ -257,13 +201,6 @@ class CarTest extends TestCase
     $user = factory( Highlander\User::class )->create();
 
     $this->actingAs( $user )
-         ->visit( env( 'APP_URL' ) . "admin/" )
-         ->assertResponseOk( )
-         ->seePageIs( env( 'APP_URL' ) . "admin/" )
-         ->see( 'Highlander' )
-         ->click( 'Editar' )
-         ->assertResponseOk()
-         ->seePageIs( env( 'APP_URL' ) . 'admin/1' )
          ->visit( env( 'APP_URL' ) . 'admin/description_footer/1/edit' )
          ->type( 'La solución ideal para los que buscan mejor rendimiento de combustible.', 'description_footer' )
          ->press( 'Actualizar' )
