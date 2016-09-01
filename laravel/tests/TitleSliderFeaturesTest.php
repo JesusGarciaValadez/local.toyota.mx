@@ -31,7 +31,7 @@ class TitleSliderFeaturesTest extends TestCase
   }
 
   /**
-   * Test for edit title of footer
+   * Test for delete the first slider feature
    * @return void
    */
   public function testDeleteFirstTitleSliderFeatures()
@@ -41,6 +41,27 @@ class TitleSliderFeaturesTest extends TestCase
     $this->actingAs( $user )
          ->visit( env( 'APP_URL' ) . 'admin/1/title-slider-features' )
          ->press( 'Eliminar' )
+         ->assertResponseOk()
+         ->seePageIs( env( 'APP_URL' ) . 'admin/1/title-slider-features' )
+         ->see( 'Título eliminado' );
+  }
+
+  /**
+   * Test for delete various slider features
+   * @return void
+   */
+  public function testDeleteVariousTitleSliderFeatures()
+  {
+    $user = factory( Highlander\User::class )->create();
+
+    $this->actingAs( $user )
+         ->visit( env( 'APP_URL' ) . 'admin/1/title-slider-features' )
+         ->press( 'Eliminar' )
+         ->assertResponseOk()
+         ->seePageIs( env( 'APP_URL' ) . 'admin/1/title-slider-features' )
+         ->see( 'Título eliminado' );
+
+    $this->press( 'Eliminar' )
          ->assertResponseOk()
          ->seePageIs( env( 'APP_URL' ) . 'admin/1/title-slider-features' )
          ->see( 'Título eliminado' );
