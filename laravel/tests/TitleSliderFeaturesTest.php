@@ -20,14 +20,35 @@ class TitleSliderFeaturesTest extends TestCase
          ->visit( env( 'APP_URL' ) . 'admin/1/title-slider-features' )
          ->click( 'Crear nuevo elemento' )
          ->seePageIs( env( 'APP_URL' ) . 'admin/1/title-slider-features/create' )
-         ->type( 'Título nuevo', 'title' )
+         ->type( 'Titulo nuevo', 'title' )
          ->type( 'Slider nuevo', 'content' )
          ->press( 'Actualizar' )
          ->seePageIs( env( 'APP_URL' ) . 'admin/1/title-slider-features/create' )
          ->seeInDatabase( 'slider_features', [
-            'title'   => 'Título nuevo',
-            'content' => 'Slider nuevo'
+            'title'     => 'Titulo nuevo',
+            'content'   => 'Slider nuevo'
           ] );
+  }
+
+  /**
+   * Test for delete various slider features
+   * @return void
+   */
+  public function testEditTitleSliderFeatures()
+  {
+    $user = factory( Highlander\User::class )->create();
+
+    $this->actingAs( $user )
+         ->visit( env( 'APP_URL' ) . 'admin/1/title-slider-features' )
+         ->click( 'Editar' )
+         ->assertResponseOk()
+         ->seePageIs( env( 'APP_URL' ) . 'admin/1/title-slider-features/1/edit' )
+         ->see( 'Editar galería de características:' )
+         ->type( 'Título actualizado', 'titlesSliderFeatures' )
+         ->press( 'Actualizar' )
+         ->assertResponseOk()
+         ->seePageIs( env( 'APP_URL' ) . 'admin/1/title-slider-features/1/edit' )
+         ->see( 'Título actualizado' );
   }
 
   /**
