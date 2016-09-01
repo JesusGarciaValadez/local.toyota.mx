@@ -247,4 +247,29 @@ class CarTest extends TestCase
             'title_footer' => 'HIGHLANDER LA CAMIONETA QUE TÚ Y TU FAMILIA ESTABAN ESPERANDO.'
           ] );
   }
+
+  /**
+   * Test for edit description in footer
+   * @return void
+   */
+  public function testEditDescriptionFooter()
+  {
+    $user = factory( Highlander\User::class )->create();
+
+    $this->actingAs( $user )
+         ->visit( env( 'APP_URL' ) . "admin/" )
+         ->assertResponseOk( )
+         ->seePageIs( env( 'APP_URL' ) . "admin/" )
+         ->see( 'Highlander' )
+         ->click( 'Editar' )
+         ->assertResponseOk()
+         ->seePageIs( env( 'APP_URL' ) . 'admin/1' )
+         ->visit( env( 'APP_URL' ) . 'admin/description_footer/1/edit' )
+         ->type( 'La solución ideal para los que buscan mejor rendimiento de combustible.', 'description_footer' )
+         ->press( 'Actualizar' )
+         ->seePageIs( env( 'APP_URL' ) . 'admin/description_footer/1/edit' )
+         ->seeInDatabase( 'Brands', [
+            'description_footer' => 'La solución ideal para los que buscan mejor rendimiento de combustible.'
+          ] );
+  }
 }
