@@ -222,4 +222,29 @@ class CarTest extends TestCase
             'title_driving_animation' => 'CONÓCELA A FONDO Y NO BUSQUES MÁS.'
           ] );
   }
+
+  /**
+   * Test for edit title of footer
+   * @return void
+   */
+  public function testEditTitleFooter()
+  {
+    $user = factory( Highlander\User::class )->create();
+
+    $this->actingAs( $user )
+         ->visit( env( 'APP_URL' ) . "admin/" )
+         ->assertResponseOk( )
+         ->seePageIs( env( 'APP_URL' ) . "admin/" )
+         ->see( 'Highlander' )
+         ->click( 'Editar' )
+         ->assertResponseOk()
+         ->seePageIs( env( 'APP_URL' ) . 'admin/1' )
+         ->visit( env( 'APP_URL' ) . 'admin/title_footer/1/edit' )
+         ->type( 'HIGHLANDER LA CAMIONETA QUE TÚ Y TU FAMILIA ESTABAN ESPERANDO.', 'title_footer' )
+         ->press( 'Actualizar' )
+         ->seePageIs( env( 'APP_URL' ) . 'admin/title_footer/1/edit' )
+         ->seeInDatabase( 'Brands', [
+            'title_footer' => 'HIGHLANDER LA CAMIONETA QUE TÚ Y TU FAMILIA ESTABAN ESPERANDO.'
+          ] );
+  }
 }
