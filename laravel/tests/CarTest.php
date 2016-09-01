@@ -30,6 +30,10 @@ class CarTest extends TestCase
     $this->assertEquals( 404, $response->status() );
   }
 
+  /**
+   * Test for delete car model
+   * @return void
+   */
   public function testDeleteCarBrandOption()
   {
     $user = factory( Highlander\User::class )->create();
@@ -42,26 +46,5 @@ class CarTest extends TestCase
          ->press( 'Eliminar' )
          ->assertResponseOk()
          ->seePageIs( env( 'APP_URL' ) . 'admin' );
-  }
-
-  public function testEditBrandTitle()
-  {
-    $user = factory( Highlander\User::class )->create();
-
-    $this->actingAs( $user )
-         ->visit( env( 'APP_URL' ) . "admin/" )
-         ->assertResponseOk( )
-         ->seePageIs( env( 'APP_URL' ) . "admin/" )
-         ->see( 'Highlander' )
-         ->click( 'Editar' )
-         ->assertResponseOk()
-         ->seePageIs( env( 'APP_URL' ) . 'admin/1' )
-         ->visit( env( 'APP_URL' ) . 'admin/brand/1/edit' )
-         ->type( 'Highlander 2016', 'name' )
-         ->press( 'Actualizar' )
-         ->seePageIs( env( 'APP_URL' ) . 'admin/brand/1/edit' )
-         ->seeInDatabase( 'Brands', [
-            'name' => 'Highlander 2016'
-          ] );
   }
 }
