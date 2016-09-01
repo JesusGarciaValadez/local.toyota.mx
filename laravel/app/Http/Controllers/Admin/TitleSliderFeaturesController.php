@@ -149,7 +149,7 @@ class TitleSliderFeaturesController extends Controller
     /*
      * Create a response for passing it into the view.
      */
-    $message        = ( $result ) ? "Campo actualizado" : "Hubo un error al actualizar la información. :/";
+    $message        = ( $result ) ? "Título eliminado" : "Hubo un error al actualizar la información. :/";
     $type           = ( $result ) ? "success" : "danger";
 
     /*
