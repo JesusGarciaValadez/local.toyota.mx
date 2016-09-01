@@ -52,7 +52,7 @@
                 @foreach ( $elements as $element )
                 <tr>
                   <td class="col-lg-10 col-md-10" colspan="10">
-                    <p><small><span>{!! $element->title !!}:</span></small></p>
+                    <p><small><span>{{ $element->title }}:</span></small></p>
                   </td>
                   <td class="col-lg-1 col-md-1 col-sm-1">
                     <div class="clearfix">
