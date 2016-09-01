@@ -148,6 +148,10 @@ class CarTest extends TestCase
           ] );
   }
 
+  /**
+   * Test for edit the description of the fancybox gallery
+   * @return [type] [description]
+   */
   public function testEditDescriptionGalleryFancybox()
   {
     $user = factory( Highlander\User::class )->create();
@@ -166,6 +170,27 @@ class CarTest extends TestCase
          ->seePageIs( env( 'APP_URL' ) . 'admin/description_gallery_fancybox/1/edit' )
          ->seeInDatabase( 'Brands', [
             'description_gallery_fancybox' => 'Cada espacio diseñado en Highlander está pensado con un propósito, ya sea comodidad, seguridad o lujo, pero todo tiene una razón de ser.'
+          ] );
+  }
+
+  public function testEditTitlteVersionsGallery()
+  {
+    $user = factory( Highlander\User::class )->create();
+
+    $this->actingAs( $user )
+         ->visit( env( 'APP_URL' ) . "admin/" )
+         ->assertResponseOk( )
+         ->seePageIs( env( 'APP_URL' ) . "admin/" )
+         ->see( 'Highlander' )
+         ->click( 'Editar' )
+         ->assertResponseOk()
+         ->seePageIs( env( 'APP_URL' ) . 'admin/1' )
+         ->visit( env( 'APP_URL' ) . 'admin/title_versions_gallery/1/edit' )
+         ->type( 'CADA UNA TIENE DETALLES QUE TE CONQUISTARÁN.', 'title_versions_gallery' )
+         ->press( 'Actualizar' )
+         ->seePageIs( env( 'APP_URL' ) . 'admin/title_versions_gallery/1/edit' )
+         ->seeInDatabase( 'Brands', [
+            'title_versions_gallery' => 'CADA UNA TIENE DETALLES QUE TE CONQUISTARÁN.'
           ] );
   }
 }
