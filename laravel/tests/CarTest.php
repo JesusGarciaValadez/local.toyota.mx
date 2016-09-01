@@ -122,4 +122,29 @@ class CarTest extends TestCase
             'title_h1' => 'Desde cualquier ángulo te parecerá espectacular.'
           ] );
   }
+
+  /**
+   * Test for edit gallery fancybox's title
+   * @return void
+   */
+  public function testEditTitleGalleryFancybox()
+  {
+    $user = factory( Highlander\User::class )->create();
+
+    $this->actingAs( $user )
+         ->visit( env( 'APP_URL' ) . "admin/" )
+         ->assertResponseOk( )
+         ->seePageIs( env( 'APP_URL' ) . "admin/" )
+         ->see( 'Highlander' )
+         ->click( 'Editar' )
+         ->assertResponseOk()
+         ->seePageIs( env( 'APP_URL' ) . 'admin/1' )
+         ->visit( env( 'APP_URL' ) . 'admin/title_gallery_fancybox/1/edit' )
+         ->type( 'CADA PARTE DE ELLA TIENE UN PROPÓSITO.', 'title_gallery_fancybox' )
+         ->press( 'Actualizar' )
+         ->seePageIs( env( 'APP_URL' ) . 'admin/title_gallery_fancybox/1/edit' )
+         ->seeInDatabase( 'Brands', [
+            'title_gallery_fancybox' => 'CADA PARTE DE ELLA TIENE UN PROPÓSITO.'
+          ] );
+  }
 }
