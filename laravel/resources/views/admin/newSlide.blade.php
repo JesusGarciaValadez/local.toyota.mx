@@ -27,7 +27,7 @@
             ] ) !!}
 
               <div class="form-group{{ $errors->has( 'title' ) ? ' has-error' : '' }}">
-                {!! Form::label( 'Título', 'title', [
+                {!! Form::label( 'title', 'Título', [
                   'class' => 'col-md-3 control-label'
                 ] ) !!}
 
@@ -48,7 +48,7 @@
               </div>
 
               <div class="form-group{{ $errors->has( 'content' ) ? ' has-error' : '' }}">
-                {!! Form::label( 'Slide', 'content', [
+                {!! Form::label( 'content', 'Slide', [
                   'class' => 'col-md-3 control-label'
                 ] ) !!}
 
