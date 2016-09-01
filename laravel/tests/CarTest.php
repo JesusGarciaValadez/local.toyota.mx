@@ -97,4 +97,29 @@ class CarTest extends TestCase
             'slogan' => 'Haremos de tus viajes, los mejores momentos'
           ] );
   }
+
+  /**
+   * Test for edit title h1
+   * @return void
+   */
+  public function testEditTitleH1()
+  {
+    $user = factory( Highlander\User::class )->create();
+
+    $this->actingAs( $user )
+         ->visit( env( 'APP_URL' ) . "admin/" )
+         ->assertResponseOk( )
+         ->seePageIs( env( 'APP_URL' ) . "admin/" )
+         ->see( 'Highlander' )
+         ->click( 'Editar' )
+         ->assertResponseOk()
+         ->seePageIs( env( 'APP_URL' ) . 'admin/1' )
+         ->visit( env( 'APP_URL' ) . 'admin/title_h1/1/edit' )
+         ->type( 'Desde cualquier ángulo te parecerá espectacular.', 'title_h1' )
+         ->press( 'Actualizar' )
+         ->seePageIs( env( 'APP_URL' ) . 'admin/title_h1/1/edit' )
+         ->seeInDatabase( 'Brands', [
+            'title_h1' => 'Desde cualquier ángulo te parecerá espectacular.'
+          ] );
+  }
 }
