@@ -39,12 +39,12 @@ class AdminPageTest extends TestCase
     $this->visit( env( 'APP_URL' ) . 'admin' )
          ->assertResponseOk()
          ->seePageIs( env( 'APP_URL' ) . 'login' )
-         ->click( 'Register' )
+         ->click( 'Registrarse' )
          ->type( 'Jesús García', 'name' )
          ->type( 'jesus.garcia@lunave.com', 'email' )
          ->type( 'highlander', 'password' )
          ->type( 'highlander', 'password_confirmation' )
-         ->press( 'Register' )
+         ->press( 'Registrarse' )
          ->seePageIs( env( 'APP_URL' ) . 'admin' )
          ->assertResponseOk()
          ->seeInDatabase( 'users', [
@@ -80,6 +80,6 @@ class AdminPageTest extends TestCase
          ->assertResponseOk( )
          ->seePageIs( env( 'APP_URL' ) . "admin/" )
          ->see( 'Highlander' )
-         ->click( 'Logout' );
+         ->click( 'Salir' );
   }
 }
