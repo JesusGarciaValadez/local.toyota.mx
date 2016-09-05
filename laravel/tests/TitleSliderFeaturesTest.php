@@ -20,11 +20,13 @@ class TitleSliderFeaturesTest extends TestCase
          ->visit( env( 'APP_URL' ) . 'admin/1/title-slider-features' )
          ->click( 'Crear nuevo elemento' )
          ->seePageIs( env( 'APP_URL' ) . 'admin/1/title-slider-features/create' )
+         ->type( '1', 'id' )
          ->type( 'Titulo nuevo', 'title' )
          ->type( 'Slider nuevo', 'content' )
          ->press( 'Actualizar' )
          ->seePageIs( env( 'APP_URL' ) . 'admin/1/title-slider-features/create' )
          ->seeInDatabase( 'slider_features', [
+            'brands_id' => '1',
             'title'     => 'Titulo nuevo',
             'content'   => 'Slider nuevo'
           ] );
