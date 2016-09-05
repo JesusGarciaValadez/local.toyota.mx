@@ -24,7 +24,7 @@ class TitleSliderFeaturesRequest extends FormRequest
   public function rules()
   {
     return [
-      'title'  => 'required|string',
+      'title'   => 'required|string',
       'content' => 'sometimes|required|string',
     ];
   }

@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Highlander\Http\Requests;
 use Highlander\Http\Controllers\Controller;
 
+use Highlander\Http\Requests\TitleSliderFeaturesRequest;
 use Highlander\Http\Requests\SliderFeaturesRequest;
 
 class SliderFeaturesController extends Controller
@@ -57,7 +58,7 @@ class SliderFeaturesController extends Controller
    * @param  int  $id ID of the SliderFeature to edit
    * @return \Illuminate\Http\Response
    */
-  public function store( SliderFeaturesRequest $request, $id )
+  public function store( TitleSliderFeaturesRequest $request, $id )
   {
     $newSlide = [
       'brands_id'   => $id,
@@ -70,7 +71,7 @@ class SliderFeaturesController extends Controller
     /*
      * Create a response for passing it into the view.
      */
-    $message        = ( $result ) ? "Campo actualizado" : "Hubo un error al actualizar la información. :/";
+    $message        = ( $result ) ? "Galería añadida" : "Hubo un error al actualizar la información. :/";
     $type           = ( $result ) ? "success" : "danger";
 
     /*
@@ -105,7 +106,7 @@ class SliderFeaturesController extends Controller
     $typeOfField  = 'galería de características';
     $fieldName    = 'Galería de características';
     $url          = 'admin/' . $id . '/slider-features/' . $id;
-    $field        = 'sliderFeatures';
+    $field        = 'content';
     $fieldValue   = $brands->content;
     $toReturn     = 'admin/' . $id . '/slider-features/';
 
@@ -121,14 +122,14 @@ class SliderFeaturesController extends Controller
    */
   public function update( SliderFeaturesRequest $request, $id )
   {
-    $brand    = [ 'content' => $request->sliderFeatures ];
+    $brand    = [ 'content' => $request->content ];
     $result   = \Highlander\SliderFeature::where( 'id', $id )
                                          ->update( $brand );
 
     /*
      * Create a response for passing it into the view.
      */
-    $message        = ( $result ) ? "Campo actualizado" : "Hubo un error al actualizar la información. :/";
+    $message        = ( $result ) ? "Galería actualizada" : "Hubo un error al actualizar la información. :/";
     $type           = ( $result ) ? "success" : "danger";
 
     /*
@@ -153,7 +154,7 @@ class SliderFeaturesController extends Controller
     /*
      * Create a response for passing it into the view.
      */
-    $message        = ( $result ) ? "Campo actualizado" : "Hubo un error al actualizar la información. :/";
+    $message        = ( $result ) ? "Galería eliminada" : "Hubo un error al actualizar la información. :/";
     $type           = ( $result ) ? "success" : "danger";
 
     /*
