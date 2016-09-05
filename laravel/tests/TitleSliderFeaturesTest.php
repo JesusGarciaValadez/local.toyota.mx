@@ -9,7 +9,7 @@ class TitleSliderFeaturesTest extends TestCase
   use DatabaseTransactions;
 
   /**
-   * Test for edit title of footer
+   * Test for create a new Slider Feature with his title
    * @return void
    */
   public function testCreateNewTitleSliderFeatures()
