@@ -295,7 +295,7 @@ class CarController extends Controller
      * Create a response for passing it into the view.
      */
     $type           = ( $car ) ? "success" : "danger";
-    $message        = ( $car ) ? "Campo actualizado" : "Hubo un error al actualizar la información. :/";
+    $message        = ( $car ) ? "Modelo de auto eliminado" : "Hubo un error al actualizar la información. :/";
 
     /*
      * Passing the recipe information, categories and domain url to the view.
