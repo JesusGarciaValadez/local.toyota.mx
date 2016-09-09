@@ -212,8 +212,8 @@
                 ] ) !!}
 
                 <div class="col-md-9">
-                  {!! Form::file( 'title_big', [
-                    'class'         => '',
+                  {!! Form::text( 'title_big', '', [
+                    'class'         => 'form-control',
                     'v-model.sync'  => 'newModel.title_big'
                   ] ) !!}
                   <p class="help-block">Título de la primera imagen de la galería.</p>
@@ -232,8 +232,8 @@
                 ] ) !!}
 
                 <div class="col-md-9">
-                  {!! Form::file( 'title_small_1', [
-                    'class'         => '',
+                  {!! Form::text( 'title_small_1', '', [
+                    'class'         => 'form-control',
                     'v-model.sync'  => 'newModel.title_small_1'
                   ] ) !!}
                   <p class="help-block">Título de la segunda imagen de la galería.</p>
@@ -252,8 +252,8 @@
                 ] ) !!}
 
                 <div class="col-md-9">
-                  {!! Form::file( 'title_small_2', [
-                    'class'         => '',
+                  {!! Form::text( 'title_small_2', '', [
+                    'class'         => 'form-control',
                     'v-model.sync'  => 'newModel.title_small_2'
                   ] ) !!}
                   <p class="help-block">Título de la tercera imagen de la galería.</p>
@@ -272,8 +272,8 @@
                 ] ) !!}
 
                 <div class="col-md-9">
-                  {!! Form::file( 'title_small_3', [
-                    'class'         => '',
+                  {!! Form::text( 'title_small_3', '', [
+                    'class'         => 'form-control',
                     'v-model.sync'  => 'newModel.title_small_3'
                   ] ) !!}
                   <p class="help-block">Título de la cuarta imagen de la galería.</p>

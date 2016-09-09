@@ -28,19 +28,21 @@ class UploadFilesListener implements ShouldQueue
    */
   public function handle( UploadFiles $event )
   {
-    foreach ( $event->files as $file )
+    $request          = \Request();
+    $listOfFiles      = $event->listOfFiles;
+    $files            = $request->files;
+    $path             = $event->path;
+    $destinationPath  = public_path() . '/' . $path;
+
+    foreach( $listOfFiles as $file )
     {
-      if ( $event->request->hasFile( $file ) )
+      if ( $request->hasFile( $file ) )
       {
         try
         {
-          $file                 = $event->request->file( $file );
-          $destinationPath      = public_path() . $event->path;
-          $filename             = strtolower( $file->getClientOriginalName() );
-          $uploadSuccess        = $file->move( $destinationPath, $filename );
-          array_push( $this->imageUploaded, [ $filename => $uploadSuccess ] );
-
-          return $this->fileUploaded;
+          $file           = $request->file( $file );
+          $filename       = strtolower( $file->getClientOriginalName() );
+          $uploadSuccess  = $file->move( $destinationPath, $filename );
         }
         catch ( Exception $error )
         {
@@ -48,5 +50,5 @@ class UploadFilesListener implements ShouldQueue
         }
       }
     }
-  }}
+  }
 }

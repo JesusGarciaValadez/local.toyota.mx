@@ -10,8 +10,6 @@ class UploadImagesListener implements ShouldQueue
 {
   use InteractsWithQueue;
 
-  public $imageUploaded;
-
   /**
    * Create the event listener.
    *
@@ -30,19 +28,21 @@ class UploadImagesListener implements ShouldQueue
    */
   public function handle( UploadImages $event )
   {
-    foreach ( $event->images as $image )
+    $request          = \Request();
+    $listOfImages     = $event->listOfImages;
+    $images           = $request->files;
+    $path             = $event->path;
+    $destinationPath  = public_path() . '/' . $path;
+
+    foreach( $listOfImages as $image )
     {
-      if ( $event->request->hasFile( $image ) )
+      if ( $request->hasFile( $image ) )
       {
         try
         {
-          $file                 = $event->request->file( $image );
-          $destinationPath      = public_path() . $event->path;
-          $filename             = strtolower( $file->getClientOriginalName() );
-          $uploadSuccess        = $file->move( $destinationPath, $filename );
-          array_push( $this->imageUploaded, [ $filename => $uploadSuccess ] );
-
-          return $this->imageUploaded;
+          $file           = $request->file( $image );
+          $filename       = strtolower( $file->getClientOriginalName() );
+          $uploadSuccess  = $file->move( $destinationPath, $filename );
         }
         catch ( Exception $error )
         {

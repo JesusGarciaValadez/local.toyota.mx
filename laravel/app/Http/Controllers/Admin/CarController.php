@@ -62,15 +62,15 @@ class CarController extends Controller
   {
     $technicalImages      = [ 'UrlMotor', 'UrlAuto' ];
     $technicalImagesPath  = 'assets/images/datos/';
-    event( new UploadImages( $request, $technicalImages, $technicalImagesPath ) );
+    Event::fire( new UploadImages( $technicalImages, $technicalImagesPath ) );
 
     $carImages      = [ 'UrlInterior' ];
     $carImagesPath  = 'assets/images/datos/';
-    event( new UploadImages( $request, $carImages, $carImagesPath ) );
+    Event::fire( new UploadImages( $carImages, $carImagesPath ) );
 
     $carTechnicalSpecificationsFile = [ 'Download' ];
     $carTechnicalSpecificationsPath = 'assets/technical-specifications/';
-    event( new UploadFiles( $request, $carTechnicalSpecificationsFile, $carTechnicalSpecificationsPath ) );
+    Event::fire( new UploadFiles( $carTechnicalSpecificationsFile, $carTechnicalSpecificationsPath ) );
 
     $technicalSpecifications  = [
       'description' => base64_encode(
@@ -83,8 +83,8 @@ class CarController extends Controller
           ],
           'Frenos'    => $request->Frenos,
           'Rines'     => $request->Rines,
-          'UrlMotor'  => $technicalImagesPath . $request->UrlMotor,
-          'UrlAuto'   => $request->UrlAuto
+          'UrlMotor'  => $technicalImagesPath . $request->UrlMotor->getClientOriginalName(),
+          'UrlAuto'   => $request->UrlAuto->getClientOriginalName()
         ] )
       )
     ];
@@ -99,7 +99,7 @@ class CarController extends Controller
             'EspejosLaterales'  => $request->EspejosLaterales
           ],
           'Techo'             => $request->Techo,
-          'UrlInterior'       => $carImagesPath . $request->UrlInterior,
+          'UrlInterior'       => $carImagesPath . $request->UrlInterior->getClientOriginalName(),
         ] )
       )
     ];
@@ -113,7 +113,7 @@ class CarController extends Controller
           'Confort'               => $request->Confort,
           'CinturonesSeguridad'   => $request->CinturonesSeguridad,
           'SeguridadInterior'     => $request->SeguridadInterior,
-          'Download'              => $carTechnicalSpecificationsPath . $request->Download
+          'Download'              => $carTechnicalSpecificationsPath . $request->Download->getClientOriginalName()
         ] )
       )
     ];
@@ -129,7 +129,7 @@ class CarController extends Controller
 
     $carImages      = [ 'thumbnail' ];
     $carImagesPath  = 'assets/images/versiones/';
-    event( new UploadImages( $request, $carImages, $carImagesPath ) );
+    Event::fire( new UploadImages( $carImages, $carImagesPath ) );
 
     $car                      = [
       'brands_id'                   => $id,

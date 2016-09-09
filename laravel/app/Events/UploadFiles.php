@@ -13,20 +13,18 @@ class UploadFiles
 {
   use InteractsWithSockets, SerializesModels;
 
-  private $request;
-  private $files;
-  private $path;
+  public $listOfFiles;
+  public $path;
 
   /**
    * Create a new event instance.
    *
    * @return void
    */
-  public function __construct( $request, Array $files, String $path )
+  public function __construct( $listOfFiles, $path )
   {
-    $this->request  = $request;
-    $this->files    = $files;
-    $this->path     = $path;
+    $this->listOfImages = $listOfFiles;
+    $this->path         = $path;
   }
 
   /**

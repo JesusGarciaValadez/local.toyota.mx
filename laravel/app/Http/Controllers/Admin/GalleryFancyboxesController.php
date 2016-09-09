@@ -54,14 +54,23 @@ class GalleryFancyboxesController extends Controller
    */
   public function store( GalleryFancyboxImageRequest $request, $id )
   {
-    $gallery    = $request->only( 'title', 'image_big', 'image_small_1', 'image_small_2', 'image_small_3', 'thumb_big', 'thumb_small_1', 'thumb_small_2', 'thumb_small_3', 'title_big', 'title_small_1', 'title_small_2', 'title_small_3' );
-    $bigImages        = [ 'image_big', 'image_small_1', 'image_small_2', 'image_small_3' ];
-    $thumbs           = [ 'thumb_big', 'thumb_small_1','thumb_small_2', 'thumb_small_3' ];
-    $bigImagesPath    = 'assets/images/galeria/';
-    $thumbsImagesPath = 'assets/images/galeria/';
+    $bigImagesPath              = 'assets/images/galeria/';
+    $thumbsImagesPath           = 'assets/images/thumbs/';
+    $gallery                    = $request->only( 'title', 'title_big', 'title_small_1', 'title_small_2', 'title_small_3' );
+    $gallery[ 'brands_id' ]     = $id;
+    $gallery[ 'image_big' ]     = $bigImagesPath . $request->image_big->getClientOriginalName();
+    $gallery[ 'image_small_1' ] = $bigImagesPath . $request->image_small_1->getClientOriginalName();
+    $gallery[ 'image_small_2' ] = $bigImagesPath . $request->image_small_2->getClientOriginalName();
+    $gallery[ 'image_small_3' ] = $bigImagesPath . $request->image_small_3->getClientOriginalName();
+    $gallery[ 'thumb_big' ]     = $thumbsImagesPath . $request->thumb_big->getClientOriginalName();
+    $gallery[ 'thumb_small_1' ] = $thumbsImagesPath . $request->thumb_small_1->getClientOriginalName();
+    $gallery[ 'thumb_small_2' ] = $thumbsImagesPath . $request->thumb_small_2->getClientOriginalName();
+    $gallery[ 'thumb_small_3' ] = $thumbsImagesPath . $request->thumb_small_3->getClientOriginalName();
+    $bigImages                  = [ 'image_big', 'image_small_1', 'image_small_2', 'image_small_3' ];
+    $thumbs                     = [ 'thumb_big', 'thumb_small_1','thumb_small_2', 'thumb_small_3' ];
 
-    event( new UploadImages( $request, $bigImages, $bigImagesPath ) );
-    event( new UploadImages( $request, $thumbs, $thumbsImagesPath ) );
+    $resultBigImages  = event( new UploadImages( $bigImages, $bigImagesPath ) );
+    event( new UploadImages( $thumbs, $thumbsImagesPath ) );
 
     $gallery = new \Highlander\GalleryFancyboxes( $gallery );
     $gallery->save();
@@ -149,7 +158,7 @@ class GalleryFancyboxesController extends Controller
     /*
      * Create a response for passing it into the view.
      */
-    $message        = ( $result ) ? "Campo actualizado" : "Hubo un error al actualizar la información. :/";
+    $message        = ( $result ) ? "Galería eliminada" : "Hubo un error al actualizar la información. :/";
     $type           = ( $result ) ? "success" : "danger";
 
     /*
