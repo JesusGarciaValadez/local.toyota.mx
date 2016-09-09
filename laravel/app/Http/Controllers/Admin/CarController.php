@@ -26,8 +26,8 @@ class CarController extends Controller
     $title          = "Galería de modelos";
     $toReturn       = '/admin/' . $id;
     $home           = \Highlander\Car::where( 'brands_id', $id )
-                                     ->firstOrFail( );
-    $brand          = $home->brands->name;
+                                     ->get( );
+    $brand          = $home[0]->brands->name;
     $id             = $id;
     $elements       = $home;
     $controllerName = 'Car';
