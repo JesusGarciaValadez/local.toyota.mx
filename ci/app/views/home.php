@@ -2,7 +2,7 @@
             <div id="cover"></div>
             <div class="titulo fadeIn animated">
                 <h1>Highlander<span>2016</span></h1>
-                <h2>Haremos de tus viajes, <br> los mejores momentos </h2>
+                <h2>La camioneta que tú y tu familia <br> estaban esperando</h2>
                 <!-- <div class="btvideo">
                     <span><p>Ve el video y descubre la grandeza de Prius.</p></span>
                     <span><a class="fancybox-media" href="https://www.youtube.com/watch?v=a33pze_sSY4"></a></span>
