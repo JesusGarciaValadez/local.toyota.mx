@@ -27,7 +27,7 @@ class CarRequest extends FormRequest
       'brands_id'             => 'required|string',
       'title'                 => 'required|string',
       'name'                  => 'required|string',
-      'thumbnail'             => 'required|string',
+      'thumbnail'             => 'required|image:png,jpg,jpeg',
       'price'                 => 'required|string',
       'description'           => 'required|string',
       'Capacidad'             => 'required|string',
@@ -36,21 +36,21 @@ class CarRequest extends FormRequest
       'Valvulas'              => 'required|string',
       'Frenos[]'              => 'string',
       'Rines[]'               => 'string',
-      'UrlMotor'              => 'required|string',
-      'UrlAuto'               => 'required|string',
+      'UrlMotor'              => 'required|image:png,jpg,jpeg',
+      'UrlAuto'               => 'required|image:png,jpg,jpeg',
       'Faros[]'               => 'string',
       'SeguridadExterior[]'   => 'string',
       'Cristales[]'           => 'string',
       'EspejosLaterales[]'    => 'string',
       'Techo[]'               => 'string',
-      'UrlInterior'           => 'required|string',
+      'UrlInterior'           => 'required|image:png,jpg,jpeg',
       'AcabadosInteriores[]'  => 'string',
       'Asientos[]'            => 'string',
       'SistemaAudio[]'        => 'string',
       'Confort[]'             => 'string',
       'CinturonesSeguridad[]' => 'string',
       'SeguridadInterior[]'   => 'string',
-      'Download'              => 'required|string'
+      'Download'              => 'required|file'
     ];
   }
 }

@@ -55,10 +55,9 @@ class CarController extends Controller
    *
    * @param  Highlander\Http\Requests\CarRequest  $request
    * @param  int                                  $id
-   * @param  int                                  $element_id
    * @return \Illuminate\Http\Response
    */
-  public function store( CarRequest $request, $id, $element_id )
+  public function store( CarRequest $request, $id )
   {
     $technicalImages      = [ 'UrlMotor', 'UrlAuto' ];
     $technicalImagesPath  = 'assets/images/datos/';
@@ -141,7 +140,7 @@ class CarController extends Controller
       'thumbnail'                   => $carImagesPath . $request->thumbnail,
       'price'                       => $request->price,
       'description'                 => $request->description,
-      'slug'                        => \Str::slug( $request->name )
+      'slug'                        => Str::slug( $request->name )
     ];
 
     $saveCarResult            = new \Highlander\Car( $car );
@@ -151,7 +150,7 @@ class CarController extends Controller
      * Create a response for passing it into the view.
      */
     $type           = ( $saveCarResult ) ? "success" : "danger";
-    $message        = ( $saveCarResult ) ? "Campo actualizado" : "Hubo un error al actualizar la información. :/";
+    $message        = ( $saveCarResult ) ? "Auto creado" : "Hubo un error al actualizar la información. :/";
 
     /*
      * Passing the recipe information, categories and domain url to the view.
@@ -198,6 +197,7 @@ class CarController extends Controller
    */
   public function update( CarRequest $request, $id, $element_id )
   {
+    dd( 'adios' );
     $technicalSpecifications  = [
       'description' => base64_encode(
         serialize( [
@@ -254,12 +254,12 @@ class CarController extends Controller
                                                                            ->update( $internalSpecifications );
 
     $car                      = [
-      'title'                       => $request->title,
-      'name'                        => $request->name,
-      'thumbnail'                   => $request->thumbnail,
-      'price'                       => $request->price,
-      'description'                 => $request->description,
-      'slug'                        => \Str::slug( $request->name )
+      'title'       => $request->title,
+      'name'        => $request->name,
+      'thumbnail'   => $request->thumbnail,
+      'price'       => $request->price,
+      'description' => $request->description,
+      'slug'        => Str::slug( $request->name )
     ];
 
     $saveCarResult                      = \Highlander\Car::where( 'id', $element_id )
@@ -288,8 +288,7 @@ class CarController extends Controller
    */
   public function destroy( $id, $element_id )
   {
-    $car = \Highlander\Car::findOrFail( $id );
-    $car->destroy();
+    $car = \Highlander\Car::destroy( $element_id );
 
     /*
      * Create a response for passing it into the view.

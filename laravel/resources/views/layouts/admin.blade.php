@@ -96,6 +96,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     @section( 'scripts' )
     @show
-    <script src="js/app.js"></script>
+    <!-- <script src="/assets/js/app.js"></script> -->
 </body>
 </html>

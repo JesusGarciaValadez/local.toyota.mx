@@ -42,7 +42,6 @@
                 <div class="col-md-9">
                   {!! Form::text( 'title', $model->title, [
                     'class'         => 'form-control',
-                    'v-model.sync'  => 'newModel.title'
                   ] ) !!}
 
                   @if ($errors->has( 'title' ))
@@ -61,7 +60,6 @@
                 <div class="col-md-9">
                   {!! Form::text( 'name', $model->name, [
                     'class'         => 'form-control',
-                    'v-model.sync'  => 'newModel.name'
                   ] ) !!}
 
                   @if ($errors->has( 'name' ))
@@ -80,7 +78,6 @@
                 <div class="col-md-9">
                   {!! Form::text( 'thumbnail', $model->thumbnail, [
                     'class'         => 'form-control',
-                    'v-model.sync'  => 'newModel.thumbnail'
                   ] ) !!}
 
                   @if ($errors->has( 'thumbnail' ))
@@ -99,7 +96,6 @@
                 <div class="col-md-9">
                   {!! Form::text( 'price', $model->price, [
                     'class'         => 'form-control',
-                    'v-model.sync'  => 'newModel.price'
                   ] ) !!}
 
                   @if ($errors->has( 'price' ))
@@ -119,7 +115,6 @@
                   {!! Form::textarea( 'description', $model->description, [
                     'class'         => 'form-control',
                     'placeholder'   => '[]',
-                    'v-model.sync'  => 'newModel.description'
                   ] ) !!}
 
                   <p class="help-block">Descripción del modelo de auto que se muestra en el Home</p>
@@ -152,7 +147,6 @@
                 <div class="col-md-8">
                   {!! Form::text( 'Capacidad', $model->technicalSpecifications->description[ 'Motor' ][ 'Capacidad' ], [
                     'class'         => 'form-control',
-                    'v-model.sync'  => 'newModel.Capacidad'
                   ] ) !!}
 
                   @if ($errors->has( 'Capacidad' ))
@@ -171,7 +165,6 @@
                 <div class="col-md-8">
                   {!! Form::text( 'Potencia', $model->technicalSpecifications->description[ 'Motor' ][ 'Potencia' ], [
                     'class'         => 'form-control',
-                    'v-model.sync'  => 'newModel.Potencia'
                   ] ) !!}
 
                   @if ($errors->has( 'Potencia' ))
@@ -190,7 +183,6 @@
                 <div class="col-md-8">
                   {!! Form::text( 'Cilindros', $model->technicalSpecifications->description[ 'Motor' ][ 'Cilindros' ], [
                     'class'         => 'form-control',
-                    'v-model.sync'  => 'newModel.Cilindros'
                   ] ) !!}
 
                   @if ($errors->has( 'Cilindros' ))
@@ -209,7 +201,6 @@
                 <div class="col-md-8">
                   {!! Form::text( 'Valvulas', $model->technicalSpecifications->description[ 'Motor' ][ 'Valvulas' ], [
                     'class'         => 'form-control',
-                    'v-model.sync'  => 'newModel.Valvulas'
                   ] ) !!}
 
                   @if ($errors->has( 'Valvulas' ))
@@ -221,7 +212,7 @@
               </div>{{-- Valvulas --}}
 
               <div class="form-group{{ $errors->has( 'Frenos' ) ? ' has-error' : '' }}">
-                {!! Form::label( 'Frenos', 'Frenos:', [
+                {!! Form::label( 'Frenos[]', 'Frenos:', [
                   'class' => 'col-md-3 control-label'
                 ] ) !!}
 
@@ -230,7 +221,6 @@
                   {!! Form::text( 'Frenos[]', $brakes, [
                     'class'         => 'form-control',
                     'placeholder'   => '[]',
-                    'v-model.sync'  => 'newModel.Frenos[]'
                   ] ) !!}
                   @endforeach
 
@@ -243,7 +233,7 @@
               </div>{{-- Frenos --}}
 
               <div class="form-group{{ $errors->has( 'Rines' ) ? ' has-error' : '' }}">
-                {!! Form::label( 'Rines', 'Rines:', [
+                {!! Form::label( 'Rines[]', 'Rines:', [
                   'class' => 'col-md-3 control-label'
                 ] ) !!}
 
@@ -252,7 +242,6 @@
                   {!! Form::text( 'Rines[]', $rin, [
                     'class'         => 'form-control',
                     'placeholder'   => '[]',
-                    'v-model.sync'  => 'newModel.Rines'
                   ] ) !!}
                   @endforeach
 
@@ -272,7 +261,6 @@
                 <div class="col-md-9">
                   {!! Form::text( 'UrlMotor', $model->technicalSpecifications->description[ 'UrlMotor' ], [
                     'class'         => 'form-control',
-                    'v-model.sync'  => 'newModel.UrlMotor'
                   ] ) !!}
 
                   @if ($errors->has( 'UrlMotor' ))
@@ -291,7 +279,6 @@
                 <div class="col-md-9">
                   {!! Form::text( 'UrlAuto', $model->technicalSpecifications->description[ 'UrlAuto' ], [
                     'class'         => 'form-control',
-                    'v-model.sync'  => 'newModel.UrlAuto'
                   ] ) !!}
 
                   @if ($errors->has( 'UrlAuto' ))
@@ -311,7 +298,7 @@
               </div>{{-- Descripción --}}
 
               <div class="form-group{{ $errors->has( 'Faros' ) ? ' has-error' : '' }}">
-                {!! Form::label( 'Faros', 'Faros:', [
+                {!! Form::label( 'Faros[]', 'Faros:', [
                   'class' => 'col-md-3 control-label'
                 ] ) !!}
 
@@ -320,7 +307,6 @@
                   {!! Form::text( 'Faros[]', $faros, [
                     'class'         => 'form-control',
                     'placeholder'   => '[]',
-                    'v-model.sync'  => 'newModel.Faros'
                   ] ) !!}
                   @endforeach
 
@@ -333,7 +319,7 @@
               </div>{{-- Faros --}}
 
               <div class="form-group{{ $errors->has( 'SeguridadExterior' ) ? ' has-error' : '' }}">
-                {!! Form::label( 'SeguridadExterior', 'Seguridad exterior:', [
+                {!! Form::label( 'SeguridadExterior[]', 'Seguridad exterior:', [
                   'class' => 'col-md-3 control-label'
                 ] ) !!}
 
@@ -342,7 +328,6 @@
                   {!! Form::text( 'SeguridadExterior[]', $security, [
                     'class'         => 'form-control',
                     'placeholder'   => '[]',
-                    'v-model.sync'  => 'newModel.SeguridadExterior'
                   ] ) !!}
                   @endforeach
 
@@ -359,7 +344,7 @@
               </div>{{-- Visibilidad --}}
 
               <div class="form-group{{ $errors->has( 'Cristales' ) ? ' has-error' : '' }}">
-                {!! Form::label( 'Cristales', 'Cristales:', [
+                {!! Form::label( 'Cristales[]', 'Cristales:', [
                   'class' => 'col-md-3 col-md-offset-1 control-label'
                 ] ) !!}
 
@@ -368,7 +353,6 @@
                   {!! Form::text( 'Cristales[]', $cristals, [
                     'class'         => 'form-control',
                     'placeholder'   => '[]',
-                    'v-model.sync'  => 'newModel.Cristales'
                   ] ) !!}
                   @endforeach
 
@@ -381,7 +365,7 @@
               </div>{{-- Cristales --}}
 
               <div class="form-group{{ $errors->has( 'EspejosLaterales' ) ? ' has-error' : '' }}">
-                {!! Form::label( 'EspejosLaterales', 'Espejos laterales:', [
+                {!! Form::label( 'EspejosLaterales[]', 'Espejos laterales:', [
                   'class' => 'col-md-3 col-md-offset-1 control-label'
                 ] ) !!}
 
@@ -390,7 +374,6 @@
                   {!! Form::text( 'EspejosLaterales[]', $mirrors, [
                     'class'         => 'form-control',
                     'placeholder'   => '[]',
-                    'v-model.sync'  => 'newModel.EspejosLaterales'
                   ] ) !!}
                   @endforeach
 
@@ -403,7 +386,7 @@
               </div>{{-- EspejosLaterales --}}
 
               <div class="form-group{{ $errors->has( 'Techo' ) ? ' has-error' : '' }}">
-                {!! Form::label( 'Techo', 'Techo:', [
+                {!! Form::label( 'Techo[]', 'Techo:', [
                   'class' => 'col-md-3 col-md-offset-1 control-label'
                 ] ) !!}
 
@@ -412,7 +395,6 @@
                   {!! Form::text( 'Techo[]', $ceil, [
                     'class'         => 'form-control',
                     'placeholder'   => '[]',
-                    'v-model.sync'  => 'newModel.Techo'
                   ] ) !!}
                   @endforeach
 
@@ -432,7 +414,6 @@
                 <div class="col-md-9">
                   {!! Form::text( 'UrlInterior', $model->externalSpecifications->description[ 'UrlInterior' ], [
                     'class'         => '',
-                    'v-model.sync'  => 'newModel.UrlInterior'
                   ] ) !!}
 
                   @if ($errors->has( 'UrlInterior' ))
@@ -452,7 +433,7 @@
               </div>{{-- Descripción --}}
 
               <div class="form-group{{ $errors->has( 'AcabadosInteriores' ) ? ' has-error' : '' }}">
-                {!! Form::label( 'AcabadosInteriores', 'Acabados interiores:', [
+                {!! Form::label( 'AcabadosInteriores[]', 'Acabados interiores:', [
                   'class' => 'col-md-3 col-md-offset-1 control-label'
                 ] ) !!}
 
@@ -461,7 +442,6 @@
                   {!! Form::text( 'AcabadosInteriores[]', $acabados, [
                     'class'         => 'form-control',
                     'placeholder'   => '[]',
-                    'v-model.sync'  => 'newModel.AcabadosInteriores'
                   ] ) !!}
                   @endforeach
 
@@ -474,7 +454,7 @@
               </div>{{-- AcabadosInteriores --}}
 
               <div class="form-group{{ $errors->has( 'Asientos' ) ? ' has-error' : '' }}">
-                {!! Form::label( 'Asientos', 'Asientos:', [
+                {!! Form::label( 'Asientos[]', 'Asientos:', [
                   'class' => 'col-md-3 col-md-offset-1 control-label'
                 ] ) !!}
 
@@ -483,7 +463,6 @@
                   {!! Form::text( 'Asientos[]', $seats, [
                     'class'         => 'form-control',
                     'placeholder'   => '[]',
-                    'v-model.sync'  => 'newModel.Asientos'
                   ] ) !!}
                   @endforeach
 
@@ -496,7 +475,7 @@
               </div>{{-- Asientos --}}
 
               <div class="form-group{{ $errors->has( 'SistemaAudio' ) ? ' has-error' : '' }}">
-                {!! Form::label( 'SistemaAudio', 'SistemaAudio:', [
+                {!! Form::label( 'SistemaAudio[]', 'SistemaAudio:', [
                   'class' => 'col-md-3 col-md-offset-1 control-label'
                 ] ) !!}
 
@@ -505,7 +484,6 @@
                   {!! Form::text( 'SistemaAudio[]', $audio, [
                     'class'         => 'form-control',
                     'placeholder'   => '[]',
-                    'v-model.sync'  => 'newModel.SistemaAudio'
                   ] ) !!}
                   @endforeach
 
@@ -518,7 +496,7 @@
               </div>{{-- SistemaAudio --}}
 
               <div class="form-group{{ $errors->has( 'Confort' ) ? ' has-error' : '' }}">
-                {!! Form::label( 'Confort', 'Confort:', [
+                {!! Form::label( 'Confort[]', 'Confort:', [
                   'class' => 'col-md-3 col-md-offset-1 control-label'
                 ] ) !!}
 
@@ -527,7 +505,6 @@
                   {!! Form::text( 'Confort[]', $confort, [
                     'class'         => 'form-control',
                     'placeholder'   => '[]',
-                    'v-model.sync'  => 'newModel.Confort'
                   ] ) !!}
                   @endforeach
 
@@ -540,7 +517,7 @@
               </div>{{-- Confort --}}
 
               <div class="form-group{{ $errors->has( 'CinturonesSeguridad' ) ? ' has-error' : '' }}">
-                {!! Form::label( 'CinturonesSeguridad', 'Cinturones de seguridad:', [
+                {!! Form::label( 'CinturonesSeguridad[]', 'Cinturones de seguridad:', [
                   'class' => 'col-md-3 col-md-offset-1 control-label'
                 ] ) !!}
 
@@ -549,7 +526,6 @@
                   {!! Form::text( 'CinturonesSeguridad[]', $seatbelt, [
                     'class'         => 'form-control',
                     'placeholder'   => '[]',
-                    'v-model.sync'  => 'newModel.CinturonesSeguridad'
                   ] ) !!}
                   @endforeach
 
@@ -562,7 +538,7 @@
               </div>{{-- CinturonesSeguridad --}}
 
               <div class="form-group{{ $errors->has( 'SeguridadInterior' ) ? ' has-error' : '' }}">
-                {!! Form::label( 'SeguridadInterior', 'Seguridad interior:', [
+                {!! Form::label( 'SeguridadInterior[]', 'Seguridad interior:', [
                   'class' => 'col-md-3 col-md-offset-1 control-label'
                 ] ) !!}
 
@@ -570,7 +546,6 @@
                   @foreach( $model->internalSpecifications->description[ 'SeguridadInterior' ] as $security )
                   {!! Form::text( 'SeguridadInterior[]', $security, [
                     'class'         => 'form-control',
-                    'v-model.sync'  => 'newModel.SeguridadInterior'
                   ] ) !!}
                   @endforeach
 
@@ -590,7 +565,6 @@
                 <div class="col-md-9">
                   {!! Form::text( 'Download', $model->internalSpecifications->description[ 'Download' ], [
                     'class'         => '',
-                    'v-model.sync'  => 'newModel.Download'
                   ] ) !!}
 
                   @if ($errors->has( 'Download' ))
@@ -608,7 +582,7 @@
                   </a>
                 </div>
                 <div class="form-group text-center col-lg-6 col-md-6 col-sm-6">
-                  <button type="submit" class="btn btn-success" v-on:click.prevent="submitEdit">
+                  <button type="submit" class="btn btn-success">
                     <i class="glyphicon glyphicon-ok"></i> Actualizar
                   </button>
                 </div>
@@ -623,132 +597,5 @@
 @endsection
 
 @section( 'scripts' )
-<!--script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-3.1.0.min"><\/script>')</script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/vue-resource/0.9.3/vue-resource.min.js"></script>
-<script>
-  contact = new Vue( {
-    el      : '#edit__form',
-    data    : {
-      newModel  : {
-        'title'               : '',
-        'name'                : '',
-        'thumbnail'           : '',
-        'price'               : '',
-        'description'         : '',
-        'slug'                : '',
-        'price'               : '',
-        'Capacidad'           : '',
-        'Potencia'            : '',
-        'Cilindros'           : '',
-        'Valvulas'            : '',
-        'Frenos[]'            : '',
-        'Rines'               : '',
-        'UrlMotor'            : '',
-        'UrlAuto'             : '',
-        'Faros'               : '',
-        'SeguridadExterior'   : '',
-        'Cristales'           : '',
-        'EspejosLaterales'    : '',
-        'Techo'               : '',
-        'UrlInterior'         : '',
-        'AcabadosInteriores'  : '',
-        'Asientos'            : '',
-        'SistemaAudio'        : '',
-        'Confort'             : '',
-        'CinturonesSeguridad' : '',
-        'SeguridadInterior'   : '',
-        'Download'            : ''
-      }
-    },
-    methods : {
-      /**
-       * Submit contact form
-       * @param  Event event Event object
-       */
-      submitEdit : function ( event ) {
-        var data          = {
-          'title'               : this.newModel.title,
-          'name'                : this.newModel.name,
-          'thumbnail'           : this.newModel.thumbnail,
-          'price'               : this.newModel.price,
-          'description'         : this.newModel.description,
-          'slug'                : this.newModel.slug,
-          'price'               : this.newModel.price,
-          'Capacidad'           : this.newModel.Capacidad,
-          'Potencia'            : this.newModel.Potencia,
-          'Cilindros'           : this.newModel.Cilindros,
-          'Valvulas'            : this.newModel.Valvulas,
-          'Frenos[]'            : this.newModel.Frenos[],
-          'Rines'               : this.newModel.Rines,
-          'UrlMotor'            : this.newModel.UrlMotor,
-          'UrlAuto'             : this.newModel.UrlAuto,
-          'Faros'               : this.newModel.Faros,
-          'SeguridadExterior'   : this.newModel.SeguridadExterior,
-          'Cristales'           : this.newModel.Cristales,
-          'EspejosLaterales'    : this.newModel.EspejosLaterales,
-          'Techo'               : this.newModel.Techo,
-          'UrlInterior'         : this.newModel.UrlInterior,
-          'AcabadosInteriores'  : this.newModel.AcabadosInteriores,
-          'Asientos'            : this.newModel.Asientos,
-          'SistemaAudio'        : this.newModel.SistemaAudio,
-          'Confort'             : this.newModel.Confort,
-          'CinturonesSeguridad' : this.newModel.CinturonesSeguridad,
-          'SeguridadInterior'   : this.newModel.SeguridadInterior,
-          'Download'            : this.newModel.Download
-        }
 
-        if ( !this.isValid ) {
-          this.message  = 'Hay un campo que no esta correctamente lleno. Por favor, revisa de nuevo.';
-          alert( this.message );
-        } else {
-          editForm      = document.getElementById( 'edit__form' ).submit();
-        }
-      }
-    },
-
-    // computed property for form validation state
-    computed: {
-      validation: function () {
-        return {
-          'title'               : !!this.newModel.title.trim( ),
-          'name'                : !!this.newModel.name.trim( ),
-          'thumbnail'           : !!this.newModel.thumbnail.trim( ),
-          'price'               : !!this.newModel.price.trim( ),
-          'description'         : !!this.newModel.description.trim( ),
-          'slug'                : !!this.newModel.slug.trim( ),
-          'price'               : !!this.newModel.price.trim( ),
-          'Capacidad'           : !!this.newModel.Capacidad.trim( ),
-          'Potencia'            : !!this.newModel.Potencia.trim( ),
-          'Cilindros'           : !!this.newModel.Cilindros.trim( ),
-          'Valvulas'            : !!this.newModel.Valvulas.trim( ),
-          'Frenos[]'            : !!this.newModel.Frenos[].trim( ),
-          'Rines'               : !!this.newModel.Rines.trim( ),
-          'UrlMotor'            : !!this.newModel.UrlMotor.trim( ),
-          'UrlAuto'             : !!this.newModel.UrlAuto.trim( ),
-          'Faros'               : !!this.newModel.Faros.trim( ),
-          'SeguridadExterior'   : !!this.newModel.SeguridadExterior.trim( ),
-          'Cristales'           : !!this.newModel.Cristales.trim( ),
-          'EspejosLaterales'    : !!this.newModel.EspejosLaterales.trim( ),
-          'Techo'               : !!this.newModel.Techo.trim( ),
-          'UrlInterior'         : !!this.newModel.UrlInterior.trim( ),
-          'AcabadosInteriores'  : !!this.newModel.AcabadosInteriores.trim( ),
-          'Asientos'            : !!this.newModel.Asientos.trim( ),
-          'SistemaAudio'        : !!this.newModel.SistemaAudio.trim( ),
-          'Confort'             : !!this.newModel.Confort.trim( ),
-          'CinturonesSeguridad' : !!this.newModel.CinturonesSeguridad.trim( ),
-          'SeguridadInterior'   : !!this.newModel.SeguridadInterior.trim( ),
-          'Download'            : !!this.newModel.Download.trim( )
-        }
-      },
-      isValid: function () {
-        var validation = this.validation
-        return Object.keys( validation ).every( function ( key ) {
-          return validation[ key ];
-        } );
-      }
-    },
-  } );
-</script-->
 @endsection

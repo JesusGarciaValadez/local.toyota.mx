@@ -40,9 +40,8 @@ class UploadFilesListener implements ShouldQueue
       {
         try
         {
-          $file           = $request->file( $file );
-          $filename       = strtolower( $file->getClientOriginalName() );
-          $uploadSuccess  = $file->move( $destinationPath, $filename );
+          $file           = $request->file( $file )
+                                    ->store( $destinationPath );
         }
         catch ( Exception $error )
         {

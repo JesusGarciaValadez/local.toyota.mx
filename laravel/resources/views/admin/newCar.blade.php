@@ -19,7 +19,9 @@
         <div class="panel-body">
           <div class="bs-example bs-example-bg-classes" data-example-id="contextual-backgrounds-helpers">
             {!! Form::open( [
-              'url'     => action( 'Admin\CarController@store', [ 'id' => $id ] ),
+              'url'     => action( 'Admin\CarController@store', [
+                'id' => $id
+              ] ),
               'method'  => 'POST',
               'class'   => 'form-horizontal',
               'files'   => true,
@@ -427,7 +429,7 @@
               </div>{{-- UrlInterior --}}
 
               <div class="form-group">
-                <p class="col-md-12"><strong>Especificaciones internas:</></p>
+                <p class="col-md-12"><strong>Especificaciones internas:</strong></p>
               </div>{{-- Especificaciones técnicas --}}
 
               <div class="form-group align-right">
@@ -608,7 +610,6 @@
         'thumbnail'           : '',
         'price'               : '',
         'description'         : '',
-        'slug'                : '',
         'Capacidad'           : '',
         'Potencia'            : '',
         'Cilindros'           : '',
@@ -638,13 +639,13 @@
        * @param  Event event Event object
        */
       submitEdit : function ( event ) {
+        console.log(this.newModel.UrlAuto);
         var data          = {
           'title'               : this.newModel.title,
           'name'                : this.newModel.name,
           'thumbnail'           : this.newModel.thumbnail,
           'price'               : this.newModel.price,
           'description'         : this.newModel.description,
-          'slug'                : this.newModel.slug,
           'Capacidad'           : this.newModel.Capacidad,
           'Potencia'            : this.newModel.Potencia,
           'Cilindros'           : this.newModel.Cilindros,
@@ -686,7 +687,6 @@
           'thumbnail'           : !!this.newModel.thumbnail.trim( ),
           'price'               : !!this.newModel.price.trim( ),
           'description'         : !!this.newModel.description.trim( ),
-          'slug'                : !!this.newModel.slug.trim( ),
           'Capacidad'           : !!this.newModel.Capacidad.trim( ),
           'Potencia'            : !!this.newModel.Potencia.trim( ),
           'Cilindros'           : !!this.newModel.Cilindros.trim( ),
@@ -713,6 +713,7 @@
       isValid: function () {
         var validation = this.validation
         return Object.keys( validation ).every( function ( key ) {
+          console.log( key, validation[ key ] );
           return validation[ key ];
         } );
       }

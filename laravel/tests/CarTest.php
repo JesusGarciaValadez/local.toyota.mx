@@ -122,7 +122,7 @@ class CarTest extends TestCase
 
   /**
    * Test for edit the description of the fancybox gallery
-   * @return [type] [description]
+   * @return void
    */
   public function testEditDescriptionGalleryFancybox()
   {
@@ -156,99 +156,134 @@ class CarTest extends TestCase
           ] );
   }
 
-  // /**
-  //  * Test for create a new Gallery Fancybox with his own title
-  //  * @return void
-  //  */
-  // public function testCreateNewCarModel()
-  // {
-  //   $this->expectsEvents( Highlander\Events\UploadImages::class );
-  //   $this->doesntExpectEvents( Highlander\Events\UploadFiles::class );
+  /**
+   * Test for create a new Gallery Fancybox with his own title
+   * @return void
+   */
+  public function testCreateNewCarModel()
+  {
+    // $this->expectsEvents( Highlander\Events\UploadImages::class );
+    // $this->expectsEvents( Highlander\Events\UploadFiles::class );
 
-  //   $user = factory( Highlander\User::class )->create();
+    $user = factory( Highlander\User::class )->create();
 
-  //   $this->actingAs( $user )
-  //        ->visit( env( 'APP_URL' ) . 'admin/1/gallery-fancyboxes' )
-  //        ->click( 'Crear nuevo elemento' )
-  //        ->seePageIs( env( 'APP_URL' ) . 'admin/1/gallery-fancyboxes/create' )
-  //        ->type( 'Titulo', 'title' )
-  //        ->attach( '/Users/jesusgarcia/Downloads/iPhone-6.jpg', 'thumb_big' )
-  //        ->attach( '/Users/jesusgarcia/Downloads/iPhone-6.jpg', 'thumb_small_1' )
-  //        ->attach( '/Users/jesusgarcia/Downloads/iPhone-6.jpg', 'thumb_small_2' )
-  //        ->attach( '/Users/jesusgarcia/Downloads/iPhone-6.jpg', 'thumb_small_3' )
-  //        ->attach( '/Users/jesusgarcia/Downloads/iPhone-6-Plus.jpg', 'image_big' )
-  //        ->attach( '/Users/jesusgarcia/Downloads/iPhone-6-Plus.jpg', 'image_small_1' )
-  //        ->attach( '/Users/jesusgarcia/Downloads/iPhone-6-Plus.jpg', 'image_small_2' )
-  //        ->attach( '/Users/jesusgarcia/Downloads/iPhone-6-Plus.jpg', 'image_small_3' )
-  //        ->type( 'Titulo para imagen grande', 'title_big' )
-  //        ->type( 'Titulo para imagen pequeña 1', 'title_small_1' )
-  //        ->type( 'Titulo para imagen pequeña 2', 'title_small_2' )
-  //        ->type( 'Titulo para imagen pequeña 3', 'title_small_3' )
-  //        ->press( 'Actualizar' )
-  //        ->seePageIs( env( 'APP_URL' ) . 'admin/1/gallery-fancyboxes/create' )
-  //        ->seeInDatabase( 'gallery_fancyboxes', [
-  //           'title'         => 'Titulo',
-  //           'thumb_big'     => 'assets/images/thumbs/iPhone-6.jpg',
-  //           'thumb_small_1' => 'assets/images/thumbs/iPhone-6.jpg',
-  //           'thumb_small_2' => 'assets/images/thumbs/iPhone-6.jpg',
-  //           'thumb_small_3' => 'assets/images/thumbs/iPhone-6.jpg',
-  //           'image_big'     => 'assets/images/galeria/iPhone-6-Plus.jpg',
-  //           'image_small_1' => 'assets/images/galeria/iPhone-6-Plus.jpg',
-  //           'image_small_2' => 'assets/images/galeria/iPhone-6-Plus.jpg',
-  //           'image_small_3' => 'assets/images/galeria/iPhone-6-Plus.jpg',
-  //           'title_big'     => 'Titulo para imagen grande',
-  //           'title_small_1' => 'Titulo para imagen pequeña 1',
-  //           'title_small_2' => 'Titulo para imagen pequeña 2',
-  //           'title_small_3' => 'Titulo para imagen pequeña 3'
-  //         ] );
-  // }
+    $this->actingAs( $user )
+         ->visit( env( 'APP_URL' ) . 'admin/1/car' )
+         ->click( 'Crear nuevo elemento' )
+         ->seePageIs( env( 'APP_URL' ) . 'admin/1/car/create' )
+         ->type( '1', "brands_id")
+         ->type( 'Titulo', "title" )
+         ->type( 'Nombre', "name" )
+         ->attach( '/Users/jesusgarcia/Downloads/iPhone-6.jpg', "thumbnail" )
+         ->type( 'Precio', "price" )
+         ->type( 'Descripcion', "description" )
+         ->type( 'Capacidad', "Capacidad" )
+         ->type( 'Potencia', "Potencia" )
+         ->type( 'Cilindros', "Cilindros" )
+         ->type( 'Válvulas', "Valvulas" )
+         ->type( 'Frenos', "Frenos" )
+         ->type( 'Rines', "Rines" )
+         ->attach( '/Users/jesusgarcia/Downloads/iPhone-6-Plus.jpg', "UrlMotor" )
+         ->attach( '/Users/jesusgarcia/Downloads/iPhone-6.jpg', "UrlAuto" )
+         ->type( 'Faros', "Faros" )
+         ->type( 'Seguridad Exterior', "SeguridadExterior" )
+         ->type( 'Cristales', "Cristales" )
+         ->type( 'Espejos Laterales', "EspejosLaterales" )
+         ->type( 'Techo', "Techo" )
+         ->attach( '/Users/jesusgarcia/Downloads/iPhone-6-Plus.jpg', "UrlInterior" )
+         ->type( 'Acabados Interiores', "AcabadosInteriores" )
+         ->type( 'Asientos', "Asientos" )
+         ->type( 'Sistema de Audio', "SistemaAudio" )
+         ->type( 'Confort', "Confort" )
+         ->type( 'Cinturones de seguridad', "CinturonesSeguridad" )
+         ->type( 'Seguridad Interior', "SeguridadInterior" )
+         ->attach( '/Users/jesusgarcia/Downloads/iPhone-6.jpg', "Download" )
+         ->press( "Actualizar" )
+         ->seePageIs( env( 'APP_URL' ) . 'admin/1/car/create' )
+         ->see( 'Auto creado' );
+  }
 
-  // /**
-  //  * Test for edit the first Gallery Fancybox
-  //  * @return void
-  //  */
-  // public function testEditFirstCarModel()
-  // {
-  //   $this->doesntExpectEvents( Highlander\Events\UploadImages::class )
-  //        ->doesntExpectEvents( Highlander\Events\UploadFiles::class );
+  /**
+   * Test for edit the first Gallery Fancybox
+   * @return void
+   */
+  public function testEditFirstCarModel()
+  {
+    // $user = factory( Highlander\User::class )->create();
 
-  //   $user = factory( Highlander\User::class )->create();
+    // $this->actingAs( $user )
+    //      ->visit( env( 'APP_URL' ) . 'admin/1/car' )
+    //      ->click( 'Editar' )
+    //      ->seePageIs( env( 'APP_URL' ) . 'admin/1/car/1/edit' )
+    //      ->type( '1', 'brands_id' )
+    //      ->type( 'Título 1', 'title' )
+    //      ->type( 'Nombre', 'name' )
+    //      ->type( 'Thumbnail', 'thumbnail' )
+    //      ->type( 'Precio', 'price' )
+    //      ->type( 'Descripción', 'description' )
+    //      ->type( 'Capacidad', 'Capacidad' )
+    //      ->type( 'Potencia', 'Potencia' )
+    //      ->type( 'Cilindros', 'Cilindros' )
+    //      ->type( 'Válvulas', 'Valvulas' )
+    //      ->type( 'Frenos 1', 'Frenos[]' )
+    //      ->type( 'Frenos 2', 'Frenos[]' )
+    //      ->type( 'Frenos 3', 'Frenos[]' )
+    //      ->type( 'Rines 1', 'Rines[]' )
+    //      ->type( 'Rines 2', 'Rines[]' )
+    //      ->type( 'Rines 3', 'Rines[]' )
+    //      ->type( 'UrlMotor', 'UrlMotor' )
+    //      ->type( 'UrlAuto', 'UrlAuto' )
+    //      ->type( 'Faros 1', 'Faros[]' )
+    //      ->type( 'Faros 2', 'Faros[]' )
+    //      ->type( 'Faros 3', 'Faros[]' )
+    //      ->type( 'Faros 4', 'Faros[]' )
+    //      ->type( 'Seguridad Exterior 1', 'SeguridadExterior[]' )
+    //      ->type( 'Seguridad Exterior 2', 'SeguridadExterior[]' )
+    //      ->type( 'Seguridad Exterior 3', 'SeguridadExterior[]' )
+    //      ->type( 'Seguridad Exterior 4', 'SeguridadExterior[]' )
+    //      ->type( 'Cristales 1', 'Cristales[]' )
+    //      ->type( 'Cristales 2', 'Cristales[]' )
+    //      ->type( 'Cristales 3', 'Cristales[]' )
+    //      ->type( 'Cristales 4', 'Cristales[]' )
+    //      ->type( 'Cristales 5', 'Cristales[]' )
+    //      ->type( 'Cristales 6', 'Cristales[]' )
+    //      ->type( 'Cristales 7', 'Cristales[]' )
+    //      ->type( 'Espejos laterales', 'EspejosLaterales[]' )
+    //      ->type( 'Techo 1', 'Techo[]' )
+    //      ->type( 'Techo 2', 'Techo[]' )
+    //      ->type( 'Techo 3', 'Techo[]' )
+    //      ->type( 'Techo 4', 'Techo[]' )
+    //      ->type( 'UrlInterior', 'UrlInterior' )
+    //      ->type( 'Acabados Interiores 1', 'AcabadosInteriores[]' )
+    //      ->type( 'Acabados Interiores 2', 'AcabadosInteriores[]' )
+    //      ->type( 'Acabados Interiores 3', 'AcabadosInteriores[]' )
+    //      ->type( 'Acabados Interiores 4', 'AcabadosInteriores[]' )
+    //      ->type( 'Acabados Interiores 5', 'AcabadosInteriores[]' )
+    //      ->type( 'Asientos 1', 'Asientos[]' )
+    //      ->type( 'Asientos 2', 'Asientos[]' )
+    //      ->type( 'Asientos 3', 'Asientos[]' )
+    //      ->type( 'Sistema Audio 1', 'SistemaAudio[]' )
+    //      ->type( 'Sistema Audio 2', 'SistemaAudio[]' )
+    //      ->type( 'Sistema Audio 3', 'SistemaAudio[]' )
+    //      ->type( 'Sistema Audio 4', 'SistemaAudio[]' )
+    //      ->type( 'Sistema Audio 5', 'SistemaAudio[]' )
+    //      ->type( 'Sistema Audio 6', 'SistemaAudio[]' )
+    //      ->type( 'Comfort 1', 'Confort[]' )
+    //      ->type( 'Comfort 2', 'Confort[]' )
+    //      ->type( 'Cinturones de Seguridad 1', 'CinturonesSeguridad[]' )
+    //      ->type( 'Cinturones de Seguridad 2', 'CinturonesSeguridad[]' )
+    //      ->type( 'Cinturones de Seguridad 3', 'CinturonesSeguridad[]' )
+    //      ->type( 'Cinturones de Seguridad 4', 'CinturonesSeguridad[]' )
+    //      ->type( 'Cinturones de Seguridad 5', 'CinturonesSeguridad[]' )
+    //      ->type( 'Cinturones de Seguridad 6', 'CinturonesSeguridad[]' )
+    //      ->type( 'Seguridad interior 1', 'SeguridadInterior[]' )
+    //      ->type( 'Seguridad interior 2', 'SeguridadInterior[]' )
+    //      ->type( 'Seguridad interior 3', 'SeguridadInterior[]' )
+    //      ->type( 'Download', 'Download' );
 
-  //   $this->actingAs( $user )
-  //        ->visit( env( 'APP_URL' ) . 'admin/1/gallery-fancyboxes' )
-  //        ->click( 'Editar' )
-  //        ->seePageIs( env( 'APP_URL' ) . 'admin/1/gallery-fancyboxes/1/edit' )
-  //        ->type( 'Titulo', 'title' )
-  //        ->type( 'assets/images/thumbs/iPhone-6.jpg', 'thumb_big' )
-  //        ->type( 'assets/images/thumbs/iPhone-6.jpg', 'thumb_small_1' )
-  //        ->type( 'assets/images/thumbs/iPhone-6.jpg', 'thumb_small_2' )
-  //        ->type( 'assets/images/thumbs/iPhone-6.jpg', 'thumb_small_3' )
-  //        ->type( 'assets/images/galeria/iPhone-6-Plus.jpg', 'image_big' )
-  //        ->type( 'assets/images/galeria/iPhone-6-Plus.jpg', 'image_small_1' )
-  //        ->type( 'assets/images/galeria/iPhone-6-Plus.jpg', 'image_small_2' )
-  //        ->type( 'assets/images/galeria/iPhone-6-Plus.jpg', 'image_small_3' )
-  //        ->type( 'Titulo para imagen grande', 'title_big' )
-  //        ->type( 'Titulo para imagen pequeña 1', 'title_small_1' )
-  //        ->type( 'Titulo para imagen pequeña 2', 'title_small_2' )
-  //        ->type( 'Titulo para imagen pequeña 3', 'title_small_3' )
-  //        ->press( 'Actualizar' )
-  //        ->seePageIs( env( 'APP_URL' ) . 'admin/1/gallery-fancyboxes/1/edit' )
-  //        ->seeInDatabase( 'gallery_fancyboxes', [
-  //           'title'         => 'Titulo',
-  //           'thumb_big'     => 'assets/images/thumbs/iPhone-6.jpg',
-  //           'thumb_small_1' => 'assets/images/thumbs/iPhone-6.jpg',
-  //           'thumb_small_2' => 'assets/images/thumbs/iPhone-6.jpg',
-  //           'thumb_small_3' => 'assets/images/thumbs/iPhone-6.jpg',
-  //           'image_big'     => 'assets/images/galeria/iPhone-6-Plus.jpg',
-  //           'image_small_1' => 'assets/images/galeria/iPhone-6-Plus.jpg',
-  //           'image_small_2' => 'assets/images/galeria/iPhone-6-Plus.jpg',
-  //           'image_small_3' => 'assets/images/galeria/iPhone-6-Plus.jpg',
-  //           'title_big'     => 'Titulo para imagen grande',
-  //           'title_small_1' => 'Titulo para imagen pequeña 1',
-  //           'title_small_2' => 'Titulo para imagen pequeña 2',
-  //           'title_small_3' => 'Titulo para imagen pequeña 3'
-  //         ] );
-  // }
+    // $this->press( "Actualizar" );
+         // ->seePageIs( env( 'APP_URL' ) . 'admin/1/car/1/edit' );;
+  }
 
   /**
    * Test for delete the first Car model
@@ -266,7 +301,7 @@ class CarTest extends TestCase
   }
 
   /**
-   * Test for delete various Car models
+   * Test for delete many Car models
    * @return void
    */
   public function testDeleteVariousCarModels()
