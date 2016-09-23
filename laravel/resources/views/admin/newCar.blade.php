@@ -78,7 +78,6 @@
 
                 <div class="col-md-9">
                   {!! Form::file( 'thumbnail', [
-                    'class'         => '',
                     'v-model.sync'  => 'newModel.thumbnail'
                   ] ) !!}
 
@@ -266,7 +265,6 @@
 
                 <div class="col-md-9">
                   {!! Form::file( 'UrlMotor', [
-                    'class'         => '',
                     'v-model.sync'  => 'newModel.UrlMotor'
                   ] ) !!}
 
@@ -284,8 +282,7 @@
                 ] ) !!}
 
                 <div class="col-md-9">
-                  {!! Form::file( 'UrlAuto', "", [
-                    'class'         => '',
+                  {!! Form::file( 'UrlAuto', [
                     'v-model.sync'  => 'newModel.UrlAuto'
                   ] ) !!}
 
@@ -415,8 +412,7 @@
                 ] ) !!}
 
                 <div class="col-md-9">
-                  {!! Form::file( 'UrlInterior', "", [
-                    'class'         => '',
+                  {!! Form::file( 'UrlInterior', [
                     'v-model.sync'  => 'newModel.UrlInterior'
                   ] ) !!}
 
@@ -561,8 +557,7 @@
                 ] ) !!}
 
                 <div class="col-md-9">
-                  {!! Form::file( 'Download', "", [
-                    'class'         => '',
+                  {!! Form::file( 'Download', [
                     'v-model.sync'  => 'newModel.Download'
                   ] ) !!}
 
@@ -582,7 +577,7 @@
                 </div>
                 <div class="form-group text-center col-lg-6 col-md-6 col-sm-6">
                   <button type="submit" class="btn btn-success" v-on:click.prevent="submitEdit">
-                    <i class="glyphicon glyphicon-ok"></i> Actualizar
+                     <i class="glyphicon glyphicon-ok"></i> Actualizar
                   </button>
                 </div>
               </div>
@@ -596,6 +591,7 @@
 @endsection
 
 @section( 'scripts' )
+@parent
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-3.1.0.min"><\/script>')</script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>

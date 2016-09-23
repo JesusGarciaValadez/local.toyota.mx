@@ -61,15 +61,15 @@ class CarController extends Controller
   {
     $technicalImages      = [ 'UrlMotor', 'UrlAuto' ];
     $technicalImagesPath  = 'assets/images/datos/';
-    Event::fire( new UploadImages( $technicalImages, $technicalImagesPath ) );
+    \Event::fire( new UploadImages( $technicalImages, $technicalImagesPath ) );
 
     $carImages      = [ 'UrlInterior' ];
     $carImagesPath  = 'assets/images/datos/';
-    Event::fire( new UploadImages( $carImages, $carImagesPath ) );
+    \Event::fire( new UploadImages( $carImages, $carImagesPath ) );
 
     $carTechnicalSpecificationsFile = [ 'Download' ];
     $carTechnicalSpecificationsPath = 'assets/technical-specifications/';
-    Event::fire( new UploadFiles( $carTechnicalSpecificationsFile, $carTechnicalSpecificationsPath ) );
+    \Event::fire( new UploadFiles( $carTechnicalSpecificationsFile, $carTechnicalSpecificationsPath ) );
 
     $technicalSpecifications  = [
       'description' => base64_encode(
@@ -128,7 +128,7 @@ class CarController extends Controller
 
     $carImages      = [ 'thumbnail' ];
     $carImagesPath  = 'assets/images/versiones/';
-    Event::fire( new UploadImages( $carImages, $carImagesPath ) );
+    \Event::fire( new UploadImages( $carImages, $carImagesPath ) );
 
     $car                      = [
       'brands_id'                   => $id,

@@ -28,7 +28,6 @@ class UploadImagesListener implements ShouldQueue
    */
   public function handle( UploadImages $event )
   {
-    dd( 'dentro' );
     $request          = \Request();
     $listOfImages     = $event->listOfImages;
     $images           = $request->files;

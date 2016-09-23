@@ -1,0 +1,166 @@
+{
+    "event": "suiteStart",
+    "suite": "Application Test Suite",
+    "tests": 15
+}{
+    "event": "suiteStart",
+    "suite": "CarTest",
+    "tests": 15
+}{
+    "event": "testStart",
+    "suite": "CarTest",
+    "test": "CarTest::testOpenCarBrandOption"
+}{
+    "event": "test",
+    "suite": "CarTest",
+    "test": "CarTest::testOpenCarBrandOption",
+    "status": "pass",
+    "time": 0.55871796608,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "CarTest",
+    "test": "CarTest::testDeleteCarBrandOption"
+}{
+    "event": "test",
+    "suite": "CarTest",
+    "test": "CarTest::testDeleteCarBrandOption",
+    "status": "pass",
+    "time": 0.381816148758,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "CarTest",
+    "test": "CarTest::testEditBrandTitle"
+}{
+    "event": "test",
+    "suite": "CarTest",
+    "test": "CarTest::testEditBrandTitle",
+    "status": "pass",
+    "time": 0.391145944595,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "CarTest",
+    "test": "CarTest::testEditSlogan"
+}{
+    "event": "test",
+    "suite": "CarTest",
+    "test": "CarTest::testEditSlogan",
+    "status": "pass",
+    "time": 0.367007017136,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "CarTest",
+    "test": "CarTest::testEditTitleH1"
+}{
+    "event": "test",
+    "suite": "CarTest",
+    "test": "CarTest::testEditTitleH1",
+    "status": "pass",
+    "time": 0.359148979187,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "CarTest",
+    "test": "CarTest::testEditTitleGalleryFancybox"
+}{
+    "event": "test",
+    "suite": "CarTest",
+    "test": "CarTest::testEditTitleGalleryFancybox",
+    "status": "pass",
+    "time": 0.36617898941,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "CarTest",
+    "test": "CarTest::testEditDescriptionGalleryFancybox"
+}{
+    "event": "test",
+    "suite": "CarTest",
+    "test": "CarTest::testEditDescriptionGalleryFancybox",
+    "status": "pass",
+    "time": 0.374556779861,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "CarTest",
+    "test": "CarTest::testEditTitlteVersionsGallery"
+}{
+    "event": "test",
+    "suite": "CarTest",
+    "test": "CarTest::testEditTitlteVersionsGallery",
+    "status": "pass",
+    "time": 0.362155914307,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "CarTest",
+    "test": "CarTest::testCreateNewCarModel"
+}{
+    "event": "test",
+    "suite": "CarTest",
+    "test": "CarTest::testCreateNewCarModel",
+    "status": "fail",
+    "time": 0.847075939178,
+    "trace": [
+        {
+            "file": "\/Users\/jesusgarcia\/sites\/local.toyotahighlander.mx\/laravel\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Testing\/Concerns\/InteractsWithPages.php",
+            "line": 220
+        },
+        {
+            "file": "\/Users\/jesusgarcia\/sites\/local.toyotahighlander.mx\/laravel\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Testing\/Concerns\/InteractsWithPages.php",
+            "line": 92,
+            "function": "assertPageLoaded",
+            "class": "Illuminate\\Foundation\\Testing\\TestCase",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/jesusgarcia\/sites\/local.toyotahighlander.mx\/laravel\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Testing\/Concerns\/InteractsWithPages.php",
+            "line": 126,
+            "function": "makeRequest",
+            "class": "Illuminate\\Foundation\\Testing\\TestCase",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/jesusgarcia\/sites\/local.toyotahighlander.mx\/laravel\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Testing\/Concerns\/InteractsWithPages.php",
+            "line": 580,
+            "function": "makeRequestUsingForm",
+            "class": "Illuminate\\Foundation\\Testing\\TestCase",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/jesusgarcia\/sites\/local.toyotahighlander.mx\/laravel\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Testing\/Concerns\/InteractsWithPages.php",
+            "line": 567,
+            "function": "submitForm",
+            "class": "Illuminate\\Foundation\\Testing\\TestCase",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/jesusgarcia\/sites\/local.toyotahighlander.mx\/laravel\/tests\/CarTest.php",
+            "line": 201,
+            "function": "press",
+            "class": "Illuminate\\Foundation\\Testing\\TestCase",
+            "type": "->"
+        }
+    ],
+    "message": "A request to [http:\/\/local.toyotahighlander.mx\/admin\/1\/car] failed. Received status code [500].\n",
+    "output": ""
+}

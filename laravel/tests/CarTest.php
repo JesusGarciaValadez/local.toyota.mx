@@ -169,38 +169,41 @@ class CarTest extends TestCase
 
     $this->actingAs( $user )
          ->visit( env( 'APP_URL' ) . 'admin/1/car' )
-         ->click( 'Crear nuevo elemento' )
-         ->seePageIs( env( 'APP_URL' ) . 'admin/1/car/create' )
-         ->type( '1', "brands_id")
-         ->type( 'Titulo', "title" )
-         ->type( 'Nombre', "name" )
-         ->attach( '/Users/jesusgarcia/Downloads/iPhone-6.jpg', "thumbnail" )
-         ->type( 'Precio', "price" )
-         ->type( 'Descripcion', "description" )
-         ->type( 'Capacidad', "Capacidad" )
-         ->type( 'Potencia', "Potencia" )
-         ->type( 'Cilindros', "Cilindros" )
-         ->type( 'Válvulas', "Valvulas" )
-         ->type( 'Frenos', "Frenos" )
-         ->type( 'Rines', "Rines" )
-         ->attach( '/Users/jesusgarcia/Downloads/iPhone-6-Plus.jpg', "UrlMotor" )
-         ->attach( '/Users/jesusgarcia/Downloads/iPhone-6.jpg', "UrlAuto" )
-         ->type( 'Faros', "Faros" )
-         ->type( 'Seguridad Exterior', "SeguridadExterior" )
-         ->type( 'Cristales', "Cristales" )
-         ->type( 'Espejos Laterales', "EspejosLaterales" )
-         ->type( 'Techo', "Techo" )
-         ->attach( '/Users/jesusgarcia/Downloads/iPhone-6-Plus.jpg', "UrlInterior" )
-         ->type( 'Acabados Interiores', "AcabadosInteriores" )
-         ->type( 'Asientos', "Asientos" )
-         ->type( 'Sistema de Audio', "SistemaAudio" )
-         ->type( 'Confort', "Confort" )
-         ->type( 'Cinturones de seguridad', "CinturonesSeguridad" )
-         ->type( 'Seguridad Interior', "SeguridadInterior" )
-         ->attach( '/Users/jesusgarcia/Downloads/iPhone-6.jpg', "Download" )
-         ->press( "Actualizar" )
-         ->seePageIs( env( 'APP_URL' ) . 'admin/1/car/create' )
-         ->see( 'Auto creado' );
+         ->click( 'Crear nuevo elemento' );
+
+    $this->visit( env( 'APP_URL' ) . '/admin/1/car/create');
+    $this->type('Modelo', 'title');
+    $this->type('Nombre', 'name');
+    $this->attach('/Users/jesusgarcia/Downloads/iPhone-6.jpg', 'thumbnail');
+    $this->type('300000', 'price');
+    $this->type('[ \'Descripción\' ]', 'description');
+    $this->type('Capacidad', 'Capacidad');
+    $this->type('Potencia', 'Potencia');
+    $this->type('Cilindros', 'Cilindros');
+    $this->type('Válvulas', 'Valvulas');
+    $this->type('[ \'Frenos\' ]', 'Frenos');
+    $this->type('[ \'Rines\' ]', 'Rines');
+    $this->attach('/Users/jesusgarcia/Downloads/iPhone-6-Plus.jpg', 'UrlMotor');
+    $this->attach('/Users/jesusgarcia/Downloads/iPhone-6.jpg', 'UrlAuto');
+    $this->type('[ \'Faros\' ]', 'Faros');
+    $this->type('[ \'Seguridad\', \'Exterior\' ]', 'SeguridadExterior');
+    $this->type('[ \'Cristales\' ]', 'Cristales');
+    $this->type('[ \'Espejos\', \'Laterales\' ]', 'EspejosLaterales');
+    $this->attach('/Users/jesusgarcia/Downloads/iPhone-6-Plus.jpg', 'UrlInterior');
+    $this->type('[ \'Techos\' ]', 'Techo');
+    $this->type('[ \'Acabados\', \'Interiores\' ]', 'AcabadosInteriores');
+    $this->type('[ \'Asientos\' ]', 'Asientos');
+    $this->type('[ \'Sistema\', \'Audio\' ]', 'SistemaAudio');
+    $this->type('[ \'Confort\' ]', 'Confort');
+    $this->type('[ \'Cinturones\', \'de\', \'Seguridad\' ]', 'CinturonesSeguridad');
+    $this->type('[ \'Seguridad\', \'interior\' ]', 'SeguridadInterior');
+    $this->attach('/Users/jesusgarcia/Downloads/iPhone-6.jpg', 'Download');
+    $this->press('Actualizar');
+    $this->seePageIs('/admin/1/car');
+    $this->visit('/admin/1/car');
+
+    $this->seePageIs( env( 'APP_URL' ) . 'admin/1/car/create' );
+    $this->see( 'Auto creado' );
   }
 
   /**
