@@ -577,7 +577,7 @@
 
               <div class="form-group">
                 <div class="form-group text-center col-lg-6 col-md-6 col-sm-6">
-                  <a href="{{ env( 'APP_URL' ) }}admin/{{ $id }}/car" title="Regresar" target="_self" class="btn btn-primary">
+                  <a href="{{ env( 'APP_URL' ) }}/admin/{{ $id }}/car" title="Regresar" target="_self" class="btn btn-primary">
                     <i class="glyphicon glyphicon-home"></i> Regresar
                   </a>
                 </div>
