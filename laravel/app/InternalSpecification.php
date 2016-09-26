@@ -11,7 +11,7 @@ class InternalSpecification extends Model
    *
    * @var array
    */
-  protected $fillable = [ 'description' ];
+  protected $fillable = [ 'car_id', 'description' ];
 
   /**
    * The attributes excluded from the model's JSON form.
@@ -26,6 +26,11 @@ class InternalSpecification extends Model
    * @var array
    */
   protected $hidden   = [ '' ];
+
+  public function getCarIdAttribute ( )
+  {
+    return $this->car_id;
+  }
 
   public function getDescriptionAttribute ( $value )
   {
@@ -67,7 +72,12 @@ class InternalSpecification extends Model
     return $this->description[ 'Download' ];
   }
 
-  public function setDescriptionAttribute ( Array $description )
+  public function setCarIdAttribute ( $car_id )
+  {
+    $this->attributes[ 'car_id' ]                 = $car_id;
+  }
+
+  public function setDescriptionAttribute ( $description )
   {
     $this->attributes[ 'description' ]          = base64_encode( serialize( $description ) );
   }

@@ -23,7 +23,7 @@ class UploadFiles
    */
   public function __construct( $listOfFiles, $path )
   {
-    $this->listOfImages = $listOfFiles;
+    $this->listOfFiles = $listOfFiles;
     $this->path         = $path;
   }
 

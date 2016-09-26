@@ -72,6 +72,7 @@ class CarController extends Controller
     \Event::fire( new UploadFiles( $carTechnicalSpecificationsFile, $carTechnicalSpecificationsPath ) );
 
     $technicalSpecifications  = [
+      'car_id'      => $id,
       'description' => base64_encode(
         serialize( [
           'Motor'     => [
@@ -89,6 +90,7 @@ class CarController extends Controller
     ];
 
     $externalSpecifications   = [
+      'car_id'      => $id,
       'description' => base64_encode(
         serialize( [
           'Faros'             => $request->Faros,
@@ -104,6 +106,7 @@ class CarController extends Controller
     ];
 
     $internalSpecifications   = [
+      'car_id'      => $id,
       'description' => base64_encode(
         serialize( [
           'AcabadosInteriores'    => $request->AcabadosInteriores,
@@ -132,9 +135,9 @@ class CarController extends Controller
 
     $car                      = [
       'brands_id'                   => $id,
-      'technical_specifications_id' => 2,
-      'external_specifications_id'  => 2,
-      'internal_specifications_id'  => 2,
+      'technical_specifications_id' => $saveTechnicalSpecificationsResult,
+      'external_specifications_id'  => $saveExternalSpecificationsResult,
+      'internal_specifications_id'  => $saveInternalSpecificationsResult,
       'title'                       => $request->title,
       'name'                        => $request->name,
       'thumbnail'                   => $carImagesPath . $request->thumbnail,
@@ -181,7 +184,7 @@ class CarController extends Controller
    */
   public function edit( $id, $element_id )
   {
-    $model      = \Highlander\Car::findOrFail( $id );
+    $model      = \Highlander\Car::findOrFail( $element_id );
     $brandName  = $model->title;
 
     return view( 'admin.editCar', compact( 'id', 'element_id', 'brandName', 'model' ) );
@@ -199,6 +202,7 @@ class CarController extends Controller
   {
     dd( 'adios' );
     $technicalSpecifications  = [
+      'car_id'      => $id,
       'description' => base64_encode(
         serialize( [
           'Motor'     => [
@@ -216,6 +220,7 @@ class CarController extends Controller
     ];
 
     $externalSpecifications   = [
+      'car_id'      => $id,
       'description' => base64_encode(
         serialize( [
           'Faros'             => $request->Faros,
@@ -231,6 +236,7 @@ class CarController extends Controller
     ];
 
     $internalSpecifications   = [
+      'car_id'      => $id,
       'description' => base64_encode(
         serialize( [
           'AcabadosInteriores'    => $request->AcabadosInteriores,
@@ -254,12 +260,16 @@ class CarController extends Controller
                                                                            ->update( $internalSpecifications );
 
     $car                      = [
-      'title'       => $request->title,
-      'name'        => $request->name,
-      'thumbnail'   => $request->thumbnail,
-      'price'       => $request->price,
-      'description' => $request->description,
-      'slug'        => Str::slug( $request->name )
+      'brands_id'                   => $id,
+      'technical_specifications_id' => $element_id,
+      'external_specifications_id'  => $element_id,
+      'internal_specifications_id'  => $element_id,
+      'title'                       => $request->title,
+      'name'                        => $request->name,
+      'thumbnail'                   => $carImagesPath . $request->thumbnail,
+      'price'                       => $request->price,
+      'description'                 => $request->description,
+      'slug'                        => Str::slug( $request->name )
     ];
 
     $saveCarResult                      = \Highlander\Car::where( 'id', $element_id )
