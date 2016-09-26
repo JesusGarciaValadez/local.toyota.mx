@@ -31,8 +31,8 @@ class TechnicalSpecificationsTableSeeder extends Seeder
             1 => 'Neumáticos (Incluyendo refacción)',
             2 => 'Juego de tapones'
           ],
-          'UrlMotor'  => 'assets/images/datos/img-motor.jpg',
-          'UrlAuto'   => 'assets/images/datos/img-yaris-sedan-detalle.jpg'
+          'UrlMotor'  => 'assets/images/datos/img-motor-1.jpg',
+          'UrlAuto'   => 'assets/images/datos/img-yaris-sedan-detalle-1.jpg'
         ] )
       )
     ] );
@@ -57,8 +57,8 @@ class TechnicalSpecificationsTableSeeder extends Seeder
             1 => 'Neumáticos (Incluyendo refacción)',
             2 => 'Juego de tapones'
           ],
-          'UrlMotor'  => 'assets/images/datos/img-motor.jpg',
-          'UrlAuto'   => 'assets/images/datos/img-yaris-sedan-detalle.jpg'
+          'UrlMotor'  => 'assets/images/datos/img-motor-2.jpg',
+          'UrlAuto'   => 'assets/images/datos/img-yaris-sedan-detalle-2.jpg'
         ] )
       )
     ] );
@@ -83,8 +83,8 @@ class TechnicalSpecificationsTableSeeder extends Seeder
             1 => 'Neumáticos (Incluyendo refacción)',
             2 => 'Juego de tapones'
           ],
-          'UrlMotor'  => 'assets/images/datos/img-motor.jpg',
-          'UrlAuto'   => 'assets/images/datos/img-yaris-sedan-detalle.jpg'
+          'UrlMotor'  => 'assets/images/datos/img-motor-3.jpg',
+          'UrlAuto'   => 'assets/images/datos/img-yaris-sedan-detalle-3.jpg'
         ] )
       )
     ] );
@@ -109,8 +109,8 @@ class TechnicalSpecificationsTableSeeder extends Seeder
             1 => 'Neumáticos (Incluyendo refacción)',
             2 => 'Juego de tapones'
           ],
-          'UrlMotor'  => 'assets/images/datos/img-motor.jpg',
-          'UrlAuto'   => 'assets/images/datos/img-yaris-sedan-detalle.jpg'
+          'UrlMotor'  => 'assets/images/datos/img-motor-4.jpg',
+          'UrlAuto'   => 'assets/images/datos/img-yaris-sedan-detalle-4.jpg'
         ] )
       )
     ] );

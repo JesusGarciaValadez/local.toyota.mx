@@ -9,6 +9,7 @@ use Highlander\Http\Controllers\Controller;
 use Illuminate\Support\Str;
 
 use Highlander\Http\Requests\CarRequest;
+use Highlander\Http\Requests\CarWithoutFilesRequest;
 
 use Highlander\Events\UploadImages;
 use Highlander\Events\UploadFiles;
@@ -104,7 +105,6 @@ class CarController extends Controller
         ] )
       )
     ];
-
     $internalSpecifications   = [
       'car_id'      => $id,
       'description' => base64_encode(
@@ -119,6 +119,7 @@ class CarController extends Controller
         ] )
       )
     ];
+
 
     $saveTechnicalSpecificationsResult  = new \Highlander\TechnicalSpecification( $technicalSpecifications );
     $saveTechnicalSpecificationsResult->save( );
@@ -135,9 +136,9 @@ class CarController extends Controller
 
     $car                      = [
       'brands_id'                   => $id,
-      'technical_specifications_id' => $saveTechnicalSpecificationsResult,
-      'external_specifications_id'  => $saveExternalSpecificationsResult,
-      'internal_specifications_id'  => $saveInternalSpecificationsResult,
+      'technical_specifications_id' => $saveTechnicalSpecificationsResult->id,
+      'external_specifications_id'  => $saveExternalSpecificationsResult->id,
+      'internal_specifications_id'  => $saveInternalSpecificationsResult->id,
       'title'                       => $request->title,
       'name'                        => $request->name,
       'thumbnail'                   => $carImagesPath . $request->thumbnail,
@@ -198,11 +199,10 @@ class CarController extends Controller
    * @param  int                        $element_id
    * @return \Illuminate\Http\Response
    */
-  public function update( CarRequest $request, $id, $element_id )
+  public function update( CarWithoutFilesRequest $request, $id, $element_id )
   {
-    dd( 'adios' );
-    $technicalSpecifications  = [
-      'car_id'      => $id,
+    $technicalSpecifications            = [
+      'car_id'      => $element_id,
       'description' => base64_encode(
         serialize( [
           'Motor'     => [
@@ -219,8 +219,8 @@ class CarController extends Controller
       )
     ];
 
-    $externalSpecifications   = [
-      'car_id'      => $id,
+    $externalSpecifications             = [
+      'car_id'      => $element_id,
       'description' => base64_encode(
         serialize( [
           'Faros'             => $request->Faros,
@@ -235,8 +235,8 @@ class CarController extends Controller
       )
     ];
 
-    $internalSpecifications   = [
-      'car_id'      => $id,
+    $internalSpecifications             = [
+      'car_id'      => $element_id,
       'description' => base64_encode(
         serialize( [
           'AcabadosInteriores'    => $request->AcabadosInteriores,
@@ -259,7 +259,9 @@ class CarController extends Controller
     $saveInternalSpecificationsResult   = \Highlander\InternalSpecification::where( 'id', $element_id )
                                                                            ->update( $internalSpecifications );
 
-    $car                      = [
+    $carImagesPath  = 'assets/images/versiones/';
+
+    $car                                = [
       'brands_id'                   => $id,
       'technical_specifications_id' => $element_id,
       'external_specifications_id'  => $element_id,
