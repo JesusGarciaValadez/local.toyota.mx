@@ -69,7 +69,7 @@ class CarController extends Controller
     \Event::fire( new UploadImages( $carImages, $carImagesPath ) );
 
     $carTechnicalSpecificationsFile = [ 'Download' ];
-    $carTechnicalSpecificationsPath = 'assets/technical-specifications/';
+    $carTechnicalSpecificationsPath = 'assets/images/technical-specifications/';
     \Event::fire( new UploadFiles( $carTechnicalSpecificationsFile, $carTechnicalSpecificationsPath ) );
 
     $technicalSpecifications  = [

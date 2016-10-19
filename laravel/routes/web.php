@@ -93,6 +93,9 @@ Route::group( [ 'prefix' => 'admin', 'middleware' => 'auth' ], function ( )
     Route::resource( 'title-slider-features', 'Admin\TitleSliderFeaturesController' );
     Route::resource( 'gallery-fancyboxes', 'Admin\GalleryFancyboxesController' );
     Route::resource( 'car', 'Admin\CarController' );
+    Route::resource( 'images', 'Admin\ImageController', [
+      'only'        => [ 'index', 'store' ]
+    ] );
   } );
 } );
 
