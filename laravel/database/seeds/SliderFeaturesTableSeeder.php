@@ -20,7 +20,7 @@ class SliderFeaturesTableSeeder extends Seeder
             <p>Seguridad total cuando más lo necesitas, cambia de carril sin ninguna preocupación.</p>
           </div>
           <div>
-            <img src="assets/images/highlight/sistema-de-monitoreo.png" />
+            <img src="storage/images/highlight/sistema-de-monitoreo.png" />
           </div>
         </li>'
     ] );
@@ -34,7 +34,7 @@ class SliderFeaturesTableSeeder extends Seeder
             <p>¡Gran vista para todos! Los viajes se disfrutan más cuando admiras el paisaje.</p>
           </div>
           <div>
-            <img src="assets/images/highlight/techo-corredizo.png" />
+            <img src="storage/images/highlight/techo-corredizo.png" />
           </div>
         </li>'
     ] );
@@ -48,7 +48,7 @@ class SliderFeaturesTableSeeder extends Seeder
             <p>Pantalla de 9” y Blu-ray disc para que todos se diviertan sin importar lo largo del viaje.</p>
           </div>
           <div>
-            <img src="assets/images/highlight/sistema-de-entretenimiento.png" />
+            <img src="storage/images/highlight/sistema-de-entretenimiento.png" />
           </div>
         </li>'
     ] );
@@ -62,7 +62,7 @@ class SliderFeaturesTableSeeder extends Seeder
             <p>Sal a donde quieras, se adapta a cualquier Terreno, clima y caminos, ideal para la ciudad o carretera.</p>
           </div>
           <div>
-            <img src="assets/images/highlight/palanca.png" />
+            <img src="storage/images/highlight/palanca.png" />
           </div>
         </li>'
     ] );

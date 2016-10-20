@@ -48,7 +48,7 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Kit asistencia vial'
           ],
           'SeguridadInterior'     => [ 'N/A' ],
-          'Download'              => 'assets/technical-specifications/prius-2016.pdf'
+          'Download'              => 'storage/technical-specifications/prius-2016.pdf'
         ] )
       )
     ] );
@@ -94,7 +94,7 @@ class InternalSpecificationsTableSeeder extends Seeder
             '7 velocidades al frente (simulado)',
             'Palanca al piso tipo escalonada'
           ],
-          'Download'            => 'assets/technical-specifications/prius-2016.pdf'
+          'Download'            => 'storage/technical-specifications/prius-2016.pdf'
         ] )
       )
     ] );
@@ -136,7 +136,7 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Kit asistencia vial'
           ],
           'SeguridadInterior'     => [ 'N/A' ],
-          'Download'              => 'assets/technical-specifications/prius-2016.pdf'
+          'Download'              => 'storage/technical-specifications/prius-2016.pdf'
         ] )
       )
     ] );
@@ -182,7 +182,7 @@ class InternalSpecificationsTableSeeder extends Seeder
             '7 velocidades al frente (simulado)',
             'Palanca al piso tipo escalonada'
           ],
-          'Download'            => 'assets/technical-specifications/prius-2016.pdf'
+          'Download'            => 'storage/technical-specifications/prius-2016.pdf'
         ] )
       )
     ] );

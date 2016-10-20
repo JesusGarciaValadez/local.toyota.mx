@@ -45,7 +45,7 @@ class ExternalSpecificationsTableSeeder extends Seeder
             'Capacidad de carga / 480 Kg',
             'Volumen de carga en cajuela / 506 Lts'
           ],
-          'UrlInterior'       => 'assets/images/datos/img-tablero.jpg'
+          'UrlInterior'       => 'storage/images/datos/img-tablero.jpg'
         ] )
       )
     ] );
@@ -84,7 +84,7 @@ class ExternalSpecificationsTableSeeder extends Seeder
             'Capacidad de carga / 445 Kg',
             'Volumen de carga en cajuela / 506 Lts'
           ],
-          'UrlInterior'       => 'assets/images/datos/img-tablero.jpg'
+          'UrlInterior'       => 'storage/images/datos/img-tablero.jpg'
         ] )
       )
     ] );
@@ -123,7 +123,7 @@ class ExternalSpecificationsTableSeeder extends Seeder
             'Capacidad de carga / 480 Kg',
             'Volumen de carga en cajuela / 506 Lts'
           ],
-          'UrlInterior'       => 'assets/images/datos/img-tablero.jpg'
+          'UrlInterior'       => 'storage/images/datos/img-tablero.jpg'
         ] )
       )
     ] );
@@ -162,7 +162,7 @@ class ExternalSpecificationsTableSeeder extends Seeder
             'Capacidad de carga / 445 Kg',
             'Volumen de carga en cajuela / 506 Lts'
           ],
-          'UrlInterior'       => 'assets/images/datos/img-tablero.jpg'
+          'UrlInterior'       => 'storage/images/datos/img-tablero.jpg'
         ] )
       )
     ] );
