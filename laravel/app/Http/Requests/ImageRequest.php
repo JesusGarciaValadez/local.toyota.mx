@@ -24,8 +24,9 @@ class ImageRequest extends FormRequest
   public function rules()
   {
     return [
-      'image' => 'required|image:jpeg,jpg,png',
-      'path'  => 'required|string|in:datos,galeria,highlight,technical-specifications,thumbs,versiones'
+      'image' => 'required_without:name|image:jpeg,jpg,png',
+      'path'  => 'required_without:name|string|in:datos,galeria,highlight,technical-specifications,thumbs,versiones',
+      'name'  => 'required_without_all:image,path'
     ];
   }
 }

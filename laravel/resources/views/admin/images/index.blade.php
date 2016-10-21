@@ -25,7 +25,9 @@
               <i class="glyphicon glyphicon-chevron-left"></i> Regresar
             </a>
             {!! Form::open( [
-              'url'     => action( 'Admin\ImageController@store', [ 'id' => $id ] ),
+              'url'     => action( 'Admin\ImageController@store', [
+                'id'  => $id
+              ] ),
               'method'  => 'POST',
               'class'   => 'form-horizontal',
               'files'   => true,
@@ -75,6 +77,20 @@
                   {!! Html::image( $image, null, [
                     'class' => 'img-responsive img-thumbnail'
                   ] ) !!}
+                  {!! Form::open( [
+                    'url'     => action( 'Admin\ImageController@destroy', [
+                      'id' => $id
+                    ] ),
+                    'method'  => 'DELETE',
+                    'class'   => 'form-horizontal',
+                    'files'   => false,
+                    'id'      => 'delete--form'
+                  ] ) !!}
+                    {!! Form::hidden( 'name', $image ) !!}
+                    {!! Form::image( public_path() . 'assets/images/icons/close.png', 'close', [
+                      'class' => 'delete--form__deleteBtn'
+                    ] ) !!}
+                  {!! Form::close() !!}
                 </figure>
                 @endforeach
               </div>
