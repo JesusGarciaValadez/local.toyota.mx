@@ -134,7 +134,7 @@
                   </td>
                 </tr>{{-- Admin\DescriptionFooterController --}}
                 <tr>
-                  <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5"><p><small><span>Imágenes:</small></p></td>
+                  <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5"><p><small><span>Administrar imágenes:</small></p></td>
                   <td class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
                     <div class="clearfix text-right">
                       <a href="{{ action( 'Admin\ImageController@index', [ 'id' => $home->id ] ) }}" class="btn btn-info"><i class="glyphicon glyphicon-th-list"></i> Lista</a>

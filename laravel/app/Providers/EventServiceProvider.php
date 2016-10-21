@@ -13,6 +13,9 @@ class EventServiceProvider extends ServiceProvider
    * @var array
    */
   protected $listen = [
+    'Highlander\Events\UploadImage' => [
+      'Highlander\Listeners\UploadImageListener',
+    ],
     'Highlander\Events\UploadImages' => [
       'Highlander\Listeners\UploadImagesListener',
     ],

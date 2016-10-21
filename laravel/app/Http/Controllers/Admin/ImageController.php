@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 use Highlander\Http\Requests;
 use Highlander\Http\Controllers\Controller;
 
-use Highlander\Requests\ImageRequest;
+use Highlander\Http\Requests\ImageRequest;
 
-use Highlander\Events\UploadImages;
+use Highlander\Events\UploadImage;
 
 use Illuminate\Support\Facades\Storage;
 
@@ -22,50 +22,81 @@ class ImageController extends Controller
    */
   public function index( $id )
   {
-    $datos                      = Storage::allFiles( "images/datos/", false );
-    $gallery                    = Storage::allFiles( "images/galeria/", false );
-    $highlight                  = Storage::allFiles( "images/highlight/", false );
-    $technicalSpecifications    = Storage::allFiles( "images/technical-specifications/", false );
-    $thumbs                     = Storage::allFiles( "images/thumbs/", false );
-    $versions                   = Storage::allFiles( "images/versiones/", false );
-    $urlDatos                   = [];
-    $urlGallery                 = [];
-    $urlHighlight               = [];
-    $urlTechnicalSpecifications = [];
-    $urlThumbs                  = [];
-    $urlVersions                = [];
+    $datos                          = Storage::allFiles( "images/datos/", false );
+    $gallery                        = Storage::allFiles( "images/galeria/", false );
+    $highlight                      = Storage::allFiles( "images/highlight/", false );
+    $technicalSpecifications        = Storage::allFiles( "images/technical-specifications/", false );
+    $thumbs                         = Storage::allFiles( "images/thumbs/", false );
+    $versions                       = Storage::allFiles( "images/versiones/", false );
+    $imagesDatos                    = [];
+    $imagesGallery                  = [];
+    $imagesHighlight                = [];
+    $imagesTechnicalSpecifications  = [];
+    $imagesThumbs                   = [];
+    $imagesVersions                 = [];
 
-    foreach( $datos as $image )
+    if( is_array( $datos ) && count( $datos ) > 0 )
     {
-      $urlImagesDatos[] = Storage::url( $image );
+      foreach( $datos as $image )
+      {
+        $imagesDatos[] = Storage::url( $image );
+      }
     }
 
-    foreach( $gallery as $image )
+    if( is_array( $gallery ) && count( $gallery ) > 0 )
     {
-      $urlImagesGallery[] = Storage::url( $image );
+      foreach( $gallery as $image )
+      {
+        $imagesGallery[] = Storage::url( $image );
+      }
     }
 
-    foreach( $highlight as $image )
+    if( is_array( $highlight ) && count( $highlight ) > 0 )
     {
-      $urlImagesHighlight[] = Storage::url( $image );
+      foreach( $highlight as $image )
+      {
+        $imagesHighlight[] = Storage::url( $image );
+      }
     }
 
-    foreach( $technicalSpecifications as $image )
+    if( is_array( $technicalSpecifications ) && count( $technicalSpecifications ) > 0 )
     {
-      $urlImagesTechnicalSpecifications[] = Storage::url( $image );
+      foreach( $technicalSpecifications as $image )
+      {
+        $imagesTechnicalSpecifications[] = Storage::url( $image );
+      }
     }
 
-    foreach( $thumbs as $image )
+    if( is_array( $thumbs ) && count( $thumbs ) > 0 )
     {
-      $urlImagesThumbs[] = Storage::url( $image );
+      foreach( $thumbs as $image )
+      {
+        $imagesThumbs[] = Storage::url( $image );
+      }
     }
 
-    foreach( $versions as $image )
+    if( is_array( $versions ) && count( $versions ) > 0 )
     {
-      $urlImagesVersions[] = Storage::url( $image );
+      foreach( $versions as $image )
+      {
+        $imagesVersions[] = Storage::url( $image );
+      }
     }
 
-    return view( 'admin.images.index', compact( 'urlImagesDatos', 'urlImagesGallery', 'urlImagesHighlight', 'urlImagesTechnicalSpecifications', 'urlImagesThumbs', 'urlImagesVersions' ) );
+    array_shift( $imagesDatos );
+    array_shift( $imagesGallery );
+    array_shift( $imagesHighlight );
+    array_shift( $imagesTechnicalSpecifications );
+    array_shift( $imagesThumbs );
+    array_shift( $imagesVersions );
+
+    return view( 'admin.images.index' )->withId( $id )
+                                       ->withImageDatos( $imagesDatos )
+                                       ->withImageGallery( $imagesGallery )
+                                       ->withImageHighlight( $imagesHighlight )
+                                       ->withImageTechnicalSpecifications( $imagesTechnicalSpecifications )
+                                       ->withImageThumbs( $imagesThumbs )
+                                       ->withImageVersions( $imagesVersions );
   }
 
   /**
@@ -86,10 +117,19 @@ class ImageController extends Controller
    */
   public function store( ImageRequest $request )
   {
-    $image  = $request->only( 'image' );
-    $path   = "assets/images/" . $request->only( 'path' ) . "/";
+    $path   = "images/" . $request->only( 'path' )[ 'path' ];
 
-    \Event::fire( new UploadImages( $image, $path ) );
+    \Event::fire( new UploadImage( $path ) );
+
+    /*
+     * Create a response for passing it into the view.
+     */
+    $type     = "success";
+    $message  = "Imagen subida";
+
+    return \Redirect::back( )
+                    ->withType( $type )
+                    ->withMessage( $message );
   }
 
   /**

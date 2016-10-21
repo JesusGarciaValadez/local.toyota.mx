@@ -15,7 +15,9 @@
       </div>
       @endforeach
       <div class="panel panel-default">
-        <div class="panel-heading">Crear nuevo modelo de auto @ {!! $brandName !!}</div>
+        <div class="panel-heading">
+          <h1>Crear nuevo modelo de auto @ {!! $brandName !!}</h1>
+        </div>
         <div class="panel-body">
           <div class="bs-example bs-example-bg-classes" data-example-id="contextual-backgrounds-helpers">
             {!! Form::open( [
