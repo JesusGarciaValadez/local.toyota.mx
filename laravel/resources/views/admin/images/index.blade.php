@@ -79,7 +79,7 @@
                   ] ) !!}
                   {!! Form::open( [
                     'url'     => action( 'Admin\ImageController@destroy', [
-                      'id' => $id
+                      'id'    => $id,
                     ] ),
                     'method'  => 'DELETE',
                     'class'   => 'form-horizontal',

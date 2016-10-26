@@ -83,6 +83,7 @@ class ImageController extends Controller
       }
     }
 
+    // Delete .DS_Store files
     array_shift( $imagesDatos );
     array_shift( $imagesGallery );
     array_shift( $imagesHighlight );
@@ -172,8 +173,30 @@ class ImageController extends Controller
    * @param  int  $id
    * @return \Illuminate\Http\Response
    */
-  public function destroy( $id )
+  public function destroy( ImageRequest $request )
   {
-    echo 'Imagen borrada';
+    $image      = $request->only( 'name' )[ 'name' ];
+    $arrayPath  = array_reverse( explode( '/', $image ) );
+    $imagePath  = $arrayPath[ 2 ] . '/' . $arrayPath[ 1 ] . '/' . $arrayPath[ 0 ];
+    $response   = false;
+
+    try
+    {
+      $response = Storage::delete( $imagePath );
+    }
+    catch ( Exception $error )
+    {
+      dd( $error->getMessage() );
+    }
+
+    /*
+     * Create a response for passing it into the view.
+     */
+    $type     = ( $response ) ? "success" : "danger";
+    $message  = ( $response ) ? "Imagen borrada" : "No se pudo encontrár la imagen";
+
+    return \Redirect::back( )
+                    ->withType( $type )
+                    ->withMessage( $message );
   }
 }

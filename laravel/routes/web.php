@@ -94,8 +94,9 @@ Route::group( [ 'prefix' => 'admin', 'middleware' => 'auth' ], function ( )
     Route::resource( 'gallery-fancyboxes', 'Admin\GalleryFancyboxesController' );
     Route::resource( 'car', 'Admin\CarController' );
     Route::resource( 'images', 'Admin\ImageController', [
-      'only'  => [ 'index', 'store', 'destroy' ]
+      'only'  => [ 'index', 'store' ]
     ] );
+    Route::delete( 'images', 'Admin\ImageController@destroy' );
   } );
 } );
 

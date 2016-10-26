@@ -26,7 +26,7 @@ class ImageRequest extends FormRequest
     return [
       'image' => 'required_without:name|image:jpeg,jpg,png',
       'path'  => 'required_without:name|string|in:datos,galeria,highlight,technical-specifications,thumbs,versiones',
-      'name'  => 'required_without_all:image,path'
+      'name'  => 'required_without_all:image,path|string'
     ];
   }
 }
