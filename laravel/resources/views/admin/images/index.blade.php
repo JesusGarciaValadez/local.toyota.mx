@@ -86,7 +86,7 @@
                     'files'   => false
                   ] ) !!}
                     {!! Form::hidden( 'name', $image ) !!}
-                    {!! Form::image( public_path() . 'assets/images/icons/close.png', 'close', [
+                    {!! Form::image( 'assets/css/img/x.png', 'close', [
                       'class' => 'delete--form__deleteBtn'
                     ] ) !!}
                   {!! Form::close() !!}
@@ -114,7 +114,7 @@
                     'files'   => false
                   ] ) !!}
                     {!! Form::hidden( 'name', $image ) !!}
-                    {!! Form::image( public_path() . 'assets/images/icons/close.png', 'close', [
+                    {!! Form::image( 'assets/css/img/x.png', 'close', [
                       'class' => 'delete--form__deleteBtn'
                     ] ) !!}
                   {!! Form::close() !!}
@@ -142,7 +142,7 @@
                     'files'   => false
                   ] ) !!}
                     {!! Form::hidden( 'name', $image ) !!}
-                    {!! Form::image( public_path() . 'assets/images/icons/close.png', 'close', [
+                    {!! Form::image( 'assets/css/img/x.png', 'close', [
                       'class' => 'delete--form__deleteBtn'
                     ] ) !!}
                   {!! Form::close() !!}
@@ -170,7 +170,7 @@
                     'files'   => false
                   ] ) !!}
                     {!! Form::hidden( 'name', $image ) !!}
-                    {!! Form::image( public_path() . 'assets/images/icons/close.png', 'close', [
+                    {!! Form::image( 'assets/css/img/x.png', 'close', [
                       'class' => 'delete--form__deleteBtn'
                     ] ) !!}
                   {!! Form::close() !!}
@@ -198,7 +198,7 @@
                     'files'   => false
                   ] ) !!}
                     {!! Form::hidden( 'name', $image ) !!}
-                    {!! Form::image( public_path() . 'assets/images/icons/close.png', 'close', [
+                    {!! Form::image( 'assets/css/img/x.png', 'close', [
                       'class' => 'delete--form__deleteBtn'
                     ] ) !!}
                   {!! Form::close() !!}
@@ -226,7 +226,7 @@
                     'files'   => false
                   ] ) !!}
                     {!! Form::hidden( 'name', $image ) !!}
-                    {!! Form::image( public_path() . 'assets/images/icons/close.png', 'close', [
+                    {!! Form::image( 'assets/css/img/x.png', 'close', [
                       'class' => 'delete--form__deleteBtn'
                     ] ) !!}
                   {!! Form::close() !!}
