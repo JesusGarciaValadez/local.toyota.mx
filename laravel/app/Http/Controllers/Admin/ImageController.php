@@ -83,7 +83,7 @@ class ImageController extends Controller
       }
     }
 
-    // Delete .DS_Store files
+    // Delete .DS_Store files references
     array_shift( $imagesDatos );
     array_shift( $imagesGallery );
     array_shift( $imagesHighlight );
