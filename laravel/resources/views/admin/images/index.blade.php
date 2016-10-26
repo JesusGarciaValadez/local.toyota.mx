@@ -71,7 +71,7 @@
             @if ( count( $image_datos ) > 0 )
             <div class="container-fluid">
               <h2>Imágenes de especificación de autos</h2>
-              <div class="flex-items-xs-middle row">
+              <div class="image--manager flex-items-xs-middle row">
                 @foreach ( $image_datos as $image )
                 <figure class="text-xs-center col-lg-3 col-md-4 col-sm-12 col-xs-12">
                   {!! Html::image( $image, null, [
@@ -82,9 +82,8 @@
                       'id'    => $id,
                     ] ),
                     'method'  => 'DELETE',
-                    'class'   => 'form-horizontal',
-                    'files'   => false,
-                    'id'      => 'delete--form'
+                    'class'   => 'form--horizontal delete--form',
+                    'files'   => false
                   ] ) !!}
                     {!! Form::hidden( 'name', $image ) !!}
                     {!! Form::image( public_path() . 'assets/images/icons/close.png', 'close', [
@@ -100,12 +99,25 @@
             @if ( count( $image_technical_specifications ) > 0 )
             <div class="container-fluid">
               <h3>Imágenes de especificación de autos</h3>
-              <div class="flex-items-xs-middle row">
+              <div class="image--manager flex-items-xs-middle row">
                 @foreach ( $image_technical_specifications as $image )
                 <figure class="text-xs-center col-lg-3 col-md-4 col-sm-12 col-xs-12">
                   {!! Html::image( $image, null, [
                     'class' => 'img-responsive img-thumbnail'
                   ] ) !!}
+                  {!! Form::open( [
+                    'url'     => action( 'Admin\ImageController@destroy', [
+                      'id'    => $id,
+                    ] ),
+                    'method'  => 'DELETE',
+                    'class'   => 'form--horizontal delete--form',
+                    'files'   => false
+                  ] ) !!}
+                    {!! Form::hidden( 'name', $image ) !!}
+                    {!! Form::image( public_path() . 'assets/images/icons/close.png', 'close', [
+                      'class' => 'delete--form__deleteBtn'
+                    ] ) !!}
+                  {!! Form::close() !!}
                 </figure>
                 @endforeach
               </div>
@@ -115,12 +127,25 @@
             @if ( count( $image_thumbs ) > 0 )
             <div class="container-fluid">
               <h3>Imágenes de especificación de autos</h3>
-              <div class="flex-items-xs-middle row">
+              <div class="image--manager flex-items-xs-middle row">
                 @foreach ( $image_thumbs as $image )
                 <figure class="text-xs-center col-lg-3 col-md-4 col-sm-12 col-xs-12">
                   {!! Html::image( $image, null, [
                     'class' => 'img-responsive img-thumbnail'
                   ] ) !!}
+                  {!! Form::open( [
+                    'url'     => action( 'Admin\ImageController@destroy', [
+                      'id'    => $id,
+                    ] ),
+                    'method'  => 'DELETE',
+                    'class'   => 'form--horizontal delete--form',
+                    'files'   => false
+                  ] ) !!}
+                    {!! Form::hidden( 'name', $image ) !!}
+                    {!! Form::image( public_path() . 'assets/images/icons/close.png', 'close', [
+                      'class' => 'delete--form__deleteBtn'
+                    ] ) !!}
+                  {!! Form::close() !!}
                 </figure>
                 @endforeach
               </div>
@@ -130,12 +155,25 @@
             @if ( count( $image_gallery ) > 0 )
             <div class="container-fluid">
               <h3>Imágenes de especificación de autos</h3>
-              <div class="flex-items-xs-middle row">
+              <div class="image--manager flex-items-xs-middle row">
                 @foreach ( $image_gallery as $image )
                 <figure class="text-xs-center col-lg-3 col-md-4 col-sm-12 col-xs-12">
                   {!! Html::image( $image, null, [
                     'class' => 'img-responsive img-thumbnail'
                   ] ) !!}
+                  {!! Form::open( [
+                    'url'     => action( 'Admin\ImageController@destroy', [
+                      'id'    => $id,
+                    ] ),
+                    'method'  => 'DELETE',
+                    'class'   => 'form--horizontal delete--form',
+                    'files'   => false
+                  ] ) !!}
+                    {!! Form::hidden( 'name', $image ) !!}
+                    {!! Form::image( public_path() . 'assets/images/icons/close.png', 'close', [
+                      'class' => 'delete--form__deleteBtn'
+                    ] ) !!}
+                  {!! Form::close() !!}
                 </figure>
                 @endforeach
               </div>
@@ -145,12 +183,25 @@
             @if ( count( $image_highlight ) > 0 )
             <div class="container-fluid">
               <h3>Imágenes de especificación de autos</h3>
-              <div class="flex-items-xs-middle row">
+              <div class="image--manager flex-items-xs-middle row">
                 @foreach ( $image_highlight as $image )
                 <figure class="text-xs-center col-lg-3 col-md-4 col-sm-12 col-xs-12">
                   {!! Html::image( $image, null, [
                     'class' => 'img-responsive img-thumbnail'
                   ] ) !!}
+                  {!! Form::open( [
+                    'url'     => action( 'Admin\ImageController@destroy', [
+                      'id'    => $id,
+                    ] ),
+                    'method'  => 'DELETE',
+                    'class'   => 'form--horizontal delete--form',
+                    'files'   => false
+                  ] ) !!}
+                    {!! Form::hidden( 'name', $image ) !!}
+                    {!! Form::image( public_path() . 'assets/images/icons/close.png', 'close', [
+                      'class' => 'delete--form__deleteBtn'
+                    ] ) !!}
+                  {!! Form::close() !!}
                 </figure>
                 @endforeach
               </div>
@@ -160,12 +211,25 @@
             @if ( count( $image_versions ) > 0 )
             <div class="container-fluid">
               <h3>Imágenes de especificación de autos</h3>
-              <div class="flex-items-xs-middle row">
+              <div class="image--manager flex-items-xs-middle row">
                 @foreach ( $image_versions as $image )
                 <figure class="text-xs-center col-lg-3 col-md-4 col-sm-12 col-xs-12">
                   {!! Html::image( $image, null, [
                     'class' => 'img-responsive img-thumbnail'
                   ] ) !!}
+                  {!! Form::open( [
+                    'url'     => action( 'Admin\ImageController@destroy', [
+                      'id'    => $id,
+                    ] ),
+                    'method'  => 'DELETE',
+                    'class'   => 'form--horizontal delete--form',
+                    'files'   => false
+                  ] ) !!}
+                    {!! Form::hidden( 'name', $image ) !!}
+                    {!! Form::image( public_path() . 'assets/images/icons/close.png', 'close', [
+                      'class' => 'delete--form__deleteBtn'
+                    ] ) !!}
+                  {!! Form::close() !!}
                 </figure>
                 @endforeach
               </div>
