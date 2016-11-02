@@ -38,7 +38,8 @@
                   'class' => 'col-lg-6 col-md-6 col-sm-12'
                 ], true ) !!}
                 {!! Form::file( "image", [
-                  'class' => 'col-lg-6 col-md-6 col-sm-12'
+                  'v-model' => 'fileUploaded',
+                  'class'   => 'col-lg-6 col-md-6 col-sm-12'
                 ] ) !!}
               </p>
               <p class="col-lg-12 col-md-12 col-sm-12">
@@ -60,7 +61,8 @@
               </p>
               <p class="col-lg-12 col-md-12 col-sm-12 text-right">
                 {!! Form::submit( "Subir imagen", [
-                  'class' => 'text-right'
+                  ':disabled' => 'fileUploaded',
+                  'class'     => 'text-right'
                 ] ) !!}
               </p>
             {!! Form::close() !!}
@@ -241,4 +243,65 @@
     </div>
   </div>
 </div>
+@endsection
+
+@section( 'scripts' )
+@parent
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-3.1.1.min"><\/script>')</script>
+<script src="//unpkg.com/vue/dist/vue.js"></script>
+<script>
+  upload = new Vue( {
+    el      : '#upload__form',
+    data    : {
+      fileUploaded: ''
+    },
+    methods : {
+      /**
+       * Submit contact form
+       * @param  Event event Event object
+       */
+      submitEdit : function ( event ) {
+        console.log(this.newModel.UrlAuto);
+        var data  = {
+          'title'   : this.newModel.title,
+        }
+
+        if ( !this.isValid ) {
+          this.message  = 'Hay un campo que no esta correctamente lleno. Por favor, revisa de nuevo.';
+          alert( this.message );
+        } else {
+          editForm      = document.getElementById( 'edit__form' ).submit();
+        }
+      }
+    },
+
+    // computed property for form validation state
+    computed: {
+      validation: function () {
+        return {
+          'title'   : !!this.newModel.title.trim( ),
+        }
+      },
+      isValid: function () {
+        var validation = this.validation
+        return Object.keys( validation ).every( function ( key ) {
+          console.log( key, validation[ key ] );
+          return validation[ key ];
+        } );
+      }
+    },
+  } );
+</script>
+<!-- <script src="/assets/js/app.js"></script> -->
+
+
+
+
+
+
+
+
+
+
 @endsection

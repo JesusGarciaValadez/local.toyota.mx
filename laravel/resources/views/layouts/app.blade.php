@@ -65,13 +65,6 @@
       </div>
       <nav>
         <ul>
-          <!--
-          <li class="finan">
-            {!! Html::link( 'financiamiento', 'Financiamiento', [
-              'target' => '_blank'
-            ] ) !!}
-          </li>
-          -->
           <li class="distri">
             {!! Html::link( action( 'HomeController@retail', [
               'slug' => ( !empty( $slug ) ) ? $slug : ''
@@ -81,11 +74,6 @@
       </nav>
     </div>
     <div class="menu2 fadeInUp animated">
-      <!--
-      {!! Html::link( '#', 'CONTÁCTANOS', [
-        'class' => 'btnprev'
-      ] ) !!}
-      -->
       {!! Html::link( '#cover', '', [
         'class' => 'scroll'
       ] ) !!}
@@ -106,13 +94,6 @@
               'class' => 'scroll'
             ] ) !!}
           </li>
-          <!--
-          <li>
-            {!! Html::link( '#highlights2', 'VERSATILIDAD', [
-              'class' => 'scroll'
-            ] ) !!}
-          </li>
-          -->
           <li>
             {!! Html::link( '#versiones', 'VERSIONES', [
               'class' => 'scroll'
@@ -142,11 +123,6 @@
               'target' => '_blank'
             ] ) !!}
           </li>
-          <!--
-          <li>
-            {!! Html::link( '', 'Aviso de Privacidad', [] ) !!}
-          </li>
-          -->
         </ul>
       </nav>
       <span><p>©<?=date('Y');?> Toyota, TOYOTA MÉXICO</p></span>
@@ -183,12 +159,12 @@
   <!-- Financiamiento -->
   @if( isset( $financiamiento ) && $financiamiento == true )
   {!! Html::script( 'assets/js/phpjs/number_format.js') !!}
-  {!! Html::script( 'assets/js/financiamiento-toyota.js') !!}
+  {!! Html::script( 'assets/js/financiamiento-toyota.min.js') !!}
   @endif
   <!-- Add main JS -->
-  {!! Html::script( 'assets/js/main.js') !!}
-  {!! Html::script( 'assets/js/especificaciones.js') !!}
-  {!! Html::script( 'assets/js/mapa.js' ) !!}
+  {!! Html::script( 'assets/js/main.min.js') !!}
+  {!! Html::script( 'assets/js/especificaciones.min.js') !!}
+  {!! Html::script( 'assets/js/mapa.min.js' ) !!}
   {!! Html::script( '//cdnjs.cloudflare.com/ajax/libs/picturefill/2.0.0/picturefill.min.js', [ 'async' => "" ] ) !!}
 
   <!-- Add fancyBox main JS and CSS files -->

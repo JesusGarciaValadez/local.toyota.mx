@@ -70,7 +70,7 @@
 
 @section( 'scripts' )
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-3.1.0.min"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-3.1.0.min"><\/script>')</script>
 <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
 <script>
   //  TinyMCE inicialization after document loaded
