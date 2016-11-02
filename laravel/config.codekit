@@ -7129,17 +7129,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/storage\/app\/public\/images\/galeria\/Alitas-C.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 277351,
-		"inputAbbreviatedPath": "\/storage\/app\/public\/images\/galeria\/Alitas-C.png",
-		"outputAbbreviatedPath": "\/storage\/app\/public\/images\/galeria\/Alitas-C.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/storage\/app\/public\/images\/galeria\/img-01.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -7268,28 +7257,6 @@
 		"initialSize": 536650,
 		"inputAbbreviatedPath": "\/storage\/app\/public\/images\/galeria\/img-12.jpg",
 		"outputAbbreviatedPath": "\/storage\/app\/public\/images\/galeria\/img-12.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/storage\/app\/public\/images\/galeria\/iphone-6-plus.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 4313,
-		"inputAbbreviatedPath": "\/storage\/app\/public\/images\/galeria\/iphone-6-plus.jpg",
-		"outputAbbreviatedPath": "\/storage\/app\/public\/images\/galeria\/iphone-6-plus.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/storage\/app\/public\/images\/galeria\/iphone-6.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 3794,
-		"inputAbbreviatedPath": "\/storage\/app\/public\/images\/galeria\/iphone-6.jpg",
-		"outputAbbreviatedPath": "\/storage\/app\/public\/images\/galeria\/iphone-6.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -7679,28 +7646,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/storage\/app\/public\/images\/thumbs\/iphone-6-plus.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 4313,
-		"inputAbbreviatedPath": "\/storage\/app\/public\/images\/thumbs\/iphone-6-plus.jpg",
-		"outputAbbreviatedPath": "\/storage\/app\/public\/images\/thumbs\/iphone-6-plus.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/storage\/app\/public\/images\/thumbs\/iphone-6.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 3794,
-		"inputAbbreviatedPath": "\/storage\/app\/public\/images\/thumbs\/iphone-6.jpg",
-		"outputAbbreviatedPath": "\/storage\/app\/public\/images\/thumbs\/iphone-6.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/storage\/app\/public\/images\/versiones\/img_lateral.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -7730,6 +7675,17 @@
 		"inputAbbreviatedPath": "\/storage\/debugbar\/037c4c17400ae4273420d2a7cd88b761.json",
 		"orderOutput": 0,
 		"outputAbbreviatedPath": "\/storage\/debugbar\/037c4c17400ae4273420d2a7cd88b761-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/storage\/debugbar\/067739a1ea44f78d9f44cc1220ebbd98.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/debugbar\/067739a1ea44f78d9f44cc1220ebbd98.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/storage\/debugbar\/067739a1ea44f78d9f44cc1220ebbd98-min.json",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
@@ -7767,6 +7723,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
+	"\/storage\/debugbar\/100e22b061cbb58d4ba280850ddbbf1a.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/debugbar\/100e22b061cbb58d4ba280850ddbbf1a.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/storage\/debugbar\/100e22b061cbb58d4ba280850ddbbf1a-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/storage\/debugbar\/10bb24e597e1e0bea5ffc867fb300900.json": {
 		"fileType": 524288,
 		"ignore": 1,
@@ -7785,17 +7752,6 @@
 		"inputAbbreviatedPath": "\/storage\/debugbar\/13cbb42693f0a8730cc26e3d839ff15b.json",
 		"orderOutput": 0,
 		"outputAbbreviatedPath": "\/storage\/debugbar\/13cbb42693f0a8730cc26e3d839ff15b-min.json",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1
-		},
-	"\/storage\/debugbar\/14f7dbbcdd54cd5e30960f02902b62bb.json": {
-		"fileType": 524288,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/storage\/debugbar\/14f7dbbcdd54cd5e30960f02902b62bb.json",
-		"orderOutput": 0,
-		"outputAbbreviatedPath": "\/storage\/debugbar\/14f7dbbcdd54cd5e30960f02902b62bb-min.json",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
@@ -7822,6 +7778,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
+	"\/storage\/debugbar\/1bea24969b39d75e3a009985cd81054b.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/debugbar\/1bea24969b39d75e3a009985cd81054b.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/storage\/debugbar\/1bea24969b39d75e3a009985cd81054b-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/storage\/debugbar\/1d3efaf34d226f5918c692224e535ac4.json": {
 		"fileType": 524288,
 		"ignore": 1,
@@ -7829,6 +7796,17 @@
 		"inputAbbreviatedPath": "\/storage\/debugbar\/1d3efaf34d226f5918c692224e535ac4.json",
 		"orderOutput": 0,
 		"outputAbbreviatedPath": "\/storage\/debugbar\/1d3efaf34d226f5918c692224e535ac4-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/storage\/debugbar\/1eec3f303d7261e9ac4bbec9a4b61bd1.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/debugbar\/1eec3f303d7261e9ac4bbec9a4b61bd1.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/storage\/debugbar\/1eec3f303d7261e9ac4bbec9a4b61bd1-min.json",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
@@ -7921,6 +7899,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
+	"\/storage\/debugbar\/31f30d689237bc91e09a0c8aef8e709d.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/debugbar\/31f30d689237bc91e09a0c8aef8e709d.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/storage\/debugbar\/31f30d689237bc91e09a0c8aef8e709d-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/storage\/debugbar\/32f0d6c203a9a0b4f6663139aabcff7f.json": {
 		"fileType": 524288,
 		"ignore": 1,
@@ -7954,6 +7943,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
+	"\/storage\/debugbar\/3731ee11c700d07b7846788885d7d7a2.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/debugbar\/3731ee11c700d07b7846788885d7d7a2.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/storage\/debugbar\/3731ee11c700d07b7846788885d7d7a2-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/storage\/debugbar\/3f3069755409b5efee60e85f61cd839f.json": {
 		"fileType": 524288,
 		"ignore": 1,
@@ -7965,13 +7965,13 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
-	"\/storage\/debugbar\/47086de518b7f64b6b00fa442617561a.json": {
+	"\/storage\/debugbar\/40aea23b55c7375a78d1f8646f6332d3.json": {
 		"fileType": 524288,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/storage\/debugbar\/47086de518b7f64b6b00fa442617561a.json",
+		"inputAbbreviatedPath": "\/storage\/debugbar\/40aea23b55c7375a78d1f8646f6332d3.json",
 		"orderOutput": 0,
-		"outputAbbreviatedPath": "\/storage\/debugbar\/47086de518b7f64b6b00fa442617561a-min.json",
+		"outputAbbreviatedPath": "\/storage\/debugbar\/40aea23b55c7375a78d1f8646f6332d3-min.json",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
@@ -8020,6 +8020,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
+	"\/storage\/debugbar\/56219d7c5ff5f0dacd29a6541bcfaa9c.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/debugbar\/56219d7c5ff5f0dacd29a6541bcfaa9c.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/storage\/debugbar\/56219d7c5ff5f0dacd29a6541bcfaa9c-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/storage\/debugbar\/5787c3bdf05c7183f78d56301ba448ef.json": {
 		"fileType": 524288,
 		"ignore": 1,
@@ -8042,6 +8053,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
+	"\/storage\/debugbar\/5b469e17404b2294f3d5ceb01416d740.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/debugbar\/5b469e17404b2294f3d5ceb01416d740.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/storage\/debugbar\/5b469e17404b2294f3d5ceb01416d740-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/storage\/debugbar\/5e2d36ff8a46dc879eb5fcc26254b3b4.json": {
 		"fileType": 524288,
 		"ignore": 1,
@@ -8053,6 +8075,39 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
+	"\/storage\/debugbar\/5e939f5dda5b3a29ef8ad2800e319daa.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/debugbar\/5e939f5dda5b3a29ef8ad2800e319daa.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/storage\/debugbar\/5e939f5dda5b3a29ef8ad2800e319daa-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/storage\/debugbar\/6085a4c9a67e0a6656629ff92605dfea.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/debugbar\/6085a4c9a67e0a6656629ff92605dfea.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/storage\/debugbar\/6085a4c9a67e0a6656629ff92605dfea-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/storage\/debugbar\/63202f93eb2b246fe7fdbf82f8dca0e5.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/debugbar\/63202f93eb2b246fe7fdbf82f8dca0e5.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/storage\/debugbar\/63202f93eb2b246fe7fdbf82f8dca0e5-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/storage\/debugbar\/6381086c302c8e0a0928f7737ce4ec7f.json": {
 		"fileType": 524288,
 		"ignore": 1,
@@ -8060,6 +8115,17 @@
 		"inputAbbreviatedPath": "\/storage\/debugbar\/6381086c302c8e0a0928f7737ce4ec7f.json",
 		"orderOutput": 0,
 		"outputAbbreviatedPath": "\/storage\/debugbar\/6381086c302c8e0a0928f7737ce4ec7f-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/storage\/debugbar\/67b92bb11ec5b633756194c7aa544e07.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/debugbar\/67b92bb11ec5b633756194c7aa544e07.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/storage\/debugbar\/67b92bb11ec5b633756194c7aa544e07-min.json",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
@@ -8097,6 +8163,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
+	"\/storage\/debugbar\/6cded65897a3acdd7fb37882da22d360.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/debugbar\/6cded65897a3acdd7fb37882da22d360.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/storage\/debugbar\/6cded65897a3acdd7fb37882da22d360-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/storage\/debugbar\/6e2ed6f30ddc039b78ee67155fab33cf.json": {
 		"fileType": 524288,
 		"ignore": 1,
@@ -8104,6 +8181,17 @@
 		"inputAbbreviatedPath": "\/storage\/debugbar\/6e2ed6f30ddc039b78ee67155fab33cf.json",
 		"orderOutput": 0,
 		"outputAbbreviatedPath": "\/storage\/debugbar\/6e2ed6f30ddc039b78ee67155fab33cf-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/storage\/debugbar\/6fe8790ebceecae5bf302f6ff98b6327.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/debugbar\/6fe8790ebceecae5bf302f6ff98b6327.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/storage\/debugbar\/6fe8790ebceecae5bf302f6ff98b6327-min.json",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
@@ -8196,13 +8284,13 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
-	"\/storage\/debugbar\/8a816989e5d091ef95a21770d5815863.json": {
+	"\/storage\/debugbar\/88014f6b804317231b2febebc5ebb787.json": {
 		"fileType": 524288,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/storage\/debugbar\/8a816989e5d091ef95a21770d5815863.json",
+		"inputAbbreviatedPath": "\/storage\/debugbar\/88014f6b804317231b2febebc5ebb787.json",
 		"orderOutput": 0,
-		"outputAbbreviatedPath": "\/storage\/debugbar\/8a816989e5d091ef95a21770d5815863-min.json",
+		"outputAbbreviatedPath": "\/storage\/debugbar\/88014f6b804317231b2febebc5ebb787-min.json",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
@@ -8214,6 +8302,28 @@
 		"inputAbbreviatedPath": "\/storage\/debugbar\/8fb48eee83ed6409bed56e3309a168da.json",
 		"orderOutput": 0,
 		"outputAbbreviatedPath": "\/storage\/debugbar\/8fb48eee83ed6409bed56e3309a168da-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/storage\/debugbar\/9113ff8b9f3fac3fdc560466a9f6d4ec.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/debugbar\/9113ff8b9f3fac3fdc560466a9f6d4ec.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/storage\/debugbar\/9113ff8b9f3fac3fdc560466a9f6d4ec-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/storage\/debugbar\/9cabeedbbe925ccc66df3d1dffa5a637.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/debugbar\/9cabeedbbe925ccc66df3d1dffa5a637.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/storage\/debugbar\/9cabeedbbe925ccc66df3d1dffa5a637-min.json",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
@@ -8262,6 +8372,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
+	"\/storage\/debugbar\/aa176384eef1da1b4f745b8611225204.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/debugbar\/aa176384eef1da1b4f745b8611225204.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/storage\/debugbar\/aa176384eef1da1b4f745b8611225204-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/storage\/debugbar\/ab5b8bf75bfc8906014b6dc0507528b0.json": {
 		"fileType": 524288,
 		"ignore": 1,
@@ -8269,6 +8390,17 @@
 		"inputAbbreviatedPath": "\/storage\/debugbar\/ab5b8bf75bfc8906014b6dc0507528b0.json",
 		"orderOutput": 0,
 		"outputAbbreviatedPath": "\/storage\/debugbar\/ab5b8bf75bfc8906014b6dc0507528b0-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/storage\/debugbar\/ab9cbc416e30ee1a299201e6b00ba47f.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/debugbar\/ab9cbc416e30ee1a299201e6b00ba47f.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/storage\/debugbar\/ab9cbc416e30ee1a299201e6b00ba47f-min.json",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
@@ -8460,6 +8592,28 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
+	"\/storage\/debugbar\/ca5a8ee1f1e15df0394bed3b92a4ab1c.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/debugbar\/ca5a8ee1f1e15df0394bed3b92a4ab1c.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/storage\/debugbar\/ca5a8ee1f1e15df0394bed3b92a4ab1c-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/storage\/debugbar\/cb94002457b043fea12a05b820c68b6d.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/debugbar\/cb94002457b043fea12a05b820c68b6d.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/storage\/debugbar\/cb94002457b043fea12a05b820c68b6d-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/storage\/debugbar\/cd61b76027109d891302af08062c2573.json": {
 		"fileType": 524288,
 		"ignore": 1,
@@ -8544,6 +8698,17 @@
 		"inputAbbreviatedPath": "\/storage\/debugbar\/e20b395b498b8b27cc9ca5fea408ad22.json",
 		"orderOutput": 0,
 		"outputAbbreviatedPath": "\/storage\/debugbar\/e20b395b498b8b27cc9ca5fea408ad22-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/storage\/debugbar\/e44644fd5720a8653cc4421cec0b7638.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/debugbar\/e44644fd5720a8653cc4421cec0b7638.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/storage\/debugbar\/e44644fd5720a8653cc4421cec0b7638-min.json",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
@@ -8717,6 +8882,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/storage\/framework\/views\/49ab90268419a31a622ae9758a5c1832d509c07c.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/storage\/framework\/views\/7705cfdd2229605ccbb2ab841942906bd29b8335.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/framework\/views\/7705cfdd2229605ccbb2ab841942906bd29b8335.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

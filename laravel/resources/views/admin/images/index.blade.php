@@ -66,6 +66,9 @@
                 ] ) !!}
               </p>
             {!! Form::close() !!}
+            <pre>
+              {!! $data | json !!}
+            </pre>
           </div>
         </div>
         <div class="panel-body">
@@ -294,14 +297,5 @@
   } );
 </script>
 <!-- <script src="/assets/js/app.js"></script> -->
-
-
-
-
-
-
-
-
-
 
 @endsection

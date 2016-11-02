@@ -393,13 +393,13 @@ $(function() {
 
 
       $('#texto_credito').text(txt_creditos[tipo_credito]);
-
+        
     vida = ((precio_actual  - total_enganche  + seguros[version][seguro_tipo][plazo_credito]/100 )*0.0122)/(1-0.0122);//
-
-
+        
+        
 
       monto_diario = precio_actual - total_enganche + vida + seguros[version][seguro_tipo][plazo_credito]/100;
-
+        
         //$('.simon').text(monto_diario);
 
        // console.log('precio_actual = ' + precio_actual);
@@ -416,11 +416,11 @@ $(function() {
       pago_final = tipo_credito == 'balloon' ? precio_actual * 0.35 : 0;
 
       //pago_mensual = ExcelFormulas.PMT(tasa_interes*365/360/12*1.16, plazo_credito, -monto_diario);
-
+        
        // PMT(B5*365/360/12*1.16,E8,-Variables!D29,IF(B9<>"",B9,0))
-
+        
         //$('.simon').text(tasa_interes);
-
+        
       pago_mensual = ExcelFormulas.PMT(tasa_interes*365/360/12*1.16, plazo_credito, -monto_diario, (pago_final != 0) ?pago_final : 0);
       //console.log('pago mensual' + pago_mensual);
       $('.financiamiento-pago-mensual').text(number_format(pago_mensual,2));
