@@ -11,6 +11,7 @@ class InternalSpecificationsTableSeeder extends Seeder
    */
   public function run()
   {
+    /** Toyota Highlander */
     DB::table( 'internal_specifications' )->insert( [
       'car_id'      => 1,
       'description' => base64_encode(
@@ -48,7 +49,7 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Kit asistencia vial'
           ],
           'SeguridadInterior'     => [ 'N/A' ],
-          'Download'              => 'storage/technical-specifications/prius-2016.pdf'
+          'Download'              => 'storage/technical-specifications/highlander/prius-2016.pdf'
         ] )
       )
     ] );
@@ -94,7 +95,7 @@ class InternalSpecificationsTableSeeder extends Seeder
             '7 velocidades al frente (simulado)',
             'Palanca al piso tipo escalonada'
           ],
-          'Download'            => 'storage/technical-specifications/prius-2016.pdf'
+          'Download'            => 'storage/technical-specifications/highlander/prius-2016.pdf'
         ] )
       )
     ] );
@@ -136,7 +137,7 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Kit asistencia vial'
           ],
           'SeguridadInterior'     => [ 'N/A' ],
-          'Download'              => 'storage/technical-specifications/prius-2016.pdf'
+          'Download'              => 'storage/technical-specifications/highlander/prius-2016.pdf'
         ] )
       )
     ] );
@@ -182,7 +183,230 @@ class InternalSpecificationsTableSeeder extends Seeder
             '7 velocidades al frente (simulado)',
             'Palanca al piso tipo escalonada'
           ],
-          'Download'            => 'storage/technical-specifications/prius-2016.pdf'
+          'Download'            => 'storage/technical-specifications/highlander/prius-2016.pdf'
+        ] )
+      )
+    ] );
+
+    /** Toyota Sienna */
+    DB::table( 'internal_specifications' )->insert( [
+      'car_id'      => 5,
+      'description' => base64_encode(
+        serialize( [
+          'AcabadosInteriores'    => [
+            'Volante en uretano',
+            'Pomo palanca de velocidades en uretano',
+            'Tapicería de los asientos uretano',
+            'Alfombra en piso',
+            'Tela en vestidura del techo'
+          ],
+          'Asientos'              => [
+            'Asiento del conductor / Tipo cubo con 4 ajustes manuales y cabecera',
+            'Asiento acompañante / Tipo cubo con 4 ajustes manuales y cabecera',
+            'Asiento trasero / Tipo banca con 3 cabeceras ajustables'
+          ],
+          'SistemaAudio'          => [
+            'Audio con radio AM/FM, CD y reproducción de MP3 y WMA',
+            'Entradas auxiliares USB + AUX',
+            'Sistema de manos libres Bluetooth',
+            'Número de bocinas / 4',
+            'Ajustes de volante',
+            'Toma auxiliar de corriente 12 V DC'
+          ],
+          'Confort'               => [
+            'Iluminación de cortesía',
+            'Luces de lectura'
+          ],
+          'CinturonesSeguridad'   => [
+            'Inmovilizador',
+            'Alarma',
+            'Seguros eléctricos',
+            'Seguros para niños en puertas traseras',
+            'Gato y herramienta',
+            'Kit asistencia vial'
+          ],
+          'SeguridadInterior'     => [ 'N/A' ],
+          'Download'              => 'storage/technical-specifications/highlander/prius-2016.pdf'
+        ] )
+      )
+    ] );
+
+    DB::table( 'internal_specifications' )->insert( [
+      'car_id'      => 6,
+      'description' => base64_encode(
+        serialize( [
+          'AcabadosInteriores'  => [
+            'Volante en uretano',
+            'Pomo palanca de velocidades en uretano',
+            'Tapicería de los asientos uretano',
+            'Alfombra en piso',
+            'Tela en vestidura del techo'
+          ],
+          'Asientos'            => [
+            'Asiento del conductor / Tipo cubo con 4 ajustes manuales y cabecera',
+            'Asiento acompañante / Tipo cubo con 4 ajustes manuales y cabecera',
+            'Asiento trasero / Tipo banca con 3 cabeceras ajustables'
+          ],
+          'SistemaAudio'        => [
+            'Audio con radio AM/FM, CD y reproducción de MP3 y WMA',
+            'Entradas auxiliares USB + AUX',
+            'Sistema de manos libres Bluetooth ',
+            'Número de bocinas / 4',
+            'Ajustes de volante',
+            'Toma auxiliar de corriente 12 V DC'
+          ],
+          'Confort'             => [
+            'Iluminación de cortesía',
+            'Luces de lectura'
+          ],
+          'CinturonesSeguridad' => [
+            'Inmovilizador',
+            'Alarma',
+            'Seguros eléctricos',
+            'Seguros para niños en puertas traseras',
+            'Gato y herramienta',
+            'Kit asistencia vial'
+          ],
+          'SeguridadInterior'   => [
+            'Transmisión CVT-iS con siete cambios sensitivos. única en su segmento.',
+            '7 velocidades al frente (simulado)',
+            'Palanca al piso tipo escalonada'
+          ],
+          'Download'            => 'storage/technical-specifications/highlander/prius-2016.pdf'
+        ] )
+      )
+    ] );
+
+    DB::table( 'internal_specifications' )->insert( [
+      'car_id'      => 7,
+      'description' => base64_encode(
+        serialize( [
+          'AcabadosInteriores'    => [
+            'Volante en uretano',
+            'Pomo palanca de velocidades en uretano',
+            'Tapicería de los asientos uretano',
+            'Alfombra en piso',
+            'Tela en vestidura del techo'
+          ],
+          'Asientos'              => [
+            'Asiento del conductor / Tipo cubo con 4 ajustes manuales y cabecera',
+            'Asiento acompañante / Tipo cubo con 4 ajustes manuales y cabecera',
+            'Asiento trasero / Tipo banca con 3 cabeceras ajustables'
+          ],
+          'SistemaAudio'          => [
+            'Audio con radio AM/FM, CD y reproducción de MP3 y WMA',
+            'Entradas auxiliares USB + AUX',
+            'Sistema de manos libres Bluetooth',
+            'Número de bocinas / 4',
+            'Ajustes de volante',
+            'Toma auxiliar de corriente 12 V DC'
+          ],
+          'Confort'               => [
+            'Iluminación de cortesía',
+            'Luces de lectura'
+          ],
+          'CinturonesSeguridad'   => [
+            'Inmovilizador',
+            'Alarma',
+            'Seguros eléctricos',
+            'Seguros para niños en puertas traseras',
+            'Gato y herramienta',
+            'Kit asistencia vial'
+          ],
+          'SeguridadInterior'     => [ 'N/A' ],
+          'Download'              => 'storage/technical-specifications/highlander/prius-2016.pdf'
+        ] )
+      )
+    ] );
+
+    DB::table( 'internal_specifications' )->insert( [
+      'car_id'      => 8,
+      'description' => base64_encode(
+        serialize( [
+          'AcabadosInteriores'  => [
+            'Volante en uretano',
+            'Pomo palanca de velocidades en uretano',
+            'Tapicería de los asientos uretano',
+            'Alfombra en piso',
+            'Tela en vestidura del techo'
+          ],
+          'Asientos'            => [
+            'Asiento del conductor / Tipo cubo con 4 ajustes manuales y cabecera',
+            'Asiento acompañante / Tipo cubo con 4 ajustes manuales y cabecera',
+            'Asiento trasero / Tipo banca con 3 cabeceras ajustables'
+          ],
+          'SistemaAudio'        => [
+            'Audio con radio AM/FM, CD y reproducción de MP3 y WMA',
+            'Entradas auxiliares USB + AUX',
+            'Sistema de manos libres Bluetooth ',
+            'Número de bocinas / 4',
+            'Ajustes de volante',
+            'Toma auxiliar de corriente 12 V DC'
+          ],
+          'Confort'             => [
+            'Iluminación de cortesía',
+            'Luces de lectura'
+          ],
+          'CinturonesSeguridad' => [
+            'Inmovilizador',
+            'Alarma',
+            'Seguros eléctricos',
+            'Seguros para niños en puertas traseras',
+            'Gato y herramienta',
+            'Kit asistencia vial'
+          ],
+          'SeguridadInterior'   => [
+            'Transmisión CVT-iS con siete cambios sensitivos. única en su segmento.',
+            '7 velocidades al frente (simulado)',
+            'Palanca al piso tipo escalonada'
+          ],
+          'Download'            => 'storage/technical-specifications/highlander/prius-2016.pdf'
+        ] )
+      )
+    ] );
+
+    DB::table( 'internal_specifications' )->insert( [
+      'car_id'      => 9,
+      'description' => base64_encode(
+        serialize( [
+          'AcabadosInteriores'  => [
+            'Volante en uretano',
+            'Pomo palanca de velocidades en uretano',
+            'Tapicería de los asientos uretano',
+            'Alfombra en piso',
+            'Tela en vestidura del techo'
+          ],
+          'Asientos'            => [
+            'Asiento del conductor / Tipo cubo con 4 ajustes manuales y cabecera',
+            'Asiento acompañante / Tipo cubo con 4 ajustes manuales y cabecera',
+            'Asiento trasero / Tipo banca con 3 cabeceras ajustables'
+          ],
+          'SistemaAudio'        => [
+            'Audio con radio AM/FM, CD y reproducción de MP3 y WMA',
+            'Entradas auxiliares USB + AUX',
+            'Sistema de manos libres Bluetooth ',
+            'Número de bocinas / 4',
+            'Ajustes de volante',
+            'Toma auxiliar de corriente 12 V DC'
+          ],
+          'Confort'             => [
+            'Iluminación de cortesía',
+            'Luces de lectura'
+          ],
+          'CinturonesSeguridad' => [
+            'Inmovilizador',
+            'Alarma',
+            'Seguros eléctricos',
+            'Seguros para niños en puertas traseras',
+            'Gato y herramienta',
+            'Kit asistencia vial'
+          ],
+          'SeguridadInterior'   => [
+            'Transmisión CVT-iS con siete cambios sensitivos. única en su segmento.',
+            '7 velocidades al frente (simulado)',
+            'Palanca al piso tipo escalonada'
+          ],
+          'Download'            => 'storage/technical-specifications/highlander/prius-2016.pdf'
         ] )
       )
     ] );

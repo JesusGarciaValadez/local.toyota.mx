@@ -1,6 +1,6 @@
-@extends('layouts.app')
+@extends( 'layouts.app' )
 
-@section( 'title', 'Highlander 2016' )
+@section( 'title', $brand->title )
 
 @section( 'header' )
   @parent

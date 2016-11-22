@@ -51,7 +51,7 @@ class CreateCarsTable extends Migration
             ->unique();
       $table->string( 'thumbnail' );
       $table->string( 'price' );
-      $table->string( 'description' );
+      $table->string( 'description', 500 );
       $table->string( 'slug' );
       $table->timestamps( );
     } );

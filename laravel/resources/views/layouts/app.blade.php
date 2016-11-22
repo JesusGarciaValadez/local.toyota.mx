@@ -39,7 +39,7 @@
     'style'   => "display:none;"
   ] ) !!}
 </head>
-<body>
+<body class="{{ $slug }}">
 @section( 'header' )
   <header>
     <div class="menu1 fadeInDown animated">

@@ -7,7 +7,7 @@
 		"uuidString": "C1022331-35CF-4D49-BD2D-7286C0E8077A"
 		}
 	],
-"creatorBuild": "25428",
+"creatorBuild": "25444",
 "files": {
 	"\/.htaccess": {
 		"ft": 8192,
@@ -183,45 +183,45 @@
 	"\/laravel\/resources\/assets\/js\/especificaciones.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/js\/especificaciones.min.js",
-		"oF": 0,
+		"oA": 2,
+		"oAP": "\/laravel\/public\/assets\/js\/especificaciones.js",
+		"oF": 3,
 		"sC": 1,
 		"tS": 0
 		},
 	"\/laravel\/resources\/assets\/js\/financiamiento-toyota.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/js\/financiamiento-toyota.min.js",
-		"oF": 0,
+		"oA": 2,
+		"oAP": "\/laravel\/public\/assets\/js\/financiamiento-toyota.js",
+		"oF": 3,
 		"sC": 1,
 		"tS": 0
 		},
 	"\/laravel\/resources\/assets\/js\/main.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/js\/main.min.js",
-		"oF": 0,
+		"oA": 2,
+		"oAP": "\/laravel\/public\/assets\/js\/main.js",
+		"oF": 3,
 		"sC": 1,
 		"tS": 0
 		},
 	"\/laravel\/resources\/assets\/js\/mapa.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/js\/mapa.min.js",
-		"oF": 0,
+		"oA": 2,
+		"oAP": "\/laravel\/public\/assets\/js\/mapa.js",
+		"oF": 3,
 		"sC": 1,
 		"tS": 0
 		},
 	"\/laravel\/resources\/assets\/js\/pace.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/js\/pace.min.js",
-		"oF": 0,
+		"oA": 2,
+		"oAP": "\/laravel\/public\/assets\/js\/pace.js",
+		"oF": 3,
 		"sC": 1,
 		"tS": 0
 		},
@@ -301,8 +301,8 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 2,
-		"oAP": "\/laravel\/public\/assets\/js\/vendor\/jquery-1.11.0.min.min.js",
-		"oF": 1,
+		"oAP": "\/laravel\/public\/assets\/js\/vendor\/jquery-1.11.0.min.js",
+		"oF": 3,
 		"sC": 1,
 		"tS": 0
 		},
@@ -310,8 +310,8 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 2,
-		"oAP": "\/laravel\/public\/assets\/js\/vendor\/jquery-3.1.1.min.min.js",
-		"oF": 1,
+		"oAP": "\/laravel\/public\/assets\/js\/vendor\/jquery-3.1.1.min.js",
+		"oF": 3,
 		"sC": 1,
 		"tS": 0
 		},
@@ -832,427 +832,427 @@
 		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/.gitignore",
 		"oF": 0
 		},
-	"\/laravel\/storage\/app\/public\/images\/datos\/03.png": {
+	"\/laravel\/storage\/app\/public\/images\/datos\/highlander\/03.png": {
 		"ft": 32768,
 		"iS": 549191,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/datos\/03.png",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/datos\/highlander\/03.png",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/datos\/img-motor.png": {
+	"\/laravel\/storage\/app\/public\/images\/datos\/highlander\/img-motor.png": {
 		"ft": 32768,
 		"iS": 22014,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/datos\/img-motor.png",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/datos\/highlander\/img-motor.png",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/datos\/img-tablero.jpg": {
+	"\/laravel\/storage\/app\/public\/images\/datos\/highlander\/img-tablero.jpg": {
 		"ft": 16384,
 		"iS": 255822,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/datos\/img-tablero.jpg",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/datos\/highlander\/img-tablero.jpg",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/datos\/img-yaris-sedan-detalle.jpg": {
+	"\/laravel\/storage\/app\/public\/images\/datos\/highlander\/img-yaris-sedan-detalle.jpg": {
 		"ft": 16384,
 		"iS": 50935,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/datos\/img-yaris-sedan-detalle.jpg",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/datos\/highlander\/img-yaris-sedan-detalle.jpg",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/galeria\/01.jpg": {
+	"\/laravel\/storage\/app\/public\/images\/galeria\/highlander\/01.jpg": {
 		"ft": 16384,
 		"iS": 691682,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/galeria\/01.jpg",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/galeria\/highlander\/01.jpg",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/galeria\/img-01.jpg": {
+	"\/laravel\/storage\/app\/public\/images\/galeria\/highlander\/img-01.jpg": {
 		"ft": 16384,
 		"iS": 693875,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/galeria\/img-01.jpg",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/galeria\/highlander\/img-01.jpg",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/galeria\/img-02.jpg": {
+	"\/laravel\/storage\/app\/public\/images\/galeria\/highlander\/img-02.jpg": {
 		"ft": 16384,
 		"iS": 927382,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/galeria\/img-02.jpg",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/galeria\/highlander\/img-02.jpg",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/galeria\/img-03.jpg": {
+	"\/laravel\/storage\/app\/public\/images\/galeria\/highlander\/img-03.jpg": {
 		"ft": 16384,
 		"iS": 603082,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/galeria\/img-03.jpg",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/galeria\/highlander\/img-03.jpg",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/galeria\/img-04.jpg": {
+	"\/laravel\/storage\/app\/public\/images\/galeria\/highlander\/img-04.jpg": {
 		"ft": 16384,
 		"iS": 113923,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/galeria\/img-04.jpg",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/galeria\/highlander\/img-04.jpg",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/galeria\/img-05.jpg": {
+	"\/laravel\/storage\/app\/public\/images\/galeria\/highlander\/img-05.jpg": {
 		"ft": 16384,
 		"iS": 742004,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/galeria\/img-05.jpg",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/galeria\/highlander\/img-05.jpg",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/galeria\/img-06.jpg": {
+	"\/laravel\/storage\/app\/public\/images\/galeria\/highlander\/img-06.jpg": {
 		"ft": 16384,
 		"iS": 697189,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/galeria\/img-06.jpg",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/galeria\/highlander\/img-06.jpg",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/galeria\/img-07.jpg": {
+	"\/laravel\/storage\/app\/public\/images\/galeria\/highlander\/img-07.jpg": {
 		"ft": 16384,
 		"iS": 620090,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/galeria\/img-07.jpg",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/galeria\/highlander\/img-07.jpg",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/galeria\/img-08.jpg": {
+	"\/laravel\/storage\/app\/public\/images\/galeria\/highlander\/img-08.jpg": {
 		"ft": 16384,
 		"iS": 689388,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/galeria\/img-08.jpg",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/galeria\/highlander\/img-08.jpg",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/galeria\/img-09.jpg": {
+	"\/laravel\/storage\/app\/public\/images\/galeria\/highlander\/img-09.jpg": {
 		"ft": 16384,
 		"iS": 830142,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/galeria\/img-09.jpg",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/galeria\/highlander\/img-09.jpg",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/galeria\/img-10.jpg": {
+	"\/laravel\/storage\/app\/public\/images\/galeria\/highlander\/img-10.jpg": {
 		"ft": 16384,
 		"iS": 518099,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/galeria\/img-10.jpg",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/galeria\/highlander\/img-10.jpg",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/galeria\/img-11.jpg": {
+	"\/laravel\/storage\/app\/public\/images\/galeria\/highlander\/img-11.jpg": {
 		"ft": 16384,
 		"iS": 426858,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/galeria\/img-11.jpg",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/galeria\/highlander\/img-11.jpg",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/galeria\/img-12.jpg": {
+	"\/laravel\/storage\/app\/public\/images\/galeria\/highlander\/img-12.jpg": {
 		"ft": 16384,
 		"iS": 536650,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/galeria\/img-12.jpg",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/galeria\/highlander\/img-12.jpg",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/highlight\/highlight01.jpg": {
+	"\/laravel\/storage\/app\/public\/images\/highlight\/highlander\/highlight01.jpg": {
 		"ft": 16384,
 		"iS": 86101,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/highlight\/highlight01.jpg",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/highlight\/highlander\/highlight01.jpg",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/highlight\/highlight02.jpg": {
+	"\/laravel\/storage\/app\/public\/images\/highlight\/highlander\/highlight02.jpg": {
 		"ft": 16384,
 		"iS": 148156,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/highlight\/highlight02.jpg",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/highlight\/highlander\/highlight02.jpg",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/highlight\/highlight03.jpg": {
+	"\/laravel\/storage\/app\/public\/images\/highlight\/highlander\/highlight03.jpg": {
 		"ft": 16384,
 		"iS": 132823,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/highlight\/highlight03.jpg",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/highlight\/highlander\/highlight03.jpg",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/highlight\/highlight04.jpg": {
+	"\/laravel\/storage\/app\/public\/images\/highlight\/highlander\/highlight04.jpg": {
 		"ft": 16384,
 		"iS": 108373,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/highlight\/highlight04.jpg",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/highlight\/highlander\/highlight04.jpg",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/highlight\/mas-espacio-de-carga.jpg": {
+	"\/laravel\/storage\/app\/public\/images\/highlight\/highlander\/mas-espacio-de-carga.jpg": {
 		"ft": 16384,
 		"iS": 123251,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/highlight\/mas-espacio-de-carga.jpg",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/highlight\/highlander\/mas-espacio-de-carga.jpg",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/highlight\/mas-espacio-de-carga.png": {
+	"\/laravel\/storage\/app\/public\/images\/highlight\/highlander\/mas-espacio-de-carga.png": {
 		"ft": 32768,
 		"iS": 326940,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/highlight\/mas-espacio-de-carga.png",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/highlight\/highlander\/mas-espacio-de-carga.png",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/highlight\/palanca.jpg": {
+	"\/laravel\/storage\/app\/public\/images\/highlight\/highlander\/palanca.jpg": {
 		"ft": 16384,
 		"iS": 84112,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/highlight\/palanca.jpg",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/highlight\/highlander\/palanca.jpg",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/highlight\/palanca.png": {
+	"\/laravel\/storage\/app\/public\/images\/highlight\/highlander\/palanca.png": {
 		"ft": 32768,
 		"iS": 317932,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/highlight\/palanca.png",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/highlight\/highlander\/palanca.png",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/highlight\/sistema-de-entretenimiento.jpg": {
+	"\/laravel\/storage\/app\/public\/images\/highlight\/highlander\/sistema-de-entretenimiento.jpg": {
 		"ft": 16384,
 		"iS": 101447,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/highlight\/sistema-de-entretenimiento.jpg",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/highlight\/highlander\/sistema-de-entretenimiento.jpg",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/highlight\/sistema-de-entretenimiento.png": {
+	"\/laravel\/storage\/app\/public\/images\/highlight\/highlander\/sistema-de-entretenimiento.png": {
 		"ft": 32768,
 		"iS": 368775,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/highlight\/sistema-de-entretenimiento.png",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/highlight\/highlander\/sistema-de-entretenimiento.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/highlight\/sistema-de-monitoreo.jpg": {
+	"\/laravel\/storage\/app\/public\/images\/highlight\/highlander\/sistema-de-monitoreo.jpg": {
 		"ft": 16384,
 		"iS": 77343,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/highlight\/sistema-de-monitoreo.jpg",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/highlight\/highlander\/sistema-de-monitoreo.jpg",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/highlight\/sistema-de-monitoreo.png": {
+	"\/laravel\/storage\/app\/public\/images\/highlight\/highlander\/sistema-de-monitoreo.png": {
 		"ft": 32768,
 		"iS": 375522,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/highlight\/sistema-de-monitoreo.png",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/highlight\/highlander\/sistema-de-monitoreo.png",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/highlight\/techo-corredizo.jpg": {
+	"\/laravel\/storage\/app\/public\/images\/highlight\/highlander\/techo-corredizo.jpg": {
 		"ft": 16384,
 		"iS": 88538,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/highlight\/techo-corredizo.jpg",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/highlight\/highlander\/techo-corredizo.jpg",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/highlight\/techo-corredizo.png": {
+	"\/laravel\/storage\/app\/public\/images\/highlight\/highlander\/techo-corredizo.png": {
 		"ft": 32768,
 		"iS": 502864,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/highlight\/techo-corredizo.png",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/highlight\/highlander\/techo-corredizo.png",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/thumbs\/01-thumb.jpg": {
+	"\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/01-thumb.jpg": {
 		"ft": 16384,
 		"iS": 605414,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/01-thumb.jpg",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/01-thumb.jpg",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/thumbs\/01.png": {
+	"\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/01.png": {
 		"ft": 32768,
 		"iS": 399828,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/01.png",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/01.png",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/thumbs\/02-thumb.jpg": {
+	"\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/02-thumb.jpg": {
 		"ft": 16384,
 		"iS": 450220,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/02-thumb.jpg",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/02-thumb.jpg",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/thumbs\/02-thumb.png": {
+	"\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/02-thumb.png": {
 		"ft": 32768,
 		"iS": 131940,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/02-thumb.png",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/02-thumb.png",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/thumbs\/03-thumb.jpg": {
+	"\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/03-thumb.jpg": {
 		"ft": 16384,
 		"iS": 133472,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/03-thumb.jpg",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/03-thumb.jpg",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/thumbs\/03-thumb.png": {
+	"\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/03-thumb.png": {
 		"ft": 32768,
 		"iS": 98305,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/03-thumb.png",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/03-thumb.png",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/thumbs\/03.png": {
+	"\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/03.png": {
 		"ft": 32768,
 		"iS": 123101,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/03.png",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/03.png",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/thumbs\/04-thumb.jpg": {
+	"\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/04-thumb.jpg": {
 		"ft": 16384,
 		"iS": 113923,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/04-thumb.jpg",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/04-thumb.jpg",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/thumbs\/05-thumb.jpg": {
+	"\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/05-thumb.jpg": {
 		"ft": 16384,
 		"iS": 552577,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/05-thumb.jpg",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/05-thumb.jpg",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/thumbs\/05-thumb.png": {
+	"\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/05-thumb.png": {
 		"ft": 32768,
 		"iS": 448021,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/05-thumb.png",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/05-thumb.png",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/thumbs\/06-thumb.jpg": {
+	"\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/06-thumb.jpg": {
 		"ft": 16384,
 		"iS": 593913,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/06-thumb.jpg",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/06-thumb.jpg",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/thumbs\/06-thumb.png": {
+	"\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/06-thumb.png": {
 		"ft": 32768,
 		"iS": 100465,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/06-thumb.png",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/06-thumb.png",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/thumbs\/07-thumb.jpg": {
+	"\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/07-thumb.jpg": {
 		"ft": 16384,
 		"iS": 462715,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/07-thumb.jpg",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/07-thumb.jpg",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/thumbs\/07-thumb.png": {
+	"\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/07-thumb.png": {
 		"ft": 32768,
 		"iS": 108118,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/07-thumb.png",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/07-thumb.png",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/thumbs\/08-thumb.jpg": {
+	"\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/08-thumb.jpg": {
 		"ft": 16384,
 		"iS": 470180,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/08-thumb.jpg",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/08-thumb.jpg",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/thumbs\/08-thumb.png": {
+	"\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/08-thumb.png": {
 		"ft": 32768,
 		"iS": 131318,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/08-thumb.png",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/08-thumb.png",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/thumbs\/09-thumb.png": {
+	"\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/09-thumb.png": {
 		"ft": 32768,
 		"iS": 390867,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/09-thumb.png",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/09-thumb.png",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/thumbs\/10-thumb.png": {
+	"\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/10-thumb.png": {
 		"ft": 32768,
 		"iS": 171146,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/10-thumb.png",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/10-thumb.png",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/thumbs\/11-thumb.png": {
+	"\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/11-thumb.png": {
 		"ft": 32768,
 		"iS": 94509,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/11-thumb.png",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/11-thumb.png",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/thumbs\/12-thumb.png": {
+	"\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/12-thumb.png": {
 		"ft": 32768,
 		"iS": 126240,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/12-thumb.png",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/12-thumb.png",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/thumbs\/12.png": {
+	"\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/12.png": {
 		"ft": 32768,
 		"iS": 126240,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/12.png",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/thumbs\/highlander\/12.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
-	"\/laravel\/storage\/app\/public\/images\/versiones\/img_lateral.png": {
+	"\/laravel\/storage\/app\/public\/images\/versiones\/highlander\/img_lateral.png": {
 		"ft": 32768,
 		"iS": 157632,
 		"oA": 0,
-		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/versiones\/img_lateral.png",
+		"oAP": "\/laravel\/public\/assets\/laravel\/storage\/app\/public\/images\/versiones\/highlander\/img_lateral.png",
 		"oF": 0,
 		"opt": 1
 		},

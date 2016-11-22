@@ -17,6 +17,12 @@ class HomeController extends Controller
     $brand      = \Highlander\Brands::where( 'slug', $slug )
                                     ->get( )
                                     ->first( );
+
+    if ( empty( $brand ) || is_null( $brand ) )
+    {
+      abort( 404, 'No encontramos el modelo que buscas.' );
+    }
+
     $slides     = \Highlander\SliderFeature::where( 'brands_id', $brand->id )
                                            ->get( );
     $galleries  = \Highlander\GalleryFancyboxes::where( 'brands_id', $brand->id )
