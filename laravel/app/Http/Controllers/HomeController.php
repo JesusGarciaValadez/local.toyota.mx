@@ -15,8 +15,8 @@ class HomeController extends Controller
   public function index( $slug )
   {
     $brand      = \Toyota\Brands::where( 'slug', $slug )
-                                    ->get( )
-                                    ->first( );
+                                ->get( )
+                                ->first( );
 
     if ( empty( $brand ) || is_null( $brand ) )
     {

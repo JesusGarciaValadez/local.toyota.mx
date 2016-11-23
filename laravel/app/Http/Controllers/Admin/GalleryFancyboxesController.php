@@ -26,7 +26,7 @@ class GalleryFancyboxesController extends Controller
     $brand          = \Toyota\Brands::findOrFail( $id )->title;
     $id             = $id;
     $toReturn       = '/admin/' . $id;
-    $home           = \Toyota\GalleryFancyboxes::findOrFail( $id );
+    $home           = \Toyota\GalleryFancyboxes::where( 'brands_id', $id )->get();
     $elements       = $home;
     $controllerName = 'GalleryFancyboxes';
 
