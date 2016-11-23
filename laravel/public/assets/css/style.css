@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* line 5, ../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,58 +21,71 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+/* line 22, ../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
+/* line 24, ../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
+/* line 26, ../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
+/* line 28, ../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
+/* line 30, ../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
+/* line 103, ../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
+/* line 32, ../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
+/* line 116, ../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
+/* line 2, ../../../resources/assets/sass/includes/_init.sass */
 .cf {
   *zoom: 1;
 }
+/* line 4, ../../../resources/assets/sass/includes/_init.sass */
 .cf:after {
   clear: both;
   content: "";
   display: table;
 }
 
+/* line 8, ../../../resources/assets/sass/includes/_init.sass */
 ::-moz-selection {
   background: transparent;
 }
 
+/* line 10, ../../../resources/assets/sass/includes/_init.sass */
 ::selection {
   background: transparent;
 }
 
+/* line 13, ../../../resources/assets/sass/includes/_init.sass */
 html {
   -webkit-font-smoothing: antialiased;
   font-family: "Lato", sans-serif;
@@ -80,12 +94,14 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+/* line 20, ../../../resources/assets/sass/includes/_init.sass */
 html, body {
   height: 100%;
   position: relative;
   width: 100%;
 }
 
+/* line 25, ../../../resources/assets/sass/includes/_init.sass */
 body {
   -webkit-overflow-scrolling: touch;
   background: #fff;
@@ -97,10 +113,12 @@ body {
   position: relative;
   width: 100%;
 }
+/* line 35, ../../../resources/assets/sass/includes/_init.sass */
 body > iframe {
   position: absolute;
 }
 
+/* line 38, ../../../resources/assets/sass/includes/_init.sass */
 h1 {
   color: #2f3438;
   font-size: 6.42857rem;
@@ -109,6 +127,7 @@ h1 {
   margin: 3.57143rem 0px;
 }
 
+/* line 45, ../../../resources/assets/sass/includes/_init.sass */
 h2 {
   color: #2f3438;
   font-size: 3rem;
@@ -117,6 +136,7 @@ h2 {
   margin: 4rem 0px;
 }
 
+/* line 52, ../../../resources/assets/sass/includes/_init.sass */
 h3 {
   color: #2f3438;
   font-size: 2.71429rem;
@@ -125,6 +145,7 @@ h3 {
   margin: 3rem 0px;
 }
 
+/* line 59, ../../../resources/assets/sass/includes/_init.sass */
 h4 {
   color: #2f3438;
   font-size: 2.14286rem;
@@ -133,6 +154,7 @@ h4 {
   margin: 1.33rem 0px;
 }
 
+/* line 66, ../../../resources/assets/sass/includes/_init.sass */
 h5 {
   color: #2f3438;
   font-size: 1.71429rem;
@@ -141,6 +163,7 @@ h5 {
   margin: 1.67rem 0px;
 }
 
+/* line 73, ../../../resources/assets/sass/includes/_init.sass */
 h6 {
   color: #2f3438;
   font-size: 1.42857rem;
@@ -149,6 +172,7 @@ h6 {
   margin: 2.33rem 0px;
 }
 
+/* line 81, ../../../resources/assets/sass/includes/_init.sass */
 p {
   color: #2f3438;
   font-family: "Lato", sans-serif;
@@ -157,14 +181,17 @@ p {
   line-height: 1.4;
   margin: 1rem 0px;
 }
+/* line 88, ../../../resources/assets/sass/includes/_init.sass */
 p span {
   font-weight: 700;
 }
 
+/* line 92, ../../../resources/assets/sass/includes/_init.sass */
 small {
   font-size: smaller;
 }
 
+/* line 96, ../../../resources/assets/sass/includes/_init.sass */
 pre {
   color: #2f3438;
   display: block;
@@ -176,22 +203,26 @@ pre {
   white-space: pre-line;
 }
 
+/* line 107, ../../../resources/assets/sass/includes/_init.sass */
 header {
   overflow: hidden;
   width: 100%;
 }
 
+/* line 111, ../../../resources/assets/sass/includes/_init.sass */
 section {
   overflow: hidden;
   width: 100%;
 }
 
+/* line 115, ../../../resources/assets/sass/includes/_init.sass */
 footer {
   border-top: 1px solid #e6e6e6;
   overflow: visible;
   position: relative;
   width: 100%;
 }
+/* line 121, ../../../resources/assets/sass/includes/_init.sass */
 footer a.scroll {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
@@ -213,9 +244,11 @@ footer a.scroll {
   top: 0px;
   width: 50px;
 }
+/* line 132, ../../../resources/assets/sass/includes/_init.sass */
 footer a.scroll:hover {
   background: #e65258;
 }
+/* line 135, ../../../resources/assets/sass/includes/_init.sass */
 footer a.scroll:after {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
@@ -230,6 +263,7 @@ footer a.scroll:after {
   font-size: 2rem;
 }
 
+/* line 141, ../../../resources/assets/sass/includes/_init.sass */
 .container {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -242,16 +276,19 @@ footer a.scroll:after {
   width: 1200px;
 }
 
+/* line 150, ../../../resources/assets/sass/includes/_init.sass */
 .hidden {
   overflow: hidden;
 }
 
+/* line 154, ../../../resources/assets/sass/includes/_init.sass */
 .fixed {
   bottom: initial !important;
   position: fixed !important;
   top: 0px;
 }
 
+/* line 160, ../../../resources/assets/sass/includes/_init.sass */
 .link {
   color: #2f3438;
   font-family: "Open Sans", sans-serif;
@@ -260,6 +297,7 @@ footer a.scroll:after {
   margin: 1em auto;
   text-decoration: none;
 }
+/* line 167, ../../../resources/assets/sass/includes/_init.sass */
 .link:after {
   content: "";
   font-family: "FontAwesome";
@@ -267,6 +305,7 @@ footer a.scroll:after {
   padding-left: 10px;
 }
 
+/* line 173, ../../../resources/assets/sass/includes/_init.sass */
 .boton {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -287,18 +326,22 @@ footer a.scroll:after {
   text-transform: uppercase;
   width: 15rem;
 }
+/* line 189, ../../../resources/assets/sass/includes/_init.sass */
 .boton:hover {
   background: #e65258;
 }
+/* line 191, ../../../resources/assets/sass/includes/_init.sass */
 .boton.negro {
   background: #30373a;
   border: none;
   color: #ffffff;
 }
+/* line 195, ../../../resources/assets/sass/includes/_init.sass */
 .boton.negro:hover {
   background: #5c666b;
 }
 
+/* line 198, ../../../resources/assets/sass/includes/_init.sass */
 .left {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -307,6 +350,7 @@ footer a.scroll:after {
   padding: 0px 2em;
 }
 
+/* line 203, ../../../resources/assets/sass/includes/_init.sass */
 .right {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -315,6 +359,7 @@ footer a.scroll:after {
   padding: 0px 2em;
 }
 
+/* line 209, ../../../resources/assets/sass/includes/_init.sass */
 .hamburguesa {
   display: none;
   height: 23px;
@@ -324,6 +369,7 @@ footer a.scroll:after {
   right: 0px;
   top: 75px;
 }
+/* line 218, ../../../resources/assets/sass/includes/_init.sass */
 .hamburguesa:before {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
@@ -340,11 +386,13 @@ footer a.scroll:after {
   height: 15px;
   width: 23px;
 }
+/* line 229, ../../../resources/assets/sass/includes/_init.sass */
 .hamburguesa.activo:before {
   background: url(img/@2x-icn-mb-close.jpg) no-repeat;
   background-size: cover;
 }
 
+/* line 234, ../../../resources/assets/sass/includes/_init.sass */
 .logo {
   position: absolute;
   -webkit-transform: translateY(-50%);
@@ -360,6 +408,7 @@ footer a.scroll:after {
   width: 126px;
 }
 
+/* line 1, ../../../resources/assets/sass/includes/modulos/_header.sass */
 .menu1 {
   background: #fff;
   border-bottom: 1px solid #e6e6e6;
@@ -369,6 +418,7 @@ footer a.scroll:after {
   width: 100%;
   z-index: 120;
 }
+/* line 9, ../../../resources/assets/sass/includes/modulos/_header.sass */
 .menu1 nav {
   display: table;
   float: right;
@@ -376,12 +426,14 @@ footer a.scroll:after {
   overflow: hidden;
   position: relative;
 }
+/* line 15, ../../../resources/assets/sass/includes/modulos/_header.sass */
 .menu1 nav ul {
   display: table;
   height: 100%;
   margin: 0px;
   padding: 0px;
 }
+/* line 20, ../../../resources/assets/sass/includes/modulos/_header.sass */
 .menu1 nav ul li {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -395,12 +447,15 @@ footer a.scroll:after {
   height: 100%;
   margin: 0px;
 }
+/* line 29, ../../../resources/assets/sass/includes/modulos/_header.sass */
 .menu1 nav ul li:hover {
   background: #bdc3c7;
 }
+/* line 31, ../../../resources/assets/sass/includes/modulos/_header.sass */
 .menu1 nav ul li:hover a {
   color: #ffffff;
 }
+/* line 33, ../../../resources/assets/sass/includes/modulos/_header.sass */
 .menu1 nav ul li a {
   color: #585d65;
   display: table-cell;
@@ -413,6 +468,7 @@ footer a.scroll:after {
   vertical-align: middle;
 }
 
+/* line 44, ../../../resources/assets/sass/includes/modulos/_header.sass */
 .redes {
   display: table;
   float: right;
@@ -420,11 +476,13 @@ footer a.scroll:after {
   overflow: hidden;
   position: relative;
 }
+/* line 50, ../../../resources/assets/sass/includes/modulos/_header.sass */
 .redes span {
   display: table-row;
   margin: 0px;
   padding: 0px;
 }
+/* line 54, ../../../resources/assets/sass/includes/modulos/_header.sass */
 .redes span a {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -438,6 +496,7 @@ footer a.scroll:after {
   text-decoration: none;
   vertical-align: middle;
 }
+/* line 63, ../../../resources/assets/sass/includes/modulos/_header.sass */
 .redes span a i {
   color: #585d65;
   display: table;
@@ -445,13 +504,16 @@ footer a.scroll:after {
   margin: auto;
   text-decoration: none;
 }
+/* line 69, ../../../resources/assets/sass/includes/modulos/_header.sass */
 .redes span a:hover {
   background: #bdc3c7;
 }
+/* line 71, ../../../resources/assets/sass/includes/modulos/_header.sass */
 .redes span a:hover i {
   color: #ffffff;
 }
 
+/* line 74, ../../../resources/assets/sass/includes/modulos/_header.sass */
 .btnprev {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -469,10 +531,12 @@ footer a.scroll:after {
   text-transform: uppercase;
   width: 15.7143rem;
 }
+/* line 87, ../../../resources/assets/sass/includes/modulos/_header.sass */
 .btnprev:hover {
   background: #e65258;
 }
 
+/* line 90, ../../../resources/assets/sass/includes/modulos/_header.sass */
 .menu2 {
   background: #2f3438;
   bottom: 0px;
@@ -482,6 +546,7 @@ footer a.scroll:after {
   width: 100%;
   z-index: 120;
 }
+/* line 99, ../../../resources/assets/sass/includes/modulos/_header.sass */
 .menu2 > a.scroll {
   position: absolute;
   -webkit-transform: translateY(-50%);
@@ -489,43 +554,53 @@ footer a.scroll:after {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   top: 50%;
-  background: url(img/logo-highlander.png) no-repeat;
   background-size: contain;
   display: table;
   height: 32px;
   left: 2em;
-  width: 179px;
+  width: 110px;
 }
-.menu2 nav {
+
+/* line 109, ../../../resources/assets/sass/includes/modulos/_header.sass */
+.yaris .menu2 > a.scroll {
+  background: url(img/yaris/logoSedan16.png) no-repeat;
+}
+/* line 112, ../../../resources/assets/sass/includes/modulos/_header.sass */
+.yaris .menu2 nav {
   display: table;
   float: right;
   height: 100%;
   overflow: hidden;
 }
-.menu2 nav ul {
+/* line 117, ../../../resources/assets/sass/includes/modulos/_header.sass */
+.yaris .menu2 nav ul {
   display: table-row;
   margin: 0px;
   padding: 0px;
 }
-.menu2 nav ul li {
+/* line 121, ../../../resources/assets/sass/includes/modulos/_header.sass */
+.yaris .menu2 nav ul li {
   display: table-cell;
   margin: 0px;
   padding: 0px;
   vertical-align: middle;
 }
-.menu2 nav ul li:after {
+/* line 126, ../../../resources/assets/sass/includes/modulos/_header.sass */
+.yaris .menu2 nav ul li:after {
   color: #92999e;
   content: " | ";
   padding: 0px 15px;
-  display: inline-block;
 }
-.menu2 nav ul li:last-child:after {
+/* line 131, ../../../resources/assets/sass/includes/modulos/_header.sass */
+.yaris .menu2 nav ul li:last-child:after {
   content: "";
 }
-.menu2 nav ul li.activo a {
+/* line 134, ../../../resources/assets/sass/includes/modulos/_header.sass */
+.yaris .menu2 nav ul li.activo a {
   color: #fff;
 }
-.menu2 nav ul li a {
+/* line 136, ../../../resources/assets/sass/includes/modulos/_header.sass */
+.yaris .menu2 nav ul li a {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
@@ -536,18 +611,22 @@ footer a.scroll:after {
   text-decoration: none;
   text-transform: uppercase;
 }
-.menu2 nav ul li a:hover {
+/* line 143, ../../../resources/assets/sass/includes/modulos/_header.sass */
+.yaris .menu2 nav ul li a:hover {
   color: #fff;
 }
-.menu2 .btnprev {
+/* line 146, ../../../resources/assets/sass/includes/modulos/_header.sass */
+.yaris .menu2 .btnprev {
   padding: 20px 0px;
 }
 
+/* line 1, ../../../resources/assets/sass/includes/modulos/_seleccionar.sass */
 .indicaciones {
   height: 98px;
   position: relative;
   overflow: hidden;
 }
+/* line 5, ../../../resources/assets/sass/includes/modulos/_seleccionar.sass */
 .indicaciones p {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
@@ -562,6 +641,7 @@ footer a.scroll:after {
   text-align: center;
   margin: 0px;
 }
+/* line 12, ../../../resources/assets/sass/includes/modulos/_seleccionar.sass */
 .indicaciones span {
   position: absolute;
   -webkit-transform: translateY(-50%);
@@ -569,16 +649,22 @@ footer a.scroll:after {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   top: 50%;
-  background: url(img/logo-yarisW.jpg);
   width: 133px;
   height: 20px;
   right: 2em;
 }
 
+/* line 19, ../../../resources/assets/sass/includes/modulos/_seleccionar.sass */
+.highlander .indicaciones span {
+  background: url(img/logo-yarisW.jpg);
+}
+
+/* line 22, ../../../resources/assets/sass/includes/modulos/_seleccionar.sass */
 .seleccionar {
   height: calc(100vh - 98px);
   width: 100%;
 }
+/* line 25, ../../../resources/assets/sass/includes/modulos/_seleccionar.sass */
 .seleccionar a {
   display: block;
   float: left;
@@ -587,6 +673,7 @@ footer a.scroll:after {
   text-decoration: none;
   width: 50%;
 }
+/* line 32, ../../../resources/assets/sass/includes/modulos/_seleccionar.sass */
 .seleccionar a img {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
@@ -600,29 +687,35 @@ footer a.scroll:after {
   width: auto;
 }
 
+/* line 37, ../../../resources/assets/sass/includes/modulos/_seleccionar.sass */
 .hipster {
   background: #16b3ac url(img/pattHipster.png);
 }
 
+/* line 39, ../../../resources/assets/sass/includes/modulos/_seleccionar.sass */
 .nerd {
   background: #abc9e7 url(img/pattNerd.png);
 }
 
+/* line 41, ../../../resources/assets/sass/includes/modulos/_seleccionar.sass */
 .fresa {
   background: #b91919 url(img/pattFresa.png);
 }
 
+/* line 43, ../../../resources/assets/sass/includes/modulos/_seleccionar.sass */
 .mirrey {
   background: #94c840 url(img/pattMirrey.png);
 }
 
+/* line 1, ../../../resources/assets/sass/includes/modulos/_cover.sass */
 .cover {
-  background: url(img/bgCover.png) no-repeat center bottom;
+  background: url(img/bgCover.jpg) no-repeat center bottom;
   background-size: cover;
   height: calc(100vh - 110px);
   margin-bottom: 50px;
   width: 100%;
 }
+/* line 7, ../../../resources/assets/sass/includes/modulos/_cover.sass */
 .cover .titulo {
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -630,39 +723,47 @@ footer a.scroll:after {
   transform: translate(-50%, -50%);
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
+  display: none;
   left: 30%;
   position: absolute;
-  top: 25%;
+  top: 35%;
 }
+/* line 15, ../../../resources/assets/sass/includes/modulos/_cover.sass */
 .cover h1 {
-  color: #000;
+  color: #ffffff;
   margin-bottom: 0px;
 }
+/* line 18, ../../../resources/assets/sass/includes/modulos/_cover.sass */
 .cover h1 span {
   color: #cc0033;
   text-transform: uppercase;
 }
+/* line 21, ../../../resources/assets/sass/includes/modulos/_cover.sass */
 .cover h2 {
-  color: #000;
+  color: #ffffff;
   margin: 0px;
   white-space: pre-line;
-  font-weight: 300;
 }
+/* line 25, ../../../resources/assets/sass/includes/modulos/_cover.sass */
 .cover h2 span {
   font-weight: 300;
 }
+/* line 27, ../../../resources/assets/sass/includes/modulos/_cover.sass */
 .cover .btvideo {
   display: table;
 }
+/* line 29, ../../../resources/assets/sass/includes/modulos/_cover.sass */
 .cover .btvideo p {
   color: #cc0033;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
 }
+/* line 33, ../../../resources/assets/sass/includes/modulos/_cover.sass */
 .cover .btvideo span {
   display: table-cell;
   vertical-align: middle;
 }
+/* line 36, ../../../resources/assets/sass/includes/modulos/_cover.sass */
 .cover .btvideo span a {
   border-radius: 50%;
   background: #cc0033;
@@ -674,6 +775,7 @@ footer a.scroll:after {
   text-decoration: none;
   width: 30px;
 }
+/* line 46, ../../../resources/assets/sass/includes/modulos/_cover.sass */
 .cover .btvideo span a:after {
   content: "";
   font-family: "FontAwesome";
@@ -686,6 +788,7 @@ footer a.scroll:after {
   position: absolute;
   top: 50%;
 }
+/* line 53, ../../../resources/assets/sass/includes/modulos/_cover.sass */
 .cover .mouse {
   -webkit-transform: translate(-50%, 0%);
   -moz-transform: translate(-50%, 0%);
@@ -706,20 +809,20 @@ footer a.scroll:after {
   text-align: center;
   white-space: pre-line;
 }
+/* line 69, ../../../resources/assets/sass/includes/modulos/_cover.sass */
 .cover .mouse:before {
   content: " ";
-  /*background-color: #fff;*/
- /* -webkit-mask: url(img/mouse.svg) no-repeat center;
+  background-color: #fff;
+  -webkit-mask: url(img/mouse.svg) no-repeat center;
   mask: url(img/mouse.svg) no-repeat center;
   -webkit-mask-size: cover;
-  mask-size: cover;*/
+  mask-size: cover;
   display: block;
   margin: auto;
   width: 16px;
   height: 30px;
-  border: 1px solid #fff;
-  border-radius: 8px 8px;
 }
+/* line 80, ../../../resources/assets/sass/includes/modulos/_cover.sass */
 .cover .mouse .mouse-dot {
   -moz-animation: ani-mouse 2.5s linear infinite;
   -moz-border-radius: 50%;
@@ -737,30 +840,45 @@ footer a.scroll:after {
   width: 3px;
 }
 
+/* line 96, ../../../resources/assets/sass/includes/modulos/_cover.sass */
+.highlander .cover {
+  background-image: url(img/highlander/bgCover.jpg);
+}
+
+/* line 99, ../../../resources/assets/sass/includes/modulos/_cover.sass */
+.sienna .cover {
+  background-image: url(img/sienna/bgCover.jpg);
+}
+
+/* line 2, ../../../resources/assets/sass/includes/modulos/_colores.sass */
 .colores h2 {
   margin: 1em auto;
   opacity: 0;
   text-align: center;
   white-space: pre-line;
-  text-transform: uppercase;
 }
+/* line 7, ../../../resources/assets/sass/includes/modulos/_colores.sass */
 .colores h2 span {
   font-weight: 300;
 }
 
+/* line 12, ../../../resources/assets/sass/includes/modulos/_colores.sass */
 .colores .container > img {
   display: none;
   height: auto;
   width: 100%;
 }
 
+/* line 18, ../../../resources/assets/sass/includes/modulos/_colores.sass */
 .colores .new-Menu360 {
   text-align: center;
 }
+/* line 20, ../../../resources/assets/sass/includes/modulos/_colores.sass */
 .colores .new-Menu360 p {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
 }
+/* line 23, ../../../resources/assets/sass/includes/modulos/_colores.sass */
 .colores .new-Menu360 span {
   color: #2f3438;
   font-family: "Lato", sans-serif;
@@ -770,11 +888,13 @@ footer a.scroll:after {
   margin: 1em 0px;
   text-transform: capitalize;
 }
+/* line 31, ../../../resources/assets/sass/includes/modulos/_colores.sass */
 .colores .new-Menu360 .contColors {
   display: table;
   margin: 20px auto;
   padding: 10px;
 }
+/* line 35, ../../../resources/assets/sass/includes/modulos/_colores.sass */
 .colores .new-Menu360 .contColors > div {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -788,14 +908,17 @@ footer a.scroll:after {
   position: relative;
   width: 30px;
 }
+/* line 44, ../../../resources/assets/sass/includes/modulos/_colores.sass */
 .colores .new-Menu360 .contColors > div:last-child {
   margin-right: 0px;
 }
+/* line 46, ../../../resources/assets/sass/includes/modulos/_colores.sass */
 .colores .new-Menu360 .contColors > div:hover, .colores .new-Menu360 .contColors > div.active {
   height: 26px;
   margin-bottom: -6px;
   margin-top: -6px;
 }
+/* line 50, ../../../resources/assets/sass/includes/modulos/_colores.sass */
 .colores .new-Menu360 .contColors > div:hover:before, .colores .new-Menu360 .contColors > div.active:before {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
@@ -809,45 +932,45 @@ footer a.scroll:after {
   color: #fff;
   font-size: 1rem;
 }
+/* line 55, ../../../resources/assets/sass/includes/modulos/_colores.sass */
 .colores .new-Menu360 .contColors .rojo {
   background: #a21e22;
 }
+/* line 57, ../../../resources/assets/sass/includes/modulos/_colores.sass */
 .colores .new-Menu360 .contColors .blanco {
   background: #ededef;
 }
+/* line 59, ../../../resources/assets/sass/includes/modulos/_colores.sass */
 .colores .new-Menu360 .contColors .blancop {
   background: #e8e2d5;
 }
+/* line 61, ../../../resources/assets/sass/includes/modulos/_colores.sass */
 .colores .new-Menu360 .contColors .plata {
   background: #c6c6c6;
 }
+/* line 63, ../../../resources/assets/sass/includes/modulos/_colores.sass */
 .colores .new-Menu360 .contColors .gris {
   background: #7b7b7b;
 }
+/* line 65, ../../../resources/assets/sass/includes/modulos/_colores.sass */
 .colores .new-Menu360 .contColors .negro {
   background: #000000;
 }
+/* line 67, ../../../resources/assets/sass/includes/modulos/_colores.sass */
 .colores .new-Menu360 .contColors .verde {
   background: #8c9b96;
 }
+/* line 69, ../../../resources/assets/sass/includes/modulos/_colores.sass */
 .colores .new-Menu360 .contColors .azul {
   background: #2d4162;
 }
 
-.colores .new-Menu360 .contColors .jade {
-  background: #3d443b;
-}
-.colores .new-Menu360 .contColors .arena {
-  background: #b4ad9e;
-}
-.colores .new-Menu360 .contColors .azulosc {
-  background: #262a43;
-}
-
+/* line 2, ../../../resources/assets/sass/includes/modulos/_highlights.sass */
 .highlights .container {
   overflow: visible;
 }
 
+/* line 5, ../../../resources/assets/sass/includes/modulos/_highlights.sass */
 .menuHigh {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
@@ -861,10 +984,12 @@ footer a.scroll:after {
   margin-right: 2em;
   right: 100%;
 }
+/* line 11, ../../../resources/assets/sass/includes/modulos/_highlights.sass */
 .menuHigh span {
   cursor: pointer;
   display: block;
 }
+/* line 14, ../../../resources/assets/sass/includes/modulos/_highlights.sass */
 .menuHigh span.fa-angle-up {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -880,6 +1005,7 @@ footer a.scroll:after {
   position: absolute;
   right: 0px;
 }
+/* line 22, ../../../resources/assets/sass/includes/modulos/_highlights.sass */
 .menuHigh span.fa-angle-down {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -895,13 +1021,16 @@ footer a.scroll:after {
   right: 0px;
   top: 100%;
 }
+/* line 30, ../../../resources/assets/sass/includes/modulos/_highlights.sass */
 .menuHigh span.fa:hover {
   color: #2f3438;
 }
+/* line 33, ../../../resources/assets/sass/includes/modulos/_highlights.sass */
 .menuHigh ul {
   margin: 1em 0px;
   position: relative;
 }
+/* line 36, ../../../resources/assets/sass/includes/modulos/_highlights.sass */
 .menuHigh ul li {
   color: rgba(47, 52, 56, 0.2);
   cursor: pointer;
@@ -913,6 +1042,7 @@ footer a.scroll:after {
   position: relative;
   width: 0px;
 }
+/* line 46, ../../../resources/assets/sass/includes/modulos/_highlights.sass */
 .menuHigh ul li:before {
   position: absolute;
   -webkit-transform: translateY(-50%);
@@ -933,6 +1063,7 @@ footer a.scroll:after {
   right: 0px;
   width: 8px;
 }
+/* line 57, ../../../resources/assets/sass/includes/modulos/_highlights.sass */
 .menuHigh ul li:hover, .menuHigh ul li.activo {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -940,31 +1071,38 @@ footer a.scroll:after {
   transition: all 0.5s;
   color: #2f3438;
 }
+/* line 60, ../../../resources/assets/sass/includes/modulos/_highlights.sass */
 .menuHigh ul li:hover:before, .menuHigh ul li.activo:before {
   background: none;
   border: 3px solid #2185d6;
 }
 
+/* line 64, ../../../resources/assets/sass/includes/modulos/_highlights.sass */
 .highs {
   height: 52rem;
   overflow: hidden;
   width: 100%;
 }
+/* line 68, ../../../resources/assets/sass/includes/modulos/_highlights.sass */
 .highs h1 {
   font-size: 5rem;
 }
+/* line 70, ../../../resources/assets/sass/includes/modulos/_highlights.sass */
 .highs h1 span {
   display: block;
 }
+/* line 72, ../../../resources/assets/sass/includes/modulos/_highlights.sass */
 .highs li {
   display: none;
   overflow: hidden;
   position: relative;
   width: 100%;
 }
+/* line 78, ../../../resources/assets/sass/includes/modulos/_highlights.sass */
 .highs li:first-child h1 {
   opacity: 0;
 }
+/* line 80, ../../../resources/assets/sass/includes/modulos/_highlights.sass */
 .highs li > div {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -973,6 +1111,7 @@ footer a.scroll:after {
   padding: 1em;
   width: 50%;
 }
+/* line 85, ../../../resources/assets/sass/includes/modulos/_highlights.sass */
 .highs li > div:first-child {
   position: absolute;
   -webkit-transform: translateY(-50%);
@@ -982,13 +1121,16 @@ footer a.scroll:after {
   top: 50%;
   display: table;
 }
+/* line 89, ../../../resources/assets/sass/includes/modulos/_highlights.sass */
 .highs li > div h1 span {
   color: #cc0033;
 }
+/* line 91, ../../../resources/assets/sass/includes/modulos/_highlights.sass */
 .highs li > div p {
   font-size: 1.14286rem;
   font-weight: 300;
 }
+/* line 94, ../../../resources/assets/sass/includes/modulos/_highlights.sass */
 .highs li > div p:before {
   content: "";
   font-family: "FontAwesome";
@@ -997,11 +1139,13 @@ footer a.scroll:after {
   padding-right: 1em;
   vertical-align: middle;
 }
+/* line 100, ../../../resources/assets/sass/includes/modulos/_highlights.sass */
 .highs li > div > img {
   height: auto;
   width: 100%;
 }
 
+/* line 1, ../../../resources/assets/sass/includes/modulos/_galeria.sass */
 .galeria {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1010,19 +1154,22 @@ footer a.scroll:after {
   padding-bottom: 5rem;
   position: relative;
 }
+/* line 6, ../../../resources/assets/sass/includes/modulos/_galeria.sass */
 .galeria h2 {
   opacity: 0;
   text-align: center;
-  text-transform: uppercase;
 }
+/* line 9, ../../../resources/assets/sass/includes/modulos/_galeria.sass */
 .galeria h2 span {
   font-weight: 300;
 }
+/* line 12, ../../../resources/assets/sass/includes/modulos/_galeria.sass */
 .galeria > div:not(#galeria) {
   overflow: hidden;
   position: relative;
   width: 100%;
 }
+/* line 16, ../../../resources/assets/sass/includes/modulos/_galeria.sass */
 .galeria > div > span {
   background: #cc0033;
   height: 100%;
@@ -1031,13 +1178,16 @@ footer a.scroll:after {
   top: 0px;
   width: 8px;
 }
+/* line 23, ../../../resources/assets/sass/includes/modulos/_galeria.sass */
 .galeria .container {
   padding: 0px;
 }
 
+/* line 27, ../../../resources/assets/sass/includes/modulos/_galeria.sass */
 .contGale ul {
   height: 750px;
 }
+/* line 29, ../../../resources/assets/sass/includes/modulos/_galeria.sass */
 .contGale ul li {
   display: block;
   float: left;
@@ -1045,12 +1195,14 @@ footer a.scroll:after {
   overflow: hidden;
   width: 25%;
 }
+/* line 35, ../../../resources/assets/sass/includes/modulos/_galeria.sass */
 .contGale ul li a {
   display: block;
   height: 100%;
   overflow: hidden;
   width: 100%;
 }
+/* line 40, ../../../resources/assets/sass/includes/modulos/_galeria.sass */
 .contGale ul li a img {
   -webkit-transition: all 0.8s;
   -moz-transition: all 0.8s;
@@ -1059,20 +1211,24 @@ footer a.scroll:after {
   display: block;
   height: 100%;
 }
+/* line 44, ../../../resources/assets/sass/includes/modulos/_galeria.sass */
 .contGale ul li:first-child {
   height: 100%;
   width: 50%;
 }
+/* line 48, ../../../resources/assets/sass/includes/modulos/_galeria.sass */
 .contGale ul li:first-child a img {
   height: 100%;
   width: auto;
 }
+/* line 53, ../../../resources/assets/sass/includes/modulos/_galeria.sass */
 .contGale ul li:hover a img {
   -ms-transform: scale(1.08, 1.08) !important;
   -webkit-transform: scale(1.08, 1.08) !important;
   transform: scale(1.08, 1.08) !important;
 }
 
+/* line 58, ../../../resources/assets/sass/includes/modulos/_galeria.sass */
 .anuncio {
   background: #fff;
   bottom: 0px;
@@ -1081,6 +1237,7 @@ footer a.scroll:after {
   right: 0px;
   width: 25%;
 }
+/* line 65, ../../../resources/assets/sass/includes/modulos/_galeria.sass */
 .anuncio > span {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1095,21 +1252,25 @@ footer a.scroll:after {
   display: block;
   width: 70%;
 }
+/* line 70, ../../../resources/assets/sass/includes/modulos/_galeria.sass */
 .anuncio p {
   font-family: "Open Sans", sans-serif;
   font-size: 1.14286rem;
   font-weight: 400;
 }
+/* line 74, ../../../resources/assets/sass/includes/modulos/_galeria.sass */
 .anuncio p span {
   font-weight: 700;
 }
 
+/* line 78, ../../../resources/assets/sass/includes/modulos/_galeria.sass */
 .galeria .bx-prev {
   border: 1px solid #2f3438;
   color: #2f3438;
   left: 0px;
   position: relative;
 }
+/* line 83, ../../../resources/assets/sass/includes/modulos/_galeria.sass */
 .galeria .bx-prev:before {
   content: "";
   font-family: "FontAwesome";
@@ -1123,12 +1284,14 @@ footer a.scroll:after {
   text-indent: 0px;
   top: 50%;
 }
+/* line 91, ../../../resources/assets/sass/includes/modulos/_galeria.sass */
 .galeria .bx-next {
   border: 1px solid #2f3438;
   color: #2f3438;
   position: relative;
   right: 0px;
 }
+/* line 96, ../../../resources/assets/sass/includes/modulos/_galeria.sass */
 .galeria .bx-next:before {
   content: "";
   font-family: "FontAwesome";
@@ -1142,6 +1305,7 @@ footer a.scroll:after {
   text-indent: 0px;
   top: 50%;
 }
+/* line 104, ../../../resources/assets/sass/includes/modulos/_galeria.sass */
 .galeria .bx-controls.bx-has-pager.bx-has-controls-direction {
   border-top: 1px solid #d0d4d9;
   margin: 1em 0px;
@@ -1149,15 +1313,18 @@ footer a.scroll:after {
   position: relative;
   width: 100%;
 }
+/* line 111, ../../../resources/assets/sass/includes/modulos/_galeria.sass */
 .galeria .bx-pager.bx-default-pager {
   display: table;
   margin: auto;
 }
+/* line 114, ../../../resources/assets/sass/includes/modulos/_galeria.sass */
 .galeria .bx-pager-item {
   display: inline-block;
   margin: 3px 0px;
   padding: 6px;
 }
+/* line 118, ../../../resources/assets/sass/includes/modulos/_galeria.sass */
 .galeria .bx-pager-item a {
   color: #bdc3c7;
   font-family: "Open Sans", sans-serif;
@@ -1167,9 +1334,11 @@ footer a.scroll:after {
   padding: 7px 0px;
   text-decoration: none;
 }
+/* line 126, ../../../resources/assets/sass/includes/modulos/_galeria.sass */
 .galeria .bx-pager-item a:hover, .galeria .bx-pager-item a.active {
   color: #0c4da2;
 }
+/* line 128, ../../../resources/assets/sass/includes/modulos/_galeria.sass */
 .galeria .bx-controls-direction {
   position: absolute;
   -webkit-transform: translateY(-50%);
@@ -1179,6 +1348,7 @@ footer a.scroll:after {
   top: 50%;
   right: 0px;
 }
+/* line 131, ../../../resources/assets/sass/includes/modulos/_galeria.sass */
 .galeria .bx-controls-direction a {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -1192,13 +1362,16 @@ footer a.scroll:after {
   width: 52px;
   z-index: 98;
 }
+/* line 140, ../../../resources/assets/sass/includes/modulos/_galeria.sass */
 .galeria .bx-controls-direction a.disabled {
   border: 1px solid #bdc3c7;
   color: #bdc3c7;
 }
+/* line 143, ../../../resources/assets/sass/includes/modulos/_galeria.sass */
 .galeria .bx-controls-direction a.disabled:hover {
   background: none;
 }
+/* line 146, ../../../resources/assets/sass/includes/modulos/_galeria.sass */
 .galeria .bx-controls-direction .contador {
   display: block;
   font-size: 4.28571rem;
@@ -1206,12 +1379,14 @@ footer a.scroll:after {
   line-height: 1.2;
   text-align: center;
 }
+/* line 152, ../../../resources/assets/sass/includes/modulos/_galeria.sass */
 .galeria .bx-controls-direction .contador sup {
   font-size: 1.28571rem;
   font-weight: 300;
   position: relative;
   top: -1.4em;
 }
+/* line 157, ../../../resources/assets/sass/includes/modulos/_galeria.sass */
 .galeria .bx-controls-direction .contador sub {
   font-size: 1.28571rem;
   font-weight: 300;
@@ -1219,33 +1394,39 @@ footer a.scroll:after {
   top: -0.3em;
 }
 
+/* line 1, ../../../resources/assets/sass/includes/modulos/_versiones.sass */
 .versiones {
   background: #edf0f5;
   position: relative;
 }
+/* line 4, ../../../resources/assets/sass/includes/modulos/_versiones.sass */
 .versiones .container {
   background: url(img/txtVersiones.jpg) no-repeat center 75px;
   background-size: 80% auto;
   padding: 6em 1rem;
 }
+/* line 8, ../../../resources/assets/sass/includes/modulos/_versiones.sass */
 .versiones h2 {
   opacity: 0;
   text-align: center;
-  text-transform: uppercase;
 }
+/* line 11, ../../../resources/assets/sass/includes/modulos/_versiones.sass */
 .versiones h2 span {
   font-weight: 300;
 }
 
+/* line 14, ../../../resources/assets/sass/includes/modulos/_versiones.sass */
 .modelos {
   display: table;
   margin-bottom: 4rem;
   overflow: hidden;
   width: 100%;
 }
+/* line 19, ../../../resources/assets/sass/includes/modulos/_versiones.sass */
 .modelos > div {
   display: table-row;
 }
+/* line 21, ../../../resources/assets/sass/includes/modulos/_versiones.sass */
 .modelos > div > div {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1255,26 +1436,32 @@ footer a.scroll:after {
   padding-bottom: 3rem;
   width: 50%;
 }
+/* line 27, ../../../resources/assets/sass/includes/modulos/_versiones.sass */
 .modelos > div > div img {
   height: auto;
   width: 100%;
 }
+/* line 30, ../../../resources/assets/sass/includes/modulos/_versiones.sass */
 .modelos > div > div h3 {
   margin-bottom: 0px;
 }
+/* line 32, ../../../resources/assets/sass/includes/modulos/_versiones.sass */
 .modelos > div > div h5 {
   color: #cc0033;
   margin-top: 0px;
 }
+/* line 35, ../../../resources/assets/sass/includes/modulos/_versiones.sass */
 .modelos > div > div h5 sup {
   font-size: small;
   margin: 0px 0.5rem;
   vertical-align: super;
 }
+/* line 39, ../../../resources/assets/sass/includes/modulos/_versiones.sass */
 .modelos > div > div ul {
   margin: 0px;
   padding: 0px;
 }
+/* line 42, ../../../resources/assets/sass/includes/modulos/_versiones.sass */
 .modelos > div > div ul li {
   color: #2f3438;
   font-family: "Lato", sans-serif;
@@ -1283,6 +1470,7 @@ footer a.scroll:after {
   line-height: 1.4;
   margin: 0.3rem 0px;
 }
+/* line 49, ../../../resources/assets/sass/includes/modulos/_versiones.sass */
 .modelos > div > div ul li:before {
   content: "";
   font-family: "FontAwesome";
@@ -1291,6 +1479,7 @@ footer a.scroll:after {
   padding-right: 1rem;
   vertical-align: middle;
 }
+/* line 55, ../../../resources/assets/sass/includes/modulos/_versiones.sass */
 .modelos > div > div span {
   background: #cc0033;
   display: block;
@@ -1299,11 +1488,13 @@ footer a.scroll:after {
   width: 30px;
 }
 
+/* line 1, ../../../resources/assets/sass/includes/modulos/_manejo.sass */
 .manejo {
-  background: url(img/bgManejo.png) no-repeat center bottom;
+  background: no-repeat center bottom;
   background-size: cover;
   height: 600px;
 }
+/* line 6, ../../../resources/assets/sass/includes/modulos/_manejo.sass */
 .manejo .container > div {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
@@ -1315,20 +1506,33 @@ footer a.scroll:after {
   display: table;
   width: 100%;
 }
+/* line 10, ../../../resources/assets/sass/includes/modulos/_manejo.sass */
 .manejo h2 {
   color: #ffffff;
   opacity: 0;
   text-align: center;
   white-space: pre-line;
-  text-transform: uppercase;
 }
+/* line 15, ../../../resources/assets/sass/includes/modulos/_manejo.sass */
 .manejo h2 span {
   font-weight: 300;
 }
 
+/* line 18, ../../../resources/assets/sass/includes/modulos/_manejo.sass */
+.highlander .manejo {
+  background-image: url("img/highlander/bgManejo.jpg");
+}
+
+/* line 21, ../../../resources/assets/sass/includes/modulos/_manejo.sass */
+.sienna .manejo {
+  background-image: url("img/sienna/bgManejo.png");
+}
+
+/* line 1, ../../../resources/assets/sass/includes/modulos/_descanso.sass */
 .descanso {
   height: 800px;
 }
+/* line 4, ../../../resources/assets/sass/includes/modulos/_descanso.sass */
 .descanso .container > div {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
@@ -1340,6 +1544,7 @@ footer a.scroll:after {
   display: table;
   width: 100%;
 }
+/* line 8, ../../../resources/assets/sass/includes/modulos/_descanso.sass */
 .descanso .container > div > span {
   background: #2f3438;
   display: table;
@@ -1347,10 +1552,11 @@ footer a.scroll:after {
   margin: 2rem auto 1rem;
   width: 90px;
 }
+/* line 14, ../../../resources/assets/sass/includes/modulos/_descanso.sass */
 .descanso h1 {
   text-align: center;
-  text-transform: uppercase;
 }
+/* line 16, ../../../resources/assets/sass/includes/modulos/_descanso.sass */
 .descanso p {
   display: table;
   font-family: "Open Sans", sans-serif;
@@ -1361,12 +1567,14 @@ footer a.scroll:after {
   white-space: pre-line;
 }
 
+/* line 1, ../../../resources/assets/sass/includes/modulos/_footer.sass */
 .menu3 {
   background: #fff;
   height: 78px;
   overflow: hidden;
   width: 100%;
 }
+/* line 6, ../../../resources/assets/sass/includes/modulos/_footer.sass */
 .menu3 nav {
   display: table;
   float: left;
@@ -1374,32 +1582,37 @@ footer a.scroll:after {
   margin-left: 20px;
   overflow: hidden;
 }
+/* line 12, ../../../resources/assets/sass/includes/modulos/_footer.sass */
 .menu3 nav ul {
   display: table-row;
   margin: 0px;
   padding: 0px;
 }
+/* line 16, ../../../resources/assets/sass/includes/modulos/_footer.sass */
 .menu3 nav ul li {
   display: table-cell;
   margin: 0px;
   padding: 0px;
   vertical-align: middle;
 }
+/* line 21, ../../../resources/assets/sass/includes/modulos/_footer.sass */
 .menu3 nav ul li a {
   color: #585d65;
   font-size: 1rem;
   font-weight: 300;
   text-decoration: none;
 }
+/* line 26, ../../../resources/assets/sass/includes/modulos/_footer.sass */
 .menu3 nav ul li:after {
   color: #585d65;
   content: " | ";
   padding: 0px 15px;
-  display: inline-block;
 }
+/* line 30, ../../../resources/assets/sass/includes/modulos/_footer.sass */
 .menu3 nav ul li:last-child::after {
   content: "";
 }
+/* line 32, ../../../resources/assets/sass/includes/modulos/_footer.sass */
 .menu3 span {
   display: table;
   float: right;
@@ -1407,6 +1620,7 @@ footer a.scroll:after {
   margin-right: 20px;
   overflow: hidden;
 }
+/* line 38, ../../../resources/assets/sass/includes/modulos/_footer.sass */
 .menu3 span p {
   color: #585d65;
   display: table-cell;
@@ -1415,33 +1629,40 @@ footer a.scroll:after {
   vertical-align: middle;
 }
 
+/* line 46, ../../../resources/assets/sass/includes/modulos/_footer.sass */
 div#cover, div#especificaciones {
   position: relative;
   top: -60px;
 }
+/* line 49, ../../../resources/assets/sass/includes/modulos/_footer.sass */
 div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#manejo, div#descanso {
   position: relative;
   top: -50px;
 }
 
+/* line 55, ../../../resources/assets/sass/includes/modulos/_footer.sass */
 .fancybox-wrap {
   z-index: 9999;
 }
+/* line 57, ../../../resources/assets/sass/includes/modulos/_footer.sass */
 .fancybox-wrap:focus {
   outline-width: 0;
 }
 
+/* line 60, ../../../resources/assets/sass/includes/modulos/_footer.sass */
 .fancybox-image, .fancybox-iframe {
   display: block;
   height: 100%;
   width: 100%;
 }
 
+/* line 64, ../../../resources/assets/sass/includes/modulos/_footer.sass */
 .fancybox-image {
   max-height: 100%;
   max-width: 100%;
 }
 
+/* line 68, ../../../resources/assets/sass/includes/modulos/_footer.sass */
 .fancybox-close {
   cursor: pointer;
   height: 36px;
@@ -1451,6 +1672,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   width: 20px;
   z-index: 8040;
 }
+/* line 76, ../../../resources/assets/sass/includes/modulos/_footer.sass */
 .fancybox-close:before {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
@@ -1466,6 +1688,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   width: 23px;
 }
 
+/* line 84, ../../../resources/assets/sass/includes/modulos/_footer.sass */
 .fancybox-prev {
   border-left: 1px solid transparent;
   border: 1px solid #fff;
@@ -1473,6 +1696,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   left: 0px;
   position: relative;
 }
+/* line 90, ../../../resources/assets/sass/includes/modulos/_footer.sass */
 .fancybox-prev:before {
   content: "";
   font-family: "FontAwesome";
@@ -1487,6 +1711,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   top: 50%;
 }
 
+/* line 98, ../../../resources/assets/sass/includes/modulos/_footer.sass */
 .fancybox-next {
   border-right: 1px solid transparent;
   border: 1px solid #fff;
@@ -1494,6 +1719,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   position: relative;
   right: 0px;
 }
+/* line 104, ../../../resources/assets/sass/includes/modulos/_footer.sass */
 .fancybox-next:before {
   content: "";
   font-family: "FontAwesome";
@@ -1508,6 +1734,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   top: 50%;
 }
 
+/* line 112, ../../../resources/assets/sass/includes/modulos/_footer.sass */
 .fancybox-nav {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1529,25 +1756,30 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   width: 52px;
   z-index: 98;
 }
+/* line 122, ../../../resources/assets/sass/includes/modulos/_footer.sass */
 .fancybox-nav:hover {
   background: #cc0033;
   border: 1px solid #cc0033;
   color: #fff;
 }
 
+/* line 129, ../../../resources/assets/sass/includes/modulos/_footer.sass */
 .fancybox-lock {
   overflow: hidden !important;
   width: auto;
 }
+/* line 132, ../../../resources/assets/sass/includes/modulos/_footer.sass */
 .fancybox-lock .fancybox-overlay {
   overflow-y: scroll;
   overflow: auto;
 }
 
+/* line 135, ../../../resources/assets/sass/includes/modulos/_footer.sass */
 .fancybox-lock-test {
   overflow-y: hidden !important;
 }
 
+/* line 137, ../../../resources/assets/sass/includes/modulos/_footer.sass */
 .fancybox-overlay {
   background: #111112;
   display: none;
@@ -1560,12 +1792,14 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   z-index: 8010;
 }
 
+/* line 147, ../../../resources/assets/sass/includes/modulos/_footer.sass */
 .fancybox-overlay-fixed {
   bottom: 0;
   position: fixed;
   right: 0;
 }
 
+/* line 154, ../../../resources/assets/sass/includes/modulos/_footer.sass */
 .fancybox-title-float-wrap {
   background: rgba(0, 0, 0, 0.6);
   bottom: 0px;
@@ -1575,6 +1809,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   width: 100%;
   z-index: 8050;
 }
+/* line 162, ../../../resources/assets/sass/includes/modulos/_footer.sass */
 .fancybox-title-float-wrap .child {
   color: #ffffff;
   display: block;
@@ -1588,11 +1823,13 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   width: 60%;
 }
 
+/* line 1, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .especificaciones {
   background: #fff;
   overflow: hidden;
   width: 100%;
 }
+/* line 5, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .especificaciones .scroll-Interno {
   -webkit-overflow-scrolling: touch;
   height: 100%;
@@ -1600,15 +1837,19 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   position: relative;
   width: 100%;
 }
+/* line 11, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .especificaciones h3 {
   margin: 0px;
 }
+/* line 13, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .especificaciones dt {
   margin-bottom: 1em;
 }
+/* line 15, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .especificaciones dd {
   padding-left: 1em;
 }
+/* line 17, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .especificaciones dd > p {
   font-family: "Open Sans", sans-serif;
   font-size: 1.14286rem;
@@ -1616,6 +1857,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   margin: 0.3em 0px;
   position: relative;
 }
+/* line 23, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .especificaciones dd > p:before {
   color: #cc0033;
   content: "•";
@@ -1625,10 +1867,12 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   right: 100%;
   top: 0px;
 }
+/* line 31, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .especificaciones .cont-border {
   border-bottom: 1px solid #ddd;
   overflow: hidden;
 }
+/* line 34, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .especificaciones .cont-border > div {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1636,25 +1880,30 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   padding-right: 4em;
   padding: 2em 0px;
 }
+/* line 38, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .especificaciones .cont-border > div:nth-child(even) {
   padding-left: 4em;
   padding-right: 0px;
 }
 
+/* line 42, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .cont-retic {
   display: table;
   margin: auto;
   overflow: hidden;
   width: 100%;
 }
+/* line 47, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .cont-retic h1 {
   color: #cc0033;
   text-align: center;
   text-transform: uppercase;
 }
+/* line 51, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .cont-retic h1 span {
   font-weight: 300;
 }
+/* line 53, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .cont-retic fieldset {
   border-bottom: 1px solid #bdc3c7;
   display: table;
@@ -1664,6 +1913,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   position: relative;
   width: 100%;
 }
+/* line 61, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .cont-retic fieldset:before {
   content: "";
   font-family: "FontAwesome";
@@ -1672,6 +1922,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   right: 10px;
   top: 10px;
 }
+/* line 67, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .cont-retic .select-otraver {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1690,10 +1941,12 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   text-transform: uppercase;
   width: 100%;
 }
+/* line 80, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .cont-retic .select-otraver:focus {
   outline: 0;
 }
 
+/* line 82, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .cont-imgs {
   display: table;
   margin: auto;
@@ -1702,24 +1955,29 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   overflow: hidden;
   width: 100%;
 }
+/* line 89, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .cont-imgs > img {
   height: auto;
   width: 100%;
 }
 
+/* line 92, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .eTecnicas, .extCarro, .intCarro {
   margin-bottom: 50px;
   overflow: hidden;
 }
 
+/* line 100, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .eTecnicas > div:not(.espMotor) {
   background: #f7f7fa;
   overflow: hidden;
   width: 100%;
 }
+/* line 104, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .eTecnicas h2 {
   text-align: center;
 }
+/* line 106, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .eTecnicas .espMotor {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1728,22 +1986,26 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   overflow: hidden;
   width: 100%;
 }
+/* line 112, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .eTecnicas .espMotor dl > dd {
   float: left;
   list-style: none;
   padding-left: 0px;
   width: 50%;
 }
+/* line 117, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .eTecnicas .espMotor dl > dd > img {
   float: left;
   height: auto;
   max-width: 420px;
   width: 80%;
 }
+/* line 123, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .eTecnicas .espMotor dl > dd > dl dd {
   margin-bottom: 40px;
   width: 100%;
 }
+/* line 126, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .eTecnicas .espMotor small {
   color: #cc0033;
   font-size: 1rem;
@@ -1751,6 +2013,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   padding-left: 55px;
   text-transform: uppercase;
 }
+/* line 132, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .eTecnicas .espMotor .icon-motor {
   float: left;
   margin-right: 10px;
@@ -1758,15 +2021,18 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   text-align: center;
   width: 45px;
 }
+/* line 138, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .eTecnicas .espMotor .icon-motor > img {
   height: auto;
   width: 100%;
 }
+/* line 147, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .eTecnicas .espMotor p {
   font-size: 3.42857rem;
   font-weight: 300;
   margin: 0px;
 }
+/* line 151, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .eTecnicas .espFrenos {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1776,6 +2042,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   padding: 2em 4rem;
   width: 50%;
 }
+/* line 157, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .eTecnicas .espRines {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1785,21 +2052,26 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   width: 50%;
 }
 
+/* line 166, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .extCarro h2 {
   color: #cc0033;
   font-weight: 300;
 }
+/* line 170, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .extCarro .cont-border:last-of-type {
   border-bottom: none;
 }
+/* line 175, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .extCarro .extVisibilidad > dl > dd:before {
   content: " ";
 }
+/* line 177, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .extCarro .extFaros, .extCarro .extVisibilidad {
   border-right: 1px solid #ddd;
   float: left;
   width: 50%;
 }
+/* line 181, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .extCarro .extSeguridadExterior, .extCarro .extTeco {
   border-left: 1px solid #ddd;
   float: left;
@@ -1807,19 +2079,23 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   width: 50%;
 }
 
+/* line 190, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .intCarro h2 {
   color: #cc0033;
   font-weight: 300;
 }
+/* line 194, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .intCarro .cont-border:last-of-type {
   border-bottom: none;
   margin-bottom: 5em;
 }
+/* line 198, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .intCarro .extAcabadosInteriores, .intCarro .extSistemaAudio, .intCarro .extCinturonesSeguridad {
   border-right: 1px solid #ddd;
   float: left;
   width: 50%;
 }
+/* line 202, ../../../resources/assets/sass/includes/modulos/_especificaciones.sass */
 .intCarro .extAsientos, .intCarro .extConfort, .intCarro .extSeguridadInterior {
   border-left: 1px solid #ddd;
   float: left;
@@ -1827,47 +2103,60 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   width: 50%;
 }
 
+/* line 1, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financiamiento {
   min-height: calc(100vh - 140px);
   width: 100vw;
 }
+/* line 4, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financiamiento h1 {
   color: #cc0033;
 }
+/* line 6, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financiamiento h2 {
   text-align: center;
 }
+/* line 8, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financiamiento h2 span {
   font-weight: 300;
 }
+/* line 10, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financiamiento h5 {
   text-align: center;
 }
 
+/* line 13, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financia {
   overflow: hidden;
   width: 100%;
 }
+/* line 16, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financia > fieldset {
   display: none;
 }
+/* line 18, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financia > fieldset:first-child {
   display: block;
 }
+/* line 20, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financia > fieldset:last-child {
   border: 1px solid #cc0033;
   margin: 0px 1em;
 }
+/* line 25, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financia > fieldset:last-child > dl > dd:first-child, .financia > fieldset:last-child > dl > dd > dl {
   border: none;
 }
+/* line 27, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financia > fieldset:last-child > p {
   margin: 2em 0px;
   text-align: center;
 }
+/* line 30, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financia > fieldset > p {
   margin: 1em;
 }
+/* line 32, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financia > fieldset > dl {
   border-collapse: separate;
   border-spacing: 1em;
@@ -1875,6 +2164,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   overflow: hidden;
   width: 100%;
 }
+/* line 38, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financia > fieldset > dl > dd {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1883,12 +2173,15 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   vertical-align: middle;
   width: 50%;
 }
+/* line 43, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financia > fieldset > dl > dd:first-child {
   border: 1px solid #cc0033;
 }
+/* line 45, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financia > fieldset > dl > dd:first-child > dl {
   border: none;
 }
+/* line 47, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financia > fieldset > dl > dd > dl {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1897,9 +2190,11 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   margin-bottom: 1em;
   padding: 0px 2em;
 }
+/* line 52, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financia > fieldset > dl > dd > dl:last-child {
   margin-bottom: 0px;
 }
+/* line 54, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financia > fieldset > dl > dd > dl > dd {
   color: #585d65;
   font-family: "Lato", sans-serif;
@@ -1908,40 +2203,50 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   margin: 1em 0px;
   overflow: hidden;
 }
+/* line 61, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financia > fieldset > dl > dd > dl > dd.precio {
   color: #cc0033;
 }
+/* line 63, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financia > fieldset > dl > dd > dl > dd.precio > div {
   font-size: 1.85714rem;
   font-weight: 700;
 }
+/* line 66, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financia > fieldset > dl > dd > dl > dd.precio > div span {
   font-weight: 700;
 }
+/* line 69, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financia > fieldset > dl > dd > dl > dd.big > div {
   font-size: 1.85714rem;
   font-weight: 700;
 }
+/* line 72, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financia > fieldset > dl > dd > dl > dd.big > div span {
   font-weight: 700;
 }
+/* line 74, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financia > fieldset > dl > dd > dl > dd > span {
   float: left;
   white-space: pre-line;
   width: 50%;
 }
+/* line 78, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financia > fieldset > dl > dd > dl > dd > div {
   float: right;
   font-weight: 300;
 }
+/* line 82, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financia > fieldset > dl > dd > dl > dd > div span:not(.plazo) {
   font-weight: 300;
   text-transform: uppercase;
 }
+/* line 85, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financia > fieldset > dl > dd > dl > dd > div sup {
   font-size: x-small;
   vertical-align: super;
 }
+/* line 88, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financia > fieldset > dl > dd > dl > dd select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1963,43 +2268,52 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   padding: 0.5em;
   width: 50%;
 }
+/* line 104, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financia > fieldset > dl > dd > dl > dd select:focus {
   outline: 0;
 }
+/* line 106, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financia > fieldset > dl > dd > dl p {
   color: #585d65;
   font-family: "Open Sans", sans-serif;
   font-size: 0.78571rem;
   font-weight: 400;
 }
+/* line 112, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financia .beneficios {
   background: #f7f7fa;
   border: 1px solid transparent;
   padding-bottom: 2em;
 }
+/* line 116, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financia .beneficios > dd {
   font-size: 1rem;
   margin: 0.5em 0px;
   overflow: visible;
 }
+/* line 120, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financia .beneficios > dd > div {
   display: inline-block;
   float: none;
 }
+/* line 124, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .financia .beneficios > dd > div span:not(.plazo) {
   text-transform: none;
 }
 
+/* line 127, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 #financiamiento-plazo-credito {
   margin: 0px 1em;
   width: 20%;
 }
 
+/* line 131, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .range-enganche {
   float: right;
   height: 30px;
   width: 50%;
 }
+/* line 135, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .range-enganche input[type="range"] {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -2009,6 +2323,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   height: 3px;
   width: 100%;
 }
+/* line 141, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .range-enganche input[type="range"]:-webkit-slider-thumb {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -2020,26 +2335,32 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   width: 13px;
   z-index: 3;
 }
+/* line 149, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .range-enganche input[type="range"]:-webkit-slider-thumb:hover {
   cursor: pointer;
 }
+/* line 151, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .range-enganche input[type="range"]:-webkit-slider-thumb:focus {
   outline-width: 0;
 }
+/* line 153, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .range-enganche output {
   color: #000000;
   font-family: "regular";
   font-size: 10px;
 }
 
+/* line 158, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .legales {
   margin: 2em 1em;
 }
+/* line 160, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .legales p {
   color: #818892;
   font-size: 0.78571rem;
 }
 
+/* line 165, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .form-prev {
   border-left: 1px solid transparent;
   border: 1px solid #474c51;
@@ -2047,6 +2368,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   left: 0px;
   position: relative;
 }
+/* line 171, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .form-prev:before {
   content: "";
   font-family: "FontAwesome";
@@ -2061,6 +2383,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   top: 50%;
 }
 
+/* line 179, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .form-next {
   border-right: 1px solid transparent;
   border: 1px solid #474c51;
@@ -2068,6 +2391,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   position: relative;
   right: 0px;
 }
+/* line 185, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .form-next:before {
   content: "";
   font-family: "FontAwesome";
@@ -2082,6 +2406,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   top: 50%;
 }
 
+/* line 193, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .action-button {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -2104,18 +2429,21 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   width: 52px;
   z-index: 98;
 }
+/* line 204, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .action-button:hover {
   background: #cc0033;
   border: 1px solid #cc0033;
   color: #fff;
 }
 
+/* line 210, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .progressbar {
   counter-reset: step;
   display: table;
   margin: 2em auto;
   overflow: hidden;
 }
+/* line 215, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .progressbar li {
   color: #585d65;
   float: left;
@@ -2128,6 +2456,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   position: relative;
   text-transform: uppercase;
 }
+/* line 226, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .progressbar li:before {
   position: absolute;
   -webkit-transform: translateY(-50%);
@@ -2145,6 +2474,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   width: 26px;
   z-index: 9;
 }
+/* line 237, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .progressbar li:after {
   position: absolute;
   -webkit-transform: translateY(-50%);
@@ -2160,14 +2490,17 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   left: 0px;
   width: 26px;
 }
+/* line 247, ../../../resources/assets/sass/includes/modulos/_financiamiento.sass */
 .progressbar li.active:after {
   background: #cc0033;
 }
 
+/* line 1, ../../../resources/assets/sass/includes/modulos/_distribuidores.sass */
 .distribuidoras {
   height: calc(100vh - 60px);
   width: 100vw;
 }
+/* line 4, ../../../resources/assets/sass/includes/modulos/_distribuidores.sass */
 .distribuidoras > div {
   -webkit-overflow-scrolling: touch;
   height: 100%;
@@ -2175,6 +2508,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   position: relative;
   width: 100%;
 }
+/* line 10, ../../../resources/assets/sass/includes/modulos/_distribuidores.sass */
 .distribuidoras .col1 {
   float: left;
   height: 100%;
@@ -2182,10 +2516,12 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   position: relative;
   width: 70%;
 }
+/* line 16, ../../../resources/assets/sass/includes/modulos/_distribuidores.sass */
 .distribuidoras .col1 .mapa {
   height: 100%;
   z-index: 1000;
 }
+/* line 19, ../../../resources/assets/sass/includes/modulos/_distribuidores.sass */
 .distribuidoras .col1 form {
   bottom: 0px;
   display: none;
@@ -2194,6 +2530,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   position: absolute;
   width: 100%;
 }
+/* line 27, ../../../resources/assets/sass/includes/modulos/_distribuidores.sass */
 .distribuidoras .col1 input.search_field {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -2209,25 +2546,31 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   text-indent: 20px;
   width: 80%;
 }
+/* line 39, ../../../resources/assets/sass/includes/modulos/_distribuidores.sass */
 .distribuidoras .col1 input.search_field:focus {
   outline-width: 0;
 }
+/* line 41, ../../../resources/assets/sass/includes/modulos/_distribuidores.sass */
 .distribuidoras .col1 input.search_field::-webkit-input-placeholder {
   color: #828891;
   font-size: 1rem;
 }
+/* line 44, ../../../resources/assets/sass/includes/modulos/_distribuidores.sass */
 .distribuidoras .col1 input.search_field:-moz-placeholder {
   color: #828891;
   font-size: 1rem;
 }
+/* line 47, ../../../resources/assets/sass/includes/modulos/_distribuidores.sass */
 .distribuidoras .col1 input.search_field::-moz-placeholder {
   color: #828891;
   font-size: 1rem;
 }
+/* line 50, ../../../resources/assets/sass/includes/modulos/_distribuidores.sass */
 .distribuidoras .col1 input.search_field:-ms-input-placeholder {
   color: #828891;
   font-size: 1rem;
 }
+/* line 53, ../../../resources/assets/sass/includes/modulos/_distribuidores.sass */
 .distribuidoras .col2 {
   background: #2f3438;
   float: right;
@@ -2235,9 +2578,11 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   overflow: auto;
   width: 30%;
 }
+/* line 59, ../../../resources/assets/sass/includes/modulos/_distribuidores.sass */
 .distribuidoras .col2 h5 {
   color: #fff;
 }
+/* line 61, ../../../resources/assets/sass/includes/modulos/_distribuidores.sass */
 .distribuidoras .col2 h5:before {
   content: "";
   font-family: "FontAwesome";
@@ -2246,13 +2591,16 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   font-size: 18px;
   margin: 5px 0px;
 }
+/* line 67, ../../../resources/assets/sass/includes/modulos/_distribuidores.sass */
 .distribuidoras .col2 p {
   color: #fff;
 }
+/* line 69, ../../../resources/assets/sass/includes/modulos/_distribuidores.sass */
 .distribuidoras .col2 ul {
   margin: 0px;
   padding: 0px;
 }
+/* line 72, ../../../resources/assets/sass/includes/modulos/_distribuidores.sass */
 .distribuidoras .col2 ul li {
   border-bottom: 1px solid #585d65;
   cursor: pointer;
@@ -2261,18 +2609,22 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   padding: 0px;
   word-wrap: break-word;
 }
+/* line 79, ../../../resources/assets/sass/includes/modulos/_distribuidores.sass */
 .distribuidoras .col2 ul li:last-child {
   border: none;
 }
+/* line 81, ../../../resources/assets/sass/includes/modulos/_distribuidores.sass */
 .distribuidoras .col2 ul li.activo, .distribuidoras .col2 ul li.result {
   opacity: 1;
 }
+/* line 83, ../../../resources/assets/sass/includes/modulos/_distribuidores.sass */
 .distribuidoras .col2 ul li img {
   display: block;
   height: auto;
   margin: 1em auto;
   width: 100%;
 }
+/* line 88, ../../../resources/assets/sass/includes/modulos/_distribuidores.sass */
 .distribuidoras .col2 ul li > span {
   background: #cc0033;
   display: block;
@@ -2280,6 +2632,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   margin: 1em 0px;
   width: 30px;
 }
+/* line 94, ../../../resources/assets/sass/includes/modulos/_distribuidores.sass */
 .distribuidoras .col2 ul li a {
   color: #cc0033;
   display: block;
@@ -2287,21 +2640,26 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   margin: 1em 0px;
   text-decoration: none;
 }
+/* line 100, ../../../resources/assets/sass/includes/modulos/_distribuidores.sass */
 .distribuidoras .col2 ul li.result {
   border: 0px;
 }
+/* line 103, ../../../resources/assets/sass/includes/modulos/_distribuidores.sass */
 .distribuidoras .col2 ul li.result p strong {
   color: #cc0033;
 }
+/* line 105, ../../../resources/assets/sass/includes/modulos/_distribuidores.sass */
 .distribuidoras .col2 ul li.result h5 {
   border-bottom: 1px solid #585d65;
   margin-bottom: 0.5em;
   padding-bottom: 0.5em;
 }
+/* line 109, ../../../resources/assets/sass/includes/modulos/_distribuidores.sass */
 .distribuidoras .col2 ul li.result h5:before {
   content: " ";
 }
 
+/* line 112, ../../../resources/assets/sass/includes/modulos/_distribuidores.sass */
 .gm-style-iw h2 {
   color: #cc0033;
   font-size: 1rem;
@@ -2309,30 +2667,29 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   margin-bottom: 10px;
   padding: 0;
 }
+/* line 118, ../../../resources/assets/sass/includes/modulos/_distribuidores.sass */
 .gm-style-iw p {
   font-size: 0.85714rem;
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  /* line 2, ../../../resources/assets/sass/includes/responsive/_desktop.sass */
   .container {
     width: 1024px !important;
   }
 
+  /* line 5, ../../../resources/assets/sass/includes/responsive/_desktop.sass */
   .contGale ul {
     height: 640px;
   }
-
-/*  .modelos > div > div{
-    display: inline-block;
-  }*/
-
-
 }
 @media only screen and (min-width: 960px) and (max-width: 1024px) {
+  /* line 10, ../../../resources/assets/sass/includes/responsive/_desktop.sass */
   .container {
     width: 960px !important;
   }
 
+  /* line 13, ../../../resources/assets/sass/includes/responsive/_desktop.sass */
   .menuHigh {
     -moz-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
@@ -2342,17 +2699,21 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     right: 0px;
   }
 
+  /* line 22, ../../../resources/assets/sass/includes/responsive/_desktop.sass */
   .contGale ul {
     height: 600px;
   }
 
+  /* line 26, ../../../resources/assets/sass/includes/responsive/_desktop.sass */
   .galeria > div:not(#galeria) {
     margin: auto;
     width: 960px;
   }
+  /* line 29, ../../../resources/assets/sass/includes/responsive/_desktop.sass */
   .galeria > div > span {
     display: none;
   }
+  /* line 31, ../../../resources/assets/sass/includes/responsive/_desktop.sass */
   .galeria .bx-controls-direction {
     position: absolute;
     -webkit-transform: translate(0%, 0%);
@@ -2367,18 +2728,21 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     overflow: hidden;
   }
 
+  /* line 36, ../../../resources/assets/sass/includes/responsive/_desktop.sass */
   #prev {
     left: 0px;
     position: absolute;
     top: 0px;
   }
 
+  /* line 40, ../../../resources/assets/sass/includes/responsive/_desktop.sass */
   #next {
     position: absolute;
     right: 0px;
     top: 0px;
   }
 
+  /* line 45, ../../../resources/assets/sass/includes/responsive/_desktop.sass */
   .controles {
     height: 54px;
     margin: 1em auto;
@@ -2386,6 +2750,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     position: relative;
   }
 
+  /* line 50, ../../../resources/assets/sass/includes/responsive/_desktop.sass */
   .action-button {
     position: absolute;
     -webkit-transform: translate(0%, 0%);
@@ -2397,12 +2762,14 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     left: inherit;
   }
 
+  /* line 52, ../../../resources/assets/sass/includes/responsive/_desktop.sass */
   .form-prev {
     left: 0px;
     position: absolute;
     top: 0px;
   }
 
+  /* line 56, ../../../resources/assets/sass/includes/responsive/_desktop.sass */
   .form-next {
     position: absolute;
     right: 0px;
@@ -2410,26 +2777,32 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* line 2, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   html {
     font-size: 12px;
   }
 
+  /* line 4, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   body {
     height: 100vh;
   }
 
+  /* line 7, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   .container {
     width: 100% !important;
   }
 
+  /* line 13, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   .menuHigh span.fa:hover {
     color: rgba(47, 52, 56, 0.2);
   }
 
+  /* line 17, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   .contGale ul {
     height: 640px;
   }
 
+  /* line 20, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   .galeria .bx-controls-direction {
     position: absolute;
     -webkit-transform: translate(0%, 0%);
@@ -2444,18 +2817,21 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     overflow: hidden;
   }
 
+  /* line 25, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   #prev {
     left: 0px;
     position: absolute;
     top: 0px;
   }
 
+  /* line 29, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   #next {
     position: absolute;
     right: 0px;
     top: 0px;
   }
 
+  /* line 34, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   .controles {
     height: 54px;
     margin: 1em auto;
@@ -2463,6 +2839,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     position: relative;
   }
 
+  /* line 39, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   .action-button {
     position: absolute;
     -webkit-transform: translate(0%, 0%);
@@ -2474,18 +2851,21 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     left: inherit;
   }
 
+  /* line 41, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   .form-prev {
     left: 0px;
     position: absolute;
     top: 0px;
   }
 
+  /* line 45, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   .form-next {
     position: absolute;
     right: 0px;
     top: 0px;
   }
 
+  /* line 51, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   .fancybox-lock body {
     height: 100vh !important;
     overflow: hidden !important;
@@ -2493,30 +2873,37 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  /* line 58, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   html {
     font-size: 11px;
   }
 
+  /* line 60, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   body {
     height: 100vh;
   }
 
+  /* line 63, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   .container {
     width: 100% !important;
   }
 
+  /* line 66, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   .cover {
     background: url(img/bgCoverM.jpg) no-repeat center;
     background-size: cover;
   }
+  /* line 70, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   .cover .container > div {
     left: 30%;
   }
 
+  /* line 76, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   .menuHigh span.fa:hover {
     color: rgba(47, 52, 56, 0.2);
   }
 
+  /* line 79, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   .menuHigh {
     -moz-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
@@ -2526,9 +2913,11 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     right: 0px;
   }
 
+  /* line 89, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   .galeria > div > span {
     display: none;
   }
+  /* line 91, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   .galeria .bx-controls-direction {
     position: absolute;
     -webkit-transform: translate(0%, 0%);
@@ -2543,18 +2932,21 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     overflow: hidden;
   }
 
+  /* line 96, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   #prev {
     left: 0px;
     position: absolute;
     top: 0px;
   }
 
+  /* line 100, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   #next {
     position: absolute;
     right: 0px;
     top: 0px;
   }
 
+  /* line 105, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   .controles {
     height: 54px;
     margin: 1em auto;
@@ -2562,6 +2954,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     position: relative;
   }
 
+  /* line 110, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   .action-button {
     position: absolute;
     -webkit-transform: translate(0%, 0%);
@@ -2573,29 +2966,34 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     left: inherit;
   }
 
+  /* line 112, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   .form-prev {
     left: 0px;
     position: absolute;
     top: 0px;
   }
 
+  /* line 116, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   .form-next {
     position: absolute;
     right: 0px;
     top: 0px;
   }
 
+  /* line 122, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   .distribuidoras .col1 {
     float: left;
     height: 50%;
     width: 100%;
   }
+  /* line 126, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   .distribuidoras .col2 {
     float: left;
     height: 50%;
     width: 100%;
   }
 
+  /* line 131, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   .fancybox-lock body {
     height: 100vh !important;
     overflow: hidden !important;
@@ -2603,26 +3001,32 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 138, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   html {
     font-size: 11px;
   }
 
+  /* line 140, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   body {
     height: 100vh;
   }
 
+  /* line 142, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   .container {
     width: 768px !important;
   }
 
+  /* line 145, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   .cover {
     background: url(img/bgCoverM.jpg) no-repeat center;
     background-size: cover;
   }
+  /* line 149, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   .cover .container > div {
     left: 30%;
   }
 
+  /* line 152, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   .menuHigh {
     -moz-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
@@ -2632,13 +3036,16 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     right: 0px;
   }
 
+  /* line 160, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   .contGale ul {
     height: 480px;
   }
 
+  /* line 165, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   .galeria > div > span {
     display: none;
   }
+  /* line 168, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   .galeria .bx-controls-direction {
     position: absolute;
     -webkit-transform: translate(0%, 0%);
@@ -2653,18 +3060,21 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     overflow: hidden;
   }
 
+  /* line 173, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   #prev {
     left: 0px;
     position: absolute;
     top: 0px;
   }
 
+  /* line 178, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   #next {
     position: absolute;
     right: 0px;
     top: 0px;
   }
 
+  /* line 183, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   .controles {
     height: 54px;
     margin: 1em auto;
@@ -2672,6 +3082,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     position: relative;
   }
 
+  /* line 189, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   .action-button {
     position: absolute;
     -webkit-transform: translate(0%, 0%);
@@ -2683,12 +3094,14 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     left: inherit;
   }
 
+  /* line 192, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   .form-prev {
     left: 0px;
     position: absolute;
     top: 0px;
   }
 
+  /* line 197, ../../../resources/assets/sass/includes/responsive/_tablet.sass */
   .form-next {
     position: absolute;
     right: 0px;
@@ -2696,23 +3109,28 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   }
 }
 @media only screen and (max-width: 767px) {
+  /* line 2, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   html {
     font-size: 12px;
     overflow: hidden;
   }
 
+  /* line 5, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   body {
     height: 100vh;
   }
 
+  /* line 8, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   h1 {
     font-size: 4rem !important;
   }
 
+  /* line 10, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   h2 {
     font-size: 2rem;
   }
 
+  /* line 13, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   header {
     box-shadow: 0px -1px 10px #999999;
     position: fixed;
@@ -2720,30 +3138,37 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     z-index: 99;
   }
 
+  /* line 20, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   footer a.scroll {
     display: none;
   }
 
+  /* line 22, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   section h1, section h2 {
     opacity: 1 !important;
   }
 
+  /* line 25, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .container {
     width: 100% !important;
   }
 
+  /* line 28, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .boton {
     margin: 2em auto !important;
   }
 
+  /* line 31, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .left {
     float: none;
   }
 
+  /* line 33, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .right {
     float: none;
   }
 
+  /* line 36, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .logo {
     position: absolute;
     -webkit-transform: translate(0%, 0%);
@@ -2757,14 +3182,17 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     margin: 1em auto;
   }
 
+  /* line 40, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .hamburguesa {
     display: block;
   }
 
+  /* line 43, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .menu1 {
     border-bottom: none;
     height: auto;
   }
+  /* line 46, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .menu1 nav {
     background: #2f3438;
     display: none;
@@ -2772,6 +3200,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     height: auto;
     width: 100%;
   }
+  /* line 52, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .menu1 nav ul {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2780,6 +3209,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     height: auto;
     padding: 0px 3em;
   }
+  /* line 57, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .menu1 nav ul li {
     background: #2f3438;
     border: none;
@@ -2788,15 +3218,18 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     height: auto;
     padding: 0px;
   }
+  /* line 64, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .menu1 nav ul li:hover {
     background: #2f3438;
   }
+  /* line 66, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .menu1 nav ul li a {
     color: #bdc3c7;
     display: block;
     margin: 0px;
     padding: 20px 0px;
   }
+  /* line 72, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .menu1 nav ul li:first-child:after {
     border-bottom: 1px solid #bdc3c7;
     content: "";
@@ -2805,6 +3238,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     width: 20px;
   }
 
+  /* line 79, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .redes {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2814,38 +3248,46 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     margin: auto;
     padding: 0px 1em;
   }
+  /* line 85, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .redes span {
     display: table;
     margin: 0px;
   }
+  /* line 88, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .redes span a {
     background: #2f3438;
     border: none;
   }
+  /* line 91, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .redes span a:hover {
     background: #2f3438;
   }
+  /* line 93, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .redes span a i {
     color: #bdc3c7;
     padding: 20px 0px;
   }
 
+  /* line 97, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .menu2 {
     display: none;
   }
 
+  /* line 100, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .btnprev {
     float: none;
     font-size: 12px;
     text-transform: uppercase;
     width: 100%;
   }
+  /* line 105, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .btnprev:after {
     content: "";
     font-family: "FontAwesome";
     padding-left: 10px;
   }
 
+  /* line 109, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .cover {
     background: url(img/bgCoverM.jpg) no-repeat center;
     background-size: auto 100%;
@@ -2853,23 +3295,29 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     margin-top: 54px;
     margin-bottom: 0px;
   }
+  /* line 115, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .cover .titulo {
     left: 50%;
     top: 180px;
     width: 100%;
   }
+  /* line 119, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .cover h1, .cover h2 {
     text-align: center;
   }
+  /* line 122, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .cover h2 sup {
     font-size: small;
   }
+  /* line 124, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .cover .btvideo {
     margin: auto;
   }
+  /* line 126, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .cover .mouse {
     display: none;
   }
+  /* line 128, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .cover .logoPickups {
     -webkit-transform: translate(-50%, 0%);
     -moz-transform: translate(-50%, 0%);
@@ -2880,10 +3328,12 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     top: inherit;
   }
 
+  /* line 137, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .colores .new-Menu360 .contColors > div {
     width: 20px;
   }
 
+  /* line 140, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .menuHigh {
     -moz-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
@@ -2893,6 +3343,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     right: 0px;
   }
 
+  /* line 148, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   #filtro {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -2913,16 +3364,20 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     text-transform: uppercase;
     width: 90%;
   }
+  /* line 163, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   #filtro:focus {
     outline: 0;
   }
 
+  /* line 166, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .highs {
     height: auto;
   }
+  /* line 169, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .highs li > div {
     width: 100%;
   }
+  /* line 171, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .highs li > div:first-child {
     position: absolute;
     -webkit-transform: translate(0%, 0%);
@@ -2934,28 +3389,35 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     left: inherit;
   }
 
+  /* line 176, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .galeria > div > span {
     display: none;
   }
 
+  /* line 180, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .contGale ul {
     height: 360px;
   }
+  /* line 182, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .contGale ul li {
     width: 50%;
   }
+  /* line 184, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .contGale ul li:first-child {
     height: 50%;
   }
+  /* line 187, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .contGale ul li:first-child a img {
     height: auto;
     width: 100%;
   }
+  /* line 191, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .contGale ul li a img {
     height: auto;
     width: 100%;
   }
 
+  /* line 194, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .anuncio {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2965,6 +3427,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     width: 100%;
   }
 
+  /* line 200, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .anuncio > span {
     position: absolute;
     -webkit-transform: translate(0%, 0%);
@@ -2978,6 +3441,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     width: 100%;
   }
 
+  /* line 206, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .galeria .bx-controls-direction {
     position: absolute;
     -webkit-transform: translate(0%, 0%);
@@ -2992,18 +3456,21 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     overflow: hidden;
   }
 
+  /* line 211, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   #prev {
     left: 0px;
     position: absolute;
     top: 0px;
   }
 
+  /* line 215, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   #next {
     position: absolute;
     right: 0px;
     top: 0px;
   }
 
+  /* line 222, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .highlights2 .container h2 {
     position: absolute;
     -webkit-transform: translate(0%, 0%);
@@ -3016,43 +3483,53 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     display: block !important;
     margin-bottom: 0px;
   }
+  /* line 227, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .highlights2 .container .parrafo p {
     font-size: 1.3rem;
   }
+  /* line 229, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .highlights2 .container #especial {
     background: url(img/bgPantalla0.jpg) no-repeat top center;
     min-height: 30rem;
   }
+  /* line 232, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .highlights2 .container #especial .menu {
     display: none;
   }
+  /* line 234, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .highlights2 .container .menufle {
     display: block;
   }
 
+  /* line 238, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .versiones .container {
     background: url(img/txtVersiones.jpg) no-repeat center 35px;
     background-size: 80% auto;
     padding: 2em 1em;
   }
 
+  /* line 242, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .modelos {
     margin: 2em 0px;
   }
 
+  /* line 248, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .modelos > div:last-child > div:last-child {
     border-bottom: 1px solid #d1d5dd;
   }
+  /* line 250, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .modelos > div > div {
     border-top: 1px solid #d1d5dd;
     display: block;
     width: 100%;
   }
+  /* line 254, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .modelos > div > div h3 {
     margin: 0px;
     padding: 0.5em 0px;
     position: relative;
   }
+  /* line 258, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .modelos > div > div h3:before {
     position: absolute;
     -webkit-transform: translate(-50%, -50%);
@@ -3068,22 +3545,27 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     left: inherit;
     right: 0px;
   }
+  /* line 266, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .modelos > div > div h3.activo:before {
     content: "";
   }
+  /* line 268, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .modelos > div > div > div {
     margin-bottom: 3em;
   }
 
+  /* line 271, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .manejo {
-    background: url(img/bgManejoM.png) no-repeat center bottom;
+    background: url(img/bgManejoM.jpg) no-repeat center bottom;
     background-size: cover;
     height: 460px;
   }
 
+  /* line 276, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .descanso {
     height: 600px;
   }
+  /* line 279, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .descanso .container > div {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -3091,127 +3573,157 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     padding: 1rem;
   }
 
+  /* line 283, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .menu3 {
     height: auto;
   }
+  /* line 285, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .menu3 span {
     float: none;
     margin: 1em auto;
   }
+  /* line 288, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .menu3 nav {
     float: none;
     margin: 2em auto;
   }
+  /* line 292, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .menu3 nav ul li {
     display: inline-block;
   }
+  /* line 294, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .menu3 nav ul li:after {
     content: "";
     padding: 0px;
   }
+  /* line 298, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .menu3 nav ul li:first-child:after {
     color: #585d65;
     content: " | ";
     padding: 0px 15px;
   }
+  /* line 302, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .menu3 nav ul li:last-child {
     display: table;
     margin-top: 1rem;
     margin: auto;
   }
+  /* line 306, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .menu3 nav ul li a {
     font-size: 12px;
   }
 
+  /* line 309, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   div#cover, div#especificaciones, div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#manejo, div#descanso {
     top: -114px;
   }
 
+  /* line 312, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .especificaciones {
     margin-top: 114px;
   }
+  /* line 315, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .especificaciones .cont-border > div {
     padding: 2em;
   }
+  /* line 317, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .especificaciones .cont-border > div:nth-child(even) {
     padding: 2em;
   }
 
+  /* line 320, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .eTecnicas, .extCarro, .intCarro {
     margin-bottom: 30px;
   }
 
+  /* line 327, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .eTecnicas .espMotor dl > dd > dl dd {
     margin-bottom: 5px;
   }
+  /* line 329, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .eTecnicas .espMotor .icon-motor {
     margin-right: 5px;
     margin-top: 0px;
     padding: 8px 0px;
     width: 25px;
   }
+  /* line 334, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .eTecnicas .espMotor .motor {
     float: right;
     width: 80%;
   }
+  /* line 337, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .eTecnicas .espMotor .motor p {
     font-size: 1.2rem;
     line-height: 1.2;
     margin-bottom: 0px;
   }
+  /* line 341, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .eTecnicas .espMotor p {
     font-size: 1.5em;
   }
+  /* line 343, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .eTecnicas .espMotor small {
     font-size: 8px;
     padding: 0px;
   }
+  /* line 347, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .eTecnicas .espFrenos {
     border-bottom: 1px solid #fff;
     border: none;
     padding: 2em;
     width: 100%;
   }
+  /* line 352, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .eTecnicas .espRines {
     padding: 2em;
     width: 100%;
   }
 
+  /* line 357, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .extCarro .extFaros, .extCarro .extVisibilidad {
     border-bottom: 1px solid #ddd;
     border-right: none;
     width: 100%;
   }
+  /* line 361, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .extCarro .extSeguridadExterior, .extCarro .extTeco {
     border-left: 0px;
     width: 100%;
   }
 
+  /* line 365, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .intCarro .extAcabadosInteriores, .intCarro .extSistemaAudio, .intCarro .extCinturonesSeguridad {
     border-bottom: 1px solid #ddd;
     border-right: none;
     width: 100%;
   }
+  /* line 369, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .intCarro .extAsientos, .intCarro .extConfort, .intCarro .extSeguridadInterior {
     border-left: 0px;
     width: 100%;
   }
+  /* line 373, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .intCarro .cont-border:last-of-type {
     margin-bottom: 0px;
   }
 
+  /* line 376, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .financiamiento {
     margin-top: 114px;
   }
 
+  /* line 382, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .financia > fieldset > dl > dd {
     display: block;
     width: 100%;
   }
+  /* line 385, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .financia > fieldset > dl > dd:first-child {
     margin-bottom: 1em;
   }
 
+  /* line 388, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .controles {
     height: 54px;
     margin: 1em auto;
@@ -3219,6 +3731,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     position: relative;
   }
 
+  /* line 393, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .action-button {
     position: absolute;
     -webkit-transform: translate(0%, 0%);
@@ -3230,76 +3743,92 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     left: inherit;
   }
 
+  /* line 395, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .form-prev {
     left: 0px;
     position: absolute;
     top: 0px;
   }
 
+  /* line 399, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .form-next {
     position: absolute;
     right: 0px;
     top: 0px;
   }
 
+  /* line 404, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .progressbar li {
     font-size: 8px;
     padding-left: 35px;
     padding: 1em 0px;
   }
 
+  /* line 409, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .distribuidoras {
     height: calc(100vh - 114px);
     margin-top: 114px;
   }
+  /* line 412, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .distribuidoras .col1 {
     height: auto;
     width: 100%;
   }
+  /* line 415, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .distribuidoras .col1 .mapa {
     display: none;
   }
+  /* line 417, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .distribuidoras .col1 form {
     display: block;
     height: auto;
     position: inherit;
   }
+  /* line 422, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .distribuidoras .col1 input.search_field {
     margin: 0px;
     width: 100%;
   }
+  /* line 425, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .distribuidoras .col2 {
     height: calc(100% - 50px);
     width: 100%;
   }
 
+  /* line 431, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .fancybox-wrap {
     left: 0px !important;
     position: fixed !important;
     width: 100% !important;
   }
 
+  /* line 435, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .fancybox-inner {
     height: auto !important;
     width: auto !important;
   }
 
+  /* line 439, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .fancybox-lock body {
     height: 100vh !important;
     overflow: hidden !important;
     width: 100vw !important;
   }
 
+  /* line 443, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .fancybox-title-float-wrap {
     position: relative;
   }
+  /* line 445, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .fancybox-title-float-wrap .child {
     width: 90%;
   }
 
+  /* line 448, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .indicaciones {
     height: auto;
   }
+  /* line 450, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .indicaciones p {
     position: absolute;
     -webkit-transform: translate(0%, 0%);
@@ -3312,6 +3841,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     font-size: 1.5rem;
     margin: 1em auto;
   }
+  /* line 454, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .indicaciones span {
     position: absolute;
     -webkit-transform: translate(0%, 0%);
@@ -3326,6 +3856,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
     right: inherit;
   }
 
+  /* line 459, ../../../resources/assets/sass/includes/responsive/_smartphone.sass */
   .seleccionar {
     height: calc(100vh - 156px);
   }
