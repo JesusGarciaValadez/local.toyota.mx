@@ -57,15 +57,15 @@ div
 	&:focus
 		outline-width: 0
 
-.fancybox-image, .fancybox-iframe 
+.fancybox-image, .fancybox-iframe
 	display: block
 	height: 100%
 	width: 100%
-.fancybox-image 
+.fancybox-image
 	max-height: 100%
 	max-width: 100%
 
-.fancybox-close 
+.fancybox-close
 	cursor: pointer
 	height: 36px
 	position: absolute
@@ -75,13 +75,13 @@ div
 	z-index: 8040
 	&:before
 		+center(vh)
-		background: url(img/@2x-icn-close.png) no-repeat
+		background: url( "img/@2x-icn-close.png" ) no-repeat
 		background-size: contain
 		content: " "
 		height: 15px
 		width: 23px
 
-.fancybox-prev 
+.fancybox-prev
 	border-left: 1px solid transparent
 	border: 1px solid #fff
 	color: #fff
@@ -95,7 +95,7 @@ div
 		position: absolute
 		text-indent: 0px
 		top: 50%
-.fancybox-next 
+.fancybox-next
 	border-right: 1px solid transparent
 	border: 1px solid #fff
 	color: #fff
@@ -109,7 +109,7 @@ div
 		position: absolute
 		text-indent: 0px
 		top: 50%
-.fancybox-nav 
+.fancybox-nav
 	+bx
 	+center(h)
 	+fx(all,0.5s)
@@ -119,22 +119,22 @@ div
 	text-indent: -9998px
 	width: 52px
 	z-index: 98
-	&:hover 
+	&:hover
 		background: #cc0033
 		border: 1px solid #cc0033
 		color: #fff
 
 //Overlay helper
 
-.fancybox-lock 
+.fancybox-lock
 	overflow: hidden !important
 	width: auto
-	.fancybox-overlay 
+	.fancybox-overlay
 		overflow-y: scroll
 		overflow: auto
-.fancybox-lock-test 
+.fancybox-lock-test
 	overflow-y: hidden !important
-.fancybox-overlay 
+.fancybox-overlay
 	background: #111112
 	display: none
 	height: 100vh!important
@@ -144,14 +144,14 @@ div
 	top: 0
 	width: 100vw!important
 	z-index: 8010
-.fancybox-overlay-fixed 
+.fancybox-overlay-fixed
 	bottom: 0
 	position: fixed
 	right: 0
 
 //Title helper
 
-.fancybox-title-float-wrap 
+.fancybox-title-float-wrap
 	background: rgba(0, 0, 0, 0.6)
 	bottom: 0px
 	box-sizing: border-box
@@ -159,7 +159,7 @@ div
 	position: absolute
 	width: 100%
 	z-index: 8050
-	.child 
+	.child
 		color: $Texts4
 		display: block
 		font-family: 'Open Sans', sans-serif

@@ -102,12 +102,47 @@
 			display: table
 			height: 32px
 			left: 2em
-			width: 110px
+	nav
+		display: table
+		float: right
+		height: 100%
+		overflow: hidden
+		ul
+			display: table-row
+			margin: 0px
+			padding: 0px
+			li
+				display: table-cell
+				margin: 0px
+				padding: 0px
+				vertical-align: middle
+				&:after
+					color: #92999e
+					content: " | "
+					padding: 0px 15px
+				&:last-child:after
+					content: ""
+				a
+					transition: all 0.5s
+					color: #92999e
+					font-size: 1rem
+					font-weight: 400
+					text-decoration: none
+					text-transform: uppercase
 
-.yaris .menu2
-	> a
-		&.scroll
-			background: url(img/yaris/logoSedan16.png) no-repeat
+.highlander .menu2 > a
+	&.scroll
+		background: url( "img/logo-highlander.png" ) no-repeat
+		width: 179px
+
+.sienna .menu2 > a
+	&.scroll
+		background: url( "img/logo-sienna.png" ) no-repeat
+		width: 143px
+
+.yaris .menu2 > a
+	&.scroll
+		background: url( "img/yaris/logo-yaris.png" ) no-repeat
 
 	nav
 		display: table

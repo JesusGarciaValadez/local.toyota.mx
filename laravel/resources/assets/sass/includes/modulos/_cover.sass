@@ -1,5 +1,5 @@
 .cover
-	background: url( img/bgCover.jpg ) no-repeat center bottom
+	background: url( "img/bgCover.jpg" ) no-repeat left bottom
 	background-size: cover
 	height: calc(100vh - 110px)
 	margin-bottom: 50px
@@ -57,8 +57,8 @@
 		bottom: 5em
 		color: $Feedback1C
 		display: table
-		font-family: 'Open Sans', sans-serif
-		font-size: 0.928571rem
+		font-family: "Open Sans", sans-serif
+		font-size: 0.92857rem
 		font-weight: 600
 		left: 50%
 		line-height: 1.313em
@@ -68,15 +68,12 @@
 		white-space: pre-line
 		&:before
 			content: " "
-			background-color: #fff
-			-webkit-mask:  url(img/mouse.svg) no-repeat center
-			mask: url(img/mouse.svg) no-repeat center
-			-webkit-mask-size: cover
-			mask-size: cover
+			border-radius: 8px 8px
+			border: 1px solid #fff
 			display: block
+			height: 30px
 			margin: auto
 			width: 16px
-			height: 30px
 		.mouse-dot
 			-moz-animation: ani-mouse 2.5s linear infinite
 			-moz-border-radius: 50%
@@ -94,7 +91,7 @@
 			width: 3px
 
 .highlander .cover
-	background-image: url( img/highlander/bgCover.jpg )
+	background-image: url( "img/highlander/bgCover.jpg" )
 
 .sienna .cover
-	background-image: url( img/sienna/bgCover.jpg )
+	background-image: url( "img/sienna/bgCover.jpg" )
