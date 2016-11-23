@@ -88,6 +88,11 @@
                     </span>
                   @endif
                 </div>
+                <div class="col-md-3">
+                  {!! Html::image( env( 'APP_URL' ) . $model->thumbnail, '', [
+                    'class' => 'col-md-12'
+                  ] ) !!}
+                </div>
               </div>{{-- thumbnail --}}
 
               <div class="form-group{{ $errors->has( 'price' ) ? ' has-error' : '' }}">
@@ -271,6 +276,11 @@
                     </span>
                   @endif
                 </div>
+                <div class="col-md-3">
+                  {!! Html::image( env( 'APP_URL' ) . $model->technicalSpecifications->description[ 'UrlMotor' ], '', [
+                    'class' => 'col-md-12'
+                  ] ) !!}
+                </div>
               </div>{{-- UrlMotor --}}
 
               <div class="form-group{{ $errors->has( 'UrlAuto' ) ? ' has-error' : '' }}">
@@ -288,6 +298,11 @@
                       <strong>{{ $errors->first( 'UrlAuto' ) }}</strong>
                     </span>
                   @endif
+                </div>
+                <div class="col-md-3">
+                  {!! Html::image( env( 'APP_URL' ) . $model->technicalSpecifications->description[ 'UrlAuto' ], '', [
+                    'class' => 'col-md-12'
+                  ] ) !!}
                 </div>
               </div>{{-- UrlAuto --}}
 
@@ -423,6 +438,11 @@
                       <strong>{{ $errors->first( 'UrlInterior' ) }}</strong>
                     </span>
                   @endif
+                </div>
+                <div class="col-md-3">
+                  {!! Html::image( env( 'APP_URL' ) . $model->externalSpecifications->description[ 'UrlInterior' ], '', [
+                    'class' => 'col-md-12'
+                  ] ) !!}
                 </div>
               </div>{{-- UrlInterior --}}
 
@@ -579,7 +599,7 @@
 
               <div class="form-group">
                 <div class="form-group text-center col-lg-6 col-md-6 col-sm-6">
-                  <a href="{{ env( 'APP_URL' ) }}/admin/{{ $id }}/car" title="Regresar" target="_self" class="btn btn-primary">
+                  <a href="{{ env( 'APP_URL' ) }}admin/{{ $id }}/car" title="Regresar" target="_self" class="btn btn-primary">
                     <i class="glyphicon glyphicon-home"></i> Regresar
                   </a>
                 </div>

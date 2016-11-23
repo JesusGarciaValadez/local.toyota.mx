@@ -67,7 +67,9 @@
               </p>
             {!! Form::close() !!}
             <pre>
+              @verbatim
               {!! $data | json !!}
+              @endverbatim
             </pre>
           </div>
         </div>
@@ -287,7 +289,8 @@
         }
       },
       isValid: function () {
-        var validation = this.validation
+        var validation = this.validation;
+
         return Object.keys( validation ).every( function ( key ) {
           console.log( key, validation[ key ] );
           return validation[ key ];

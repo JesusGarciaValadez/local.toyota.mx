@@ -147,7 +147,7 @@
   {!! Html::script( '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' ) !!}
   {!! Html::script( 'http://thecodeplayer.com/uploads/js/jquery.easing.min.js' ) !!}
   <script>window.jQuery || document.write( '<script src="assets/js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-  {!! Html::script( "//maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBPOumb2a6uPw5QMcSfgVTzQAubwYJLrDo&libraries=places", [
+  {!! Html::script( "//maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAOnKSKPF5vLkp4r4i8sssYNkZeXL32xIE&libraries=places", [
     "async" => "",
     "defer" => "defer"
   ] ) !!}
@@ -162,9 +162,9 @@
   {!! Html::script( 'assets/js/financiamiento-toyota.min.js') !!}
   @endif
   <!-- Add main JS -->
-  {!! Html::script( 'assets/js/main.min.js') !!}
-  {!! Html::script( 'assets/js/especificaciones.min.js') !!}
-  {!! Html::script( 'assets/js/mapa.min.js' ) !!}
+  {!! Html::script( 'assets/js/main.js') !!}
+  {!! Html::script( 'assets/js/especificaciones.js') !!}
+  {!! Html::script( 'assets/js/mapa.js' ) !!}
   {!! Html::script( '//cdnjs.cloudflare.com/ajax/libs/picturefill/2.0.0/picturefill.min.js', [ 'async' => "" ] ) !!}
 
   <!-- Add fancyBox main JS and CSS files -->

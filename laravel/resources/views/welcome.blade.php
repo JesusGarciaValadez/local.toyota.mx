@@ -19,7 +19,7 @@
     <div id="colores"></div>
     {!! $brand->title_h1 !!}
     <div id="container" class="container">
-      {!! Html::image( 'assets/images/reel-' . $brand->slug . '/blanco/1.jpg' ) !!}
+      {!! Html::image( 'assets/images/reel-' . $brand->slug . '/rojo/1.jpg' ) !!}
       <div class="new-Menu360">
         <p>Elige un color</p>
         <div class="contColors"></div>
