@@ -1,15 +1,15 @@
 <?php
 
-namespace Highlander\Http\Controllers\Admin;
+namespace Toyota\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 
-use Highlander\Http\Requests;
-use Highlander\Http\Controllers\Controller;
+use Toyota\Http\Requests;
+use Toyota\Http\Controllers\Controller;
 
-use Highlander\Http\Requests\ImageRequest;
+use Toyota\Http\Requests\ImageRequest;
 
-use Highlander\Events\UploadImage;
+use Toyota\Events\UploadImage;
 
 use Illuminate\Support\Facades\Storage;
 

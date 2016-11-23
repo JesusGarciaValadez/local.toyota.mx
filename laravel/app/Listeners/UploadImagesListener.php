@@ -1,8 +1,8 @@
 <?php
 
-namespace Highlander\Listeners;
+namespace Toyota\Listeners;
 
-use Highlander\Events\UploadImages;
+use Toyota\Events\UploadImages;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 

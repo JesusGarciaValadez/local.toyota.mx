@@ -1,6 +1,6 @@
 <?php
 
-namespace Highlander\Providers;
+namespace Toyota\Providers;
 
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
@@ -13,7 +13,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-        'Highlander\Model' => 'Highlander\Policies\ModelPolicy',
+        'Toyota\Model' => 'Toyota\Policies\ModelPolicy',
     ];
 
     /**

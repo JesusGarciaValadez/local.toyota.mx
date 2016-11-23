@@ -1,6 +1,6 @@
 <?php
 
-namespace Highlander;
+namespace Toyota;
 
 use Illuminate\Database\Eloquent\Model;
 

@@ -1,13 +1,13 @@
 <?php
 
-namespace Highlander\Http\Controllers\Admin;
+namespace Toyota\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 
-use Highlander\Http\Requests;
-use Highlander\Http\Controllers\Controller;
+use Toyota\Http\Requests;
+use Toyota\Http\Controllers\Controller;
 
-use Highlander\Http\Requests\DescriptionFooterRequest;
+use Toyota\Http\Requests\DescriptionFooterRequest;
 
 class DescriptionFooterController extends Controller
 {
@@ -19,7 +19,7 @@ class DescriptionFooterController extends Controller
    */
   public function edit( $id )
   {
-    $brands       = \Highlander\Brands::findOrFail( $id );
+    $brands       = \Toyota\Brands::findOrFail( $id );
     $method       = 'PUT';
     $typeOfField  = 'Footer';
     $fieldName    = 'Descripción';
@@ -34,14 +34,14 @@ class DescriptionFooterController extends Controller
   /**
    * Update the specified resource in storage.
    *
-   * @param  Highlander\Http\Requests\DescriptionFooterRequest  $request
+   * @param  Toyota\Http\Requests\DescriptionFooterRequest  $request
    * @param  int                                                $id
    * @return \Illuminate\Http\Response
    */
   public function update( DescriptionFooterRequest $request, $id )
   {
     $brand    = [ 'description_footer' => $request->description_footer ];
-    $result   = \Highlander\Brands::where( 'id', $id )
+    $result   = \Toyota\Brands::where( 'id', $id )
                                   ->update( $brand );
 
     /*

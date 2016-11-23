@@ -1,6 +1,6 @@
 <?php
 
-namespace Highlander\Exceptions;
+namespace Toyota\Exceptions;
 
 use Exception;
 use Illuminate\Auth\AuthenticationException;

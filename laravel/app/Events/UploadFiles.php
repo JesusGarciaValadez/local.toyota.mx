@@ -1,6 +1,6 @@
 <?php
 
-namespace Highlander\Events;
+namespace Toyota\Events;
 
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Queue\SerializesModels;

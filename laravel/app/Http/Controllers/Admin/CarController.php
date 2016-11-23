@@ -1,18 +1,18 @@
 <?php
 
-namespace Highlander\Http\Controllers\Admin;
+namespace Toyota\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 
-use Highlander\Http\Requests;
-use Highlander\Http\Controllers\Controller;
+use Toyota\Http\Requests;
+use Toyota\Http\Controllers\Controller;
 use Illuminate\Support\Str;
 
-use Highlander\Http\Requests\CarRequest;
-use Highlander\Http\Requests\CarWithoutFilesRequest;
+use Toyota\Http\Requests\CarRequest;
+use Toyota\Http\Requests\CarWithoutFilesRequest;
 
-use Highlander\Events\UploadImages;
-use Highlander\Events\UploadFiles;
+use Toyota\Events\UploadImages;
+use Toyota\Events\UploadFiles;
 
 class CarController extends Controller
 {
@@ -26,7 +26,7 @@ class CarController extends Controller
   {
     $title          = "Galería de modelos";
     $toReturn       = '/admin/' . $id;
-    $home           = \Highlander\Car::where( 'brands_id', $id )
+    $home           = \Toyota\Car::where( 'brands_id', $id )
                                      ->get( );
     $brand          = $home[0]->brands->name;
     $id             = $id;
@@ -44,7 +44,7 @@ class CarController extends Controller
    */
   public function create( $id )
   {
-    $brandName  = \Highlander\Car::where( 'brands_id', $id )
+    $brandName  = \Toyota\Car::where( 'brands_id', $id )
                                  ->get( )
                                  ->first()->brands->name;
 
@@ -54,7 +54,7 @@ class CarController extends Controller
   /**
    * Store a newly created resource in storage.
    *
-   * @param  Highlander\Http\Requests\CarRequest  $request
+   * @param  Toyota\Http\Requests\CarRequest  $request
    * @param  int                                  $id
    * @return \Illuminate\Http\Response
    */
@@ -121,13 +121,13 @@ class CarController extends Controller
     ];
 
 
-    $saveTechnicalSpecificationsResult  = new \Highlander\TechnicalSpecification( $technicalSpecifications );
+    $saveTechnicalSpecificationsResult  = new \Toyota\TechnicalSpecification( $technicalSpecifications );
     $saveTechnicalSpecificationsResult->save( );
 
-    $saveExternalSpecificationsResult   = new \Highlander\ExternalSpecification( $externalSpecifications );
+    $saveExternalSpecificationsResult   = new \Toyota\ExternalSpecification( $externalSpecifications );
     $saveExternalSpecificationsResult->save( );
 
-    $saveInternalSpecificationsResult   = new \Highlander\InternalSpecification( $internalSpecifications );
+    $saveInternalSpecificationsResult   = new \Toyota\InternalSpecification( $internalSpecifications );
     $saveInternalSpecificationsResult->save( );
 
     $carImages      = [ 'thumbnail' ];
@@ -147,7 +147,7 @@ class CarController extends Controller
       'slug'                        => Str::slug( $request->name )
     ];
 
-    $saveCarResult            = new \Highlander\Car( $car );
+    $saveCarResult            = new \Toyota\Car( $car );
     $saveCarResult->save( );
 
     /*
@@ -185,7 +185,7 @@ class CarController extends Controller
    */
   public function edit( $id, $element_id )
   {
-    $model      = \Highlander\Car::findOrFail( $element_id );
+    $model      = \Toyota\Car::findOrFail( $element_id );
     $brandName  = $model->title;
 
     return view( 'admin.editCar', compact( 'id', 'element_id', 'brandName', 'model' ) );
@@ -250,13 +250,13 @@ class CarController extends Controller
       )
     ];
 
-    $saveTechnicalSpecificationsResult  = \Highlander\TechnicalSpecification::where( 'id', $element_id )
+    $saveTechnicalSpecificationsResult  = \Toyota\TechnicalSpecification::where( 'id', $element_id )
                                                                             ->update( $technicalSpecifications );
 
-    $saveExternalSpecificationsResult   = \Highlander\ExternalSpecification::where( 'id', $element_id )
+    $saveExternalSpecificationsResult   = \Toyota\ExternalSpecification::where( 'id', $element_id )
                                                                            ->update( $externalSpecifications );
 
-    $saveInternalSpecificationsResult   = \Highlander\InternalSpecification::where( 'id', $element_id )
+    $saveInternalSpecificationsResult   = \Toyota\InternalSpecification::where( 'id', $element_id )
                                                                            ->update( $internalSpecifications );
 
     $carImagesPath  = 'assets/images/versiones/';
@@ -274,7 +274,7 @@ class CarController extends Controller
       'slug'                        => Str::slug( $request->name )
     ];
 
-    $saveCarResult                      = \Highlander\Car::where( 'id', $element_id )
+    $saveCarResult                      = \Toyota\Car::where( 'id', $element_id )
                                                          ->update( $car );
 
     /*
@@ -300,7 +300,7 @@ class CarController extends Controller
    */
   public function destroy( $id, $element_id )
   {
-    $car = \Highlander\Car::destroy( $element_id );
+    $car = \Toyota\Car::destroy( $element_id );
 
     /*
      * Create a response for passing it into the view.

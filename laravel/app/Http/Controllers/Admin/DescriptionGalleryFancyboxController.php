@@ -1,13 +1,13 @@
 <?php
 
-namespace Highlander\Http\Controllers\Admin;
+namespace Toyota\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 
-use Highlander\Http\Requests;
-use Highlander\Http\Controllers\Controller;
+use Toyota\Http\Requests;
+use Toyota\Http\Controllers\Controller;
 
-use Highlander\Http\Requests\DescriptionGalleryFancyboxRequest;
+use Toyota\Http\Requests\DescriptionGalleryFancyboxRequest;
 
 class DescriptionGalleryFancyboxController extends Controller
 {
@@ -19,7 +19,7 @@ class DescriptionGalleryFancyboxController extends Controller
    */
   public function edit( $id )
   {
-    $brands       = \Highlander\Brands::findOrFail( $id );
+    $brands       = \Toyota\Brands::findOrFail( $id );
     $method       = 'PUT';
     $typeOfField  = 'galerías de fotos';
     $fieldName    = 'Descripción';
@@ -34,14 +34,14 @@ class DescriptionGalleryFancyboxController extends Controller
   /**
    * Update the specified resource in storage.
    *
-   * @param  Highlander\Http\Requests\DescriptionGalleryFancyboxRequest $request
+   * @param  Toyota\Http\Requests\DescriptionGalleryFancyboxRequest $request
    * @param  int                                                        $id
    * @return \Illuminate\Http\Response
    */
   public function update( DescriptionGalleryFancyboxRequest $request, $id )
   {
     $brand    = [ 'description_gallery_fancybox' => $request->description_gallery_fancybox ];
-    $result   = \Highlander\Brands::where( 'id', $id )
+    $result   = \Toyota\Brands::where( 'id', $id )
                                   ->update( $brand );
 
     /*

@@ -1,13 +1,13 @@
 <?php
 
-namespace Highlander\Http\Controllers\Admin;
+namespace Toyota\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 
-use Highlander\Http\Requests;
-use Highlander\Http\Controllers\Controller;
+use Toyota\Http\Requests;
+use Toyota\Http\Controllers\Controller;
 
-use Highlander\Http\Requests\BrandRequest;
+use Toyota\Http\Requests\BrandRequest;
 
 class BrandController extends Controller
 {
@@ -19,7 +19,7 @@ class BrandController extends Controller
    */
   public function edit( $id )
   {
-    $brands       = \Highlander\Brands::findOrFail( $id );
+    $brands       = \Toyota\Brands::findOrFail( $id );
     $method       = 'PUT';
     $typeOfField  = 'Marca';
     $fieldName    = 'Marca';
@@ -34,14 +34,14 @@ class BrandController extends Controller
   /**
    * Update the specified resource in storage.
    *
-   * @param  Highlander\Http\Requests\BrandRequest  $request
+   * @param  Toyota\Http\Requests\BrandRequest  $request
    * @param  int                                    $id
    * @return \Illuminate\Http\Response
    */
   public function update( BrandRequest $request, $id )
   {
     $brand    = [ 'name' => $request->name ];
-    $result   = \Highlander\Brands::where( 'id', $id )
+    $result   = \Toyota\Brands::where( 'id', $id )
                                   ->update( $brand );
 
     /*

@@ -1,16 +1,16 @@
 <?php
 
-namespace Highlander\Http\Controllers\Admin;
+namespace Toyota\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 
-use Highlander\Http\Requests;
-use Highlander\Http\Controllers\Controller;
+use Toyota\Http\Requests;
+use Toyota\Http\Controllers\Controller;
 
-use Highlander\Http\Requests\GalleryFancyboxImageRequest;
-use Highlander\Http\Requests\GalleryFancyboxRequest;
+use Toyota\Http\Requests\GalleryFancyboxImageRequest;
+use Toyota\Http\Requests\GalleryFancyboxRequest;
 
-use Highlander\Events\UploadImages;
+use Toyota\Events\UploadImages;
 
 class GalleryFancyboxesController extends Controller
 {
@@ -23,10 +23,10 @@ class GalleryFancyboxesController extends Controller
   public function index( $id )
   {
     $title          = 'Galería de fotos';
-    $brand          = \Highlander\Brands::findOrFail( $id )->title;
+    $brand          = \Toyota\Brands::findOrFail( $id )->title;
     $id             = $id;
     $toReturn       = '/admin/' . $id;
-    $home           = \Highlander\GalleryFancyboxes::findOrFail( $id );
+    $home           = \Toyota\GalleryFancyboxes::findOrFail( $id );
     $elements       = $home;
     $controllerName = 'GalleryFancyboxes';
 
@@ -48,7 +48,7 @@ class GalleryFancyboxesController extends Controller
   /**
    * Store a newly created resource in storage.
    *
-   * @param  Highlander\Http\Requests\GalleryFancyboxImageRequest $request
+   * @param  Toyota\Http\Requests\GalleryFancyboxImageRequest $request
    * @param  int                                                  $id
    * @return \Illuminate\Http\Response
    */
@@ -72,7 +72,7 @@ class GalleryFancyboxesController extends Controller
     $resultBigImages  = event( new UploadImages( $bigImages, $bigImagesPath ) );
     event( new UploadImages( $thumbs, $thumbsImagesPath ) );
 
-    $gallery = new \Highlander\GalleryFancyboxes( $gallery );
+    $gallery = new \Toyota\GalleryFancyboxes( $gallery );
     $gallery->save();
 
     /*
@@ -110,7 +110,7 @@ class GalleryFancyboxesController extends Controller
   public function edit( $id, $gallery_fancyboxes )
   {
     $brandName  = 'Highlander 2016';
-    $gallery    = \Highlander\GalleryFancyboxes::findOrFail( $gallery_fancyboxes );
+    $gallery    = \Toyota\GalleryFancyboxes::findOrFail( $gallery_fancyboxes );
 
     return view( 'admin.editGallery', compact( 'brandName', 'gallery', 'id', 'gallery_fancyboxes' ) );
   }
@@ -127,7 +127,7 @@ class GalleryFancyboxesController extends Controller
   {
     $gallery  = $request->only( 'title', 'image_big', 'image_small_1', 'image_small_2', 'image_small_3', 'thumb_big', 'thumb_small_1', 'thumb_small_2', 'thumb_small_3', 'title_big', 'title_small_1', 'title_small_2', 'title_small_3' );
 
-    $result   = \Highlander\GalleryFancyboxes::where( 'id', $gallery_fancyboxes )
+    $result   = \Toyota\GalleryFancyboxes::where( 'id', $gallery_fancyboxes )
                                              ->update( $gallery );
 
     /*
@@ -153,7 +153,7 @@ class GalleryFancyboxesController extends Controller
    */
   public function destroy( $id, $element_id )
   {
-    $result   = \Highlander\GalleryFancyboxes::destroy( $element_id );
+    $result   = \Toyota\GalleryFancyboxes::destroy( $element_id );
 
     /*
      * Create a response for passing it into the view.

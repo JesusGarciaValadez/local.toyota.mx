@@ -67,7 +67,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => Highlander\User::class,
+            'model' => Toyota\User::class,
         ],
 
         // 'users' => [

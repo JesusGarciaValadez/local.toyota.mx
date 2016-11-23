@@ -1,6 +1,6 @@
 <?php
 
-namespace Highlander\Jobs;
+namespace Toyota\Jobs;
 
 use Illuminate\Bus\Queueable;
 

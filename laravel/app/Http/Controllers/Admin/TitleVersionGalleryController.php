@@ -1,13 +1,13 @@
 <?php
 
-namespace Highlander\Http\Controllers\Admin;
+namespace Toyota\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 
-use Highlander\Http\Requests;
-use Highlander\Http\Controllers\Controller;
+use Toyota\Http\Requests;
+use Toyota\Http\Controllers\Controller;
 
-use Highlander\Http\Requests\TitleVersionGalleryRequest;
+use Toyota\Http\Requests\TitleVersionGalleryRequest;
 
 class TitleVersionGalleryController extends Controller
 {
@@ -19,7 +19,7 @@ class TitleVersionGalleryController extends Controller
    */
   public function edit( $id )
   {
-    $brands       = \Highlander\Brands::findOrFail( $id );
+    $brands       = \Toyota\Brands::findOrFail( $id );
     $method       = 'PUT';
     $typeOfField  = 'modelos';
     $fieldName    = 'Título de galería de modelos';
@@ -41,7 +41,7 @@ class TitleVersionGalleryController extends Controller
   public function update( TitleVersionGalleryRequest $request, $id )
   {
     $brand    = [ 'title_versions_gallery' => $request->title_versions_gallery ];
-    $result   = \Highlander\Brands::where( 'id', $id )
+    $result   = \Toyota\Brands::where( 'id', $id )
                                   ->update( $brand );
 
     /*

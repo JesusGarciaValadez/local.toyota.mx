@@ -170,11 +170,11 @@ return [
         /*
          * Application Service Providers...
          */
-        Highlander\Providers\AppServiceProvider::class,
-        // Highlander\Providers\BroadcastServiceProvider::class,
-        Highlander\Providers\AuthServiceProvider::class,
-        Highlander\Providers\EventServiceProvider::class,
-        Highlander\Providers\RouteServiceProvider::class,
+        Toyota\Providers\AppServiceProvider::class,
+        // Toyota\Providers\BroadcastServiceProvider::class,
+        Toyota\Providers\AuthServiceProvider::class,
+        Toyota\Providers\EventServiceProvider::class,
+        Toyota\Providers\RouteServiceProvider::class,
 
         /*
          * Custom Service Providers

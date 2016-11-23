@@ -1,13 +1,13 @@
 <?php
 
-namespace Highlander\Http\Controllers\Admin;
+namespace Toyota\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 
-use Highlander\Http\Requests;
-use Highlander\Http\Controllers\Controller;
+use Toyota\Http\Requests;
+use Toyota\Http\Controllers\Controller;
 
-use Highlander\Http\Requests\SloganRequest;
+use Toyota\Http\Requests\SloganRequest;
 
 class SloganController extends Controller
 {
@@ -19,7 +19,7 @@ class SloganController extends Controller
    */
   public function edit( $id )
   {
-    $brands       = \Highlander\Brands::findOrFail( $id );
+    $brands       = \Toyota\Brands::findOrFail( $id );
     $method       = 'PUT';
     $typeOfField  = 'Slogan';
     $fieldName    = 'Slogan';
@@ -41,7 +41,7 @@ class SloganController extends Controller
   public function update( SloganRequest $request, $id )
   {
     $brand    = [ 'slogan' => $request->slogan ];
-    $result   = \Highlander\Brands::where( 'id', $id )
+    $result   = \Toyota\Brands::where( 'id', $id )
                                   ->update( $brand );
 
     /*

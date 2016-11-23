@@ -1,8 +1,8 @@
 <?php
 
-namespace Highlander\Http\Controllers;
+namespace Toyota\Http\Controllers;
 
-use Highlander\Http\Requests;
+use Toyota\Http\Requests;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -14,7 +14,7 @@ class HomeController extends Controller
    */
   public function index( $slug )
   {
-    $brand      = \Highlander\Brands::where( 'slug', $slug )
+    $brand      = \Toyota\Brands::where( 'slug', $slug )
                                     ->get( )
                                     ->first( );
 
@@ -23,11 +23,11 @@ class HomeController extends Controller
       abort( 404, 'No encontramos el modelo que buscas.' );
     }
 
-    $slides     = \Highlander\SliderFeature::where( 'brands_id', $brand->id )
+    $slides     = \Toyota\SliderFeature::where( 'brands_id', $brand->id )
                                            ->get( );
-    $galleries  = \Highlander\GalleryFancyboxes::where( 'brands_id', $brand->id )
+    $galleries  = \Toyota\GalleryFancyboxes::where( 'brands_id', $brand->id )
                                                ->get( );
-    $car        = \Highlander\Car::where( 'brands_id', $brand->id )
+    $car        = \Toyota\Car::where( 'brands_id', $brand->id )
                                  ->get( );
 
     return view( 'welcome' )->withSlug( $slug )
@@ -45,8 +45,8 @@ class HomeController extends Controller
    */
   public function show( $slug, $model )
   {
-    $cars = \Highlander\Car::all( );
-    $car  = \Highlander\Car::where( 'slug', $model )
+    $cars = \Toyota\Car::all( );
+    $car  = \Toyota\Car::where( 'slug', $model )
                            ->firstOrFail();
 
     return view( 'specifications' )->withCar( $car )

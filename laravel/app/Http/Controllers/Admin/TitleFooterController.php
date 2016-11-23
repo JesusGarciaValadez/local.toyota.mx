@@ -1,13 +1,13 @@
 <?php
 
-namespace Highlander\Http\Controllers\Admin;
+namespace Toyota\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 
-use Highlander\Http\Requests;
-use Highlander\Http\Controllers\Controller;
+use Toyota\Http\Requests;
+use Toyota\Http\Controllers\Controller;
 
-use Highlander\Http\Requests\TitleFooterRequest;
+use Toyota\Http\Requests\TitleFooterRequest;
 
 class TitleFooterController extends Controller
 {
@@ -19,7 +19,7 @@ class TitleFooterController extends Controller
    */
   public function edit( $id )
   {
-    $brands       = \Highlander\Brands::findOrFail( $id );
+    $brands       = \Toyota\Brands::findOrFail( $id );
     $method       = 'PUT';
     $typeOfField  = 'Footer';
     $fieldName    = 'Título';
@@ -41,7 +41,7 @@ class TitleFooterController extends Controller
   public function update( TitleFooterRequest $request, $id )
   {
     $brand    = [ 'title_footer' => $request->title_footer ];
-    $result   = \Highlander\Brands::where( 'id', $id )
+    $result   = \Toyota\Brands::where( 'id', $id )
                                   ->update( $brand );
 
     /*

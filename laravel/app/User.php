@@ -1,6 +1,6 @@
 <?php
 
-namespace Highlander;
+namespace Toyota;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;

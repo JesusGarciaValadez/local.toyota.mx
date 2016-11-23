@@ -1,6 +1,6 @@
 <?php
 
-namespace Highlander\Http\Middleware;
+namespace Toyota\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;

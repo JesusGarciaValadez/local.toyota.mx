@@ -1,13 +1,13 @@
 <?php
 
-namespace Highlander\Http\Controllers\Admin;
+namespace Toyota\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 
-use Highlander\Http\Requests;
-use Highlander\Http\Controllers\Controller;
+use Toyota\Http\Requests;
+use Toyota\Http\Controllers\Controller;
 
-use Highlander\Http\Requests\TitleSliderFeaturesRequest;
+use Toyota\Http\Requests\TitleSliderFeaturesRequest;
 
 class TitleSliderFeaturesController extends Controller
 {
@@ -19,9 +19,9 @@ class TitleSliderFeaturesController extends Controller
   public function index( $id )
   {
     $title          = "Slider de fotos";
-    $brand          = \Highlander\Brands::findOrFail( $id )->title;
+    $brand          = \Toyota\Brands::findOrFail( $id )->title;
     $toReturn       = '/admin/' . $id;
-    $home           = \Highlander\SliderFeature::where( 'brands_id', $id )
+    $home           = \Toyota\SliderFeature::where( 'brands_id', $id )
                                                ->get( );
     $id             = $id;
     $elements       = $home;
@@ -37,7 +37,7 @@ class TitleSliderFeaturesController extends Controller
    */
   public function create( $id )
   {
-    $brands       = \Highlander\SliderFeature::findOrFail( $id );
+    $brands       = \Toyota\SliderFeature::findOrFail( $id );
     $typeOfField  = 'Slide';
     $fieldName    = 'Slide';
     $url          = 'admin/' . $id . '/title-slider-features';
@@ -62,7 +62,7 @@ class TitleSliderFeaturesController extends Controller
       'title'       => $request->title,
       'content'     => $request->content
     ];
-    $result   = new \Highlander\SliderFeature( $newSlide );
+    $result   = new \Toyota\SliderFeature( $newSlide );
     $result->save();
 
     /*
@@ -98,7 +98,7 @@ class TitleSliderFeaturesController extends Controller
    */
   public function edit( $id, $slider_features )
   {
-    $brands       = \Highlander\SliderFeature::findOrFail( $slider_features );
+    $brands       = \Toyota\SliderFeature::findOrFail( $slider_features );
     $typeOfField  = 'galería de características';
     $fieldName    = 'Título';
     $url          = 'admin/' . $id . '/title-slider-features/' . $id;
@@ -119,7 +119,7 @@ class TitleSliderFeaturesController extends Controller
   public function update( TitleSliderFeaturesRequest $request, $id )
   {
     $brand    = [ 'content' => $request->titlesSliderFeatures ];
-    $result   = \Highlander\SliderFeature::where( 'id', $id )
+    $result   = \Toyota\SliderFeature::where( 'id', $id )
                                          ->update( $brand );
 
     /*
@@ -144,7 +144,7 @@ class TitleSliderFeaturesController extends Controller
    */
   public function destroy( $id, $element_id )
   {
-    $result   = \Highlander\SliderFeature::destroy( $element_id );
+    $result   = \Toyota\SliderFeature::destroy( $element_id );
 
     /*
      * Create a response for passing it into the view.

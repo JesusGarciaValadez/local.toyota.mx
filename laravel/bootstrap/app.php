@@ -28,17 +28,17 @@ $app = new Illuminate\Foundation\Application(
 
 $app->singleton(
     Illuminate\Contracts\Http\Kernel::class,
-    Highlander\Http\Kernel::class
+    Toyota\Http\Kernel::class
 );
 
 $app->singleton(
     Illuminate\Contracts\Console\Kernel::class,
-    Highlander\Console\Kernel::class
+    Toyota\Console\Kernel::class
 );
 
 $app->singleton(
     Illuminate\Contracts\Debug\ExceptionHandler::class,
-    Highlander\Exceptions\Handler::class
+    Toyota\Exceptions\Handler::class
 );
 
 /*

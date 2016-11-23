@@ -1,11 +1,11 @@
 <?php
 
-namespace Highlander\Http\Controllers\Admin;
+namespace Toyota\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 
-use Highlander\Http\Requests;
-use Highlander\Http\Controllers\Controller;
+use Toyota\Http\Requests;
+use Toyota\Http\Controllers\Controller;
 
 class AdminController extends Controller
 {
@@ -22,7 +22,7 @@ class AdminController extends Controller
    */
   public function index( )
   {
-    $brands = \Highlander\Brands::all( );
+    $brands = \Toyota\Brands::all( );
 
     return view( 'admin.index' )->withBrands( $brands );
   }
@@ -35,7 +35,7 @@ class AdminController extends Controller
    */
   public function show( $id )
   {
-    $home = \Highlander\Brands::findOrFail( $id );
+    $home = \Toyota\Brands::findOrFail( $id );
 
     return view( 'admin.show' )->withHome( $home );
   }
@@ -47,7 +47,7 @@ class AdminController extends Controller
    */
   public function destroy( $id )
   {
-    \Highlander\Brands::destroy( $id );
+    \Toyota\Brands::destroy( $id );
 
     return \Redirect::back( );
   }

@@ -30,7 +30,7 @@ return [
     ],
 
     'stripe' => [
-        'model' => Highlander\User::class,
+        'model' => Toyota\User::class,
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],

@@ -1,6 +1,6 @@
 <?php
 
-namespace Highlander\Providers;
+namespace Toyota\Providers;
 
 use Illuminate\Support\Facades\Event;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -13,14 +13,14 @@ class EventServiceProvider extends ServiceProvider
    * @var array
    */
   protected $listen = [
-    'Highlander\Events\UploadImage' => [
-      'Highlander\Listeners\UploadImageListener',
+    'Toyota\Events\UploadImage' => [
+      'Toyota\Listeners\UploadImageListener',
     ],
-    'Highlander\Events\UploadImages' => [
-      'Highlander\Listeners\UploadImagesListener',
+    'Toyota\Events\UploadImages' => [
+      'Toyota\Listeners\UploadImagesListener',
     ],
-    'Highlander\Events\UploadFiles' => [
-      'Highlander\Listeners\UploadFilesListener',
+    'Toyota\Events\UploadFiles' => [
+      'Toyota\Listeners\UploadFilesListener',
     ]
   ];
 

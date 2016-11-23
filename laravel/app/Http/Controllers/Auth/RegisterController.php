@@ -1,10 +1,10 @@
 <?php
 
-namespace Highlander\Http\Controllers\Auth;
+namespace Toyota\Http\Controllers\Auth;
 
-use Highlander\User;
+use Toyota\User;
 use Validator;
-use Highlander\Http\Controllers\Controller;
+use Toyota\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
 class RegisterController extends Controller

@@ -1,14 +1,14 @@
 <?php
 
-namespace Highlander\Http\Controllers\Admin;
+namespace Toyota\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 
-use Highlander\Http\Requests;
-use Highlander\Http\Controllers\Controller;
+use Toyota\Http\Requests;
+use Toyota\Http\Controllers\Controller;
 
-use Highlander\Http\Requests\TitleSliderFeaturesRequest;
-use Highlander\Http\Requests\SliderFeaturesRequest;
+use Toyota\Http\Requests\TitleSliderFeaturesRequest;
+use Toyota\Http\Requests\SliderFeaturesRequest;
 
 class SliderFeaturesController extends Controller
 {
@@ -20,9 +20,9 @@ class SliderFeaturesController extends Controller
   public function index( $id )
   {
     $title          = "Slider de fotos";
-    $brand          = \Highlander\Brands::findOrFail( $id )->title;
+    $brand          = \Toyota\Brands::findOrFail( $id )->title;
     $toReturn       = '/admin/' . $id;
-    $home           = \Highlander\SliderFeature::where( 'brands_id', $id )
+    $home           = \Toyota\SliderFeature::where( 'brands_id', $id )
                                                ->get( );
     $id             = $id;
     $elements       = $home;
@@ -39,7 +39,7 @@ class SliderFeaturesController extends Controller
    */
   public function create( $id )
   {
-    $brands       = \Highlander\SliderFeature::findOrFail( $id );
+    $brands       = \Toyota\SliderFeature::findOrFail( $id );
     $typeOfField  = 'Slide';
     $fieldName    = 'Slide';
     $url          = 'admin/' . $id . '/slider-features';
@@ -54,7 +54,7 @@ class SliderFeaturesController extends Controller
   /**
    * Store a newly created resource in storage.
    *
-   * @param  Highlander\Http\Requests\SliderFeaturesRequest  $request
+   * @param  Toyota\Http\Requests\SliderFeaturesRequest  $request
    * @param  int  $id ID of the SliderFeature to edit
    * @return \Illuminate\Http\Response
    */
@@ -65,7 +65,7 @@ class SliderFeaturesController extends Controller
       'title'       => $request->title,
       'content'     => $request->content
     ];
-    $result   = new \Highlander\SliderFeature( $newSlide );
+    $result   = new \Toyota\SliderFeature( $newSlide );
     $result->save();
 
     /*
@@ -102,7 +102,7 @@ class SliderFeaturesController extends Controller
    */
   public function edit( $id, $slider_features )
   {
-    $brands       = \Highlander\SliderFeature::findOrFail( $slider_features );
+    $brands       = \Toyota\SliderFeature::findOrFail( $slider_features );
     $typeOfField  = 'galería de características';
     $fieldName    = 'Galería de características';
     $url          = 'admin/' . $id . '/slider-features/' . $id;
@@ -116,14 +116,14 @@ class SliderFeaturesController extends Controller
   /**
    * Update the specified resource in storage.
    *
-   * @param  Highlander\Http\Requests\SliderFeaturesRequest $request Request with the data from the form
+   * @param  Toyota\Http\Requests\SliderFeaturesRequest $request Request with the data from the form
    * @param  int  $id ID of the car
    * @return \Illuminate\Http\Response
    */
   public function update( SliderFeaturesRequest $request, $id )
   {
     $brand    = [ 'content' => $request->content ];
-    $result   = \Highlander\SliderFeature::where( 'id', $id )
+    $result   = \Toyota\SliderFeature::where( 'id', $id )
                                          ->update( $brand );
 
     /*
@@ -149,7 +149,7 @@ class SliderFeaturesController extends Controller
    */
   public function destroy( $id, $element_id )
   {
-    $result   = \Highlander\SliderFeature::destroy( $element_id );
+    $result   = \Toyota\SliderFeature::destroy( $element_id );
 
     /*
      * Create a response for passing it into the view.

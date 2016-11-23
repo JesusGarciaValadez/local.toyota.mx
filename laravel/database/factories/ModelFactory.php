@@ -11,7 +11,7 @@
 |
 */
 
-$factory->define(Highlander\User::class, function (Faker\Generator $faker) {
+$factory->define(Toyota\User::class, function (Faker\Generator $faker) {
     return [
         'name' => $faker->name,
         'email' => $faker->safeEmail,

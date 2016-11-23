@@ -1,13 +1,13 @@
 <?php
 
-namespace Highlander\Http\Controllers\Admin;
+namespace Toyota\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 
-use Highlander\Http\Requests;
-use Highlander\Http\Controllers\Controller;
+use Toyota\Http\Requests;
+use Toyota\Http\Controllers\Controller;
 
-use Highlander\Http\Requests\TitleDrivingAnimationRequest;
+use Toyota\Http\Requests\TitleDrivingAnimationRequest;
 
 class TitleDrivingAnimationController extends Controller
 {
@@ -19,7 +19,7 @@ class TitleDrivingAnimationController extends Controller
    */
   public function edit( $id )
   {
-    $brands       = \Highlander\Brands::findOrFail( $id );
+    $brands       = \Toyota\Brands::findOrFail( $id );
     $method       = 'PUT';
     $typeOfField  = 'banner manejo';
     $fieldName    = 'Título animádo banner "Manejo"';
@@ -41,7 +41,7 @@ class TitleDrivingAnimationController extends Controller
   public function update( TitleDrivingAnimationRequest $request, $id )
   {
     $brand    = [ 'title_driving_animation' => $request->title_driving_animation ];
-    $result   = \Highlander\Brands::where( 'id', $id )
+    $result   = \Toyota\Brands::where( 'id', $id )
                                   ->update( $brand );
 
     /*
