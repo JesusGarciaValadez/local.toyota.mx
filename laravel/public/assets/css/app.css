@@ -1,14 +1,20 @@
+/* line 2, ../../../resources/assets/sass/app.sass */
 .image--manager figure {
-  position: relative; }
+  position: relative;
+}
+/* line 4, ../../../resources/assets/sass/app.sass */
 .image--manager .form--horizontal.delete--form {
   height: 16px;
   position: absolute;
   right: 8px;
   top: -8px;
-  width: 16px; }
-  .image--manager .form--horizontal.delete--form .delete--form__deleteBtn {
-    background: url("../../assets/css/img/x.png") no-repeat scroll center center transparent; }
-    .image--manager .form--horizontal.delete--form .delete--form__deleteBtn:hover {
-      background-image: url("../../assets/css/img/x-hover.png"); }
-
-/*# sourceMappingURL=app.css.map */
+  width: 16px;
+}
+/* line 10, ../../../resources/assets/sass/app.sass */
+.image--manager .form--horizontal.delete--form .delete--form__deleteBtn {
+  background: url("../../assets/css/img/x.png") no-repeat scroll center center transparent;
+}
+/* line 12, ../../../resources/assets/sass/app.sass */
+.image--manager .form--horizontal.delete--form .delete--form__deleteBtn:hover {
+  background-image: url("../../assets/css/img/x-hover.png");
+}
