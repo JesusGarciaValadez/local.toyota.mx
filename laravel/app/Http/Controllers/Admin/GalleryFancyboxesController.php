@@ -26,7 +26,7 @@ class GalleryFancyboxesController extends Controller
     $brand          = \Highlander\Brands::findOrFail( $id )->title;
     $id             = $id;
     $toReturn       = '/admin/' . $id;
-    $home           = \Highlander\GalleryFancyboxes::all( );
+    $home           = \Highlander\GalleryFancyboxes::findOrFail( $id );
     $elements       = $home;
     $controllerName = 'GalleryFancyboxes';
 

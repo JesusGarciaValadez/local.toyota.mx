@@ -57,7 +57,7 @@
                   <td class="col-lg-1 col-md-1 col-sm-1">
                     <div class="clearfix">
                       <a href="{{ action( 'Admin\\' . $controllerName . 'Controller@edit', [
-                        'id'          => ( count( $home ) > 0 ) ? $home[ 0 ]->id : $id,
+                        'id'          => $id,
                         'element_id'  => $element->id
                       ] ) }}" class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
                     </div>
