@@ -19,7 +19,7 @@ class TitleSliderFeaturesController extends Controller
   public function index( $id )
   {
     $title          = "Slider de fotos";
-    $brand          = "Highlander 2016";
+    $brand          = \Highlander\Brands::findOrFail( $id )->title;
     $toReturn       = '/admin/' . $id;
     $home           = \Highlander\SliderFeature::where( 'brands_id', $id )
                                                ->get( );

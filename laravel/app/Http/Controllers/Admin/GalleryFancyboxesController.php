@@ -23,7 +23,7 @@ class GalleryFancyboxesController extends Controller
   public function index( $id )
   {
     $title          = 'Galería de fotos';
-    $brand          = 'Highlander 2016';
+    $brand          = \Highlander\Brands::findOrFail( $id )->title;
     $id             = $id;
     $toReturn       = '/admin/' . $id;
     $home           = \Highlander\GalleryFancyboxes::all( );
