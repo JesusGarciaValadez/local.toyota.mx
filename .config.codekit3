@@ -45,6 +45,396 @@
 		"oAP": "\/laravel\/public\/assets\/laravel\/.gitignore",
 		"oF": 0
 		},
+	"\/laravel\/.sass-cache\/0768daa766684926c0b88d3e2e6199a7bd743ff9\/_colores.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/0768daa766684926c0b88d3e2e6199a7bd743ff9\/_colores.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/0768daa766684926c0b88d3e2e6199a7bd743ff9\/_cover.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/0768daa766684926c0b88d3e2e6199a7bd743ff9\/_cover.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/0768daa766684926c0b88d3e2e6199a7bd743ff9\/_descanso.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/0768daa766684926c0b88d3e2e6199a7bd743ff9\/_descanso.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/0768daa766684926c0b88d3e2e6199a7bd743ff9\/_distribuidores.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/0768daa766684926c0b88d3e2e6199a7bd743ff9\/_distribuidores.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/0768daa766684926c0b88d3e2e6199a7bd743ff9\/_especificaciones.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/0768daa766684926c0b88d3e2e6199a7bd743ff9\/_especificaciones.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/0768daa766684926c0b88d3e2e6199a7bd743ff9\/_financiamiento.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/0768daa766684926c0b88d3e2e6199a7bd743ff9\/_financiamiento.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/0768daa766684926c0b88d3e2e6199a7bd743ff9\/_footer.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/0768daa766684926c0b88d3e2e6199a7bd743ff9\/_footer.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/0768daa766684926c0b88d3e2e6199a7bd743ff9\/_galeria.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/0768daa766684926c0b88d3e2e6199a7bd743ff9\/_galeria.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/0768daa766684926c0b88d3e2e6199a7bd743ff9\/_header.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/0768daa766684926c0b88d3e2e6199a7bd743ff9\/_header.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/0768daa766684926c0b88d3e2e6199a7bd743ff9\/_highlights.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/0768daa766684926c0b88d3e2e6199a7bd743ff9\/_highlights.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/0768daa766684926c0b88d3e2e6199a7bd743ff9\/_manejo.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/0768daa766684926c0b88d3e2e6199a7bd743ff9\/_manejo.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/0768daa766684926c0b88d3e2e6199a7bd743ff9\/_seleccionar.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/0768daa766684926c0b88d3e2e6199a7bd743ff9\/_seleccionar.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/0768daa766684926c0b88d3e2e6199a7bd743ff9\/_versiones.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/0768daa766684926c0b88d3e2e6199a7bd743ff9\/_versiones.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/2429b6534898602eadb32043b36a8bb9554ce0d6\/_css3.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/2429b6534898602eadb32043b36a8bb9554ce0d6\/_css3.scssc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/2429b6534898602eadb32043b36a8bb9554ce0d6\/_reset.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/2429b6534898602eadb32043b36a8bb9554ce0d6\/_reset.scssc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/2429b6534898602eadb32043b36a8bb9554ce0d6\/_support.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/2429b6534898602eadb32043b36a8bb9554ce0d6\/_support.scssc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/28a15e95c1621935535cee59e1f78c5f5b5a8c3f\/_mixines.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/28a15e95c1621935535cee59e1f78c5f5b5a8c3f\/_mixines.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/28a15e95c1621935535cee59e1f78c5f5b5a8c3f\/_variables.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/28a15e95c1621935535cee59e1f78c5f5b5a8c3f\/_variables.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/2a32b18933e368273a1946fe172282c50301ccdf\/_desktop.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/2a32b18933e368273a1946fe172282c50301ccdf\/_desktop.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/2a32b18933e368273a1946fe172282c50301ccdf\/_smartphone.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/2a32b18933e368273a1946fe172282c50301ccdf\/_smartphone.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/2a32b18933e368273a1946fe172282c50301ccdf\/_tablet.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/2a32b18933e368273a1946fe172282c50301ccdf\/_tablet.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/40f62ee9f605e690520d9350152fbefc41d1e16d\/_hacks.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/40f62ee9f605e690520d9350152fbefc41d1e16d\/_hacks.scssc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/5291e2bb12ff82659531e88443c9d49ecfe930d2\/_init.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/5291e2bb12ff82659531e88443c9d49ecfe930d2\/_init.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/5291e2bb12ff82659531e88443c9d49ecfe930d2\/_modulos.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/5291e2bb12ff82659531e88443c9d49ecfe930d2\/_modulos.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/5291e2bb12ff82659531e88443c9d49ecfe930d2\/_responsive.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/5291e2bb12ff82659531e88443c9d49ecfe930d2\/_responsive.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/5291e2bb12ff82659531e88443c9d49ecfe930d2\/_theme.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/5291e2bb12ff82659531e88443c9d49ecfe930d2\/_theme.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/75fcaf1b4852ceb732871195e41567cc2a7d8997\/Users\/jesusgarcia\/sites\/local.toyotahighlander.mx\/laravel\/resources\/assets\/sass\/includes\/_responsive.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/75fcaf1b4852ceb732871195e41567cc2a7d8997\/laravel\/resources\/assets\/sass\/includes\/_responsive.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/75fcaf1b4852ceb732871195e41567cc2a7d8997\/Users\/jesusgarcia\/sites\/local.toyotahighlander.mx\/laravel\/resources\/assets\/sass\/includes\/modulos\/_colores.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/75fcaf1b4852ceb732871195e41567cc2a7d8997\/laravel\/resources\/assets\/sass\/includes\/modulos\/_colores.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/75fcaf1b4852ceb732871195e41567cc2a7d8997\/Users\/jesusgarcia\/sites\/local.toyotahighlander.mx\/laravel\/resources\/assets\/sass\/includes\/modulos\/_cover.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/75fcaf1b4852ceb732871195e41567cc2a7d8997\/laravel\/resources\/assets\/sass\/includes\/modulos\/_cover.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/75fcaf1b4852ceb732871195e41567cc2a7d8997\/Users\/jesusgarcia\/sites\/local.toyotahighlander.mx\/laravel\/resources\/assets\/sass\/includes\/modulos\/_descanso.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/75fcaf1b4852ceb732871195e41567cc2a7d8997\/laravel\/resources\/assets\/sass\/includes\/modulos\/_descanso.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/75fcaf1b4852ceb732871195e41567cc2a7d8997\/Users\/jesusgarcia\/sites\/local.toyotahighlander.mx\/laravel\/resources\/assets\/sass\/includes\/modulos\/_distribuidores.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/75fcaf1b4852ceb732871195e41567cc2a7d8997\/laravel\/resources\/assets\/sass\/includes\/modulos\/_distribuidores.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/75fcaf1b4852ceb732871195e41567cc2a7d8997\/Users\/jesusgarcia\/sites\/local.toyotahighlander.mx\/laravel\/resources\/assets\/sass\/includes\/modulos\/_especificaciones.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/75fcaf1b4852ceb732871195e41567cc2a7d8997\/laravel\/resources\/assets\/sass\/includes\/modulos\/_especificaciones.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/75fcaf1b4852ceb732871195e41567cc2a7d8997\/Users\/jesusgarcia\/sites\/local.toyotahighlander.mx\/laravel\/resources\/assets\/sass\/includes\/modulos\/_financiamiento.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/75fcaf1b4852ceb732871195e41567cc2a7d8997\/laravel\/resources\/assets\/sass\/includes\/modulos\/_financiamiento.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/75fcaf1b4852ceb732871195e41567cc2a7d8997\/Users\/jesusgarcia\/sites\/local.toyotahighlander.mx\/laravel\/resources\/assets\/sass\/includes\/modulos\/_footer.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/75fcaf1b4852ceb732871195e41567cc2a7d8997\/laravel\/resources\/assets\/sass\/includes\/modulos\/_footer.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/75fcaf1b4852ceb732871195e41567cc2a7d8997\/Users\/jesusgarcia\/sites\/local.toyotahighlander.mx\/laravel\/resources\/assets\/sass\/includes\/modulos\/_galeria.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/75fcaf1b4852ceb732871195e41567cc2a7d8997\/laravel\/resources\/assets\/sass\/includes\/modulos\/_galeria.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/75fcaf1b4852ceb732871195e41567cc2a7d8997\/Users\/jesusgarcia\/sites\/local.toyotahighlander.mx\/laravel\/resources\/assets\/sass\/includes\/modulos\/_header.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/75fcaf1b4852ceb732871195e41567cc2a7d8997\/laravel\/resources\/assets\/sass\/includes\/modulos\/_header.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/75fcaf1b4852ceb732871195e41567cc2a7d8997\/Users\/jesusgarcia\/sites\/local.toyotahighlander.mx\/laravel\/resources\/assets\/sass\/includes\/modulos\/_highlights.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/75fcaf1b4852ceb732871195e41567cc2a7d8997\/laravel\/resources\/assets\/sass\/includes\/modulos\/_highlights.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/75fcaf1b4852ceb732871195e41567cc2a7d8997\/Users\/jesusgarcia\/sites\/local.toyotahighlander.mx\/laravel\/resources\/assets\/sass\/includes\/modulos\/_manejo.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/75fcaf1b4852ceb732871195e41567cc2a7d8997\/laravel\/resources\/assets\/sass\/includes\/modulos\/_manejo.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/75fcaf1b4852ceb732871195e41567cc2a7d8997\/Users\/jesusgarcia\/sites\/local.toyotahighlander.mx\/laravel\/resources\/assets\/sass\/includes\/modulos\/_seleccionar.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/75fcaf1b4852ceb732871195e41567cc2a7d8997\/laravel\/resources\/assets\/sass\/includes\/modulos\/_seleccionar.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/75fcaf1b4852ceb732871195e41567cc2a7d8997\/Users\/jesusgarcia\/sites\/local.toyotahighlander.mx\/laravel\/resources\/assets\/sass\/includes\/modulos\/_versiones.sassc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/75fcaf1b4852ceb732871195e41567cc2a7d8997\/laravel\/resources\/assets\/sass\/includes\/modulos\/_versiones.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/75fcaf1b4852ceb732871195e41567cc2a7d8997\/usr\/local\/lib\/ruby\/gems\/2.3.0\/gems\/compass-core-1.0.3\/stylesheets\/compass\/_support.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/75fcaf1b4852ceb732871195e41567cc2a7d8997\/usr\/local\/lib\/ruby\/gems\/2.3.0\/gems\/compass-core-1.0.3\/stylesheets\/compass\/_support.scssc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/94e9e8a9a31cafa3ae83f2a11202cbd54b585f18\/_utilities.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/94e9e8a9a31cafa3ae83f2a11202cbd54b585f18\/_utilities.scssc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_animation.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_animation.scssc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_appearance.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_appearance.scssc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_background-clip.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_background-clip.scssc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_background-origin.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_background-origin.scssc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_background-size.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_background-size.scssc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_border-radius.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_border-radius.scssc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_box-shadow.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_box-shadow.scssc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_box-sizing.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_box-sizing.scssc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_columns.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_columns.scssc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_filter.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_filter.scssc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_flexbox.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_flexbox.scssc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_font-face.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_font-face.scssc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_hyphenation.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_hyphenation.scssc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_images.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_images.scssc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_inline-block.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_inline-block.scssc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_opacity.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_opacity.scssc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_regions.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_regions.scssc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_text-shadow.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_text-shadow.scssc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_transform.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_transform.scssc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_transition.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_transition.scssc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_user-interface.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/d87d6308240c08ce1556d972893cb53705a57436\/_user-interface.scssc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/f44e02934dab6125f5d1c85e777fd195e109c330\/app.sassc": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/f44e02934dab6125f5d1c85e777fd195e109c330\/app.sassc",
+		"oF": 0
+		},
+	"\/laravel\/.sass-cache\/f44e02934dab6125f5d1c85e777fd195e109c330\/style.sassc": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/laravel\/public\/assets\/laravel\/.sass-cache\/f44e02934dab6125f5d1c85e777fd195e109c330\/style.sassc",
+		"oF": 0
+		},
 	"\/laravel\/app": {
 		"ft": 65536,
 		"oA": 1,
@@ -81,6 +471,12 @@
 		"ft": 65536,
 		"oA": 1,
 		"oAP": "\/laravel\/public\/assets\/laravel\/config",
+		"oF": 0
+		},
+	"\/laravel\/config.rb": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/laravel\/public\/assets\/laravel\/config.rb",
 		"oF": 0
 		},
 	"\/laravel\/database": {
