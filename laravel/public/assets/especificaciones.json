@@ -1,196 +1,348 @@
 [{
-	"coremt":[{
-		"ModeloAuto":"HIGHLANDER LE",
+	"le":[{
+		"ModeloAuto":"LE",
 		"EspecificacionTecnica":[{
 			"Motor":[{
-				"Capacidad":"1.5 LITROS",
-				"Potencia":"107 @ 6,000",
-				"Cilindros":"4 en línea",
-				"Valvulas":"104 @ 4,200"
+				"Capacidad":"3.5 LITROS",
+				"Potencia":"270 @ 6,200",
+				"Cilindros":"6 en línea",
+				"Valvulas":"16"
 			}],
-			"Frenos":[
-				"Frenos delanteros / Disco ventilado (255 mm de diámetro)",
-				"Frenos traseros / Tambor (200 mm diámetro)",
-				"Freno de estacionamiento"
+			"Frenos":[ 
+				"Sistema antibloqueo (ABS)",
+				"Con distribución electrónica de fuerza de frenado (EBD)"
 			],
 			"Rines":[
-				"Rines de acero 15 x 5.5”",
-				"Neumáticos (Incluyendo refacción)",
-				"Juego de tapones"
+				"Rines de aluminio 18 “",
+				"Neumáticos P245/60 R18"
 			],
-			"UrlMotor": "img-motor.jpg",
-			"UrlAuto": "img-yaris-sedan-detalle.jpg"
+			"UrlMotor": "img-motor.png",
+			"UrlAuto": "02.png"
 		}],
 		"Exterior":[{
 			"Faros":[
-				"Cristales tintados con filtro contra rayos UV",
-				"Limpiadores intermitentes / Para parabrisas",
-				"Espejos laterales con ajuste eléctrico",
-				"Medallón con desempañado eléctrico integrado"
+				"Faros con encendido y apagado automático",
+				"Faros elipsoidales tipo proyector en luces bajas",
+				"Espejos laterales eléctricos",
+				"Luces diurnas cancelables"
 			],
 			"SeguridadExterior":[
-				"Defensa delantera y trasera al color de la carrocería",
-				"Manijas en las puertas laterales en el color de la carrocería",
-				"Parrilla frontal",
-				"Escape"
+				"Manijas al color de la carrocería",
+				"Parrilla negra con acentos cromados",
+				"Spoiler del color de la carrocería"
 			],
 			"Visibilidad": [{
 				"Cristales":[
-					"Altura total / 1,475 mm",
-					"Ancho total / 1,700 mm",
-					"Largo total / 4,410 mm",
-					"Distancia entre ejes / 2,550 mm",
-					"Distancia al piso / 145 mm",
-					"Diámetro de giro / 10.2",
-					"Coeficiente aerodinámico / 0.28"
+					"Espacio para cabeza / 1,034/1,013/913 mm",
+					"Espacio para hombros / 1,507/1,513/1,398 mm",
+					"Espacio para piernas / 1,123/976/703 mm"
 				],
 				"EspejosLaterales":[
-					" "
+					"Capacidad del tanque de combustible / 72.5 Lts",
+					"Peso Vehicular / 1,925 kg",
+					"Capacidad de carga / 720 kg",
+					"Pasajeros 8"
 				]
 			}],
 			"Techo":[
-				"Capacidad del tanque de combustible / 42 Lts",
-				"Peso vehicular / 1,020 Kg",
-				"Capacidad de carga / 480 Kg",
-				"Volumen de carga en cajuela / 506 Lts"
+				"Alto / 1,730 mm",
+				"Ancho / 1,925 mm",
+				"Largo / 4,855 mm",
+				"Distancia entre ejes / 2,790 mm",
+				"Entre vía (del./tras.) / 1,635 / 1,630 mm"
 			],
 			"UrlInterior":"img-tablero.jpg"
 		}],
 		"Interior":[{
 			"AcabadosInteriores":[
-				"Volante en uretano",
-				"Pomo palanca de velocidades en uretano",
-				"Tapicería de los asientos uretano",
-				"Alfombra en piso",
-				"Tela en vestidura del techo"
+				"Vestiduras de tela"
 			],
 			"Asientos":[
-				"Asiento del conductor / Tipo cubo con 4 ajustes manuales y cabecera",
-				"Asiento acompañante / Tipo cubo con 4 ajustes manuales y cabecera",
-				"Asiento trasero / Tipo banca con 3 cabeceras ajustables"
+				"Asiento del conductor de 6 posiciones con ajuste manual",
+				"Asientos delanteros con ventilación",
+				"Asientos de la 2a fila deslizables, reclinables y abatibles hasta quedar planos"
 			],
 			"SistemaAudio":[
-				"Audio con radio AM/FM, CD y reproducción de MP3 y WMA",
-				"Entradas auxiliares USB + AUX",
-				"Sistema de manos libres Bluetooth",
-				"Número de bocinas / 4",
-				"Ajustes de volante",
-				"Toma auxiliar de corriente 12 V DC"
+				"3 tomacorrientes de 12 V",
+				"Sistema de audio AM/FM/CD con reproductor para MP3 y WMA",
+				"Pantalla multi-información táctil de 6.12“",
+				"Aire acondicionado manual de 3 zonas"
 			],
 			"Confort":[
-				"Iluminación de cortesía",
-				"Luces de lectura"
-			],
-			"CinturonesSeguridad":[
-				"Inmovilizador",
-				"Alarma",
-				"Seguros eléctricos",
-				"Seguros para niños en puertas traseras",
-				"Gato y herramienta",
-				"Kit asistencia vial"
-			],
-			"SeguridadInterior":[
 				"N/A"
 			],
-			"Download": "prius-2016.pdf"
+			"CinturonesSeguridad":[
+				"Alarma e inmovilizador",
+				"Barras de protección contra impactos laterales"
+			],
+			"SeguridadInterior":[
+				"Bolsa de aire antideslizamiento para pasajero (1)",
+				"Bolsas de aire frontales de doble etapa para conductor y pasajero (2)",
+				"Bolsas de aire tipo cortina en las 3 filas de asientos (2)"
+			],
+			"Download": "#"
 		}]
 	}],
-	"corectvis":[{
-		"ModeloAuto":"HIGHLANDER XLE",
+	"xle":[{
+		"ModeloAuto":"XLE",
 		"EspecificacionTecnica":[{
 			"Motor":[{
-				"Capacidad":"1.5 LITROS",
-				"Potencia":"107 @ 6,000",
-				"Cilindros":"4 en línea",
-				"Valvulas":"104 @ 4,200"
+				"Capacidad":"3.5 LITROS",
+				"Potencia":"270 @ 6,200",
+				"Cilindros":"6 en línea",
+				"Valvulas":"16"
 			}],
-			"Frenos":[
-				"Frenos delanteros / Disco ventilado (255 mm de diámetro)",
-				"Frenos traseros / Tambor (200 mm diámetro)",
-				"Freno de estacionamiento"
+			"Frenos":[ 
+				"Sistema antibloqueo (ABS)",
+				"Con distribución electrónica de fuerza de frenado (EBD)"
 			],
 			"Rines":[
-				"Rines de acero 15 x 5.5”",
-				"Neumáticos (Incluyendo refacción)",
-				"Juego de tapones"
+				"Rines de aluminio 18“",
+				"Neumáticos P245/60 R18"
 			],
-			"UrlMotor": "img-motor.jpg",
-			"UrlAuto": "img-yaris-sedan-detalle.jpg"
+			"UrlMotor": "img-motor.png",
+			"UrlAuto": "02.png"
 		}],
 		"Exterior":[{
 			"Faros":[
-				"Cristales tintados con filtro contra rayos UV",
-				"Limpiadores intermitentes / Para parabrisas",
-				"Espejos laterales con ajuste eléctrico",
-				"Medallón con desempañado eléctrico integrado"
+				"Faros con encendido y apagado automático",
+				"Faros de niebla delanteros",
+				"Espejos laterales eléctricos",
+				"Desempañador eléctrico en espejos laterales"
 			],
 			"SeguridadExterior":[
-				"Defensa delantera y trasera al color de la carrocería",
-				"Manijas en las puertas laterales en el color de la carrocería",
-				"Parrilla frontal cromada",
-				"Escape"
+				"Manijas al color de la carrocería", 
+				"Parrilla negra con acentos cromados",
+				"Spoiler del color de la carrocería",
+				"Quemacocos eléctrico" 
 			],
 			"Visibilidad": [{
 				"Cristales":[
-					"Altura total / 1,475 mm",
-					"Ancho total / 1,700 mm",
-					"Largo total / 4,410 mm",
-					"Distancia entre ejes / 2,550 mm",
-					"Distancia al piso / 145 mm",
-					"Diámetro de giro / 10.2",
-					"Coeficiente aerodinámico / 0.28"
+					"Espacio para cabeza con quemacocos / 1,003/1,006/913 mm",
+					"Espacio para hombros / 1,507/1,499/1,398 mm",
+					"Espacio para piernas / 1,123/976/703  mm" 
 				],
 				"EspejosLaterales":[
-					" "
+					"Capacidad del tanque de combustible / 72.5 Lts", 
+					"Peso Vehicular / 1,955 kg", 
+					"Capacidad de carga / 690 kg", 
+					"Pasajeros 8"
 				]
 			}],
 			"Techo":[
-				"Capacidad del tanque de combustible / 42 Lts",
-				"Peso vehicular / 1,055 Kg",
-				"Capacidad de carga / 445 Kg",
-				"Volumen de carga en cajuela / 506 Lts"
+				"Alto / 1,730 mm", 
+				"Ancho / 1,925 mm", 
+				"Largo / 4,855 mm", 
+				"Distancia entre ejes / 2,790 mm", 
+				"Entre vía (del./tras.) / 1,635 / 1,630 mm" 
 			],
 			"UrlInterior":"img-tablero.jpg"
 		}],
 		"Interior":[{
 			"AcabadosInteriores":[
-				"Volante en uretano",
-				"Pomo palanca de velocidades en uretano",
-				"Tapicería de los asientos uretano",
-				"Alfombra en piso",
-				"Tela en vestidura del techo"
+				"Vestiduras de piel"
 			],
 			"Asientos":[
-				"Asiento del conductor / Tipo cubo con 4 ajustes manuales y cabecera",
-				"Asiento acompañante / Tipo cubo con 4 ajustes manuales y cabecera",
-				"Asiento trasero / Tipo banca con 3 cabeceras ajustables"
+				"Asiento del conductor de 8 posiciones con ajustes eléctricos",
+				"Asientos delanteros con ventilación",
+				"Asientos de la 2a fila deslizables, reclinables y abatibles hasta quedar planos",
+				"Asientos de la 3ª fil abatibles 60/40 “Tilt Down”"
 			],
 			"SistemaAudio":[
-				"Audio con radio AM/FM, CD y reproducción de MP3 y WMA",
-				"Entradas auxiliares USB + AUX",
-				"Sistema de manos libres Bluetooth ",
-				"Número de bocinas / 4",
-				"Ajustes de volante",
-				"Toma auxiliar de corriente 12 V DC"
+				"3 tomacorrientes de 12 V",
+				"Sistema de audio AM/FM/CD con reproductor para MP3 y WMA",
+				"Pantalla multi-información táctil de 8“",
+				"Asiento del conductor de 8 posiciones con ajustes eléctricos",
+				"Soporte lumbar eléctrico para el conductor"
 			],
 			"Confort":[
-				"Iluminación de cortesía",
-				"Luces de lectura"
+				"N/A"
 			],
 			"CinturonesSeguridad":[
-				"Inmovilizador",
-				"Alarma",
-				"Seguros eléctricos",
-				"Seguros para niños en puertas traseras",
-				"Gato y herramienta",
-				"Kit asistencia vial"
+				"Alarma e inmovilizador", 
+				"Barras de protección contra impactos laterales"
 			],
 			"SeguridadInterior":[
-				"Transmisión CVT-iS con siete cambios sensitivos. Única en su segmento.",
-				"7 velocidades al frente (simulado)",
-				"Palanca al piso tipo escalonada"
+				"Bolsa de aire antideslizamiento para pasajero (1)",
+				"Bolsas de aire frontales de doble etapa para conductor y pasajero (2)",
+				"Bolsas de aire tipo cortina en las 3 filas de asientos (2)"
 			],
-			"Download": "prius-2016.pdf"
+			"Download": "#"
+		}]
+	}],
+	"limitedpr":[{
+		"ModeloAuto":"LIMITED PANORAMIC ROOF",
+		"EspecificacionTecnica":[{
+			"Motor":[{
+				"Capacidad":"3.5 LITROS",
+				"Potencia":"270 @ 6,200",
+				"Cilindros":"6 en línea",
+				"Valvulas":"16"
+			}],
+			"Frenos":[ 
+				"Sistema antibloqueo (ABS)",
+				"Con distribución electrónica de fuerza de frenado (EBD)" 
+			],
+			"Rines":[
+				"Rines de aluminio 19“", 
+				"Neumáticos P245/55 R19"
+			],
+			"UrlMotor": "img-motor.png",
+			"UrlAuto": "02.png"
+		}],
+		"Exterior":[{
+			"Faros":[
+				"Faros con encendido y apagado automático",
+				"Faros elipsoidales tipo proyector en luces bajas",
+				"Espejos laterales eléctricos",
+				"Luces diurnas cancelables",
+				"Luces de cortesía en espejos laterales." 
+			],
+			"SeguridadExterior":[
+				"Manijas al color de la carrocería", 
+				"Parrilla negra con acentos cromados",
+				"Spoiler del color de la carrocería",
+				"Techo panorámico" 
+			],
+			"Visibilidad": [{
+				"Cristales":[
+					"Espacio para hombros / 1,507/1,499/1,398 mm", 
+					"Espacio para piernas / 1,123/976/703 mm",
+					"Espacio para cabeza con quemacocos / 1,010/960/913 mm"
+				],
+				"EspejosLaterales":[
+					"Capacidad del tanque de combustible / 72.5 Lts", 
+					"Peso Vehicular / 1,975 kg", 
+					"Capacidad de carga / 670 kg", 
+					"Pasajeros 7"
+				]
+			}],
+			"Techo":[
+				"Alto / 1,730 mm", 
+				"Ancho / 1,925 mm", 
+				"Largo / 4,855 mm", 
+				"Distancia entre ejes / 2,790 mm", 
+				"Entre vía (del./tras.) / 1,635 / 1,630 mm"
+			],
+			"UrlInterior":"img-tablero.jpg"
+		}],
+		"Interior":[{
+			"AcabadosInteriores":[
+				"Vestiduras de piel perforada"
+			],
+			"Asientos":[
+				"Asiento del conductor de 8 posiciones con ajuste eléctrico y memoria",
+				"Asientos delanteros con ventilación",
+				"Asientos de la 2a fila deslizables, reclinables y abatibles hasta quedar planos",
+				"Asientos de la 3ª fil abatibles 60/40 “Tilt Down”"
+			],
+			"SistemaAudio":[
+				"3 tomacorrientes de 12 V",
+				"Sistema de audio JBL® AM/FM/CD con reproductor para MP3 Y MWA, 12 bocinas y amplificador, entrada USB Y Mini Jack", 
+				"Pantalla multi-información táctil de 8“",
+				"Aire acondicionado automático de 3 zonas"
+			],
+			"Confort":[
+				"N/A"
+			],
+			"CinturonesSeguridad":[
+				"Alarma e inmovilizador", 
+				"Barras de protección contra impactos laterales",
+				"Alerta de tráfico trasero (RCTA)"
+			],
+			"SeguridadInterior":[
+				"Bolsa de aire antideslizamiento para pasajero (1)",
+				"Bolsas de aire frontales de doble etapa para conductor y pasajero (2)",
+				"Bolsas de aire tipo cortina en las 3 filas de asientos (2)",
+				"Espejos laterales con sistema de monitoreo de punto ciego (BSM)"
+			],
+			"Download": "#"
+		}]
+	}],
+	"limited":[{
+		"ModeloAuto":"LIMITED BLU-RAY",
+		"EspecificacionTecnica":[{
+			"Motor":[{
+				"Capacidad":"3.5 LITROS",
+				"Potencia":"270 @ 6,200",
+				"Cilindros":"6 en línea",
+				"Valvulas":"16"
+			}],
+			"Frenos":[ 
+				"Sistema antibloqueo (ABS)", 
+				"Con distribución electrónica de fuerza de frenado (EBD)" 
+			],
+			"Rines":[
+				"Rines de aluminio 19“", 
+				"Neumáticos P245/55 R19"
+			],
+			"UrlMotor": "img-motor.png",
+			"UrlAuto": "02.png"
+		}],
+		"Exterior":[{
+			"Faros":[
+				"Faros con encendido y apagado automático",
+				"Faros elipsoidales tipo proyector en luces bajas",
+				"Espejos laterales eléctricos",
+				"Luces diurnas cancelables",
+				"Luces de cortesía en espejos laterales."
+			],
+			"SeguridadExterior":[
+				"Manijas al color de la carrocería", 
+				"Parrilla negra con acentos cromados",
+				"Spoiler del color de la carrocería"
+			],
+			"Visibilidad": [{
+				"Cristales":[
+					"Espacio para hombros / 1,507/1,499/1,398 mm", 
+					"Espacio para piernas / 1,123/976/703 mm",
+					"Espacio para cabeza con quemacocos / 1,003/1,006/913 mm"
+				],
+				"EspejosLaterales":[
+					"Capacidad del tanque de combustible / 72.5 Lts", 
+					"Peso Vehicular / 1,975 kg", 
+					"Capacidad de carga / 670 kg", 
+					"Pasajeros 7"
+				]
+			}],
+			"Techo":[
+				"Alto / 1,730 mm", 
+				"Ancho / 1,925 mm", 
+				"Largo / 4,855 mm", 
+				"Distancia entre ejes / 2,790 mm", 
+				"Entre vía (del./tras.) / 1,635 / 1,630 mm"
+			],
+			"UrlInterior":"img-tablero.jpg"
+		}],
+		"Interior":[{
+			"AcabadosInteriores":[
+				"Vestiduras de piel perforada"
+			],
+			"Asientos":[
+				"N/A"
+			],
+			"SistemaAudio":[
+				"3 tomacorrientes de 12 V",
+				"Sistema de audio JBL® AM/FM/CD con reproductor para MP3 Y MWA, 12 bocinas y amplificador, entrada USB Y Mini Jack", 
+				"Sistema de entretenimiento con reproductor Blue-Ray TM, dos audífonos inalámbricos y control remoto",
+				"Pantalla multi-información táctil de 8“",
+				"Aire acondicionado automático de 3 zonas"
+			],
+			"Confort":[
+				"N/A"
+			],
+			"CinturonesSeguridad":[
+				"Alarma e inmovilizador", 
+				"Barras de protección contra impactos laterales",
+				"Alerta de tráfico trasero (RCTA)"
+			],
+			"SeguridadInterior":[
+				"Bolsa de aire antideslizamiento para pasajero (1)",
+				"Bolsas de aire frontales de doble etapa para conductor y pasajero (2)",
+				"Bolsas de aire tipo cortina en las 3 filas de asientos (2)",
+				"Espejos laterales con sistema de monitoreo de punto ciego (BSM)"
+			],
+			"Download": "#"
 		}]
 	}]
 }]
