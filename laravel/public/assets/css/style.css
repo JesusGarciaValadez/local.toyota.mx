@@ -1583,12 +1583,12 @@ footer a.scroll:after {
   font-weight: 300;
 }
 
-/* line 18, ../../../resources/assets/sass/includes/modulos/_manejo.sass */
+/* line 17, ../../../resources/assets/sass/includes/modulos/_manejo.sass */
 .highlander .manejo {
   background-image: url("img/highlander/bgManejo.jpg");
 }
 
-/* line 21, ../../../resources/assets/sass/includes/modulos/_manejo.sass */
+/* line 19, ../../../resources/assets/sass/includes/modulos/_manejo.sass */
 .sienna .manejo {
   background-image: url("img/sienna/bgManejo.png");
 }
@@ -2319,7 +2319,7 @@ div#colores, div#highlights, div#galeria, div#highlights2, div#versiones, div#ma
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  background: url(img/bgFlecha2.png) no-repeat 96% 50%;
+  background: url("img/bgFlecha2.png") no-repeat 96% 50%;
   border-radius: 0px;
   border: 1px solid #585d65;
   color: #585d65;
