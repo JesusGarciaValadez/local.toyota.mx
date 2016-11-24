@@ -1,4 +1,4 @@
-/vendor
+vendor
 /node_modules
 /public/storage/debugbar
 /public/storage/framework
@@ -17,3 +17,4 @@ git-log.txt
 laravel/storage/email-previews/
 main.css.map
 .env.testing
+deploy.sh
