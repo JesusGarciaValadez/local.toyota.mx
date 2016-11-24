@@ -39,7 +39,13 @@ class ImageController extends Controller
     {
       foreach( $datos as $image )
       {
-        $imagesDatos[] = Storage::url( $image );
+        $arrayImage   = explode( '/', $image );
+        $arrayReverse = array_reverse( $arrayImage );
+
+        if ( $arrayReverse[ 0 ] !== '.DS_Store')
+        {
+          $imagesDatos[] = Storage::url( $image );
+        }
       }
     }
 
@@ -47,7 +53,13 @@ class ImageController extends Controller
     {
       foreach( $gallery as $image )
       {
-        $imagesGallery[] = Storage::url( $image );
+        $arrayImage   = explode( '/', $image );
+        $arrayReverse = array_reverse( $arrayImage );
+
+        if ( $arrayReverse[ 0 ] !== '.DS_Store')
+        {
+          $imagesGallery[] = Storage::url( $image );
+        }
       }
     }
 
@@ -55,7 +67,13 @@ class ImageController extends Controller
     {
       foreach( $highlight as $image )
       {
-        $imagesHighlight[] = Storage::url( $image );
+        $arrayImage   = explode( '/', $image );
+        $arrayReverse = array_reverse( $arrayImage );
+
+        if ( $arrayReverse[ 0 ] !== '.DS_Store')
+        {
+          $imagesHighlight[] = Storage::url( $image );
+        }
       }
     }
 
@@ -63,7 +81,13 @@ class ImageController extends Controller
     {
       foreach( $technicalSpecifications as $image )
       {
-        $imagesTechnicalSpecifications[] = Storage::url( $image );
+        $arrayImage   = explode( '/', $image );
+        $arrayReverse = array_reverse( $arrayImage );
+
+        if ( $arrayReverse[ 0 ] !== '.DS_Store')
+        {
+          $imagesTechnicalSpecifications[] = Storage::url( $image );
+        }
       }
     }
 
@@ -71,7 +95,13 @@ class ImageController extends Controller
     {
       foreach( $thumbs as $image )
       {
-        $imagesThumbs[] = Storage::url( $image );
+        $arrayImage   = explode( '/', $image );
+        $arrayReverse = array_reverse( $arrayImage );
+
+        if ( $arrayReverse[ 0 ] !== '.DS_Store')
+        {
+          $imagesThumbs[] = Storage::url( $image );
+        }
       }
     }
 
@@ -79,17 +109,15 @@ class ImageController extends Controller
     {
       foreach( $versions as $image )
       {
-        $imagesVersions[] = Storage::url( $image );
+        $arrayImage   = explode( '/', $image );
+        $arrayReverse = array_reverse( $arrayImage );
+
+        if ( $arrayReverse[ 0 ] !== '.DS_Store')
+        {
+          $imagesVersions[] = Storage::url( $image );
+        }
       }
     }
-
-    // Delete .DS_Store files references
-    array_shift( $imagesDatos );
-    array_shift( $imagesGallery );
-    array_shift( $imagesHighlight );
-    array_shift( $imagesTechnicalSpecifications );
-    array_shift( $imagesThumbs );
-    array_shift( $imagesVersions );
 
     return view( 'admin.images.index' )->withId( $id )
                                        ->withImageDatos( $imagesDatos )
@@ -198,5 +226,10 @@ class ImageController extends Controller
     return \Redirect::back( )
                     ->withType( $type )
                     ->withMessage( $message );
+  }
+
+  private function _validate_images( $image )
+  {
+
   }
 }

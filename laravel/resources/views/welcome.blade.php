@@ -64,22 +64,22 @@
             <ul>
               <li>
                 <a class="fancybox" rel="gallery1" href="{{ env( 'APP_URL' ) . $gallery->image_big }}" title="{{ $gallery->title_big }}">
-                  <img src="{{ env( 'APP_URL' ) . $gallery->thumb_big }}" />
+                  <img src="{{ env( 'APP_URL' ) . '/' . $gallery->thumb_big }}" />
                 </a>
               </li>
               <li>
                 <a class="fancybox" rel="gallery1" href="{{ env( 'APP_URL' ) . $gallery->image_small_1 }}" title="{{ $gallery->title_small_1 }}">
-                  <img src="{{ env( 'APP_URL' ) . $gallery->thumb_small_1 }}" />
+                  <img src="{{ env( 'APP_URL' ) . '/' . $gallery->thumb_small_1 }}" />
                 </a>
               </li>
               <li>
                 <a class="fancybox" rel="gallery1" href="{{ env( 'APP_URL' ) . $gallery->image_small_2 }}" title="{{ $gallery->title_small_2 }}">
-                  <img src="{{ env( 'APP_URL' ) . $gallery->thumb_small_2 }}" />
+                  <img src="{{ env( 'APP_URL' ) . '/' . $gallery->thumb_small_2 }}" />
                 </a>
               </li>
               <li>
                 <a class="fancybox" rel="gallery1" href="{{ env( 'APP_URL' ) . $gallery->image_small_3 }}" title="{{ $gallery->title_small_3 }}">
-                  <img src="{{ env( 'APP_URL' ) . $gallery->thumb_small_3 }}" />
+                  <img src="{{ env( 'APP_URL' ) . '/' . $gallery->thumb_small_3 }}" />
                 </a>
               </li>
             </ul>
@@ -108,7 +108,7 @@
           <div>
             @for ( $i = 0; $i < 2; $i++ )
             <div>
-              <img src="{{ env( 'APP_URL' ) . $car[ $i ]->thumbnail }}" />
+              <img src="{{ env( 'APP_URL' ) . '/' . $car[ $i ]->thumbnail }}" />
               <h3>{!! $car[ $i ]->name !!}</h3>
               <h5> DESDE {{ $car[ $i ]->price }}<sup>MN</sup></h5>
               <ul>
@@ -122,7 +122,7 @@
           <div>
             @for ( $i = 2; $i < 4; $i++ )
             <div>
-              <img src="{{ env( 'APP_URL' ) . $car[ $i ]->thumbnail }}" />
+              <img src="{{ env( 'APP_URL' ) . '/' . $car[ $i ]->thumbnail }}" />
               <h3>{!! $car[ $i ]->name !!}</h3>
               <h5> DESDE {{ $car[ $i ]->price }}<sup>MN</sup></h5>
               <ul>

@@ -77,7 +77,7 @@
           <div class="table-responsive">
             @if ( count( $image_datos ) > 0 )
             <div class="container-fluid">
-              <h2>Imágenes de especificación de autos</h2>
+              <h2>Imágenes de la carpeta "Datos"</h2>
               <div class="image--manager flex-items-xs-middle row">
                 @foreach ( $image_datos as $image )
                 <figure class="text-xs-center col-lg-3 col-md-4 col-sm-12 col-xs-12">
@@ -105,7 +105,7 @@
 
             @if ( count( $image_technical_specifications ) > 0 )
             <div class="container-fluid">
-              <h3>Imágenes de especificación de autos</h3>
+              <h3>Imágenes de "Especificaciones técnicas"</h3>
               <div class="image--manager flex-items-xs-middle row">
                 @foreach ( $image_technical_specifications as $image )
                 <figure class="text-xs-center col-lg-3 col-md-4 col-sm-12 col-xs-12">
@@ -133,7 +133,7 @@
 
             @if ( count( $image_thumbs ) > 0 )
             <div class="container-fluid">
-              <h3>Imágenes de especificación de autos</h3>
+              <h3>Imágenes de la carpeta "Thumbs"</h3>
               <div class="image--manager flex-items-xs-middle row">
                 @foreach ( $image_thumbs as $image )
                 <figure class="text-xs-center col-lg-3 col-md-4 col-sm-12 col-xs-12">
@@ -161,7 +161,7 @@
 
             @if ( count( $image_gallery ) > 0 )
             <div class="container-fluid">
-              <h3>Imágenes de especificación de autos</h3>
+              <h3>Imágenes de la carpeta "Gallery"</h3>
               <div class="image--manager flex-items-xs-middle row">
                 @foreach ( $image_gallery as $image )
                 <figure class="text-xs-center col-lg-3 col-md-4 col-sm-12 col-xs-12">
@@ -189,7 +189,7 @@
 
             @if ( count( $image_highlight ) > 0 )
             <div class="container-fluid">
-              <h3>Imágenes de especificación de autos</h3>
+              <h3>Imágenes de la carpeta "Highlights"</h3>
               <div class="image--manager flex-items-xs-middle row">
                 @foreach ( $image_highlight as $image )
                 <figure class="text-xs-center col-lg-3 col-md-4 col-sm-12 col-xs-12">
@@ -217,7 +217,7 @@
 
             @if ( count( $image_versions ) > 0 )
             <div class="container-fluid">
-              <h3>Imágenes de especificación de autos</h3>
+              <h3>Imágenes de la carpeta "Versiones"</h3>
               <div class="image--manager flex-items-xs-middle row">
                 @foreach ( $image_versions as $image )
                 <figure class="text-xs-center col-lg-3 col-md-4 col-sm-12 col-xs-12">
