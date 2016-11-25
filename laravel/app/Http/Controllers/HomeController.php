@@ -8,15 +8,30 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
   /**
+   * Slug obtained of the current url
+   * @var string
+   */
+  private $_slug   = '';
+
+  /**
    * Show the application dashboard.
    *
    * @return \Illuminate\Http\Response
    */
-  public function index( $slug )
+  public function index( )
   {
-    $brand      = \Toyota\Brands::where( 'slug', $slug )
-                                ->get( )
-                                ->first( );
+    $url          = strtolower( url()->current() );
+
+    $this->_slug  = $this->_obtainSlug( $url );
+
+    if ( $this->_slug == "" )
+    {
+      abort( 404, 'No encontramos el modelo que buscas.' );
+    }
+
+    $brand        = \Toyota\Brands::where( 'slug', $this->_slug )
+                            ->get( )
+                            ->first( );
 
     if ( empty( $brand ) || is_null( $brand ) )
     {
@@ -24,13 +39,13 @@ class HomeController extends Controller
     }
 
     $slides     = \Toyota\SliderFeature::where( 'brands_id', $brand->id )
-                                           ->get( );
+                                       ->get( );
     $galleries  = \Toyota\GalleryFancyboxes::where( 'brands_id', $brand->id )
-                                               ->get( );
+                                           ->get( );
     $car        = \Toyota\Car::where( 'brands_id', $brand->id )
-                                 ->get( );
+                             ->get( );
 
-    return view( 'welcome' )->withSlug( $slug )
+    return view( 'welcome' )->withSlug( $this->_slug )
                             ->withBrand( $brand )
                             ->withSlides( $slides )
                             ->withGalleries( $galleries )
@@ -45,12 +60,24 @@ class HomeController extends Controller
    */
   public function show( $slug, $model )
   {
-    $cars = \Toyota\Car::all( );
-    $car  = \Toyota\Car::where( 'slug', $model )
-                           ->firstOrFail();
+    $url          = url()->current();
+
+    $this->_slug  = $this->_obtainSlug( $url );
+
+    if ( $this->_slug == "" )
+    {
+      abort( 404, 'No encontramos el modelo que buscas.' );
+    }
+
+    $actualBrand  = \Toyota\Brands::where( 'slug', $slug )
+                                  ->get()->first();
+    $models       = \Toyota\Car::where( 'brands_id', $actualBrand->id )
+                               ->get();
+    $car          = \Toyota\Car::where( 'slug', $model )
+                               ->firstOrFail();
 
     return view( 'specifications' )->withCar( $car )
-                                   ->withCars( $cars )
+                                   ->withModels( $models )
                                    ->withSlug( $slug );
   }
 
@@ -62,5 +89,27 @@ class HomeController extends Controller
   public function retail( $slug )
   {
     return view( 'retailers' )->withSlug( $slug );
+  }
+
+  /**
+   * Function for obtain the actual domain and convert it to a slug
+   * @param  string $url Url Obtained
+   * @return string      Slug
+   */
+  private function _obtainSlug( $url )
+  {
+    $listOfDomains  = [ 'sienna', 'highlander' ];
+
+    foreach ( $listOfDomains as $slug )
+    {
+      if ( str_contains( $url, $slug ) )
+      {
+        return $slug;
+      }
+      else
+      {
+        continue;
+      }
+    }
   }
 }

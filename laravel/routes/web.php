@@ -100,8 +100,8 @@ Route::group( [ 'prefix' => 'admin', 'middleware' => 'auth' ], function ( )
   } );
 } );
 
-Route::get( '/{slug}', [ 'as' => 'home', 'uses' => 'HomeController@index' ] );
+Route::get( '/', [ 'as' => 'home', 'uses' => 'HomeController@index' ] );
 
-Route::get( '/{slug}/distribuidores', [ 'as' => 'retail', 'uses' => 'HomeController@retail' ] );
+Route::get( '/distribuidores', [ 'as' => 'retail', 'uses' => 'HomeController@retail' ] );
 
-Route::get( '/{slug}/especificaciones/{model}', [ 'as' => 'specifications', 'uses' => 'HomeController@show' ] );
+Route::get( '/especificaciones/{model}', [ 'as' => 'specifications', 'uses' => 'HomeController@show' ] );
