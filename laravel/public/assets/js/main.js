@@ -2,14 +2,13 @@
 var seccion,
     ligales,
     totalLi   = 0,
-    url       = 'http://' + document.location.hostname + '/',
-    original  = location.pathname,
-    regexp    = /^\//gi,
-    uri       = original.replace( regexp, ''),
+    url       = location.hostname,
+    toSeach   = /sienna|highlander|hilux/gi,
+    domain    = url.match( toSeach ),
     cars      = [],
     cars_n    = [];
 
-switch( uri ) {
+switch( domain[ 0 ] ) {
   case 'highlander':
     cars    = [ 'rojo', 'arena', 'azul', 'azul-oscuro', 'blanco', 'gris', 'jade', 'negro', 'plata' ];
     cars_n  = [ 'Rojo', 'Arena', 'Azul', 'Azul Oscuro', 'Blanco', 'Gris', 'Jade', 'Negro', 'Plata' ];
@@ -17,6 +16,10 @@ switch( uri ) {
   case 'sienna':
     cars    = [ 'rojo', 'azul', 'blanco', 'blanco-aperlado', 'champagne', 'gris-oscuro', 'negro', 'plata' ];
     cars_n  = [ 'Rojo', 'Azul', 'Blanco', 'Blanco aperlado', 'Champagne', 'Gris oscuro', 'Negro', 'Plata' ];
+    break;
+  default:
+    cars    = [ 'rojo', 'azul', 'blanco', 'gris', 'negro', 'plata' ];
+    cars_n  = [ 'Rojo', 'Azul', 'Blanco', 'Gris', 'Negro', 'Plata' ];
     break;
 }
 
@@ -486,7 +489,7 @@ init = function( ) {
       //currentFrame: 1,
       imgList:      '.threesixty_images',
       progress:     '.spinner',
-      imagePath:    url + 'assets/images/reel-' + uri + '/' + color + '/',
+      imagePath:    url + 'assets/images/reel-' + domain[ 0 ] + '/' + color + '/',
       filePrefix:   '',
       ext:          '.jpg',
       height:       406,
