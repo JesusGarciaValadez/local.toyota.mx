@@ -256,11 +256,12 @@ class InternalSpecificationsTableSeeder extends Seeder
       'description' => base64_encode(
         serialize( [
           'AcabadosInteriores'  => [
-            'Volante en uretano',
-            'Pomo palanca de velocidades en uretano',
-            'Tapicería de los asientos uretano',
-            'Alfombra en piso',
-            'Tela en vestidura del techo'
+            'Aire acondicionado automático de tres zonas con filtro antibacterial. ',
+            'Asiento del conductor manual de seis posiciones con soporte lumbar. ',
+            'Asientos de la 2a fila, individuales 35/30/35 deslizables, reclinables y abatibles .',
+            'Asientos de la 3a fila, divididos 60/40 y reclinables tipo Tilt down.',
+            'Vidrios eléctricos, un solo toque para el conductor y pasajero, con bloqueo y sistema contra obstrucción. ',
+            'Vestiduras de tela.',
           ],
           'Asientos'            => [
             'Espacio para cabeza 1ª fila: 1,042 mm.',
@@ -282,8 +283,11 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Seis bocinas.',
           ],
           'Confort'             => [
-            'Iluminación de cortesía',
-            'Luces de lectura'
+            'Cámara de visión trasera. ',
+            'Controles al volante de audio y Bluetooth®.',
+            'Pantalla multi-información 3.5”.',
+            'Reconocimiento de voz. ',
+            'Control de velocidad crucero. ',
           ],
           'CinturonesSeguridad' => [
             'Cinturones de seguridad de tres puntos en todos los asientos.',
