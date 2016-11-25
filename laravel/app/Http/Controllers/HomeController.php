@@ -58,7 +58,7 @@ class HomeController extends Controller
    * @param  String $model The car model slug name
    * @return object|string View with parameters
    */
-  public function show( $slug, $model )
+  public function show( $model )
   {
     $url          = url()->current();
 
@@ -69,7 +69,7 @@ class HomeController extends Controller
       abort( 404, 'No encontramos el modelo que buscas.' );
     }
 
-    $actualBrand  = \Toyota\Brands::where( 'slug', $slug )
+    $actualBrand  = \Toyota\Brands::where( 'slug', $this->_slug )
                                   ->get()->first();
     $models       = \Toyota\Car::where( 'brands_id', $actualBrand->id )
                                ->get();
@@ -78,7 +78,7 @@ class HomeController extends Controller
 
     return view( 'specifications' )->withCar( $car )
                                    ->withModels( $models )
-                                   ->withSlug( $slug );
+                                   ->withSlug( $this->_slug );
   }
 
   /**
