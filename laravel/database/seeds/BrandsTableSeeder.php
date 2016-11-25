@@ -29,7 +29,7 @@ class BrandsTableSeeder extends Seeder
 
     /** Toyota Sienna */
     DB::table( 'brands' )->insert( [
-      'title'                             => 'Sienna 2016',
+      'title'                             => 'Sienna 2017',
       'name'                              => 'Sienna <span> 2017 </span>',
       'slogan'                            => 'Sienna 2017, elegancia, lujo y <br />espacio para toda la familia.',
       'title_h1'                          => '<h2 class="animated">Imponente para cualquier camino.</h2>',
