@@ -15,7 +15,7 @@
         <h1>{!! $car->title !!}</h1>
         <fieldset>
           <select class="jsn-select select-otraver">
-          @foreach( $cars as $model )
+          @foreach( $models as $model )
 
             @if( $model->name == $car->name )
               <option value="{{ $model->slug }}" selected>{{ $model->name }}</option>
@@ -34,7 +34,7 @@
           <div class="espMotor">
             <dl>
               <dd>
-                <img src="{{ env( 'APP_URL' ) . $car->technicalSpecifications->description[ 'UrlMotor' ] }}" class="jsn-UrlMotor" alt="Motor">
+                <img src="{{ env( 'APP_URL' ) . '/' . $car->technicalSpecifications->description[ 'UrlMotor' ] }}" class="jsn-UrlMotor" alt="Motor">
               </dd>
               <dd>
                 <dl>
@@ -43,7 +43,7 @@
                   </dt>
                   <dd class="jsn-Capacidad">
                     <div class="icon-motor">
-                      <img src="{{ env( 'APP_URL' ) . 'assets/images/icons/icn-01.jpg' }}">
+                      <img src="{{ env( 'APP_URL' ) . '/assets/images/icons/icn-01.jpg' }}">
                     </div>
                     <div class="motor">
                       <p>{{ $car->technicalSpecifications->description[ 'Motor' ][ 'Capacidad' ] }}</p>
@@ -52,7 +52,7 @@
                   </dd>
                   <dd class="jsn-Potencia">
                     <div class="icon-motor">
-                      <img src="{{ env( 'APP_URL' ) . 'assets/images/icons/icn-02.jpg' }}">
+                      <img src="{{ env( 'APP_URL' ) . '/assets/images/icons/icn-02.jpg' }}">
                     </div>
                     <div>
                       <p>{{ $car->technicalSpecifications->description[ 'Motor' ][ 'Potencia' ] }}</p>
@@ -61,7 +61,7 @@
                   </dd>
                   <dd class="jsn-Cilindros">
                     <div class="icon-motor">
-                      <img src="{{ env( 'APP_URL' ) . 'assets/images/icons/icn-03.jpg' }}">
+                      <img src="{{ env( 'APP_URL' ) . '/assets/images/icons/icn-03.jpg' }}">
                     </div>
                     <div>
                       <p>{{ $car->technicalSpecifications->description[ 'Motor' ][ 'Cilindros' ] }}</p>
@@ -70,7 +70,7 @@
                   </dd>
                   <dd class="jsn-Valvulas">
                     <div class="icon-motor">
-                      <img src="{{ env( 'APP_URL' ) . 'assets/images/icons/icn-04.jpg' }}">
+                      <img src="{{ env( 'APP_URL' ) . '/assets/images/icons/icn-04.jpg' }}">
                     </div>
                     <div>
                       <p>{{ $car->technicalSpecifications->description[ 'Motor' ][ 'Valvulas' ] }}</p>
@@ -114,7 +114,9 @@
       </div>
       <!-- Inicio auto -->
       <div class="cont-imgs">
-        <img class="jsn-UrlAuto" src="{{ env( 'APP_URL' ) . 'assets/images/datos/img-rav4-detalle.jpg' }}">
+
+        <img class="jsn-UrlAuto" src="{{ env( 'APP_URL' ) . '/' . $car->technicalSpecifications->description[ 'UrlAuto' ] }}">
+
       </div>
       <!-- Fin auto -->
       <!-- Inicio exterior -->
@@ -205,7 +207,7 @@
 
       <!-- Inicio auto interior-->
       <div class="cont-imgs interna">
-        <img class="jsn-UrlInterior" src="{{ env( 'APP_URL' ) . 'img-tablero.jpg' }}">
+        <img class="jsn-UrlInterior" src="{{ env( 'APP_URL' ) . '/' . $car->externalSpecifications->description[ 'UrlInterior' ] }}">
       </div>
       <!-- Fin auto interior-->
 
@@ -318,5 +320,5 @@
 @endsection
 
 @section( 'scripts' )
-  @parent
+
 @endsection
