@@ -300,7 +300,7 @@
                 @foreach( $car->internalSpecifications->description[ 'SeguridadInterior' ] as $key => $phrase )
 
                 <dd>
-                  <p>{{ $phrase }}</p>
+                  <p>{!! $phrase !!}</p>
                 </dd>
 
                 @endforeach
