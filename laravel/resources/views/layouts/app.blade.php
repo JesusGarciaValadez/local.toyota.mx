@@ -147,7 +147,7 @@
   {!! Html::script( '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' ) !!}
   {!! Html::script( 'http://thecodeplayer.com/uploads/js/jquery.easing.min.js' ) !!}
   <script>window.jQuery || document.write( '<script src="assets/js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-  {!! Html::script( "//maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAOnKSKPF5vLkp4r4i8sssYNkZeXL32xIE&libraries=places", [
+  {!! Html::script( "//maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBPOumb2a6uPw5QMcSfgVTzQAubwYJLrDo&libraries=places", [
     "async" => "",
     "defer" => "defer"
   ] ) !!}
