@@ -4,6 +4,7 @@ laravel/storage/debugbar
 laravel/storage/framework
 laravel/storage/logs
 laravel/storage/email-previews
+laravel/public/storage
 Homestead.*
 .env
 .env.testing
