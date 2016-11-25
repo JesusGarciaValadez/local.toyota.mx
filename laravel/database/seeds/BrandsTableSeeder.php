@@ -30,15 +30,15 @@ class BrandsTableSeeder extends Seeder
     /** Toyota Sienna */
     DB::table( 'brands' )->insert( [
       'title'                             => 'Sienna 2016',
-      'name'                              => 'Sienna <span> 2016 </span>',
-      'slogan'                            => 'Sienna 2016, elegancia, lujo y <br />espacio para toda la familia.',
+      'name'                              => 'Sienna <span> 2017 </span>',
+      'slogan'                            => 'Sienna 2017, elegancia, lujo y <br />espacio para toda la familia.',
       'title_h1'                          => '<h2 class="animated">Imponente para cualquier camino.</h2>',
       'title_gallery_fancybox'            => '<h2 class="animated">En cada detalle refleja su estética y personalidad.</h2>',
-      'description_gallery_fancybox'      => '<p><span>Sienna</span> 2016 es una combinación de comodidad, espacio y lujo. Es ideal para salir de paseo con la familia o amigos, es muy segura y con la potencia que necesitas.</p>',
-      'title_versions_gallery'            => '<h2 class="animated">Sienna es perfecta para la ciudad o carretera, pero sobre todo, es perfecta para ti y tu familia.</h2>',
-      'title_driving_animation'           => '<h2 class="animated">Seguridad, potencia y lujo son las palabras exactas para describirla.</h2>',
-      'title_footer'                      => '<h1></h1>',
-      'description_footer'                => '<p>Sienna es perfecta para la ciudad o carretera, pero sobre todo, es perfecta para ti y tu familia.</p>',
+      'description_gallery_fancybox'      => '<p><span>Sienna</span> 2017 es una combinación de comodidad, espacio y lujo. Es ideal para salir de paseo con la familia o amigos, es muy segura y con la potencia que necesitas.</p>',
+      'title_versions_gallery'            => '<h2 class="animated">En cada detalle refleja su estética y personalidad.</h2>',
+      'title_driving_animation'           => '<h2 class="animated">Sienna 2017, elegancia, lujo y espacio para toda la familia.</h2>',
+      'title_footer'                      => '<h1>Sienna es perfecta para la ciudad o carretera, pero sobre todo, es perfecta para ti y tu familia.</h1>',
+      'description_footer'                => '<p>Si lo que buscas es elegancia, lujo y espacio, Sienna es para ti, conócela y compruébalo.</p>',
       'slug'                              => 'sienna'
     ] );
   }
