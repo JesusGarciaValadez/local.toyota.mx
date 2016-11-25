@@ -115,7 +115,7 @@
                 {!! $car[ $i ]->description !!}
               </ul>
               <span></span>
-              <a href="{{ $slug }}/especificaciones/{{ $car[ $i ]->slug }}" class="link">Ver detalle</a>
+              <a href="/especificaciones/{{ $car[ $i ]->slug }}" class="link">Ver detalle</a>
             </div>
             @endfor
           </div>
