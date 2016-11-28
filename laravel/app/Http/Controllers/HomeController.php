@@ -77,6 +77,7 @@ class HomeController extends Controller
                                ->firstOrFail();
 
     return view( 'specifications' )->withCar( $car )
+                                   ->withBrand( $actualBrand )
                                    ->withModels( $models )
                                    ->withSlug( $this->_slug );
   }
