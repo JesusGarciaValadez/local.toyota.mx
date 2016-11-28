@@ -106,32 +106,18 @@
       <div class="modelos">
         <div>
           <div>
-            @for ( $i = 0; $i < 2; $i++ )
+            @foreach( $car as $auto )
             <div>
-              <img src="{{ env( 'APP_URL' ) . '/' . $car[ $i ]->thumbnail }}" />
-              <h3>{!! $car[ $i ]->name !!}</h3>
-              <h5> DESDE {{ $car[ $i ]->price }}<sup>MN</sup></h5>
+              <img src="{{ env( 'APP_URL' ) . '/' . $auto->thumbnail }}" />
+              <h3>{!! $auto->name !!}</h3>
+              <h5> DESDE {{ $auto->price }}<sup>MN</sup></h5>
               <ul>
-                {!! $car[ $i ]->description !!}
+                {!! $auto->description !!}
               </ul>
               <span></span>
-              <a href="/especificaciones/{{ $car[ $i ]->slug }}" class="link">Ver detalle</a>
+              <a href="/especificaciones/{{ $auto->slug }}" class="link">Ver detalle</a>
             </div>
-            @endfor
-          </div>
-          <div>
-            @for ( $i = 2; $i < 4; $i++ )
-            <div>
-              <img src="{{ env( 'APP_URL' ) . '/' . $car[ $i ]->thumbnail }}" />
-              <h3>{!! $car[ $i ]->name !!}</h3>
-              <h5> DESDE {{ $car[ $i ]->price }}<sup>MN</sup></h5>
-              <ul>
-                {!! $car[ $i ]->description !!}
-              </ul>
-              <span></span>
-              <a href="{{ $slug }}/especificaciones/{{ $car[ $i ]->slug }}" class="link">Ver detalle</a>
-            </div>
-            @endfor
+            @endforeach
           </div>
         </div>
       </div>
