@@ -14,6 +14,7 @@ class BrandsTableSeeder extends Seeder
     /** Toyota Highlander */
     DB::table( 'brands' )->insert( [
       'title'                             => 'Highlander 2016',
+      'description'                       => '',
       'name'                              => 'Highlander <span> 2016 </span>',
       'slogan'                            => 'Haremos de tus viajes, <br />los mejores momentos',
       'title_h1'                          => '<h2 class="animated">Desde cualquier ángulo te parecerá espectacular.</h2>',
@@ -30,6 +31,7 @@ class BrandsTableSeeder extends Seeder
     /** Toyota Sienna */
     DB::table( 'brands' )->insert( [
       'title'                             => 'Sienna 2017',
+      'description'                       => '',
       'name'                              => 'Sienna <span> 2017 </span>',
       'slogan'                            => 'Sienna 2017, elegancia, lujo y <br />espacio para toda la familia.',
       'title_h1'                          => '<h2 class="animated">Imponente para cualquier camino.</h2>',
