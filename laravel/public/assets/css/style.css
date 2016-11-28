@@ -1489,44 +1489,51 @@ footer a.scroll:after {
 }
 /* line 19, ../../../resources/assets/sass/includes/modulos/_versiones.sass */
 .modelos > div {
-  display: table-row;
+  display: table;
 }
 /* line 21, ../../../resources/assets/sass/includes/modulos/_versiones.sass */
 .modelos > div > div {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  display: table-cell;
+  display: table-row;
+  flex-flow: column nowrap;
   padding: 0px 20px;
   padding-bottom: 3rem;
+  width: 100%;
+}
+/* line 28, ../../../resources/assets/sass/includes/modulos/_versiones.sass */
+.modelos > div > div > div {
+  display: inline-flex;
+  flex-flow: column nowrap;
   width: 50%;
 }
-/* line 27, ../../../resources/assets/sass/includes/modulos/_versiones.sass */
+/* line 32, ../../../resources/assets/sass/includes/modulos/_versiones.sass */
 .modelos > div > div img {
   height: auto;
   width: 100%;
 }
-/* line 30, ../../../resources/assets/sass/includes/modulos/_versiones.sass */
+/* line 35, ../../../resources/assets/sass/includes/modulos/_versiones.sass */
 .modelos > div > div h3 {
   margin-bottom: 0px;
 }
-/* line 32, ../../../resources/assets/sass/includes/modulos/_versiones.sass */
+/* line 37, ../../../resources/assets/sass/includes/modulos/_versiones.sass */
 .modelos > div > div h5 {
   color: #cc0033;
   margin-top: 0px;
 }
-/* line 35, ../../../resources/assets/sass/includes/modulos/_versiones.sass */
+/* line 40, ../../../resources/assets/sass/includes/modulos/_versiones.sass */
 .modelos > div > div h5 sup {
   font-size: small;
   margin: 0px 0.5rem;
   vertical-align: super;
 }
-/* line 39, ../../../resources/assets/sass/includes/modulos/_versiones.sass */
+/* line 44, ../../../resources/assets/sass/includes/modulos/_versiones.sass */
 .modelos > div > div ul {
   margin: 0px;
   padding: 0px;
 }
-/* line 42, ../../../resources/assets/sass/includes/modulos/_versiones.sass */
+/* line 47, ../../../resources/assets/sass/includes/modulos/_versiones.sass */
 .modelos > div > div ul li {
   color: #2f3438;
   font-family: "Lato", sans-serif;
@@ -1535,7 +1542,7 @@ footer a.scroll:after {
   line-height: 1.4;
   margin: 0.3rem 0px;
 }
-/* line 49, ../../../resources/assets/sass/includes/modulos/_versiones.sass */
+/* line 54, ../../../resources/assets/sass/includes/modulos/_versiones.sass */
 .modelos > div > div ul li:before {
   content: "";
   font-family: "FontAwesome";
@@ -1544,7 +1551,7 @@ footer a.scroll:after {
   padding-right: 1rem;
   vertical-align: middle;
 }
-/* line 55, ../../../resources/assets/sass/includes/modulos/_versiones.sass */
+/* line 60, ../../../resources/assets/sass/includes/modulos/_versiones.sass */
 .modelos > div > div span {
   background: #cc0033;
   display: block;

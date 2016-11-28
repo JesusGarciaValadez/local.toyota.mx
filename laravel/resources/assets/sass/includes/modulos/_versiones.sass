@@ -17,13 +17,18 @@
 	overflow: hidden
 	width: 100%
 	> div
-		display: table-row
+		display: table
 		> div
 			+bx
-			display: table-cell
+			display: table-row
+			flex-flow: column nowrap
 			padding: 0px 20px
 			padding-bottom: 3rem
-			width: 50%
+			width: 100%
+			> div
+				display: inline-flex
+				flex-flow: column nowrap
+				width: 50%
 			img
 				height: auto
 				width: 100%
