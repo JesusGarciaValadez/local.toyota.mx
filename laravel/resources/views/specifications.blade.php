@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
-@section( 'title', 'Highlander 2016' )
+@section( 'title', $brand->title )
+
+@section( 'description', $brand->description )
 
 @section( 'header' )
   @parent
@@ -320,5 +322,5 @@
 @endsection
 
 @section( 'scripts' )
-
+  @parent
 @endsection
