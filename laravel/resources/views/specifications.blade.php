@@ -307,7 +307,7 @@
               </dl>
             </div>
           </div>
-          <a href="{{ env( 'APP_URL' ) . $car->internalSpecifications->description[ 'Download' ] }}" class="boton jsn-Download" target="_blank">Descargar ficha técnica</a>
+          <a href="{{ env( 'APP_URL' ) . '/' . $car->internalSpecifications->description[ 'Download' ] }}" class="boton jsn-Download" target="_blank">Descargar ficha técnica</a>
         </div>
       </div>
     </div>

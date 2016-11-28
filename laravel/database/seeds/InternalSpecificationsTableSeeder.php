@@ -49,7 +49,7 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Kit asistencia vial'
           ],
           'SeguridadInterior'     => [ 'N/A' ],
-          'Download'              => 'storage/technical-specifications/highlander/prius-2016.pdf'
+          'Download'              => 'storage/images/technical-specifications/highlander/prius-2016.pdf'
         ] )
       )
     ] ); // HIGHLANDER LE
@@ -95,7 +95,7 @@ class InternalSpecificationsTableSeeder extends Seeder
             '7 velocidades al frente (simulado)',
             'Palanca al piso tipo escalonada'
           ],
-          'Download'            => 'storage/technical-specifications/highlander/prius-2016.pdf'
+          'Download'            => 'storage/images/technical-specifications/highlander/prius-2016.pdf'
         ] )
       )
     ] ); // HIGHLANDER XLE
@@ -137,7 +137,7 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Kit asistencia vial'
           ],
           'SeguridadInterior'     => [ 'N/A' ],
-          'Download'              => 'storage/technical-specifications/highlander/prius-2016.pdf'
+          'Download'              => 'storage/images/technical-specifications/highlander/prius-2016.pdf'
         ] )
       )
     ] ); // HIGHLANDER CE
@@ -183,7 +183,7 @@ class InternalSpecificationsTableSeeder extends Seeder
             '7 velocidades al frente (simulado)',
             'Palanca al piso tipo escalonada'
           ],
-          'Download'            => 'storage/technical-specifications/highlander/prius-2016.pdf'
+          'Download'            => 'storage/images/technical-specifications/highlander/prius-2016.pdf'
         ] )
       )
     ] ); // HIGHLANDER XCE
@@ -246,7 +246,7 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Volante y columna de dirección colapsables. ',
             'Zonas de absorción de energía, frontales, laterales y trasera.',
           ],
-          'Download'              => 'storage/technical-specifications/sienna/ficha-tecnica-toyota-sienna-2016.pdf'
+          'Download'              => 'storage/images/technical-specifications/sienna/ficha-tecnica-toyota-sienna-2016.pdf'
         ] )
       )
     ] ); // SIENNA CE
@@ -311,7 +311,7 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Volante y columna de dirección colapsables. ',
             'Zonas de absorción de energía, frontales, laterales y trasera.',
           ],
-          'Download'            => 'storage/technical-specifications/highlander/prius-2016.pdf'
+          'Download'            => 'storage/images/technical-specifications/highlander/prius-2016.pdf'
         ] )
       )
     ] ); // SIENNA LE
@@ -378,7 +378,7 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Volante y columna de dirección colapsables. ',
             'Zonas de absorción de energía, frontales, laterales y trasera.',
           ],
-          'Download'            => 'storage/technical-specifications/highlander/prius-2016.pdf'
+          'Download'            => 'storage/images/technical-specifications/highlander/prius-2016.pdf'
         ] )
       )
     ] ); // SIENNA XLE
@@ -445,7 +445,7 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Zonas de absorción de energía, frontales, laterales y trasera.',
             'Smart Key. ',
           ],
-          'Download'            => 'storage/technical-specifications/highlander/prius-2016.pdf'
+          'Download'            => 'storage/images/technical-specifications/highlander/prius-2016.pdf'
         ] )
       )
     ] ); // SIENNA XLE PIEL
@@ -523,7 +523,7 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Smart Key. ',
             'Sistema de monitoreo de punto ciego (Blind Spot Monitor).',
           ],
-          'Download'            => 'storage/technical-specifications/highlander/prius-2016.pdf'
+          'Download'            => 'storage/images/technical-specifications/highlander/prius-2016.pdf'
         ] )
       )
     ] ); // SIENNA LTD

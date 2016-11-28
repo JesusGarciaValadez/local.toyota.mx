@@ -141,7 +141,7 @@ class CarsTableSeeder extends Seeder
       'description'                 => '<li>Manijas cromadas.</li>
             <li>Asiento del pasajero de 4 posiciones eléctrico.</li>
             <li>Vestiduras de piel.</li>
-            <li>Sistema de navegación GPS.<li>
+            <li>Sistema de navegación GPS.</li>
             <li>8 bolsas de aire / Conductor y pasajeros.</li>',
       'slug'                        => 'sienna-xle-piel'
     ] );
