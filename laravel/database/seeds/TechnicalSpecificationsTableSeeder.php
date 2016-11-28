@@ -137,8 +137,8 @@ class TechnicalSpecificationsTableSeeder extends Seeder
             1 => 'P235/60R17.',
             2 => 'Acero de 17” T155 / 80R17.'
           ],
-          'UrlMotor'  => 'storage/images/datos/sienna/sienna-versiones.jpg',
-          'UrlAuto'   => 'storage/images/datos/sienna/interior-versiones.jpg'
+          'UrlMotor'  => '',
+          'UrlAuto'   => 'storage/images/datos/sienna/sienna-versiones.jpg'
         ] )
       )
     ] ); // SIENNA CE
@@ -163,8 +163,8 @@ class TechnicalSpecificationsTableSeeder extends Seeder
             1 => 'Llantas: P235/60R17.',
             2 => 'Llanta de refacción: Acero de 17” T155 / 80R17.'
           ],
-          'UrlMotor'  => 'storage/images/datos/sienna/sienna-versiones.jpg',
-          'UrlAuto'   => 'storage/images/datos/sienna/interior-versiones.jpg'
+          'UrlMotor'  => '',
+          'UrlAuto'   => 'storage/images/datos/sienna/sienna-versiones.jpg'
         ] )
       )
     ] ); // SIENNA LE
@@ -189,8 +189,8 @@ class TechnicalSpecificationsTableSeeder extends Seeder
             1 => 'Llantas: P235/60R17. ',
             2 => 'Llanta de refacción: Acero de 17” T155 / 80R17.'
           ],
-          'UrlMotor'  => 'storage/images/datos/sienna/sienna-versiones.jpg',
-          'UrlAuto'   => 'storage/images/datos/sienna/interior-versiones.jpg'
+          'UrlMotor'  => '',
+          'UrlAuto'   => 'storage/images/datos/sienna/sienna-versiones.jpg'
         ] )
       )
     ] ); // SIENNA XLE
@@ -215,8 +215,8 @@ class TechnicalSpecificationsTableSeeder extends Seeder
             1 => 'Llantas: P235/55R18',
             2 => 'Llanta de refacción: Acero de 17” T155 / 80R17.'
           ],
-          'UrlMotor'  => 'storage/images/datos/sienna/sienna-versiones.jpg',
-          'UrlAuto'   => 'storage/images/datos/sienna/interior-versiones.jpg'
+          'UrlMotor'  => '',
+          'UrlAuto'   => 'storage/images/datos/sienna/sienna-versiones.jpg'
         ] )
       )
     ] ); // SIENNA XLE PIEL
@@ -241,8 +241,8 @@ class TechnicalSpecificationsTableSeeder extends Seeder
             1 => 'Llantas: P235/55R18',
             2 => 'Llanta de refacción: Acero de 17” T155 / 80R17.'
           ],
-          'UrlMotor'  => 'storage/images/datos/sienna/sienna-versiones.jpg',
-          'UrlAuto'   => 'storage/images/datos/sienna/interior-versiones.jpg'
+          'UrlMotor'  => '',
+          'UrlAuto'   => 'storage/images/datos/sienna/sienna-versiones.jpg'
         ] )
       )
     ] ); // SIENNA LTD
