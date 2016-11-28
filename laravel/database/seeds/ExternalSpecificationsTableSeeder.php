@@ -247,34 +247,37 @@ class ExternalSpecificationsTableSeeder extends Seeder
       'description' => base64_encode(
         serialize( [
           'Faros'             => [
-            'Cristales tintados con filtro contra rayos UV',
-            'Limpiadores intermitentes / Para parabrisas',
-            'Espejos laterales con ajuste eléctrico',
-            'Medallón con desempañado eléctrico integrado'
+            'Faros con encendido y apagado automático.',
+            'Faros de halógeno multi-reflectores, tipo proyector.',
+            'Faros de niebla.',
           ],
           'SeguridadExterior' => [
-            'Defensa delantera y trasera al color de la carrocería',
-            'Manijas en las puertas laterales en el color de la carrocería',
-            'Parrilla frontal',
-            'Escape'
+            'Puertas laterales y compuerta trasera eléctricas, con sensores de seguridad contra obstrucción.',
+            'Cuatro sensores traseros de reversa.',
+            'Ventanillas laterales traseras abatibles eléctricamente.',
+            'Manijas del color de la carrocería.',
+            'Moldura trasera del color de la carrocería.',
           ],
           'Visibilidad'       => [
             'Cristales'       => [
-              'Altura total / 1,475 mm',
-              'Ancho total / 1,700 mm',
-              'Largo total / 4,410 mm',
-              'Distancia entre ejes / 2,550 mm',
-              'Distancia al piso / 145 mm',
-              'Diámetro de giro / 10.2',
-              'Coeficiente aerodinámico / 0.28'
+              'Alto: 1,750 mm.',
+              'Alto con canastilla: 1,795 mm.',
+              'Ancho:  1,985 mm.',
+              'Largo:  5,085 mm.',
+              'Entrevía (del./tras.): 1,720 mm.',
+              'Distancia al piso: 161 mm.',
             ],
-            'EspejosLaterales'  => [ 'N/A' ]
+            'EspejosLaterales'  => [
+              'Espejos laterales eléctricos y abatibles manualmente con desempañador.'
+            ]
           ],
           'Techo'             => [
-            'Capacidad del tanque de combustible / 42 Lts',
-            'Peso vehicular / 1,020 Kg',
-            'Capacidad de carga / 480 Kg',
-            'Volumen de carga en cajuela / 506 Lts'
+            'Peso vehicular: 2,010  kg.',
+            'Capacidad de carga: 705 kg.',
+            'Capacidad de carga de rieles de techo: 68 kg. ',
+            'Capacidad de equipaje: 1,100 kg.',
+            'Capacidad del tanque: 75.7 litros.',
+            'Pasajeros: 8',
           ],
           'UrlInterior'       => 'storage/images/datos/sienna/img-tablero.jpg'
         ] )
@@ -286,10 +289,9 @@ class ExternalSpecificationsTableSeeder extends Seeder
       'description' => base64_encode(
         serialize( [
           'Faros'             => [
-            'Cristales tintados con filtro contra rayos UV',
-            'Limpiadores intermitentes / Para parabrisas',
-            'Espejos laterales con ajuste eléctrico',
-            'Medallón con desempañado eléctrico integrado'
+            'Faros con encendido y apagado automático.',
+            'Faros de halógeno multi-reflectores, tipo proyector.',
+            'Faros de niebla.',
           ],
           'SeguridadExterior' => [
             'Defensa delantera y trasera al color de la carrocería',
@@ -299,21 +301,29 @@ class ExternalSpecificationsTableSeeder extends Seeder
           ],
           'Visibilidad'       => [
             'Cristales'         => [
-              'Altura total / 1,475 mm',
-              'Ancho total / 1,700 mm',
-              'Largo total / 4,410 mm',
-              'Distancia entre ejes / 2,550 mm',
-              'Distancia al piso / 145 mm',
-              'Diámetro de giro / 10.2',
-              'Coeficiente aerodinámico / 0.28'
+              'Alto: 1,750 mm.',
+              'Alto con canastilla: 1,795 mm.',
+              'Ancho:  1,985 mm.',
+              'Largo:  5,085 mm.',
+              'Entrevía (del./tras.): 1,720 mm.',
+              'Distancia al piso: 161 mm.',
+              'Manijas cromadas.',
+              'Moldura trasera del color de la carrocería. ',
+              'Puertas laterales y compuerta trasera eléctricas, con sensores de seguridad contra obstrucción.',
+              'Cuatro sensores traseros de reversa.',
+              'Ventanillas laterales traseras abatibles eléctricamente.',
             ],
-            'EspejosLaterales'  => [ 'N/A' ]
+            'EspejosLaterales'  => [
+              'Espejos laterales eléctricos y abatibles manualmente con desempañador.'
+            ]
           ],
           'Techo'             =>[
-            'Capacidad del tanque de combustible / 42 Lts',
-            'Peso vehicular / 1,055 Kg',
-            'Capacidad de carga / 445 Kg',
-            'Volumen de carga en cajuela / 506 Lts'
+            'Peso vehicular: 2,020  kg.',
+            'Capacidad de carga: 695 kg.',
+            'Capacidad de carga de rieles de techo: 68 kg.',
+            'Capacidad de equipaje: 1,100 kg.',
+            'Capacidad del tanque: 75.7 litros.',
+            'Pasajeros: 7',
           ],
           'UrlInterior'       => 'storage/images/datos/sienna/img-tablero.jpg'
         ] )
@@ -325,34 +335,39 @@ class ExternalSpecificationsTableSeeder extends Seeder
       'description' => base64_encode(
         serialize( [
           'Faros'             => [
-            'Cristales tintados con filtro contra rayos UV',
-            'Limpiadores intermitentes / Para parabrisas',
-            'Espejos laterales con ajuste eléctrico',
-            'Medallón con desempañado eléctrico integrado'
+            'Faros con encendido y apagado automático / cambio automático de luces (Smart Beam).',
+            'Faros de niebla.',
+            'Faros de xenón con ajuste de altura desde el interior.',
           ],
           'SeguridadExterior' => [
-            'Defensa delantera y trasera al color de la carrocería',
-            'Manijas en las puertas laterales en el color de la carrocería',
-            'Parrilla frontal cromada',
-            'Escape'
+            'Luces diurnas tipo LED. ',
+            'Manijas cromadas.',
+            'Moldura trasera y parrilla cromada. ',
+            'Puertas laterales y compuerta trasera eléctricas, con sensores de seguridad contra obstrucción.',
+            'Dos sensores delanteros de estacionamiento.',
+            'Cuatro sensores traseros de reversa.',
+            'Ventanillas laterales traseras abatibles eléctricamente.',
           ],
           'Visibilidad'       => [
             'Cristales'         => [
-              'Altura total / 1,475 mm',
-              'Ancho total / 1,700 mm',
-              'Largo total / 4,410 mm',
-              'Distancia entre ejes / 2,550 mm',
-              'Distancia al piso / 145 mm',
-              'Diámetro de giro / 10.2',
-              'Coeficiente aerodinámico / 0.28'
+              'Alto:  1,750 mm.',
+              'Alto con canastilla: 1,795 mm.',
+              'Ancho:  1,985 mm.',
+              'Largo:  5,085 mm.',
+              'Entrevía (del./tras.): 1,720 mm.',
+              'Distancia al piso: 161 mm.',
             ],
-            'EspejosLaterales'  => [ 'N/A' ]
+            'EspejosLaterales'  => [
+              'Espejos laterales del color de la carrocería, plegables eléctricamente, electrocromáticos, con luces direccionales y desempañador, ajuste automático de reversa  y memoria.'
+            ]
           ],
           'Techo'             =>[
-            'Capacidad del tanque de combustible / 42 Lts',
-            'Peso vehicular / 1,055 Kg',
-            'Capacidad de carga / 445 Kg',
-            'Volumen de carga en cajuela / 506 Lts'
+            'Peso vehicular: 2,020  kg.',
+            'Capacidad de carga: 695 kg.',
+            'Capacidad de carga de rieles de techo: 68 kg.',
+            'Capacidad de equipaje: 1,100 kg.',
+            'Capacidad del tanque: 75.7 litros.',
+            'Pasajeros: 7.',
           ],
           'UrlInterior'       => 'storage/images/datos/sienna/img-tablero.jpg'
         ] )
