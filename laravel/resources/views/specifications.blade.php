@@ -1,6 +1,11 @@
 @extends( 'layouts.app' )
 
 @section( 'title', $brand->title )
+<<<<<<< HEAD
+=======
+
+@section( 'description', $brand->description )
+>>>>>>> develop
 
 @section( 'header' )
   @parent
@@ -320,5 +325,5 @@
 @endsection
 
 @section( 'scripts' )
-
+  @parent
 @endsection

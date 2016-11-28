@@ -18,6 +18,7 @@ class CreateBrandsTable extends Migration
             ->unsigned( );
 
       $table->string( 'title' );
+      $table->string( 'description' );
       $table->string( 'name' );
       $table->string( 'slogan' );
       $table->string( 'title_h1' );

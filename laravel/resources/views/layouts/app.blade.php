@@ -16,6 +16,8 @@
   {!! Html::style( 'assets/css/reset-sass.css') !!}
   {!! Html::style( 'http://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' ) !!}
   {!! Html::style( 'http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' ) !!}
+  {!! Html::style( 'assets/css/animate.css') !!}
+  {!! Html::style( 'assets/plugins/font-awesome/css/font-awesome.min.css') !!}
   {!! Html::style( 'assets/css/fonts/fonts.css') !!}
   {!! Html::style( 'assets/css/style.css') !!}
   <script>
@@ -131,9 +133,6 @@
 @show
 
 @section( 'scripts' )
-  {!! Html::style( 'assets/css/animate.css') !!}
-  {!! Html::style( 'assets/plugins/font-awesome/css/font-awesome.min.css') !!}
-
   <!--
   Threesixty
   ==================================================

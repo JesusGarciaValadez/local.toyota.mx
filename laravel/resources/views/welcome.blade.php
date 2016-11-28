@@ -2,6 +2,8 @@
 
 @section( 'title', $brand->title )
 
+@section( 'description', $brand->description )
+
 @section( 'header' )
   @parent
 @endsection
@@ -112,7 +114,7 @@
               <h3>{!! $auto->name !!}</h3>
               <h5> DESDE {{ $auto->price }}<sup>MN</sup></h5>
               <ul>
-                {!! $auto->description !!}
+                {!! $auto->inner_description !!}
               </ul>
               <span></span>
               <a href="/especificaciones/{{ $auto->slug }}" class="link">Ver detalle</a>

@@ -47,11 +47,12 @@ class CreateCarsTable extends Migration
 
       $table->string( 'title' )
             ->unique();
+      $table->string( 'description' );
       $table->string( 'name' )
             ->unique();
       $table->string( 'thumbnail' );
       $table->string( 'price' );
-      $table->string( 'description', 500 );
+      $table->string( 'inner_description', 500 );
       $table->string( 'slug' );
       $table->timestamps( );
     } );

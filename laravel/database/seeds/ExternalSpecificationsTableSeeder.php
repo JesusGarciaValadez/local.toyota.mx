@@ -237,7 +237,7 @@ class ExternalSpecificationsTableSeeder extends Seeder
             'Capacidad del tanque: 75.7 litros.',
             'Pasajeros: 8',
           ],
-          'UrlInterior'       => 'storage/images/datos/sienna/img-tablero.jpg'
+          'UrlInterior'       => 'storage/images/datos/sienna/interior-versiones.jpg'
         ] )
       )
     ] ); // SIENNA LE
@@ -279,7 +279,7 @@ class ExternalSpecificationsTableSeeder extends Seeder
             'Capacidad del tanque: 75.7 litros.',
             'Pasajeros: 8',
           ],
-          'UrlInterior'       => 'storage/images/datos/sienna/img-tablero.jpg'
+          'UrlInterior'       => 'storage/images/datos/sienna/interior-versiones.jpg'
         ] )
       )
     ] ); // SIENNA XLE
@@ -325,7 +325,7 @@ class ExternalSpecificationsTableSeeder extends Seeder
             'Capacidad del tanque: 75.7 litros.',
             'Pasajeros: 7',
           ],
-          'UrlInterior'       => 'storage/images/datos/sienna/img-tablero.jpg'
+          'UrlInterior'       => 'storage/images/datos/sienna/interior-versiones.jpg'
         ] )
       )
     ] ); // SIENNA XLE PIEL
@@ -369,7 +369,7 @@ class ExternalSpecificationsTableSeeder extends Seeder
             'Capacidad del tanque: 75.7 litros.',
             'Pasajeros: 7.',
           ],
-          'UrlInterior'       => 'storage/images/datos/sienna/img-tablero.jpg'
+          'UrlInterior'       => 'storage/images/datos/sienna/interior-versiones.jpg'
         ] )
       )
     ] ); // SIENNA LTD
