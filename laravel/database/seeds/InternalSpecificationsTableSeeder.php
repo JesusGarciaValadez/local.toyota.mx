@@ -198,10 +198,11 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Controles al volante de audio y Bluetooth®.',
             'Pantalla multi-información 3.5”.',
             'Cámara de visión trasera.',
-            'Aire acondicionado automático de tres zonas con filtro antibacterial. ',
+            'Aire acondicionado automático de tres zonas con filtro antibacterial.',
+            'Asientos de la 2a fila, tipo capitán, deslizables, reclinables y abatibles',
+            'Asientos de la 3a fila, divididos 60/40 y reclinables tipo Tilt down',
+            'Vidrios eléctricos, un solo toque para el conductor y pasajero,  con bloqueo y sistema contra obstrucción.',
             'Vestiduras de tela.',
-            'Vidrios eléctricos, un solo toque para el conductor y pasajero, con bloqueo y sistema contra obstrucción. ',
-            'Asientos de la 3a fila, divididos 60/40 y reclinables tipo Tilt down.',
           ],
           'Asientos'              => [
             'Espacio para cabeza 1ª fila: 1,042 mm.',
@@ -228,13 +229,7 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Cinturones de seguridad de tres puntos en todos los asientos.',
           ],
           'SeguridadInterior'     => [
-            'Ocho bolsas de aire distribuidas de la siguiente manera:
-              <ul>
-                <li>Dos frontales y dos laterales para conductor y pasajero.</li>
-                <li>Dos tipo cortina para las tres filas de asientos.</li>
-                <li>Una para rodilla de conductor.</li>
-                <li>Una antideslizamiento para pasajero.</li>
-              </ul>',
+            'Ocho bolsas de aire.',
             'Alarma e inmovilizador. ',
             'Barras de protección contra impactos laterales.',
             'Desactivación automática de la bolsa de aire del pasajero.',
@@ -256,11 +251,12 @@ class InternalSpecificationsTableSeeder extends Seeder
       'description' => base64_encode(
         serialize( [
           'AcabadosInteriores'  => [
-            'Volante en uretano',
-            'Pomo palanca de velocidades en uretano',
-            'Tapicería de los asientos uretano',
-            'Alfombra en piso',
-            'Tela en vestidura del techo'
+            'Aire acondicionado automático de tres zonas con filtro antibacterial.',
+            'Asiento del conductor manual de seis posiciones con soporte lumbar.',
+            'Asientos de la 2a fila, individuales 35/30/35 deslizables, reclinables y abatibles.',
+            'Asientos de la 3a fila, divididos 60/40 y reclinables tipo Tilt down.',
+            'Vidrios eléctricos, un solo toque para el conductor y pasajero, con bloqueo y sistema contra obstrucción.',
+            'Vestiduras de tela.',
           ],
           'Asientos'            => [
             'Espacio para cabeza 1ª fila: 1,042 mm.',
@@ -282,29 +278,22 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Seis bocinas.',
           ],
           'Confort'             => [
-            'Iluminación de cortesía',
-            'Luces de lectura'
+            'Cámara de visión trasera. Control de velocidad crucero. Controles al volante de audio y Bluetooth®.',
+            'Pantalla multi-información 3.5”.',
+            'Reconocimiento de voz.',
           ],
           'CinturonesSeguridad' => [
             'Cinturones de seguridad de tres puntos en todos los asientos.',
           ],
           'SeguridadInterior'   => [
-            'Ocho bolsas de aire distribuidas de la siguiente manera:
-              <ul>
-                <li>Dos frontales y dos laterales para conductor y pasajero.</li>
-                <li>Dos tipo cortina para las tres filas de asientos.</li>
-                <li>Una para rodilla de conductor.</li>
-                <li>Una antideslizamiento para pasajero.</li>
-              </ul>',
-            'Alarma e inmovilizador. ',
-            'Barras de protección contra impactos laterales.',
+            'Ocho bolsas de aire.',
+            'Alarma e inmovilizador. Barras de protección contra impactos laterales.',
+            'Cinturones de seguridad de tres puntos en todos los asientos.',
             'Desactivación automática de la bolsa de aire del pasajero.',
-            'Molduras interiores con absorción de energía. ',
-            'Monitor de presión de las llantas.',
-            'Seguros eléctricos con cierre centralizado. ',
-            'Seguros para niños en puertas traseras. ',
-            'Sistemas LATCH e ISO-FIX para sillas de niños. ',
-            'Volante y columna de dirección colapsables. ',
+            'Molduras interiores con absorción de energía. Monitor de presión de las llantas.',
+            'Seguros eléctricos con cierre centralizado. Seguros para niños en puertas traseras.',
+            ' Sistemas LATCH e ISO-FIX, para sillas de niños.',
+            'Volante y columna de dirección colapsables.',
             'Zonas de absorción de energía, frontales, laterales y trasera.',
           ],
           'Download'            => 'storage/images/technical-specifications/highlander/prius-2016.pdf'
@@ -321,7 +310,7 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Asientos de la 2a fila, individuales 35/30/35 deslizables, reclinables y abatibles.',
             'Asientos de la 3a fila, divididos 60/40 y reclinables tipo Tilt down.',
             'Cortinillas solares manuales en la segunda y tercera fila de asientos. ',
-            'Cristales con sistema anti ruidos (Acoustic Glass) ',
+            'Cristales con sistema anti ruidos (Acoustic Glass) .',
             'Vidrios eléctricos, un solo toque para el conductor y pasajero, con bloqueo y sistema contra obstrucción. ',
             'Vestiduras de tela.',
           ],
@@ -346,7 +335,9 @@ class InternalSpecificationsTableSeeder extends Seeder
           ],
           'Confort'             => [
             'Aire acondicionado automático de tres zonas con filtro antibacterial. ',
-            'Cámara de visión trasera. Control de velocidad crucero. Controles al volante de audio y Bluetooth®.',
+            'Cámara de visión trasera. ',
+            'Control de velocidad crucero.',
+            ' Controles al volante de audio y Bluetooth®.',
             'Homelink.',
             'Pantalla multi-información 3.5” a color.',
             'Reconocimiento de voz.',
@@ -355,16 +346,9 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Cinturones de seguridad de tres puntos en todos los asientos.',
           ],
           'SeguridadInterior'   => [
-            'Ocho bolsas de aire distribuidas de la siguiente manera:
-            <ul>
-              <li>Dos frontales y dos laterales para conductor y pasajero.</li>
-              <li>Dos tipo cortina para las tres filas de asientos.</li>
-              <li>Una para rodilla de conductor.</li>
-              <li>Una antideslizamiento para pasajero.</li>
-            </ul>',
+            'Ocho bolsas de aire.',
             'Alarma e inmovilizador. ',
             'Barras de protección contra impactos laterales.',
-            'Cinturones de seguridad de tres puntos en todos los asientos.',
             'Desactivación automática de la bolsa de aire del pasajero.',
             'Molduras interiores con absorción de energía. ',
             'Monitor de presión de las llantas.',
@@ -387,7 +371,11 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Vestiduras de piel.',
             'Quemacocos eléctrico de dos posiciones con deflector de aire sensible a la velocidad.',
             'Aire acondicionado automático de tres zonas con filtro antibacterial.',
-            'Cortinillas solares manuales en la segunda y tercera fila de asientos.',
+            'Asiento del conductor manual de ocho posiciones con soporte lumbar.',
+            'Asiento del pasajero de 4 posiciones eléctrico.',
+            'Asientos de la 2a fila, tipo Ottoman.',
+            'Asientos de la 3a fila, divididos 60/40 y reclinables tipo Tilt down.',
+            'Asientos del conductor y pasajero con calefacción Cortinillas solares manuales en la segunda y tercera fila de asientos.',
             'Cristales con sistema anti ruidos (Acoustic Glass).',
             'Vidrios eléctricos, un solo toque para el conductor y pasajero, con bloqueo y sistema contra obstrucción.',
           ],
@@ -422,13 +410,7 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Cinturones de seguridad de tres puntos en todos los asientos. ',
           ],
           'SeguridadInterior'   => [
-            'Ocho bolsas de aire distribuidas de la siguiente manera:
-            <ul>
-              <li>-Dos frontales y dos laterales para conductor y pasajero.</li>
-              <li>-Dos tipo cortina para las tres filas de asientos.</li>
-              <li>-Una para rodilla de conductor.</li>
-              <li>-Una antideslizamiento para pasajero.</li>
-            </ul>',
+            'Ocho bolsas de aire',
             'Alarma e inmovilizador. ',
             'Barras de protección contra impactos laterales. ',
             'Desactivación automática de la bolsa de aire del pasajero. ',
@@ -451,14 +433,19 @@ class InternalSpecificationsTableSeeder extends Seeder
       'description' => base64_encode(
         serialize( [
           'AcabadosInteriores'  => [
-            '2 audífonos inalámbricos. ',
             'Vestiduras de piel.',
+            'Dos audífonos inalámbricos. ',
             'Quemacocos doble, eléctrico, de dos posiciones con deflector de aire sensible a la velocidad.',
-            'Aire acondicionado automático de tres zonas con filtro antibacterial. ',
-            'Cortinillas solares manuales en la segunda y tercera fila de asientos. ',
-            'Cristales con sistema anti ruidos (Acoustic Glass) .',
+            'Aire acondicionado automático de tres zonas con filtro antibacterial.',
+            'Asiento del conductor manual de ocho posiciones con soporte lumbar y dos memorias.',
+            'Asiento del pasajero de 4 posiciones eléctrico.',
+            'Asientos de la 2a fila, tipo Ottoman.',
+            'Asientos de la 3a fila, eléctricos, divididos 60/40 y reclinables tipo Tilt down.',
+            'Cortinillas solares manuales en la segunda y tercera fila de asientos.',
+            'Cristales con sistema anti ruidos (Acoustic Glass).',
             'Vidrios eléctricos, un solo toque para el conductor y pasajero, con bloqueo y sistema contra obstrucción. ',
-            'Asientos del conductor y pasajero con calefacción .',
+            'Ventanillas laterales traseras abatibles eléctricamente.',
+            'Asientos del conductor y pasajero con calefacción.',
           ],
           'Asientos'            => [
             'Espacio para cabeza con quemacocos 1ª fila: 993 mm.',
@@ -473,39 +460,27 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Espacio para piernas 1ª fila: 1,029 mm.',
             'Espacio para piernas 2ª fila: 955 mm.',
             'Espacio para piernas 3ª fila: 922 mm.',
-            'Asiento del conductor manual de ocho posiciones con soporte lumbar y dos memorias.',
-            'Asiento del pasajero de 4 posiciones eléctrico.',
-            'Asientos de la 2a fila, tipo Ottoman.',
-            'Asientos de la 3a fila, eléctricos, divididos 60/40 y reclinables tipo Tilt down.',
           ],
           'SistemaAudio'        => [
-            'Sistema de audio AM/FM/CD con pantalla táctil.',
-            'Reproductor para MP3 y WMA, auxiliar, USB, Bluetooth®.',
-            'Seis bocinas.',
-            'Sistema de navegación (GPS) .',
+            'Reconocimiento de voz.',
+            'Sistema de audio JBL® AM/FM/CD con pantalla táctil, reproductor MP3 y WMA, Auxiliar, USB, Bluetooth®.',
+            'Diez bocinas.',
+            'Sistema de navegación (GPS)',
           ],
           'Confort'             => [
             'Cámara de visión trasera con ángulo de visión aumentado. ',
-            'Control de velocidad crucero. ',
+            'Control de velocidad crucero.',
             'Controles al volante de audio y Bluetooth®.',
-            'Entrada para audífonos alámbricos a los lados en la 3a fila de asientos. ',
-            'Entradas RCA en la consola central. ',
+            'Entrada para audífonos alámbricos a los lados en la 3a fila de asientos. Entradas RCA en la consola central. ',
             'Homelink.',
-            'Pantalla dual 16.4” de LED, control remoto y reproductor Blu-rayTM y MP3. ',
+            'Pantalla dual 16.4” de LED, control remoto y reproductor Blu-rayTM y MP3.',
             'Pantalla multi-información 3.5” a color.',
-            'Reconocimiento de voz.',
           ],
           'CinturonesSeguridad' => [
             'Cinturones de seguridad de tres puntos en todos los asientos.',
           ],
           'SeguridadInterior'   => [
-            'Ocho bolsas de aire distribuidas de la siguiente manera:
-            <ul>
-              <li>-Dos frontales y dos laterales para conductor y pasajero.</li>
-              <li>-Dos tipo cortina para las tres filas de asientos.</li>
-              <li>-Una para rodilla de conductor.</li>
-              <li>-Una antideslizamiento para pasajero.</li>
-            </ul>',
+            'Ocho bolsas de aire',
             'Alarma e inmovilizador. ',
             'Barras de protección contra impactos laterales.',
             'Desactivación automática de la bolsa de aire del pasajero.',

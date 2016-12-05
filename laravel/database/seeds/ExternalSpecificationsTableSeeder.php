@@ -252,15 +252,15 @@ class ExternalSpecificationsTableSeeder extends Seeder
             'Faros de niebla.',
           ],
           'SeguridadExterior' => [
+            'Manijas del color de la carrocería.',
+            'Moldura trasera del color de la carrocería.',
             'Puertas laterales y compuerta trasera eléctricas, con sensores de seguridad contra obstrucción.',
             'Cuatro sensores traseros de reversa.',
             'Ventanillas laterales traseras abatibles eléctricamente.',
-            'Manijas del color de la carrocería.',
-            'Moldura trasera del color de la carrocería.',
           ],
           'Visibilidad'       => [
             'Cristales'       => [
-              'Alto: 1,750 mm.',
+              'Alto:  1,750 mm.',
               'Alto con canastilla: 1,795 mm.',
               'Ancho:  1,985 mm.',
               'Largo:  5,085 mm.',
@@ -294,24 +294,20 @@ class ExternalSpecificationsTableSeeder extends Seeder
             'Faros de niebla.',
           ],
           'SeguridadExterior' => [
-            'Defensa delantera y trasera al color de la carrocería',
-            'Manijas en las puertas laterales en el color de la carrocería',
-            'Parrilla frontal cromada',
-            'Escape'
+            'Manijas cromadas.',
+            'Moldura trasera del color de la carrocería. ',
+            'Puertas laterales y compuerta trasera eléctricas, con sensores de seguridad contra obstrucción.',
+            'Cuatro sensores traseros de reversa.',
+            'Ventanillas laterales traseras abatibles eléctricamente.',
           ],
           'Visibilidad'       => [
             'Cristales'         => [
-              'Alto: 1,750 mm.',
+              'Alto:  1,750 mm.',
               'Alto con canastilla: 1,795 mm.',
               'Ancho:  1,985 mm.',
               'Largo:  5,085 mm.',
               'Entrevía (del./tras.): 1,720 mm.',
               'Distancia al piso: 161 mm.',
-              'Manijas cromadas.',
-              'Moldura trasera del color de la carrocería. ',
-              'Puertas laterales y compuerta trasera eléctricas, con sensores de seguridad contra obstrucción.',
-              'Cuatro sensores traseros de reversa.',
-              'Ventanillas laterales traseras abatibles eléctricamente.',
             ],
             'EspejosLaterales'  => [
               'Espejos laterales eléctricos y abatibles manualmente con desempañador.'
@@ -346,7 +342,6 @@ class ExternalSpecificationsTableSeeder extends Seeder
             'Puertas laterales y compuerta trasera eléctricas, con sensores de seguridad contra obstrucción.',
             'Dos sensores delanteros de estacionamiento.',
             'Cuatro sensores traseros de reversa.',
-            'Ventanillas laterales traseras abatibles eléctricamente.',
           ],
           'Visibilidad'       => [
             'Cristales'         => [
