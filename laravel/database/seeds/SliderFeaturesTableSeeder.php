@@ -14,7 +14,7 @@ class SliderFeaturesTableSeeder extends Seeder
     /** Toyota Highlander */
     DB::table( 'slider_features' )->insert( [
       'brands_id' => 1,
-      'title'     => '<li class="activo"><span>Sistema de monitoreo de punto ciego.</span></li>',
+      'title'     => '<li class="activo"><span>Sistema de monitoreo de punto ciego</span></li>',
       'content'   => '<li>
           <div>
             <h1 class="animated"><span>Sistema de monitoreo de punto ciego.</span></h1>
@@ -28,7 +28,7 @@ class SliderFeaturesTableSeeder extends Seeder
 
     DB::table( 'slider_features' )->insert( [
       'brands_id' => 1,
-      'title'     => '<li><span>Techo corredizo panorámico.</span></li>',
+      'title'     => '<li><span>Techo corredizo panorámico</span></li>',
       'content'   => '<li>
           <div>
             <h1 class="animated"><span>Techo corredizo panorámico.</span></h1>
@@ -42,7 +42,7 @@ class SliderFeaturesTableSeeder extends Seeder
 
     DB::table( 'slider_features' )->insert( [
       'brands_id' => 1,
-      'title'     => '<li><span>Sistema de entretenimiento trasero.</span></li>',
+      'title'     => '<li><span>Sistema de entretenimiento trasero</span></li>',
       'content'   => '<li>
           <div>
             <h1 class="animated"><span>Sistema de entretenimiento trasero.</span></h1>
@@ -56,7 +56,7 @@ class SliderFeaturesTableSeeder extends Seeder
 
     DB::table( 'slider_features' )->insert( [
       'brands_id' => 1,
-      'title'     => '<li><span>Una camioneta alternativa para ti.</span></li>',
+      'title'     => '<li><span>Una camioneta alternativa para ti</span></li>',
       'content'   => '<li>
           <div>
             <h1 class="animated"><span>Una camioneta alternativa para ti.</span></h1>
@@ -71,7 +71,7 @@ class SliderFeaturesTableSeeder extends Seeder
     /** Toyota Sienna */
     DB::table( 'slider_features' )->insert( [
       'brands_id' => 2,
-      'title'     => '<li class="activo"><span>Elegancia interior.</span></li>',
+      'title'     => '<li class="activo"><span>Elegancia interior</span></li>',
       'content'   => '<li>
           <div>
             <h1 class="animated"><span>Elegancia interior.</span></h1>
@@ -88,7 +88,7 @@ class SliderFeaturesTableSeeder extends Seeder
 
     DB::table( 'slider_features' )->insert( [
       'brands_id' => 2,
-      'title'     => '<li><span>Tecnología de vanguardia.</span></li>',
+      'title'     => '<li><span>Tecnología de vanguardia</span></li>',
       'content'   => '<li>
           <div>
             <h1 class="animated"><span>Tecnología de vanguardia.</span></h1>
@@ -104,7 +104,7 @@ class SliderFeaturesTableSeeder extends Seeder
 
     DB::table( 'slider_features' )->insert( [
       'brands_id' => 2,
-      'title'     => '<li><span>Altos estándares de seguridad.</span></li>',
+      'title'     => '<li><span>Altos estándares de seguridad</span></li>',
       'content'   => '<li>
           <div>
             <h1 class="animated"><span>Altos estándares de seguridad.</span></h1>
@@ -121,12 +121,12 @@ class SliderFeaturesTableSeeder extends Seeder
 
     DB::table( 'slider_features' )->insert( [
       'brands_id' => 2,
-      'title'     => '<li><span>Potencia para ir a donde quieras.</span></li>',
+      'title'     => '<li><span>Potencia para ir a donde quieras</span></li>',
       'content'   => '<li>
           <div>
             <h1 class="animated"><span>Potencia para ir a donde quieras.</span></h1>
-            <p>40 puntos de soldado en el chasis ayudan a estabilizar la carrocería y suavizar el manejo</p>
-            <p>Motor 3.5 litros, 6 cilindros, 24 válvulas y 266 hp, ideal para ciudad o carretera.</p>
+            <p>40 puntos de soldado en el chasis ayudan a estabilizar la carrocería y suavizar el manejo.</p>
+            <p>Motor 3.5 litros, 6 cilindros, 24 válvulas y 296 hp, ideal para ciudad o carretera.</p>
             <p>Conductos estabilizadores, suavizan el flujo de aire, reducen el ruido del viento y mejoran la eficiencia.</p>
           </div>
           <div>

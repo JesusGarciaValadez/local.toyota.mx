@@ -123,9 +123,9 @@ class TechnicalSpecificationsTableSeeder extends Seeder
         serialize( [
           'Motor'     => [
             'Capacidad' => '3.5 LITROS',
-            'Potencia'  => '266 @ 6,200',
+            'Potencia'  => '296',
             'Cilindros' => 'V6',
-            'Valvulas'  => '245 @ 4,700'
+            'Valvulas'  => '263'
           ],
           'Frenos'    => [
             0 => 'Frenos delanteros / Discos ventilados',
@@ -133,9 +133,9 @@ class TechnicalSpecificationsTableSeeder extends Seeder
             2 => 'Sistema de bloqueo (ABS) con distribución electrónica de frenado (EBD) y asistencia de frenado (BA)'
           ],
           'Rines'     => [
-            0 => 'Aluminio de 17”',
-            1 => 'P235/60R17.',
-            2 => 'Acero de 17” T155 / 80R17.'
+            0 => 'Rines: Aluminio de 17”',
+            1 => 'Llantas: P235/60R17.',
+            2 => 'Llanta de refacción: Acero de 17” T155 / 80R17.'
           ],
           'UrlMotor'  => '',
           'UrlAuto'   => 'storage/images/datos/sienna/sienna-versiones.jpg'
@@ -149,9 +149,9 @@ class TechnicalSpecificationsTableSeeder extends Seeder
         serialize( [
           'Motor'     => [
             'Capacidad' => '3.5 litros.',
-            'Potencia'  => '266 @ 6,200.',
+            'Potencia'  => '296',
             'Cilindros' => 'V6',
-            'Valvulas'  => '245 @ 4,700.'
+            'Valvulas'  => '263'
           ],
           'Frenos'    => [
             0 => 'Frenos delanteros / Discos ventilados',
@@ -175,9 +175,9 @@ class TechnicalSpecificationsTableSeeder extends Seeder
         serialize( [
           'Motor'     => [
             'Capacidad' => '3.5 litros.',
-            'Potencia'  => '266 @ 6,200.',
+            'Potencia'  => '296',
             'Cilindros' => 'V6.',
-            'Valvulas'  => '245 @ 4,700.'
+            'Valvulas'  => '263'
           ],
           'Frenos'    => [
             0 => 'Frenos delanteros / Discos ventilados',
@@ -201,9 +201,9 @@ class TechnicalSpecificationsTableSeeder extends Seeder
         serialize( [
           'Motor'     => [
             'Capacidad' => '3.5 litros.',
-            'Potencia'  => '266 @ 6,200.',
+            'Potencia'  => '296',
             'Cilindros' => 'V6.',
-            'Valvulas'  => '245 @ 4,700.'
+            'Valvulas'  => '263'
           ],
           'Frenos'    => [
             0 => 'Frenos delanteros / Discos ventilados',
@@ -227,9 +227,9 @@ class TechnicalSpecificationsTableSeeder extends Seeder
         serialize( [
           'Motor'     => [
             'Capacidad' => '3.5 litros.',
-            'Potencia'  => '266 @ 6,200.',
+            'Potencia'  => '296',
             'Cilindros' => 'V6.',
-            'Valvulas'  => '245 @ 4,700.'
+            'Valvulas'  => '263'
           ],
           'Frenos'    => [
             0 => 'Frenos delanteros / Discos ventilados',

@@ -45,6 +45,9 @@
 @section( 'header' )
   <header>
     <div class="menu1 fadeInDown animated">
+      @if( str_contains( url()->current(), 'especificaciones' ) )
+      <a href="{{ route( 'home' ) }}" class="btnprev">Volver</a>
+      @endif
       {!! Html::link( action( 'HomeController@index', [
         'slug' => ( !empty( $slug ) ) ? $slug : ''
       ] ), '', [
