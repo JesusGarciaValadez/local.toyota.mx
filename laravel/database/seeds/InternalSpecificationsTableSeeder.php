@@ -179,7 +179,7 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Kit asistencia vial'
           ],
           'SeguridadInterior'   => [
-            'Transmisión CVT-iS con siete cambios sensitivos. única en su segmento.',
+            'Transmisión CVT-iS con siete cambios sensitivos. Única en su segmento.',
             '7 velocidades al frente (simulado)',
             'Palanca al piso tipo escalonada'
           ],
@@ -260,7 +260,7 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Asiento del conductor manual de seis posiciones con soporte lumbar. ',
             'Asientos de la 2a fila, individuales 35/30/35 deslizables, reclinables y abatibles .',
             'Asientos de la 3a fila, divididos 60/40 y reclinables tipo Tilt down.',
-            'Vidrios eléctricos, un solo toque para el conductor y pasajero, con bloqueo y sistema contra obstrucción. ',
+            'Vidrios eléctricos, un solo toque para el conductor y pasajero,  con bloqueo y sistema contra obstrucción.',
             'Vestiduras de tela.',
           ],
           'Asientos'            => [
@@ -293,22 +293,17 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Cinturones de seguridad de tres puntos en todos los asientos.',
           ],
           'SeguridadInterior'   => [
-            'Ocho bolsas de aire distribuidas de la siguiente manera:
-              <ul>
-                <li>Dos frontales y dos laterales para conductor y pasajero.</li>
-                <li>Dos tipo cortina para las tres filas de asientos.</li>
-                <li>Una para rodilla de conductor.</li>
-                <li>Una antideslizamiento para pasajero.</li>
-              </ul>',
+            'Ocho bolsas de aire.',
             'Alarma e inmovilizador. ',
             'Barras de protección contra impactos laterales.',
+            'Cinturones de seguridad de tres puntos en todos los asientos.',
             'Desactivación automática de la bolsa de aire del pasajero.',
             'Molduras interiores con absorción de energía. ',
             'Monitor de presión de las llantas.',
-            'Seguros eléctricos con cierre centralizado. ',
-            'Seguros para niños en puertas traseras. ',
-            'Sistemas LATCH e ISO-FIX para sillas de niños. ',
-            'Volante y columna de dirección colapsables. ',
+            'Seguros eléctricos con cierre centralizado.',
+            ' Seguros para niños en puertas traseras.',
+            ' Sistemas LATCH e ISO-FIX, para sillas de niños.',
+            'Volante y columna de dirección colapsables.',
             'Zonas de absorción de energía, frontales, laterales y trasera.',
           ],
           'Download'            => 'storage/images/technical-specifications/highlander/prius-2016.pdf'
@@ -426,18 +421,12 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Cinturones de seguridad de tres puntos en todos los asientos. ',
           ],
           'SeguridadInterior'   => [
-            'Ocho bolsas de aire distribuidas de la siguiente manera:
-            <ul>
-              <li>-Dos frontales y dos laterales para conductor y pasajero.</li>
-              <li>-Dos tipo cortina para las tres filas de asientos.</li>
-              <li>-Una para rodilla de conductor.</li>
-              <li>-Una antideslizamiento para pasajero.</li>
-            </ul>',
+            'Ocho bolsas de aire.',
             'Alarma e inmovilizador. ',
             'Barras de protección contra impactos laterales. ',
-            'Desactivación automática de la bolsa de aire del pasajero. ',
+            'Desactivación automática de la bolsa de aire del pasajero.',
             'Molduras interiores con absorción de energía. ',
-            'Monitor de presión de las llantas. ',
+            'Monitor de presión de las llantas.',
             'Seguros eléctricos con cierre centralizado. ',
             'Seguros para niños en puertas traseras. ',
             'Sistemas LATCH e ISO-FIX para sillas de niños. ',
@@ -503,13 +492,7 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Cinturones de seguridad de tres puntos en todos los asientos.',
           ],
           'SeguridadInterior'   => [
-            'Ocho bolsas de aire distribuidas de la siguiente manera:
-            <ul>
-              <li>-Dos frontales y dos laterales para conductor y pasajero.</li>
-              <li>-Dos tipo cortina para las tres filas de asientos.</li>
-              <li>-Una para rodilla de conductor.</li>
-              <li>-Una antideslizamiento para pasajero.</li>
-            </ul>',
+            'Ocho bolsas de aire.',
             'Alarma e inmovilizador. ',
             'Barras de protección contra impactos laterales.',
             'Desactivación automática de la bolsa de aire del pasajero.',
