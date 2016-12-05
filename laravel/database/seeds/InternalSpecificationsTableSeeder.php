@@ -179,7 +179,7 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Kit asistencia vial'
           ],
           'SeguridadInterior'   => [
-            'Transmisión CVT-iS con siete cambios sensitivos. única en su segmento.',
+            'Transmisión CVT-iS con siete cambios sensitivos. Única en su segmento.',
             '7 velocidades al frente (simulado)',
             'Palanca al piso tipo escalonada'
           ],
@@ -255,7 +255,7 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Asiento del conductor manual de seis posiciones con soporte lumbar.',
             'Asientos de la 2a fila, individuales 35/30/35 deslizables, reclinables y abatibles.',
             'Asientos de la 3a fila, divididos 60/40 y reclinables tipo Tilt down.',
-            'Vidrios eléctricos, un solo toque para el conductor y pasajero, con bloqueo y sistema contra obstrucción.',
+            'Vidrios eléctricos, un solo toque para el conductor y pasajero,  con bloqueo y sistema contra obstrucción.',
             'Vestiduras de tela.',
           ],
           'Asientos'            => [
@@ -287,11 +287,14 @@ class InternalSpecificationsTableSeeder extends Seeder
           ],
           'SeguridadInterior'   => [
             'Ocho bolsas de aire.',
-            'Alarma e inmovilizador. Barras de protección contra impactos laterales.',
+            'Alarma e inmovilizador. ',
+            'Barras de protección contra impactos laterales.',
             'Cinturones de seguridad de tres puntos en todos los asientos.',
             'Desactivación automática de la bolsa de aire del pasajero.',
-            'Molduras interiores con absorción de energía. Monitor de presión de las llantas.',
-            'Seguros eléctricos con cierre centralizado. Seguros para niños en puertas traseras.',
+            'Molduras interiores con absorción de energía. ',
+            'Monitor de presión de las llantas.',
+            'Seguros eléctricos con cierre centralizado.',
+            ' Seguros para niños en puertas traseras.',
             ' Sistemas LATCH e ISO-FIX, para sillas de niños.',
             'Volante y columna de dirección colapsables.',
             'Zonas de absorción de energía, frontales, laterales y trasera.',
@@ -410,12 +413,12 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Cinturones de seguridad de tres puntos en todos los asientos. ',
           ],
           'SeguridadInterior'   => [
-            'Ocho bolsas de aire',
+            'Ocho bolsas de aire.',
             'Alarma e inmovilizador. ',
             'Barras de protección contra impactos laterales. ',
-            'Desactivación automática de la bolsa de aire del pasajero. ',
+            'Desactivación automática de la bolsa de aire del pasajero.',
             'Molduras interiores con absorción de energía. ',
-            'Monitor de presión de las llantas. ',
+            'Monitor de presión de las llantas.',
             'Seguros eléctricos con cierre centralizado. ',
             'Seguros para niños en puertas traseras. ',
             'Sistemas LATCH e ISO-FIX para sillas de niños. ',
@@ -471,7 +474,8 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Cámara de visión trasera con ángulo de visión aumentado. ',
             'Control de velocidad crucero.',
             'Controles al volante de audio y Bluetooth®.',
-            'Entrada para audífonos alámbricos a los lados en la 3a fila de asientos. Entradas RCA en la consola central. ',
+            'Entrada para audífonos alámbricos a los lados en la 3a fila de asientos. ',
+            'Entradas RCA en la consola central. ',
             'Homelink.',
             'Pantalla dual 16.4” de LED, control remoto y reproductor Blu-rayTM y MP3.',
             'Pantalla multi-información 3.5” a color.',
@@ -480,7 +484,7 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Cinturones de seguridad de tres puntos en todos los asientos.',
           ],
           'SeguridadInterior'   => [
-            'Ocho bolsas de aire',
+            'Ocho bolsas de aire.',
             'Alarma e inmovilizador. ',
             'Barras de protección contra impactos laterales.',
             'Desactivación automática de la bolsa de aire del pasajero.',
