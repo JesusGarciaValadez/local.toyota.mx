@@ -125,8 +125,8 @@ class SliderFeaturesTableSeeder extends Seeder
       'content'   => '<li>
           <div>
             <h1 class="animated"><span>Potencia para ir a donde quieras.</span></h1>
-            <p>40 puntos de soldado en el chasis ayudan a estabilizar la carrocería y suavizar el manejo</p>
-            <p>Motor 3.5 litros, 6 cilindros, 24 válvulas y 266 hp, ideal para ciudad o carretera.</p>
+            <p>40 puntos de soldado en el chasis ayudan a estabilizar la carrocería y suavizar el manejo.</p>
+            <p>Motor 3.5 litros, 6 cilindros, 24 válvulas y 296 hp, ideal para ciudad o carretera.</p>
             <p>Conductos estabilizadores, suavizan el flujo de aire, reducen el ruido del viento y mejoran la eficiencia.</p>
           </div>
           <div>

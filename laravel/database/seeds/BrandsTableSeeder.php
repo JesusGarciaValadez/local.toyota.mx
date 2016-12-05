@@ -37,10 +37,10 @@ class BrandsTableSeeder extends Seeder
       'title_h1'                          => '<h2 class="animated">Imponente para cualquier camino.</h2>',
       'title_gallery_fancybox'            => '<h2 class="animated">En cada detalle refleja su estética y personalidad.</h2>',
       'description_gallery_fancybox'      => '<p><span>Sienna</span> 2017 es una combinación de comodidad, espacio y lujo. Es ideal para salir de paseo con la familia o amigos, es muy segura y con la potencia que necesitas.</p>',
-      'title_versions_gallery'            => '<h2 class="animated">En cada detalle refleja su estética y personalidad.</h2>',
+      'title_versions_gallery'            => '<h2 class="animated">Confort, seguridad y todo el estilo que mereces.</h2>',
       'title_driving_animation'           => '<h2 class="animated">Sienna 2017, elegancia, lujo y espacio para toda la familia.</h2>',
-      'title_footer'                      => '<h1>Sienna es perfecta para la ciudad o carretera, pero sobre todo, es perfecta para ti y tu familia.</h1>',
-      'description_footer'                => '<p>Si lo que buscas es elegancia, lujo y espacio, Sienna es para ti, conócela y compruébalo.</p>',
+      'title_footer'                      => '<h1>Ya sea en la ciudad o carretera,  Sienna es perfecta para ti y tu familia.</h1>',
+      'description_footer'                => '<p>Sienna es sinónimo de elegancia, lujo y espacio. Conócela y compruébalo.</p>',
       'slug'                              => 'sienna'
     ] );
   }
