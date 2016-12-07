@@ -241,7 +241,7 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Volante y columna de dirección colapsables. ',
             'Zonas de absorción de energía, frontales, laterales y trasera.',
           ],
-          'Download'              => 'storage/images/technical-specifications/sienna/ficha-tecnica-toyota-sienna-2016.pdf'
+          'Download'              => 'storage/images/technical-specifications/sienna/ficha-tecnica-toyota-sienna-2017.pdf'
         ] )
       )
     ] ); // SIENNA CE
@@ -299,7 +299,7 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Volante y columna de dirección colapsables.',
             'Zonas de absorción de energía, frontales, laterales y trasera.',
           ],
-          'Download'            => 'storage/images/technical-specifications/highlander/prius-2016.pdf'
+          'Download'            => 'storage/images/technical-specifications/sienna/ficha-tecnica-toyota-sienna-2017.pdf'
         ] )
       )
     ] ); // SIENNA LE
@@ -361,7 +361,7 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Volante y columna de dirección colapsables. ',
             'Zonas de absorción de energía, frontales, laterales y trasera.',
           ],
-          'Download'            => 'storage/images/technical-specifications/highlander/prius-2016.pdf'
+          'Download'            => 'storage/images/technical-specifications/sienna/ficha-tecnica-toyota-sienna-2017.pdf'
         ] )
       )
     ] ); // SIENNA XLE
@@ -426,7 +426,7 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Zonas de absorción de energía, frontales, laterales y trasera.',
             'Smart Key. ',
           ],
-          'Download'            => 'storage/images/technical-specifications/highlander/prius-2016.pdf'
+          'Download'            => 'storage/images/technical-specifications/sienna/ficha-tecnica-toyota-sienna-2017.pdf'
         ] )
       )
     ] ); // SIENNA XLE PIEL
@@ -498,7 +498,7 @@ class InternalSpecificationsTableSeeder extends Seeder
             'Smart Key. ',
             'Sistema de monitoreo de punto ciego (Blind Spot Monitor).',
           ],
-          'Download'            => 'storage/images/technical-specifications/highlander/prius-2016.pdf'
+          'Download'            => 'storage/images/technical-specifications/sienna/ficha-tecnica-toyota-sienna-2017.pdf'
         ] )
       )
     ] ); // SIENNA LTD
