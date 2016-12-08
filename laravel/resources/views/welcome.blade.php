@@ -47,7 +47,7 @@
         <span class="fa fa-angle-up"></span>
         <ul>
           @foreach( $slides as $slide )
-          {!! $slide->title !!}
+          {!! $slide->title_list!!}
           @endforeach
         </ul>
         <span class="fa fa-angle-down"></span>

@@ -89,7 +89,7 @@
                   @endif
                 </div>
                 <div class="col-md-3">
-                  {!! Html::image( env( 'APP_URL' ) . $model->thumbnail, '', [
+                  {!! Html::image( env( 'APP_URL' ) . '/' . $model->thumbnail, '', [
                     'class' => 'col-md-12'
                   ] ) !!}
                 </div>
@@ -267,7 +267,7 @@
 
                 <div class="col-md-9">
                   {!! Form::text( 'UrlMotor', $model->technicalSpecifications->description[ 'UrlMotor' ], [
-                    'class'         => 'form-control',
+                    'class'         => 'form-control col-lg-12 col-md-12 col-sm-12 col-xs-12',
                   ] ) !!}
 
                   @if ($errors->has( 'UrlMotor' ))
@@ -277,8 +277,8 @@
                   @endif
                 </div>
                 <div class="col-md-3">
-                  {!! Html::image( env( 'APP_URL' ) . $model->technicalSpecifications->description[ 'UrlMotor' ], '', [
-                    'class' => 'col-md-12'
+                  {!! Html::image( env( 'APP_URL' ) . '/' . $model->technicalSpecifications->description[ 'UrlMotor' ], '', [
+                    'class' => 'col-lg-12 col-md-12 col-sm-12 col-xs-12'
                   ] ) !!}
                 </div>
               </div>{{-- UrlMotor --}}
@@ -290,7 +290,7 @@
 
                 <div class="col-md-9">
                   {!! Form::text( 'UrlAuto', $model->technicalSpecifications->description[ 'UrlAuto' ], [
-                    'class'         => 'form-control',
+                    'class'         => 'form-control col-lg-12 col-md-12 col-sm-12 col-xs-12',
                   ] ) !!}
 
                   @if ($errors->has( 'UrlAuto' ))
@@ -300,8 +300,8 @@
                   @endif
                 </div>
                 <div class="col-md-3">
-                  {!! Html::image( env( 'APP_URL' ) . $model->technicalSpecifications->description[ 'UrlAuto' ], '', [
-                    'class' => 'col-md-12'
+                  {!! Html::image( env( 'APP_URL' ) . '/' . $model->technicalSpecifications->description[ 'UrlAuto' ], '', [
+                    'class' => 'col-lg-12 col-md-12 col-sm-12 col-xs-12'
                   ] ) !!}
                 </div>
               </div>{{-- UrlAuto --}}
@@ -430,7 +430,7 @@
 
                 <div class="col-md-9">
                   {!! Form::text( 'UrlInterior', $model->externalSpecifications->description[ 'UrlInterior' ], [
-                    'class'         => '',
+                    'class'         => 'form-control col-lg-12 col-md-12 col-sm-12 col-xs-12',
                   ] ) !!}
 
                   @if ($errors->has( 'UrlInterior' ))
@@ -440,8 +440,8 @@
                   @endif
                 </div>
                 <div class="col-md-3">
-                  {!! Html::image( env( 'APP_URL' ) . $model->externalSpecifications->description[ 'UrlInterior' ], '', [
-                    'class' => 'col-md-12'
+                  {!! Html::image( env( 'APP_URL' ) . '/' . $model->externalSpecifications->description[ 'UrlInterior' ], '', [
+                    'class' => 'col-lg-12 col-md-12 col-sm-12 col-xs-12'
                   ] ) !!}
                 </div>
               </div>{{-- UrlInterior --}}
@@ -586,7 +586,7 @@
 
                 <div class="col-md-9">
                   {!! Form::text( 'Download', $model->internalSpecifications->description[ 'Download' ], [
-                    'class'         => '',
+                    'class'         => 'form-control col-lg-12 col-md-12 col-sm-12 col-xs-12',
                   ] ) !!}
 
                   @if ($errors->has( 'Download' ))
@@ -599,7 +599,7 @@
 
               <div class="form-group">
                 <div class="form-group text-center col-lg-6 col-md-6 col-sm-6">
-                  <a href="{{ env( 'APP_URL' ) }}admin/{{ $id }}/car" title="Regresar" target="_self" class="btn btn-primary">
+                  <a href="{{ env( 'APP_URL' ) }}/admin/{{ $id }}/car" title="Regresar" target="_self" class="btn btn-primary">
                     <i class="glyphicon glyphicon-home"></i> Regresar
                   </a>
                 </div>

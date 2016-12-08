@@ -18,25 +18,25 @@
         <div class="panel-heading">Recetas</div>
         <div class="panel-body">
           <div class="table-responsive">
-            <table class="table table-striped table-hover">
+            <table class="table table-condensed table-striped table-hover">
               <thead>
-                <tr>
-                  <th class="col-lg-8 col-md-8 col-sm-8 text-left">Marca</th>
-                  <th class="col-lg-4 col-md-4 col-sm-4 text-center">Acciones</th>
+                <tr class="row">
+                  <th class="col-lg-8 col-md-6 col-sm-6  col-xs-6 text-left">Marca</th>
+                  <th class="col-lg-4 col-md-6 col-sm-6  col-xs-6 text-center">Acciones</th>
                 </tr>
               </thead>
-              <tfood></tfood>
+              <tfoot></tfoot>
               <tbody>
                 @foreach ( $brands as $brand )
-                <tr>
-                  <td class="col-lg-8 col-md-8 col-sm-8"><p><small><span>{!! $brand->name !!}</small></p></td>
-                  <td class="col-lg-4 col-md-4 col-sm-4">
-                    <div class="clearfix text-center form-group col-lg-6 col-md-6 col-sm-6">
+                <tr class="row">
+                  <td class="col-lg-8 col-md-6 col-sm-6 col-xs-6">{!! $brand->name !!}</td>
+                  <td class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                    <div class="text-center col-lg-6 col-md-6 col-sm-6 col-xs-12 form-group visible-lg-inline-block visible-md-inline-block visible-sm-inline-block visible-xs-inline-block">
                       <a href="{{ action( 'Admin\AdminController@show', [
                         'id' => $brand->id
-                      ] ) }}" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
+                      ] ) }}" class="btn btn-primary col-xs-12"><i class="glyphicon glyphicon-pencil"></i> Editar</a>
                     </div>
-                    <div class="clearfix text-center col-lg-6 col-md-6 col-sm-6">
+                    <div class="text-center col-lg-6 col-md-6 col-sm-6 col-xs-12 visible-lg-inline-block visible-md-inline-block visible-sm-inline-block visible-xs-inline-block">
                       {!! Form::open( [
                         'url'  => action( 'Admin\AdminController@destroy', [
                           'id' => $brand->id
@@ -45,7 +45,7 @@
                         'class'   => 'form-horizontal',
                         'files'   => false
                       ] ) !!}
-                        <button type="submit" class="btn btn-danger">
+                        <button type="submit" class="btn btn-danger col-xs-12">
                           <i class="glyphicon glyphicon-trash"></i> Eliminar
                         </button>
                       {!! Form::close() !!}
