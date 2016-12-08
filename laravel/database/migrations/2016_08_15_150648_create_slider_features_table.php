@@ -23,6 +23,7 @@ class CreateSliderFeaturesTable extends Migration
             ->onDelete( 'cascade' )
             ->onUpdate( 'cascade' );
       $table->string( 'title' );
+      $table->string( 'title_list' );
       $table->longtext( 'content' );
       $table->timestamps( );
     } );

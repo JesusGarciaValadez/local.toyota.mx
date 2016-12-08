@@ -47,6 +47,27 @@
                 </div>
               </div>
 
+              <div class="form-group{{ $errors->has( 'title_list' ) ? ' has-error' : '' }}">
+                {!! Form::label( 'title_list', 'Título', [
+                  'class' => 'col-md-3 control-label'
+                ] ) !!}
+
+                {!! Form::hidden( 'id', $brands->id ) !!}
+
+                <div class="col-md-9">
+                  {!! Form::text( 'title_list', "", [
+                    'class'         => 'form-control',
+                    'v-model.sync'  => 'newModel.title_list'
+                  ] ) !!}
+
+                  @if ($errors->has( 'title_list' ))
+                    <span class="help-block">
+                      <strong>{{ $errors->first( $title_list ) }}</strong>
+                    </span>
+                  @endif
+                </div>
+              </div>
+
               <div class="form-group{{ $errors->has( 'content' ) ? ' has-error' : '' }}">
                 {!! Form::label( 'content', 'Slide', [
                   'class' => 'col-md-3 control-label'
@@ -97,8 +118,9 @@
     el      : '#edit__form',
     data    : {
       newModel  : {
-        'title'   : '',
-        'content' : '',
+        'title'       : '',
+        'title_list'  : '',
+        'content'     : '',
       }
     },
     methods : {
@@ -108,8 +130,9 @@
        */
       submitEdit : function ( event ) {
         var data          = {
-          'title'   : this.newModel.title,
-          'content' : this.newModel.content
+          'title'       : this.newModel.title,
+          'title_list'  : this.newModel.title_list,
+          'content'     : this.newModel.content
         }
 
         if ( !this.isValid ) {
@@ -125,8 +148,9 @@
     computed: {
       validation: function () {
         return {
-          'title'   : !!this.newModel.title.trim( ),
-          'content' : !!this.newModel.content.trim( ),
+          'title'       : !!this.newModel.title.trim( ),
+          'title_list'  : !!this.newModel.title_list.trim( ),
+          'content'     : !!this.newModel.content.trim( ),
         }
       },
       isValid: function () {
