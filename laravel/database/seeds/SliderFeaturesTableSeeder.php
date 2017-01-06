@@ -86,7 +86,7 @@ class SliderFeaturesTableSeeder extends Seeder
             <p>Asientos plegables en la tercera fila, mayor espacio para carga abordo.</p>
           </div>
           <div>
-            <img src="storage/images/highlight/sienna/asiento.jpg" />
+            <img src="storage/images/highlight/sienna/elegancia.jpg" />
           </div>
         </li>'
     ] );
@@ -138,7 +138,7 @@ class SliderFeaturesTableSeeder extends Seeder
             <p>Conductos estabilizadores, suavizan el flujo de aire, reducen el ruido del viento y mejoran la eficiencia.</p>
           </div>
           <div>
-            <img src="storage/images/highlight/sienna/temperatura.jpg" />
+            <img src="storage/images/highlight/sienna/potencia.jpg" />
           </div>
         </li>'
     ] );
