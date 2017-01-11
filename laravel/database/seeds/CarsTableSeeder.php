@@ -127,7 +127,7 @@ class CarsTableSeeder extends Seeder
       'description'                 => '',
       'name'                        => 'SIENNA XLE',
       'thumbnail'                   => 'storage/images/versiones/sienna/img_lateral.png',
-      'price'                       => '$580,300.00',
+      'price'                       => '$582,300.00',
       'inner_description'           => '<li>Puertas laterales y compuerta trasera eléctricas, con sensores de seguridad contra obstrucción.</li>
             <li>Sensores de estacionamiento (2 delanteros).</li>
             <li>Aire acondicionado automático de 3 zonas con filtro antibacterial.</li>
