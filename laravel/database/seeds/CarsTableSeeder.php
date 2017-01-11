@@ -91,7 +91,7 @@ class CarsTableSeeder extends Seeder
       'description'                 => '',
       'name'                        => 'SIENNA CE',
       'thumbnail'                   => 'storage/images/versiones/sienna/img_lateral.png',
-      'price'                       => '$501,200.00',
+      'price'                       => '$502,000.00',
       'inner_description'           => '<li>Espejos laterales eléctricos color negro.</li>
             <li>Aire acondicionado automático de 3 zonas con filtro antibacterial.</li>
             <li>Pantalla multi-información.</li>
@@ -109,7 +109,7 @@ class CarsTableSeeder extends Seeder
       'description'                 => '',
       'name'                        => 'SIENNA LE',
       'thumbnail'                   => 'storage/images/versiones/sienna/img_lateral.png',
-      'price'                       => '$565,200.00',
+      'price'                       => '$530,800.00',
       'inner_description'           => '<li>Espejos laterales eléctricos del color de la carrocería, abatibles manualmente con desempañador.</li>
             <li>Aire acondicionado automático de 3 zonas con filtro antibacterial.</li>
             <li>Sistema de audio AM/FM/CD con pantalla táctil, reproductor para MP3 y WMA.</li>
@@ -127,7 +127,7 @@ class CarsTableSeeder extends Seeder
       'description'                 => '',
       'name'                        => 'SIENNA XLE',
       'thumbnail'                   => 'storage/images/versiones/sienna/img_lateral.png',
-      'price'                       => '$501,200.00',
+      'price'                       => '$580,300.00',
       'inner_description'           => '<li>Puertas laterales y compuerta trasera eléctricas, con sensores de seguridad contra obstrucción.</li>
             <li>Sensores de estacionamiento (2 delanteros).</li>
             <li>Aire acondicionado automático de 3 zonas con filtro antibacterial.</li>
@@ -145,7 +145,7 @@ class CarsTableSeeder extends Seeder
       'description'                 => '',
       'name'                        => 'SIENNA XLE PIEL',
       'thumbnail'                   => 'storage/images/versiones/sienna/img_lateral.png',
-      'price'                       => '$656,700.00',
+      'price'                       => '$643,400.00',
       'inner_description'           => '<li>Manijas cromadas.</li>
             <li>Asiento del pasajero de 4 posiciones eléctrico.</li>
             <li>Vestiduras de piel.</li>
@@ -163,7 +163,7 @@ class CarsTableSeeder extends Seeder
       'description'                 => '',
       'name'                        => 'SIENNA LTD',
       'thumbnail'                   => 'storage/images/versiones/sienna/img_lateral.png',
-      'price'                       => '$656,700.00',
+      'price'                       => '$779,700.00',
       'inner_description'           => '<li>2 audífonos inalámbricos.</li>
             <li>Cristales con sistema anti ruido (Acoustic Glass).</li>
             <li>Vestiduras de piel.</li>
